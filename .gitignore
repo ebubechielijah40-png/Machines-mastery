@@ -1,0 +1,40 @@
+# Local book originals and external checkouts; never delete sources.
+/books/*/source/*
+!/books/*/source/README.md
+/repositories/checkouts/
+# Private datasets and local credentials
+**/private/
+**/raw-private/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.*
+# Environment/build outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+node_modules/
+build/
+dist/
+target/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.bin
+*.iso
+*.img
+*.pt
+*.pth
+*.onnx
+.DS_Store
+.aider*

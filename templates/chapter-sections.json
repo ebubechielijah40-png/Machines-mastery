@@ -1,0 +1,15 @@
+{
+  "01_MAP.md": "Record the inspected unit title, exact source locator, boundaries, prerequisites, dependency role, depth class and reason for selection. Never infer source structure from an online summary.",
+  "02_DEEP_RECONSTRUCTION.md": "For each important concept: what it is, why it exists, the problem solved, prerequisites, causal mechanism, state, inputs, outputs, assumptions, constraints, edge cases, failure modes, interactions and implementation consequences. Explain observability, a minimal implementation, real-system differences, evidence and uncertainty. Use original prose and claim-level epistemic labels.",
+  "03_CONCEPT_GRAPH.md": "Show labeled relationships established by this unit. Link claims and source locators; mark prerequisite concepts not yet established. Promote to the global knowledge graph only after review.",
+  "04_MECHANISMS.md": "Trace causal steps and state transitions. Define boundaries and interfaces, then change an assumption and predict the consequences. Separate abstract model from physical or software implementation.",
+  "05_EXAMPLES.md": "Create original worked examples with explicit inputs, intermediate steps and outputs. Include a boundary case and a counterexample. Label computed examples separately from observed measurements.",
+  "06_FORMALISMS.md": "Define symbols, domains, units, premises and assumptions. Derive each equation or cite its exact source; verify algebra and show where the model ceases to apply.",
+  "07_CONNECTIONS.md": "Connect the mechanism to established prior artifacts and future dependency targets. Keep forward connections provisional; an analogy cannot replace a mechanism.",
+  "08_QUESTIONS.md": "Write recall, why/how, state-tracing, counterfactual, failure and transfer questions. Keep answers separate from the first learner attempt and record the source needed to assess them.",
+  "09_EXPERIMENTS.md": "Link a bounded protocol with hypothesis, variables, controls, setup, procedure, measurements and alternatives. Observed result remains NOT YET OBSERVED until actual execution and raw evidence.",
+  "10_PROJECT_LINKS.md": "Identify the specific project component this concept enables, its prerequisites, design consequence and acceptance check. Do not claim an implementation exists unless inspected.",
+  "11_SOURCE_REFERENCES.md": "List resource IDs, actual edition/revision, exact inspected locators, claim coverage and short attributed quotations only when necessary. Distinguish supplied source from external support.",
+  "12_MASTERY_TEST.md": "Specify unaided explanation, a new application, implementation or formal construction, failure diagnosis and prediction/observation tasks. Link the later learner attempt; generated answers are not mastery.",
+  "13_GAPS.md": "Record unreadable/missing source portions, uncertain statements, prerequisite gaps, unresolved contradictions and omitted sections with reasons. Give a small next verification action for each blocking gap."
+}

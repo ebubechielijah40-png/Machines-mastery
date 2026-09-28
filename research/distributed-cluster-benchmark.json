@@ -1,0 +1,47 @@
+{
+  "kind": "agent distributed cluster benchmark; no learner evidence",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39"
+  },
+  "scenarios": {
+    "baseline": {
+      "writes_requested": 100,
+      "writes_committed": 100,
+      "simulated_ticks": 300,
+      "wall_time_ns": 89944867,
+      "network_metrics": {
+        "sent": 808,
+        "delivered": 806,
+        "dropped_loss": 0,
+        "dropped_partition": 0,
+        "tampered_rejected": 0
+      }
+    },
+    "lossy_10_percent": {
+      "writes_requested": 100,
+      "writes_committed": 100,
+      "simulated_ticks": 400,
+      "wall_time_ns": 63833567,
+      "network_metrics": {
+        "sent": 767,
+        "delivered": 694,
+        "dropped_loss": 73,
+        "dropped_partition": 0,
+        "tampered_rejected": 0
+      }
+    },
+    "partition": {
+      "committed_pre_partition": 20,
+      "minority_writes_blocked_from_commit": 20,
+      "majority_writes_committed": 40,
+      "network_metrics": {
+        "sent": 334,
+        "delivered": 252,
+        "dropped_loss": 0,
+        "dropped_partition": 82,
+        "tampered_rejected": 0
+      }
+    }
+  }
+}

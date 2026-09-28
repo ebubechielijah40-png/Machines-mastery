@@ -1,0 +1,3 @@
+# Postmortems
+
+Template for the demonstrated stale-cache flaw: what happened—another instance wrote while the first retained a cached total; impact—outdated local response under a violated single-writer assumption; evidence—the two-instance regression test; contributing condition—no shared version/invalidation protocol; repair in the test—clear local cache; permanent multi-writer mitigation—disable caching or design verified coherent invalidation. No production incident date/timeline is invented. Record an actual timeline if the learner executes it. A faster cache must not be accepted by ignoring this contract limitation.

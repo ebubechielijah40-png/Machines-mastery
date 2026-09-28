@@ -1,0 +1,12 @@
+{
+  "README.md": "State the educational objective, scope, phase, project ID, current stage and exact next action. No implementation exists at scaffold time.",
+  "ORIGIN_AND_ATTRIBUTION.md": "Record original work, original authors, organization, original source/repository, license, intended reproduction, independently implemented elements, modifications and educational purpose. Unknown fields remain UNVERIFIED \u2014 source required. Preserve upstream LICENSE/NOTICE. No implementation or modification exists yet.",
+  "DESIGN.md": "Define the problem, intended behavior, inputs, outputs, invariants, assumptions, exclusions and unresolved design decisions before coding.",
+  "ARCHITECTURE.md": "Describe proposed components, interfaces, control/data flow, state ownership, storage and trust boundaries. Separate proposal from inspected implementation.",
+  "PREREQUISITES.md": "Link required unit gates and actual learner evidence. No prerequisite is satisfied merely because its document exists.",
+  "BUILD_LOG.md": "Append dated actual actions, commands, environment and outputs. At scaffold time no build or execution has occurred.",
+  "EXPERIMENTS.md": "Register planned experiments, hypotheses and failure tests; preserve actual raw evidence after execution. No observations exist yet.",
+  "TESTS.md": "Specify normal, edge, negative and failure cases, expected behavior, invariants and test commands once implemented. Current execution status: NOT RUN.",
+  "RESULTS.md": "NOT YET OBSERVED. Later link actual outputs and analysis, scope, uncertainty, failures and alternative explanations. No performance or correctness claim is established.",
+  "REFERENCES.md": "List candidate resource IDs now. Before reproduction add inspected original locations, pinned revisions and license evidence; before behavior claims inspect relevant implementation."
+}

@@ -1,0 +1,3791 @@
+{
+  "schema_version": 1,
+  "resources": [
+    {
+      "id": "R-CODE",
+      "title": "Code: The Hidden Language of Computer Hardware and Software",
+      "type": "book",
+      "author": "Charles Petzold",
+      "phases": [
+        "P01"
+      ],
+      "purpose": "Connect representations to machine construction.",
+      "prerequisites": "U00 intake protocol; basic reading/counting diagnostic, not assumed learner mastery.",
+      "why_selected": "Curriculum design choice: Connect representations to machine construction.",
+      "original_source": "https://codehiddenlanguage.com/Chapter00/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Local title/author/copyright and paperback preface inspected; 25 chapter boundaries mapped; Chapter 1 PDF 6\u201310 readable. Numbered edition unverified.",
+      "checked_on": "2026-09-27",
+      "local_availability": "INSPECTED \u2014 local ignored PDF; first unit prepared, learner NOT STARTED.",
+      "notes": "Local source has 25 chapters; do not use second-edition website pagination. See books/code-petzold/generated/SOURCE_INDEX.md. Original redistribution rights remain unverified."
+    },
+    {
+      "id": "R-ELEMENTS",
+      "title": "The Elements of Computing Systems",
+      "type": "book",
+      "author": "Noam Nisan; Shimon Schocken",
+      "phases": [
+        "P01"
+      ],
+      "purpose": "Support computer construction from primitives.",
+      "prerequisites": "U01 representation; U02 logic before hardware reproduction; programming before later software portions.",
+      "why_selected": "Curriculum design choice: Support computer construction from primitives.",
+      "original_source": "https://www.nand2tetris.org/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Book identity verified; no local edition or chapter map."
+    },
+    {
+      "id": "R-NAND",
+      "title": "Nand to Tetris",
+      "type": "course",
+      "author": "Noam Nisan; Shimon Schocken",
+      "phases": [
+        "P01"
+      ],
+      "purpose": "Provide original educational hardware project context.",
+      "prerequisites": "U01 representation; U02 logic for first hardware exercise; select tool/HDL prerequisites at intake.",
+      "why_selected": "Curriculum design choice: Provide original educational hardware project context.",
+      "original_source": "https://www.nand2tetris.org/",
+      "license": "Website states CC BY-NC-SA 3.0 Unported for its materials/tools. No distribution downloaded.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Official home, software overview and license pages inspected; implementation code not inspected.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Website license statement: https://www.nand2tetris.org/license ; software page: https://www.nand2tetris.org/software . Keep solutions private. Inspect the exact distribution license before importing anything."
+    },
+    {
+      "id": "R-C",
+      "title": "C Programming: A Modern Approach",
+      "type": "book",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P02"
+      ],
+      "purpose": "Develop C programming and memory reasoning.",
+      "prerequisites": "U01 representation; basic programming practice may run concurrently with U04.",
+      "why_selected": "Curriculum design choice: Develop C programming and memory reasoning.",
+      "original_source": "https://knking.com/books/c2/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "UNVERIFIED",
+      "verification_scope": "Primary URL could not be read; no bibliographic claims verified.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "User-requested title. Primary page open failed; search snippets excluded as evidence. Author/edition verification pending."
+    },
+    {
+      "id": "R-PYTHON",
+      "title": "Think Python, third edition",
+      "type": "book",
+      "author": "Allen B. Downey",
+      "phases": [
+        "P02"
+      ],
+      "purpose": "Introduce programming with Python.",
+      "prerequisites": "U01 representation; no prior programming mastery assumed.",
+      "why_selected": "Curriculum design choice: Introduce programming with Python.",
+      "original_source": "https://greenteapress.com/wp/think-python-3rd-edition/",
+      "license": "Author landing page states CC BY-NC-SA 4.0 for the book; inspect code terms separately.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-BYOX",
+      "title": "Build Your Own X",
+      "type": "repository",
+      "author": "codecrafters-io (repository owner); individual tutorial authors must be verified",
+      "phases": [
+        "P02"
+      ],
+      "purpose": "Discover reproduction exercises; inspect each original tutorial separately.",
+      "prerequisites": "U04 programming; tutorial-specific dependencies and original-source review.",
+      "why_selected": "Curriculum design choice: Discover reproduction exercises; inspect each original tutorial separately.",
+      "original_source": "https://github.com/codecrafters-io/build-your-own-x",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Repository identity and tutorial-index purpose verified; linked tutorials not inspected.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Discovery/reference only; linked tutorials are not automatically authoritative."
+    },
+    {
+      "id": "R-ALGORITHMS",
+      "title": "The Algorithm Design Manual, third edition",
+      "type": "book",
+      "author": "Steven Skiena",
+      "phases": [
+        "P03"
+      ],
+      "purpose": "Support algorithm design and analysis.",
+      "prerequisites": "U04 programming and U06 proofs/discrete structures.",
+      "why_selected": "Curriculum design choice: Support algorithm design and analysis.",
+      "original_source": "https://www.algorist.com/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-ALGO-PY",
+      "title": "TheAlgorithms/Python",
+      "type": "repository",
+      "author": "TheAlgorithms (repository owner); contributors",
+      "phases": [
+        "P03"
+      ],
+      "purpose": "Compare implementations after independent attempts.",
+      "prerequisites": "U04 programming and U06 proofs/discrete structures.",
+      "why_selected": "Curriculum design choice: Compare implementations after independent attempts.",
+      "original_source": "https://github.com/TheAlgorithms/Python",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Repository identity verified; no individual algorithm behavior verified.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-CSAPP",
+      "title": "Computer Systems: A Programmer\u2019s Perspective, third edition",
+      "type": "book",
+      "author": "Randal E. Bryant; David R. O\u2019Hallaron",
+      "phases": [
+        "P04"
+      ],
+      "purpose": "Trace programs across machine and operating-system boundaries.",
+      "prerequisites": "U03 machine model, U04 programming and U05 process/file-descriptor bridge.",
+      "why_selected": "Curriculum design choice: Trace programs across machine and operating-system boundaries.",
+      "original_source": "https://csapp.cs.cmu.edu/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-DIVE",
+      "title": "Dive into Systems",
+      "type": "book",
+      "author": "Suzanne J. Matthews; Tia Newhall; Kevin C. Webb",
+      "phases": [
+        "P02",
+        "P04"
+      ],
+      "purpose": "Bridge introductory programming and systems mechanisms.",
+      "prerequisites": "U01 representation and the relevant U04 programming subset.",
+      "why_selected": "Curriculum design choice: Bridge introductory programming and systems mechanisms.",
+      "original_source": "https://diveintosystems.org/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-OSTEP",
+      "title": "Operating Systems: Three Easy Pieces",
+      "type": "book",
+      "author": "Remzi H. Arpaci-Dusseau; Andrea C. Arpaci-Dusseau",
+      "phases": [
+        "P05"
+      ],
+      "purpose": "Study virtualization, concurrency and persistence.",
+      "prerequisites": "U08 systems; C and assembly reading before kernel study.",
+      "why_selected": "Curriculum design choice: Study virtualization, concurrency and persistence.",
+      "original_source": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Author site identifies version 1.10; no local source. Free reading does not establish redistribution rights."
+    },
+    {
+      "id": "R-XV6",
+      "title": "xv6-riscv",
+      "type": "repository",
+      "author": "mit-pdos (repository owner); see upstream acknowledgments",
+      "phases": [
+        "P04",
+        "P05"
+      ],
+      "purpose": "Study a teaching kernel after C and architecture foundations.",
+      "prerequisites": "U03 machine model, U04 programming and U05 process/file-descriptor bridge.",
+      "why_selected": "Curriculum design choice: Study a teaching kernel after C and architecture foundations.",
+      "original_source": "https://github.com/mit-pdos/xv6-riscv",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "README and repository listing inspected; kernel behavior and pinned revision not verified.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-OSTEP-HW",
+      "title": "OSTEP homework",
+      "type": "repository",
+      "author": "remzi-arpacidusseau (repository owner)",
+      "phases": [
+        "P05"
+      ],
+      "purpose": "Run controlled operating-system exercises.",
+      "prerequisites": "U08 systems; C and assembly reading before kernel study.",
+      "why_selected": "Curriculum design choice: Run controlled operating-system exercises.",
+      "original_source": "https://github.com/remzi-arpacidusseau/ostep-homework",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "README describes homework/simulators; simulator implementations not inspected.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-NET",
+      "title": "Computer Networking: A Top-Down Approach",
+      "type": "book",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P06"
+      ],
+      "purpose": "Organize network protocol study.",
+      "prerequisites": "U05 process/descriptor model and U08 systems; C for socket implementation.",
+      "why_selected": "Curriculum design choice: Organize network protocol study.",
+      "original_source": "https://gaia.cs.umass.edu/kurose_ross/index.php",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "PARTIALLY VERIFIED",
+      "verification_scope": "Companion page identity only.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Companion page opened but bibliographic details insufficient; verify author list and edition at intake."
+    },
+    {
+      "id": "R-BEEJ",
+      "title": "Beej\u2019s Guide to Network Programming",
+      "type": "reference",
+      "author": "Beej (as named on official page)",
+      "phases": [
+        "P06"
+      ],
+      "purpose": "Support C socket programming.",
+      "prerequisites": "U05 process/descriptor model and U08 systems; C for socket implementation.",
+      "why_selected": "Curriculum design choice: Support C socket programming.",
+      "original_source": "https://beej.us/guide/bgnet/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-BEEJ-REPO",
+      "title": "beejjorgensen/bgnet",
+      "type": "repository",
+      "author": "beejjorgensen (repository owner)",
+      "phases": [
+        "P06"
+      ],
+      "purpose": "Trace networking guide source and examples.",
+      "prerequisites": "U05 process/descriptor model and U08 systems; C for socket implementation.",
+      "why_selected": "Curriculum design choice: Trace networking guide source and examples.",
+      "original_source": "https://github.com/beejjorgensen/bgnet",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Linked from official guide; code not inspected."
+    },
+    {
+      "id": "R-DB",
+      "title": "Database Internals",
+      "type": "book",
+      "author": "Alex Petrov",
+      "phases": [
+        "P07"
+      ],
+      "purpose": "Investigate storage engine design.",
+      "prerequisites": "U07 structures/algorithms and U08 systems; U17 before distributed sections.",
+      "why_selected": "Curriculum design choice: Investigate storage engine design.",
+      "original_source": "https://www.oreilly.com/library/view/database-internals/9781492040330/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-DDIA",
+      "title": "Designing Data-Intensive Applications",
+      "type": "book",
+      "author": "Martin Kleppmann (edition represented by linked site)",
+      "phases": [
+        "P07",
+        "P13"
+      ],
+      "purpose": "Compare data-system tradeoffs.",
+      "prerequisites": "U07 structures/algorithms and U08 systems; U17 before distributed sections.",
+      "why_selected": "Curriculum design choice: Compare data-system tradeoffs.",
+      "original_source": "https://dataintensive.net/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Do not transfer author list or locators across editions; local edition absent."
+    },
+    {
+      "id": "R-TOYDB",
+      "title": "toydb",
+      "type": "repository",
+      "author": "erikgrinaker (repository owner)",
+      "phases": [
+        "P07",
+        "P13"
+      ],
+      "purpose": "Inspect an educational database after storage foundations.",
+      "prerequisites": "U11 storage and Rust reading ability; U17 for distributed mechanisms; revision not inspected.",
+      "why_selected": "Curriculum design choice: Inspect an educational database after storage foundations.",
+      "original_source": "https://github.com/erikgrinaker/toydb",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Rust prerequisites required before source-level study; no code behavior verified."
+    },
+    {
+      "id": "R-SQLITE",
+      "title": "SQLite",
+      "type": "reference",
+      "author": "SQLite project",
+      "phases": [
+        "P07"
+      ],
+      "purpose": "Use original database documentation and later inspect implementation.",
+      "prerequisites": "U07 structures/algorithms and U08 systems; U17 before distributed sections.",
+      "why_selected": "Curriculum design choice: Use original database documentation and later inspect implementation.",
+      "original_source": "https://sqlite.org/index.html",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-STATS",
+      "title": "Think Stats, third edition",
+      "type": "book",
+      "author": "Allen B. Downey",
+      "phases": [
+        "P08",
+        "P09"
+      ],
+      "purpose": "Connect probability and statistics with data investigation.",
+      "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
+      "why_selected": "Curriculum design choice: Connect probability and statistics with data investigation.",
+      "original_source": "https://greenteapress.com/wp/think-stats-3e/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-STATS-REPO",
+      "title": "ThinkStats, v3 branch",
+      "type": "repository",
+      "author": "AllenDowney (repository owner)",
+      "phases": [
+        "P08",
+        "P09"
+      ],
+      "purpose": "Reproduce statistical notebook analyses.",
+      "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
+      "why_selected": "Curriculum design choice: Reproduce statistical notebook analyses.",
+      "original_source": "https://github.com/AllenDowney/ThinkStats/tree/v3",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Official author page links this branch; branch is mutable, pin commit before execution."
+    },
+    {
+      "id": "R-CRAFT",
+      "title": "The Craft of Research, fifth edition",
+      "type": "book",
+      "author": "Wayne C. Booth; Gregory G. Colomb; Joseph M. Williams; Joseph Bizup; William T. FitzGerald",
+      "phases": [
+        "P08",
+        "P17"
+      ],
+      "purpose": "Frame questions and evaluate evidence-backed arguments.",
+      "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
+      "why_selected": "Curriculum design choice: Frame questions and evaluate evidence-backed arguments.",
+      "original_source": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-DATA8",
+      "title": "Data 8: Foundations of Data Science",
+      "type": "course",
+      "author": "Data 8 / UC Berkeley",
+      "phases": [
+        "P08",
+        "P09"
+      ],
+      "purpose": "Connect inference, data and computation.",
+      "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
+      "why_selected": "Curriculum design choice: Connect inference, data and computation.",
+      "original_source": "https://data8.org/",
+      "license": "Official course page states textbook CC BY-NC-ND 4.0; other resources vary. Inspect each artifact before reuse.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-PYDATA",
+      "title": "Python for Data Analysis, third edition",
+      "type": "book",
+      "author": "Wes McKinney",
+      "phases": [
+        "P09"
+      ],
+      "purpose": "Build practical data transformation workflows.",
+      "prerequisites": "U12 evidence/measurement; probability before inference; algebra and selected calculus/linear algebra as needed.",
+      "why_selected": "Curriculum design choice: Build practical data transformation workflows.",
+      "original_source": "https://wesmckinney.com/book/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-PYDATA-REPO",
+      "title": "pydata-book",
+      "type": "repository",
+      "author": "wesm (repository owner); Wes McKinney named in repository description",
+      "phases": [
+        "P09"
+      ],
+      "purpose": "Reproduce book notebooks with pinned data and dependencies.",
+      "prerequisites": "U12 evidence/measurement; probability before inference; algebra and selected calculus/linear algebra as needed.",
+      "why_selected": "Curriculum design choice: Reproduce book notebooks with pinned data and dependencies.",
+      "original_source": "https://github.com/wesm/pydata-book",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-SECURITY",
+      "title": "Security Engineering, third edition",
+      "type": "book",
+      "author": "Ross Anderson",
+      "phases": [
+        "P10",
+        "P11"
+      ],
+      "purpose": "Reason about security goals and system boundaries.",
+      "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
+      "why_selected": "Curriculum design choice: Reason about security goals and system boundaries.",
+      "original_source": "https://www.cl.cam.ac.uk/archive/rja14/book.html",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-CRYPTO",
+      "title": "Serious Cryptography, second edition",
+      "type": "book",
+      "author": "Jean-Philippe Aumasson",
+      "phases": [
+        "P10"
+      ],
+      "purpose": "Study cryptographic mechanisms and implementation failure.",
+      "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
+      "why_selected": "Curriculum design choice: Study cryptographic mechanisms and implementation failure.",
+      "original_source": "https://nostarch.com/serious-cryptography-2nd-edition",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-OWASP",
+      "title": "OWASP Cheat Sheet Series",
+      "type": "reference",
+      "author": "OWASP Cheat Sheet Series team",
+      "phases": [
+        "P10",
+        "P11"
+      ],
+      "purpose": "Consult focused secure-implementation guidance.",
+      "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
+      "why_selected": "Curriculum design choice: Consult focused secure-implementation guidance.",
+      "original_source": "https://cheatsheetseries.owasp.org/",
+      "license": "Official footer states CC BY-SA 4.0; inspect individual exceptions before reuse.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-CRYPTOPALS",
+      "title": "The Cryptopals Crypto Challenges",
+      "type": "course",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P10"
+      ],
+      "purpose": "Practice controlled cryptographic failure analysis.",
+      "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
+      "why_selected": "Curriculum design choice: Practice controlled cryptographic failure analysis.",
+      "original_source": "https://cryptopals.com/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "PARTIALLY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Identity verified; individual creators and reuse terms not established here."
+    },
+    {
+      "id": "R-INTERPRETERS",
+      "title": "Crafting Interpreters",
+      "type": "book",
+      "author": "Robert Nystrom; munificent repository account",
+      "phases": [
+        "P12"
+      ],
+      "purpose": "Structure language implementation work.",
+      "prerequisites": "U07 algorithms and U08 systems; selected implementation language fluency.",
+      "why_selected": "Curriculum design choice: Structure language implementation work.",
+      "original_source": "https://github.com/munificent/craftinginterpreters",
+      "license": "Upstream LICENSE: .c/.dart/.h/.java/.lox use MIT; most other files CC BY-NC-ND 4.0, with listed exception. Inspect exact revision before reuse.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Repository README and LICENSE identity/terms inspected; no chapter or implementation processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Original repository LICENSE inspected: https://raw.githubusercontent.com/munificent/craftinginterpreters/master/LICENSE . Code and prose have different terms; do not copy/adapt prose as if MIT licensed."
+    },
+    {
+      "id": "R-INTERPRETERS-REPO",
+      "title": "munificent/craftinginterpreters",
+      "type": "repository",
+      "author": "Robert Nystrom; munificent repository account",
+      "phases": [
+        "P12"
+      ],
+      "purpose": "Inspect original interpreter implementations after independent design.",
+      "prerequisites": "U07 algorithms and U08 systems; Java/C reading ability for the selected implementation.",
+      "why_selected": "Curriculum design choice: Inspect original interpreter implementations after independent design.",
+      "original_source": "https://github.com/munificent/craftinginterpreters",
+      "license": "Upstream LICENSE: .c/.dart/.h/.java/.lox use MIT; most other files CC BY-NC-ND 4.0, with listed exception. Inspect exact revision before reuse.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Repository README and LICENSE identity/terms inspected; no chapter or implementation processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Original repository LICENSE inspected: https://raw.githubusercontent.com/munificent/craftinginterpreters/master/LICENSE . Code and prose have different terms; do not copy/adapt prose as if MIT licensed."
+    },
+    {
+      "id": "R-HOML",
+      "title": "Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow, third edition",
+      "type": "book",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P14"
+      ],
+      "purpose": "Support applied modeling and evaluation.",
+      "prerequisites": "U07 algorithms and U13 statistics; linear algebra, derivatives and chain rule before neural models.",
+      "why_selected": "Curriculum design choice: Support applied modeling and evaluation.",
+      "original_source": "https://github.com/ageron/handson-ml3",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "PARTIALLY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Full title identified by original companion README: https://raw.githubusercontent.com/ageron/handson-ml3/main/README.md . Author metadata still requires verification."
+    },
+    {
+      "id": "R-HOML-REPO",
+      "title": "ageron/handson-ml3",
+      "type": "repository",
+      "author": "ageron (repository owner)",
+      "phases": [
+        "P14"
+      ],
+      "purpose": "Reproduce companion ML notebooks.",
+      "prerequisites": "U07 algorithms and U13 statistics; linear algebra, derivatives and chain rule before neural models.",
+      "why_selected": "Curriculum design choice: Reproduce companion ML notebooks.",
+      "original_source": "https://github.com/ageron/handson-ml3",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-MICROGRAD",
+      "title": "micrograd",
+      "type": "repository",
+      "author": "karpathy (repository owner)",
+      "phases": [
+        "P14"
+      ],
+      "purpose": "Study a small autodifferentiation implementation.",
+      "prerequisites": "U07 algorithms and U13 statistics; linear algebra, derivatives and chain rule before neural models.",
+      "why_selected": "Curriculum design choice: Study a small autodifferentiation implementation.",
+      "original_source": "https://github.com/karpathy/micrograd",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Repository identity/description verified; implementation not inspected.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-EMBEDDED",
+      "title": "Making Embedded Systems, second edition",
+      "type": "book",
+      "author": "Elecia White",
+      "phases": [
+        "P15"
+      ],
+      "purpose": "Plan firmware and resource-constrained systems.",
+      "prerequisites": "U03/U08 machine systems, U12 measurement and relevant calculus/physics bridge.",
+      "why_selected": "Curriculum design choice: Plan firmware and resource-constrained systems.",
+      "original_source": "https://www.oreilly.com/library/view/making-embedded-systems/9781098151539/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-ROBOTICS",
+      "title": "Modern Robotics: Mechanics, Planning, and Control",
+      "type": "book",
+      "author": "Kevin M. Lynch; Frank C. Park",
+      "phases": [
+        "P15"
+      ],
+      "purpose": "Support robot modeling and control.",
+      "prerequisites": "Programming, linear algebra, calculus/partial derivatives, elementary mechanics and linear ODEs; official prerequisite section inspected.",
+      "why_selected": "Curriculum design choice: Support robot modeling and control.",
+      "original_source": "https://hades.mech.northwestern.edu/index.php/Modern_Robotics",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-CELL",
+      "title": "Molecular Biology of the Cell, seventh edition",
+      "type": "book",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P16"
+      ],
+      "purpose": "Anchor biological mechanisms in a domain text.",
+      "prerequisites": "U07 algorithms and U13 analysis; chemistry, cells, genetics and evolution before biological interpretation.",
+      "why_selected": "Curriculum design choice: Anchor biological mechanisms in a domain text.",
+      "original_source": "https://seagull.wwnorton.com/molecularbiologycell",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "PARTIALLY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Publisher page verifies title/edition; full author list must be read from actual edition."
+    },
+    {
+      "id": "R-BIOPYTHON",
+      "title": "Biopython",
+      "type": "reference",
+      "author": "Biopython project",
+      "phases": [
+        "P16"
+      ],
+      "purpose": "Use original biological-computing documentation.",
+      "prerequisites": "U07 algorithms and U13 analysis; chemistry, cells, genetics and evolution before biological interpretation.",
+      "why_selected": "Curriculum design choice: Use original biological-computing documentation.",
+      "original_source": "https://biopython.org/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-DISCRETE",
+      "title": "MIT 6.042J Mathematics for Computer Science, Spring 2015",
+      "type": "course",
+      "author": "MIT OCW; instructors Albert R. Meyer and Adam Chlipala",
+      "phases": [
+        "P03",
+        "P10"
+      ],
+      "purpose": "Close proof, counting and discrete-math prerequisites.",
+      "prerequisites": "U01 representation; elementary arithmetic/algebra diagnostic before proofs and counting.",
+      "why_selected": "Curriculum design choice: Close proof, counting and discrete-math prerequisites.",
+      "original_source": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-LINEAR",
+      "title": "MIT 18.06 Linear Algebra, Spring 2010",
+      "type": "course",
+      "author": "MIT OCW; instructor Gilbert Strang",
+      "phases": [
+        "P09",
+        "P14",
+        "P15"
+      ],
+      "purpose": "Close matrix and vector prerequisites.",
+      "prerequisites": "Elementary algebra diagnostic; vectors/matrices bridge before multivariate regression or ML.",
+      "why_selected": "Curriculum design choice: Close matrix and vector prerequisites.",
+      "original_source": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-CALCULUS",
+      "title": "MIT 18.01SC Single Variable Calculus, Fall 2010",
+      "type": "course",
+      "author": "MIT OpenCourseWare",
+      "phases": [
+        "P09",
+        "P14",
+        "P15"
+      ],
+      "purpose": "Close derivative and integration prerequisites.",
+      "prerequisites": "Algebra/functions diagnostic; derivatives and integrals before continuous models and optimization.",
+      "why_selected": "Curriculum design choice: Close derivative and integration prerequisites.",
+      "original_source": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-PRIVACY",
+      "title": "The Algorithmic Foundations of Differential Privacy",
+      "type": "reference",
+      "author": "Cynthia Dwork; Aaron Roth",
+      "phases": [
+        "P11"
+      ],
+      "purpose": "Provide a formal privacy foundation.",
+      "prerequisites": "U13 probability/statistics and U14 threat models; formal proof practice from U06.",
+      "why_selected": "Curriculum design choice: Provide a formal privacy foundation.",
+      "original_source": "https://www.cis.upenn.edu/~aaroth/privacybook.html",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Pin edition/revision and inspect actual source before study."
+    },
+    {
+      "id": "R-CHEM",
+      "title": "Chemistry 2e",
+      "type": "book",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P16"
+      ],
+      "purpose": "Close chemistry prerequisites for biological interpretation.",
+      "prerequisites": "Arithmetic, units and basic scientific measurement; exact book entry requirements unverified.",
+      "why_selected": "Curriculum design choice: Close chemistry prerequisites for biological interpretation.",
+      "original_source": "https://openstax.org/details/books/chemistry-2e",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "UNVERIFIED",
+      "verification_scope": "URL opened but empty extraction; verify readable original before use.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Primary page returned no readable body; no content or author claims verified."
+    },
+    {
+      "id": "R-PHYSICS",
+      "title": "University Physics Volume 2",
+      "type": "book",
+      "author": "UNVERIFIED \u2014 source required.",
+      "phases": [
+        "P15"
+      ],
+      "purpose": "Close circuit and measurement prerequisites.",
+      "prerequisites": "Algebra, units and calculus as required by the inspected sections; source readability not yet verified.",
+      "why_selected": "Curriculum design choice: Close circuit and measurement prerequisites.",
+      "original_source": "https://openstax.org/details/books/university-physics-volume-2",
+      "license": "UNVERIFIED \u2014 source required.",
+      "verification": "UNVERIFIED",
+      "verification_scope": "URL opened but empty extraction; verify readable original before use.",
+      "checked_on": "2026-09-26",
+      "local_availability": "SOURCE NOT PRESENT",
+      "notes": "Primary page returned no readable body; no content or author claims verified."
+    },
+    {
+      "id": "R-C11",
+      "title": "WG14 N1570 C committee draft",
+      "type": "reference",
+      "author": "ISO/IEC JTC1/SC22/WG14",
+      "phases": [
+        "P02"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "2011-04-12 draft; sections 6.2, 6.3.2.3, 6.5, 7.19; bounded C exemplar semantics inspected.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-RV32",
+      "title": "RV32I Base Integer Instruction Set, version 2.1",
+      "type": "reference",
+      "author": "RISC-V International",
+      "phases": [
+        "P04"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://docs.riscv.org/reference/isa/v20260120/unpriv/rv32.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "20260120 collection; registers, I-type encoding and ADDI arithmetic inspected; subset verified against assembler.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-SV",
+      "title": "UG901 Always Procedures",
+      "type": "reference",
+      "author": "AMD",
+      "phases": [
+        "P01"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://docs.amd.com/r/en-US/ug901-vivado-synthesis/Always-Procedures",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "2026.1 Always Procedures; combinational and flip-flop descriptions inspected; independent RTL simulation.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-IVERILOG",
+      "title": "Icarus Verilog command flags",
+      "type": "reference",
+      "author": "Icarus Verilog project",
+      "phases": [
+        "P01"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://steveicarus.github.io/iverilog/usage/command_line_flags.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "SystemVerilog flag documentation; actual 12.0 tool used for bounded tests.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-SQLITE-LAB",
+      "title": "SQLite query plans and transactions",
+      "type": "reference",
+      "author": "SQLite project",
+      "phases": [
+        "P07"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://www.sqlite.org/eqp.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "EXPLAIN QUERY PLAN and linked transaction documentation; actual local sqlite3 tested.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-SRE",
+      "title": "Service Level Objectives",
+      "type": "reference",
+      "author": "Google SRE book authors",
+      "phases": [
+        "P13"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://sre.google/sre-book/service-level-objectives/",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "SLI/SLO/SLA orientation only; no guarantee or deployment result inferred.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-ELECTRIC",
+      "title": "University Physics Volume 2: Electrical Current",
+      "type": "reference",
+      "author": "OpenStax",
+      "phases": [
+        "P15"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Readable current definition inspected; power ledger is an explicit derivation, not a device rating.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-CPP",
+      "title": "C++ primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P04"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://www.stroustrup.com/bs_faq.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-RUST",
+      "title": "Rust primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P04"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-ZIG",
+      "title": "Zig primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P04"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://ziglang.org/learn/overview/",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-X86",
+      "title": "x86-64 assembly primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P04"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-ARM",
+      "title": "ARM64 assembly primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P15"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://developer.arm.com/documentation/102374/latest/",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "UNVERIFIED",
+      "verification_scope": "Page unavailable/readability insufficient; no detailed claims.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-PY",
+      "title": "Python primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P02"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://docs.python.org/3/reference/executionmodel.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-GO",
+      "title": "Go primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P06"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://go.dev/doc/faq",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-JAVA",
+      "title": "Java primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P12"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-1.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-SQL",
+      "title": "SQL primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P07"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-BASH",
+      "title": "Shell/Bash primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P02"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://www.gnu.org/software/bash/manual/bash.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "UNVERIFIED",
+      "verification_scope": "Page unavailable/readability insufficient; no detailed claims.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    },
+    {
+      "id": "R-LANG-VHDL",
+      "title": "VHDL primary orientation",
+      "type": "reference",
+      "author": "Primary source maintainer; historical author claims limited to inspected introduction",
+      "phases": [
+        "P01"
+      ],
+      "purpose": "Ground the connected systems expansion and bounded exemplars.",
+      "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
+      "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
+      "original_source": "https://ghdl.github.io/ghdl/about.html",
+      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "verification": "IDENTITY VERIFIED",
+      "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
+      "checked_on": "2026-09-27",
+      "local_availability": "Original links only; independent local teaching artifacts available.",
+      "notes": "See research/systems-source-review.md for scope, failed accesses and actual tool validation."
+    }
+  ],
+  "phases": [
+    {
+      "id": "P01",
+      "title": "Computation and the Machine",
+      "directories": [
+        "01-computation",
+        "hardware-description-languages",
+        "foundations"
+      ],
+      "topics": "computation; information representation; binary and number systems; Boolean logic; gates; digital circuits; CPU; memory; machine language; assembly; hardware/software boundary",
+      "resources": [
+        "R-CODE",
+        "R-ELEMENTS",
+        "R-NAND",
+        "R-SV",
+        "R-DISCRETE",
+        "R-ELECTRIC"
+      ],
+      "outcome": "Trace a small instruction through a designed machine; predict state changes before simulation.",
+      "project": "J-01",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P02",
+      "title": "Programming",
+      "directories": [
+        "02-programming",
+        "programming-languages-mastery"
+      ],
+      "topics": "fundamentals; C; Python; data types; functions; recursion; data structures; pointers; memory management; files; debugging; testing; Git",
+      "resources": [
+        "R-C",
+        "R-PYTHON",
+        "R-DIVE",
+        "R-BYOX",
+        "R-C11"
+      ],
+      "outcome": "Implement and debug programs; account for ownership, lifetime and error paths.",
+      "project": "J-02",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P03",
+      "title": "Algorithms",
+      "directories": [
+        "03-algorithms",
+        "algorithmic-problem-solving"
+      ],
+      "topics": "data structures; complexity and Big O; searching; sorting; trees; graphs; dynamic programming; correctness; benchmarking",
+      "resources": [
+        "R-ALGORITHMS",
+        "R-ALGO-PY",
+        "R-DISCRETE"
+      ],
+      "outcome": "Justify correctness and complexity; compare measured behavior with predictions.",
+      "project": "J-03",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P04",
+      "title": "Computer Systems",
+      "directories": [
+        "04-computer-systems"
+      ],
+      "topics": "compilation; machine code; linking; loading; memory layout; stack; heap; caches; system calls; processes; threads; concurrency; reverse engineering",
+      "resources": [
+        "R-CSAPP",
+        "R-DIVE",
+        "R-XV6"
+      ],
+      "outcome": "Trace compiled execution and allocations; distinguish model, source evidence and observation.",
+      "project": "J-04",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P05",
+      "title": "Operating Systems",
+      "directories": [
+        "05-operating-systems"
+      ],
+      "topics": "architecture; scheduling; virtual memory; filesystems; interrupts; system calls; synchronization; kernel/user boundary",
+      "resources": [
+        "R-OSTEP",
+        "R-XV6",
+        "R-OSTEP-HW"
+      ],
+      "outcome": "Explain and test a small kernel change in an isolated emulator.",
+      "project": "J-05",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P06",
+      "title": "Networking",
+      "directories": [
+        "06-networking"
+      ],
+      "topics": "fundamentals; TCP/IP; addressing; routing; TCP; UDP; DNS; HTTP; TLS; sockets; network programming; distributed communication",
+      "resources": [
+        "R-NET",
+        "R-BEEJ",
+        "R-BEEJ-REPO"
+      ],
+      "outcome": "Trace a request across interfaces and explain partial I/O and disconnections.",
+      "project": "J-06",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P07",
+      "title": "Databases and Data Systems",
+      "directories": [
+        "07-databases-data-systems"
+      ],
+      "topics": "data models; relational modeling; SQL; indexes; transactions; concurrency; query execution; storage engines; B-trees; warehouses; lakes; pipelines; lineage; metadata; quality",
+      "resources": [
+        "R-DB",
+        "R-DDIA",
+        "R-SQLITE",
+        "R-TOYDB"
+      ],
+      "outcome": "Build persistence and recovery with explicit transactional boundaries.",
+      "project": "J-07",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P08",
+      "title": "Information Science and Scientific Reasoning",
+      "directories": [
+        "08-information-science",
+        "09-scientific-reasoning",
+        "reverse-engineering-systems"
+      ],
+      "topics": "data, information and knowledge; fact and claim; evidence; context; metadata; provenance; measurement; uncertainty; source criticism; scientific method; experimental design; sampling; correlation and causation; reproducibility and replication",
+      "resources": [
+        "R-CRAFT",
+        "R-STATS",
+        "R-STATS-REPO",
+        "R-DATA8",
+        "R-CODE"
+      ],
+      "outcome": "Trace a claim back to collection and measurement; delimit what the evidence supports.",
+      "project": "J-08",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P09",
+      "title": "Data Science",
+      "directories": [
+        "10-data-science"
+      ],
+      "topics": "probability; statistics; inference; regression; Bayesian reasoning; acquisition; cleaning; validation; EDA; visualization; feature engineering; experimental analysis; scientific computing",
+      "resources": [
+        "R-PYDATA",
+        "R-PYDATA-REPO",
+        "R-STATS",
+        "R-DATA8",
+        "R-LINEAR",
+        "R-CALCULUS"
+      ],
+      "outcome": "Produce a reproducible analysis with uncertainty, leakage checks and data provenance.",
+      "project": "J-09",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P10",
+      "title": "Data Security and Cybersecurity",
+      "directories": [
+        "11-cybersecurity",
+        "12-data-security"
+      ],
+      "topics": "principles; threat modeling; authentication; authorization; access control; cryptography; encryption; hashing; MACs; signatures; integrity; authenticity; secure storage and transmission; network, application and database security; vulnerability analysis; monitoring; incident response; forensics",
+      "resources": [
+        "R-SECURITY",
+        "R-CRYPTO",
+        "R-OWASP",
+        "R-CRYPTOPALS"
+      ],
+      "outcome": "Test security boundaries of a local pipeline against an explicit threat model.",
+      "project": "J-10",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P11",
+      "title": "Privacy and Trusted Information",
+      "directories": [
+        "13-privacy"
+      ],
+      "topics": "classification; minimization; anonymization; pseudonymization; differential privacy; privacy-preserving analytics; auditability; traceability; integrity verification; secure sharing; retention; secure deletion",
+      "resources": [
+        "R-PRIVACY",
+        "R-SECURITY",
+        "R-OWASP"
+      ],
+      "outcome": "Verify recorded transformations while stating what provenance cannot establish about reality.",
+      "project": "J-11",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P12",
+      "title": "Programming Languages and Compilers",
+      "directories": [
+        "14-programming-languages"
+      ],
+      "topics": "language design; lexing; parsing; AST; semantic analysis; types; interpreters; bytecode; virtual machines; code generation; runtimes; garbage collection",
+      "resources": [
+        "R-INTERPRETERS",
+        "R-INTERPRETERS-REPO"
+      ],
+      "outcome": "Implement a language with defined evaluation and error semantics.",
+      "project": "J-12",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P13",
+      "title": "Distributed Systems",
+      "directories": [
+        "15-distributed-systems",
+        "production-systems-engineering"
+      ],
+      "topics": "distributed computation; replication; consistency; consensus; fault tolerance; distributed transactions; scalability; distributed storage",
+      "resources": [
+        "R-DDIA",
+        "R-TOYDB",
+        "R-SRE",
+        "R-SQLITE-LAB"
+      ],
+      "outcome": "State a fault model, inject failures and compare observed histories with promised semantics.",
+      "project": "J-13",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P14",
+      "title": "Machine Learning and AI",
+      "directories": [
+        "16-machine-learning"
+      ],
+      "topics": "regression; classification; clustering; evaluation; optimization; neural networks; deep learning; representation learning; ML systems; model security and reliability",
+      "resources": [
+        "R-HOML",
+        "R-HOML-REPO",
+        "R-MICROGRAD",
+        "R-LINEAR",
+        "R-CALCULUS"
+      ],
+      "outcome": "Derive and check gradients; evaluate generalization separately from training performance.",
+      "project": "J-14",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P15",
+      "title": "Embedded Systems and Robotics",
+      "directories": [
+        "17-embedded-robotics",
+        "hardware-electronics-mastery",
+        "general-machine-systems"
+      ],
+      "topics": "electronics; microcontrollers; embedded C; sensors; actuators; firmware; real-time systems; control; robotics; autonomous systems; hardware/software integration",
+      "resources": [
+        "R-EMBEDDED",
+        "R-ROBOTICS",
+        "R-PHYSICS",
+        "R-ELECTRIC"
+      ],
+      "outcome": "Measure sensor behavior and timing; explain calibration, control and physical limitations.",
+      "project": "J-15",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P16",
+      "title": "Computational Biology",
+      "directories": [
+        "18-computational-biology"
+      ],
+      "topics": "biology; chemistry; genetics; molecular biology; biochemistry; evolution; bioinformatics; genomics; systems biology; mathematical biology; synthetic biology",
+      "resources": [
+        "R-CELL",
+        "R-CHEM",
+        "R-BIOPYTHON"
+      ],
+      "outcome": "Analyze public biological data while separating computational output from biological interpretation.",
+      "project": "J-16",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "P17",
+      "title": "Experimental Research",
+      "directories": [
+        "19-experimental-research",
+        "research-paper-reconstruction"
+      ],
+      "topics": "research questions; literature; evidence evaluation; measurement; design; collection; analysis; reproduction; replication; reproducibility; documentation; scientific writing",
+      "resources": [
+        "R-CRAFT",
+        "R-STATS"
+      ],
+      "outcome": "Reproduce a bounded published result; document discrepancies and limits before proposing extensions.",
+      "project": "J-17",
+      "state": "NOT STARTED"
+    }
+  ],
+  "units": [
+    {
+      "id": "U00",
+      "title": "Source-grounded observation and study protocol",
+      "phase": "P01",
+      "required": [],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-CODE"
+      ],
+      "exit_gate": "Identify the supplied edition and a source locator; distinguish a quotation, explanation, prediction and observation. Local intake is inspected; learner demonstration remains pending.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U01",
+      "title": "Representation and computation foundations",
+      "phase": "P01",
+      "required": [
+        "U00",
+        "F-COUNT",
+        "F-STATE"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-CODE"
+      ],
+      "exit_gate": "Choose an explicit encoding, decode examples and explain assumptions; first book unit chosen only after actual source mapping.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U02",
+      "title": "Logic, gates and combinational arithmetic",
+      "phase": "P01",
+      "required": [
+        "U01",
+        "F-BITS",
+        "F-ELECTRIC"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U04"
+      ],
+      "resources": [
+        "R-CODE",
+        "R-NAND"
+      ],
+      "exit_gate": "Derive truth tables and demonstrate exhaustive small-input tests, including overflow boundaries.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U03",
+      "title": "State, memory, CPU and machine instructions",
+      "phase": "P01",
+      "required": [
+        "U02"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U04"
+      ],
+      "resources": [
+        "R-CODE",
+        "R-ELEMENTS"
+      ],
+      "exit_gate": "Predict register, memory and program-counter changes through a short instruction trace.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U04",
+      "title": "Programming, debugging, files and Git",
+      "phase": "P02",
+      "required": [
+        "U01"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U02",
+        "U03"
+      ],
+      "resources": [
+        "R-PYTHON",
+        "R-C",
+        "R-DIVE"
+      ],
+      "exit_gate": "Write tested small programs; trace pointers and object lifetimes; preserve work with local Git.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U05",
+      "title": "Minimal process and file-descriptor bridge",
+      "phase": "P02",
+      "required": [
+        "U04"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U06"
+      ],
+      "resources": [
+        "R-DIVE",
+        "R-CSAPP"
+      ],
+      "exit_gate": "Explain process creation, execution, waiting and descriptor redirection before implementing the shell.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U06",
+      "title": "Proof, discrete structures and growth",
+      "phase": "P03",
+      "required": [
+        "U01"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U04",
+        "U05"
+      ],
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "exit_gate": "Use sets, functions, induction, invariants, sums and logarithms to justify a simple bound.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U07",
+      "title": "Data structures and algorithms",
+      "phase": "P03",
+      "required": [
+        "U04",
+        "U06"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-ALGORITHMS",
+        "R-ALGO-PY"
+      ],
+      "exit_gate": "Explain correctness, test edge cases, and measure representative workloads without conflating timing with complexity.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U08",
+      "title": "Compiled programs and systems mechanisms",
+      "phase": "P04",
+      "required": [
+        "U03",
+        "U04",
+        "U05"
+      ],
+      "recommended": [
+        "U07"
+      ],
+      "concurrent": [],
+      "resources": [
+        "R-CSAPP",
+        "R-DIVE"
+      ],
+      "exit_gate": "Trace linking, memory layout, syscalls and concurrency; allocator and compiled-program inspection share one systems lab.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U09",
+      "title": "Operating-system internals",
+      "phase": "P05",
+      "required": [
+        "U08"
+      ],
+      "recommended": [
+        "U07"
+      ],
+      "concurrent": [
+        "U10"
+      ],
+      "resources": [
+        "R-OSTEP",
+        "R-XV6",
+        "R-OSTEP-HW"
+      ],
+      "exit_gate": "Trace a kernel operation and test an isolated xv6 modification.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U10",
+      "title": "Networks and network programs",
+      "phase": "P06",
+      "required": [
+        "U05",
+        "U08"
+      ],
+      "recommended": [
+        "U09"
+      ],
+      "concurrent": [
+        "U09",
+        "U11"
+      ],
+      "resources": [
+        "R-NET",
+        "R-BEEJ"
+      ],
+      "exit_gate": "Implement local TCP and HTTP servers with framing, partial I/O and disconnect tests; TLS use precedes crypto internals.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U11",
+      "title": "Storage, databases and pipelines",
+      "phase": "P07",
+      "required": [
+        "U07",
+        "U08"
+      ],
+      "recommended": [
+        "U09",
+        "U10"
+      ],
+      "concurrent": [
+        "U10",
+        "U12"
+      ],
+      "resources": [
+        "R-DB",
+        "R-DDIA",
+        "R-SQLITE"
+      ],
+      "exit_gate": "Test indexing, transactions and recovery; distributed database sections wait for U17; Rust bridge needed before toydb code.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U12",
+      "title": "Evidence, measurement and scientific reasoning",
+      "phase": "P08",
+      "required": [
+        "U04",
+        "U06"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U11"
+      ],
+      "resources": [
+        "R-CRAFT",
+        "R-DATA8",
+        "R-STATS"
+      ],
+      "exit_gate": "Trace claim \u2192 analysis \u2192 data \u2192 measurement \u2192 collection \u2192 source \u2192 reality; identify confounding and uncertainty.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U13",
+      "title": "Probability, statistics and data analysis",
+      "phase": "P09",
+      "required": [
+        "U12"
+      ],
+      "recommended": [
+        "U11"
+      ],
+      "concurrent": [
+        "U14"
+      ],
+      "resources": [
+        "R-STATS",
+        "R-PYDATA",
+        "R-LINEAR",
+        "R-CALCULUS"
+      ],
+      "exit_gate": "Model sampling and uncertainty; acquire linear algebra before multivariate regression and calculus before continuous models.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U14",
+      "title": "Controlled security and cryptography",
+      "phase": "P10",
+      "required": [
+        "U06",
+        "U09",
+        "U10",
+        "U11",
+        "U12"
+      ],
+      "recommended": [
+        "U13"
+      ],
+      "concurrent": [
+        "U13"
+      ],
+      "resources": [
+        "R-SECURITY",
+        "R-CRYPTO",
+        "R-OWASP"
+      ],
+      "exit_gate": "Apply modular arithmetic and discrete probability before crypto; test local threat boundaries with synthetic data.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U15",
+      "title": "Privacy and verifiable provenance",
+      "phase": "P11",
+      "required": [
+        "U13",
+        "U14"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-PRIVACY",
+        "R-OWASP"
+      ],
+      "exit_gate": "Specify a privacy threat model and distinguish integrity/authenticity from evidential truth; prove a small privacy claim before advanced analytics.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U16",
+      "title": "Languages and compilers",
+      "phase": "P12",
+      "required": [
+        "U07",
+        "U08"
+      ],
+      "recommended": [],
+      "concurrent": [
+        "U17"
+      ],
+      "resources": [
+        "R-INTERPRETERS",
+        "R-INTERPRETERS-REPO"
+      ],
+      "exit_gate": "Implement syntax and semantics with negative tests; inspect Java prerequisites if following the original Java implementation.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U17",
+      "title": "Distributed storage and computation",
+      "phase": "P13",
+      "required": [
+        "U09",
+        "U10",
+        "U11",
+        "U12"
+      ],
+      "recommended": [
+        "U14"
+      ],
+      "concurrent": [
+        "U16"
+      ],
+      "resources": [
+        "R-DDIA",
+        "R-TOYDB"
+      ],
+      "exit_gate": "Choose an original consensus paper before consensus implementation; record safety/liveness assumptions and fault traces.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U18",
+      "title": "ML, gradients and evaluation",
+      "phase": "P14",
+      "required": [
+        "U07",
+        "U13"
+      ],
+      "recommended": [
+        "U14"
+      ],
+      "concurrent": [],
+      "resources": [
+        "R-HOML",
+        "R-MICROGRAD",
+        "R-LINEAR",
+        "R-CALCULUS"
+      ],
+      "exit_gate": "First pass matrix algebra, derivatives, partial derivatives and chain-rule diagnostics; compare analytical and numerical gradients.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U19",
+      "title": "Physical measurement, electronics and control",
+      "phase": "P15",
+      "required": [
+        "U03",
+        "U08",
+        "U12",
+        "U13"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-EMBEDDED",
+        "R-ROBOTICS",
+        "R-PHYSICS"
+      ],
+      "exit_gate": "Verify circuit/physics sources; pass units, circuits, mechanics, calculus and differential-equation bridge before control; simulate before selecting hardware.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U20",
+      "title": "Biological foundations and computation",
+      "phase": "P16",
+      "required": [
+        "U07",
+        "U12",
+        "U13"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-CELL",
+        "R-CHEM",
+        "R-BIOPYTHON"
+      ],
+      "exit_gate": "Verify chemistry and biology sources; establish chemistry, cell biology, genetics and evolution before interpreting sequence analyses; no wet-lab work planned.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "U21",
+      "title": "Bounded research reproduction",
+      "phase": "P17",
+      "required": [
+        "U12",
+        "U13"
+      ],
+      "recommended": [
+        "U17",
+        "U18",
+        "U19",
+        "U20"
+      ],
+      "concurrent": [],
+      "resources": [
+        "R-CRAFT",
+        "R-STATS"
+      ],
+      "exit_gate": "Select one original paper and domain prerequisites; reproduce an analysis and delimit agreement, disagreement and uncertainty.",
+      "state": "NOT STARTED",
+      "evidence": []
+    },
+    {
+      "id": "F-COUNT",
+      "title": "Counting, quantities and units",
+      "phase": "P01",
+      "required": [],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "exit_gate": "Use quantities/units and ratios correctly in an internal systems problem.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "foundations/mathematics/counting-and-units/README.md"
+    },
+    {
+      "id": "F-BITS",
+      "title": "Finite positional representations",
+      "phase": "P01",
+      "required": [
+        "F-COUNT"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "exit_gate": "Derive word range, byte order, modular arithmetic and signed interpretation.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "foundations/mathematics/finite-representations/README.md"
+    },
+    {
+      "id": "F-STATE",
+      "title": "State, logic and invariants",
+      "phase": "P01",
+      "required": [
+        "F-COUNT"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "exit_gate": "Trace a transition table and justify initialization/preservation.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "foundations/mathematics/state-and-logic/README.md"
+    },
+    {
+      "id": "F-ELECTRIC",
+      "title": "Electrical quantities and digital abstraction",
+      "phase": "P01",
+      "required": [
+        "F-COUNT"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-ELECTRIC"
+      ],
+      "exit_gate": "Derive energy/power relations and separate logical tests from device measurements.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "foundations/physics/electrical-quantities/README.md"
+    },
+    {
+      "id": "F-CENTRY",
+      "title": "C interface reading bridge",
+      "phase": "P02",
+      "required": [
+        "F-BITS"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-C11"
+      ],
+      "exit_gate": "Explain function, object, pointer, extent and output ownership in the bounded example.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "foundations/programming/c-reading/README.md"
+    },
+    {
+      "id": "L01",
+      "title": "C investigation route",
+      "phase": "P02",
+      "required": [
+        "U04"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-C11"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/01-c/README.md"
+    },
+    {
+      "id": "L02",
+      "title": "C++ investigation route",
+      "phase": "P04",
+      "required": [
+        "U08"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-CPP"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/02-cpp/README.md"
+    },
+    {
+      "id": "L03",
+      "title": "Rust investigation route",
+      "phase": "P04",
+      "required": [
+        "U08"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-RUST"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/03-rust/README.md"
+    },
+    {
+      "id": "L04",
+      "title": "Zig investigation route",
+      "phase": "P04",
+      "required": [
+        "U08"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-ZIG"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/04-zig/README.md"
+    },
+    {
+      "id": "L05",
+      "title": "x86-64 assembly investigation route",
+      "phase": "P04",
+      "required": [
+        "U03"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-X86"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/05-x86-64-assembly/README.md"
+    },
+    {
+      "id": "L06",
+      "title": "ARM64 assembly investigation route",
+      "phase": "P15",
+      "required": [
+        "U19"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-ARM"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/06-arm64-assembly/README.md"
+    },
+    {
+      "id": "L07",
+      "title": "RISC-V assembly investigation route",
+      "phase": "P04",
+      "required": [
+        "U03"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-RV32"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/07-riscv-assembly/README.md"
+    },
+    {
+      "id": "L08",
+      "title": "Python investigation route",
+      "phase": "P02",
+      "required": [
+        "U04"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-PY"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/08-python/README.md"
+    },
+    {
+      "id": "L09",
+      "title": "Go investigation route",
+      "phase": "P06",
+      "required": [
+        "U10"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-GO"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/09-go/README.md"
+    },
+    {
+      "id": "L10",
+      "title": "Java investigation route",
+      "phase": "P12",
+      "required": [
+        "U16"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-JAVA"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/10-java/README.md"
+    },
+    {
+      "id": "L11",
+      "title": "SQL investigation route",
+      "phase": "P07",
+      "required": [
+        "U11"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-SQL"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/11-sql/README.md"
+    },
+    {
+      "id": "L12",
+      "title": "Shell/Bash investigation route",
+      "phase": "P02",
+      "required": [
+        "U04"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-BASH"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/12-shell-bash/README.md"
+    },
+    {
+      "id": "L13",
+      "title": "SystemVerilog/Verilog investigation route",
+      "phase": "P01",
+      "required": [
+        "U02"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-SV"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/13-systemverilog/README.md"
+    },
+    {
+      "id": "L14",
+      "title": "VHDL investigation route",
+      "phase": "P01",
+      "required": [
+        "U02"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-LANG-VHDL"
+      ],
+      "exit_gate": "Complete bounded prepared units and demonstrate debugging, reconstruction and transfer; scaffold presence is not readiness.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/14-vhdl/README.md"
+    },
+    {
+      "id": "U-CEX",
+      "title": "Bounded C byte parser",
+      "phase": "P02",
+      "required": [
+        "F-CENTRY",
+        "U01"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-C11"
+      ],
+      "exit_gate": "Explain, independently implement, test, debug, reconstruct and transfer; learner evidence required before advancement.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/01-c/units/01-byte-parser/README.md",
+      "applied": true
+    },
+    {
+      "id": "U-RVEX",
+      "title": "RV32I ADDI encoding and transition",
+      "phase": "P04",
+      "required": [
+        "F-BITS",
+        "F-STATE",
+        "U01"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-RV32"
+      ],
+      "exit_gate": "Explain, independently implement, test, debug, reconstruct and transfer; learner evidence required before advancement.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "programming-languages-mastery/07-riscv-assembly/units/01-addi/README.md",
+      "applied": true
+    },
+    {
+      "id": "U-SVEX",
+      "title": "Synchronous enabled register",
+      "phase": "P01",
+      "required": [
+        "F-BITS",
+        "F-STATE",
+        "F-ELECTRIC",
+        "U01"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-SV",
+        "R-IVERILOG"
+      ],
+      "exit_gate": "Explain, independently implement, test, debug, reconstruct and transfer; learner evidence required before advancement.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "hardware-description-languages/systemverilog/units/01-enabled-register/README.md",
+      "applied": true
+    },
+    {
+      "id": "U-REEX",
+      "title": "Hidden-state investigation",
+      "phase": "P08",
+      "required": [
+        "F-COUNT",
+        "F-STATE",
+        "U00"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-CODE"
+      ],
+      "exit_gate": "Explain, independently implement, test, debug, reconstruct and transfer; learner evidence required before advancement.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "reverse-engineering-systems/exercises/01-hidden-state/README.md",
+      "applied": true
+    },
+    {
+      "id": "U-PROD",
+      "title": "Event ledger production investigation",
+      "phase": "P07",
+      "required": [
+        "U04",
+        "U11",
+        "U12",
+        "U13"
+      ],
+      "recommended": [],
+      "concurrent": [],
+      "resources": [
+        "R-SQLITE-LAB"
+      ],
+      "exit_gate": "Explain, independently implement, test, debug, reconstruct and transfer; learner evidence required before advancement.",
+      "state": "NOT STARTED",
+      "evidence": [],
+      "path": "production-systems-engineering/labs/event-ledger/README.md",
+      "applied": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "J-01",
+      "title": "Logic To Cpu",
+      "phase": "P01",
+      "slug": "logic-to-cpu",
+      "path": "projects/logic-to-cpu",
+      "status": "PREPARED",
+      "original_resources": [
+        "R-NAND",
+        "R-ELEMENTS"
+      ],
+      "attribution_status": "Recorded; artifact-specific license review required before import.",
+      "outcome": "Trace a small instruction through a designed machine; predict state changes before simulation.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-02",
+      "title": "Unix Shell",
+      "phase": "P02",
+      "slug": "unix-shell",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-C"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Implement and debug programs; account for ownership, lifetime and error paths.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-03",
+      "title": "Algorithms Library",
+      "phase": "P03",
+      "slug": "algorithms-library",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-ALGORITHMS"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Justify correctness and complexity; compare measured behavior with predictions.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-04",
+      "title": "Systems Lab",
+      "phase": "P04",
+      "slug": "systems-lab",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-CSAPP"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Trace compiled execution and allocations; distinguish model, source evidence and observation.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-05",
+      "title": "Xv6 Study",
+      "phase": "P05",
+      "slug": "xv6-study",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-OSTEP"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Explain and test a small kernel change in an isolated emulator.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-06",
+      "title": "Network Servers",
+      "phase": "P06",
+      "slug": "network-servers",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-NET"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Trace a request across interfaces and explain partial I/O and disconnections.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-07",
+      "title": "Storage Engine",
+      "phase": "P07",
+      "slug": "storage-engine",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-DB"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Build persistence and recovery with explicit transactional boundaries.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-08",
+      "title": "Claim Trace",
+      "phase": "P08",
+      "slug": "claim-trace",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-CRAFT"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Trace a claim back to collection and measurement; delimit what the evidence supports.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-09",
+      "title": "Scientific Pipeline",
+      "phase": "P09",
+      "slug": "scientific-pipeline",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-PYDATA"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Produce a reproducible analysis with uncertainty, leakage checks and data provenance.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-10",
+      "title": "Secure Pipeline",
+      "phase": "P10",
+      "slug": "secure-pipeline",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-SECURITY"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Test security boundaries of a local pipeline against an explicit threat model.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-11",
+      "title": "Provenance System",
+      "phase": "P11",
+      "slug": "provenance-system",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-PRIVACY"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Verify recorded transformations while stating what provenance cannot establish about reality.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-12",
+      "title": "Interpreter",
+      "phase": "P12",
+      "slug": "interpreter",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-INTERPRETERS"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Implement a language with defined evaluation and error semantics.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-13",
+      "title": "Replicated Kv",
+      "phase": "P13",
+      "slug": "replicated-kv",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-DDIA"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "State a fault model, inject failures and compare observed histories with promised semantics.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-14",
+      "title": "Autodiff Engine",
+      "phase": "P14",
+      "slug": "autodiff-engine",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-HOML"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Derive and check gradients; evaluate generalization separately from training performance.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-15",
+      "title": "Sensor System",
+      "phase": "P15",
+      "slug": "sensor-system",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-EMBEDDED"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Measure sensor behavior and timing; explain calibration, control and physical limitations.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-16",
+      "title": "Biological Analysis",
+      "phase": "P16",
+      "slug": "biological-analysis",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-CELL"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Analyze public biological data while separating computational output from biological interpretation.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-17",
+      "title": "Research Reproduction",
+      "phase": "P17",
+      "slug": "research-reproduction",
+      "path": null,
+      "status": "PLANNED",
+      "original_resources": [
+        "R-CRAFT"
+      ],
+      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "outcome": "Reproduce a bounded published result; document discrepancies and limits before proposing extensions.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      }
+    },
+    {
+      "id": "J-CAP01",
+      "title": "Software for a understood HDL processor",
+      "phase": "P01",
+      "slug": "j-cap01",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-RV32",
+        "R-SV"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Match a declared ISA subset instruction-by-instruction from C/assembly through HDL CPU.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    },
+    {
+      "id": "J-CAP02",
+      "title": "Kernel and process reconstruction",
+      "phase": "P05",
+      "slug": "j-cap02",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-XV6"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Reproduce a bounded kernel mechanism and inspect processes, memory, files and recovery.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    },
+    {
+      "id": "J-CAP03",
+      "title": "Networked distributed service",
+      "phase": "P13",
+      "slug": "j-cap03",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-NET",
+        "R-SRE"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Build a protocol/service then measure concurrency, retries and partition behavior.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    },
+    {
+      "id": "J-CAP04",
+      "title": "Storage engine and pipeline",
+      "phase": "P07",
+      "slug": "j-cap04",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-SQLITE-LAB"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Connect indexes, transactions, query layer, ingestion and failure recovery.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    },
+    {
+      "id": "J-CAP05",
+      "title": "Secure provenance system",
+      "phase": "P11",
+      "slug": "j-cap05",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-OWASP"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Specify trust boundaries, integrity/authentication, audit and failure detection.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    },
+    {
+      "id": "J-CAP06",
+      "title": "Closed-loop physical machine",
+      "phase": "P15",
+      "slug": "j-cap06",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-ELECTRIC",
+        "R-ROBOTICS"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Trace sensing/electronics/firmware/control/actuation with verified safe equipment.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    },
+    {
+      "id": "J-CAP07",
+      "title": "Unfamiliar-system reconstruction",
+      "phase": "P17",
+      "slug": "j-cap07",
+      "status": "PLANNED",
+      "original_resources": [
+        "R-CRAFT"
+      ],
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "outcome": "Characterize, hypothesize, instrument, reproduce and validate an unknown authorized system.",
+      "stage": "A \u2014 NOT STARTED",
+      "evidence": [],
+      "quality_gates": {
+        "build": "NOT RUN",
+        "tests": "NOT RUN",
+        "behavior": "NOT RUN",
+        "mechanism_explanation": "NOT RUN",
+        "failure_cases": "NOT RUN",
+        "attribution": "NOT RUN",
+        "license": "NOT RUN",
+        "experiments": "NOT RUN",
+        "results": "NOT RUN",
+        "references": "NOT RUN"
+      },
+      "path": null
+    }
+  ],
+  "books": [
+    {
+      "resource_id": "R-CODE",
+      "slug": "code-petzold",
+      "path": "books/code-petzold",
+      "status": "SOURCE NOT PRESENT",
+      "source_path": null,
+      "sha256": null,
+      "edition": null,
+      "inspection_evidence": null
+    }
+  ],
+  "chapters": [
+    {
+      "id": "CODE-01",
+      "resource_id": "R-CODE",
+      "path": "books/code-petzold/generated/chapters/01",
+      "locator": "Portable derived reconstruction; original inspected source intentionally excluded from archive",
+      "status": "PORTABLE_DERIVED",
+      "source_ready": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "C-CODE-01",
+      "label": "SOURCE",
+      "statement": "Shared code mappings connect symbolic patterns with physical realizations.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "Chapter 1, PDF 6\u20138; letter table PDF 7",
+      "artifact": "books/code-petzold/generated/chapters/01/02_DEEP_RECONSTRUCTION.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/02_DEEP_RECONSTRUCTION.md"
+      ]
+    },
+    {
+      "id": "C-CODE-02",
+      "label": "SOURCE",
+      "statement": "The inspected text gives relative mark/gap durations, including an approximate two-dash word gap.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "Chapter 1, PDF 8, timing prose and diagrams",
+      "artifact": "books/code-petzold/generated/chapters/01/04_MECHANISMS.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/04_MECHANISMS.md"
+      ]
+    },
+    {
+      "id": "C-CODE-03",
+      "label": "SOURCE",
+      "statement": "A duration can be classified differently under different sender time scales.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "Chapter 1, PDF 9, opening paragraph",
+      "artifact": "books/code-petzold/generated/chapters/01/05_EXAMPLES.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/05_EXAMPLES.md"
+      ]
+    },
+    {
+      "id": "C-CODE-04",
+      "label": "SOURCE",
+      "statement": "The discussed code does not distinguish letter case.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "Chapter 1, PDF 9, case discussion",
+      "artifact": "books/code-petzold/generated/chapters/01/02_DEEP_RECONSTRUCTION.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/02_DEEP_RECONSTRUCTION.md"
+      ]
+    },
+    {
+      "id": "C-CODE-05",
+      "label": "SOURCE",
+      "statement": "Dot/dash patterns can also be realized vocally.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "Chapter 1, PDF 10, closing discussion",
+      "artifact": "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md"
+      ]
+    },
+    {
+      "id": "C-CODE-06",
+      "label": "DERIVED",
+      "statement": "Deleting boundaries collapses A and ET to the same mark sequence.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "C-CODE-01/02; original collision proof in 06_FORMALISMS.md",
+      "artifact": "books/code-petzold/generated/chapters/01/06_FORMALISMS.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/06_FORMALISMS.md"
+      ]
+    },
+    {
+      "id": "C-CODE-07",
+      "label": "DERIVED",
+      "statement": "The ideal decoder retains unfinished marks until a character boundary or explicit frame end.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "C-CODE-01/02; invariant proof in 06_FORMALISMS.md",
+      "artifact": "books/code-petzold/generated/chapters/01/06_FORMALISMS.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/06_FORMALISMS.md"
+      ]
+    },
+    {
+      "id": "C-CODE-08",
+      "label": "DERIVED",
+      "statement": "Collapsing distinct inputs can prevent their exact recovery without additional information.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "C-CODE-04; original inverse-function counterexample in 06_FORMALISMS.md",
+      "artifact": "books/code-petzold/generated/chapters/01/06_FORMALISMS.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/06_FORMALISMS.md"
+      ]
+    },
+    {
+      "id": "C-CODE-09",
+      "label": "DERIVED",
+      "statement": "Equal mark counts need not imply equal elapsed duration.",
+      "resource_ids": [
+        "R-CODE"
+      ],
+      "locator": "C-CODE-02; E/T calculation in 05_EXAMPLES.md; PDF 9 frequency discussion",
+      "artifact": "books/code-petzold/generated/chapters/01/05_EXAMPLES.md",
+      "status": "VERIFIED",
+      "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",
+      "evidence": [
+        "research/code-source-intake.json",
+        "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+        "books/code-petzold/generated/chapters/01/05_EXAMPLES.md"
+      ]
+    }
+  ],
+  "knowledge_edges": [
+    {
+      "id": "K-CODE-01",
+      "from": "Shared mapping",
+      "relation": "assigns interpretation to",
+      "to": "Symbol pattern",
+      "claim_ids": [
+        "C-CODE-01"
+      ],
+      "artifact": "books/code-petzold/generated/chapters/01/03_CONCEPT_GRAPH.md",
+      "limitations": "Artifact-supported conceptual relationship, not learner mastery. Restricted model; no physical reliability or external standards claim."
+    },
+    {
+      "id": "K-CODE-02",
+      "from": "Agreed time scale",
+      "relation": "constrains classification of",
+      "to": "Observed duration",
+      "claim_ids": [
+        "C-CODE-02",
+        "C-CODE-03"
+      ],
+      "artifact": "books/code-petzold/generated/chapters/01/03_CONCEPT_GRAPH.md",
+      "limitations": "Artifact-supported conceptual relationship, not learner mastery. Restricted model; no physical reliability or external standards claim."
+    },
+    {
+      "id": "K-CODE-03",
+      "from": "Character boundary",
+      "relation": "closes",
+      "to": "Unfinished decoder pattern",
+      "claim_ids": [
+        "C-CODE-06",
+        "C-CODE-07"
+      ],
+      "artifact": "books/code-petzold/generated/chapters/01/03_CONCEPT_GRAPH.md",
+      "limitations": "Artifact-supported conceptual relationship, not learner mastery. Restricted model; no physical reliability or external standards claim."
+    },
+    {
+      "id": "K-CODE-04",
+      "from": "Discarded distinction",
+      "relation": "can prevent",
+      "to": "Exact recovery",
+      "claim_ids": [
+        "C-CODE-08"
+      ],
+      "artifact": "books/code-petzold/generated/chapters/01/03_CONCEPT_GRAPH.md",
+      "limitations": "Artifact-supported conceptual relationship, not learner mastery. Restricted model; no physical reliability or external standards claim."
+    }
+  ],
+  "mastery": [],
+  "experiments": [
+    {
+      "id": "E-001",
+      "title": "Combinational circuit truth-table check",
+      "phase": "P01",
+      "project": "J-01",
+      "path": "experiments/E-001-gate-contract",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-NAND"
+      ],
+      "source_ready": false
+    },
+    {
+      "id": "E-002",
+      "title": "Message-boundary perturbation",
+      "phase": "P01",
+      "project": "J-01",
+      "path": "experiments/E-002-message-boundaries",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-CODE"
+      ],
+      "source_ready": true
+    },
+    {
+      "id": "E-003",
+      "title": "Bounded C byte parser experiment",
+      "phase": "P02",
+      "project": "J-04",
+      "path": "experiments/E-003-u-cex",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-C11"
+      ],
+      "source_ready": true
+    },
+    {
+      "id": "E-004",
+      "title": "RV32I ADDI encoding and transition experiment",
+      "phase": "P04",
+      "project": "J-04",
+      "path": "experiments/E-004-u-rvex",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-RV32"
+      ],
+      "source_ready": true
+    },
+    {
+      "id": "E-005",
+      "title": "Synchronous enabled register experiment",
+      "phase": "P01",
+      "project": "J-01",
+      "path": "experiments/E-005-u-svex",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-SV",
+        "R-IVERILOG"
+      ],
+      "source_ready": true
+    },
+    {
+      "id": "E-006",
+      "title": "Hidden-state investigation experiment",
+      "phase": "P08",
+      "project": "J-08",
+      "path": "experiments/E-006-u-reex",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-CODE"
+      ],
+      "source_ready": true
+    },
+    {
+      "id": "E-007",
+      "title": "Event ledger production investigation experiment",
+      "phase": "P07",
+      "project": "J-07",
+      "path": "experiments/E-007-u-prod",
+      "status": "PLANNED",
+      "observed_result": "NOT YET OBSERVED",
+      "evidence": [],
+      "resources": [
+        "R-SQLITE-LAB"
+      ],
+      "source_ready": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "U-CEX",
+      "unit_id": "U-CEX",
+      "path": "programming-languages-mastery/01-c/units/01-byte-parser",
+      "status": "PREPARED",
+      "bridge": "programming-languages-mastery/01-c/units/01-byte-parser/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-C11"
+      ],
+      "project": "J-04",
+      "experiment": "E-003"
+    },
+    {
+      "id": "U-RVEX",
+      "unit_id": "U-RVEX",
+      "path": "programming-languages-mastery/07-riscv-assembly/units/01-addi",
+      "status": "PREPARED",
+      "bridge": "programming-languages-mastery/07-riscv-assembly/units/01-addi/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-RV32"
+      ],
+      "project": "J-04",
+      "experiment": "E-004"
+    },
+    {
+      "id": "U-SVEX",
+      "unit_id": "U-SVEX",
+      "path": "hardware-description-languages/systemverilog/units/01-enabled-register",
+      "status": "PREPARED",
+      "bridge": "hardware-description-languages/systemverilog/units/01-enabled-register/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-SV",
+        "R-IVERILOG"
+      ],
+      "project": "J-01",
+      "experiment": "E-005"
+    },
+    {
+      "id": "U-REEX",
+      "unit_id": "U-REEX",
+      "path": "reverse-engineering-systems/exercises/01-hidden-state",
+      "status": "PREPARED",
+      "bridge": "reverse-engineering-systems/exercises/01-hidden-state/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-CODE"
+      ],
+      "project": "J-08",
+      "experiment": "E-006"
+    },
+    {
+      "id": "U-PROD",
+      "unit_id": "U-PROD",
+      "path": "production-systems-engineering/labs/event-ledger",
+      "status": "PREPARED",
+      "bridge": "production-systems-engineering/labs/event-ledger/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-SQLITE-LAB"
+      ],
+      "project": "J-07",
+      "experiment": "E-007"
+    },
+    {
+      "id": "F-COUNT",
+      "unit_id": "F-COUNT",
+      "path": "foundations/mathematics/counting-and-units",
+      "status": "PREPARED",
+      "bridge": "foundations/mathematics/counting-and-units/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "project": "J-01",
+      "experiment": "E-002"
+    },
+    {
+      "id": "F-BITS",
+      "unit_id": "F-BITS",
+      "path": "foundations/mathematics/finite-representations",
+      "status": "PREPARED",
+      "bridge": "foundations/mathematics/finite-representations/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "project": "J-01",
+      "experiment": "E-002"
+    },
+    {
+      "id": "F-STATE",
+      "unit_id": "F-STATE",
+      "path": "foundations/mathematics/state-and-logic",
+      "status": "PREPARED",
+      "bridge": "foundations/mathematics/state-and-logic/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-DISCRETE"
+      ],
+      "project": "J-01",
+      "experiment": "E-002"
+    },
+    {
+      "id": "F-ELECTRIC",
+      "unit_id": "F-ELECTRIC",
+      "path": "foundations/physics/electrical-quantities",
+      "status": "PREPARED",
+      "bridge": "foundations/physics/electrical-quantities/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-ELECTRIC"
+      ],
+      "project": "J-01",
+      "experiment": "E-002"
+    },
+    {
+      "id": "F-CENTRY",
+      "unit_id": "F-CENTRY",
+      "path": "foundations/programming/c-reading",
+      "status": "PREPARED",
+      "bridge": "foundations/programming/c-reading/PREREQUISITE_BRIDGE.md",
+      "resources": [
+        "R-C11"
+      ],
+      "project": "J-01",
+      "experiment": "E-002"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "T-LANG",
+      "title": "Programming languages mastery",
+      "path": "programming-languages-mastery",
+      "phase": "P02",
+      "required": [
+        "U04"
+      ],
+      "units": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12",
+        "L13",
+        "L14"
+      ],
+      "resources": [
+        "R-C11"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-HDL",
+      "title": "Hardware description languages",
+      "path": "hardware-description-languages",
+      "phase": "P01",
+      "required": [
+        "U02"
+      ],
+      "units": [
+        "U-SVEX",
+        "L13",
+        "L14"
+      ],
+      "resources": [
+        "R-SV"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-HW",
+      "title": "Hardware and electronics",
+      "path": "hardware-electronics-mastery",
+      "phase": "P15",
+      "required": [
+        "F-COUNT",
+        "F-ELECTRIC"
+      ],
+      "units": [
+        "F-ELECTRIC",
+        "U02",
+        "U19"
+      ],
+      "resources": [
+        "R-ELECTRIC"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-RE",
+      "title": "Reverse engineering systems",
+      "path": "reverse-engineering-systems",
+      "phase": "P08",
+      "required": [
+        "U00"
+      ],
+      "units": [
+        "U-REEX",
+        "U12"
+      ],
+      "resources": [
+        "R-CODE"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-ALGO",
+      "title": "Algorithmic problem solving",
+      "path": "algorithmic-problem-solving",
+      "phase": "P03",
+      "required": [
+        "U04",
+        "U06"
+      ],
+      "units": [
+        "U07"
+      ],
+      "resources": [
+        "R-ALGORITHMS"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-PAPER",
+      "title": "Research paper reconstruction",
+      "path": "research-paper-reconstruction",
+      "phase": "P17",
+      "required": [
+        "U12",
+        "U13"
+      ],
+      "units": [
+        "U21"
+      ],
+      "resources": [
+        "R-CRAFT"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-MACHINE",
+      "title": "General machine systems",
+      "path": "general-machine-systems",
+      "phase": "P15",
+      "required": [
+        "F-COUNT",
+        "F-ELECTRIC"
+      ],
+      "units": [
+        "U19"
+      ],
+      "resources": [
+        "R-ELECTRIC"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-PROD",
+      "title": "Production systems engineering",
+      "path": "production-systems-engineering",
+      "phase": "P13",
+      "required": [
+        "U04",
+        "U12"
+      ],
+      "units": [
+        "U-PROD",
+        "U09",
+        "U10",
+        "U11",
+        "U17",
+        "U18",
+        "U19"
+      ],
+      "resources": [
+        "R-SRE",
+        "R-SQLITE-LAB"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    },
+    {
+      "id": "T-FOUND",
+      "title": "Just-in-time foundations",
+      "path": "foundations",
+      "phase": "P01",
+      "required": [],
+      "units": [
+        "F-COUNT",
+        "F-BITS",
+        "F-STATE",
+        "F-ELECTRIC",
+        "F-CENTRY"
+      ],
+      "resources": [
+        "R-DISCRETE",
+        "R-ELECTRIC"
+      ],
+      "status": "INFRASTRUCTURE",
+      "state": "NOT STARTED"
+    }
+  ],
+  "expansion_plan": {
+    "algorithm_topics": [
+      "arrays",
+      "strings",
+      "hashing",
+      "linked-lists",
+      "stacks",
+      "queues",
+      "recursion",
+      "backtracking",
+      "sorting",
+      "binary-search",
+      "two-pointers",
+      "sliding-window",
+      "prefix-techniques",
+      "heaps",
+      "trees",
+      "binary-search-trees",
+      "tries",
+      "graphs",
+      "bfs",
+      "dfs",
+      "topological-ordering",
+      "shortest-paths",
+      "union-find",
+      "greedy",
+      "dynamic-programming",
+      "bit-manipulation",
+      "intervals",
+      "matrices",
+      "combinatorics",
+      "complexity",
+      "advanced-mixed"
+    ],
+    "problems_per_topic": 20,
+    "paper_domains": [
+      "computer-architecture",
+      "operating-systems",
+      "programming-languages",
+      "compilers",
+      "networking",
+      "distributed-systems",
+      "databases",
+      "data-systems",
+      "information-retrieval",
+      "cybersecurity",
+      "cryptography",
+      "privacy",
+      "machine-learning",
+      "ai-systems",
+      "robotics",
+      "embedded-systems",
+      "computational-biology",
+      "scientific-computing"
+    ],
+    "papers_per_domain": 10,
+    "machine_categories": [
+      "simple-machines",
+      "gears",
+      "levers",
+      "pulleys",
+      "bearings",
+      "motors",
+      "engines",
+      "pumps",
+      "hydraulics",
+      "pneumatics",
+      "generators",
+      "transformers",
+      "batteries",
+      "power-supplies",
+      "sensors",
+      "actuators",
+      "microcontrollers",
+      "embedded-systems",
+      "robots",
+      "vehicles",
+      "manufacturing-machines",
+      "communication-devices",
+      "computers",
+      "servers",
+      "mobile-devices",
+      "network-hardware",
+      "storage-systems",
+      "autonomous-systems",
+      "bicycles",
+      "gearboxes",
+      "compressors",
+      "printers",
+      "washing-machines",
+      "drones",
+      "robot-arms",
+      "cnc-machines"
+    ],
+    "completed_algorithm_topics": [
+      "arrays"
+    ],
+    "completed_paper_domains": [],
+    "completed_machine_units": []
+  }
+}

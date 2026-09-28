@@ -1,0 +1,47 @@
+{
+  "resource_id": "R-CODE",
+  "source_path": "books/code-petzold/source/code-charles-petzold.pdf",
+  "bytes": 9670974,
+  "sha256": "2fa522b604039c033b22c03e0e4259cfba59973212130442887e12ecd2044864",
+  "provenance": "User reported placing this file in the designated source directory. Inspected in place; no copy, move, deletion or download by the assistant. Earlier acquisition history is unverified.",
+  "identity_evidence": "PDF page 2 title/author/copyright; PDF pages 4–5 paperback preface.",
+  "edition": "Numbered edition UNVERIFIED; supplied 25-chapter text has copyright 2009 and paperback preface dated August 16, 2000.",
+  "page_count": 363,
+  "locator_convention": "1-based physical PDF page numbers, including initial page with no extracted text; not printed book pages.",
+  "inspected_text": "Title/front matter; Chapter 1 completely (PDF 6–10); chapter-start headings throughout; back-matter headings PDF 359–363.",
+  "visual_inspection": "Rendered PDF pages 2, 7 and 8; title page, letter-code table, and timing diagrams readable.",
+  "limitations": [
+    "Remaining chapter bodies and illustrations not reviewed for content accuracy/completeness.",
+    "PDF metadata reports calibre conversion; original printed-pagination correspondence is unverified.",
+    "No numbered edition statement found in inspected front matter.",
+    "No blanket redistribution permission inferred."
+  ],
+  "commands": [
+    {
+      "command": [
+        "pdfinfo",
+        "books/code-petzold/source/code-charles-petzold.pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "books/code-petzold/source/code-charles-petzold.pdf",
+        "/tmp/code-petzold-local.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "check-ignore",
+        "-v",
+        "books/code-petzold/source/code-charles-petzold.pdf"
+      ],
+      "exit_code": 0,
+      "output": ".gitignore:2:/books/*/source/*\tbooks/code-petzold/source/code-charles-petzold.pdf\n"
+    }
+  ]
+}

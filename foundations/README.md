@@ -1,0 +1,7 @@
+# Just-in-time foundations
+
+Prepared bridges are original bounded lessons. They do not certify prerequisites. Start with [counting and units](mathematics/counting-and-units/README.md) when that evidence is absent, then take only the bridge required by your next unit. Source evidence for electrical definitions: [OpenStax current](https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current); electrical power is derived explicitly from energy per charge and charge per time, not an invented component specification. C rules are grounded in [N1570](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf), sections 6.2.4, 6.2.5, 6.3.2.3, 6.5.2.1, 6.5.14 and 7.19. Mathematical examples are local derivations.
+
+[Finite representations](mathematics/finite-representations/README.md), [state and logic](mathematics/state-and-logic/README.md), [electrical quantities](physics/electrical-quantities/README.md) and [C interface reading](programming/c-reading/README.md) support the exemplars. A bridge may be prepared before learner evidence exists; `tools/learning_gate.py` reports this difference.
+
+The broader [mathematics](mathematics/README.md), [physics](physics/README.md), [materials](chemistry-materials/README.md) and [statistics](statistics/README.md) maps are planned, not complete courses. Each future lesson must meet the practice and evidence requirements in LEARNING_SYSTEM. No chapter beyond Code's existing first unit is processed.

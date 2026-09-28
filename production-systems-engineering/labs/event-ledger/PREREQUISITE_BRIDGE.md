@@ -1,0 +1,5 @@
+# Prerequisites and learner gate
+
+Required curriculum units: U04 programming, U11 databases, U12 measurement and U13 statistics for percentile interpretation. [Counting/units](../../../foundations/mathematics/counting-and-units/README.md) and [state](../../../foundations/mathematics/state-and-logic/README.md) are prepared. Python, SQL transactions, sampling/percentiles and filesystem runtime lessons remain scaffolded: this prototype is prepared for future use, but the learner gate is BLOCKED until those exact internal lessons and evidence exist. Do not send the learner to an external course or pretend this is the first study unit.
+
+Physics/electronics/materials: no device claims; not required. Statistics: repeated samples, quantiles and workload bias must be taught before inference. Systems: process, file persistence, transaction and concurrency contracts. Programming: Python functions/classes/context managers/exceptions, parameterized SQL and resource lifetime. No prerequisite is satisfied because the benchmark runs for an assistant.

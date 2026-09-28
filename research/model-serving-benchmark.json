@@ -1,0 +1,74 @@
+{
+  "kind": "agent model serving benchmark; no learner evidence",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39"
+  },
+  "scenarios": {
+    "batch_scaling": {
+      "batch_size_1": {
+        "total_requests": 200,
+        "batches_executed": 200,
+        "wall_time_ns": 3264006,
+        "throughput_req_per_sec": 61274.397167162075,
+        "latency": {
+          "p50_ms": 0.011885,
+          "p95_ms": 0.013978,
+          "p99_ms": 0.036354
+        }
+      },
+      "batch_size_4": {
+        "total_requests": 200,
+        "batches_executed": 50,
+        "wall_time_ns": 2817036,
+        "throughput_req_per_sec": 70996.60778208017,
+        "latency": {
+          "p50_ms": 0.011755,
+          "p95_ms": 0.012511,
+          "p99_ms": 0.022572
+        }
+      },
+      "batch_size_16": {
+        "total_requests": 200,
+        "batches_executed": 13,
+        "wall_time_ns": 2838473,
+        "throughput_req_per_sec": 70460.42009207062,
+        "latency": {
+          "p50_ms": 0.011815,
+          "p95_ms": 0.013013,
+          "p99_ms": 0.02191
+        }
+      },
+      "batch_size_64": {
+        "total_requests": 200,
+        "batches_executed": 4,
+        "wall_time_ns": 2974139,
+        "throughput_req_per_sec": 67246.35264189064,
+        "latency": {
+          "p50_ms": 0.012189,
+          "p95_ms": 0.014939,
+          "p99_ms": 0.030535
+        }
+      }
+    },
+    "drift_detection": {
+      "normal_traffic": {
+        "status": "STABLE",
+        "max_psi": 0.07024480263991453,
+        "feature_0_psi": 0.051353680026871254,
+        "feature_1_psi": 0.016064230818046525,
+        "feature_2_psi": 0.059432665793329294,
+        "feature_3_psi": 0.07024480263991453
+      },
+      "shifted_traffic": {
+        "status": "DRIFT_DETECTED",
+        "max_psi": 0.8842775335573515,
+        "feature_0_psi": 0.8275784967683231,
+        "feature_1_psi": 0.7858259779958103,
+        "feature_2_psi": 0.6939334038856575,
+        "feature_3_psi": 0.8842775335573515
+      },
+      "drift_alerts_triggered": 1
+    }
+  }
+}

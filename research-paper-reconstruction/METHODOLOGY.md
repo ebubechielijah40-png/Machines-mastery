@@ -1,0 +1,7 @@
+# From question to evidence
+
+An observation records what an instrument or investigator detects. Measurement assigns a value by a stated procedure and unit. Data are retained representations; information is interpretation in context. A claim asserts something; evidence bears on it under assumptions. A model abstracts mechanisms; an inference moves from premises to a conclusion. Calling a statement a fact needs an inspectable basis; knowledge remains revisable and truth is not guaranteed by a trustworthy storage system.
+
+Make the question operational: what variable would change if the hypothesis were false? Define population, sampling procedure and measurement error before estimating. A larger biased sample can reinforce the wrong account. Hold confounders controlled where possible; correlation does not identify a causal intervention without assumptions. Effect size, uncertainty and practical cost must accompany a significance claim. Probability, variation, confidence and regression require their exact internal foundation lessons before statistical interpretation.
+
+Reproduction repeats a specified analysis/setup; replication tests a claim under a meaningfully changed setup, with the distinction declared. Preserve failed runs and competing explanations. Scientific writing should connect claim → method → observation → uncertainty, and literature relationships should distinguish support, contradiction, dependency and shared assumptions. No numerical research result is invented here.

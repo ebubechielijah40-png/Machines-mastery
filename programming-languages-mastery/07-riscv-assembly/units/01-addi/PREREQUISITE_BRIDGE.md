@@ -1,0 +1,3 @@
+# Required bridge
+
+Mathematics: [finite words](../../../../foundations/mathematics/finite-representations/README.md) teaches base two/hexadecimal, shifts, masks, remainders and two's complement. [State](../../../../foundations/mathematics/state-and-logic/README.md) teaches the transition model. Programming: no Python required for paper traces; implementation work first needs the local Python language route, which remains scaffolded beyond these explained pseudocode operations. Systems: register and instruction are introduced here. Physics/electronics/materials/statistics: not required for architectural ADDI, because electrical implementation and timing are outside this unit. No prior learner evidence exists.

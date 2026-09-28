@@ -1,0 +1,3 @@
+# Primary evidence
+
+[SQLite EXPLAIN QUERY PLAN](https://www.sqlite.org/eqp.html), [transactions](https://www.sqlite.org/lang_transaction.html), [Python sqlite3](https://docs.python.org/3/library/sqlite3.html), [perf_counter](https://docs.python.org/3/library/time.html#time.perf_counter_ns), inspected 2026-09-27. Documentation may describe a newer Python version than the actual local interpreter; the validation record stores local versions and tests the used subset. All code, synthetic data and experiments are original. No performance claim comes from documentation. Measurements must point to actual raw output.

@@ -1,0 +1,409 @@
+{
+  "kind": "agent bounded algorithm measurement; no learner evidence",
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "cases": [
+    {
+      "samples_ns": [
+        3900,
+        3208,
+        983,
+        594,
+        899
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 8,
+      "name": "constant_index",
+      "n": 16,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        5047,
+        2742,
+        1186,
+        1034,
+        869
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 15,
+      "name": "binary_search",
+      "n": 16,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        3839,
+        2437,
+        1451,
+        1152,
+        1139
+      ],
+      "peak_traced_bytes_separate_run": 48,
+      "result": 120,
+      "name": "linear_sum",
+      "n": 16,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        7869,
+        4047,
+        2519,
+        2176,
+        2140
+      ],
+      "peak_traced_bytes_separate_run": 200,
+      "result": 15,
+      "name": "sort",
+      "n": 16,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        35970,
+        30826,
+        28159,
+        27151,
+        27350
+      ],
+      "peak_traced_bytes_separate_run": 128,
+      "result": [
+        false,
+        120
+      ],
+      "name": "quadratic_unique_check",
+      "n": 16,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        13963,
+        7294,
+        5825,
+        5395,
+        5371
+      ],
+      "peak_traced_bytes_separate_run": 776,
+      "result": [
+        false,
+        16
+      ],
+      "name": "expected_linear_hash_check",
+      "n": 16,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        1645,
+        884,
+        618,
+        517,
+        540
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 32,
+      "name": "constant_index",
+      "n": 64,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        2402,
+        1113,
+        1020,
+        906,
+        931
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 63,
+      "name": "binary_search",
+      "n": 64,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        3839,
+        2786,
+        2616,
+        2460,
+        2457
+      ],
+      "peak_traced_bytes_separate_run": 48,
+      "result": 2016,
+      "name": "linear_sum",
+      "n": 64,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        11003,
+        5055,
+        4484,
+        4251,
+        4134
+      ],
+      "peak_traced_bytes_separate_run": 584,
+      "result": 63,
+      "name": "sort",
+      "n": 64,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        452200,
+        466379,
+        457688,
+        445272,
+        484769
+      ],
+      "peak_traced_bytes_separate_run": 160,
+      "result": [
+        false,
+        2016
+      ],
+      "name": "quadratic_unique_check",
+      "n": 64,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        30222,
+        20285,
+        17978,
+        18238,
+        18002
+      ],
+      "peak_traced_bytes_separate_run": 2824,
+      "result": [
+        false,
+        64
+      ],
+      "name": "expected_linear_hash_check",
+      "n": 64,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        1468,
+        761,
+        625,
+        543,
+        539
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 128,
+      "name": "constant_index",
+      "n": 256,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        3312,
+        1097,
+        1314,
+        1129,
+        992
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 255,
+      "name": "binary_search",
+      "n": 256,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        8918,
+        7454,
+        7148,
+        7053,
+        7027
+      ],
+      "peak_traced_bytes_separate_run": 48,
+      "result": 32640,
+      "name": "linear_sum",
+      "n": 256,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        23402,
+        13808,
+        13046,
+        12899,
+        30664
+      ],
+      "peak_traced_bytes_separate_run": 2120,
+      "result": 255,
+      "name": "sort",
+      "n": 256,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        7447771,
+        6849719,
+        6679069,
+        6578759,
+        8496975
+      ],
+      "peak_traced_bytes_separate_run": 160,
+      "result": [
+        false,
+        32640
+      ],
+      "name": "quadratic_unique_check",
+      "n": 256,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        135931,
+        62078,
+        56990,
+        56367,
+        56709
+      ],
+      "peak_traced_bytes_separate_run": 10504,
+      "result": [
+        false,
+        256
+      ],
+      "name": "expected_linear_hash_check",
+      "n": 256,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        2526,
+        1426,
+        1031,
+        755,
+        754
+      ],
+      "peak_traced_bytes_separate_run": 32,
+      "result": 512,
+      "name": "constant_index",
+      "n": 1024,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        4368,
+        1865,
+        1370,
+        1318,
+        1188
+      ],
+      "peak_traced_bytes_separate_run": 60,
+      "result": 1023,
+      "name": "binary_search",
+      "n": 1024,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        29205,
+        26893,
+        26814,
+        27301,
+        42127
+      ],
+      "peak_traced_bytes_separate_run": 48,
+      "result": 523776,
+      "name": "linear_sum",
+      "n": 1024,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        67146,
+        67086,
+        44611,
+        57330,
+        75127
+      ],
+      "peak_traced_bytes_separate_run": 12352,
+      "result": 1023,
+      "name": "sort",
+      "n": 1024,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        130640443,
+        121088829,
+        120675977,
+        115329363,
+        107256896
+      ],
+      "peak_traced_bytes_separate_run": 256,
+      "result": [
+        false,
+        523776
+      ],
+      "name": "quadratic_unique_check",
+      "n": 1024,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        195836,
+        160850,
+        161044,
+        169312,
+        160527
+      ],
+      "peak_traced_bytes_separate_run": 41256,
+      "result": [
+        false,
+        1024
+      ],
+      "name": "expected_linear_hash_check",
+      "n": 1024,
+      "distribution": "unique increasing, except sort uses even/odd interleave"
+    },
+    {
+      "samples_ns": [
+        25358,
+        20039,
+        19683,
+        19751,
+        19737
+      ],
+      "peak_traced_bytes_separate_run": 0,
+      "result": 127,
+      "name": "exponential_recursion",
+      "n": 6,
+      "distribution": "full binary recursion tree"
+    },
+    {
+      "samples_ns": [
+        311235,
+        305176,
+        303377,
+        326062,
+        304799
+      ],
+      "peak_traced_bytes_separate_run": 128,
+      "result": 2047,
+      "name": "exponential_recursion",
+      "n": 10,
+      "distribution": "full binary recursion tree"
+    },
+    {
+      "samples_ns": [
+        4741063,
+        4610660,
+        4570635,
+        4677004,
+        4578918
+      ],
+      "peak_traced_bytes_separate_run": 256,
+      "result": 32767,
+      "name": "exponential_recursion",
+      "n": 14,
+      "distribution": "full binary recursion tree"
+    }
+  ]
+}

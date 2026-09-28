@@ -1,0 +1,3 @@
+# Benchmarks
+
+Run benchmark.py before drawing performance conclusions. It retains 100 individual query timings per trial, three trials per stage, p50/p95/p99 by nearest-rank, call throughput, CPU time, file bytes, insertion/index build time and Linux process max RSS. RSS is a process high-water mark, not per-query allocation; stages share a process and warmed OS caches. Trial metrics are cumulative within each stage. Cache warms during the first trial; later trials are fully warm. Do not hide that distinction or call this open-loop load testing. Source/schema/workload are held fixed while index/cache stages change; ordering and warmup are limitations. Actual agent outputs are linked in RESULTS after execution; no learner result is inferred.
