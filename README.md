@@ -28,7 +28,7 @@ The portable archive does not bundle the copyrighted *Code* source. A previously
 | [Mastery](MASTERY.md) | Evidence-based learner states, never inferred from file counts. |
 | [Research](research/README.md) / [notes](notes/README.md) | Research questions, logs, corrections and unaided learner work. |
 | [Templates](templates/README.md) / [tools](tools/README.md) | Reusable contracts and inspectable, local Python tooling. |
-| [Audit](SYSTEM_AUDIT.md) / [overnight report](OVERNIGHT_REPORT.md) | Setup evidence, decisions, limits and handoff. |
+|
 
 ## Local commands
 
@@ -67,7 +67,7 @@ Begin with [counting, quantities and units](foundations/mathematics/counting-and
 | [Paper seminar](research-paper-reconstruction/README.md) | Source-gated research reconstruction and 10-paper domain quotas |
 | [Production](production-systems-engineering/README.md) | Build, measure, fail, recover and scale |
 
-[Expansion report](SYSTEMS_MASTERY_EXPANSION_REPORT.md) distinguishes full exemplars from scaffolds and records validation limits. [Reconstruction drills](reconstruction-drills/README.md) and [unknown-system challenges](unknown-system-challenges/README.md) test generative understanding. Nothing is marked studied or mastered.
+[Reconstruction drills](reconstruction-drills/README.md) and [unknown-system challenges](unknown-system-challenges/README.md) test generative understanding. Nothing is marked studied or mastered.
 
 ## Self-contained completion layer
 
