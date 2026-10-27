@@ -1,0 +1,155 @@
+{
+  "observed_at_utc": "2026-10-23T21:46:54.482717+00:00",
+  "environment": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+  },
+  "build_command": [
+    "/usr/bin/cc",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O2",
+    "/workspace/scratch/9b275ae18bcb/development/machines-mastery/reverse-engineering-systems/exercises/02-binary-records/reference/oracle.c",
+    "-o",
+    "/tmp/mm-binary-lvnun9i3/oracle"
+  ],
+  "oracle_source_sha256": "e8fc3a6d2bee9b77ccdfc82df35df611f2f523eb5ec05638706f7a19c9207627",
+  "observed_binary_sha256": "ace6823e1a0abf24f826b605bc989add8ef87014b57cd4e599e1aac8448384fe",
+  "probes": [
+    {
+      "label": "baseline",
+      "input": {
+        "sequence": 0,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d5801000000000000007913",
+      "byte_count": 12
+    },
+    {
+      "label": "sequence_one",
+      "input": {
+        "sequence": 1,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d5801000100000000003cb3",
+      "byte_count": 12
+    },
+    {
+      "label": "sequence_carry",
+      "input": {
+        "sequence": 256,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d580100000100000000d342",
+      "byte_count": 12
+    },
+    {
+      "label": "asymmetric_sequence",
+      "input": {
+        "sequence": 4660,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d58010034120000000010e7",
+      "byte_count": 12
+    },
+    {
+      "label": "sample_one",
+      "input": {
+        "sequence": 0,
+        "sample": 1,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d5801000000000100004e23",
+      "byte_count": 12
+    },
+    {
+      "label": "sample_carry",
+      "input": {
+        "sequence": 0,
+        "sample": 256,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d5801000000010000000fa7",
+      "byte_count": 12
+    },
+    {
+      "label": "sample_negative",
+      "input": {
+        "sequence": 0,
+        "sample": -1,
+        "enabled": false,
+        "payload_hex": ""
+      },
+      "output_hex": "4d5801000000ffff0000fdd3",
+      "byte_count": 12
+    },
+    {
+      "label": "flag_only",
+      "input": {
+        "sequence": 0,
+        "sample": 0,
+        "enabled": true,
+        "payload_hex": ""
+      },
+      "output_hex": "4d580101000000000000c172",
+      "byte_count": 12
+    },
+    {
+      "label": "one_zero_byte",
+      "input": {
+        "sequence": 0,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": "00"
+      },
+      "output_hex": "4d58010000000000010000cb8e",
+      "byte_count": 13
+    },
+    {
+      "label": "two_distinct_bytes",
+      "input": {
+        "sequence": 0,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": "41ff"
+      },
+      "output_hex": "4d58010000000000020041ff5df6",
+      "byte_count": 14
+    },
+    {
+      "label": "same_sum_swapped",
+      "input": {
+        "sequence": 0,
+        "sample": 0,
+        "enabled": false,
+        "payload_hex": "ff41"
+      },
+      "output_hex": "4d580100000000000200ff4126e1",
+      "byte_count": 14
+    },
+    {
+      "label": "maximum_payload",
+      "input": {
+        "sequence": 65535,
+        "sample": -32768,
+        "enabled": true,
+        "payload_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"
+      },
+      "output_hex": "4d580101ffff80002000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1fc222",
+      "byte_count": 44
+    }
+  ],
+  "limits": "Actual locally compiled oracle outputs. Source is available after the learner attempt; observations alone do not identify a unique internal implementation."
+}

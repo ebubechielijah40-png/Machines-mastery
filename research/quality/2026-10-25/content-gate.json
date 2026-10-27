@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "tools/quality_audit.py",
+    "--json",
+    "research/quality/2026-10-25/content-audit-strict.json"
+  ],
+  "observed_at_utc": "2026-10-25T06:53:37.843657+00:00",
+  "exit_code": 1,
+  "counts": {
+    "missing-assessment": 285,
+    "missing-experiment": 387,
+    "missing-reference-trail": 375,
+    "near-empty-instruction": 119,
+    "placeholder-instruction": 6,
+    "repeated-template": 600,
+    "unverified-paper-dossier": 11
+  },
+  "findings": 1783,
+  "scope": "Unresolved strict risk inventory; not a quality pass."
+}

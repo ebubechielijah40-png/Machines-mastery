@@ -1,0 +1,70 @@
+WARNING: R-CODE: license unverified; no importing before review
+WARNING: R-ELEMENTS: license unverified; no importing before review
+WARNING: R-C: UNVERIFIED identity/metadata
+WARNING: R-C: license unverified; no importing before review
+WARNING: R-BYOX: license unverified; no importing before review
+WARNING: R-ALGORITHMS: license unverified; no importing before review
+WARNING: R-ALGO-PY: license unverified; no importing before review
+WARNING: R-CSAPP: license unverified; no importing before review
+WARNING: R-DIVE: license unverified; no importing before review
+WARNING: R-OSTEP: license unverified; no importing before review
+WARNING: R-XV6: license unverified; no importing before review
+WARNING: R-OSTEP-HW: license unverified; no importing before review
+WARNING: R-NET: PARTIALLY VERIFIED identity/metadata
+WARNING: R-NET: license unverified; no importing before review
+WARNING: R-BEEJ: license unverified; no importing before review
+WARNING: R-BEEJ-REPO: license unverified; no importing before review
+WARNING: R-DB: license unverified; no importing before review
+WARNING: R-DDIA: license unverified; no importing before review
+WARNING: R-TOYDB: license unverified; no importing before review
+WARNING: R-SQLITE: license unverified; no importing before review
+WARNING: R-STATS: license unverified; no importing before review
+WARNING: R-STATS-REPO: license unverified; no importing before review
+WARNING: R-CRAFT: license unverified; no importing before review
+WARNING: R-PYDATA: license unverified; no importing before review
+WARNING: R-PYDATA-REPO: license unverified; no importing before review
+WARNING: R-SECURITY: license unverified; no importing before review
+WARNING: R-CRYPTO: license unverified; no importing before review
+WARNING: R-CRYPTOPALS: PARTIALLY VERIFIED identity/metadata
+WARNING: R-CRYPTOPALS: license unverified; no importing before review
+WARNING: R-HOML: PARTIALLY VERIFIED identity/metadata
+WARNING: R-HOML: license unverified; no importing before review
+WARNING: R-HOML-REPO: license unverified; no importing before review
+WARNING: R-MICROGRAD: license unverified; no importing before review
+WARNING: R-EMBEDDED: license unverified; no importing before review
+WARNING: R-ROBOTICS: license unverified; no importing before review
+WARNING: R-CELL: PARTIALLY VERIFIED identity/metadata
+WARNING: R-CELL: license unverified; no importing before review
+WARNING: R-BIOPYTHON: license unverified; no importing before review
+WARNING: R-DISCRETE: license unverified; no importing before review
+WARNING: R-LINEAR: license unverified; no importing before review
+WARNING: R-CALCULUS: license unverified; no importing before review
+WARNING: R-PRIVACY: license unverified; no importing before review
+WARNING: R-CHEM: UNVERIFIED identity/metadata
+WARNING: R-CHEM: license unverified; no importing before review
+WARNING: R-PHYSICS: UNVERIFIED identity/metadata
+WARNING: R-PHYSICS: license unverified; no importing before review
+WARNING: R-C11: license unverified; no importing before review
+WARNING: R-RV32: license unverified; no importing before review
+WARNING: R-SV: license unverified; no importing before review
+WARNING: R-IVERILOG: license unverified; no importing before review
+WARNING: R-SQLITE-LAB: license unverified; no importing before review
+WARNING: R-SRE: license unverified; no importing before review
+WARNING: R-ELECTRIC: license unverified; no importing before review
+WARNING: R-LANG-CPP: license unverified; no importing before review
+WARNING: R-LANG-RUST: license unverified; no importing before review
+WARNING: R-LANG-ZIG: license unverified; no importing before review
+WARNING: R-LANG-X86: license unverified; no importing before review
+WARNING: R-LANG-ARM: UNVERIFIED identity/metadata
+WARNING: R-LANG-ARM: license unverified; no importing before review
+WARNING: R-LANG-PY: license unverified; no importing before review
+WARNING: R-LANG-GO: license unverified; no importing before review
+WARNING: R-LANG-JAVA: license unverified; no importing before review
+WARNING: R-LANG-SQL: license unverified; no importing before review
+WARNING: R-LANG-BASH: UNVERIFIED identity/metadata
+WARNING: R-LANG-BASH: license unverified; no importing before review
+WARNING: R-LANG-VHDL: license unverified; no importing before review
+WARNING: R-CODE: SOURCE NOT PRESENT; chapter processing blocked
+WARNING: CODE-01: portable derived artifact; original source excluded, exact source verification unavailable in this archive
+0 errors; 68 known source/license warnings.
+Structural validation only: no claim truth, license clearance or learner mastery is certified.

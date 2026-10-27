@@ -1,4 +1,4 @@
-"""Benchmark for model serving throughput, dynamic batch latency percentiles, and drift monitoring."""
+"""Finite serial chunking and synthetic drift benchmark; no dynamic batching."""
 import argparse
 import json
 from pathlib import Path

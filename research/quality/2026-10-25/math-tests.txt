@@ -1,0 +1,18 @@
+test_adaptive_closed_form_and_call_count (test_ivp.IVPTests.test_adaptive_closed_form_and_call_count) ... ok
+test_decay_stability_is_not_positivity (test_ivp.IVPTests.test_decay_stability_is_not_positivity) ... ok
+test_discrete_euler_oracle (test_ivp.IVPTests.test_discrete_euler_oracle) ... ok
+test_forward_oscillator_energy (test_ivp.IVPTests.test_forward_oscillator_energy) ... ok
+test_fraction_linear_amplification (test_ivp.IVPTests.test_fraction_linear_amplification) ... ok
+test_manufactured_nonautonomous_polynomial (test_ivp.IVPTests.test_manufactured_nonautonomous_polynomial) ... ok
+test_nonfinite_shape_and_bounded_iterator (test_ivp.IVPTests.test_nonfinite_shape_and_bounded_iterator) ... ok
+test_order_on_exact_decay (test_ivp.IVPTests.test_order_on_exact_decay) ... ok
+test_resource_and_progress_boundaries (test_ivp.IVPTests.test_resource_and_progress_boundaries) ... ok
+test_smooth_pulse_local_agreement_failure (test_ivp.IVPTests.test_smooth_pulse_local_agreement_failure) ... ok
+test_symplectic_fraction_and_invariant (test_ivp.IVPTests.test_symplectic_fraction_and_invariant) ... ok
+test_unit_rescaling (test_ivp.IVPTests.test_unit_rescaling) ... ok
+test_zero_duration_and_final_allowed_attempt (test_ivp.IVPTests.test_zero_duration_and_final_allowed_attempt) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.012s
+
+OK

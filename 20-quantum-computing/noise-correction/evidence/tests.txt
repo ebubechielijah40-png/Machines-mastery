@@ -1,0 +1,14 @@
+test_all_eight_masks_and_logical_noise_formula (test_noise.NoiseTests.test_all_eight_masks_and_logical_noise_formula) ... ok
+test_amplitude_damping_matches_independent_entry_formula (test_noise.NoiseTests.test_amplitude_damping_matches_independent_entry_formula) ... ok
+test_density_outer_product_and_mixture_are_different (test_noise.NoiseTests.test_density_outer_product_and_mixture_are_different) ... ok
+test_every_single_bit_error_recovers_complex_superposition (test_noise.NoiseTests.test_every_single_bit_error_recovers_complex_superposition) ... ok
+test_invalid_states_channels_and_probabilities (test_noise.NoiseTests.test_invalid_states_channels_and_probabilities) ... ok
+test_phase_error_survives_and_syndrome_measurement_branches (test_noise.NoiseTests.test_phase_error_survives_and_syndrome_measurement_branches) ... ok
+test_phase_flip_closed_form_and_purity_counterexample (test_noise.NoiseTests.test_phase_flip_closed_form_and_purity_counterexample) ... ok
+test_random_states_channel_validity_and_pure_state_agreement (test_noise.NoiseTests.test_random_states_channel_validity_and_pure_state_agreement) ... ok
+test_x_measurement_exposes_unseen_coherence (test_noise.NoiseTests.test_x_measurement_exposes_unseen_coherence) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.041s
+
+OK

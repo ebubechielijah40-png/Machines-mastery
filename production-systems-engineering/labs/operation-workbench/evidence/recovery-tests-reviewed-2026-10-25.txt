@@ -1,0 +1,30 @@
+test_atomic_idempotency_conflict_and_retained_reply (test_operations.OperationsTests.test_atomic_idempotency_conflict_and_retained_reply) ... ok
+test_bounded_admission_and_exhaustion (test_operations.OperationsTests.test_bounded_admission_and_exhaustion) ... ok
+test_concurrent_duplicate_has_one_effect (test_operations.OperationsTests.test_concurrent_duplicate_has_one_effect) ... ok
+test_exact_slo_budget_and_percentile_denominator (test_operations.OperationsTests.test_exact_slo_budget_and_percentile_denominator) ... ok
+test_expired_queued_request_does_not_apply (test_operations.OperationsTests.test_expired_queued_request_does_not_apply) ... ok
+test_metric_validation_and_clock_order (test_operations.OperationsTests.test_metric_validation_and_clock_order) ... ok
+test_postcommit_unknown_and_restart_reconciliation (test_operations.OperationsTests.test_postcommit_unknown_and_restart_reconciliation) ... ok
+test_precommit_failure_has_no_partial_effect (test_operations.OperationsTests.test_precommit_failure_has_no_partial_effect) ... ok
+test_service_outcome_accounting_under_controlled_faults (test_operations.OperationsTests.test_service_outcome_accounting_under_controlled_faults) ... ok
+test_validation_and_counter_bound_rollback (test_operations.OperationsTests.test_validation_and_counter_bound_rollback) ... ok
+test_byte_and_logical_damage_are_separate_checks (test_recovery.RecoveryTests.test_byte_and_logical_damage_are_separate_checks) ... ok
+test_conflicting_original_response_blocks_promotion (test_recovery.RecoveryTests.test_conflicting_original_response_blocks_promotion) ... ok
+test_consistent_backup_restore_and_original_response (test_recovery.RecoveryTests.test_consistent_backup_restore_and_original_response) ... ok
+test_create_only_snapshot_and_restore_preserve_existing (test_recovery.RecoveryTests.test_create_only_snapshot_and_restore_preserve_existing) ... ok
+test_missing_manifest_and_input_contracts (test_recovery.RecoveryTests.test_missing_manifest_and_input_contracts) ... ok
+test_newer_external_receipt_blocks_stale_restore (test_recovery.RecoveryTests.test_newer_external_receipt_blocks_stale_restore) ... ok
+test_wal_only_commit_is_not_captured_by_naive_main_copy (test_recovery.RecoveryTests.test_wal_only_commit_is_not_captured_by_naive_main_copy) ... ok
+test_actual_release_rollback_backup_and_recovery (test_release.ReleaseTests.test_actual_release_rollback_backup_and_recovery) ... ok
+test_wire_schema_conflict_and_readiness (test_release.ReleaseTests.test_wire_schema_conflict_and_readiness) ... ok
+test_average_of_percentiles_is_wrong (test_telemetry.TelemetryTests.test_average_of_percentiles_is_wrong) ... ok
+test_bounds_finite_windows_and_non_boolean_counts (test_telemetry.TelemetryTests.test_bounds_finite_windows_and_non_boolean_counts) ... ok
+test_every_split_pools_exact_cumulative_counts (test_telemetry.TelemetryTests.test_every_split_pools_exact_cumulative_counts) ... ok
+test_overflow_and_schema_conservation (test_telemetry.TelemetryTests.test_overflow_and_schema_conservation) ... ok
+test_reader_corruption_and_composition_regressions (test_telemetry.TelemetryTests.test_reader_corruption_and_composition_regressions) ... ok
+test_two_window_policy_and_empty_denominators (test_telemetry.TelemetryTests.test_two_window_policy_and_empty_denominators) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.814s
+
+OK

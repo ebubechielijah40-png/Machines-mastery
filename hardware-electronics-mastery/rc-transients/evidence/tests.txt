@@ -1,0 +1,22 @@
+COMMAND: python3 hardware-electronics-mastery/code/test_rc_lab.py
+EXIT: 0
+STDOUT:
+rc_lab: PASS
+STDERR:
+test_analytic_ode_residual (__main__.RCTests.test_analytic_ode_residual) ... ok
+test_bad_model_inputs (__main__.RCTests.test_bad_model_inputs) ... ok
+test_discharge_signed_and_precharged (__main__.RCTests.test_discharge_signed_and_precharged) ... ok
+test_energy_balance_by_numerical_quadrature (__main__.RCTests.test_energy_balance_by_numerical_quadrature) ... ok
+test_euler_convergence_at_fixed_horizon (__main__.RCTests.test_euler_convergence_at_fixed_horizon) ... ok
+test_euler_physical_range_and_instability (__main__.RCTests.test_euler_physical_range_and_instability) ... ok
+test_initial_state_and_equilibrium (__main__.RCTests.test_initial_state_and_equilibrium) ... ok
+test_meter_loading_parameters (__main__.RCTests.test_meter_loading_parameters) ... ok
+test_reference_case_and_threshold_inverse (__main__.RCTests.test_reference_case_and_threshold_inverse) ... ok
+test_rescaling_time_and_capacitance (__main__.RCTests.test_rescaling_time_and_capacitance) ... ok
+test_simulation_contract (__main__.RCTests.test_simulation_contract) ... ok
+test_small_charge_not_lost_to_subtraction (__main__.RCTests.test_small_charge_not_lost_to_subtraction) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.015s
+
+OK

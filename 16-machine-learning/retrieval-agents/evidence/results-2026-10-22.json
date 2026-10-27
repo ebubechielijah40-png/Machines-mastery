@@ -1,0 +1,161 @@
+{
+  "kind": "deterministic lexical retrieval and typed control; no language model or external tools",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "documents": [
+    {
+      "id": "rc",
+      "text": "RC circuit resistor capacitor time constant tau controls voltage charging."
+    },
+    {
+      "id": "wal",
+      "text": "Database transactions commit write ahead log atomic recovery after interruption."
+    },
+    {
+      "id": "attention",
+      "text": "Token attention causal mask excludes future tokens from normalized routing."
+    },
+    {
+      "id": "alignment",
+      "text": "Needleman Wunsch global alignment consumes complete sequences."
+    }
+  ],
+  "cases": [
+    {
+      "query": "capacitor time constant",
+      "target": "rc",
+      "retrieved": [
+        "rc"
+      ],
+      "recall_at_1": true,
+      "recall_at_2": true
+    },
+    {
+      "query": "write ahead log",
+      "target": "wal",
+      "retrieved": [
+        "wal"
+      ],
+      "recall_at_1": true,
+      "recall_at_2": true
+    },
+    {
+      "query": "future token leakage",
+      "target": "attention",
+      "retrieved": [
+        "attention"
+      ],
+      "recall_at_1": true,
+      "recall_at_2": true
+    },
+    {
+      "query": "global alignment",
+      "target": "alignment",
+      "retrieved": [
+        "alignment"
+      ],
+      "recall_at_1": true,
+      "recall_at_2": true
+    },
+    {
+      "query": "recover a committed transaction",
+      "target": "wal",
+      "retrieved": [],
+      "recall_at_1": false,
+      "recall_at_2": false
+    },
+    {
+      "query": "compare entire DNA sequence",
+      "target": "alignment",
+      "retrieved": [],
+      "recall_at_1": false,
+      "recall_at_2": false
+    }
+  ],
+  "mean_recall_at_1": 0.6666666666666666,
+  "mean_recall_at_2": 0.6666666666666666,
+  "abstention": {
+    "status": "abstain",
+    "answer": null,
+    "citations": [],
+    "trace": [
+      {
+        "event": "tool_result",
+        "action": {
+          "tool": "search",
+          "args": {
+            "query": "quantum decoherence"
+          }
+        },
+        "observation": []
+      },
+      {
+        "event": "finish",
+        "status": "abstain"
+      }
+    ]
+  },
+  "budget_failure": {
+    "status": "budget_exhausted",
+    "answer": null,
+    "citations": [],
+    "trace": [
+      {
+        "event": "tool_result",
+        "action": {
+          "tool": "search",
+          "args": {
+            "query": "capacitor"
+          }
+        },
+        "observation": [
+          {
+            "id": "rc",
+            "score": 0.31622776601683794,
+            "text": "RC circuit resistor capacitor time constant tau controls voltage charging."
+          }
+        ]
+      }
+    ]
+  },
+  "blocked_unlisted_tool": {
+    "status": "rejected",
+    "answer": null,
+    "citations": [],
+    "trace": [
+      {
+        "event": "rejected",
+        "action": {
+          "tool": "shell",
+          "args": {
+            "command": "ignored"
+          }
+        },
+        "error": "tool or argument schema not permitted"
+      }
+    ]
+  },
+  "calculator": {
+    "status": "answered",
+    "answer": 20.0,
+    "citations": [],
+    "trace": [
+      {
+        "event": "tool_result",
+        "action": {
+          "tool": "calculator",
+          "args": {
+            "expression": "(2+3)*4"
+          }
+        },
+        "observation": 20.0
+      },
+      {
+        "event": "finish",
+        "status": "answered"
+      }
+    ]
+  }
+}

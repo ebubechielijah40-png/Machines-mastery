@@ -229,7 +229,7 @@ def validate_catalog(data, root=ROOT):
         if b['status']=='SOURCE NOT PRESENT':
             if b.get('source_path') or b.get('sha256') or b.get('edition') or b.get('inspection_evidence'):
                 errors.append(f"{b['resource_id']}: absent source has claimed inspection metadata")
-            warnings.append(f"{b['resource_id']}: SOURCE NOT PRESENT; chapter processing blocked")
+            warnings.append(f"{b['resource_id']}: SOURCE NOT PRESENT locally; fresh local-original verification blocked; selected public-source records may exist")
         elif b['status']=='INSPECTED':
             source = file_ref(b.get('source_path'),b['resource_id'])
             inspection = file_ref(b.get('inspection_evidence'),b['resource_id'])

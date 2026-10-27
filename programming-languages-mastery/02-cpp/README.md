@@ -42,3 +42,7 @@ Projects, in increasing scope: container; RAII ownership experiment; resource ma
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed bounded unit
+
+[C++17 resource ownership, deep copy/move and exception cleanup](units/resource-lifetime/README.md) includes original teaching, runnable code, separate practice/hints/solutions and actual evidence. Full cpp route remains PARTIAL. Other numbered topic pages remain scope notes where no developed mechanism is linked.

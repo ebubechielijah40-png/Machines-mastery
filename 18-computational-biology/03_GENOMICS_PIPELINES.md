@@ -1,0 +1,2 @@
+# Genomics pipelines
+Trace sample → extraction → library prep → sequencer → base calls → QC → alignment/assembly → quantification/variant calling → statistical inference. Every stage creates provenance and bias. Computational work should record reference genome/version, tool versions, parameters, filters, sample metadata, and exclusions. Build a synthetic read-mapping experiment where the ground truth is known; vary error rate and repeat structure.

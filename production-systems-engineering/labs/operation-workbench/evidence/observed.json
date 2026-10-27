@@ -1,0 +1,1730 @@
+{
+  "observed_at_utc": "2026-10-23T17:29:03.329908+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "sqlite": "3.53.1",
+    "perf_counter": {
+      "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-09
+    }
+  },
+  "source_sha256": {
+    "operations.py": "343f2aeabd1496a8396388f8015b3e825644f5fece100b72470bc5a8570e7001",
+    "experiment.py": "8753607fa0d8bd17d6c5ddaacb3b43790e8ceb2f1869f4f5e1f1858de898e627",
+    "crash_child.py": "2af18786f8cced20522e54b0f6de1532f380c3b37ca448cbf21574ad901e7660"
+  },
+  "scope": "Actual local finite threaded workloads and controlled process crashes. No public endpoint, production traffic, SLA or physical power-failure guarantee.",
+  "cases": [
+    {
+      "label": "light",
+      "controlled": {
+        "count": 40,
+        "workers": 2,
+        "running_plus_waiting_capacity": 6,
+        "injected_processing_delay_ms": 1,
+        "planned_arrival_interval_ms": 4,
+        "good_deadline_ms": 30
+      },
+      "measurement": {
+        "wall_ms": 160.424746,
+        "process_cpu_ms": 34.964393,
+        "completions_per_wall_second": 249.33809151862394
+      },
+      "sli": {
+        "eligible": 40,
+        "good": 40,
+        "bad": 0,
+        "good_ratio": 1.0,
+        "permitted_bad_exact": "2",
+        "remaining_bad_exact": "2",
+        "burn_rate": 0.0,
+        "slo_met": true,
+        "latency_ms": {
+          "0.5": 3.532822,
+          "0.95": 4.740197,
+          "0.99": 5.122671
+        },
+        "queue_ms": {
+          "0.5": 0.064275,
+          "0.95": 0.178194,
+          "0.99": 0.454647
+        },
+        "statuses": {
+          "ok": 40
+        }
+      },
+      "state": {
+        "counter": 40,
+        "operations": [
+          [
+            "0",
+            1,
+            1
+          ],
+          [
+            "1",
+            1,
+            2
+          ],
+          [
+            "10",
+            1,
+            11
+          ],
+          [
+            "11",
+            1,
+            12
+          ],
+          [
+            "12",
+            1,
+            13
+          ],
+          [
+            "13",
+            1,
+            14
+          ],
+          [
+            "14",
+            1,
+            15
+          ],
+          [
+            "15",
+            1,
+            16
+          ],
+          [
+            "16",
+            1,
+            17
+          ],
+          [
+            "17",
+            1,
+            18
+          ],
+          [
+            "18",
+            1,
+            19
+          ],
+          [
+            "19",
+            1,
+            20
+          ],
+          [
+            "2",
+            1,
+            3
+          ],
+          [
+            "20",
+            1,
+            21
+          ],
+          [
+            "21",
+            1,
+            22
+          ],
+          [
+            "22",
+            1,
+            23
+          ],
+          [
+            "23",
+            1,
+            24
+          ],
+          [
+            "24",
+            1,
+            25
+          ],
+          [
+            "25",
+            1,
+            26
+          ],
+          [
+            "26",
+            1,
+            27
+          ],
+          [
+            "27",
+            1,
+            28
+          ],
+          [
+            "28",
+            1,
+            29
+          ],
+          [
+            "29",
+            1,
+            30
+          ],
+          [
+            "3",
+            1,
+            4
+          ],
+          [
+            "30",
+            1,
+            31
+          ],
+          [
+            "31",
+            1,
+            32
+          ],
+          [
+            "32",
+            1,
+            33
+          ],
+          [
+            "33",
+            1,
+            34
+          ],
+          [
+            "34",
+            1,
+            35
+          ],
+          [
+            "35",
+            1,
+            36
+          ],
+          [
+            "36",
+            1,
+            37
+          ],
+          [
+            "37",
+            1,
+            38
+          ],
+          [
+            "38",
+            1,
+            39
+          ],
+          [
+            "39",
+            1,
+            40
+          ],
+          [
+            "4",
+            1,
+            5
+          ],
+          [
+            "5",
+            1,
+            6
+          ],
+          [
+            "6",
+            1,
+            7
+          ],
+          [
+            "7",
+            1,
+            8
+          ],
+          [
+            "8",
+            1,
+            9
+          ],
+          [
+            "9",
+            1,
+            10
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "request_id": "0",
+          "issued_ns": 0,
+          "offered_ns": 98996,
+          "started_ns": 553643,
+          "ended_ns": 3997691,
+          "status": "ok",
+          "result": 1
+        },
+        {
+          "request_id": "1",
+          "issued_ns": 4000000,
+          "offered_ns": 4094214,
+          "started_ns": 4131509,
+          "ended_ns": 6872565,
+          "status": "ok",
+          "result": 2
+        },
+        {
+          "request_id": "2",
+          "issued_ns": 8000000,
+          "offered_ns": 8090883,
+          "started_ns": 8142990,
+          "ended_ns": 13122671,
+          "status": "ok",
+          "result": 3
+        },
+        {
+          "request_id": "3",
+          "issued_ns": 12000000,
+          "offered_ns": 12094768,
+          "started_ns": 12373194,
+          "ended_ns": 16406148,
+          "status": "ok",
+          "result": 4
+        },
+        {
+          "request_id": "4",
+          "issued_ns": 16000000,
+          "offered_ns": 16094052,
+          "started_ns": 16155638,
+          "ended_ns": 19623873,
+          "status": "ok",
+          "result": 5
+        },
+        {
+          "request_id": "5",
+          "issued_ns": 20000000,
+          "offered_ns": 20088679,
+          "started_ns": 20153049,
+          "ended_ns": 23410307,
+          "status": "ok",
+          "result": 6
+        },
+        {
+          "request_id": "6",
+          "issued_ns": 24000000,
+          "offered_ns": 24099309,
+          "started_ns": 24163264,
+          "ended_ns": 27093910,
+          "status": "ok",
+          "result": 7
+        },
+        {
+          "request_id": "7",
+          "issued_ns": 28000000,
+          "offered_ns": 28089489,
+          "started_ns": 28148611,
+          "ended_ns": 31284580,
+          "status": "ok",
+          "result": 8
+        },
+        {
+          "request_id": "8",
+          "issued_ns": 32000000,
+          "offered_ns": 32089378,
+          "started_ns": 32150794,
+          "ended_ns": 35306152,
+          "status": "ok",
+          "result": 9
+        },
+        {
+          "request_id": "9",
+          "issued_ns": 36000000,
+          "offered_ns": 36087580,
+          "started_ns": 36148710,
+          "ended_ns": 39302706,
+          "status": "ok",
+          "result": 10
+        },
+        {
+          "request_id": "10",
+          "issued_ns": 40000000,
+          "offered_ns": 40086523,
+          "started_ns": 40157092,
+          "ended_ns": 43359610,
+          "status": "ok",
+          "result": 11
+        },
+        {
+          "request_id": "11",
+          "issued_ns": 44000000,
+          "offered_ns": 44095400,
+          "started_ns": 44273594,
+          "ended_ns": 47657789,
+          "status": "ok",
+          "result": 12
+        },
+        {
+          "request_id": "12",
+          "issued_ns": 48000000,
+          "offered_ns": 48093692,
+          "started_ns": 48159295,
+          "ended_ns": 51277007,
+          "status": "ok",
+          "result": 13
+        },
+        {
+          "request_id": "13",
+          "issued_ns": 52000000,
+          "offered_ns": 52098454,
+          "started_ns": 52168698,
+          "ended_ns": 55287281,
+          "status": "ok",
+          "result": 14
+        },
+        {
+          "request_id": "14",
+          "issued_ns": 56000000,
+          "offered_ns": 56092359,
+          "started_ns": 56166554,
+          "ended_ns": 59960985,
+          "status": "ok",
+          "result": 15
+        },
+        {
+          "request_id": "15",
+          "issued_ns": 60000000,
+          "offered_ns": 60110320,
+          "started_ns": 60174866,
+          "ended_ns": 63353848,
+          "status": "ok",
+          "result": 16
+        },
+        {
+          "request_id": "16",
+          "issued_ns": 64000000,
+          "offered_ns": 64147139,
+          "started_ns": 64210608,
+          "ended_ns": 67276704,
+          "status": "ok",
+          "result": 17
+        },
+        {
+          "request_id": "17",
+          "issued_ns": 68000000,
+          "offered_ns": 68093344,
+          "started_ns": 68217468,
+          "ended_ns": 71532822,
+          "status": "ok",
+          "result": 18
+        },
+        {
+          "request_id": "18",
+          "issued_ns": 72000000,
+          "offered_ns": 72089453,
+          "started_ns": 72148585,
+          "ended_ns": 75596255,
+          "status": "ok",
+          "result": 19
+        },
+        {
+          "request_id": "19",
+          "issued_ns": 76000000,
+          "offered_ns": 76086843,
+          "started_ns": 76186912,
+          "ended_ns": 79569395,
+          "status": "ok",
+          "result": 20
+        },
+        {
+          "request_id": "20",
+          "issued_ns": 80000000,
+          "offered_ns": 80089382,
+          "started_ns": 80148004,
+          "ended_ns": 84740197,
+          "status": "ok",
+          "result": 21
+        },
+        {
+          "request_id": "21",
+          "issued_ns": 84000000,
+          "offered_ns": 84115124,
+          "started_ns": 84169635,
+          "ended_ns": 88056903,
+          "status": "ok",
+          "result": 22
+        },
+        {
+          "request_id": "22",
+          "issued_ns": 88000000,
+          "offered_ns": 88095269,
+          "started_ns": 88163776,
+          "ended_ns": 91293375,
+          "status": "ok",
+          "result": 23
+        },
+        {
+          "request_id": "23",
+          "issued_ns": 92000000,
+          "offered_ns": 92096165,
+          "started_ns": 92167010,
+          "ended_ns": 95908854,
+          "status": "ok",
+          "result": 24
+        },
+        {
+          "request_id": "24",
+          "issued_ns": 96000000,
+          "offered_ns": 96090301,
+          "started_ns": 96151357,
+          "ended_ns": 99566057,
+          "status": "ok",
+          "result": 25
+        },
+        {
+          "request_id": "25",
+          "issued_ns": 100000000,
+          "offered_ns": 100095553,
+          "started_ns": 100236972,
+          "ended_ns": 103373903,
+          "status": "ok",
+          "result": 26
+        },
+        {
+          "request_id": "26",
+          "issued_ns": 104000000,
+          "offered_ns": 104089889,
+          "started_ns": 104152327,
+          "ended_ns": 107220716,
+          "status": "ok",
+          "result": 27
+        },
+        {
+          "request_id": "27",
+          "issued_ns": 108000000,
+          "offered_ns": 108089353,
+          "started_ns": 108147439,
+          "ended_ns": 111509001,
+          "status": "ok",
+          "result": 28
+        },
+        {
+          "request_id": "28",
+          "issued_ns": 112000000,
+          "offered_ns": 112090509,
+          "started_ns": 112160047,
+          "ended_ns": 115794006,
+          "status": "ok",
+          "result": 29
+        },
+        {
+          "request_id": "29",
+          "issued_ns": 116000000,
+          "offered_ns": 116091796,
+          "started_ns": 116216545,
+          "ended_ns": 120881836,
+          "status": "ok",
+          "result": 30
+        },
+        {
+          "request_id": "30",
+          "issued_ns": 120000000,
+          "offered_ns": 120091780,
+          "started_ns": 120151368,
+          "ended_ns": 123638195,
+          "status": "ok",
+          "result": 31
+        },
+        {
+          "request_id": "31",
+          "issued_ns": 124000000,
+          "offered_ns": 124103442,
+          "started_ns": 124160861,
+          "ended_ns": 128178662,
+          "status": "ok",
+          "result": 32
+        },
+        {
+          "request_id": "32",
+          "issued_ns": 128000000,
+          "offered_ns": 128094213,
+          "started_ns": 128151307,
+          "ended_ns": 131582632,
+          "status": "ok",
+          "result": 33
+        },
+        {
+          "request_id": "33",
+          "issued_ns": 132000000,
+          "offered_ns": 132091894,
+          "started_ns": 132174175,
+          "ended_ns": 136242180,
+          "status": "ok",
+          "result": 34
+        },
+        {
+          "request_id": "34",
+          "issued_ns": 136000000,
+          "offered_ns": 136104817,
+          "started_ns": 136167340,
+          "ended_ns": 139429325,
+          "status": "ok",
+          "result": 35
+        },
+        {
+          "request_id": "35",
+          "issued_ns": 140000000,
+          "offered_ns": 140098542,
+          "started_ns": 140163519,
+          "ended_ns": 143367508,
+          "status": "ok",
+          "result": 36
+        },
+        {
+          "request_id": "36",
+          "issued_ns": 144000000,
+          "offered_ns": 144119648,
+          "started_ns": 144183923,
+          "ended_ns": 147823340,
+          "status": "ok",
+          "result": 37
+        },
+        {
+          "request_id": "37",
+          "issued_ns": 148000000,
+          "offered_ns": 148104300,
+          "started_ns": 148156327,
+          "ended_ns": 151327017,
+          "status": "ok",
+          "result": 38
+        },
+        {
+          "request_id": "38",
+          "issued_ns": 152000000,
+          "offered_ns": 152100078,
+          "started_ns": 152169726,
+          "ended_ns": 155052601,
+          "status": "ok",
+          "result": 39
+        },
+        {
+          "request_id": "39",
+          "issued_ns": 156000000,
+          "offered_ns": 156092241,
+          "started_ns": 156209515,
+          "ended_ns": 160061440,
+          "status": "ok",
+          "result": 40
+        }
+      ]
+    },
+    {
+      "label": "slow_dependency",
+      "controlled": {
+        "count": 40,
+        "workers": 2,
+        "running_plus_waiting_capacity": 6,
+        "injected_processing_delay_ms": 12,
+        "planned_arrival_interval_ms": 4,
+        "good_deadline_ms": 30
+      },
+      "measurement": {
+        "wall_ms": 188.918797,
+        "process_cpu_ms": 8.560365,
+        "completions_per_wall_second": 211.73118098989377
+      },
+      "sli": {
+        "eligible": 40,
+        "good": 6,
+        "bad": 34,
+        "good_ratio": 0.15,
+        "permitted_bad_exact": "2",
+        "remaining_bad_exact": "-32",
+        "burn_rate": 17.0,
+        "slo_met": false,
+        "latency_ms": {
+          "0.5": 32.587594,
+          "0.95": 36.146772,
+          "0.99": 36.455294
+        },
+        "queue_ms": {
+          "0.5": 20.39472,
+          "0.95": 23.906875,
+          "0.99": 24.273295
+        },
+        "statuses": {
+          "deadline": 23,
+          "ok": 6,
+          "overload": 11
+        }
+      },
+      "state": {
+        "counter": 6,
+        "operations": [
+          [
+            "0",
+            1,
+            1
+          ],
+          [
+            "1",
+            1,
+            2
+          ],
+          [
+            "2",
+            1,
+            3
+          ],
+          [
+            "3",
+            1,
+            4
+          ],
+          [
+            "4",
+            1,
+            5
+          ],
+          [
+            "5",
+            1,
+            6
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "request_id": "0",
+          "issued_ns": 0,
+          "offered_ns": 33099,
+          "started_ns": 222919,
+          "ended_ns": 14591639,
+          "status": "ok",
+          "result": 1
+        },
+        {
+          "request_id": "1",
+          "issued_ns": 4000000,
+          "offered_ns": 4083848,
+          "started_ns": 4224851,
+          "ended_ns": 18091410,
+          "status": "ok",
+          "result": 2
+        },
+        {
+          "request_id": "2",
+          "issued_ns": 8000000,
+          "offered_ns": 8090403,
+          "started_ns": 14612410,
+          "ended_ns": 28681577,
+          "status": "ok",
+          "result": 3
+        },
+        {
+          "request_id": "3",
+          "issued_ns": 12000000,
+          "offered_ns": 12078529,
+          "started_ns": 18106462,
+          "ended_ns": 32302087,
+          "status": "ok",
+          "result": 4
+        },
+        {
+          "request_id": "4",
+          "issued_ns": 16000000,
+          "offered_ns": 16081829,
+          "started_ns": 28696660,
+          "ended_ns": 42940105,
+          "status": "ok",
+          "result": 5
+        },
+        {
+          "request_id": "5",
+          "issued_ns": 20000000,
+          "offered_ns": 20078769,
+          "started_ns": 32315206,
+          "ended_ns": 46124280,
+          "status": "ok",
+          "result": 6
+        },
+        {
+          "request_id": "6",
+          "issued_ns": 24000000,
+          "offered_ns": 24123630,
+          "started_ns": 42954446,
+          "ended_ns": 55038804,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "7",
+          "issued_ns": 28000000,
+          "offered_ns": 28134450,
+          "started_ns": 46138982,
+          "ended_ns": 58216976,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "8",
+          "issued_ns": 32000000,
+          "offered_ns": 32130068,
+          "started_ns": 55055159,
+          "ended_ns": 67134870,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "9",
+          "issued_ns": 36000000,
+          "offered_ns": 36083784,
+          "started_ns": 58230556,
+          "ended_ns": 70305109,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "10",
+          "issued_ns": 40000000,
+          "offered_ns": 40086272,
+          "started_ns": 40086272,
+          "ended_ns": 40091680,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "11",
+          "issued_ns": 44000000,
+          "offered_ns": 44081940,
+          "started_ns": 67151765,
+          "ended_ns": 79246973,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "12",
+          "issued_ns": 48000000,
+          "offered_ns": 48084038,
+          "started_ns": 70318409,
+          "ended_ns": 82425961,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "13",
+          "issued_ns": 52000000,
+          "offered_ns": 52091424,
+          "started_ns": 52091424,
+          "ended_ns": 52096852,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "14",
+          "issued_ns": 56000000,
+          "offered_ns": 56083716,
+          "started_ns": 79356585,
+          "ended_ns": 91434103,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "15",
+          "issued_ns": 60000000,
+          "offered_ns": 60081298,
+          "started_ns": 82582953,
+          "ended_ns": 94677245,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "16",
+          "issued_ns": 64000000,
+          "offered_ns": 64082954,
+          "started_ns": 64082954,
+          "ended_ns": 64087180,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "17",
+          "issued_ns": 68000000,
+          "offered_ns": 68081567,
+          "started_ns": 91452190,
+          "ended_ns": 103603116,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "18",
+          "issued_ns": 72000000,
+          "offered_ns": 72084075,
+          "started_ns": 94694981,
+          "ended_ns": 106785438,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "19",
+          "issued_ns": 76000000,
+          "offered_ns": 76088636,
+          "started_ns": 76088636,
+          "ended_ns": 76092582,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "20",
+          "issued_ns": 80000000,
+          "offered_ns": 80086908,
+          "started_ns": 103686118,
+          "ended_ns": 115770336,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "21",
+          "issued_ns": 84000000,
+          "offered_ns": 84088931,
+          "started_ns": 106802053,
+          "ended_ns": 118891879,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "22",
+          "issued_ns": 88000000,
+          "offered_ns": 88099390,
+          "started_ns": 88099390,
+          "ended_ns": 88104928,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "23",
+          "issued_ns": 92000000,
+          "offered_ns": 92086491,
+          "started_ns": 115785659,
+          "ended_ns": 127867113,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "24",
+          "issued_ns": 96000000,
+          "offered_ns": 96086846,
+          "started_ns": 118907602,
+          "ended_ns": 131003116,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "25",
+          "issued_ns": 100000000,
+          "offered_ns": 100092899,
+          "started_ns": 100092899,
+          "ended_ns": 100098327,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "26",
+          "issued_ns": 104000000,
+          "offered_ns": 104086479,
+          "started_ns": 127882596,
+          "ended_ns": 139969507,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "27",
+          "issued_ns": 108000000,
+          "offered_ns": 108317690,
+          "started_ns": 131018149,
+          "ended_ns": 143102477,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "28",
+          "issued_ns": 112000000,
+          "offered_ns": 112101896,
+          "started_ns": 112101896,
+          "ended_ns": 112105952,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "29",
+          "issued_ns": 116000000,
+          "offered_ns": 116086948,
+          "started_ns": 139993823,
+          "ended_ns": 152146772,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "30",
+          "issued_ns": 120000000,
+          "offered_ns": 120083358,
+          "started_ns": 143122466,
+          "ended_ns": 155210489,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "31",
+          "issued_ns": 124000000,
+          "offered_ns": 124085665,
+          "started_ns": 124085665,
+          "ended_ns": 124089151,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "32",
+          "issued_ns": 128000000,
+          "offered_ns": 128082586,
+          "started_ns": 152162836,
+          "ended_ns": 164247264,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "33",
+          "issued_ns": 132000000,
+          "offered_ns": 132206433,
+          "started_ns": 155225021,
+          "ended_ns": 167311983,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "34",
+          "issued_ns": 136000000,
+          "offered_ns": 136086100,
+          "started_ns": 136086100,
+          "ended_ns": 136090116,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "35",
+          "issued_ns": 140000000,
+          "offered_ns": 140086785,
+          "started_ns": 164360080,
+          "ended_ns": 176455294,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "36",
+          "issued_ns": 144000000,
+          "offered_ns": 144082553,
+          "started_ns": 167337390,
+          "ended_ns": 179724946,
+          "status": "deadline",
+          "result": null
+        },
+        {
+          "request_id": "37",
+          "issued_ns": 148000000,
+          "offered_ns": 148101275,
+          "started_ns": 148101275,
+          "ended_ns": 148106032,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "38",
+          "issued_ns": 152000000,
+          "offered_ns": 152097404,
+          "started_ns": 152097404,
+          "ended_ns": 152101510,
+          "status": "overload",
+          "result": null
+        },
+        {
+          "request_id": "39",
+          "issued_ns": 156000000,
+          "offered_ns": 156090829,
+          "started_ns": 176485549,
+          "ended_ns": 188587594,
+          "status": "deadline",
+          "result": null
+        }
+      ]
+    },
+    {
+      "label": "paced_slow_dependency",
+      "controlled": {
+        "count": 40,
+        "workers": 2,
+        "running_plus_waiting_capacity": 6,
+        "injected_processing_delay_ms": 12,
+        "planned_arrival_interval_ms": 8,
+        "good_deadline_ms": 30
+      },
+      "measurement": {
+        "wall_ms": 327.153892,
+        "process_cpu_ms": 36.717887,
+        "completions_per_wall_second": 122.26661818224679
+      },
+      "sli": {
+        "eligible": 40,
+        "good": 40,
+        "bad": 0,
+        "good_ratio": 1.0,
+        "permitted_bad_exact": "2",
+        "remaining_bad_exact": "2",
+        "burn_rate": 0.0,
+        "slo_met": true,
+        "latency_ms": {
+          "0.5": 14.47838,
+          "0.95": 15.920601,
+          "0.99": 15.983418
+        },
+        "queue_ms": {
+          "0.5": 0.052253,
+          "0.95": 0.088085,
+          "0.99": 0.192194
+        },
+        "statuses": {
+          "ok": 40
+        }
+      },
+      "state": {
+        "counter": 40,
+        "operations": [
+          [
+            "0",
+            1,
+            1
+          ],
+          [
+            "1",
+            1,
+            2
+          ],
+          [
+            "10",
+            1,
+            11
+          ],
+          [
+            "11",
+            1,
+            12
+          ],
+          [
+            "12",
+            1,
+            13
+          ],
+          [
+            "13",
+            1,
+            14
+          ],
+          [
+            "14",
+            1,
+            15
+          ],
+          [
+            "15",
+            1,
+            16
+          ],
+          [
+            "16",
+            1,
+            17
+          ],
+          [
+            "17",
+            1,
+            18
+          ],
+          [
+            "18",
+            1,
+            19
+          ],
+          [
+            "19",
+            1,
+            20
+          ],
+          [
+            "2",
+            1,
+            3
+          ],
+          [
+            "20",
+            1,
+            21
+          ],
+          [
+            "21",
+            1,
+            22
+          ],
+          [
+            "22",
+            1,
+            23
+          ],
+          [
+            "23",
+            1,
+            24
+          ],
+          [
+            "24",
+            1,
+            25
+          ],
+          [
+            "25",
+            1,
+            26
+          ],
+          [
+            "26",
+            1,
+            27
+          ],
+          [
+            "27",
+            1,
+            28
+          ],
+          [
+            "28",
+            1,
+            29
+          ],
+          [
+            "29",
+            1,
+            30
+          ],
+          [
+            "3",
+            1,
+            4
+          ],
+          [
+            "30",
+            1,
+            31
+          ],
+          [
+            "31",
+            1,
+            32
+          ],
+          [
+            "32",
+            1,
+            33
+          ],
+          [
+            "33",
+            1,
+            34
+          ],
+          [
+            "34",
+            1,
+            35
+          ],
+          [
+            "35",
+            1,
+            36
+          ],
+          [
+            "36",
+            1,
+            37
+          ],
+          [
+            "37",
+            1,
+            38
+          ],
+          [
+            "38",
+            1,
+            39
+          ],
+          [
+            "39",
+            1,
+            40
+          ],
+          [
+            "4",
+            1,
+            5
+          ],
+          [
+            "5",
+            1,
+            6
+          ],
+          [
+            "6",
+            1,
+            7
+          ],
+          [
+            "7",
+            1,
+            8
+          ],
+          [
+            "8",
+            1,
+            9
+          ],
+          [
+            "9",
+            1,
+            10
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "request_id": "0",
+          "issued_ns": 0,
+          "offered_ns": 59437,
+          "started_ns": 241441,
+          "ended_ns": 15224107,
+          "status": "ok",
+          "result": 1
+        },
+        {
+          "request_id": "1",
+          "issued_ns": 8000000,
+          "offered_ns": 8103662,
+          "started_ns": 8295856,
+          "ended_ns": 23310339,
+          "status": "ok",
+          "result": 2
+        },
+        {
+          "request_id": "2",
+          "issued_ns": 16000000,
+          "offered_ns": 16106605,
+          "started_ns": 16164585,
+          "ended_ns": 30101733,
+          "status": "ok",
+          "result": 3
+        },
+        {
+          "request_id": "3",
+          "issued_ns": 24000000,
+          "offered_ns": 24094366,
+          "started_ns": 24141315,
+          "ended_ns": 39700753,
+          "status": "ok",
+          "result": 4
+        },
+        {
+          "request_id": "4",
+          "issued_ns": 32000000,
+          "offered_ns": 32096207,
+          "started_ns": 32147924,
+          "ended_ns": 46647892,
+          "status": "ok",
+          "result": 5
+        },
+        {
+          "request_id": "5",
+          "issued_ns": 40000000,
+          "offered_ns": 40099321,
+          "started_ns": 40145339,
+          "ended_ns": 55983418,
+          "status": "ok",
+          "result": 6
+        },
+        {
+          "request_id": "6",
+          "issued_ns": 48000000,
+          "offered_ns": 48101203,
+          "started_ns": 48157671,
+          "ended_ns": 62163610,
+          "status": "ok",
+          "result": 7
+        },
+        {
+          "request_id": "7",
+          "issued_ns": 56000000,
+          "offered_ns": 56104521,
+          "started_ns": 56131847,
+          "ended_ns": 70299981,
+          "status": "ok",
+          "result": 8
+        },
+        {
+          "request_id": "8",
+          "issued_ns": 64000000,
+          "offered_ns": 64092853,
+          "started_ns": 64138430,
+          "ended_ns": 78279674,
+          "status": "ok",
+          "result": 9
+        },
+        {
+          "request_id": "9",
+          "issued_ns": 72000000,
+          "offered_ns": 72093213,
+          "started_ns": 72143282,
+          "ended_ns": 86614904,
+          "status": "ok",
+          "result": 10
+        },
+        {
+          "request_id": "10",
+          "issued_ns": 80000000,
+          "offered_ns": 80089776,
+          "started_ns": 80133401,
+          "ended_ns": 94652803,
+          "status": "ok",
+          "result": 11
+        },
+        {
+          "request_id": "11",
+          "issued_ns": 88000000,
+          "offered_ns": 88092449,
+          "started_ns": 88136420,
+          "ended_ns": 102746666,
+          "status": "ok",
+          "result": 12
+        },
+        {
+          "request_id": "12",
+          "issued_ns": 96000000,
+          "offered_ns": 96101176,
+          "started_ns": 96160949,
+          "ended_ns": 110314533,
+          "status": "ok",
+          "result": 13
+        },
+        {
+          "request_id": "13",
+          "issued_ns": 104000000,
+          "offered_ns": 104120514,
+          "started_ns": 104171489,
+          "ended_ns": 118500129,
+          "status": "ok",
+          "result": 14
+        },
+        {
+          "request_id": "14",
+          "issued_ns": 112000000,
+          "offered_ns": 112108185,
+          "started_ns": 112160537,
+          "ended_ns": 126210326,
+          "status": "ok",
+          "result": 15
+        },
+        {
+          "request_id": "15",
+          "issued_ns": 120000000,
+          "offered_ns": 120090407,
+          "started_ns": 120149444,
+          "ended_ns": 134679713,
+          "status": "ok",
+          "result": 16
+        },
+        {
+          "request_id": "16",
+          "issued_ns": 128000000,
+          "offered_ns": 128104337,
+          "started_ns": 128162067,
+          "ended_ns": 143955240,
+          "status": "ok",
+          "result": 17
+        },
+        {
+          "request_id": "17",
+          "issued_ns": 136000000,
+          "offered_ns": 136095833,
+          "started_ns": 136138246,
+          "ended_ns": 151127657,
+          "status": "ok",
+          "result": 18
+        },
+        {
+          "request_id": "18",
+          "issued_ns": 144000000,
+          "offered_ns": 144100870,
+          "started_ns": 144150247,
+          "ended_ns": 158488192,
+          "status": "ok",
+          "result": 19
+        },
+        {
+          "request_id": "19",
+          "issued_ns": 152000000,
+          "offered_ns": 152108269,
+          "started_ns": 152151047,
+          "ended_ns": 166269518,
+          "status": "ok",
+          "result": 20
+        },
+        {
+          "request_id": "20",
+          "issued_ns": 160000000,
+          "offered_ns": 160098514,
+          "started_ns": 160150767,
+          "ended_ns": 174184332,
+          "status": "ok",
+          "result": 21
+        },
+        {
+          "request_id": "21",
+          "issued_ns": 168000000,
+          "offered_ns": 168104146,
+          "started_ns": 168164511,
+          "ended_ns": 182478380,
+          "status": "ok",
+          "result": 22
+        },
+        {
+          "request_id": "22",
+          "issued_ns": 176000000,
+          "offered_ns": 176110289,
+          "started_ns": 176169702,
+          "ended_ns": 190043502,
+          "status": "ok",
+          "result": 23
+        },
+        {
+          "request_id": "23",
+          "issued_ns": 184000000,
+          "offered_ns": 184098901,
+          "started_ns": 184147684,
+          "ended_ns": 199463466,
+          "status": "ok",
+          "result": 24
+        },
+        {
+          "request_id": "24",
+          "issued_ns": 192000000,
+          "offered_ns": 192105510,
+          "started_ns": 192163251,
+          "ended_ns": 206420256,
+          "status": "ok",
+          "result": 25
+        },
+        {
+          "request_id": "25",
+          "issued_ns": 200000000,
+          "offered_ns": 200092750,
+          "started_ns": 200151712,
+          "ended_ns": 213941397,
+          "status": "ok",
+          "result": 26
+        },
+        {
+          "request_id": "26",
+          "issued_ns": 208000000,
+          "offered_ns": 208106199,
+          "started_ns": 208171571,
+          "ended_ns": 222233082,
+          "status": "ok",
+          "result": 27
+        },
+        {
+          "request_id": "27",
+          "issued_ns": 216000000,
+          "offered_ns": 216098336,
+          "started_ns": 216150528,
+          "ended_ns": 230051298,
+          "status": "ok",
+          "result": 28
+        },
+        {
+          "request_id": "28",
+          "issued_ns": 224000000,
+          "offered_ns": 224118014,
+          "started_ns": 224169951,
+          "ended_ns": 238158941,
+          "status": "ok",
+          "result": 29
+        },
+        {
+          "request_id": "29",
+          "issued_ns": 232000000,
+          "offered_ns": 232097323,
+          "started_ns": 232149225,
+          "ended_ns": 246033855,
+          "status": "ok",
+          "result": 30
+        },
+        {
+          "request_id": "30",
+          "issued_ns": 240000000,
+          "offered_ns": 240095579,
+          "started_ns": 240146885,
+          "ended_ns": 254486006,
+          "status": "ok",
+          "result": 31
+        },
+        {
+          "request_id": "31",
+          "issued_ns": 248000000,
+          "offered_ns": 248096930,
+          "started_ns": 248149488,
+          "ended_ns": 262490026,
+          "status": "ok",
+          "result": 32
+        },
+        {
+          "request_id": "32",
+          "issued_ns": 256000000,
+          "offered_ns": 256110870,
+          "started_ns": 256160258,
+          "ended_ns": 270434788,
+          "status": "ok",
+          "result": 33
+        },
+        {
+          "request_id": "33",
+          "issued_ns": 264000000,
+          "offered_ns": 264109497,
+          "started_ns": 264179895,
+          "ended_ns": 278307605,
+          "status": "ok",
+          "result": 34
+        },
+        {
+          "request_id": "34",
+          "issued_ns": 272000000,
+          "offered_ns": 272102936,
+          "started_ns": 272171502,
+          "ended_ns": 286162480,
+          "status": "ok",
+          "result": 35
+        },
+        {
+          "request_id": "35",
+          "issued_ns": 280000000,
+          "offered_ns": 280115864,
+          "started_ns": 280188771,
+          "ended_ns": 294721869,
+          "status": "ok",
+          "result": 36
+        },
+        {
+          "request_id": "36",
+          "issued_ns": 288000000,
+          "offered_ns": 288102393,
+          "started_ns": 288171165,
+          "ended_ns": 302283291,
+          "status": "ok",
+          "result": 37
+        },
+        {
+          "request_id": "37",
+          "issued_ns": 296000000,
+          "offered_ns": 296092327,
+          "started_ns": 296137769,
+          "ended_ns": 311920601,
+          "status": "ok",
+          "result": 38
+        },
+        {
+          "request_id": "38",
+          "issued_ns": 304000000,
+          "offered_ns": 304109752,
+          "started_ns": 304167652,
+          "ended_ns": 318671977,
+          "status": "ok",
+          "result": 39
+        },
+        {
+          "request_id": "39",
+          "issued_ns": 312000000,
+          "offered_ns": 312107638,
+          "started_ns": 312195723,
+          "ended_ns": 326950227,
+          "status": "ok",
+          "result": 40
+        }
+      ]
+    }
+  ],
+  "crash_cases": [
+    {
+      "fault": "actual directly spawned application-process kill",
+      "observed_phase": "before_commit",
+      "child_exit": -9,
+      "stderr": "",
+      "before_retry": {
+        "counter": 0,
+        "operations": []
+      },
+      "retry_reply": [
+        7,
+        false
+      ],
+      "after_retry": {
+        "counter": 7,
+        "operations": [
+          [
+            "crash-operation",
+            7,
+            7
+          ]
+        ]
+      },
+      "limitation": "Not an OS crash, power cut, damaged filesystem or storage-device test."
+    },
+    {
+      "fault": "actual directly spawned application-process kill",
+      "observed_phase": "after_commit",
+      "child_exit": -9,
+      "stderr": "",
+      "before_retry": {
+        "counter": 7,
+        "operations": [
+          [
+            "crash-operation",
+            7,
+            7
+          ]
+        ]
+      },
+      "retry_reply": [
+        7,
+        true
+      ],
+      "after_retry": {
+        "counter": 7,
+        "operations": [
+          [
+            "crash-operation",
+            7,
+            7
+          ]
+        ]
+      },
+      "limitation": "Not an OS crash, power cut, damaged filesystem or storage-device test."
+    }
+  ]
+}

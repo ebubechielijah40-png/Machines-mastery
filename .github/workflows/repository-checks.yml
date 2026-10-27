@@ -1,0 +1,38 @@
+name: Repository checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.12'
+      - name: Check repository files
+        run: python tools/check_publication.py
+      - name: Validate structure and generated indexes
+        run: |
+          python tools/validate.py
+          python tools/render.py --check
+          python tools/strong_dashboard.py --check
+      - name: Run infrastructure tests
+        run: python -m unittest discover -s tools/tests -v
+      - name: Run portable reference groups
+        run: python tools/run_reference_tests.py
+      - name: Inventory educational gaps
+        run: python tools/quality_audit.py --report-only --json research/quality/github-actions/content-audit.json
+      - name: Check whitespace
+        run: git diff --check

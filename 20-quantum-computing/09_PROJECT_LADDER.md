@@ -1,0 +1,2 @@
+# Quantum project ladder
+P1 statevector simulator; P2 gate/circuit tests; P3 Bell-state correlations; P4 Grover on a tiny search space; P5 quantum Fourier transform; P6 toy error/noise simulator; P7 compiler mapping from abstract to restricted gate set; P8 quantum-machine architecture report comparing hardware modalities and control stacks. Reconstruct circuit math without simulator before trusting code.

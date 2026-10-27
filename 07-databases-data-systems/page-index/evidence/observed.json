@@ -1,0 +1,635 @@
+{
+  "kind": "actually executed synthetic byte-page experiments; no disk I/O benchmark or database transaction claim",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "parameters": {
+    "rows": 4096,
+    "shuffle_seed": 4081,
+    "value": "decimal key ASCII bytes",
+    "page_sizes": [
+      128,
+      256,
+      512,
+      1024
+    ]
+  },
+  "code_sha256": {
+    "bplus.py": "e1e1d572df0617f06ade653fc26491ffaf394d40b3a8eac872e2cc47d0ddfae8",
+    "experiment.py": "387499b79aaea453c301c61fdab6f2072e08e75c2494ac3460c0090c3e13930c"
+  },
+  "runs": [
+    {
+      "page_size": 128,
+      "capacities": [
+        3,
+        9
+      ],
+      "method": "ascending",
+      "build_seconds": 0.2177104929996858,
+      "build": {
+        "page_decode_requests": 19546,
+        "committed_page_images": 8999,
+        "allocated_pages": 2456,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 4,
+        "leaf_pages": 2048,
+        "pages": 2456,
+        "rows": 4096
+      },
+      "snapshot_bytes": 314404,
+      "point_queries": 102,
+      "point_page_requests": 510,
+      "selected_rows": 100,
+      "range_page_requests": 55,
+      "all_row_scan_page_requests": 2052
+    },
+    {
+      "page_size": 128,
+      "capacities": [
+        3,
+        9
+      ],
+      "method": "shuffled",
+      "build_seconds": 0.2040113110006132,
+      "build": {
+        "page_decode_requests": 18905,
+        "committed_page_images": 8145,
+        "allocated_pages": 2029,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 4,
+        "leaf_pages": 1745,
+        "pages": 2029,
+        "rows": 4096
+      },
+      "snapshot_bytes": 259748,
+      "point_queries": 102,
+      "point_page_requests": 510,
+      "selected_rows": 100,
+      "range_page_requests": 46,
+      "all_row_scan_page_requests": 1749
+    },
+    {
+      "page_size": 128,
+      "capacities": [
+        3,
+        9
+      ],
+      "method": "bulk",
+      "build_seconds": 0.049416134000239254,
+      "build": {
+        "page_decode_requests": 1365,
+        "committed_page_images": 1521,
+        "allocated_pages": 1520,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 4,
+        "leaf_pages": 1366,
+        "pages": 1520,
+        "rows": 4096
+      },
+      "snapshot_bytes": 194596,
+      "point_queries": 102,
+      "point_page_requests": 510,
+      "selected_rows": 100,
+      "range_page_requests": 39,
+      "all_row_scan_page_requests": 1370
+    },
+    {
+      "page_size": 256,
+      "capacities": [
+        7,
+        19
+      ],
+      "method": "ascending",
+      "build_seconds": 0.19341483899916057,
+      "build": {
+        "page_decode_requests": 15372,
+        "committed_page_images": 6341,
+        "allocated_pages": 1126,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 3,
+        "leaf_pages": 1024,
+        "pages": 1126,
+        "rows": 4096
+      },
+      "snapshot_bytes": 288292,
+      "point_queries": 102,
+      "point_page_requests": 408,
+      "selected_rows": 100,
+      "range_page_requests": 29,
+      "all_row_scan_page_requests": 1027
+    },
+    {
+      "page_size": 256,
+      "capacities": [
+        7,
+        19
+      ],
+      "method": "shuffled",
+      "build_seconds": 0.18160608600010164,
+      "build": {
+        "page_decode_requests": 14787,
+        "committed_page_images": 5817,
+        "allocated_pages": 864,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 3,
+        "leaf_pages": 800,
+        "pages": 864,
+        "rows": 4096
+      },
+      "snapshot_bytes": 221220,
+      "point_queries": 102,
+      "point_page_requests": 408,
+      "selected_rows": 100,
+      "range_page_requests": 25,
+      "all_row_scan_page_requests": 803
+    },
+    {
+      "page_size": 256,
+      "capacities": [
+        7,
+        19
+      ],
+      "method": "bulk",
+      "build_seconds": 0.0245630790004725,
+      "build": {
+        "page_decode_requests": 585,
+        "committed_page_images": 620,
+        "allocated_pages": 619,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 3,
+        "leaf_pages": 586,
+        "pages": 619,
+        "rows": 4096
+      },
+      "snapshot_bytes": 158500,
+      "point_queries": 102,
+      "point_page_requests": 408,
+      "selected_rows": 100,
+      "range_page_requests": 19,
+      "all_row_scan_page_requests": 589
+    },
+    {
+      "page_size": 512,
+      "capacities": [
+        14,
+        41
+      ],
+      "method": "ascending",
+      "build_seconds": 0.22199492900017503,
+      "build": {
+        "page_decode_requests": 11971,
+        "committed_page_images": 5315,
+        "allocated_pages": 612,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 2,
+        "leaf_pages": 585,
+        "pages": 612,
+        "rows": 4096
+      },
+      "snapshot_bytes": 313380,
+      "point_queries": 102,
+      "point_page_requests": 306,
+      "selected_rows": 100,
+      "range_page_requests": 18,
+      "all_row_scan_page_requests": 587
+    },
+    {
+      "page_size": 512,
+      "capacities": [
+        14,
+        41
+      ],
+      "method": "shuffled",
+      "build_seconds": 0.26466763699954754,
+      "build": {
+        "page_decode_requests": 11829,
+        "committed_page_images": 4937,
+        "allocated_pages": 423,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 2,
+        "leaf_pages": 407,
+        "pages": 423,
+        "rows": 4096
+      },
+      "snapshot_bytes": 216612,
+      "point_queries": 102,
+      "point_page_requests": 306,
+      "selected_rows": 100,
+      "range_page_requests": 13,
+      "all_row_scan_page_requests": 409
+    },
+    {
+      "page_size": 512,
+      "capacities": [
+        14,
+        41
+      ],
+      "method": "bulk",
+      "build_seconds": 0.0200136539997402,
+      "build": {
+        "page_decode_requests": 292,
+        "committed_page_images": 302,
+        "allocated_pages": 301,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 2,
+        "leaf_pages": 293,
+        "pages": 301,
+        "rows": 4096
+      },
+      "snapshot_bytes": 154148,
+      "point_queries": 102,
+      "point_page_requests": 306,
+      "selected_rows": 100,
+      "range_page_requests": 11,
+      "all_row_scan_page_requests": 295
+    },
+    {
+      "page_size": 1024,
+      "capacities": [
+        30,
+        83
+      ],
+      "method": "ascending",
+      "build_seconds": 0.42552206500022294,
+      "build": {
+        "page_decode_requests": 10981,
+        "committed_page_images": 4651,
+        "allocated_pages": 280,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 2,
+        "leaf_pages": 273,
+        "pages": 280,
+        "rows": 4096
+      },
+      "snapshot_bytes": 286756,
+      "point_queries": 102,
+      "point_page_requests": 306,
+      "selected_rows": 100,
+      "range_page_requests": 10,
+      "all_row_scan_page_requests": 275
+    },
+    {
+      "page_size": 1024,
+      "capacities": [
+        30,
+        83
+      ],
+      "method": "shuffled",
+      "build_seconds": 0.35560681100014335,
+      "build": {
+        "page_decode_requests": 10550,
+        "committed_page_images": 4493,
+        "allocated_pages": 201,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 2,
+        "leaf_pages": 196,
+        "pages": 201,
+        "rows": 4096
+      },
+      "snapshot_bytes": 205860,
+      "point_queries": 102,
+      "point_page_requests": 306,
+      "selected_rows": 100,
+      "range_page_requests": 8,
+      "all_row_scan_page_requests": 198
+    },
+    {
+      "page_size": 1024,
+      "capacities": [
+        30,
+        83
+      ],
+      "method": "bulk",
+      "build_seconds": 0.022481857999991917,
+      "build": {
+        "page_decode_requests": 136,
+        "committed_page_images": 141,
+        "allocated_pages": 140,
+        "rows": 4096
+      },
+      "shape": {
+        "height_edges": 2,
+        "leaf_pages": 137,
+        "pages": 140,
+        "rows": 4096
+      },
+      "snapshot_bytes": 143396,
+      "point_queries": 102,
+      "point_page_requests": 306,
+      "selected_rows": 100,
+      "range_page_requests": 7,
+      "all_row_scan_page_requests": 139
+    }
+  ],
+  "accepted_mixed_snapshot": {
+    "page_replaced": 10,
+    "structurally_valid": {
+      "height_edges": 1,
+      "leaf_pages": 10,
+      "pages": 11,
+      "rows": 30
+    },
+    "key0": "new",
+    "key29": "old",
+    "interpretation": "Accepted new/old state: page checksums and tree invariants do not implement batch atomicity."
+  },
+  "worked_trace": [
+    {
+      "insert": 10,
+      "root": 1,
+      "shape": {
+        "height_edges": 0,
+        "leaf_pages": 1,
+        "pages": 1,
+        "rows": 1
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            10
+          ],
+          "children": [],
+          "next_leaf": 0
+        }
+      ]
+    },
+    {
+      "insert": 20,
+      "root": 1,
+      "shape": {
+        "height_edges": 0,
+        "leaf_pages": 1,
+        "pages": 1,
+        "rows": 2
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            10,
+            20
+          ],
+          "children": [],
+          "next_leaf": 0
+        }
+      ]
+    },
+    {
+      "insert": 30,
+      "root": 1,
+      "shape": {
+        "height_edges": 0,
+        "leaf_pages": 1,
+        "pages": 1,
+        "rows": 3
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            10,
+            20,
+            30
+          ],
+          "children": [],
+          "next_leaf": 0
+        }
+      ]
+    },
+    {
+      "insert": 25,
+      "root": 3,
+      "shape": {
+        "height_edges": 1,
+        "leaf_pages": 2,
+        "pages": 3,
+        "rows": 4
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            10,
+            20
+          ],
+          "children": [],
+          "next_leaf": 2
+        },
+        {
+          "page_id": 2,
+          "leaf": true,
+          "keys": [
+            25,
+            30
+          ],
+          "children": [],
+          "next_leaf": 0
+        },
+        {
+          "page_id": 3,
+          "leaf": false,
+          "keys": [
+            25
+          ],
+          "children": [
+            1,
+            2
+          ],
+          "next_leaf": 0
+        }
+      ]
+    },
+    {
+      "insert": 5,
+      "root": 3,
+      "shape": {
+        "height_edges": 1,
+        "leaf_pages": 2,
+        "pages": 3,
+        "rows": 5
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            5,
+            10,
+            20
+          ],
+          "children": [],
+          "next_leaf": 2
+        },
+        {
+          "page_id": 2,
+          "leaf": true,
+          "keys": [
+            25,
+            30
+          ],
+          "children": [],
+          "next_leaf": 0
+        },
+        {
+          "page_id": 3,
+          "leaf": false,
+          "keys": [
+            25
+          ],
+          "children": [
+            1,
+            2
+          ],
+          "next_leaf": 0
+        }
+      ]
+    },
+    {
+      "insert": 15,
+      "root": 3,
+      "shape": {
+        "height_edges": 1,
+        "leaf_pages": 3,
+        "pages": 4,
+        "rows": 6
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            5,
+            10
+          ],
+          "children": [],
+          "next_leaf": 4
+        },
+        {
+          "page_id": 2,
+          "leaf": true,
+          "keys": [
+            25,
+            30
+          ],
+          "children": [],
+          "next_leaf": 0
+        },
+        {
+          "page_id": 3,
+          "leaf": false,
+          "keys": [
+            15,
+            25
+          ],
+          "children": [
+            1,
+            4,
+            2
+          ],
+          "next_leaf": 0
+        },
+        {
+          "page_id": 4,
+          "leaf": true,
+          "keys": [
+            15,
+            20
+          ],
+          "children": [],
+          "next_leaf": 2
+        }
+      ]
+    },
+    {
+      "insert": 35,
+      "root": 3,
+      "shape": {
+        "height_edges": 1,
+        "leaf_pages": 3,
+        "pages": 4,
+        "rows": 7
+      },
+      "pages": [
+        {
+          "page_id": 1,
+          "leaf": true,
+          "keys": [
+            5,
+            10
+          ],
+          "children": [],
+          "next_leaf": 4
+        },
+        {
+          "page_id": 2,
+          "leaf": true,
+          "keys": [
+            25,
+            30,
+            35
+          ],
+          "children": [],
+          "next_leaf": 0
+        },
+        {
+          "page_id": 3,
+          "leaf": false,
+          "keys": [
+            15,
+            25
+          ],
+          "children": [
+            1,
+            4,
+            2
+          ],
+          "next_leaf": 0
+        },
+        {
+          "page_id": 4,
+          "leaf": true,
+          "keys": [
+            15,
+            20
+          ],
+          "children": [],
+          "next_leaf": 2
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Logical page requests do not model the OS cache, storage latency, compression or device writes.",
+    "Fixed-size cells reserve24 bytes even for a short value; there are no overflow pages.",
+    "No delete, merge, lock, WAL/checkpoint integration, fsync or atomic publication is implemented."
+  ]
+}

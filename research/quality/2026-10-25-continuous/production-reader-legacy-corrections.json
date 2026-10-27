@@ -1,0 +1,49 @@
+{
+  "source_sha256": {
+    "README.md": "7ccf6f7557836f60feefbc9ceae559def0388090bdb9f312ac913c766bef652b",
+    "DESIGN.md": "78010aeda1b33db657d2f58f2f9070410a9c443ed580a09295c79ec8baa8e984",
+    "ARCHITECTURE.md": "1e59dce324b95c1621d2d8be4196939a5a0c9b0d0247c686a9127a0c79510cae",
+    "ADR-001.md": "ab1f8595b6f0836f5d98777155830e2315103f5994bc441326f234f2e2a2f101",
+    "OBSERVABILITY.md": "40565f984bbbdb0b3107a08a182ea28179cefccad5a75f5fac74bd799a7b1e8c",
+    "SCALABILITY.md": "9cf084b16ec46accc63a961412f7e3e026dc9256ebd99a12868d76f676b5dabf",
+    "BENCHMARKS.md": "95c73aa69ce515b623a26a4f182de0b54af64ff6a98cf29df895f7a55c715ba5",
+    "RESULTS.md": "2a85202faa5015b10077d89fccbbfed5823eb175a0d47d6b85110869744dfe83",
+    "SECURITY.md": "659bb40893ada13cb1fec4fcf2303321d589c1add159940e86c70fe43b1fec50",
+    "service.py": "3787a6df85048e88443b7a05457d8fcbfa9f704541f0d3346d022e260f925c89",
+    "benchmark.py": "f05b113316285bb249faac53e7de264963165aabe7c992a7eeae8557d0425c85",
+    "tests/test_model_serving.py": "d5df05c0a059b29790d31bbc9c1f4b2dde4a5f95c58a64ec687d8899c225bfff"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sqlite": "3.53.1",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "posix": true
+  },
+  "tool_paths": {
+    "python3": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "cc": "/usr/bin/cc",
+    "git": "/usr/local/bin/git",
+    "curl": "/usr/bin/curl",
+    "docker": null,
+    "podman": null,
+    "strace": "/usr/bin/strace",
+    "lsof": "/usr/bin/lsof",
+    "timeout": "/usr/bin/timeout"
+  },
+  "stdlib_feasible": [
+    "subprocess",
+    "selectors",
+    "socket",
+    "http.client",
+    "http.server",
+    "sqlite3",
+    "threading",
+    "concurrent.futures",
+    "cProfile",
+    "tracemalloc",
+    "resource"
+  ],
+  "test_log": "research/quality/2026-10-25-continuous/production-reader-serving-reviewed-tests.txt",
+  "actual_tests_passed": 5,
+  "limits": "Tool presence is availability only; no Docker, Podman, tracing or external deployment execution inferred."
+}

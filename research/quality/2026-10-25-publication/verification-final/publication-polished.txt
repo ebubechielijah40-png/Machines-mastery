@@ -1,0 +1,5 @@
+{
+  "tracked_files": 2774,
+  "findings": [],
+  "limits": "Known credential markers, publication artifacts and path/size checks only; not exhaustive secret detection, licensing clearance or educational certification."
+}

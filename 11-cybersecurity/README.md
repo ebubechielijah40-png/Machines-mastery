@@ -15,3 +15,7 @@ Use the unit-level gates in [PREREQUISITE_GRAPH.md](../PREREQUISITE_GRAPH.md). T
 ## Work placement
 
 Keep subject notes here. Link implementations from [PROJECT_REGISTRY.md](../PROJECT_REGISTRY.md), measurements from [EXPERIMENT_REGISTRY.md](../EXPERIMENT_REGISTRY.md), and verified references from [RESOURCE_REGISTRY.md](../RESOURCE_REGISTRY.md). Do not duplicate book reconstructions here.
+
+## Developed mechanism path
+
+The [adversary-model guide](SELF_CONTAINED_GUIDE.md) links strict parsing, authentication, authorization, replay prevention, history verification and recovery to executable local counterexamples. Entire-domain completion remains PARTIAL.

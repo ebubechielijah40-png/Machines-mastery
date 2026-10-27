@@ -1,0 +1,2 @@
+# Electrical foundations
+Voltage is electric potential difference; current is charge flow; resistance relates voltage/current in an ideal resistor through `V=IR`; power transfer is `P=VI`. These equations are models with operating assumptions. Real sources have limits, components heat, measurements disturb circuits, and wires have resistance/inductance. Work examples from units first. Lab: simulate or safely measure a low-voltage resistor divider; predict node voltage before measuring and explain meter loading.

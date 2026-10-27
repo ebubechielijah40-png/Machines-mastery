@@ -1,0 +1,2 @@
+# Noise and error correction
+Physical qubits suffer decoherence, control error, measurement error, leakage, and correlated noise. Quantum error correction encodes logical information across many physical qubits and repeatedly extracts syndromes without directly measuring the logical state. Threshold theorems require error rates/assumptions; fault tolerance adds enormous overhead. Simulate a classical analogue of repetition coding first, then study why quantum errors need richer codes.

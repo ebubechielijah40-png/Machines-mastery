@@ -1,0 +1,24 @@
+test_bell_measurement_correlates_and_repeats (__main__.SimulatorTests.test_bell_measurement_correlates_and_repeats) ... ok
+test_bell_state_and_inverse (__main__.SimulatorTests.test_bell_state_and_inverse) ... ok
+test_cnot_all_three_qubit_basis_states (__main__.SimulatorTests.test_cnot_all_three_qubit_basis_states) ... ok
+test_complex_gates_against_dense_oracle (__main__.SimulatorTests.test_complex_gates_against_dense_oracle) ... ok
+test_conditional_measurement_formula (__main__.SimulatorTests.test_conditional_measurement_formula) ... ok
+test_global_phase_through_circuit (__main__.SimulatorTests.test_global_phase_through_circuit) ... ok
+test_impossible_postselection_is_rejected_without_mutation (__main__.SimulatorTests.test_impossible_postselection_is_rejected_without_mutation) ... ok
+test_invalid_gate_is_rejected_without_mutation (__main__.SimulatorTests.test_invalid_gate_is_rejected_without_mutation) ... ok
+test_invalid_measurement_arguments (__main__.SimulatorTests.test_invalid_measurement_arguments) ... ok
+test_invalid_qubits_on_all_operations (__main__.SimulatorTests.test_invalid_qubits_on_all_operations) ... ok
+test_invalid_state_construction (__main__.SimulatorTests.test_invalid_state_construction) ... ok
+test_legacy_basic_gates (__main__.SimulatorTests.test_legacy_basic_gates) ... ok
+test_mutated_invalid_state_is_detected (__main__.SimulatorTests.test_mutated_invalid_state_is_detected) ... ok
+test_never_sample_zero_probability_bin (__main__.SimulatorTests.test_never_sample_zero_probability_bin) ... ok
+test_partial_measurement_preserves_unmeasured_coherence (__main__.SimulatorTests.test_partial_measurement_preserves_unmeasured_coherence) ... ok
+test_qubit_order_is_little_endian (__main__.SimulatorTests.test_qubit_order_is_little_endian) ... ok
+test_sampling_does_not_collapse (__main__.SimulatorTests.test_sampling_does_not_collapse) ... ok
+test_tiny_nonzero_postselection_remains_valid (__main__.SimulatorTests.test_tiny_nonzero_postselection_remains_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.007s
+
+OK
+quantum simulator: PASS (18 tests)

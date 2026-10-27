@@ -1,0 +1,19 @@
+{
+  "nodes": ["A", "B"],
+  "events": [
+    {"op":"put","node":"A","key":"color","value":"red"},
+    {"op":"put","node":"B","key":"color","value":"blue"},
+    {"op":"read","node":"A"},
+    {"op":"read","node":"B"},
+    {"op":"send","node":"A","as":"a0"},
+    {"op":"send","node":"B","as":"b0"},
+    {"op":"deliver","node":"A","message":"b0"},
+    {"op":"deliver","node":"B","message":"a0"},
+    {"op":"delete","node":"A","key":"color"},
+    {"op":"send","node":"A","as":"deletion"},
+    {"op":"deliver","node":"B","message":"deletion"},
+    {"op":"deliver","node":"A","message":"b0"},
+    {"op":"read","node":"A"},
+    {"op":"read","node":"B"}
+  ]
+}

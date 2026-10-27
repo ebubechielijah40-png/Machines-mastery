@@ -1,57 +1,22 @@
-# Python: Calls, Parameters, Returns, Closures/Generics Where Applicable And Call-Stack/Runtime Effects
+# Python functions: local bindings, return values and defaults
 
-**Prepared reference; learner NOT STARTED.** This page is self-contained for normal study. Exact version-specific edge cases should still be checked against the installed toolchain/specification when they matter.
+The [entry build](../../02-programming/python-entry/README.md) introduces def,
+parameters, calls, return and tuple unpacking using a tested byte-budget function.
+A function's returned value can be used by tests/other functions; printing a result
+instead supplies an I/O effect and ordinarily returns None from print.
 
-## Why this matters
+Each call binds local parameter names to supplied objects. Rebinding that local
+name does not rebind the caller's name; mutating a shared list can still affect
+the caller's object. A default expression is evaluated when the function is
+defined, so a mutable default list can accumulate across omitted-argument calls.
+[The objects unit](units/objects-and-aliases/README.md) records an actual two-call
+failure and a defaultNone design creating a fresh list inside each absent-container
+call. An explicitly supplied empty list remains intentional; testing `if not
+container` would replace it and violate that mutation contract.
 
-The focus is **calls, parameters, returns, closures/generics where applicable and call-stack/runtime effects**. A language feature is worth understanding when you can connect its source-level form to state, representation, guarantees, costs, and failure behavior.
-
-## Mechanism model
-
-Interpret this topic through the language model: dynamic language whose common CPython implementation compiles source to bytecode executed by a VM/interpreter with managed objects.
-
-Use this execution chain whenever applicable:
-
-`input/source → parse/compile/runtime representation → state/memory/signal transition → OS/hardware/simulator effect → observable output`.
-
-For hardware-description languages, remember that synthesizable code describes hardware structure/behavior rather than a sequential software process.
-
-## Minimal example
-
-```python
-def add(a:int,b:int)->int:
-    return a+b
-x=5
-print(add(x,2))
-```
-
-Before running it, predict the output or state transition. Then ask what lower layer must exist for the result to occur. Change one value/type/control condition and predict again.
-
-## Failure/counterexample
-
-Create one invalid or boundary case relevant to this topic. Decide whether it should be rejected at parse/compile/elaboration time, fail at runtime/simulation, produce a defined alternate result, or enter undefined/implementation-specific behavior. Do not label a behavior without checking the language/tool contract.
-
-## Tests and experiments
-
-1. Write 3 normal tests and 3 edge cases.
-2. Inspect generated assembly/bytecode/query plan/waveform where applicable.
-3. Measure one cost: runtime, allocations, binary size, query latency, cycles, or simulated transitions.
-4. Break one assumption and record the actual diagnostic/output.
-5. Rebuild the example from memory in a new file.
-
-## Application
-
-Use this topic inside the project ladder in `25_PROJECTS.md`. Explain how the mechanism changes when the program/design grows from a toy example to a long-running production or hardware system.
-
-## Limits
-
-This page teaches the stable conceptual model; it is not an exhaustive versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
-
-## Assignment
-
-- 5 short exercises that isolate the mechanism;
-- 3 integration exercises;
-- 1 debugging exercise;
-- 1 measurement experiment;
-- 1 transfer task with unfamiliar surface syntax;
-- explain the topic aloud without using the language name, only state/transformations/constraints, then map it back to Python.
+Exercise: implement an optional destination list API, state whether it mutates a
+supplied destination, and independently test two omitted calls plus an explicit
+empty list. [Hints](units/objects-and-aliases/HINTS.md) and
+[solutions](units/objects-and-aliases/SOLUTIONS.md) explain the alias reasoning.
+Nested scopes, decorators, generators, async and full call binding remain outside
+this bounded function introduction.

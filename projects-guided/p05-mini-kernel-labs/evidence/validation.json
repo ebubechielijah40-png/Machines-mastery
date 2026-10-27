@@ -1,0 +1,29 @@
+{
+  "kind": "actual executed bounded systems checks",
+  "executed_at_utc": "2026-10-23T10:45:37.267267+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "passed": true,
+  "records": [
+    {
+      "name": "kernel_workbench",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects-guided/p05-mini-kernel-labs/code",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_resource_and_invalid_boundaries (test_workbench.WorkbenchTests.test_resource_and_invalid_boundaries) ... ok\ntest_schedule_complete_trace (test_workbench.WorkbenchTests.test_schedule_complete_trace) ... ok\ntest_translate_permissions_and_absence (test_workbench.WorkbenchTests.test_translate_permissions_and_absence) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.221s\n\nOK\n"
+    }
+  ]
+}

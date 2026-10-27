@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "name": "elastic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "foundations/chemistry-materials/elastic-evidence/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:47.715682+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "device-logic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "hardware-electronics-mastery/device-logic/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:47.792360+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "page-shape",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "07-databases-data-systems/page-index/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:47.911184+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "wal-rebuild",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "07-databases-data-systems/page-index/experiment_rebuild.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:51.870271+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "model-families",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "16-machine-learning/model-families/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:51.992662+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "ordered-structures",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "algorithmic-problem-solving/mechanisms/ordered-state/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:53.020938+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "dynamic-programming",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "algorithmic-problem-solving/topics/dynamic-programming/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:53.253956+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "lexical-binding",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "books/crafting-interpreters/generated/chapters/11/code/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:53.306488+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "operations",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "production-systems-engineering/labs/operation-workbench/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:53.398812+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "binary-records",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "reverse-engineering-systems/exercises/02-binary-records/experiment.py"
+      ],
+      "started_at_utc": "2026-10-23T21:46:54.321930+00:00",
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "limits": "Actual local synthetic observations; PASS means executable JSON contract, not agreement with every scientific claim or a historical benchmark."
+}

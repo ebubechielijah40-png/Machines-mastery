@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "observed_at_utc": "2026-10-23T21:55:57.931161+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/java",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "openjdk 17.0.20 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "com.sun.tools.javac.Main",
+        "-version"
+      ],
+      "exit_code": 0,
+      "stdout": "javac 17.0.20\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "com.sun.tools.javac.Main",
+        "--release",
+        "17",
+        "-Xlint:all",
+        "-d",
+        "/tmp/mm-java-lm9smfgr",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/10-java/units/objects-resources-threads/LifetimeLab.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/10-java/units/objects-resources-threads/LifetimeLab.java:29: warning: [try] auto-closeable resource Resource has a member method close() that could throw InterruptedException\n    static final class Resource implements AutoCloseable {\n                 ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/10-java/units/objects-resources-threads/LifetimeLab.java:81: warning: [try] auto-closeable resource Resource has a member method close() that could throw InterruptedException\n        try (Resource a = new Resource(\"A\", trace); Resource b = new Resource(\"B\", trace)) {\n                      ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/10-java/units/objects-resources-threads/LifetimeLab.java:81: warning: [try] auto-closeable resource Resource has a member method close() that could throw InterruptedException\n        try (Resource a = new Resource(\"A\", trace); Resource b = new Resource(\"B\", trace)) {\n                                                             ^\n3 warnings\n"
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-cp",
+        "/tmp/mm-java-lm9smfgr",
+        "LifetimeLab"
+      ],
+      "exit_code": 0,
+      "stdout": "resource_trace=open:A,open:B,use:A,use:B,close:B,close:A\ncounters=volatile_split:1,atomic:2,monitor:2\nchecks=15\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xint",
+        "-cp",
+        "/tmp/mm-java-lm9smfgr",
+        "LifetimeLab"
+      ],
+      "exit_code": 0,
+      "stdout": "resource_trace=open:A,open:B,use:A,use:B,close:B,close:A\ncounters=volatile_split:1,atomic:2,monitor:2\nchecks=15\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-m",
+        "jdk.jdeps/com.sun.tools.javap.Main",
+        "-c",
+        "-p",
+        "-classpath",
+        "/tmp/mm-java-lm9smfgr",
+        "LifetimeLab$Packet"
+      ],
+      "exit_code": 0,
+      "stdout": "Compiled from \"LifetimeLab.java\"\nfinal class LifetimeLab$Packet {\n  private final byte[] bytes;\n\n  LifetimeLab$Packet(byte[]);\n    Code:\n       0: aload_0\n       1: invokespecial #1                  // Method java/lang/Object.\"<init>\":()V\n       4: aload_1\n       5: ifnull        21\n       8: aload_1\n       9: arraylength\n      10: ifeq          21\n      13: aload_1\n      14: arraylength\n      15: sipush        1024\n      18: if_icmple     31\n      21: new           #7                  // class java/lang/IllegalArgumentException\n      24: dup\n      25: ldc           #9                  // String packet length must be 1..1024\n      27: invokespecial #11                 // Method java/lang/IllegalArgumentException.\"<init>\":(Ljava/lang/String;)V\n      30: athrow\n      31: aload_0\n      32: aload_1\n      33: invokevirtual #14                 // Method \"[B\".clone:()Ljava/lang/Object;\n      36: checkcast     #15                 // class \"[B\"\n      39: putfield      #20                 // Field bytes:[B\n      42: return\n\n  byte first();\n    Code:\n       0: aload_0\n       1: getfield      #20                 // Field bytes:[B\n       4: iconst_0\n       5: baload\n       6: ireturn\n\n  byte[] snapshot();\n    Code:\n       0: aload_0\n       1: getfield      #20                 // Field bytes:[B\n       4: invokevirtual #14                 // Method \"[B\".clone:()Ljava/lang/Object;\n       7: checkcast     #15                 // class \"[B\"\n      10: areturn\n}\n",
+      "stderr": ""
+    }
+  ],
+  "limits": "Java17 selected contracts only; no GC timing, native assembly, throughput or all-memory-model outcomes claim."
+}

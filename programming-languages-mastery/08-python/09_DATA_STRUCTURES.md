@@ -1,6 +1,6 @@
 # Python: Layout, Invariants, Ownership And Complexity Of Compound Data
 
-**Prepared reference; learner NOT STARTED.** This page is self-contained for normal study. Exact version-specific edge cases should still be checked against the installed toolchain/specification when they matter.
+**SCAFFOLDED scope note; learner NOT STARTED.** This numbered page is not a complete self-contained instructional unit. Its generic example and assignments do not establish topic-specific mastery. Use a developed unit linked from the route README when one exists; exact source/toolchain claims outside it remain unverified.
 
 ## Why this matters
 
@@ -45,7 +45,7 @@ Use this topic inside the project ladder in `25_PROJECTS.md`. Explain how the me
 
 ## Limits
 
-This page teaches the stable conceptual model; it is not an exhaustive versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
+This page sketches conceptual scope; it does not yet supply a complete topic-specific worked build or verified versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
 
 ## Assignment
 

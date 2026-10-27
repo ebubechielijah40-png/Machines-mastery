@@ -1,0 +1,111 @@
+markdown files: 1214
+scaffold-pattern files: 73
+SCAFFOLD QUALITY_REMEDIATION_LEDGER.md
+SCAFFOLD COMPLETION_REPORT.md
+SCAFFOLD BOOK_REGISTRY.md
+SCAFFOLD MASTERY.md
+SCAFFOLD PREREQUISITE_GRAPH.md
+SCAFFOLD SYSTEMS_MASTERY_EXPANSION_REPORT.md
+SCAFFOLD FINAL_VALIDATION.md
+SCAFFOLD MASTER_CURRICULUM.md
+SCAFFOLD 10-data-science/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 14-programming-languages/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 13-privacy/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 04-computer-systems/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 02-programming/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 15-distributed-systems/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 05-operating-systems/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 12-data-security/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 11-cybersecurity/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 03-algorithms/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 08-information-science/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 09-scientific-reasoning/SELF_CONTAINED_GUIDE.md
+SCAFFOLD algorithmic-problem-solving/README.md
+SCAFFOLD 01-computation/SELF_CONTAINED_GUIDE.md
+SCAFFOLD hardware-electronics-mastery/README.md
+SCAFFOLD research-paper-reconstruction/README.md
+SCAFFOLD 16-machine-learning/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 06-networking/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 18-computational-biology/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 17-embedded-robotics/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 07-databases-data-systems/SELF_CONTAINED_GUIDE.md
+SCAFFOLD 19-experimental-research/SELF_CONTAINED_GUIDE.md
+SCAFFOLD production-systems-engineering/labs/event-ledger/PREREQUISITE_BRIDGE.md
+SCAFFOLD programming-languages-mastery/05-x86-64-assembly/README.md
+SCAFFOLD programming-languages-mastery/12-shell-bash/README.md
+SCAFFOLD programming-languages-mastery/08-python/README.md
+SCAFFOLD programming-languages-mastery/04-zig/README.md
+SCAFFOLD programming-languages-mastery/09-go/README.md
+SCAFFOLD programming-languages-mastery/03-rust/README.md
+SCAFFOLD programming-languages-mastery/07-riscv-assembly/README.md
+SCAFFOLD programming-languages-mastery/06-arm64-assembly/README.md
+SCAFFOLD programming-languages-mastery/01-c/README.md
+SCAFFOLD programming-languages-mastery/10-java/README.md
+SCAFFOLD programming-languages-mastery/02-cpp/README.md
+SCAFFOLD programming-languages-mastery/11-sql/README.md
+SCAFFOLD programming-languages-mastery/13-systemverilog/README.md
+SCAFFOLD programming-languages-mastery/14-vhdl/README.md
+SCAFFOLD programming-languages-mastery/07-riscv-assembly/units/01-addi/PREREQUISITE_BRIDGE.md
+SCAFFOLD foundations/mathematics/README.md
+SCAFFOLD foundations/chemistry-materials/README.md
+SCAFFOLD foundations/physics/README.md
+SCAFFOLD foundations/statistics/README.md
+SCAFFOLD hardware-description-languages/vhdl/README.md
+SCAFFOLD general-machine-systems/units/transformers/README.md
+SCAFFOLD general-machine-systems/units/bicycles/README.md
+SCAFFOLD algorithmic-problem-solving/topics/topological-ordering/README.md
+SCAFFOLD algorithmic-problem-solving/topics/complexity/README.md
+SCAFFOLD algorithmic-problem-solving/topics/prefix-techniques/README.md
+SCAFFOLD research-paper-reconstruction/domains/embedded-systems/README.md
+SCAFFOLD research-paper-reconstruction/domains/programming-languages/README.md
+SCAFFOLD research-paper-reconstruction/domains/scientific-computing/README.md
+SCAFFOLD research-paper-reconstruction/domains/information-retrieval/README.md
+SCAFFOLD research-paper-reconstruction/domains/cryptography/README.md
+SCAFFOLD research-paper-reconstruction/domains/data-systems/README.md
+SCAFFOLD research-paper-reconstruction/domains/computer-architecture/README.md
+SCAFFOLD research-paper-reconstruction/domains/operating-systems/README.md
+SCAFFOLD research-paper-reconstruction/domains/machine-learning/README.md
+SCAFFOLD research-paper-reconstruction/domains/distributed-systems/README.md
+SCAFFOLD research-paper-reconstruction/domains/compilers/README.md
+SCAFFOLD research-paper-reconstruction/domains/databases/README.md
+SCAFFOLD research-paper-reconstruction/domains/computational-biology/README.md
+SCAFFOLD research-paper-reconstruction/domains/networking/README.md
+SCAFFOLD research-paper-reconstruction/domains/cybersecurity/README.md
+SCAFFOLD research-paper-reconstruction/domains/privacy/README.md
+SCAFFOLD research-paper-reconstruction/domains/robotics/README.md
+short core files (<80 words): 35
+SHORT 59 20-quantum-computing/05_HARDWARE_MODALITIES.md
+SHORT 56 20-quantum-computing/09_PROJECT_LADDER.md
+SHORT 68 20-quantum-computing/01_MATH_BRIDGE.md
+SHORT 57 20-quantum-computing/03_ALGORITHMS.md
+SHORT 51 20-quantum-computing/02_CIRCUIT_MODEL.md
+SHORT 63 20-quantum-computing/04_NOISE_ERROR_CORRECTION.md
+SHORT 48 20-quantum-computing/06_CONTROL_STACK.md
+SHORT 53 20-quantum-computing/08_PRACTICAL_LIMITS.md
+SHORT 48 20-quantum-computing/07_QUANTUM_CRYPTOGRAPHY.md
+SHORT 64 security-cryptography-mastery/04_PROTOCOLS_PKI.md
+SHORT 75 security-cryptography-mastery/02_SYMMETRIC_CRYPTO.md
+SHORT 62 security-cryptography-mastery/07_SIDE_CHANNELS_IMPLEMENTATION.md
+SHORT 64 security-cryptography-mastery/06_DATA_SECURITY.md
+SHORT 59 security-cryptography-mastery/05_AUTH_IDENTITY.md
+SHORT 65 security-cryptography-mastery/08_POST_QUANTUM.md
+SHORT 64 security-cryptography-mastery/10_PROJECT_LADDER.md
+SHORT 50 security-cryptography-mastery/09_SECURITY_ENGINEERING.md
+SHORT 71 hardware-electronics-mastery/01_ELECTRICAL_FOUNDATIONS.md
+SHORT 48 hardware-electronics-mastery/07_MEASUREMENT_INSTRUMENTATION.md
+SHORT 61 hardware-electronics-mastery/08_REVERSE_ENGINEERING_HARDWARE.md
+SHORT 63 hardware-electronics-mastery/02_RC_TRANSIENTS.md
+SHORT 69 hardware-electronics-mastery/03_SEMICONDUCTORS_TRANSISTORS.md
+SHORT 63 hardware-electronics-mastery/06_CPU_DATAPATH_CONTROL.md
+SHORT 74 hardware-electronics-mastery/04_DIGITAL_TIMING.md
+SHORT 63 hardware-electronics-mastery/05_MEMORY.md
+SHORT 49 18-computational-biology/05_PHYLOGENETICS.md
+SHORT 56 18-computational-biology/08_ML_FOR_BIOLOGY.md
+SHORT 56 18-computational-biology/02_SEQUENCE_ALGORITHMS.md
+SHORT 56 18-computational-biology/04_EVOLUTION_POPGEN.md
+SHORT 56 18-computational-biology/03_GENOMICS_PIPELINES.md
+SHORT 56 18-computational-biology/07_STRUCTURAL_BIOLOGY.md
+SHORT 56 18-computational-biology/01_MOLECULAR_FOUNDATIONS.md
+SHORT 53 18-computational-biology/06_SYSTEMS_BIOLOGY.md
+SHORT 48 18-computational-biology/10_PROJECT_LADDER.md
+SHORT 48 18-computational-biology/09_COMPUTATIONAL_SYNTHETIC_BIOLOGY.md

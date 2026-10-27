@@ -1,0 +1,10 @@
+test_drift_detection_psi (test_model_serving.ModelServingTests.test_drift_detection_psi) ... ok
+test_dynamic_batching_and_prediction (test_model_serving.ModelServingTests.test_dynamic_batching_and_prediction) ... ok
+test_pipeline_training_and_accuracy (test_model_serving.ModelServingTests.test_pipeline_training_and_accuracy) ... ok
+test_rate_limiter (test_model_serving.ModelServingTests.test_rate_limiter) ... ok
+test_schema_validation_rejection (test_model_serving.ModelServingTests.test_schema_validation_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.139s
+
+OK

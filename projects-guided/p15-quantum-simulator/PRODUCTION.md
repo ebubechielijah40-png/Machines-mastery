@@ -1,3 +1,7 @@
-# Production delta
+# Operating and security boundaries
 
-A teaching implementation omits many operational concerns. Analyze deployment, configuration, secrets, compatibility, data migration, observability, capacity, concurrency, fault tolerance, backup/recovery, security review, and incident response before calling a design production-ready.
+This reference runs locally and has no server, authentication, uploads, secrets or deployment. Keep it that way while studying the mechanism. A physical quantum job or public compute service requires a separate design and evidence; ideal probabilities cannot predict noisy-device success unaided.
+
+The main failure modes here are invalid amplitudes/gates, incorrect bit order, state mutation shared across requests, excessive n or shot counts, oversized input iterables and long simulation workloads. The code rejects malformed matrices, nonfinite values, invalid addresses and n outside 1..20; transformations validate before mutation. It does not enforce total request-byte limits, aggregate memory limits, timeouts, concurrency isolation or cancellation. Independent instances are needed for concurrent jobs; shared instances are mutable and not thread safe.
+
+For a future bounded service, validate circuit size and n before allocating, reject an input byte budget before parsing, estimate `gates*2**n + shots*2**n` work, isolate jobs in processes with memory/time budgets, record model/version/seed, expose progress and typed failure, and avoid logging private circuits by default. Benchmark a correct baseline before changing algorithms. A packed-array or cumulative-sampling optimization must preserve the explicit address and observation contracts and pass the dense-oracle tests. These are design requirements, not implemented deployment claims.

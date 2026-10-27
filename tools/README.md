@@ -41,3 +41,37 @@ python3 tools/validate_expansion.py
 ```
 
 The readiness reporter returns nonzero for missing learner evidence (expected now). It follows required graph edges; humans still inspect the seven-discipline bridge and the lesson diagnostic. The expansion validator enforces exemplar artifacts, topic quotas for future completed releases and preserved baseline curriculum requirements. Test and benchmark commands are documented within each executable unit. Temporary assembler/simulator packages are not repository dependencies silently assumed installed.
+
+## Expansion experiment replay
+
+`python3 tools/replay_expansion_experiments.py --report-dir research/quality/local-experiments`
+runs ten explicitly listed trusted local experiment programs, saving new JSON,
+stdout/stderr and exact command/exit records. It includes a native C oracle and
+controlled direct-child process kills; inspect the code first. It does not fetch
+sources,install tools,write remote systems or certify scientific truth.
+
+## Source ZIP and history packaging
+
+After reviewing and committing the development branch, run
+`python3 tools/package_release.py --source-only --label 2026-10-25 --report-root research/quality/2026-10-25-publication --continuation-base HEAD --output-dir /absolute/path/outside-the-repository`.
+It rejects a dirty tree and main/master, packages Git's committed files with a
+source SHA256 manifest and bundle, and emits an outer ZIP checksum. The explicit label and report directory select the intended checkpoint. It reads the retained final
+verification/content-gate reports, not a guessed completion status. Rebuilding
+requires an empty output location. Unzip into a fresh directory, validate CRCs,
+check the source manifest/commit and rerun the documented verification before
+publishing the result. Identical historical observations are preserved; a new
+replay belongs in a new evidence directory.
+
+## Publication hygiene and source-only export
+
+`python3 tools/check_publication.py` checks tracked paths, generated/private
+artifacts, file sizes and known credential markers without running lesson code.
+It does not grant a domain rating or guarantee detection of every possible secret.
+
+Use `tools/package_release.py --source-only` to export exactly the committed
+repository files at ZIP root. The bundle, manifest, checksum and release receipt
+stay beside the ZIP, outside the upload tree. Packaging verifies byte identity.
+The publication integration test extracts the result, runs `git add --all`, and
+requires every expected file to stage without cleanup or forced adds.
+
+The packaging example uses HEAD so it also works after importing the source ZIP into an existing GitHub clone. To document an earlier continuation checkpoint, supply a verified ancestor that exists in your own checkout. The separate development bundle preserves those original checkpoint commits.

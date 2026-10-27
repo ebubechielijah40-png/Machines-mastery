@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "stable_commit": "7936e4344021f78f93a9e568c839da719cf2b35f",
+  "archive_preservation_commit": "6e4402b",
+  "branch": "development/excellence-2026-10-22",
+  "archive_delta_record": "research/quality/2026-10-22/archive-comparison.json",
+  "window_tracked_changes": [
+    {
+      "status": "M",
+      "path": "07-databases-data-systems/README.md"
+    },
+    {
+      "status": "M",
+      "path": "07-databases-data-systems/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "15-distributed-systems/README.md"
+    },
+    {
+      "status": "M",
+      "path": "15-distributed-systems/code/test_replication_sim.py"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/labs/README.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/labs/attention.py"
+    },
+    {
+      "status": "M",
+      "path": "18-computational-biology/02_SEQUENCE_ALGORITHMS.md"
+    },
+    {
+      "status": "M",
+      "path": "18-computational-biology/code/sequence_lab.py"
+    },
+    {
+      "status": "M",
+      "path": "20-quantum-computing/LABS.md"
+    },
+    {
+      "status": "M",
+      "path": "20-quantum-computing/README.md"
+    },
+    {
+      "status": "M",
+      "path": "20-quantum-computing/code/simulator.py"
+    },
+    {
+      "status": "M",
+      "path": "20-quantum-computing/code/test_simulator.py"
+    },
+    {
+      "status": "M",
+      "path": "AUTOPILOT_BLOCKERS.md"
+    },
+    {
+      "status": "M",
+      "path": "AUTOPILOT_QUEUE.md"
+    },
+    {
+      "status": "M",
+      "path": "AUTOPILOT_STATE.md"
+    },
+    {
+      "status": "M",
+      "path": "COMPLETION_REPORT.md"
+    },
+    {
+      "status": "M",
+      "path": "DEPTH_STANDARD.md"
+    },
+    {
+      "status": "M",
+      "path": "EXCELLENCE_UPGRADE_STATUS.md"
+    },
+    {
+      "status": "M",
+      "path": "FINAL_VALIDATION.md"
+    },
+    {
+      "status": "M",
+      "path": "INSTALL_AND_RUN.md"
+    },
+    {
+      "status": "M",
+      "path": "LATEST_HANDOFF.md"
+    },
+    {
+      "status": "M",
+      "path": "MASTER_CURRICULUM_SELF_CONTAINED.md"
+    },
+    {
+      "status": "M",
+      "path": "PROGRESS.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "RESOURCE_REGISTRY.md"
+    },
+    {
+      "status": "M",
+      "path": "START_HERE.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/08-maximum-burst-load/solution.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/08-maximum-burst-load/solution.py"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/08-maximum-burst-load/tests/test_solution.py"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/17-kth-latency-quickselect/solution.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/17-kth-latency-quickselect/tests/test_solution.py"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/20-maximum-product-window/solution.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/20-maximum-product-window/solution.py"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/arrays/problems/20-maximum-product-window/tests/test_solution.py"
+    },
+    {
+      "status": "M",
+      "path": "books/code-petzold/README.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/README.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/mathematics/README.md"
+    },
+    {
+      "status": "M",
+      "path": "hardware-electronics-mastery/02_RC_TRANSIENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "hardware-electronics-mastery/code/rc_lab.py"
+    },
+    {
+      "status": "M",
+      "path": "hardware-electronics-mastery/code/test_rc_lab.py"
+    },
+    {
+      "status": "M",
+      "path": "production-systems-engineering/labs/model-serving/POSTMORTEMS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/ai-autodiff-transformer/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p07-storage-engine/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p14-bioinformatics/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p15-quantum-simulator/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "registries/catalog.json"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/01_backprop_1986.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/02_alexnet_2012.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/03_seq2seq_2014.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/04_attention_2017.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/05_bert_2018.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/06_gpt3_2020.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/07_scaling_laws_2020.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/08_rag_2020.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/09_instructgpt_2022.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/10_chinchilla_2022.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/11_react_2022.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/12_flashattention_2022.md"
+    },
+    {
+      "status": "M",
+      "path": "tools/depth_audit.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/run_reference_tests.py"
+    }
+  ],
+  "window_added_files": [
+    "16-machine-learning/labs/DERIVATION.md",
+    "16-machine-learning/labs/EXERCISES.md",
+    "16-machine-learning/labs/EXPERIMENT.md",
+    "16-machine-learning/labs/HINTS.md",
+    "16-machine-learning/labs/SOLUTIONS.md",
+    "16-machine-learning/labs/SOURCES.md",
+    "16-machine-learning/labs/evidence/2026-10-22-attention.json",
+    "16-machine-learning/labs/evidence/2026-10-22-tests.txt",
+    "16-machine-learning/labs/experiment_attention.py",
+    "16-machine-learning/labs/test_attention_derivatives.py",
+    "18-computational-biology/alignment/EXERCISES.md",
+    "18-computational-biology/alignment/EXPERIMENTS.md",
+    "18-computational-biology/alignment/HINTS.md",
+    "18-computational-biology/alignment/SOLUTIONS.md",
+    "18-computational-biology/alignment/SOURCE_VERIFICATION.md",
+    "18-computational-biology/alignment/evidence/results.json",
+    "18-computational-biology/alignment/evidence/solution-check.json",
+    "18-computational-biology/alignment/evidence/validation.json",
+    "18-computational-biology/code/alignment.py",
+    "18-computational-biology/code/alignment_experiment.py",
+    "18-computational-biology/code/test_alignment.py",
+    "20-quantum-computing/10_STATEVECTOR_MEASUREMENT.md",
+    "20-quantum-computing/SOURCE_VERIFICATION.md",
+    "20-quantum-computing/STATEVECTOR_PREREQUISITE_BRIDGE.md",
+    "20-quantum-computing/assessments/EXERCISES.md",
+    "20-quantum-computing/assessments/HINTS.md",
+    "20-quantum-computing/assessments/SOLUTIONS.md",
+    "20-quantum-computing/code/measurement_experiment.py",
+    "20-quantum-computing/experiments/MEASUREMENT.md",
+    "20-quantum-computing/experiments/results/measurement-2026-10-22.json",
+    "20-quantum-computing/experiments/results/tests-2026-10-22.txt",
+    "EXCELLENCE_PROGRESS.md",
+    "EXCELLENCE_REMEDIATION_BACKLOG.md",
+    "FINAL_EXCELLENCE_AUDIT.md",
+    "INTEGRATION.md",
+    "QUALITY_BASELINE_AUDIT.md",
+    "foundations/mathematics/change-error-and-evidence/EXERCISES.md",
+    "foundations/mathematics/change-error-and-evidence/HINTS.md",
+    "foundations/mathematics/change-error-and-evidence/README.md",
+    "foundations/mathematics/change-error-and-evidence/RESULTS.md",
+    "foundations/mathematics/change-error-and-evidence/SOLUTIONS.md",
+    "foundations/mathematics/change-error-and-evidence/SOURCES.md",
+    "foundations/mathematics/change-error-and-evidence/experiment.py",
+    "foundations/mathematics/change-error-and-evidence/numerics.py",
+    "foundations/mathematics/change-error-and-evidence/observed-2026-10-22.json",
+    "foundations/mathematics/change-error-and-evidence/test_numerics.py",
+    "hardware-electronics-mastery/code/run_rc_experiments.py",
+    "hardware-electronics-mastery/rc-transients/EXERCISES.md",
+    "hardware-electronics-mastery/rc-transients/EXPERIMENT.md",
+    "hardware-electronics-mastery/rc-transients/SOURCES.md",
+    "hardware-electronics-mastery/rc-transients/evidence/rc-experiment.json",
+    "hardware-electronics-mastery/rc-transients/evidence/tests.txt",
+    "hardware-electronics-mastery/rc-transients/hints/README.md",
+    "hardware-electronics-mastery/rc-transients/solutions/README.md",
+    "projects-guided/p07-storage-engine/EXERCISES.md",
+    "projects-guided/p07-storage-engine/LESSON.md",
+    "projects-guided/p07-storage-engine/SOURCES.md",
+    "projects-guided/p07-storage-engine/code/experiment.py",
+    "projects-guided/p07-storage-engine/code/starter_memory.py",
+    "projects-guided/p07-storage-engine/code/test_wal_store.py",
+    "projects-guided/p07-storage-engine/code/wal_store.py",
+    "projects-guided/p07-storage-engine/evidence/byte-cut-2026-10-22.json",
+    "projects-guided/p07-storage-engine/evidence/tests-2026-10-22.txt",
+    "projects-guided/p07-storage-engine/solutions/EXERCISES.md",
+    "projects-guided/p07-storage-engine/source_verification.json",
+    "projects-guided/p14-bioinformatics/fixtures/toy.fasta",
+    "projects-guided/p14-bioinformatics/solutions/workbench.py",
+    "projects-guided/p14-bioinformatics/starter/inspect_fasta.py",
+    "projects-guided/p14-bioinformatics/tests/test_workbench.py",
+    "registries/quality_evidence.json",
+    "registries/source_verification.json",
+    "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+    "research/quality/2026-10-22/TEST_REPORT.md",
+    "research/quality/2026-10-22/baseline/01-validate.txt",
+    "research/quality/2026-10-22/baseline/02--m.txt",
+    "research/quality/2026-10-22/baseline/03-render.txt",
+    "research/quality/2026-10-22/baseline/04-validate_expansion.txt",
+    "research/quality/2026-10-22/baseline/05-run_reference_tests.txt",
+    "research/quality/2026-10-22/baseline/06-depth_audit.txt",
+    "research/quality/2026-10-22/baseline/07--m.txt",
+    "research/quality/2026-10-22/baseline/08--m.txt",
+    "research/quality/2026-10-22/baseline/content-audit.json",
+    "research/quality/2026-10-22/baseline/environment.json",
+    "research/quality/2026-10-22/baseline/results.json",
+    "research/quality/2026-10-22/book-coursebook-audit.json",
+    "research/quality/2026-10-22/changed-files.json",
+    "research/quality/2026-10-22/content-audit.json",
+    "research/quality/2026-10-22/integration-content-audit.json",
+    "research/quality/2026-10-22/integration-review.md",
+    "research/quality/2026-10-22/new-unit-review.md",
+    "research/quality/2026-10-22/qualitative-review.md",
+    "research/quality/2026-10-22/quality-gate.txt",
+    "research/quality/2026-10-22/verification-initial/c-parser.txt",
+    "research/quality/2026-10-22/verification-initial/expansion.txt",
+    "research/quality/2026-10-22/verification-initial/git-whitespace.txt",
+    "research/quality/2026-10-22/verification-initial/hidden-state.txt",
+    "research/quality/2026-10-22/verification-initial/infrastructure.txt",
+    "research/quality/2026-10-22/verification-initial/production-cluster.txt",
+    "research/quality/2026-10-22/verification-initial/production-ledger.txt",
+    "research/quality/2026-10-22/verification-initial/production-serving.txt",
+    "research/quality/2026-10-22/verification-initial/reference-groups.txt",
+    "research/quality/2026-10-22/verification-initial/render-drift.txt",
+    "research/quality/2026-10-22/verification-initial/results.json",
+    "research/quality/2026-10-22/verification-initial/riscv-model.txt",
+    "research/quality/2026-10-22/verification-initial/structure.txt",
+    "research/quality/2026-10-22/verification/c-parser.txt",
+    "research/quality/2026-10-22/verification/expansion.txt",
+    "research/quality/2026-10-22/verification/git-whitespace.txt",
+    "research/quality/2026-10-22/verification/hidden-state.txt",
+    "research/quality/2026-10-22/verification/infrastructure.txt",
+    "research/quality/2026-10-22/verification/production-cluster.txt",
+    "research/quality/2026-10-22/verification/production-ledger.txt",
+    "research/quality/2026-10-22/verification/production-serving.txt",
+    "research/quality/2026-10-22/verification/reference-groups.txt",
+    "research/quality/2026-10-22/verification/render-drift.txt",
+    "research/quality/2026-10-22/verification/results.json",
+    "research/quality/2026-10-22/verification/riscv-model.txt",
+    "research/quality/2026-10-22/verification/structure.txt",
+    "tools/quality_audit.py",
+    "tools/tests/test_quality_audit.py",
+    "tools/verify_repository.py"
+  ],
+  "limits": "File enumeration only, not an educational quality measure. This manifest lists itself; generated hashes exclude self-reference."
+}

@@ -1,7 +1,27 @@
-# Pneumatics investigation plan
+# Pneumatics — mechanism, failure, and reconstruction
 
-SCAFFOLDED; learner NOT STARTED. Focus: energy conversion and load response.
+## Why this machine exists
+Pneumatics use compressed gas for motion/control where compliance and cleanliness can be useful.
 
-Use [framework](../../FRAMEWORK.md). Identify an actual bounded artifact before assigning materials, ratings, pinouts or tolerances. Develop at least two plausible mechanisms and one safe distinguishing observation. Prepare a theory/diagram, traced mechanism, teardown plan, predicted experiment, minimum reconstruction, failure tree, questions and control/computing connections.
+## Energy and information path
+Compressor stores energy in compressed gas; valves meter flow; actuators convert pressure to motion; exhaust returns gas to atmosphere.
 
-Forces/loads, torque, fluids, electricity and timing require exact [foundation lessons](../../../foundations/README.md) when used. If they are not prepared, keep the dependent study blocked. A source-backed calculation is not a measured machine property. No build or teardown is performed by this plan.
+## Mechanism
+Gas compressibility makes behavior spring-like and pressure dependent, unlike ideal incompressible hydraulic assumptions.
+
+When studying a real example, first draw the boundary and label energy input, useful output, losses, state, control, and interfaces. Then descend into the component that limits behavior instead of cataloguing parts.
+
+## Failure modes
+leaks, pressure drop, moisture, valve sticking, unsafe stored energy
+
+A failure is evidence about mechanism. Record symptom → competing hypotheses → measurement → result → revised model. Do not jump from symptom directly to replacement.
+
+## Experiment
+Model cylinder force versus gauge pressure and area; compare with hydraulic assumptions.
+
+Before measuring, predict the direction and approximate magnitude of the effect. Record units, uncertainty, and what the experiment cannot establish.
+
+## Reconstruction challenge
+Infer likely valve/actuator roles from a pneumatic schematic and predict state when supply is removed.
+
+After studying, hide the reference and redraw the functional block diagram from memory. Your reconstruction passes only if another person could use it to predict behavior under a changed load or failure.

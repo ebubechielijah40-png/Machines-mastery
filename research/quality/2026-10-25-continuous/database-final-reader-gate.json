@@ -1,0 +1,78 @@
+{
+  "domain": "databases",
+  "previous_readiness": 80.0,
+  "recommended_marks": {
+    "instruction": [
+      2,
+      2,
+      2,
+      1
+    ],
+    "implementation": [
+      2,
+      2,
+      2,
+      1
+    ],
+    "reproduction": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "assessment": [
+      2,
+      2,
+      2,
+      1
+    ],
+    "prerequisites": [
+      2,
+      2,
+      2,
+      1
+    ],
+    "references": [
+      2,
+      2,
+      2,
+      1
+    ]
+  },
+  "criterion_percentages": {
+    "instruction": 87.5,
+    "implementation": 87.5,
+    "reproduction": 100.0,
+    "assessment": 87.5,
+    "prerequisites": 87.5,
+    "references": 87.5
+  },
+  "weighted_readiness": 90.0,
+  "recommended_rating": "PARTIAL",
+  "bounded_unit_recommendation": "STRONG after integration",
+  "tests_passed": true,
+  "independent_review": true,
+  "scope_breadth_confirmed": false,
+  "critical_errors": [],
+  "mandatory_blockers": [],
+  "missing_requirements": [
+    "Frozen broad streaming scope remains incomplete: only one immutable ordered partition is implemented; multi-partition event-time/out-of-order/late-data/window/watermark and durable progress/restart teaching require substantive implementation and independent assessment."
+  ],
+  "estimate_active_hours": [
+    3,
+    7
+  ],
+  "estimate_confidence": "low",
+  "original_mandate_rating": "PARTIAL",
+  "scope_sha256": "573d7e18d7ace1de6c7d2d8e8e2090ffcfa97d86f819268f3aa62e2139b07516",
+  "review": "research/quality/2026-10-25-continuous/database-final-reader-review.md",
+  "probes": "research/quality/2026-10-25-continuous/database-final-reader-probes.json",
+  "tests": "research/quality/2026-10-25-continuous/database-final-reader-tests.json",
+  "source_sha256": {
+    "store.py": "eb8a4790baea1f8a592fd89d70553516e212c4ea9210a6490ea238298801b646",
+    "planner.py": "1b317360d9a9cc9ceda7b5ccc3a6ad0dff01d4b90e83a2e2aba05690761e804d",
+    "stream.py": "7aaaa2edcc0539f1b11cc9dc3c6aefe9b127da4e4cd37c96582e19bdaebffae4"
+  },
+  "integration_condition": "Run repository-wide replay before publishing; do not narrow frozen scope or count the pruned event-time build.",
+  "limits": "Internal separate-author finite review,53 actual test methods and2187 bag probes; no physical durability, remote effects, comprehensive database completion or learner mastery."
+}

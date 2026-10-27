@@ -22,7 +22,7 @@ A resource can be identified online while its actual study source is absent. Onl
 | R-PYDATA | Python for Data Analysis, third edition | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |
 | R-SECURITY | Security Engineering, third edition | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |
 | R-CRYPTO | Serious Cryptography, second edition | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |
-| R-INTERPRETERS | Crafting Interpreters | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |
+| R-INTERPRETERS | Crafting Interpreters | [SOURCE NOT PRESENT](books/crafting-interpreters/README.md) | UNVERIFIED | Prepared chapters: 1 |
 | R-HOML | Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow, third edition | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |
 | R-EMBEDDED | Making Embedded Systems, second edition | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |
 | R-ROBOTICS | Modern Robotics: Mechanics, Planning, and Control | SOURCE NOT PRESENT — not scaffolded | UNVERIFIED | None |

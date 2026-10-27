@@ -1,0 +1,193 @@
+[completion] exit=0
+crypto_lab: PASS
+sequence_lab: PASS
+quantum simulator: PASS
+0 completion errors
+[crypto] exit=0
+crypto_lab: PASS
+[bio] exit=0
+sequence_lab: PASS
+[quantum] exit=0
+quantum simulator: PASS
+[electronics] exit=0
+rc_lab: PASS
+[networking] exit=0
+network framing: PASS
+[sqlite-index] exit=0
+sqlite index lab: PASS
+[ml-linear] exit=0
+linear model: PASS
+[distributed] exit=0
+replication sim: PASS
+[robotics] exit=0
+pid sim: PASS
+[data-science] exit=0
+stats lab: PASS
+[arrays] exit=0
+== 01-rotate-log-buffer ==
+
+== 02-compact-deleted-records ==
+
+== 03-first-order-violation ==
+
+== 04-run-length-events ==
+
+== 05-merge-time-series ==
+
+== 06-move-empty-slots ==
+
+== 07-product-except-self ==
+
+== 08-maximum-burst-load ==
+
+== 09-circular-burst-load ==
+
+== 10-next-permutation-schedule ==
+
+== 11-three-state-packet-partition ==
+
+== 12-minimal-repair-window ==
+
+== 13-range-load-updates ==
+
+== 14-balanced-shard-cut ==
+
+== 15-first-missing-positive-id ==
+
+== 16-trapped-buffer-capacity ==
+
+== 17-kth-latency-quickselect ==
+
+== 18-merge-into-reserved-buffer ==
+
+== 19-duplicate-cycle-id ==
+
+== 20-maximum-product-window ==
+
+20/20 problem test suites passed
+test_examples (test_solution.T.test_examples) ... ok
+test_oracle (test_solution.T.test_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+test_cases (test_solution.T.test_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+test_exhaustive (test_solution.T.test_exhaustive) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+test_exhaustive (test_solution.T.test_exhaustive) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.074s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.040s
+
+OK
+test_duplicates (test_solution.T.test_duplicates) ... ok
+test_unique (test_solution.T.test_unique) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+test (test_solution.T.test) ... ok
+test_bad (test_solution.T.test_bad) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+test_random (test_solution.T.test_random) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+test (test_solution.T.test) ... ok
+test_bad (test_solution.T.test_bad) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.006s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test_examples (test_solution.T.test_examples) ... ok
+test_generated (test_solution.T.test_generated) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.081s
+
+OK
+REFERENCE TEST GROUPS: 12/12 passed

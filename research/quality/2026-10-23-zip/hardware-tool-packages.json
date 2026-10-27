@@ -1,0 +1,39 @@
+{
+  "scope": "Packages downloaded over HTTPS from Ubuntu noble indexes and checked against index SHA256; Release signature not independently verified. Tool files stay outside repository.",
+  "packages": [
+    {
+      "Package": "ghdl-common",
+      "Version": "4.1.0+dfsg-0ubuntu2",
+      "Filename": "pool/universe/g/ghdl/ghdl-common_4.1.0+dfsg-0ubuntu2_amd64.deb",
+      "SHA256": "6e4de88d8f7bd1087bbc0dfa287599a598dbb8df857f98688a58d404bca26a9e"
+    },
+    {
+      "Package": "ghdl-mcode",
+      "Version": "4.1.0+dfsg-0ubuntu2",
+      "Filename": "pool/universe/g/ghdl/ghdl-mcode_4.1.0+dfsg-0ubuntu2_amd64.deb",
+      "SHA256": "dad5d2989401c0254fd5dff524ebe57913ba3f291737fe7a725b2d7606e27838",
+      "Depends": "ghdl-common (= 4.1.0+dfsg-0ubuntu2), libc6 (>= 2.38), libgcc-s1 (>= 4.2), zlib1g (>= 1:1.2.0)"
+    },
+    {
+      "Package": "iverilog",
+      "Version": "12.0-2build2",
+      "Filename": "pool/universe/i/iverilog/iverilog_12.0-2build2_amd64.deb",
+      "SHA256": "f19394cee05ad526e0eb3873bc6c17a5828f56df17fbe2db40cb66513a2d4667",
+      "Depends": "libbz2-1.0, libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libreadline8t64 (>= 6.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.2.0)"
+    },
+    {
+      "Package": "libgnat-13",
+      "Version": "13.2.0-23ubuntu4",
+      "Filename": "pool/universe/g/gcc-13/libgnat-13_13.2.0-23ubuntu4_amd64.deb",
+      "SHA256": "246d27d5539adc22b6a86c11fa7b6c32619e77aa08f054b15a6f3d1200dca375",
+      "Depends": "gcc-13-base (= 13.2.0-23ubuntu4), libc6 (>= 2.38), libgcc-s1"
+    },
+    {
+      "Package": "binutils-riscv64-linux-gnu",
+      "Version": "2.42-4ubuntu2",
+      "Filename": "pool/main/b/binutils/binutils-riscv64-linux-gnu_2.42-4ubuntu2_amd64.deb",
+      "SHA256": "3a231c7c034488900110a1f6a70528016b2ae1a649a8e078d1bf02dc49c924e7",
+      "Depends": "binutils-common (= 2.42-4ubuntu2), libc6 (>= 2.38), libjansson4 (>= 2.14), libsframe1 (>= 2.41), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)"
+    }
+  ]
+}

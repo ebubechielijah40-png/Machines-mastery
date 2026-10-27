@@ -1,0 +1,22 @@
+test_100_bag_joins_against_cartesian_oracle (test_recovery.PipelineAndPlannerTests.test_100_bag_joins_against_cartesian_oracle) ... ok
+test_grant_stale_statistics_and_output_bounds (test_recovery.PipelineAndPlannerTests.test_grant_stale_statistics_and_output_bounds) ... ok
+test_stream_history_against_batch_sums (test_recovery.PipelineAndPlannerTests.test_stream_history_against_batch_sums) ... ok
+test_stream_replay_checkpoint_source_gap_and_identity (test_recovery.PipelineAndPlannerTests.test_stream_replay_checkpoint_source_gap_and_identity) ... ok
+test_stream_unknown_reply_retry_not_double_counted (test_recovery.PipelineAndPlannerTests.test_stream_unknown_reply_retry_not_double_counted) ... ok
+test_uniform_estimate_fails_on_skew (test_recovery.PipelineAndPlannerTests.test_uniform_estimate_fails_on_skew) ... ok
+test_actual_append_kill_is_not_physical_power_loss (test_recovery.StoreTests.test_actual_append_kill_is_not_physical_power_loss) ... ok
+test_all_publication_process_crash_boundaries (test_recovery.StoreTests.test_all_publication_process_crash_boundaries) ... ok
+test_bad_operations_do_not_mutate_authority (test_recovery.StoreTests.test_bad_operations_do_not_mutate_authority) ... ok
+test_dictionary_history_and_deletion_across_checkpoints (test_recovery.StoreTests.test_dictionary_history_and_deletion_across_checkpoints) ... ok
+test_every_cut_of_next_frame_requires_explicit_tail_repair (test_recovery.StoreTests.test_every_cut_of_next_frame_requires_explicit_tail_repair) ... ok
+test_manifest_path_digest_and_canonical_schema (test_recovery.StoreTests.test_manifest_path_digest_and_canonical_schema) ... ok
+test_selected_corruption_must_not_guess_an_old_generation (test_recovery.StoreTests.test_selected_corruption_must_not_guess_an_old_generation) ... ok
+test_shared_locks_and_nonblocking_exclusion_in_processes (test_recovery.StoreTests.test_shared_locks_and_nonblocking_exclusion_in_processes) ... ok
+test_stale_optimistic_transaction_is_rejected (test_recovery.StoreTests.test_stale_optimistic_transaction_is_rejected) ... ok
+test_suffix_tombstone_is_not_lost (test_recovery.StoreTests.test_suffix_tombstone_is_not_lost) ... ok
+test_two_real_writers_keep_all_transactions (test_recovery.StoreTests.test_two_real_writers_keep_all_transactions) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.209s
+
+OK

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "limitations": "Public shared-file bindings resolve location only; they do not certify correctness, broad project completion or learner mastery.",
+  "projects": [
+    {
+      "readme": "projects-guided/p01-logic-cpu/README.md",
+      "scope": "Original bounded instruction interpreter, not transistor/HDL construction.",
+      "implementation": [
+        "01-computation/toy-cpu/cpu.py"
+      ],
+      "tests": [
+        "01-computation/toy-cpu/test_cpu.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/p03-algorithm-library/README.md",
+      "scope": "Shared developed arrays/graphs/DP and explicit hash/heap/search-tree builds; broader algorithms scope incomplete.",
+      "implementation": [
+        "algorithmic-problem-solving/topics/graphs/code/graph_algorithms.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/code/dp.py",
+        "algorithmic-problem-solving/mechanisms/ordered-state/structures.py"
+      ],
+      "tests": [
+        "algorithmic-problem-solving/topics/graphs/code/test_graph_algorithms.py",
+        "algorithmic-problem-solving/topics/arrays/run_all_tests.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/code/test_dp.py",
+        "algorithmic-problem-solving/mechanisms/ordered-state/test_structures.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt",
+        "research/quality/2026-10-23-zip/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/p09-secure-pipeline/README.md",
+      "scope": "Single-writer synthetic authenticated lineage, not deployed secure infrastructure.",
+      "implementation": [
+        "security-cryptography-mastery/provenance/pipeline.py"
+      ],
+      "tests": [
+        "security-cryptography-mastery/provenance/test_pipeline.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/secure-data-provenance/README.md",
+      "scope": "Same intentionally shared authenticated provenance mechanism; no second implementation claimed.",
+      "implementation": [
+        "security-cryptography-mastery/provenance/pipeline.py"
+      ],
+      "tests": [
+        "security-cryptography-mastery/provenance/test_pipeline.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/p12-neural-net/README.md",
+      "scope": "Small synthetic trained model/decoder; no broad language competence or full ML coverage.",
+      "implementation": [
+        "16-machine-learning/training/tiny_models.py",
+        "16-machine-learning/code/autodiff.py",
+        "16-machine-learning/model-families/discriminative.py",
+        "16-machine-learning/model-families/generative.py"
+      ],
+      "tests": [
+        "16-machine-learning/training/test_tiny_models.py",
+        "16-machine-learning/code/test_autodiff.py",
+        "16-machine-learning/model-families/test_families.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/ai-autodiff-transformer/README.md",
+      "scope": "Shared autodiff/attention/tiny decoder path, not independent full GPT training.",
+      "implementation": [
+        "16-machine-learning/training/tiny_models.py",
+        "16-machine-learning/labs/attention.py"
+      ],
+      "tests": [
+        "16-machine-learning/training/test_tiny_models.py",
+        "16-machine-learning/labs/test_attention_derivatives.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/p13-robot-controller/README.md",
+      "scope": "Synthetic motor/sensor/control simulation; no physical robot validation.",
+      "implementation": [
+        "17-embedded-robotics/control-path/control_lab.py"
+      ],
+      "tests": [
+        "17-embedded-robotics/control-path/test_control.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    },
+    {
+      "readme": "projects-guided/p15-quantum-simulator/README.md",
+      "scope": "Small ideal statevector/measurement mechanism; no hardware or quantum advantage.",
+      "implementation": [
+        "20-quantum-computing/code/simulator.py"
+      ],
+      "tests": [
+        "20-quantum-computing/code/test_simulator.py"
+      ],
+      "verification": [
+        "research/quality/2026-10-23/verification/reference-groups.txt"
+      ]
+    }
+  ]
+}

@@ -1,44 +1,55 @@
-# Machine Learning and AI Systems — original self-contained coursebook
+# Learning systems: fit, differentiate, predict and evaluate
 
-This is an original teaching text for **statistics, linear models, neural networks, optimization, evaluation, serving, drift, robustness and security**. It is not a reproduction of any copyrighted textbook. Use it as the narrative entry point, then follow the linked deep guides/labs for implementations and tests.
+This chapter connects developed numerical mechanisms to an actually trained
+small causal decoder and a bounded retrieval/tool controller. It is not a
+complete ML/AI coursebook: CNNs/RNNs, broad generative modeling, distributed
+training, alignment, quantization and learned-agent production behavior remain
+substantial unfinished scope.
 
-## How to read this coursebook
+## Begin with a declared fitting problem
 
-For each topic: identify the problem that forced the concept to exist; build the simplest model; trace state and interfaces; predict behavior; run an experiment; then reconstruct from memory. Definitions without mechanisms do not count as understanding.
+Use [vectors/maps](../foundations/mathematics/core/03_VECTORS_MAPS.md) to construct
+Ax and the residual r=Ax−b. The [calculus chapter](../foundations/mathematics/core/04_CALCULUS_OPTIMIZATION.md)
+derives the squared-loss gradient Aᵀr and shows why a correct direction can
+still diverge with an excessive step. For a diagonal curvature4, fixed descent
+requires α<.5. Data scaling changes the stability constraint; a library optimizer
+does not remove it.
 
-## Core questions
+The [automatic differentiation](../16-machine-learning/03_AUTODIFF_BACKPROP.md)
+implementation builds a scalar computation graph, propagates local derivatives
+and accumulates shared paths. Finite-difference checks supply an independent
+numerical diagnostic. Repeated backward behavior and leaf accumulation are
+explicit contracts, not accidental leftover gradient state.
 
-1. What state exists, and where?
-2. What transforms that state?
-3. What information enters and leaves?
-4. What resources are consumed?
-5. What invariants must remain true?
-6. What assumptions make the model valid?
-7. What breaks first under scale, noise, concurrency, or adversarial input?
-8. What experiment would distinguish two competing explanations?
-9. What can be implemented as a minimal model?
-10. What remains impossible or unknowable from the available evidence?
+## Turn a numerical graph into a prediction mechanism
 
-## Learning architecture
+[Attention](../16-machine-learning/labs/DERIVATION.md) derives scores, masking,
+softmax and local reverse derivatives before abstractions. The
+[training unit](../16-machine-learning/training/README.md) then implements token
+and position embeddings, a two-head causal block, residual paths, normalization,
+feedforward computation, vocabulary logits, shifted next-token targets and SGD.
+It actually trains548 parameters on a synthetic three-symbol pattern. Causal
+masking prevents future input tokens influencing an earlier output; it does not
+prevent leakage introduced by a bad train/evaluation split.
 
-Start with an observable phenomenon. Descend abstractions until you can explain the mechanism, then rise again to application. The same pattern applies whether the system is a CPU, database, protein sequence pipeline, robot, or quantum circuit.
+Cross-entropy uses log-softmax with a maximum shift to avoid raw exponential
+overflow. A decreasing training NLL is evidence of fitting that objective,
+not broad language competence. Held pattern phases, reversed patterns, a
+contaminated evaluation and an excessive learning rate expose different failure
+questions. Character and byte-pair tokenizers have explicit vocabularies and
+boundaries; a model checkpoint does not silently include tokenizer state.
 
-### Worked-method example
-Suppose a system becomes slow. “It is slow” is an observation, not a diagnosis. Measure latency distribution and throughput; inspect CPU, memory, I/O, queueing, lock contention, cache behavior, and dependency latency; form a hypothesis; change one variable; measure again. The result is evidence for or against the model, not proof of every causal story.
+## Retrieval and actions introduce new contracts
 
-## Required practice
+The [retrieval/tool unit](../16-machine-learning/retrieval-agents/README.md)
+builds a lexical index, constrained arithmetic executor and deterministic bounded
+controller. Recall measures whether labeled evidence was retrieved; it does not
+certify answer truth. Retrieved prose is data rather than a capability to call
+a shell. The baseline is not an LLM planner or full generative RAG reproduction.
+Its missing learned policy, authenticated identities and production memory limits
+remain explicit.
 
-- at least one hand-worked state trace;
-- at least one executable model;
-- at least one failure injection or counterexample;
-- at least one scaling/complexity measurement where meaningful;
-- one reconstruction without notes;
-- one transfer problem with unfamiliar surface details.
-
-## Deep material
-- `16-machine-learning/README.md`
-- `production-systems-engineering/labs/model-serving/README.md`
-
-## Exit standard
-
-Do not exit because you have read the file. Exit when you can explain the mechanism, implement a bounded version, test it, state limitations, and transfer the model to a new case.
+Exit: derive a local gradient, reconstruct a causal attention result, train and
+save the tiny model, freeze an independent evaluation, then reproduce a retrieval
+miss and denied action. Explain exactly which observation supports each claim.
+A short impressive generated sequence cannot substitute for that evidence.

@@ -1,0 +1,4339 @@
+{
+  "schema_version": 1,
+  "base_commit": "2f95451c87f5a330eff69feca88f6bcc6a3b9303",
+  "scope": "Exact public paths since the previous verified checkpoint. Path inventory omits self-referential file hashes. The earlier ml-v3 preservation is recorded separately in the baseline audit.",
+  "changes": [
+    {
+      "status": "M",
+      "path": "01-computation/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/README.md"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/cpu.py"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/evidence/cpu-experiment.json"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "01-computation/toy-cpu/test_cpu.py"
+    },
+    {
+      "status": "M",
+      "path": "02-programming/README.md"
+    },
+    {
+      "status": "M",
+      "path": "02-programming/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/README.md"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/budget.py"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/test_budget.py"
+    },
+    {
+      "status": "A",
+      "path": "02-programming/python-entry/tests.txt"
+    },
+    {
+      "status": "M",
+      "path": "03-algorithms/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "04-computer-systems/README.md"
+    },
+    {
+      "status": "M",
+      "path": "04-computer-systems/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/README.md"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/code/main.c"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/code/sum.c"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/code/sum.h"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/code/test_sum.c"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/run.py"
+    },
+    {
+      "status": "A",
+      "path": "04-computer-systems/compile-link/test_build.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "05-operating-systems/README.md"
+    },
+    {
+      "status": "M",
+      "path": "05-operating-systems/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/code/models.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/code/test_models.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/evidence/validation.json"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/run_checks.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/README.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/code/condition.c"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/code/conditions.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/code/interleavings.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/code/test_interleavings.py"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/code/threads.c"
+    },
+    {
+      "status": "A",
+      "path": "05-operating-systems/synchronization/evidence/observed.json"
+    },
+    {
+      "status": "M",
+      "path": "06-networking/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "06-networking/README.md"
+    },
+    {
+      "status": "M",
+      "path": "06-networking/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "06-networking/code/framing.py"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/code/stream_experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/code/test_stream_protocol.py"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/LESSON.md"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/evidence/legacy-tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "06-networking/stream-boundaries/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/README.md"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/evidence/results.json"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/relations.py"
+    },
+    {
+      "status": "A",
+      "path": "07-databases-data-systems/query-isolation/test_relations.py"
+    },
+    {
+      "status": "M",
+      "path": "08-information-science/README.md"
+    },
+    {
+      "status": "M",
+      "path": "08-information-science/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/LESSON.md"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/information.py"
+    },
+    {
+      "status": "A",
+      "path": "08-information-science/finite-information/test_information.py"
+    },
+    {
+      "status": "M",
+      "path": "09-scientific-reasoning/README.md"
+    },
+    {
+      "status": "M",
+      "path": "09-scientific-reasoning/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/README.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/evidence/results.json"
+    },
+    {
+      "status": "A",
+      "path": "10-data-science/bootstrap-evidence/experiment.py"
+    },
+    {
+      "status": "M",
+      "path": "10-data-science/code/stats_lab.py"
+    },
+    {
+      "status": "M",
+      "path": "10-data-science/code/test_stats_lab.py"
+    },
+    {
+      "status": "M",
+      "path": "11-cybersecurity/README.md"
+    },
+    {
+      "status": "M",
+      "path": "11-cybersecurity/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "12-data-security/README.md"
+    },
+    {
+      "status": "M",
+      "path": "12-data-security/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "13-privacy/README.md"
+    },
+    {
+      "status": "M",
+      "path": "13-privacy/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/LESSON.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/README.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/count_release.py"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "13-privacy/count-release/test_count_release.py"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/README.md"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/evidence/results.json"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/reconcile.py"
+    },
+    {
+      "status": "A",
+      "path": "15-distributed-systems/ordering-reconciliation/test_reconcile.py"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/03_AUTODIFF_BACKPROP.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/05_NEURAL_NETWORKS.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/09_TRANSFORMERS.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/10_TOKENIZATION_EMBEDDINGS.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/11_LANGUAGE_MODELING.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/16_RAG.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/17_AGENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/README.md"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/code/autodiff.py"
+    },
+    {
+      "status": "M",
+      "path": "16-machine-learning/code/test_autodiff.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/README.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/evidence/results-2026-10-22.json"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/local_agent.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/retrieval-agents/test_local_agent.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/README.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/bpe.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/evidence/training-2026-10-22.json"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/evidence/validation.json"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/experiment_training.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/test_bpe.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/test_tiny_models.py"
+    },
+    {
+      "status": "A",
+      "path": "16-machine-learning/training/tiny_models.py"
+    },
+    {
+      "status": "M",
+      "path": "17-embedded-robotics/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/README.md"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/control_lab.py"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/evidence/control-experiment.json"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "17-embedded-robotics/control-path/test_control.py"
+    },
+    {
+      "status": "M",
+      "path": "18-computational-biology/01_MOLECULAR_FOUNDATIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/README.md"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/evidence/population-phylogeny.json"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/phylogeny.py"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/population.py"
+    },
+    {
+      "status": "A",
+      "path": "18-computational-biology/population-phylogeny/test_population_phylogeny.py"
+    },
+    {
+      "status": "M",
+      "path": "19-experimental-research/README.md"
+    },
+    {
+      "status": "M",
+      "path": "19-experimental-research/SELF_CONTAINED_GUIDE.md"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/README.md"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/evidence/noise-experiment.json"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/noise.py"
+    },
+    {
+      "status": "A",
+      "path": "20-quantum-computing/noise-correction/test_noise.py"
+    },
+    {
+      "status": "M",
+      "path": "AGENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "COMPLETION_REPORT.md"
+    },
+    {
+      "status": "M",
+      "path": "EXCELLENCE_PROGRESS.md"
+    },
+    {
+      "status": "M",
+      "path": "EXCELLENCE_REMEDIATION_BACKLOG.md"
+    },
+    {
+      "status": "M",
+      "path": "EXCELLENCE_UPGRADE_STATUS.md"
+    },
+    {
+      "status": "M",
+      "path": "FINAL_EXCELLENCE_AUDIT.md"
+    },
+    {
+      "status": "M",
+      "path": "INSTALL_AND_RUN.md"
+    },
+    {
+      "status": "M",
+      "path": "INTEGRATION.md"
+    },
+    {
+      "status": "M",
+      "path": "PROGRESS.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "START_HERE.md"
+    },
+    {
+      "status": "M",
+      "path": "STUDY_ROUTE.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/README.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/graphs/COMPLETE_PROBLEM_SET.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/EXPERIMENT.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/LESSON.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/PROBLEMS.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/graphs/README.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/SOLUTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "algorithmic-problem-solving/topics/graphs/SOLUTION_PATTERNS.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/code/experiment_graphs.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/code/graph_algorithms.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/code/test_graph_algorithms.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/evidence/release-tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/01-reachability/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/01-reachability/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/01-reachability/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/01-reachability/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/01-reachability/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/02-shortest-hop-route/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/02-shortest-hop-route/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/02-shortest-hop-route/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/02-shortest-hop-route/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/02-shortest-hop-route/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/03-nearest-depot/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/03-nearest-depot/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/03-nearest-depot/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/03-nearest-depot/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/03-nearest-depot/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/04-failure-islands/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/04-failure-islands/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/04-failure-islands/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/04-failure-islands/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/04-failure-islands/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/05-two-group-compatibility/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/05-two-group-compatibility/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/05-two-group-compatibility/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/05-two-group-compatibility/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/05-two-group-compatibility/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/06-build-order/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/06-build-order/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/06-build-order/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/06-build-order/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/06-build-order/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/07-cycle-witness/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/07-cycle-witness/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/07-cycle-witness/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/07-cycle-witness/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/07-cycle-witness/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/08-mutual-reachability/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/08-mutual-reachability/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/08-mutual-reachability/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/08-mutual-reachability/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/08-mutual-reachability/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/09-nonnegative-route-cost/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/09-nonnegative-route-cost/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/09-nonnegative-route-cost/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/09-nonnegative-route-cost/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/09-nonnegative-route-cost/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/10-negative-cost-routes/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/10-negative-cost-routes/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/10-negative-cost-routes/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/10-negative-cost-routes/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/10-negative-cost-routes/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/11-free-or-unit-transitions/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/11-free-or-unit-transitions/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/11-free-or-unit-transitions/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/11-free-or-unit-transitions/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/11-free-or-unit-transitions/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/12-count-workflow-routes/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/12-count-workflow-routes/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/12-count-workflow-routes/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/12-count-workflow-routes/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/12-count-workflow-routes/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/13-acyclic-negative-costs/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/13-acyclic-negative-costs/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/13-acyclic-negative-costs/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/13-acyclic-negative-costs/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/13-acyclic-negative-costs/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/14-unlimited-worker-critical-path/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/14-unlimited-worker-critical-path/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/14-unlimited-worker-critical-path/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/14-unlimited-worker-critical-path/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/14-unlimited-worker-critical-path/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/15-single-link-failures/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/15-single-link-failures/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/15-single-link-failures/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/15-single-link-failures/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/15-single-link-failures/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/16-single-node-failures/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/16-single-node-failures/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/16-single-node-failures/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/16-single-node-failures/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/16-single-node-failures/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/17-minimum-installation-forest/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/17-minimum-installation-forest/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/17-minimum-installation-forest/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/17-minimum-installation-forest/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/17-minimum-installation-forest/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/18-capacity-throughput/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/18-capacity-throughput/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/18-capacity-throughput/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/18-capacity-throughput/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/18-capacity-throughput/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/19-maximum-compatible-assignment/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/19-maximum-compatible-assignment/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/19-maximum-compatible-assignment/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/19-maximum-compatible-assignment/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/19-maximum-compatible-assignment/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/20-all-pairs-reachability/hints.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/20-all-pairs-reachability/prompt.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/20-all-pairs-reachability/solution.md"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/20-all-pairs-reachability/solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/problems/20-all-pairs-reachability/tests/test_solution.py"
+    },
+    {
+      "status": "A",
+      "path": "algorithmic-problem-solving/topics/graphs/run_all_tests.py"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/01-machine-foundations.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/02-systems-programming.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/03-algorithms.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/04-networks-distributed.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/05-data-systems.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/06-security-cryptography.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/07-ai-ml.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/08-embedded-robotics.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/09-computational-biology.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/10-quantum-machines.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/11-research.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/12-production.md"
+    },
+    {
+      "status": "M",
+      "path": "coursebooks/README.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/README.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/mathematics/DEEP_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/mathematics/README.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/01_ALGEBRA_FUNCTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/02_PROOFS_DISCRETE.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/03_VECTORS_MAPS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/04_CALCULUS_OPTIMIZATION.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/GEOMETRY_COMPLEX.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/README.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/discrete.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/evidence/observed-2026-10-23.json"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/figures/pythagoras.svg"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/linear.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/test_discrete.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/core/test_linear.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/physics/MOTION_ENERGY.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/statistics/DEEP_GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/statistics/README.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/README.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/evidence/observed-2026-10-23.json"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/probability.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/test_probability.py"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/01-c/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/02-cpp/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/resource.cpp"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime/run.py"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/03-rust/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/04-zig/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/05-x86-64-assembly/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/06-arm64-assembly/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/07-riscv-assembly/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/08-python/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/model.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/test_model.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/08-python/units/objects-and-aliases/tests.txt"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/09-go/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/10-java/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/11-sql/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/lab.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/test_lab.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/11-sql/units/null-and-joins/tests.txt"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/12-shell-bash/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/README.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/argv.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/lab.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/test_lab.py"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/12-shell-bash/units/argument-boundaries/tests.txt"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/13-systemverilog/27_MASTERY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/00_LANGUAGE_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/01_ORIGIN_AND_PURPOSE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/02_EXECUTION_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/03_SYNTAX.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/04_TYPES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/05_VALUES_AND_REPRESENTATION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/06_MEMORY_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/07_CONTROL_FLOW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/08_FUNCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/09_DATA_STRUCTURES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/10_MODULE_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/11_ERROR_MODEL.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/12_IO.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/13_OS_INTERACTION.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/14_CONCURRENCY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/15_COMPILATION_OR_RUNTIME.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/16_ABI_AND_INTEROPERABILITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/17_PERFORMANCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/18_DEBUGGING.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/19_SECURITY.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/20_INTERNALS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/21_MACHINE_LEVEL_VIEW.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/22_EXAMPLES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/23_EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/24_EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/25_PROJECTS.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/26_REFERENCE.md"
+    },
+    {
+      "status": "M",
+      "path": "programming-languages-mastery/14-vhdl/27_MASTERY.md"
+    },
+    {
+      "status": "A",
+      "path": "programming-languages-mastery/evidence/topic-template-scan.json"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/ai-autodiff-transformer/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/computational-biology-stack/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/computational-biology-stack/VALIDATION.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/computational-biology-stack/evidence/stack.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/computational-biology-stack/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/computational-biology-stack/run_stack.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/computational-biology-stack/test_biology_stack.py"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p01-logic-cpu/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p02-shell/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/code/minishell.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/code/test_minishell.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p02-shell/evidence/validation.json"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p03-algorithm-library/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p03-algorithm-library/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p03-algorithm-library/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p04-memory-allocator/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/code/arena.c"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/code/arena.h"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/code/experiment.c"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/code/run.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/code/test_arena.c"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/evidence/validation.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p04-memory-allocator/observed-tests.json"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p05-mini-kernel-labs/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/code/kernel_workbench.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/code/test_workbench.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p05-mini-kernel-labs/evidence/validation.json"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p06-http-server/SOLUTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p06-http-server/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p06-http-server/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p06-http-server/code/http_subset.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p06-http-server/code/test_http_subset.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p06-http-server/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p06-http-server/evidence/tests.txt"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/CHECKPOINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p08-scientific-pipeline/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/code/measurement_pipeline.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/code/test_measurement_pipeline.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/data/synthetic.csv"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p08-scientific-pipeline/evidence/tests.txt"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p09-secure-pipeline/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/CHECKPOINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/LESSON.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p10-language/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/code/experiment_language.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/code/minilang.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/code/test_minilang.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p10-language/solutions/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p11-distributed-kv/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p11-distributed-kv/SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p11-distributed-kv/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p11-distributed-kv/code/test_workbench.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p11-distributed-kv/code/workbench.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p11-distributed-kv/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p11-distributed-kv/example.json"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p12-neural-net/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/CHECKPOINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/README.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p13-robot-controller/TESTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/CHECKPOINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/EXERCISES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/EXPERIMENTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/HINTS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/LIMITS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/PREREQUISITES.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/PRODUCTION.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/SOLUTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/p16-research-reproduction/TESTS.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/fft_experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/fourier.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/logical_clocks.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/publication_experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/starter.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/task_publication.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/test_fourier.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/test_logical_clocks.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/code/test_task_publication.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/evidence/causal-clocks.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/evidence/fourier.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/evidence/publication.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/evidence/starter.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/p16-research-reproduction/evidence/test-run.txt"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/quantum-machine-stack/README.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/quantum-machine-stack/VALIDATION.md"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/quantum-machine-stack/evidence/stack.json"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/quantum-machine-stack/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/quantum-machine-stack/run_stack.py"
+    },
+    {
+      "status": "A",
+      "path": "projects-guided/quantum-machine-stack/test_quantum_stack.py"
+    },
+    {
+      "status": "M",
+      "path": "projects-guided/secure-data-provenance/README.md"
+    },
+    {
+      "status": "A",
+      "path": "registries/project_implementations.json"
+    },
+    {
+      "status": "M",
+      "path": "registries/quality_evidence.json"
+    },
+    {
+      "status": "M",
+      "path": "registries/source_verification.json"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/README.md"
+    },
+    {
+      "status": "A",
+      "path": "research-paper-reconstruction/SOURCE_VERIFICATION_CONTINUATION.json"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/ai-systems/README.md"
+    },
+    {
+      "status": "A",
+      "path": "research-paper-reconstruction/domains/data-systems/01_mapreduce_2004.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/data-systems/README.md"
+    },
+    {
+      "status": "A",
+      "path": "research-paper-reconstruction/domains/distributed-systems/01_lamport_clocks_1978.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/distributed-systems/README.md"
+    },
+    {
+      "status": "A",
+      "path": "research-paper-reconstruction/domains/privacy/01_dwork_differential_privacy_2006.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/privacy/README.md"
+    },
+    {
+      "status": "A",
+      "path": "research-paper-reconstruction/domains/scientific-computing/01_cooley_tukey_1965.md"
+    },
+    {
+      "status": "M",
+      "path": "research-paper-reconstruction/domains/scientific-computing/README.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-22-continuation/foundations-independent-probes.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-22-continuation/linear-review-probes.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-22-continuation/research-link-code-check.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-22-continuation/review_foundations.py"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/TEST_REPORT.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/book-coursebook-review.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/book-status.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/boundary-probes-after.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/boundary-probes-before.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/content-audit-preintegration.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/content-audit-report-intermediate.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/content-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/content-gate.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/content-gate.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/integration-review.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/post-integration-render.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/post-integration-structure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/reference-preintegration.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/reference-preintegration.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/reference-summary.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/review_boundaries.py"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/synchronization-observation.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/tool-availability.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/training-tests.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification-command.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/c-arena.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/c-parser.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/c-synchronization.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/compile-link.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/cpp-lifetime.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/expansion.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/git-index-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/git-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/hidden-state.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/independent-boundaries.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/infrastructure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/production-cluster.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/production-ledger.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/production-serving.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/reference-groups.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/render-drift.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/results.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/riscv-model.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-23/verification/structure.txt"
+    },
+    {
+      "status": "M",
+      "path": "security-cryptography-mastery/README.md"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/LESSON.md"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/evidence/legacy-crypto-tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/evidence/observed.json"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/evidence/tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/pipeline.py"
+    },
+    {
+      "status": "A",
+      "path": "security-cryptography-mastery/provenance/test_pipeline.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/quality_audit.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/run_reference_tests.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/tests/test_quality_audit.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/verify_repository.py"
+    }
+  ]
+}

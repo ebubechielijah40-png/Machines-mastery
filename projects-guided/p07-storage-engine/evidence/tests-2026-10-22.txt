@@ -1,0 +1,20 @@
+Command: python3 -m unittest discover -s projects-guided/p07-storage-engine/code -v
+Python: 3.12.14
+Platform: Linux-6.18.55-x86_64-with-glibc2.39
+Exit: 0
+
+test_corruption_never_scans_forward_to_later_good_frames (test_wal_store.WalTests.test_corruption_never_scans_forward_to_later_good_frames) ... ok
+test_empty_update_delete_unicode_and_reopen (test_wal_store.WalTests.test_empty_update_delete_unicode_and_reopen) ... ok
+test_every_byte_cut_preserves_prior_batch_and_atomicity (test_wal_store.WalTests.test_every_byte_cut_preserves_prior_batch_and_atomicity) ... ok
+test_incomplete_tail_requires_explicit_repair_before_append (test_wal_store.WalTests.test_incomplete_tail_requires_explicit_repair_before_append) ... ok
+test_input_validation_does_not_change_file (test_wal_store.WalTests.test_input_validation_does_not_change_file) ... ok
+test_malformed_valid_checksum_does_not_count_as_commit (test_wal_store.WalTests.test_malformed_valid_checksum_does_not_count_as_commit) ... ok
+test_randomized_model_matches_each_recovered_prefix (test_wal_store.WalTests.test_randomized_model_matches_each_recovered_prefix) ... ok
+test_sequence_version_size_and_magic_are_checked (test_wal_store.WalTests.test_sequence_version_size_and_magic_are_checked) ... ok
+test_short_writes_and_no_progress (test_wal_store.WalTests.test_short_writes_and_no_progress) ... ok
+test_sync_failure_means_unknown_outcome_and_poisoned_writer (test_wal_store.WalTests.test_sync_failure_means_unknown_outcome_and_poisoned_writer) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.079s
+
+OK

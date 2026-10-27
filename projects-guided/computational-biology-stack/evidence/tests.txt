@@ -1,0 +1,6 @@
+test_connected_report_preserves_mechanism_meaning (test_biology_stack.StackTests.test_connected_report_preserves_mechanism_meaning) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+OK

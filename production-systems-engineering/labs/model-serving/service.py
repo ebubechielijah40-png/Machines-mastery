@@ -1,4 +1,4 @@
-"""Resilient model serving service with dynamic batching, drift detection (PSI), rate limiting, and observability."""
+"""Serial local inference/drift prototype with accumulated success latencies."""
 import collections
 import math
 import time

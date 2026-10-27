@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "three_trial_size": "7/250",
+  "three_trial_power_p03": "27/125",
+  "minimum_n_all_one_alternative": 5,
+  "eight_look": {
+    "repeat": "13/256",
+    "final": "9/256",
+    "spend": "1/256"
+  },
+  "independent_union_probability": "13/256",
+  "negative_threshold_rejected": true,
+  "interior_tiny_probability_wald_coverage": "0 for both p and1-p",
+  "reviewed_sha256": {
+    "decision.py": "52fa90d95353e1ccd2887c3caf1ccd609bc52f968137d837f4104b86cfc9134a",
+    "DECISION_DESIGN.md": "ee868c0e31537843797bb6fb4bd5412e85b1ea9e8704a5f874495bb008a1ac0f",
+    "DECISION_SOLUTIONS.md": "c88aea0f0886082fd2e5e99d12df53d8e5c689bbafbaeb6fe0e46a8a7469112f"
+  },
+  "limits": "Separate team reader of selected finite contracts; no physical process, causal inference or universal sequential testing claim."
+}

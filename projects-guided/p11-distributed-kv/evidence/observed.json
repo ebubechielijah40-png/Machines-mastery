@@ -1,0 +1,155 @@
+{
+  "kind": "specified local replica schedule; no network, persistence or consensus",
+  "trace": [
+    {
+      "step": 0,
+      "op": "put",
+      "node": "A",
+      "write": {
+        "key": "color",
+        "value": "red",
+        "counter": 1,
+        "origin": "A"
+      },
+      "clock": 1
+    },
+    {
+      "step": 1,
+      "op": "put",
+      "node": "B",
+      "write": {
+        "key": "color",
+        "value": "blue",
+        "counter": 1,
+        "origin": "B"
+      },
+      "clock": 1
+    },
+    {
+      "step": 2,
+      "op": "read",
+      "node": "A",
+      "visible": {
+        "color": "red"
+      },
+      "clock": 1
+    },
+    {
+      "step": 3,
+      "op": "read",
+      "node": "B",
+      "visible": {
+        "color": "blue"
+      },
+      "clock": 1
+    },
+    {
+      "step": 4,
+      "op": "send",
+      "node": "A",
+      "message": "a0",
+      "send_counter": 2,
+      "clock": 2
+    },
+    {
+      "step": 5,
+      "op": "send",
+      "node": "B",
+      "message": "b0",
+      "send_counter": 2,
+      "clock": 2
+    },
+    {
+      "step": 6,
+      "op": "deliver",
+      "node": "A",
+      "message": "b0",
+      "state_changed": true,
+      "clock": 3
+    },
+    {
+      "step": 7,
+      "op": "deliver",
+      "node": "B",
+      "message": "a0",
+      "state_changed": false,
+      "clock": 3
+    },
+    {
+      "step": 8,
+      "op": "delete",
+      "node": "A",
+      "write": {
+        "key": "color",
+        "value": null,
+        "counter": 4,
+        "origin": "A"
+      },
+      "clock": 4
+    },
+    {
+      "step": 9,
+      "op": "send",
+      "node": "A",
+      "message": "deletion",
+      "send_counter": 5,
+      "clock": 5
+    },
+    {
+      "step": 10,
+      "op": "deliver",
+      "node": "B",
+      "message": "deletion",
+      "state_changed": true,
+      "clock": 6
+    },
+    {
+      "step": 11,
+      "op": "deliver",
+      "node": "A",
+      "message": "b0",
+      "state_changed": false,
+      "clock": 6
+    },
+    {
+      "step": 12,
+      "op": "read",
+      "node": "A",
+      "visible": {},
+      "clock": 6
+    },
+    {
+      "step": 13,
+      "op": "read",
+      "node": "B",
+      "visible": {},
+      "clock": 6
+    }
+  ],
+  "replicas": {
+    "A": {
+      "clock": 6,
+      "visible": {},
+      "records": [
+        {
+          "key": "color",
+          "value": null,
+          "counter": 4,
+          "origin": "A"
+        }
+      ]
+    },
+    "B": {
+      "clock": 6,
+      "visible": {},
+      "records": [
+        {
+          "key": "color",
+          "value": null,
+          "counter": 4,
+          "origin": "A"
+        }
+      ]
+    }
+  }
+}

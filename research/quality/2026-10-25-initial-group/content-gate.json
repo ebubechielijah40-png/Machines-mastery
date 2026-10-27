@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "tools/quality_audit.py",
+    "--json",
+    "research/quality/2026-10-25-initial-group/content-audit-strict.json"
+  ],
+  "observed_at_utc": "2026-10-25T07:20:28.301275+00:00",
+  "exit_code": 1,
+  "counts": {
+    "missing-assessment": 287,
+    "missing-experiment": 390,
+    "missing-reference-trail": 378,
+    "near-empty-instruction": 119,
+    "placeholder-instruction": 6,
+    "repeated-template": 600,
+    "unverified-paper-dossier": 11
+  },
+  "findings": 1791,
+  "scope": "Strict unresolved risk inventory; not educational completion."
+}

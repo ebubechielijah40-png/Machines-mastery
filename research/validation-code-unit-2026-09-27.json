@@ -1,0 +1,129 @@
+{
+  "date": "2026-09-27",
+  "scope": "Agent-run artifact validation; no learner experiment or mastery evidence.",
+  "initial_infrastructure_run": {
+    "exit_code": 1,
+    "tests": 31,
+    "failures": [
+      "Absent-source warning assertion assumed the real book was still absent.",
+      "Chapter rejection test assumed the real book was uninspected."
+    ],
+    "errors": [
+      "Scaffold test used E-002, now a registered experiment."
+    ],
+    "correction": "Explicit absent-source fixtures, separate warning regression, unused numeric E-999 ID; existing checks retained. Intermediate E-TEST-NEW attempt failed the ID syntax rule; retained below."
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "test_absent_book_reports_warning (test_infrastructure.CatalogTests.test_absent_book_reports_warning) ... ok\ntest_chapter_requires_inspected_book (test_infrastructure.CatalogTests.test_chapter_requires_inspected_book) ... ok\ntest_completion_requires_gates (test_infrastructure.CatalogTests.test_completion_requires_gates) ... ok\ntest_current_catalog_has_no_structural_errors (test_infrastructure.CatalogTests.test_current_catalog_has_no_structural_errors) ... ok\ntest_duplicate_resource (test_infrastructure.CatalogTests.test_duplicate_resource) ... ok\ntest_knowledge_edge_requires_claim (test_infrastructure.CatalogTests.test_knowledge_edge_requires_claim) ... ok\ntest_learning_progress_requires_evidence (test_infrastructure.CatalogTests.test_learning_progress_requires_evidence) ... ok\ntest_learning_progress_requires_review (test_infrastructure.CatalogTests.test_learning_progress_requires_review) ... ok\ntest_malformed_optional_path (test_infrastructure.CatalogTests.test_malformed_optional_path) ... ok\ntest_malformed_reference_list (test_infrastructure.CatalogTests.test_malformed_reference_list) ... ok\ntest_mastery_requires_delayed_recall_and_transfer (test_infrastructure.CatalogTests.test_mastery_requires_delayed_recall_and_transfer) ... ok\ntest_missing_metadata (test_infrastructure.CatalogTests.test_missing_metadata) ... ok\ntest_missing_phase_resource (test_infrastructure.CatalogTests.test_missing_phase_resource) ... ok\ntest_observation_requires_raw_evidence (test_infrastructure.CatalogTests.test_observation_requires_raw_evidence) ... ok\ntest_prerequisite_cycle (test_infrastructure.CatalogTests.test_prerequisite_cycle) ... ok\ntest_project_requires_original_attribution_reference (test_infrastructure.CatalogTests.test_project_requires_original_attribution_reference) ... ok\ntest_renderer_is_deterministic (test_infrastructure.CatalogTests.test_renderer_is_deterministic) ... ok\ntest_result_before_execution (test_infrastructure.CatalogTests.test_result_before_execution) ... ok\ntest_source_fingerprint_mismatch (test_infrastructure.CatalogTests.test_source_fingerprint_mismatch) ... ok\ntest_unknown_resource_reference (test_infrastructure.CatalogTests.test_unknown_resource_reference) ... ok\ntest_unrelated_file_is_not_raw_experiment_evidence (test_infrastructure.CatalogTests.test_unrelated_file_is_not_raw_experiment_evidence) ... ok\ntest_book_scaffold_never_invents_chapters (test_infrastructure.FileSafetyTests.test_book_scaffold_never_invents_chapters) ... ok\ntest_broken_internal_link_detected (test_infrastructure.FileSafetyTests.test_broken_internal_link_detected) ... ok\ntest_existing_user_destination_preserved (test_infrastructure.FileSafetyTests.test_existing_user_destination_preserved) ... ok\ntest_experiment_parent_required (test_infrastructure.FileSafetyTests.test_experiment_parent_required) ... ok\ntest_experiment_scaffold_never_invents_results (test_infrastructure.FileSafetyTests.test_experiment_scaffold_never_invents_results) ... ERROR\ntest_fingerprint_matches_actual_bytes (test_infrastructure.FileSafetyTests.test_fingerprint_matches_actual_bytes) ... ok\ntest_invalid_slug_writes_nothing (test_infrastructure.FileSafetyTests.test_invalid_slug_writes_nothing) ... ok\ntest_path_traversal_rejected (test_infrastructure.FileSafetyTests.test_path_traversal_rejected) ... ok\ntest_private_and_source_material_not_scanned (test_infrastructure.FileSafetyTests.test_private_and_source_material_not_scanned) ... ok\ntest_project_scaffold_is_non_destructive (test_infrastructure.FileSafetyTests.test_project_scaffold_is_non_destructive) ... ok\ntest_symlink_escape_rejected (test_infrastructure.FileSafetyTests.test_symlink_escape_rejected) ... ok\n\n======================================================================\nERROR: test_experiment_scaffold_never_invents_results (test_infrastructure.FileSafetyTests.test_experiment_scaffold_never_invents_results)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/elijah/machines-mastery/tools/tests/test_infrastructure.py\", line 171, in test_experiment_scaffold_never_invents_results\n    path=scaffold(self.root,'experiment','E-TEST-NEW','test-contract','J-01')\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/elijah/machines-mastery/tools/scaffold.py\", line 60, in scaffold\n    raise ValueError('Expected a new experiment ID such as E-002.')\nValueError: Expected a new experiment ID such as E-002.\n\n----------------------------------------------------------------------\nRan 32 tests in 3.497s\n\nFAILED (errors=1)\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "books/code-petzold/generated/chapters/01/lab",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_empty_and_single (test_decoder.DecoderTests.test_empty_and_single) ... ok\ntest_gap_corruption_is_valid_but_wrong (test_decoder.DecoderTests.test_gap_corruption_is_valid_but_wrong) ... ok\ntest_hand_derived_traces (test_decoder.DecoderTests.test_hand_derived_traces) ... ok\ntest_invalid_events (test_decoder.DecoderTests.test_invalid_events) ... ok\ntest_invalid_text (test_decoder.DecoderTests.test_invalid_text) ... ok\ntest_scale_ambiguity (test_decoder.DecoderTests.test_scale_ambiguity) ... ok\ntest_small_domain_and_independent_cost (test_decoder.DecoderTests.test_small_domain_and_independent_cost) ... ok\ntest_tau_contract (test_decoder.DecoderTests.test_tau_contract) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.373s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/render.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "7 generated indexes checked; 0 stale.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/validate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "WARNING: R-CODE: license unverified; no importing before review\nWARNING: R-ELEMENTS: license unverified; no importing before review\nWARNING: R-C: UNVERIFIED identity/metadata\nWARNING: R-C: license unverified; no importing before review\nWARNING: R-BYOX: license unverified; no importing before review\nWARNING: R-ALGORITHMS: license unverified; no importing before review\nWARNING: R-ALGO-PY: license unverified; no importing before review\nWARNING: R-CSAPP: license unverified; no importing before review\nWARNING: R-DIVE: license unverified; no importing before review\nWARNING: R-OSTEP: license unverified; no importing before review\nWARNING: R-XV6: license unverified; no importing before review\nWARNING: R-OSTEP-HW: license unverified; no importing before review\nWARNING: R-NET: PARTIALLY VERIFIED identity/metadata\nWARNING: R-NET: license unverified; no importing before review\nWARNING: R-BEEJ: license unverified; no importing before review\nWARNING: R-BEEJ-REPO: license unverified; no importing before review\nWARNING: R-DB: license unverified; no importing before review\nWARNING: R-DDIA: license unverified; no importing before review\nWARNING: R-TOYDB: license unverified; no importing before review\nWARNING: R-SQLITE: license unverified; no importing before review\nWARNING: R-STATS: license unverified; no importing before review\nWARNING: R-STATS-REPO: license unverified; no importing before review\nWARNING: R-CRAFT: license unverified; no importing before review\nWARNING: R-PYDATA: license unverified; no importing before review\nWARNING: R-PYDATA-REPO: license unverified; no importing before review\nWARNING: R-SECURITY: license unverified; no importing before review\nWARNING: R-CRYPTO: license unverified; no importing before review\nWARNING: R-CRYPTOPALS: PARTIALLY VERIFIED identity/metadata\nWARNING: R-CRYPTOPALS: license unverified; no importing before review\nWARNING: R-HOML: PARTIALLY VERIFIED identity/metadata\nWARNING: R-HOML: license unverified; no importing before review\nWARNING: R-HOML-REPO: license unverified; no importing before review\nWARNING: R-MICROGRAD: license unverified; no importing before review\nWARNING: R-EMBEDDED: license unverified; no importing before review\nWARNING: R-ROBOTICS: license unverified; no importing before review\nWARNING: R-CELL: PARTIALLY VERIFIED identity/metadata\nWARNING: R-CELL: license unverified; no importing before review\nWARNING: R-BIOPYTHON: license unverified; no importing before review\nWARNING: R-DISCRETE: license unverified; no importing before review\nWARNING: R-LINEAR: license unverified; no importing before review\nWARNING: R-CALCULUS: license unverified; no importing before review\nWARNING: R-PRIVACY: license unverified; no importing before review\nWARNING: R-CHEM: UNVERIFIED identity/metadata\nWARNING: R-CHEM: license unverified; no importing before review\nWARNING: R-PHYSICS: UNVERIFIED identity/metadata\nWARNING: R-PHYSICS: license unverified; no importing before review\n0 errors; 46 known source/license warnings.\nStructural validation only: no claim truth, license clearance or learner mastery is certified.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/validate.py",
+        "--strict"
+      ],
+      "exit_code": 1,
+      "stdout": "WARNING: R-CODE: license unverified; no importing before review\nWARNING: R-ELEMENTS: license unverified; no importing before review\nWARNING: R-C: UNVERIFIED identity/metadata\nWARNING: R-C: license unverified; no importing before review\nWARNING: R-BYOX: license unverified; no importing before review\nWARNING: R-ALGORITHMS: license unverified; no importing before review\nWARNING: R-ALGO-PY: license unverified; no importing before review\nWARNING: R-CSAPP: license unverified; no importing before review\nWARNING: R-DIVE: license unverified; no importing before review\nWARNING: R-OSTEP: license unverified; no importing before review\nWARNING: R-XV6: license unverified; no importing before review\nWARNING: R-OSTEP-HW: license unverified; no importing before review\nWARNING: R-NET: PARTIALLY VERIFIED identity/metadata\nWARNING: R-NET: license unverified; no importing before review\nWARNING: R-BEEJ: license unverified; no importing before review\nWARNING: R-BEEJ-REPO: license unverified; no importing before review\nWARNING: R-DB: license unverified; no importing before review\nWARNING: R-DDIA: license unverified; no importing before review\nWARNING: R-TOYDB: license unverified; no importing before review\nWARNING: R-SQLITE: license unverified; no importing before review\nWARNING: R-STATS: license unverified; no importing before review\nWARNING: R-STATS-REPO: license unverified; no importing before review\nWARNING: R-CRAFT: license unverified; no importing before review\nWARNING: R-PYDATA: license unverified; no importing before review\nWARNING: R-PYDATA-REPO: license unverified; no importing before review\nWARNING: R-SECURITY: license unverified; no importing before review\nWARNING: R-CRYPTO: license unverified; no importing before review\nWARNING: R-CRYPTOPALS: PARTIALLY VERIFIED identity/metadata\nWARNING: R-CRYPTOPALS: license unverified; no importing before review\nWARNING: R-HOML: PARTIALLY VERIFIED identity/metadata\nWARNING: R-HOML: license unverified; no importing before review\nWARNING: R-HOML-REPO: license unverified; no importing before review\nWARNING: R-MICROGRAD: license unverified; no importing before review\nWARNING: R-EMBEDDED: license unverified; no importing before review\nWARNING: R-ROBOTICS: license unverified; no importing before review\nWARNING: R-CELL: PARTIALLY VERIFIED identity/metadata\nWARNING: R-CELL: license unverified; no importing before review\nWARNING: R-BIOPYTHON: license unverified; no importing before review\nWARNING: R-DISCRETE: license unverified; no importing before review\nWARNING: R-LINEAR: license unverified; no importing before review\nWARNING: R-CALCULUS: license unverified; no importing before review\nWARNING: R-PRIVACY: license unverified; no importing before review\nWARNING: R-CHEM: UNVERIFIED identity/metadata\nWARNING: R-CHEM: license unverified; no importing before review\nWARNING: R-PHYSICS: UNVERIFIED identity/metadata\nWARNING: R-PHYSICS: license unverified; no importing before review\n0 errors; 46 known source/license warnings.\nStructural validation only: no claim truth, license clearance or learner mastery is certified.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "check-ignore",
+        "-v",
+        "books/code-petzold/source/code-charles-petzold.pdf"
+      ],
+      "exit_code": 0,
+      "stdout": ".gitignore:2:/books/*/source/*\tbooks/code-petzold/source/code-charles-petzold.pdf\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_absent_book_reports_warning (test_infrastructure.CatalogTests.test_absent_book_reports_warning) ... ok\ntest_chapter_requires_inspected_book (test_infrastructure.CatalogTests.test_chapter_requires_inspected_book) ... ok\ntest_completion_requires_gates (test_infrastructure.CatalogTests.test_completion_requires_gates) ... ok\ntest_current_catalog_has_no_structural_errors (test_infrastructure.CatalogTests.test_current_catalog_has_no_structural_errors) ... ok\ntest_duplicate_resource (test_infrastructure.CatalogTests.test_duplicate_resource) ... ok\ntest_knowledge_edge_requires_claim (test_infrastructure.CatalogTests.test_knowledge_edge_requires_claim) ... ok\ntest_learning_progress_requires_evidence (test_infrastructure.CatalogTests.test_learning_progress_requires_evidence) ... ok\ntest_learning_progress_requires_review (test_infrastructure.CatalogTests.test_learning_progress_requires_review) ... ok\ntest_malformed_optional_path (test_infrastructure.CatalogTests.test_malformed_optional_path) ... ok\ntest_malformed_reference_list (test_infrastructure.CatalogTests.test_malformed_reference_list) ... ok\ntest_mastery_requires_delayed_recall_and_transfer (test_infrastructure.CatalogTests.test_mastery_requires_delayed_recall_and_transfer) ... ok\ntest_missing_metadata (test_infrastructure.CatalogTests.test_missing_metadata) ... ok\ntest_missing_phase_resource (test_infrastructure.CatalogTests.test_missing_phase_resource) ... ok\ntest_observation_requires_raw_evidence (test_infrastructure.CatalogTests.test_observation_requires_raw_evidence) ... ok\ntest_prerequisite_cycle (test_infrastructure.CatalogTests.test_prerequisite_cycle) ... ok\ntest_project_requires_original_attribution_reference (test_infrastructure.CatalogTests.test_project_requires_original_attribution_reference) ... ok\ntest_renderer_is_deterministic (test_infrastructure.CatalogTests.test_renderer_is_deterministic) ... ok\ntest_result_before_execution (test_infrastructure.CatalogTests.test_result_before_execution) ... ok\ntest_source_fingerprint_mismatch (test_infrastructure.CatalogTests.test_source_fingerprint_mismatch) ... ok\ntest_unknown_resource_reference (test_infrastructure.CatalogTests.test_unknown_resource_reference) ... ok\ntest_unrelated_file_is_not_raw_experiment_evidence (test_infrastructure.CatalogTests.test_unrelated_file_is_not_raw_experiment_evidence) ... ok\ntest_book_scaffold_never_invents_chapters (test_infrastructure.FileSafetyTests.test_book_scaffold_never_invents_chapters) ... ok\ntest_broken_internal_link_detected (test_infrastructure.FileSafetyTests.test_broken_internal_link_detected) ... ok\ntest_existing_user_destination_preserved (test_infrastructure.FileSafetyTests.test_existing_user_destination_preserved) ... ok\ntest_experiment_parent_required (test_infrastructure.FileSafetyTests.test_experiment_parent_required) ... ok\ntest_experiment_scaffold_never_invents_results (test_infrastructure.FileSafetyTests.test_experiment_scaffold_never_invents_results) ... ok\ntest_fingerprint_matches_actual_bytes (test_infrastructure.FileSafetyTests.test_fingerprint_matches_actual_bytes) ... ok\ntest_invalid_slug_writes_nothing (test_infrastructure.FileSafetyTests.test_invalid_slug_writes_nothing) ... ok\ntest_path_traversal_rejected (test_infrastructure.FileSafetyTests.test_path_traversal_rejected) ... ok\ntest_private_and_source_material_not_scanned (test_infrastructure.FileSafetyTests.test_private_and_source_material_not_scanned) ... ok\ntest_project_scaffold_is_non_destructive (test_infrastructure.FileSafetyTests.test_project_scaffold_is_non_destructive) ... ok\ntest_symlink_escape_rejected (test_infrastructure.FileSafetyTests.test_symlink_escape_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 32 tests in 3.624s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/validate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "WARNING: R-CODE: license unverified; no importing before review\nWARNING: R-ELEMENTS: license unverified; no importing before review\nWARNING: R-C: UNVERIFIED identity/metadata\nWARNING: R-C: license unverified; no importing before review\nWARNING: R-BYOX: license unverified; no importing before review\nWARNING: R-ALGORITHMS: license unverified; no importing before review\nWARNING: R-ALGO-PY: license unverified; no importing before review\nWARNING: R-CSAPP: license unverified; no importing before review\nWARNING: R-DIVE: license unverified; no importing before review\nWARNING: R-OSTEP: license unverified; no importing before review\nWARNING: R-XV6: license unverified; no importing before review\nWARNING: R-OSTEP-HW: license unverified; no importing before review\nWARNING: R-NET: PARTIALLY VERIFIED identity/metadata\nWARNING: R-NET: license unverified; no importing before review\nWARNING: R-BEEJ: license unverified; no importing before review\nWARNING: R-BEEJ-REPO: license unverified; no importing before review\nWARNING: R-DB: license unverified; no importing before review\nWARNING: R-DDIA: license unverified; no importing before review\nWARNING: R-TOYDB: license unverified; no importing before review\nWARNING: R-SQLITE: license unverified; no importing before review\nWARNING: R-STATS: license unverified; no importing before review\nWARNING: R-STATS-REPO: license unverified; no importing before review\nWARNING: R-CRAFT: license unverified; no importing before review\nWARNING: R-PYDATA: license unverified; no importing before review\nWARNING: R-PYDATA-REPO: license unverified; no importing before review\nWARNING: R-SECURITY: license unverified; no importing before review\nWARNING: R-CRYPTO: license unverified; no importing before review\nWARNING: R-CRYPTOPALS: PARTIALLY VERIFIED identity/metadata\nWARNING: R-CRYPTOPALS: license unverified; no importing before review\nWARNING: R-HOML: PARTIALLY VERIFIED identity/metadata\nWARNING: R-HOML: license unverified; no importing before review\nWARNING: R-HOML-REPO: license unverified; no importing before review\nWARNING: R-MICROGRAD: license unverified; no importing before review\nWARNING: R-EMBEDDED: license unverified; no importing before review\nWARNING: R-ROBOTICS: license unverified; no importing before review\nWARNING: R-CELL: PARTIALLY VERIFIED identity/metadata\nWARNING: R-CELL: license unverified; no importing before review\nWARNING: R-BIOPYTHON: license unverified; no importing before review\nWARNING: R-DISCRETE: license unverified; no importing before review\nWARNING: R-LINEAR: license unverified; no importing before review\nWARNING: R-CALCULUS: license unverified; no importing before review\nWARNING: R-PRIVACY: license unverified; no importing before review\nWARNING: R-CHEM: UNVERIFIED identity/metadata\nWARNING: R-CHEM: license unverified; no importing before review\nWARNING: R-PHYSICS: UNVERIFIED identity/metadata\nWARNING: R-PHYSICS: license unverified; no importing before review\n0 errors; 46 known source/license warnings.\nStructural validation only: no claim truth, license clearance or learner mastery is certified.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

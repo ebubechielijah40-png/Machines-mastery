@@ -1,0 +1,43 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "seed": 2718,
+  "sequence_length": 32,
+  "head_width": 4,
+  "full_causal_seconds": 0.0018878810001297097,
+  "cache_vs_full_max_absolute_error": 0.0,
+  "future_mutation_prefix_max_absolute_error": 0.0,
+  "query_gradient_max_central_difference_error": 3.069764407948039e-11,
+  "wrong_post_softmax_mask_row_sum": 4.122307227883699e-09,
+  "width_concentration": [
+    {
+      "width": 1,
+      "scaled_first_weight": 0.7310585786300049,
+      "unscaled_first_weight": 0.7310585786300049
+    },
+    {
+      "width": 4,
+      "scaled_first_weight": 0.8807970779778823,
+      "unscaled_first_weight": 0.9820137900379085
+    },
+    {
+      "width": 16,
+      "scaled_first_weight": 0.9820137900379085,
+      "unscaled_first_weight": 0.9999998874648379
+    },
+    {
+      "width": 64,
+      "scaled_first_weight": 0.9996646498695336,
+      "unscaled_first_weight": 1.0
+    }
+  ],
+  "derived_operation_counts": {
+    "cached_generation_score_pairs": 528,
+    "recompute_all_prefix_outputs_score_pairs": 5984,
+    "cached_projection_vectors": 96,
+    "recompute_all_prefixes_projection_vectors": 1584
+  },
+  "scope": "single head mechanism; no model trained; no paper benchmark reproduced"
+}

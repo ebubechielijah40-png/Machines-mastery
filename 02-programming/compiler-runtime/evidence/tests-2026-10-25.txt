@@ -1,0 +1,20 @@
+test_branch_truth_and_dead_branch (test_flow.FlowTests.test_branch_truth_and_dead_branch) ... ok
+test_debugger_and_immutable_history (test_flow.FlowTests.test_debugger_and_immutable_history) ... ok
+test_debugger_input_and_character_offsets (test_flow.FlowTests.test_debugger_input_and_character_offsets) ... ok
+test_exact_finite_arithmetic_oracle (test_flow.FlowTests.test_exact_finite_arithmetic_oracle) ... ok
+test_fault_source_map_and_atomic_instruction (test_flow.FlowTests.test_fault_source_map_and_atomic_instruction) ... ok
+test_instruction_and_output_budgets (test_flow.FlowTests.test_instruction_and_output_budgets) ... ok
+test_join_heights_and_definite_initialization (test_flow.FlowTests.test_join_heights_and_definite_initialization) ... ok
+test_nested_flow (test_flow.FlowTests.test_nested_flow) ... ok
+test_precedence_and_left_association (test_flow.FlowTests.test_precedence_and_left_association) ... ok
+test_resource_bounds (test_flow.FlowTests.test_resource_bounds) ... ok
+test_signed_boundaries (test_flow.FlowTests.test_signed_boundaries) ... ok
+test_source_errors_and_empty_program (test_flow.FlowTests.test_source_errors_and_empty_program) ... ok
+test_sum_loop_against_closed_form (test_flow.FlowTests.test_sum_loop_against_closed_form) ... ok
+test_verification_is_not_termination_or_arithmetic_proof (test_flow.FlowTests.test_verification_is_not_termination_or_arithmetic_proof) ... ok
+test_verifier_shape_stack_and_slot_mutants (test_flow.FlowTests.test_verifier_shape_stack_and_slot_mutants) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.060s
+
+OK

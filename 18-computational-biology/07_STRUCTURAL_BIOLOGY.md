@@ -1,0 +1,2 @@
+# Structural biology
+Protein structure emerges from physical interactions and environment. Sequence-to-structure prediction is probabilistic/model-based; confidence scores are not experimental proof. Learn primary/secondary/tertiary/quaternary organization, binding interfaces, conformational ensembles, and experimental structures. Computational project: parse a structure file, calculate basic geometric features, and compare predicted versus experimentally derived annotations where lawful data are available.

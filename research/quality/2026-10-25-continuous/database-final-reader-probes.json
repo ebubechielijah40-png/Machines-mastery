@@ -1,0 +1,42 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "source_sha256": {
+    "store.py": "eb8a4790baea1f8a592fd89d70553516e212c4ea9210a6490ea238298801b646",
+    "planner.py": "1b317360d9a9cc9ceda7b5ccc3a6ad0dff01d4b90e83a2e2aba05690761e804d",
+    "stream.py": "7aaaa2edcc0539f1b11cc9dc3c6aefe9b127da4e4cd37c96582e19bdaebffae4"
+  },
+  "repeated_put_delete_and_extreme_keys": true,
+  "stale_rejection_preserved_all_bytes": true,
+  "ignored_unselected_orphan_collected": true,
+  "selected_complete_corruption_refusals": 2,
+  "corrupt_frame_preserved": true,
+  "duplicate_polynomial_join_cases": 2187,
+  "forced_join_algorithms": [
+    "nested",
+    "hash-left",
+    "hash-right"
+  ],
+  "exact_zero_total_stream_retained": {
+    "first": {
+      "applied_events": 3,
+      "offset": 3,
+      "version": 1
+    },
+    "replay": {
+      "applied_events": 0,
+      "offset": 3,
+      "version": 1
+    },
+    "rows": {
+      "-9223372036854775807": "reader-partition",
+      "-9223372036854775808": "3",
+      "9223372036854775807": "0",
+      "0": "-7"
+    }
+  },
+  "source_gap_preserved_all_bytes": true,
+  "limitations": "Finite separate-reader checks in a trusted local POSIX directory; no physical power-loss, event-time/window implementation, remote effects or learner mastery."
+}

@@ -1,103 +1,51 @@
-# Data security — self-contained phase guide
+# Data security: identity, authority, history and recovery
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+Start with [scientific ingestion](../projects-guided/p08-scientific-pipeline/README.md), then build [authenticated provenance](../projects-guided/p09-secure-pipeline/README.md). The scientific pipeline records exact input bytes and code/configuration identity. The security pipeline asks which authority can authorize a claim, which transformation was accepted, and what history survives failure. The same bytes can be reproducible, authentic and false; these properties must be assessed separately.
 
-## 1. Classification
+This guide first explains the preserved single-writer plaintext mechanism.
+Then build [protected history](../security-cryptography-mastery/provenance/PROTECTED_HISTORY.md),
+which adds a distinct encrypted transactional mechanism with fixed historical
+key epochs and a local model of an independent witness. The first mechanism's
+limits below must not be silently transferred into guarantees for the second.
 
-**Problem.** Identify the real system problem that makes classification necessary.
+## Content identity versus trusted origin
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+Let a manifest contain raw-data digest `h=SHA256(data)`. A verifier recomputes h and compares it with the manifest. If both are independently trusted, mismatch detects changed content. If an attacker can replace data and manifest, it can compute a new matching h. The unkeyed digest therefore needs a trusted anchor. The implemented pipeline adds producer HMAC over a restricted canonical record and processor HMAC over exact transformation output and history position. It uses standard-library cryptographic primitives; no homemade encryption is supplied.
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+Canonical form is part of the protocol. Duplicate JSON fields are rejected, strings/integers have explicit bounds and units are fixed. A Celsius value is the exact rational `value_milli_c/1000`. Floats are avoided here because a cross-language rounding/serialization policy would otherwise become an additional authentication assumption. The [lesson](../security-cryptography-mastery/provenance/LESSON.md) works the representation and HMAC construction, and links independent source vectors.
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
+## Authorization and replay are separate state
 
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
+A valid tag identifies a key holder under the secret-key assumption. A producer-to-stream policy decides permitted writes. A next-sequence check rejects captured old messages and unaccepted order. Sequence is per producer across its allowed streams, not per stream. These checks occur before append, so rejected attempts do not consume history positions. Read permission is a local trusted-principal parameter, not a session or password system.
 
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
+Reopening verifies every retained entry and reconstructs snapshot state. It checks processor tag, index, previous digest, producer authentication, current policy, sequence and exact output. The configured max-entry count and line-length limit bound loading. A new key/policy configuration may prevent old records reopening because history is checked against current authority; historical configuration and rotation remain a real design gap.
 
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
+## Durability has an uncertain-outcome state
 
-## 2. Confidentiality/Integrity
+Write all line bytes, sync, then acknowledge in-memory acceptance. A failure can occur after some or all bytes were written. The object poisons itself and requires reopen/reconciliation. The test injects a synchronization failure after a full write: the old in-memory count stays zero while a reopen sees one line. This is not a power-cut experiment, parent-directory durability test or complete transaction protocol.
 
-**Problem.** Identify the real system problem that makes confidentiality/integrity necessary.
+An incomplete last line fails closed rather than silently truncating it. A complete valid prefix opens unless an external expected tip disagrees. Thus local chain verification detects many substitutions/reorderings but cannot alone establish freshness or availability. Concurrent writers, hostile path replacement, protected backups, atomic checkpoint publication and disaster recovery are unimplemented. A logical JSONL append format is not an operating-system append-only guarantee.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+## Confidentiality and minimization remain different
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+Tags and hashes do not hide values. Anyone allowed to read these plaintext files sees producer, stream and measurements. Real confidentiality requires a separately reviewed encryption/key/access design; logs and backups must receive the same analysis. The synthetic lab deliberately publishes keys for reproduction and must not be used as a data protection service. Privacy release further asks what permitted outputs reveal about contributors, addressed in the [count lesson](../13-privacy/count-release/LESSON.md).
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
+Assessment: reconstruct the write/reopen invariant, run mutation/replay/rollback/partial-write cases, and explain what an attacker can still do after obtaining each key or replacing each file. Use the linked project's separately stored exercises/hints/solutions and actual evidence. The bounded unit is STRONG; data security remains PARTIAL pending encryption, real identity, key lifecycle, concurrent persistence, protected retention/backups and deployment validation.
 
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
+## Continue through confidentiality and remembered authority
 
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
+The [new original chapter](../security-cryptography-mastery/provenance/PROTECTED_HISTORY.md)
+provides the encryption/static-epoch/concurrent-persistence mechanisms that the
+first build deliberately omits. It derives nonce/commit/reconciliation states,
+teaches a polynomial bridge and explicit GHASH, separates encrypted payload from
+visible context, and supplies20 additional exercises with separated hints and
+solutions. The actual process experiment and its source fingerprints are linked
+there. Do not use its public demo keys for private data.
 
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Encryption/Key Management
-
-**Problem.** Identify the real system problem that makes encryption/key management necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Database Controls
-
-**Problem.** Identify the real system problem that makes database controls necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Provenance/Audit
-
-**Problem.** Identify the real system problem that makes provenance/audit necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Secure Pipelines
-
-**Problem.** Identify the real system problem that makes secure pipelines necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+Before exiting, show why a newer witness rejects an old local ledger, why
+rolling back both stores defeats that premise, and why changing AAD does not
+repair a repeated encryption key/nonce. An authenticated external service,
+dynamic authorization transitions, custody/erasure, protected retention and
+production operation still require further work and separate validation. Domain
+classification is owned by the unchanged-scope dashboard review, not inferred
+from this chapter or its passing tests.

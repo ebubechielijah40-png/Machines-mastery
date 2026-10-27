@@ -1,0 +1,116 @@
+{
+  "observed_at_utc": "2026-10-23T21:39:05.646867+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "sha256": {
+    "experiment.py": "a91de1ec7f74745d30cef764d5af9c85aef9f817aae62947374282f30c98c4e0",
+    "dp.py": "64136df4adc7087a0ff555bb420aad32a6f16dc52030ce6759f33b983ec88184"
+  },
+  "runs": [
+    {
+      "target": 4,
+      "naive": {
+        "optimum": 1,
+        "evaluated_states_or_calls": 9,
+        "elapsed_seconds": 9.389999831910245e-06
+      },
+      "memoized": {
+        "optimum": 1,
+        "evaluated_states_or_calls": 5,
+        "elapsed_seconds": 7.0600003709841985e-06
+      },
+      "reference_witness": [
+        4
+      ]
+    },
+    {
+      "target": 8,
+      "naive": {
+        "optimum": 2,
+        "evaluated_states_or_calls": 64,
+        "elapsed_seconds": 2.914400010922691e-05
+      },
+      "memoized": {
+        "optimum": 2,
+        "evaluated_states_or_calls": 9,
+        "elapsed_seconds": 8.971999704954214e-06
+      },
+      "reference_witness": [
+        4,
+        4
+      ]
+    },
+    {
+      "target": 12,
+      "naive": {
+        "optimum": 3,
+        "evaluated_states_or_calls": 441,
+        "elapsed_seconds": 0.00019356499979039654
+      },
+      "memoized": {
+        "optimum": 3,
+        "evaluated_states_or_calls": 13,
+        "elapsed_seconds": 1.413000018146704e-05
+      },
+      "reference_witness": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "target": 16,
+      "naive": {
+        "optimum": 4,
+        "evaluated_states_or_calls": 3025,
+        "elapsed_seconds": 0.002944422999917151
+      },
+      "memoized": {
+        "optimum": 4,
+        "evaluated_states_or_calls": 17,
+        "elapsed_seconds": 1.1179000011907192e-05
+      },
+      "reference_witness": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "target": 20,
+      "naive": {
+        "optimum": 5,
+        "evaluated_states_or_calls": 20736,
+        "elapsed_seconds": 0.008925505000206613
+      },
+      "memoized": {
+        "optimum": 5,
+        "evaluated_states_or_calls": 21,
+        "elapsed_seconds": 1.5019999864307465e-05
+      },
+      "reference_witness": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "counterexamples": {
+    "ordered_instead_of_unordered": {
+      "wrong": 3,
+      "correct": 2
+    },
+    "ascending_01_capacity": {
+      "wrong": 6,
+      "correct": 3
+    },
+    "same_layer_hop_relaxation": {
+      "wrong": -3,
+      "correct": null
+    }
+  },
+  "limits": "Fixed finite CPU work observations; no benchmark ranking or learner mastery evidence."
+}

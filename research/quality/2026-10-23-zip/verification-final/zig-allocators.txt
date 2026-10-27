@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "observed_at_utc": "2026-10-23T21:55:54.179627+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/zig",
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "0.13.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/zig",
+        "test",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/packet.zig",
+        "-O",
+        "Debug",
+        "--cache-dir",
+        "/tmp/mm-zig-pbctlrb7/cache"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "1/6 packet.test.caller bytes and owned bytes evolve independently...OK\n2/6 packet.test.every allocation failure cleans previously acquired allocations...OK\n3/6 packet.test.second allocation failure rolls fixed u8 arena back to zero...OK\n4/6 packet.test.reverse cleanup reclaims the two most recent byte allocations...OK\n5/6 packet.test.invalid shape rejected before allocator use...OK\n6/6 packet.test.zero-length body still has single owned cleanup path...OK\nAll 6 tests passed.\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/zig",
+        "test",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/packet.zig",
+        "-O",
+        "ReleaseSafe",
+        "--cache-dir",
+        "/tmp/mm-zig-pbctlrb7/cache"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "1/6 packet.test.caller bytes and owned bytes evolve independently...OK\n2/6 packet.test.every allocation failure cleans previously acquired allocations...OK\n3/6 packet.test.second allocation failure rolls fixed u8 arena back to zero...OK\n4/6 packet.test.reverse cleanup reclaims the two most recent byte allocations...OK\n5/6 packet.test.invalid shape rejected before allocator use...OK\n6/6 packet.test.zero-length body still has single owned cleanup path...OK\nAll 6 tests passed.\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/zig",
+        "test",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig",
+        "--cache-dir",
+        "/tmp/mm-zig-pbctlrb7/cache"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "1/1 broken.test.negative control detects missing error-path cleanup...\nfail_index: 1/2\nallocated bytes: 3\nfreed bytes: 0\nallocations: 1\ndeallocations: 0\nallocation that was made to fail: \n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/mem/Allocator.zig:319:40: 0x103d277 in dupe__anon_2691 (test)\n    const new_buf = try allocator.alloc(T, m.len);\n                                       ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig:4:38: 0x103d186 in missingCleanup (test)\n    const second = try allocator.dupe(u8, \"DATA\");\n                                     ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/testing.zig:1082:9: 0x103d920 in checkAllAllocationFailures__anon_1913 (test)\n        if (@call(.auto, test_fn, args)) |_| {\n        ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig:9:47: 0x103ddca in test.negative control detects missing error-path cleanup (test)\n    try std.testing.checkAllAllocationFailures(std.testing.allocator, missingCleanup, .{});\n                                              ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/compiler/test_runner.zig:157:25: 0x104e779 in mainTerminal (test)\n        if (test_fn.func()) |_| {\n                        ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/compiler/test_runner.zig:37:28: 0x104495b in main (test)\n        return mainTerminal();\n                           ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/start.zig:514:22: 0x103ff59 in posixCallMainAndExit (test)\n            root.main();\n                     ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/start.zig:266:5: 0x103fac1 in _start (test)\n    asm volatile (switch (native_arch) {\n    ^\nFAIL (MemoryLeakDetected)\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/mem/Allocator.zig:225:89: 0x105110e in allocBytesWithAlignment__anon_6371 (test)\n    const byte_ptr = self.rawAlloc(byte_count, log2a(alignment), return_address) orelse return Error.OutOfMemory;\n                                                                                        ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/mem/Allocator.zig:211:5: 0x104712a in allocWithSizeAndAlignment__anon_5014 (test)\n    return self.allocBytesWithAlignment(alignment, byte_count, return_address);\n    ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/mem/Allocator.zig:129:5: 0x1043834 in alloc__anon_3866 (test)\n    return self.allocAdvancedWithRetAddr(T, null, n, @returnAddress());\n    ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/mem/Allocator.zig:319:21: 0x103d292 in dupe__anon_2691 (test)\n    const new_buf = try allocator.alloc(T, m.len);\n                    ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig:4:20: 0x103d1a4 in missingCleanup (test)\n    const second = try allocator.dupe(u8, \"DATA\");\n                   ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/testing.zig:1103:21: 0x103daae in checkAllAllocationFailures__anon_1913 (test)\n                    return error.MemoryLeakDetected;\n                    ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig:9:5: 0x103dddd in test.negative control detects missing error-path cleanup (test)\n    try std.testing.checkAllAllocationFailures(std.testing.allocator, missingCleanup, .{});\n    ^\n[gpa] (err): memory address 0x7f13669cd000 leaked: \n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/mem/Allocator.zig:319:40: 0x103d277 in dupe__anon_2691 (test)\n    const new_buf = try allocator.alloc(T, m.len);\n                                       ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig:3:37: 0x103d108 in missingCleanup (test)\n    const first = try allocator.dupe(u8, \"tag\");\n                                    ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/testing.zig:1082:9: 0x103d920 in checkAllAllocationFailures__anon_1913 (test)\n        if (@call(.auto, test_fn, args)) |_| {\n        ^\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/broken.zig:9:47: 0x103ddca in test.negative control detects missing error-path cleanup (test)\n    try std.testing.checkAllAllocationFailures(std.testing.allocator, missingCleanup, .{});\n                                              ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/compiler/test_runner.zig:157:25: 0x104e779 in mainTerminal (test)\n        if (test_fn.func()) |_| {\n                        ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/compiler/test_runner.zig:37:28: 0x104495b in main (test)\n        return mainTerminal();\n                           ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/start.zig:514:22: 0x103ff59 in posixCallMainAndExit (test)\n            root.main();\n                     ^\n/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/lib/std/start.zig:266:5: 0x103fac1 in _start (test)\n    asm volatile (switch (native_arch) {\n    ^\n\n0 passed; 0 skipped; 1 failed.\n1 errors were logged.\n1 tests leaked memory.\nerror: the following test command failed with exit code 1:\n/tmp/mm-zig-pbctlrb7/cache/o/2e88a7657fe40da222eb2ac9b75d5aca/test\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/zig/zig-linux-x86_64-0.13.0/zig",
+        "build-exe",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/programming-languages-mastery/04-zig/units/allocator-errors/packet.zig",
+        "-O",
+        "ReleaseSafe",
+        "-femit-bin=/tmp/mm-zig-pbctlrb7/experiment",
+        "--cache-dir",
+        "/tmp/mm-zig-pbctlrb7/cache"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-zig-pbctlrb7/experiment"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "budget=1;status=OutOfMemory;after_cleanup=0\nbudget=2;status=OutOfMemory;after_cleanup=0\nbudget=4;status=OutOfMemory;after_cleanup=0\nbudget=8;status=success;peak_byte_end=7;after_cleanup=0\nbudget=16;status=success;peak_byte_end=7;after_cleanup=0\n"
+    }
+  ],
+  "limits": "Zig0.13 byte allocations and scoped error paths, not a borrow checker, all allocator behavior or safe arbitrary copied ownership."
+}

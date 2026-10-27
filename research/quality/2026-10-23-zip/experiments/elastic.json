@@ -1,0 +1,200 @@
+{
+  "executed_at_utc": "2026-10-23T21:46:47.773156+00:00",
+  "kind": "actual execution of synthetic models; no physical measurements",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "code_sha256": {
+    "experiment.py": "600b37abe0101311456cd756c4fc684213a170801f526935f86a36fb41dcf5a0",
+    "materials.py": "61d3388111e11c70c3f71ae6c44581e0e799c97b8af0aa5ef82115f074bdba9b"
+  },
+  "assumed_parameters": {
+    "area_m2": 1e-06,
+    "modulus_Pa": 200000000000.0,
+    "frame_compliance_m_per_N": 1e-07,
+    "offset_m": 2e-06,
+    "noise_halfwidth_m": 5e-08,
+    "seed": 421
+  },
+  "bond_assumed_parameters": {
+    "depth_J": 1e-19,
+    "spacing_m": 2e-10,
+    "exponent": 8
+  },
+  "bond_trace": [
+    {
+      "ratio": 0.98,
+      "energy_J": -9.982642653335271e-20,
+      "required_force_N": -9.03832568644042e-11,
+      "tangent_N_per_m": 25.39990097149765
+    },
+    {
+      "ratio": 0.99,
+      "energy_J": -9.995835285510151e-20,
+      "required_force_N": -4.249487494947505e-11,
+      "tangent_N_per_m": 22.543788267543434
+    },
+    {
+      "ratio": 1,
+      "energy_J": -1e-19,
+      "required_force_N": -0.0,
+      "tangent_N_per_m": 19.999999999999996
+    },
+    {
+      "ratio": 1.01,
+      "energy_J": -9.996155509608012e-20,
+      "required_force_N": 3.768927152400447e-11,
+      "tangent_N_per_m": 17.7325779896616
+    },
+    {
+      "ratio": 1.02,
+      "energy_J": -9.98520983387407e-20,
+      "required_force_N": 7.109343735161554e-11,
+      "tangent_N_per_m": 15.709971513663726
+    },
+    {
+      "ratio": 1.1,
+      "energy_J": -9.723171275025055e-20,
+      "required_force_N": 2.2991352149671464e-10,
+      "tangent_N_per_m": 5.620742865893226
+    },
+    {
+      "ratio": 1.25,
+      "energy_J": -8.903182628571428e-20,
+      "required_force_N": 2.890184411428571e-10,
+      "tangent_N_per_m": -0.16466388114285624
+    },
+    {
+      "ratio": 1.5,
+      "energy_J": -7.563306987175299e-20,
+      "required_force_N": 2.3910408546896884e-10,
+      "tangent_N_per_m": -1.2471966381431399
+    },
+    {
+      "ratio": 2,
+      "energy_J": -5.708705357142856e-20,
+      "required_force_N": 1.417410714285714e-10,
+      "tangent_N_per_m": -0.6891741071428571
+    }
+  ],
+  "bond_force_peak_separation_ratio": 1.239698493365617,
+  "ideal_parallel_chain_modulus_Pa": 99999999999.99998,
+  "specimens": [
+    {
+      "length_m": 0.1,
+      "forces_N": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "observed_extensions_m": [
+        2.015443981896182e-06,
+        8.011130470227026e-06,
+        1.4036579045565998e-05,
+        1.9999396563817113e-05,
+        2.599884693494414e-05,
+        3.198244126329386e-05,
+        3.803521109433758e-05,
+        4.399488741264328e-05,
+        5.000976278055296e-05,
+        5.5987707829873596e-05,
+        6.196245014614097e-05
+      ],
+      "fit": {
+        "slope_m_per_N": 5.996256702925608e-07,
+        "intercept_m": 2.021794442034933e-06,
+        "slope_standard_uncertainty_m_per_N": 1.8222064544679093e-10,
+        "residuals_m": [
+          -6.350460138751119e-09,
+          -6.920674733514566e-09,
+          2.2271197679848338e-08,
+          -1.1167986994645922e-08,
+          -7.974318793226004e-09,
+          -2.0636693369111838e-08,
+          3.587643474898953e-08,
+          -7.039498709087723e-10,
+          1.7914715113159774e-08,
+          -3.969384918073803e-10,
+          -2.1911325150046862e-08
+        ]
+      },
+      "apparent_modulus_Pa": 166770712053.08713,
+      "corrected_known_frame_modulus_Pa": 200149844065.14584,
+      "wrong_forced_origin_modulus_Pa": 159106851009.71844
+    },
+    {
+      "length_m": 0.2,
+      "forces_N": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "observed_extensions_m": [
+        2.0441044082665155e-06,
+        1.2952622128515127e-05,
+        2.4027862855414965e-05,
+        3.5012742823500725e-05,
+        4.602941431291161e-05,
+        5.7002657920430525e-05,
+        6.799446969168644e-05,
+        7.89814348573232e-05,
+        9.001411853212438e-05,
+        0.0001009512965800261,
+        0.00011199343314804628
+      ],
+      "fit": {
+        "slope_m_per_N": 1.0996386799831734e-06,
+        "intercept_m": 2.0184439334091373e-06,
+        "slope_standard_uncertainty_m_per_N": 2.762104621917905e-10,
+        "residuals_m": [
+          2.566047485737819e-08,
+          -6.220860472574491e-08,
+          1.6645322342357857e-08,
+          5.138490596382167e-09,
+          2.5423180175533622e-08,
+          2.279987862719465e-09,
+          -2.2950407131108654e-09,
+          -1.1716674908082377e-08,
+          2.4580200061360665e-08,
+          -3.462855186864115e-08,
+          1.1121216319802027e-08
+        ]
+      },
+      "apparent_modulus_Pa": 181877923758.6117,
+      "corrected_known_frame_modulus_Pa": 200072290123.23386,
+      "wrong_forced_origin_modulus_Pa": 177230553895.39224
+    }
+  ],
+  "two_length_estimate": {
+    "modulus_Pa": 199994796259.1531,
+    "frame_compliance_m_per_N": 9.961266060194824e-08
+  },
+  "nonidentifiable_parameter_pairs": [
+    {
+      "modulus_Pa": 200000000000.0,
+      "frame_compliance_m_per_N": 1e-07,
+      "identical_single_length_total_compliance_m_per_N": 6.000000000000001e-07
+    },
+    {
+      "modulus_Pa": 250000000000.0,
+      "frame_compliance_m_per_N": 2e-07,
+      "identical_single_length_total_compliance_m_per_N": 6e-07
+    }
+  ],
+  "limits": "Illustrative energy law, parallel-chain geometry and linear constant-frame model; no calibrated material, fracture, fatigue, creep, thermal expansion or fixture validation."
+}

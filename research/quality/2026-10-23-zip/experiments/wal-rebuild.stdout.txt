@@ -1,0 +1,58 @@
+{
+  "kind": "actual synthetic read-only WAL cut/rebuild execution",
+  "cuts_checked": 171,
+  "groups": [
+    {
+      "transactions": 0,
+      "first_cut": 7,
+      "last_cut": 64,
+      "rows": []
+    },
+    {
+      "transactions": 1,
+      "first_cut": 65,
+      "last_cut": 122,
+      "rows": [
+        [
+          0,
+          "6f6c64"
+        ],
+        [
+          29,
+          "6f6c64"
+        ]
+      ]
+    },
+    {
+      "transactions": 2,
+      "first_cut": 123,
+      "last_cut": 176,
+      "rows": [
+        [
+          0,
+          "6e6577"
+        ],
+        [
+          29,
+          "6e6577"
+        ]
+      ]
+    },
+    {
+      "transactions": 3,
+      "first_cut": 177,
+      "last_cut": 177,
+      "rows": [
+        [
+          -2,
+          "c3a9"
+        ],
+        [
+          29,
+          "6e6577"
+        ]
+      ]
+    }
+  ],
+  "limits": "No checkpoint replay skipping, source write, process crash, power failure or concurrent mutation."
+}

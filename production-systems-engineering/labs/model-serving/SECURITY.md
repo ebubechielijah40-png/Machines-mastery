@@ -1,11 +1,12 @@
-# Security: Robust ML Inputs and Abuse Prevention
+# Local model-serving input limits
 
-## Threat Vectors
-1. **Adversarial Poisoning / Malformed Inputs:** Crafting vectors containing extreme numeric magnitudes, NaNs, or Infinities to induce crashes, overflow, or undefined behavior.
-2. **Denial of Service via High-Dimensionality:** Submitting vectors with millions of dimensions to exhaust server memory and CPU during vector multiplication.
-3. **Model Extraction / Abuse:** Scraping model decision boundaries via rapid, automated query bursts.
+The validator checks the expected vector length, supported numeric types, finite
+values and configured range. It rejects out-of-range values; it does not clamp
+them. These are in-process feature checks, not transport byte/memory limits or
+a proof against all adversarial payloads. Existing tests cover selected cases.
 
-## Mitigations
-- **Strict Dimension Enforcement:** Inputs must strictly equal `expected_dim`; extra or fewer dimensions are rejected immediately.
-- **Range Clamping & Type Checking:** Every element must be an instance of `(int, float)` and bounded within $[min\_val, max\_val]$.
-- **Token Bucket Rate Limiting:** Enforces maximum request burst size and sustained refill rate per client.
+One token bucket is attached to the whole server instance. It has no per-client
+identity, authentication, synchronization or fair queue and is used only by the
+single-thread experiment. It cannot justify concurrent DoS protection, starvation
+prevention, model extraction resistance or safe public deployment. The unbounded
+success-latency list is a known retention limit.

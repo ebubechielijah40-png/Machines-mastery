@@ -1,43 +1,49 @@
-# Production Systems Engineering — original self-contained coursebook
+# Production engineering: define the outcome through failure
 
-This is an original teaching text for **testing, deployment, performance, scalability, observability, capacity, failure, recovery and postmortems**. It is not a reproduction of any copyrighted textbook. Use it as the narrative entry point, then follow the linked deep guides/labs for implementations and tests.
+This entry uses existing executable ledger, cluster and model-serving labs.
+Those are bounded prototypes; the whole production-engineering coursebook
+remains PARTIAL. Running a local process is not evidence of a secure, scalable
+or reliably operated deployment.
 
-## How to read this coursebook
+## A retry is an application state transition
 
-For each topic: identify the problem that forced the concept to exist; build the simplest model; trace state and interfaces; predict behavior; run an experiment; then reconstruct from memory. Definitions without mechanisms do not count as understanding.
+A client sends an operation, the server commits it, and the reply is lost.
+From the client's timeout alone, success and failure are indistinguishable.
+Blind retry can apply the operation twice. An idempotency key, committed result
+record and reconciliation policy can make that ambiguity manageable, but their
+retention and durable identity assumptions must be stated. Study
+[the event-ledger lab](../production-systems-engineering/labs/event-ledger/README.md)
+and compare it with [WAL uncertain-outcome recovery](../projects-guided/p07-storage-engine/README.md).
+Do not replace the uncertainty with an invented successful observation.
 
-## Core questions
+## A measured workload needs a useful denominator
 
-1. What state exists, and where?
-2. What transforms that state?
-3. What information enters and leaves?
-4. What resources are consumed?
-5. What invariants must remain true?
-6. What assumptions make the model valid?
-7. What breaks first under scale, noise, concurrency, or adversarial input?
-8. What experiment would distinguish two competing explanations?
-9. What can be implemented as a minimal model?
-10. What remains impossible or unknowable from the available evidence?
+Throughput counts completed work per elapsed time. Latency describes the time
+for one request under a specified arrival/queueing process. Rejected, retried
+or timed-out requests must remain visible; reporting only successful latencies
+can hide an overload collapse. A cache can improve one workload while making
+staleness or memory pressure worse. Observe the request, queue, dependency and
+commit boundaries before diagnosing a bottleneck.
 
-## Learning architecture
+[The distributed cluster](../production-systems-engineering/labs/distributed-cluster/README.md)
+and [model-serving lab](../production-systems-engineering/labs/model-serving/README.md)
+include tests, controlled failure/measurement scripts and explicit assumptions.
+Their RESULTS files describe local evidence. Illustrated postmortem outcomes
+are labeled as unobserved where not actually executed; never import them into
+an operational claim. Preserve correctness checks while changing load or policy.
 
-Start with an observable phenomenon. Descend abstractions until you can explain the mechanism, then rise again to application. The same pattern applies whether the system is a CPU, database, protein sequence pipeline, robot, or quantum circuit.
+## Components do not automatically compose guarantees
 
-### Worked-method example
-Suppose a system becomes slow. “It is slow” is an observation, not a diagnosis. Measure latency distribution and throughput; inspect CPU, memory, I/O, queueing, lock contention, cache behavior, and dependency latency; form a hypothesis; change one variable; measure again. The result is evidence for or against the model, not proof of every causal story.
+A valid HMAC can bind a false measurement. A durable log can persist an invalid
+application decision. A convergent replica can lose a concurrent debit. A good
+model can fail behind a malformed request parser or bad retry policy. Combine
+contracts at interfaces, including identity, version, timeouts, resource bounds,
+observability, rollback and recovery. Tests should target the observable outcome,
+not merely mirror a helper's calculation.
 
-## Required practice
-
-- at least one hand-worked state trace;
-- at least one executable model;
-- at least one failure injection or counterexample;
-- at least one scaling/complexity measurement where meaningful;
-- one reconstruction without notes;
-- one transfer problem with unfamiliar surface details.
-
-## Deep material
-- `production-systems-engineering/README.md`
-
-## Exit standard
-
-Do not exit because you have read the file. Exit when you can explain the mechanism, implement a bounded version, test it, state limitations, and transfer the model to a new case.
+Exit: run one lab's exact commands, predict a failure, retain its actual output,
+write a cause-and-evidence incident analysis, restore the declared state and
+reconstruct the fix without notes. State untested infrastructure, dependency,
+backup and security assumptions. Broad deployment automation, SLO practice,
+large-scale load tests and production incident experience are not supplied by
+this entry chapter and remain development work.

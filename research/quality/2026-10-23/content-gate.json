@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-10-23T16:50:39.136887+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/quality_audit.py",
+    "--json",
+    "research/quality/2026-10-23/content-audit.json"
+  ],
+  "exit_code": 1,
+  "log": "research/quality/2026-10-23/content-gate.txt",
+  "interpretation": "Strict content gate: nonzero findings remain unfinished authoring/review work, separate from executable test results."
+}

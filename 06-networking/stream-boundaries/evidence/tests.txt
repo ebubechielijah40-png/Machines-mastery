@@ -1,0 +1,19 @@
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s 06-networking/code -v
+python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+platform: Linux-6.18.55-x86_64-with-glibc2.39
+executed_utc: 2026-10-23T10:43:05Z
+exit_code: 0
+
+test_all_byte_cuts_distinguish_boundary_from_truncation (test_stream_protocol.StreamTests.test_all_byte_cuts_distinguish_boundary_from_truncation) ... ok
+test_api_errors_do_not_consume_a_stream (test_stream_protocol.StreamTests.test_api_errors_do_not_consume_a_stream) ... ok
+test_coalesced_frames_do_not_accumulate_incomplete_storage (test_stream_protocol.StreamTests.test_coalesced_frames_do_not_accumulate_incomplete_storage) ... ok
+test_every_two_cut_partition_is_same_messages (test_stream_protocol.StreamTests.test_every_two_cut_partition_is_same_messages) ... ok
+test_fixed_wire_vector_and_empty_payload (test_stream_protocol.StreamTests.test_fixed_wire_vector_and_empty_payload) ... ok
+test_local_socket_half_close_preserves_remaining_frames (test_stream_protocol.StreamTests.test_local_socket_half_close_preserves_remaining_frames) ... ok
+test_overflow_is_terminal_before_body_copy (test_stream_protocol.StreamTests.test_overflow_is_terminal_before_body_copy) ... ok
+test_short_nonblocking_send_and_backpressure_are_handled (test_stream_protocol.StreamTests.test_short_nonblocking_send_and_backpressure_are_handled) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.014s
+
+OK

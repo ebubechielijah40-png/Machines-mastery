@@ -1,0 +1,31 @@
+test_boundary_alpha_and_degenerate_models (test_decision.DecisionTests.test_boundary_alpha_and_degenerate_models) ... ok
+test_composite_null_operating_curve (test_decision.DecisionTests.test_composite_null_operating_curve) ... ok
+test_critical_minimality_by_independent_binary_paths (test_decision.DecisionTests.test_critical_minimality_by_independent_binary_paths) ... ok
+test_exact_power_against_labeled_paths (test_decision.DecisionTests.test_exact_power_against_labeled_paths) ... ok
+test_exact_worked_threshold_and_never_reject (test_decision.DecisionTests.test_exact_worked_threshold_and_never_reject) ... ok
+test_final_look_matches_single_test (test_decision.DecisionTests.test_final_look_matches_single_test) ... ok
+test_first_crossing_dp_against_complete_path_oracle (test_decision.DecisionTests.test_first_crossing_dp_against_complete_path_oracle) ... ok
+test_invalid_parameters_and_arithmetic_budget (test_decision.DecisionTests.test_invalid_parameters_and_arithmetic_budget) ... ok
+test_manual_record_cannot_silently_use_negative_index (test_decision.DecisionTests.test_manual_record_cannot_silently_use_negative_index) ... ok
+test_minimum_sample_plan_and_bounded_failure (test_decision.DecisionTests.test_minimum_sample_plan_and_bounded_failure) ... ok
+test_monitor_conservation_and_stopping_inflation (test_decision.DecisionTests.test_monitor_conservation_and_stopping_inflation) ... ok
+test_power_not_monotone_in_every_sample_size (test_decision.DecisionTests.test_power_not_monotone_in_every_sample_size) ... ok
+test_spending_control_for_composite_null (test_decision.DecisionTests.test_spending_control_for_composite_null) ... ok
+test_ten_look_first_hit_hand_count (test_decision.DecisionTests.test_ten_look_first_hit_hand_count) ... ok
+test_bayes_from_independent_integer_contingency_table (test_probability.ProbabilityTests.test_bayes_from_independent_integer_contingency_table) ... ok
+test_binomial_against_all_binary_sequences (test_probability.ProbabilityTests.test_binomial_against_all_binary_sequences) ... ok
+test_conditioning_exact_counts_and_zero_event (test_probability.ProbabilityTests.test_conditioning_exact_counts_and_zero_event) ... ok
+test_degenerate_binomial_and_tail (test_probability.ProbabilityTests.test_degenerate_binomial_and_tail) ... ok
+test_distribution_mass_invariant_cannot_be_mutated (test_probability.ProbabilityTests.test_distribution_mass_invariant_cannot_be_mutated) ... ok
+test_entropy_and_support (test_probability.ProbabilityTests.test_entropy_and_support) ... ok
+test_independence_is_not_disjointness (test_probability.ProbabilityTests.test_independence_is_not_disjointness) ... ok
+test_invalid_models_and_no_silent_renormalization (test_probability.ProbabilityTests.test_invalid_models_and_no_silent_renormalization) ... ok
+test_permutation_null_and_exact_extreme_labels (test_probability.ProbabilityTests.test_permutation_null_and_exact_extreme_labels) ... ok
+test_score_interval_contains_exact_parameter_endpoints (test_probability.ProbabilityTests.test_score_interval_contains_exact_parameter_endpoints) ... ok
+test_wald_zero_count_failure_and_actual_coverage (test_probability.ProbabilityTests.test_wald_zero_count_failure_and_actual_coverage) ... ok
+test_wilson_derives_score_inequality_and_symmetry (test_probability.ProbabilityTests.test_wilson_derives_score_inequality_and_symmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.106s
+
+OK

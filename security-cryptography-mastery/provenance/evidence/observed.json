@@ -1,0 +1,27 @@
+{
+  "kind": "synthetic local authenticated provenance experiment",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "demo_keys_public": true,
+  "framed_request_bytes": 184,
+  "decoder_peak_pending": 184,
+  "accepted_tip_after_first": "95fc03ad38c33caeab10fa6d4584bb0dd8d7608157bbe70c9f6c6a5569cb131a",
+  "exact_first_output": {
+    "sensor/room": {
+      "numerator": 25001,
+      "denominator": 1000,
+      "unit": "celsius"
+    }
+  },
+  "failure_probes": {
+    "replay": "SequenceError",
+    "unauthorized_stream": "AuthorizationError",
+    "tamper": "IntegrityError",
+    "authenticated_false_measurement": "accepted within schema; truth not verified"
+  },
+  "complete_suffix_deletion_without_checkpoint_accepted_prefix_entries": 1,
+  "with_trusted_tip": "trusted-tip mismatch rejected",
+  "source_truth_verified": false
+}

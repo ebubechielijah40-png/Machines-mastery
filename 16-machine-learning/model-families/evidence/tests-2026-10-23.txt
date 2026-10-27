@@ -1,0 +1,22 @@
+test_bigram_caps_generator_immutability_and_unknown_rejection (test_families.GenerativeTests.test_bigram_caps_generator_immutability_and_unknown_rejection) ... ok
+test_bigram_exact_counts_likelihood_and_no_cross_document_transition (test_families.GenerativeTests.test_bigram_exact_counts_likelihood_and_no_cross_document_transition) ... ok
+test_em_monotonic_likelihood_floor_and_frozen_inputs (test_families.GenerativeTests.test_em_monotonic_likelihood_floor_and_frozen_inputs) ... ok
+test_em_one_component_exact_moment_oracle (test_families.GenerativeTests.test_em_one_component_exact_moment_oracle) ... ok
+test_mixture_posterior_hand_case_and_label_permutation (test_families.GenerativeTests.test_mixture_posterior_hand_case_and_label_permutation) ... ok
+test_mixture_sampling_and_controlled_dead_component (test_families.GenerativeTests.test_mixture_sampling_and_controlled_dead_component) ... ok
+test_2d_correlation_against_exact_patch_dot_products (test_families.ModelTests.test_2d_correlation_against_exact_patch_dot_products) ... ok
+test_all_parameter_gradients_against_central_differences (test_families.ModelTests.test_all_parameter_gradients_against_central_differences) ... ok
+test_cnn_equivariance_invariance_and_kernel_orientation (test_families.ModelTests.test_cnn_equivariance_invariance_and_kernel_orientation) ... ok
+test_exploding_recurrent_adjoint_is_controlled (test_families.ModelTests.test_exploding_recurrent_adjoint_is_controlled) ... ok
+test_invalid_shapes_and_bounded_contracts (test_families.ModelTests.test_invalid_shapes_and_bounded_contracts) ... ok
+test_logistic_hand_values_and_gradient (test_families.ModelTests.test_logistic_hand_values_and_gradient) ... ok
+test_rnn_backward_input_chain_and_causal_prefix (test_families.ModelTests.test_rnn_backward_input_chain_and_causal_prefix) ... ok
+test_stable_binary_loss_and_derivative (test_families.ModelTests.test_stable_binary_loss_and_derivative) ... ok
+test_standardizer_train_only_constant_and_generator (test_families.ModelTests.test_standardizer_train_only_constant_and_generator) ... ok
+test_training_reduces_actual_objective (test_families.ModelTests.test_training_reduces_actual_objective) ... ok
+test_update_clipping_repeated_batches_and_no_mutation (test_families.ModelTests.test_update_clipping_repeated_batches_and_no_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.024s
+
+OK

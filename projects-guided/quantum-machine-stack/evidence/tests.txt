@@ -1,0 +1,6 @@
+test_gate_representations_noise_and_recovery_share_contract (test_quantum_stack.StackTests.test_gate_representations_noise_and_recovery_share_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK

@@ -1,103 +1,29 @@
-# Cybersecurity — self-contained phase guide
+# Security engineering through a bounded adversary model
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+Begin with the [authenticated provenance lesson](../security-cryptography-mastery/provenance/LESSON.md), whose prerequisite path leads through framing and measurement analysis. Security is a property relative to assets, adversary capabilities and assumptions. A control can be correct yet irrelevant to the attack being considered. This guide uses the implemented local pipeline to make those boundaries testable.
 
-## 1. Threat Modeling
+## Turn a goal into an invariant
 
-**Problem.** Identify the real system problem that makes threat modeling necessary.
+“Secure the sensor data” leaves several different goals unresolved. Preserve confidentiality from disk readers? Prevent an unauthorized producer writing room data? Detect altered output? Reject replay? Survive interrupted writes? Preserve evidence of deletion? Each needs its own invariant and authority. The current implementation addresses bounded schema/authentication, a configured write policy, per-producer order and authenticated history verification under single-writer local assumptions. It does not encrypt or authenticate a remote login.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+Trace one attack path. An attacker submits a captured valid seq1 record after seq1 committed. Syntax is valid and its producer tag verifies, so authentication alone would accept it. The remembered sequence invariant requires next=last+1, causing SequenceError before append. In a second path the authorized producer tags seq2 for forbidden stream outside. It passes authentication but fails the stream policy. A third path edits only the derived output in stored history: reopening fails the processor MAC or exact-transform validation. The test matrix independently exercises these distinctions.
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+Now change an assumption: let the attacker know the producer key. It can create a fresh valid observation tag; HMAC no longer distinguishes it from the intended producer. A remaining processor policy can still restrict streams, but cannot recover producer identity from that compromised key. This is why key distribution, isolation and lifecycle are part of a security system rather than details postponed by an algorithm choice.
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
+## Bound the parser as a resource boundary
 
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
+The network decoder checks length after four prefix bytes, before accepting an attacker-announced body. Its pending buffer bound does not cap returned messages or connection count. The JSON layer limits payload bytes, duplicate fields, numeric ranges and exact types. Python booleans compare equal to integers, so schema validation checks `type(x) is int`. Layered limits matter: a valid frame may still carry invalid JSON, and valid JSON may still contain an unauthorized request.
 
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
+The [HTTP build](../projects-guided/p06-http-server/README.md) shows a separate ambiguity risk. Duplicate or competing length indicators can give recipients different boundaries. The narrow lab rejects unsupported body conventions and always closes one owned connection. It does not prove request-smuggling resistance in a proxy or implement a complete HTTP stack.
 
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
+## Recovery and evidence limits
 
-## 2. Identity/Access
+Injected fsync failure demonstrates an unknown outcome: in-memory state reports no accepted entry while reopening can find a complete written line. Reusing the still-open object is prohibited; reconcile from stored evidence. A hash chain verifies retained order but accepts a valid prefix after complete suffix deletion unless an independently trusted latest tip is supplied. “Append-only” is a logical format here, not a filesystem access-control guarantee against deletion.
 
-**Problem.** Identify the real system problem that makes identity/access necessary.
+The executed attacks are authorized local mutations of synthetic data and temporary files. Passing them supports specific behavior, not universal security. Source scopes for HMAC and vectors are in the [verification record](../security-cryptography-mastery/provenance/SOURCES.md). Use primary construction sources and independent expected values; a self-generated tag tested only against itself is weak evidence.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+## Assessment and unfinished coverage
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+Complete the provenance exercises on identity, bool numerics, replay, rollback and uncertain writes before reading their separate hints/solutions. Reconstruct the adversary model and explain which control still works after each key/path assumption changes. Submit the actual failure matrix and one counterexample that remains accepted by design, such as an authenticated false measurement claim.
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Application Security
-
-**Problem.** Identify the real system problem that makes application security necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Network Security
-
-**Problem.** Identify the real system problem that makes network security necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Monitoring/Response
-
-**Problem.** Identify the real system problem that makes monitoring/response necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Forensics/Recovery
-
-**Problem.** Identify the real system problem that makes forensics/recovery necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+This bounded security-engineering path is STRONG; the cybersecurity domain remains PARTIAL. Memory-safety exploitation/defence, operating-system isolation, service identity, incident response, secure deployment, vulnerability management, AEAD, key rotation and side-channel analysis are not completed by the local pipeline.

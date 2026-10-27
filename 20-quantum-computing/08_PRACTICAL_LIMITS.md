@@ -1,0 +1,2 @@
+# Practical limits
+Quantum computers do not make NP-hard problems automatically easy, do not read all amplitudes out directly, and do not replace classical computers. State preparation, measurement, noise, qubit count, connectivity, gate fidelity, and error-correction overhead can dominate. Every claimed advantage must specify problem, algorithm, complexity model, input/output costs, and hardware assumptions.

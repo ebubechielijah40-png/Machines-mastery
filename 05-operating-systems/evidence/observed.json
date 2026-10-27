@@ -1,0 +1,693 @@
+{
+  "kind": "model outputs and separately labeled actual local OS observations",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "scheduling_model": {
+    "fcfs": {
+      "timeline": [
+        [
+          "A",
+          0,
+          5
+        ],
+        [
+          "B",
+          5,
+          7
+        ],
+        [
+          "C",
+          7,
+          8
+        ]
+      ],
+      "metrics": {
+        "A": {
+          "response": 0,
+          "turnaround": 5,
+          "waiting": 0,
+          "finish": 5
+        },
+        "B": {
+          "response": 4,
+          "turnaround": 6,
+          "waiting": 4,
+          "finish": 7
+        },
+        "C": {
+          "response": 5,
+          "turnaround": 6,
+          "waiting": 5,
+          "finish": 8
+        }
+      },
+      "elapsed": 8,
+      "useful_ticks": 8
+    },
+    "rr": {
+      "timeline": [
+        [
+          "A",
+          0,
+          2
+        ],
+        [
+          "B",
+          2,
+          4
+        ],
+        [
+          "C",
+          4,
+          5
+        ],
+        [
+          "A",
+          5,
+          7
+        ],
+        [
+          "A",
+          7,
+          8
+        ]
+      ],
+      "metrics": {
+        "A": {
+          "response": 0,
+          "turnaround": 8,
+          "waiting": 3,
+          "finish": 8
+        },
+        "B": {
+          "response": 1,
+          "turnaround": 3,
+          "waiting": 1,
+          "finish": 4
+        },
+        "C": {
+          "response": 2,
+          "turnaround": 3,
+          "waiting": 2,
+          "finish": 5
+        }
+      },
+      "elapsed": 8,
+      "useful_ticks": 8
+    }
+  },
+  "quantum_overhead_model": [
+    {
+      "quantum": 1,
+      "switch_cost": 1,
+      "result": {
+        "timeline": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "SWITCH",
+            1,
+            2
+          ],
+          [
+            "B",
+            2,
+            3
+          ],
+          [
+            "SWITCH",
+            3,
+            4
+          ],
+          [
+            "C",
+            4,
+            5
+          ],
+          [
+            "SWITCH",
+            5,
+            6
+          ],
+          [
+            "A",
+            6,
+            7
+          ],
+          [
+            "SWITCH",
+            7,
+            8
+          ],
+          [
+            "B",
+            8,
+            9
+          ],
+          [
+            "SWITCH",
+            9,
+            10
+          ],
+          [
+            "C",
+            10,
+            11
+          ],
+          [
+            "SWITCH",
+            11,
+            12
+          ],
+          [
+            "A",
+            12,
+            13
+          ],
+          [
+            "SWITCH",
+            13,
+            14
+          ],
+          [
+            "B",
+            14,
+            15
+          ],
+          [
+            "SWITCH",
+            15,
+            16
+          ],
+          [
+            "C",
+            16,
+            17
+          ],
+          [
+            "SWITCH",
+            17,
+            18
+          ],
+          [
+            "A",
+            18,
+            19
+          ],
+          [
+            "SWITCH",
+            19,
+            20
+          ],
+          [
+            "B",
+            20,
+            21
+          ],
+          [
+            "SWITCH",
+            21,
+            22
+          ],
+          [
+            "C",
+            22,
+            23
+          ],
+          [
+            "SWITCH",
+            23,
+            24
+          ],
+          [
+            "A",
+            24,
+            25
+          ],
+          [
+            "SWITCH",
+            25,
+            26
+          ],
+          [
+            "B",
+            26,
+            27
+          ],
+          [
+            "SWITCH",
+            27,
+            28
+          ],
+          [
+            "C",
+            28,
+            29
+          ],
+          [
+            "SWITCH",
+            29,
+            30
+          ],
+          [
+            "A",
+            30,
+            31
+          ],
+          [
+            "SWITCH",
+            31,
+            32
+          ],
+          [
+            "B",
+            32,
+            33
+          ],
+          [
+            "SWITCH",
+            33,
+            34
+          ],
+          [
+            "C",
+            34,
+            35
+          ],
+          [
+            "SWITCH",
+            35,
+            36
+          ],
+          [
+            "A",
+            36,
+            37
+          ],
+          [
+            "SWITCH",
+            37,
+            38
+          ],
+          [
+            "B",
+            38,
+            39
+          ],
+          [
+            "SWITCH",
+            39,
+            40
+          ],
+          [
+            "C",
+            40,
+            41
+          ],
+          [
+            "SWITCH",
+            41,
+            42
+          ],
+          [
+            "A",
+            42,
+            43
+          ],
+          [
+            "SWITCH",
+            43,
+            44
+          ],
+          [
+            "B",
+            44,
+            45
+          ],
+          [
+            "SWITCH",
+            45,
+            46
+          ],
+          [
+            "C",
+            46,
+            47
+          ]
+        ],
+        "metrics": {
+          "A": {
+            "response": 0,
+            "turnaround": 43,
+            "waiting": 35,
+            "finish": 43
+          },
+          "B": {
+            "response": 2,
+            "turnaround": 45,
+            "waiting": 37,
+            "finish": 45
+          },
+          "C": {
+            "response": 4,
+            "turnaround": 47,
+            "waiting": 39,
+            "finish": 47
+          }
+        },
+        "elapsed": 47,
+        "useful_ticks": 24
+      }
+    },
+    {
+      "quantum": 2,
+      "switch_cost": 1,
+      "result": {
+        "timeline": [
+          [
+            "A",
+            0,
+            2
+          ],
+          [
+            "SWITCH",
+            2,
+            3
+          ],
+          [
+            "B",
+            3,
+            5
+          ],
+          [
+            "SWITCH",
+            5,
+            6
+          ],
+          [
+            "C",
+            6,
+            8
+          ],
+          [
+            "SWITCH",
+            8,
+            9
+          ],
+          [
+            "A",
+            9,
+            11
+          ],
+          [
+            "SWITCH",
+            11,
+            12
+          ],
+          [
+            "B",
+            12,
+            14
+          ],
+          [
+            "SWITCH",
+            14,
+            15
+          ],
+          [
+            "C",
+            15,
+            17
+          ],
+          [
+            "SWITCH",
+            17,
+            18
+          ],
+          [
+            "A",
+            18,
+            20
+          ],
+          [
+            "SWITCH",
+            20,
+            21
+          ],
+          [
+            "B",
+            21,
+            23
+          ],
+          [
+            "SWITCH",
+            23,
+            24
+          ],
+          [
+            "C",
+            24,
+            26
+          ],
+          [
+            "SWITCH",
+            26,
+            27
+          ],
+          [
+            "A",
+            27,
+            29
+          ],
+          [
+            "SWITCH",
+            29,
+            30
+          ],
+          [
+            "B",
+            30,
+            32
+          ],
+          [
+            "SWITCH",
+            32,
+            33
+          ],
+          [
+            "C",
+            33,
+            35
+          ]
+        ],
+        "metrics": {
+          "A": {
+            "response": 0,
+            "turnaround": 29,
+            "waiting": 21,
+            "finish": 29
+          },
+          "B": {
+            "response": 3,
+            "turnaround": 32,
+            "waiting": 24,
+            "finish": 32
+          },
+          "C": {
+            "response": 6,
+            "turnaround": 35,
+            "waiting": 27,
+            "finish": 35
+          }
+        },
+        "elapsed": 35,
+        "useful_ticks": 24
+      }
+    },
+    {
+      "quantum": 4,
+      "switch_cost": 1,
+      "result": {
+        "timeline": [
+          [
+            "A",
+            0,
+            4
+          ],
+          [
+            "SWITCH",
+            4,
+            5
+          ],
+          [
+            "B",
+            5,
+            9
+          ],
+          [
+            "SWITCH",
+            9,
+            10
+          ],
+          [
+            "C",
+            10,
+            14
+          ],
+          [
+            "SWITCH",
+            14,
+            15
+          ],
+          [
+            "A",
+            15,
+            19
+          ],
+          [
+            "SWITCH",
+            19,
+            20
+          ],
+          [
+            "B",
+            20,
+            24
+          ],
+          [
+            "SWITCH",
+            24,
+            25
+          ],
+          [
+            "C",
+            25,
+            29
+          ]
+        ],
+        "metrics": {
+          "A": {
+            "response": 0,
+            "turnaround": 19,
+            "waiting": 11,
+            "finish": 19
+          },
+          "B": {
+            "response": 5,
+            "turnaround": 24,
+            "waiting": 16,
+            "finish": 24
+          },
+          "C": {
+            "response": 10,
+            "turnaround": 29,
+            "waiting": 21,
+            "finish": 29
+          }
+        },
+        "elapsed": 29,
+        "useful_ticks": 24
+      }
+    },
+    {
+      "quantum": 8,
+      "switch_cost": 1,
+      "result": {
+        "timeline": [
+          [
+            "A",
+            0,
+            8
+          ],
+          [
+            "SWITCH",
+            8,
+            9
+          ],
+          [
+            "B",
+            9,
+            17
+          ],
+          [
+            "SWITCH",
+            17,
+            18
+          ],
+          [
+            "C",
+            18,
+            26
+          ]
+        ],
+        "metrics": {
+          "A": {
+            "response": 0,
+            "turnaround": 8,
+            "waiting": 0,
+            "finish": 8
+          },
+          "B": {
+            "response": 9,
+            "turnaround": 17,
+            "waiting": 9,
+            "finish": 17
+          },
+          "C": {
+            "response": 18,
+            "turnaround": 26,
+            "waiting": 18,
+            "finish": 26
+          }
+        },
+        "elapsed": 26,
+        "useful_ticks": 24
+      }
+    }
+  ],
+  "translation_model": [
+    {
+      "physical_address": 125,
+      "vpn": 2,
+      "offset": 13,
+      "tlb_hit": false
+    },
+    {
+      "physical_address": 126,
+      "vpn": 2,
+      "offset": 14,
+      "tlb_hit": true
+    },
+    {
+      "fault": "PROTECTION"
+    },
+    {
+      "physical_address": 157,
+      "vpn": 2,
+      "offset": 13,
+      "tlb_hit": false
+    }
+  ],
+  "actual_duplicate_descriptor": {
+    "original_read": "ab",
+    "duplicate_read": "cd",
+    "separate_open_read": "ab",
+    "shared_offset": 4
+  },
+  "actual_pipe": {
+    "while_duplicate_writer_open": "would block: another writer descriptor remains open",
+    "eof_after_last_writer_closed": true
+  },
+  "actual_subprocess": {
+    "child_pid_is_separate": "API-spawned child; PID not used as correctness oracle",
+    "requested_child_cwd": "/tmp/mm-fd-3wm4kfnx",
+    "child_stdout": "/tmp/mm-fd-3wm4kfnx\n",
+    "child_returncode": 7,
+    "parent_cwd_unchanged": true
+  }
+}

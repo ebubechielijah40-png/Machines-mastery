@@ -1,0 +1,12 @@
+test_critical_error_cannot_be_averaged_away (test_strong_dashboard.DashboardTests.test_critical_error_cannot_be_averaged_away) ... ok
+test_each_non_numeric_gate_matters (test_strong_dashboard.DashboardTests.test_each_non_numeric_gate_matters) ... ok
+test_exact_weighted_arithmetic (test_strong_dashboard.DashboardTests.test_exact_weighted_arithmetic) ... ok
+test_genuine_blocker_is_visible (test_strong_dashboard.DashboardTests.test_genuine_blocker_is_visible) ... ok
+test_overall_threshold_is_insufficient (test_strong_dashboard.DashboardTests.test_overall_threshold_is_insufficient) ... ok
+test_reject_changed_denominator_and_non_marks (test_strong_dashboard.DashboardTests.test_reject_changed_denominator_and_non_marks) ... ok
+test_scope_and_weight_changes_are_rejected (test_strong_dashboard.DashboardTests.test_scope_and_weight_changes_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

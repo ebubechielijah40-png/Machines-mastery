@@ -1,0 +1,2 @@
+# Quantum math bridge
+A quantum state is represented by a normalized complex vector. Global phase does not change measurement probabilities; relative phase changes interference. Tensor products construct joint systems. Unitary matrices preserve norm. Measurement maps amplitudes to outcome probabilities by magnitude squared and changes the state according to the measurement model. Exercises: normalize states, compute single-qubit gate effects, construct two-qubit basis vectors, distinguish mixture from coherent superposition conceptually.

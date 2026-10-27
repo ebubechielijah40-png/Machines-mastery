@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "probe": "complex_rtol",
+      "exception": "TypeError",
+      "message": "'<=' not supported between instances of 'int' and 'complex'"
+    },
+    {
+      "probe": "tiny_system",
+      "result": "[1.0, 2.0]"
+    },
+    {
+      "probe": "huge_system",
+      "result": "[1.0, 2.0]"
+    },
+    {
+      "probe": "complex_inner",
+      "result": "(2+0j)"
+    },
+    {
+      "probe": "shape_mismatch",
+      "exception": "ValueError",
+      "message": "inner matrix dimensions disagree"
+    }
+  ],
+  "test_exit_code": 0,
+  "tests": "test_complex_inner_product_and_unitary_norm (test_linear.LinearTests.test_complex_inner_product_and_unitary_norm) ... ok\ntest_convergence_and_deliberate_instability (test_linear.LinearTests.test_convergence_and_deliberate_instability) ... ok\ntest_gradient_every_coordinate_by_finite_difference (test_linear.LinearTests.test_gradient_every_coordinate_by_finite_difference) ... ok\ntest_linearity_exhaustive_small_integer_inputs (test_linear.LinearTests.test_linearity_exhaustive_small_integer_inputs) ... ok\ntest_pivot_and_exact_fraction_cramers_oracle (test_linear.LinearTests.test_pivot_and_exact_fraction_cramers_oracle) ... ok\ntest_rectangular_map_independent_basis_column_oracle (test_linear.LinearTests.test_rectangular_map_independent_basis_column_oracle) ... ok\ntest_shape_numeric_and_input_immutability (test_linear.LinearTests.test_shape_numeric_and_input_immutability) ... ok\ntest_singular_inconsistent_and_tolerance (test_linear.LinearTests.test_singular_inconsistent_and_tolerance) ... ok\ntest_system_scaling_and_residual (test_linear.LinearTests.test_system_scaling_and_residual) ... ok\ntest_worked_map_and_composition_order (test_linear.LinearTests.test_worked_map_and_composition_order) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.006s\n\nOK\n",
+  "fingerprints": {
+    "foundations/mathematics/core/linear.py": "fbfba010ec9f90cef26506a9a25f1928afe377a5a29003546b060d27acf042ed",
+    "foundations/mathematics/core/test_linear.py": "a17186f90dc867eba78511855b490016e82ce894cab32f836c293b4e18227996"
+  }
+}

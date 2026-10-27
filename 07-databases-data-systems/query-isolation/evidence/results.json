@@ -1,0 +1,115 @@
+{
+  "executed_utc": "2026-10-23T10:42:27.327034+00:00",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "snapshot": {
+    "journal_mode": "wal",
+    "initial_snapshot": [
+      [
+        1,
+        100
+      ],
+      [
+        2,
+        100
+      ]
+    ],
+    "during_uncommitted_transfer": [
+      [
+        1,
+        100
+      ],
+      [
+        2,
+        100
+      ]
+    ],
+    "same_snapshot_after_other_commit": [
+      [
+        1,
+        100
+      ],
+      [
+        2,
+        100
+      ]
+    ],
+    "stale_snapshot_upgrade": {
+      "type": "OperationalError",
+      "message": "database is locked",
+      "code": 517,
+      "name": "SQLITE_BUSY_SNAPSHOT"
+    },
+    "new_read_after_rollback": [
+      [
+        1,
+        90
+      ],
+      [
+        2,
+        110
+      ]
+    ],
+    "second_writer_attempt": {
+      "code": 5,
+      "name": "SQLITE_BUSY",
+      "message": "database is locked"
+    },
+    "separate_statement_stale_read_result": 80,
+    "atomic_relative_update_result": 70,
+    "scope": "local sequential interleaving of two real connections; no crash, threads or power loss"
+  },
+  "query_plan": {
+    "rows": 1000,
+    "predicate": "device=7",
+    "matching_rows": 10,
+    "equal_ordered_results": true,
+    "before": [
+      [
+        3,
+        0,
+        216,
+        "SCAN reading"
+      ]
+    ],
+    "after": [
+      [
+        4,
+        0,
+        62,
+        "SEARCH reading USING INDEX reading_device (device=?)"
+      ]
+    ],
+    "note": "Plan text is version-specific diagnostic output; no elapsed-time speedup asserted."
+  },
+  "join_counts": [
+    {
+      "n_each_side": 10,
+      "nested_comparisons": 100,
+      "hash_build_rows": 10,
+      "hash_probes": 10,
+      "hash_candidate_rows": 10,
+      "output_rows": 10,
+      "equal_bags": true
+    },
+    {
+      "n_each_side": 100,
+      "nested_comparisons": 10000,
+      "hash_build_rows": 100,
+      "hash_probes": 100,
+      "hash_candidate_rows": 100,
+      "output_rows": 100,
+      "equal_bags": true
+    },
+    {
+      "n_each_side": 1000,
+      "nested_comparisons": 1000000,
+      "hash_build_rows": 1000,
+      "hash_probes": 1000,
+      "hash_candidate_rows": 1000,
+      "output_rows": 1000,
+      "equal_bags": true
+    }
+  ]
+}

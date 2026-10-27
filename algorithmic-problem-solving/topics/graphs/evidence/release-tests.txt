@@ -1,0 +1,116 @@
+test_components_bipartition_and_cut_vertices_exhaustive (test_graph_algorithms.GraphTests.test_components_bipartition_and_cut_vertices_exhaustive) ... ok
+test_dag_count_weighted_paths_and_job_schedule (test_graph_algorithms.GraphTests.test_dag_count_weighted_paths_and_job_schedule) ... ok
+test_empty_self_loops_invalid_values_and_no_mutation (test_graph_algorithms.GraphTests.test_empty_self_loops_invalid_values_and_no_mutation) ... ok
+test_flow_equals_enumerated_cut_and_reported_cut_capacity (test_graph_algorithms.GraphTests.test_flow_equals_enumerated_cut_and_reported_cut_capacity) ... ok
+test_matching_exhaustive_assignment_oracle (test_graph_algorithms.GraphTests.test_matching_exhaustive_assignment_oracle) ... ok
+test_minimum_spanning_tree_exhaustive_subsets (test_graph_algorithms.GraphTests.test_minimum_spanning_tree_exhaustive_subsets) ... ok
+test_multi_source_is_minimum_over_sources_and_empty_sources (test_graph_algorithms.GraphTests.test_multi_source_is_minimum_over_sources_and_empty_sources) ... ok
+test_reachability_shortest_closure_all_four_vertex_digraphs (test_graph_algorithms.GraphTests.test_reachability_shortest_closure_all_four_vertex_digraphs) ... ok
+test_topology_cycle_witness_and_scc_exhaustive (test_graph_algorithms.GraphTests.test_topology_cycle_witness_and_scc_exhaustive) ... ok
+test_weighted_algorithms_independent_floyd_warshall (test_graph_algorithms.GraphTests.test_weighted_algorithms_independent_floyd_warshall) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.657s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+graph validation groups: 21/21 passed; one shared independent oracle suite plus twenty worked contracts

@@ -1,0 +1,232 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "kind": "synthetic deterministic mechanism experiment",
+  "derivative_cubic_at_one": [
+    {
+      "h": 0.1,
+      "forward": {
+        "estimate": 3.310000000000001,
+        "absolute_error": 0.31000000000000094
+      },
+      "central": {
+        "estimate": 3.0100000000000007,
+        "absolute_error": 0.010000000000000675
+      }
+    },
+    {
+      "h": 0.01,
+      "forward": {
+        "estimate": 3.0300999999999885,
+        "absolute_error": 0.03009999999998847
+      },
+      "central": {
+        "estimate": 3.000099999999997,
+        "absolute_error": 9.99999999971024e-05
+      }
+    },
+    {
+      "h": 0.001,
+      "forward": {
+        "estimate": 3.0030009999998364,
+        "absolute_error": 0.0030009999998363845
+      },
+      "central": {
+        "estimate": 3.000000999999916,
+        "absolute_error": 9.999999162069173e-07
+      }
+    },
+    {
+      "h": 0.0001,
+      "forward": {
+        "estimate": 3.0003000099990658,
+        "absolute_error": 0.00030000999906576453
+      },
+      "central": {
+        "estimate": 3.0000000099992237,
+        "absolute_error": 9.999223671286472e-09
+      }
+    },
+    {
+      "h": 1e-05,
+      "forward": {
+        "estimate": 3.0000300000913,
+        "absolute_error": 3.00000913000531e-05
+      },
+      "central": {
+        "estimate": 3.000000000094369,
+        "absolute_error": 9.43689570931383e-11
+      }
+    },
+    {
+      "h": 1e-06,
+      "forward": {
+        "estimate": 3.0000030000446576,
+        "absolute_error": 3.0000446575861872e-06
+      },
+      "central": {
+        "estimate": 3.000000000055511,
+        "absolute_error": 5.551115123125783e-11
+      }
+    },
+    {
+      "h": 1e-07,
+      "forward": {
+        "estimate": 3.0000002997602166,
+        "absolute_error": 2.9976021664879227e-07
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-08,
+      "forward": {
+        "estimate": 3.0000000222044605,
+        "absolute_error": 2.220446049250313e-08
+      },
+      "central": {
+        "estimate": 2.999999994448885,
+        "absolute_error": 5.551115123125783e-09
+      }
+    },
+    {
+      "h": 1e-09,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-10,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-11,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-12,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-13,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-14,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-15,
+      "forward": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      },
+      "central": {
+        "estimate": 3.0,
+        "absolute_error": 0.0
+      }
+    },
+    {
+      "h": 1e-16,
+      "forward": {
+        "rejected": "step is not distinguishable at this float magnitude"
+      },
+      "central": {
+        "rejected": "step is not distinguishable at this float magnitude"
+      }
+    },
+    {
+      "h": 1e-17,
+      "forward": {
+        "rejected": "step is not distinguishable at this float magnitude"
+      },
+      "central": {
+        "rejected": "step is not distinguishable at this float magnitude"
+      }
+    },
+    {
+      "h": 1e-18,
+      "forward": {
+        "rejected": "step is not distinguishable at this float magnitude"
+      },
+      "central": {
+        "rejected": "step is not distinguishable at this float magnitude"
+      }
+    }
+  ],
+  "base": {
+    "n": 4,
+    "mean": 1.0,
+    "sample_variance": 0.00026666666666666717,
+    "sem": 0.008164965809277268
+  },
+  "bias_added": {
+    "n": 4,
+    "mean": 1.1,
+    "sample_variance": 0.00026666666666666717,
+    "sem": 0.008164965809277268
+  },
+  "copied_records_not_independent": {
+    "n": 400,
+    "mean": 1.0,
+    "sample_variance": 0.00020050125313283244,
+    "sem": 0.0007079923254047893
+  },
+  "large_offset_variance": {
+    "naive": 0.0,
+    "two_pass": {
+      "n": 4,
+      "mean": 1000000002.5,
+      "sample_variance": 1.6666666666666667,
+      "sem": 0.6454972243679028
+    }
+  },
+  "speed": {
+    "estimate": 5.0,
+    "standard_uncertainty": 0.07071067811865475
+  }
+}

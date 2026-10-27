@@ -1,0 +1,172 @@
+{
+  "scope": "three original synthetic demonstrations; no inferred population/tree from two strings",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "fixture_sha256": "dde9207a542ff766b2b0005ea487730705a9d46dd74fe3359c57a083722fff7e",
+  "implementation_sha256": {
+    "projects-guided/computational-biology-stack/run_stack.py": "96a7c1aba26ed9f4bf76e69b3b88b0841cf045265f35d851ef5c5af9780a823c",
+    "18-computational-biology/code/alignment.py": "b09f6dba2f9a9d6079b26b20b1d571e80b441fd10ab831746b397cfec646a17a",
+    "18-computational-biology/population-phylogeny/population.py": "20cb8110591505d6e8f43bad63fca5e5a090e4ee4a578d6585569c44d783bb03",
+    "18-computational-biology/population-phylogeny/phylogeny.py": "06b23088ed3ac883cbc32075442de90511423310c1967cc24f41d546c5c90101",
+    "18-computational-biology/code/sequence_lab.py": "82c224ce518417039125d4205f06897fabdba3219e5ec4431f87a0a88f837d58"
+  },
+  "alignment": {
+    "score": 10,
+    "a": "AAAAAAAA",
+    "b": "AAAAAATT",
+    "cells": 64
+  },
+  "distance": {
+    "model": "JC69, unambiguous gapless aligned sites",
+    "substitutions_per_site": 0.3040988310811233
+  },
+  "population": {
+    "copies": 4,
+    "initial": 2,
+    "generations": 3,
+    "model": "neutral fixed-size copy sampling",
+    "distribution": [
+      0.24896240234375,
+      0.160400390625,
+      0.1812744140625,
+      0.160400390625,
+      0.24896240234375
+    ],
+    "summary": {
+      "mean_frequency": 0.5,
+      "variance_frequency": 0.14453125,
+      "expected_heterozygosity": 0.2109375,
+      "loss_probability": 0.24896240234375,
+      "fixation_probability": 0.24896240234375,
+      "total_probability": 1.0
+    }
+  },
+  "tree": {
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source": "separate original exact clock distance matrix",
+    "input": [
+      [
+        0,
+        2,
+        6,
+        6
+      ],
+      [
+        2,
+        0,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        0,
+        4
+      ],
+      [
+        6,
+        6,
+        4,
+        0
+      ]
+    ],
+    "merges": [
+      {
+        "left": [
+          "A"
+        ],
+        "right": [
+          "B"
+        ],
+        "distance": 2.0,
+        "height": 1.0
+      },
+      {
+        "left": [
+          "C"
+        ],
+        "right": [
+          "D"
+        ],
+        "distance": 4.0,
+        "height": 2.0
+      },
+      {
+        "left": [
+          "A",
+          "B"
+        ],
+        "right": [
+          "C",
+          "D"
+        ],
+        "distance": 6.0,
+        "height": 3.0
+      }
+    ],
+    "root": {
+      "members": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "height": 3.0,
+      "children": [
+        {
+          "members": [
+            "A",
+            "B"
+          ],
+          "height": 1.0,
+          "children": [
+            {
+              "members": [
+                "A"
+              ],
+              "height": 0,
+              "children": []
+            },
+            {
+              "members": [
+                "B"
+              ],
+              "height": 0,
+              "children": []
+            }
+          ]
+        },
+        {
+          "members": [
+            "C",
+            "D"
+          ],
+          "height": 2.0,
+          "children": [
+            {
+              "members": [
+                "C"
+              ],
+              "height": 0,
+              "children": []
+            },
+            {
+              "members": [
+                "D"
+              ],
+              "height": 0,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "command": [
+      "python3",
+      "tools/validate.py"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "duration_seconds": 0.253,
+    "log": "research/quality/2026-10-22/baseline/01-validate.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/tests",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "duration_seconds": 0.534,
+    "log": "research/quality/2026-10-22/baseline/02--m.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/render.py",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "duration_seconds": 0.03,
+    "log": "research/quality/2026-10-22/baseline/03-render.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/validate_expansion.py"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "duration_seconds": 0.049,
+    "log": "research/quality/2026-10-22/baseline/04-validate_expansion.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/run_reference_tests.py"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "duration_seconds": 1.309,
+    "log": "research/quality/2026-10-22/baseline/05-run_reference_tests.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/depth_audit.py"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 1,
+    "duration_seconds": 0.252,
+    "log": "research/quality/2026-10-22/baseline/06-depth_audit.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "16-machine-learning/code",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 5,
+    "duration_seconds": 0.048,
+    "log": "research/quality/2026-10-22/baseline/07--m.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "16-machine-learning/labs",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "duration_seconds": 0.048,
+    "log": "research/quality/2026-10-22/baseline/08--m.txt"
+  }
+]

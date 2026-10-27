@@ -1,0 +1,12 @@
+test_aggregate_counts_rows_and_nonnull_separately (test_lab.NullTests.test_aggregate_counts_rows_and_nonnull_separately) ... ok
+test_all_nine_truth_combinations (test_lab.NullTests.test_all_nine_truth_combinations) ... ok
+test_antijoin_does_not_confuse_unknown_with_nonmember (test_lab.NullTests.test_antijoin_does_not_confuse_unknown_with_nonmember) ... ok
+test_comparison_null_and_presence (test_lab.NullTests.test_comparison_null_and_presence) ... ok
+test_left_join_filter_location (test_lab.NullTests.test_left_join_filter_location) ... ok
+test_not_exists_matches_set_definition_with_nullable_blocked (test_lab.NullTests.test_not_exists_matches_set_definition_with_nullable_blocked) ... ok
+test_unique_distinct_and_bound_data (test_lab.NullTests.test_unique_distinct_and_bound_data) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.008s
+
+OK

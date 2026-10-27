@@ -1,0 +1,2 @@
+# Measurement and instrumentation
+You cannot reverse-engineer hardware by looking alone. Use multimeters, oscilloscopes, logic analyzers, protocol analyzers, thermal observation, and safe current-limited supplies according to system voltage/risk. Measurement has bandwidth, resolution, loading, sampling, grounding, and aliasing limits. Always predict the expected signal before probing and record uncertainty.

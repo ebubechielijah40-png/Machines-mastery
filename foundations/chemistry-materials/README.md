@@ -1,9 +1,13 @@
-# Chemistry Materials map
+# Chemistry and materials foundations
 
-Scope plan; learner NOT STARTED. Topics beyond the prepared bridges are SCAFFOLDED and need inspected primary evidence before teaching.
+Begin with [atomic energy, elasticity and measurement](elastic-evidence/README.md).
+This original developed unit connects atoms/bonding to a declared energy model,
+small-deformation bar mechanics, structural compliance, identifiability and
+uncertainty. It includes executable tests, actual synthetic experiments and
+separate exercises/hints/solutions. It is a bounded materials/measurement bridge;
+the broad chemistry/materials curriculum remains PARTIAL.
 
-atoms, electrons, bonding; conductors, insulators, semiconductors; metals, alloys, polymers, ceramics; strength, elasticity, plastic deformation, fatigue, corrosion, thermal properties; energy bands, doping, PN junction, transistor.
-
-Teach the smallest required slice at the consuming unit, not the entire list upfront. Each equation must name quantities, units, assumptions, derivation, limits and sensitivity to changing variables.
-
-Entry: [foundation policy](../README.md). Application routing: finite words before instruction fields; ratios/rates before pipelines; vectors/trigonometry before robot geometry; probability before uncertain inference; linear algebra/calculus/optimization before gradients; mechanics and differential equations before dynamic control. Material/device-specific numbers require a verified datasheet. Physics experiments should predict, measure, compare and preserve raw observations; absent apparatus means prepared, not performed.
+Then study [carrier and transistor mechanisms](../../hardware-electronics-mastery/03_SEMICONDUCTORS_TRANSISTORS.md)
+before [digital timing](../../hardware-electronics-mastery/04_DIGITAL_TIMING.md).
+The [remaining chemistry scope](DEEP_GUIDE.md) names unfinished dependencies
+rather than asking learners to infer mechanisms from a topic list.

@@ -1,0 +1,2 @@
+# Evolution and population genetics
+Evolutionary change combines mutation, selection, drift, recombination, migration, and demographic history. Hardy-Weinberg is a null model under assumptions. Wright-Fisher-style simulations make drift visible: even neutral alleles fluctuate and can fix or disappear in finite populations. Build simulations varying population size and selection coefficient; compare distributions across many runs rather than one trajectory.

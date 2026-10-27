@@ -1,0 +1,695 @@
+{
+  "kind": "abstract software CPU model, no HDL timing/hardware claim",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "program": "original 8-bit accumulator ISA, repeated addition3*4",
+  "final_accumulator": 12,
+  "cycles": 35,
+  "trace": [
+    {
+      "address": 0,
+      "word": 16,
+      "opcode": 1,
+      "operand": 0,
+      "before": {
+        "pc": 0,
+        "accumulator": 0,
+        "carry": false
+      },
+      "after": {
+        "pc": 1,
+        "accumulator": 0,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 1,
+      "word": 77,
+      "opcode": 4,
+      "operand": 13,
+      "before": {
+        "pc": 1,
+        "accumulator": 0,
+        "carry": false
+      },
+      "after": {
+        "pc": 2,
+        "accumulator": 0,
+        "carry": false,
+        "halted": false
+      },
+      "write": [
+        13,
+        0
+      ]
+    },
+    {
+      "address": 2,
+      "word": 61,
+      "opcode": 3,
+      "operand": 13,
+      "before": {
+        "pc": 2,
+        "accumulator": 0,
+        "carry": false
+      },
+      "after": {
+        "pc": 3,
+        "accumulator": 0,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 3,
+      "word": 46,
+      "opcode": 2,
+      "operand": 14,
+      "before": {
+        "pc": 3,
+        "accumulator": 0,
+        "carry": false
+      },
+      "after": {
+        "pc": 4,
+        "accumulator": 3,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 4,
+      "word": 77,
+      "opcode": 4,
+      "operand": 13,
+      "before": {
+        "pc": 4,
+        "accumulator": 3,
+        "carry": false
+      },
+      "after": {
+        "pc": 5,
+        "accumulator": 3,
+        "carry": false,
+        "halted": false
+      },
+      "write": [
+        13,
+        3
+      ]
+    },
+    {
+      "address": 5,
+      "word": 63,
+      "opcode": 3,
+      "operand": 15,
+      "before": {
+        "pc": 5,
+        "accumulator": 3,
+        "carry": false
+      },
+      "after": {
+        "pc": 6,
+        "accumulator": 4,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 6,
+      "word": 44,
+      "opcode": 2,
+      "operand": 12,
+      "before": {
+        "pc": 6,
+        "accumulator": 4,
+        "carry": false
+      },
+      "after": {
+        "pc": 7,
+        "accumulator": 3,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 7,
+      "word": 79,
+      "opcode": 4,
+      "operand": 15,
+      "before": {
+        "pc": 7,
+        "accumulator": 3,
+        "carry": true
+      },
+      "after": {
+        "pc": 8,
+        "accumulator": 3,
+        "carry": true,
+        "halted": false
+      },
+      "write": [
+        15,
+        3
+      ]
+    },
+    {
+      "address": 8,
+      "word": 106,
+      "opcode": 6,
+      "operand": 10,
+      "before": {
+        "pc": 8,
+        "accumulator": 3,
+        "carry": true
+      },
+      "after": {
+        "pc": 9,
+        "accumulator": 3,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 9,
+      "word": 82,
+      "opcode": 5,
+      "operand": 2,
+      "before": {
+        "pc": 9,
+        "accumulator": 3,
+        "carry": true
+      },
+      "after": {
+        "pc": 2,
+        "accumulator": 3,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 2,
+      "word": 61,
+      "opcode": 3,
+      "operand": 13,
+      "before": {
+        "pc": 2,
+        "accumulator": 3,
+        "carry": true
+      },
+      "after": {
+        "pc": 3,
+        "accumulator": 3,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 3,
+      "word": 46,
+      "opcode": 2,
+      "operand": 14,
+      "before": {
+        "pc": 3,
+        "accumulator": 3,
+        "carry": true
+      },
+      "after": {
+        "pc": 4,
+        "accumulator": 6,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 4,
+      "word": 77,
+      "opcode": 4,
+      "operand": 13,
+      "before": {
+        "pc": 4,
+        "accumulator": 6,
+        "carry": false
+      },
+      "after": {
+        "pc": 5,
+        "accumulator": 6,
+        "carry": false,
+        "halted": false
+      },
+      "write": [
+        13,
+        6
+      ]
+    },
+    {
+      "address": 5,
+      "word": 63,
+      "opcode": 3,
+      "operand": 15,
+      "before": {
+        "pc": 5,
+        "accumulator": 6,
+        "carry": false
+      },
+      "after": {
+        "pc": 6,
+        "accumulator": 3,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 6,
+      "word": 44,
+      "opcode": 2,
+      "operand": 12,
+      "before": {
+        "pc": 6,
+        "accumulator": 3,
+        "carry": false
+      },
+      "after": {
+        "pc": 7,
+        "accumulator": 2,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 7,
+      "word": 79,
+      "opcode": 4,
+      "operand": 15,
+      "before": {
+        "pc": 7,
+        "accumulator": 2,
+        "carry": true
+      },
+      "after": {
+        "pc": 8,
+        "accumulator": 2,
+        "carry": true,
+        "halted": false
+      },
+      "write": [
+        15,
+        2
+      ]
+    },
+    {
+      "address": 8,
+      "word": 106,
+      "opcode": 6,
+      "operand": 10,
+      "before": {
+        "pc": 8,
+        "accumulator": 2,
+        "carry": true
+      },
+      "after": {
+        "pc": 9,
+        "accumulator": 2,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 9,
+      "word": 82,
+      "opcode": 5,
+      "operand": 2,
+      "before": {
+        "pc": 9,
+        "accumulator": 2,
+        "carry": true
+      },
+      "after": {
+        "pc": 2,
+        "accumulator": 2,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 2,
+      "word": 61,
+      "opcode": 3,
+      "operand": 13,
+      "before": {
+        "pc": 2,
+        "accumulator": 2,
+        "carry": true
+      },
+      "after": {
+        "pc": 3,
+        "accumulator": 6,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 3,
+      "word": 46,
+      "opcode": 2,
+      "operand": 14,
+      "before": {
+        "pc": 3,
+        "accumulator": 6,
+        "carry": true
+      },
+      "after": {
+        "pc": 4,
+        "accumulator": 9,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 4,
+      "word": 77,
+      "opcode": 4,
+      "operand": 13,
+      "before": {
+        "pc": 4,
+        "accumulator": 9,
+        "carry": false
+      },
+      "after": {
+        "pc": 5,
+        "accumulator": 9,
+        "carry": false,
+        "halted": false
+      },
+      "write": [
+        13,
+        9
+      ]
+    },
+    {
+      "address": 5,
+      "word": 63,
+      "opcode": 3,
+      "operand": 15,
+      "before": {
+        "pc": 5,
+        "accumulator": 9,
+        "carry": false
+      },
+      "after": {
+        "pc": 6,
+        "accumulator": 2,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 6,
+      "word": 44,
+      "opcode": 2,
+      "operand": 12,
+      "before": {
+        "pc": 6,
+        "accumulator": 2,
+        "carry": false
+      },
+      "after": {
+        "pc": 7,
+        "accumulator": 1,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 7,
+      "word": 79,
+      "opcode": 4,
+      "operand": 15,
+      "before": {
+        "pc": 7,
+        "accumulator": 1,
+        "carry": true
+      },
+      "after": {
+        "pc": 8,
+        "accumulator": 1,
+        "carry": true,
+        "halted": false
+      },
+      "write": [
+        15,
+        1
+      ]
+    },
+    {
+      "address": 8,
+      "word": 106,
+      "opcode": 6,
+      "operand": 10,
+      "before": {
+        "pc": 8,
+        "accumulator": 1,
+        "carry": true
+      },
+      "after": {
+        "pc": 9,
+        "accumulator": 1,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 9,
+      "word": 82,
+      "opcode": 5,
+      "operand": 2,
+      "before": {
+        "pc": 9,
+        "accumulator": 1,
+        "carry": true
+      },
+      "after": {
+        "pc": 2,
+        "accumulator": 1,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 2,
+      "word": 61,
+      "opcode": 3,
+      "operand": 13,
+      "before": {
+        "pc": 2,
+        "accumulator": 1,
+        "carry": true
+      },
+      "after": {
+        "pc": 3,
+        "accumulator": 9,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 3,
+      "word": 46,
+      "opcode": 2,
+      "operand": 14,
+      "before": {
+        "pc": 3,
+        "accumulator": 9,
+        "carry": true
+      },
+      "after": {
+        "pc": 4,
+        "accumulator": 12,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 4,
+      "word": 77,
+      "opcode": 4,
+      "operand": 13,
+      "before": {
+        "pc": 4,
+        "accumulator": 12,
+        "carry": false
+      },
+      "after": {
+        "pc": 5,
+        "accumulator": 12,
+        "carry": false,
+        "halted": false
+      },
+      "write": [
+        13,
+        12
+      ]
+    },
+    {
+      "address": 5,
+      "word": 63,
+      "opcode": 3,
+      "operand": 15,
+      "before": {
+        "pc": 5,
+        "accumulator": 12,
+        "carry": false
+      },
+      "after": {
+        "pc": 6,
+        "accumulator": 1,
+        "carry": false,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 6,
+      "word": 44,
+      "opcode": 2,
+      "operand": 12,
+      "before": {
+        "pc": 6,
+        "accumulator": 1,
+        "carry": false
+      },
+      "after": {
+        "pc": 7,
+        "accumulator": 0,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 7,
+      "word": 79,
+      "opcode": 4,
+      "operand": 15,
+      "before": {
+        "pc": 7,
+        "accumulator": 0,
+        "carry": true
+      },
+      "after": {
+        "pc": 8,
+        "accumulator": 0,
+        "carry": true,
+        "halted": false
+      },
+      "write": [
+        15,
+        0
+      ]
+    },
+    {
+      "address": 8,
+      "word": 106,
+      "opcode": 6,
+      "operand": 10,
+      "before": {
+        "pc": 8,
+        "accumulator": 0,
+        "carry": true
+      },
+      "after": {
+        "pc": 10,
+        "accumulator": 0,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 10,
+      "word": 61,
+      "opcode": 3,
+      "operand": 13,
+      "before": {
+        "pc": 10,
+        "accumulator": 0,
+        "carry": true
+      },
+      "after": {
+        "pc": 11,
+        "accumulator": 12,
+        "carry": true,
+        "halted": false
+      },
+      "write": null
+    },
+    {
+      "address": 11,
+      "word": 240,
+      "opcode": 15,
+      "operand": 0,
+      "before": {
+        "pc": 11,
+        "accumulator": 12,
+        "carry": true
+      },
+      "after": {
+        "pc": 12,
+        "accumulator": 12,
+        "carry": true,
+        "halted": true
+      },
+      "write": null
+    }
+  ],
+  "fault_injection": {
+    "changed_address": 9,
+    "old_word": 82,
+    "new_word": 89,
+    "outcome": "budget exhaustion: branch at9 repeatedly jumps to9",
+    "cycles_observed": 100,
+    "pc": 9,
+    "memory": [
+      16,
+      77,
+      61,
+      46,
+      77,
+      63,
+      44,
+      79,
+      106,
+      89,
+      61,
+      240,
+      255,
+      3,
+      3,
+      3
+    ]
+  }
+}

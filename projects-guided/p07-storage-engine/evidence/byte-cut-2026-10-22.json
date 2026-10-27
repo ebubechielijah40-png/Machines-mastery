@@ -1,0 +1,550 @@
+{
+  "corruption_observation": "log corruption at byte 62: checksum mismatch",
+  "cut_outcomes": [
+    {
+      "cut_bytes": 0,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": null,
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 1,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 2,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 3,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 4,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 5,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 6,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 7,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 8,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 9,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 10,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 11,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 12,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 13,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 14,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 15,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-header",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 16,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 17,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 18,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 19,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 20,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 21,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 22,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 23,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 24,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 25,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 26,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 27,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 28,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 29,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 30,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 31,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 32,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 33,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 34,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 35,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 36,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 37,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 38,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 39,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 40,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 41,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 42,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 43,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 44,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 45,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 46,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 47,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 48,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 49,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 50,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 51,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 52,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 53,
+      "data": {
+        "a": "10",
+        "b": "20"
+      },
+      "tail_reason": "incomplete-body-or-checksum",
+      "transactions": 1
+    },
+    {
+      "cut_bytes": 54,
+      "data": {
+        "a": "9",
+        "b": "21"
+      },
+      "tail_reason": null,
+      "transactions": 2
+    }
+  ],
+  "failed_sync_observation": {
+    "acknowledged": false,
+    "live_snapshot": {},
+    "recovered_snapshot": {
+      "uncertain": "present"
+    }
+  },
+  "fault_model": "explicit proper byte prefixes; no physical power-loss emulation",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "recorded_at_utc": "2026-10-22T11:17:41.075364+00:00",
+  "replay_scaling": [
+    {
+      "file_bytes": 3889,
+      "replay_ns": [
+        353849,
+        286749,
+        302462,
+        270104,
+        269322
+      ],
+      "retained_keys": 100,
+      "transactions": 100
+    },
+    {
+      "file_bytes": 39800,
+      "replay_ns": [
+        2881657,
+        2817460,
+        2697521,
+        2646124,
+        2660676
+      ],
+      "retained_keys": 100,
+      "transactions": 1000
+    },
+    {
+      "file_bytes": 407901,
+      "replay_ns": [
+        27776072,
+        26809157,
+        27548963,
+        26961976,
+        28418632
+      ],
+      "retained_keys": 100,
+      "transactions": 10000
+    }
+  ],
+  "second_frame_bytes": 54
+}

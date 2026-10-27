@@ -1,0 +1,3 @@
+# Threat modeling
+
+Security work starts by drawing a boundary. List assets, principals, trust boundaries, entry points, dependencies, and attacker capabilities. A threat is not “hackers”; it is a feasible path from capability to violated property. Use STRIDE only as a prompt, not a substitute for understanding. For a file-sharing service, distinguish unauthorized read, unauthorized modification, link guessing, privilege escalation, metadata leakage, deletion, and availability failure. Build a data-flow diagram; mark where plaintext exists; identify who can mint credentials. Exercise: model the local RAG/agent project and derive five tests from the model.

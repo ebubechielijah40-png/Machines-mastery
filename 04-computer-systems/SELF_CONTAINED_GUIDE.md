@@ -1,103 +1,29 @@
-# Computer systems — self-contained phase guide
+# Computer systems: one connected execution path
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+This phase now starts with [from two C files to a running process](compile-link/README.md).
+It supplies an original source→object→symbol/relocation→executable investigation,
+worked pointer/length/lifetime cases, recorded machine output, exercises and tests.
+The scope is deliberately bounded: a full loader, complete ABI, cache hierarchy,
+threading and kernel are not delivered by that one build.
 
-## 1. Compilation/Linking/Loading
+Follow the existing [C byte-parser lesson](../programming-languages-mastery/01-c/units/01-byte-parser/LESSON.md)
+first if byte bounds or C pointer expressions are unfamiliar. Then study the
+compile/link unit, build the [bounded arena allocator](../projects-guided/p04-memory-allocator/README.md),
+and continue into [OS execution, scheduling and address translation](../05-operating-systems/SELF_CONTAINED_GUIDE.md).
+The [shell project](../projects-guided/p02-shell/README.md) combines actual child
+processes and descriptor lifetimes after those mechanisms are understood.
 
-**Problem.** Identify the real system problem that makes compilation/linking/loading necessary.
+A failed link, an invalid pointer and an unresponsive child are different classes
+of failure. This route teaches how to distinguish them through observable state
+and exact contracts rather than treating every error as “the code does not work.”
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+Run the compile/link tests from the repository root:
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+```sh
+python3 -m unittest discover -s 04-computer-systems/compile-link -v
+python3 04-computer-systems/compile-link/run.py
+```
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 2. Stack/Heap/Object Layout
-
-**Problem.** Identify the real system problem that makes stack/heap/object layout necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Cache And Locality
-
-**Problem.** Identify the real system problem that makes cache and locality necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Syscalls/Processes/Threads
-
-**Problem.** Identify the real system problem that makes syscalls/processes/threads necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Concurrency
-
-**Problem.** Identify the real system problem that makes concurrency necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Binary Inspection
-
-**Problem.** Identify the real system problem that makes binary inspection necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+Current domain classification remains PARTIAL. These are developed bounded units;
+cache coherence, dynamic linking/loader implementation, thread memory ordering,
+profiling and broader machine execution remain substantive future instruction.

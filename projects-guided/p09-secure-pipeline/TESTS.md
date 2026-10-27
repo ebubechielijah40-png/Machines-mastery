@@ -1,3 +1,5 @@
-# Test plan
+# Executed authentication and history checks
 
-Include unit tests, integration tests, malformed-input tests, state/invariant tests, failure/recovery tests, and performance experiments where meaningful. Record actual outputs; do not fabricate benchmark results.
+Run `python3 -m unittest discover -s security-cryptography-mastery/provenance -v`. The [actual log](../../security-cryptography-mastery/provenance/evidence/tests.txt) records nine methods. It covers the RFC4231 HMAC-SHA256 vector plus independent stdlib comparisons; exact ingest/reopen/read permission; mutation/substitution/replay/stream permission/order; schema/duplicate/type/depth/byte bounds; chain tamper/reorder/rollback; every partial final-line cut; injected fsync failure and reopen; authenticated false claim; and entry-budget/snapshot-copy behavior.
+
+The original `python3 security-cryptography-mastery/code/test_crypto_lab.py` also still passes, with a [separate actual log](../../security-cryptography-mastery/provenance/evidence/legacy-crypto-tests.txt). Those existing SHA/HMAC/PBKDF2 wrappers remain library-based helpers. No test claims from-scratch ciphers, actual power-loss durability, secrecy of public demo keys, cryptographic proof or safe concurrent writers.

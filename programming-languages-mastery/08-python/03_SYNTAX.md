@@ -1,57 +1,30 @@
-# Python: Syntax As A Grammar For Expressing The Execution Model, Not Trivia
+# Python syntax with a complete entry build
 
-**Prepared reference; learner NOT STARTED.** This page is self-contained for normal study. Exact version-specific edge cases should still be checked against the installed toolchain/specification when they matter.
+Start at [the syntax-to-tests bridge](../../02-programming/python-entry/README.md).
+It introduces values/types, names, assignment/comparison, indentation, branches,
+for/while loops, functions/returns, lists/mutation, exceptions and module/test use
+before they become prerequisites for this repository's experiments.
 
-## Why this matters
-
-The focus is **syntax as a grammar for expressing the execution model, not trivia**. A language feature is worth understanding when you can connect its source-level form to state, representation, guarantees, costs, and failure behavior.
-
-## Mechanism model
-
-Interpret this topic through the language model: dynamic language whose common CPython implementation compiles source to bytecode executed by a VM/interpreter with managed objects.
-
-Use this execution chain whenever applicable:
-
-`input/source → parse/compile/runtime representation → state/memory/signal transition → OS/hardware/simulator effect → observable output`.
-
-For hardware-description languages, remember that synthesizable code describes hardware structure/behavior rather than a sequential software process.
-
-## Minimal example
+Read the following state transition as source, not mathematical equality:
 
 ```python
-def add(a:int,b:int)->int:
-    return a+b
-x=5
-print(add(x,2))
+used = 0
+for size in [12, 7, 5]:
+    if used + size > 20:
+        break
+    used = used + size
 ```
 
-Before running it, predict the output or state transition. Then ask what lower layer must exist for the result to occur. Change one value/type/control condition and predict again.
+Before each iteration used is the sum of the accepted prefix. The guard prevents
+exceeding20 logical payload bytes and break stops before the first oversized
+packet. Expected final used is19. A colon/indentation determines blocks; changing
+indentation can change which updates occur. Assignment evaluates the right side
+before rebinding the name. [The validated implementation and six independent
+checks](../../02-programming/python-entry/budget.py) distinguish valid emptiness,
+invalid byte counts and prefix admission from maximum-sum packing.
 
-## Failure/counterexample
-
-Create one invalid or boundary case relevant to this topic. Decide whether it should be rejected at parse/compile/elaboration time, fail at runtime/simulation, produce a defined alternate result, or enter undefined/implementation-specific behavior. Do not label a behavior without checking the language/tool contract.
-
-## Tests and experiments
-
-1. Write 3 normal tests and 3 edge cases.
-2. Inspect generated assembly/bytecode/query plan/waveform where applicable.
-3. Measure one cost: runtime, allocations, binary size, query latency, cycles, or simulated transitions.
-4. Break one assumption and record the actual diagnostic/output.
-5. Rebuild the example from memory in a new file.
-
-## Application
-
-Use this topic inside the project ladder in `25_PROJECTS.md`. Explain how the mechanism changes when the program/design grows from a toy example to a long-running production or hardware system.
-
-## Limits
-
-This page teaches the stable conceptual model; it is not an exhaustive versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
-
-## Assignment
-
-- 5 short exercises that isolate the mechanism;
-- 3 integration exercises;
-- 1 debugging exercise;
-- 1 measurement experiment;
-- 1 transfer task with unfamiliar surface syntax;
-- explain the topic aloud without using the language name, only state/transformations/constraints, then map it back to Python.
+The bridge includes a hand trace, separate exercises/hints/solutions and executed
+semantic evidence. Rebuild it without notes before progressing to object aliases,
+mathematical loops or the parser project. Python syntax for decorators, classes,
+async and patterns is outside this developed entry slice, not silently completed
+by one annotated add function.

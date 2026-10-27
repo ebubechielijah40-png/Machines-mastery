@@ -1,3 +1,8 @@
-# Limits
+# Bounded scope
 
-List what the simplified model does not represent, which assumptions are unrealistic, and what additional evidence/equipment/scale would be needed to make stronger claims.
+The current project reuses the developed arrays and graph releases. It does not
+complete hashing, balanced trees, heaps as independently implemented containers,
+all dynamic programming, computational geometry or randomized algorithm theory.
+Python runtime/recursion/large-integer limits apply, and the modules assume
+locally controlled finite inputs. No external-data service, concurrent mutation,
+hard resource isolation or universal empirical complexity guarantee is supplied.

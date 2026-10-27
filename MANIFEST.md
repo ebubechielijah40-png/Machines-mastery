@@ -1,12 +1,13 @@
-# Prepared edition manifest
+# Repository content map
 
 Start: `START_HERE.md`.
 
-Major self-contained additions include:
+This is an inventory of developed units and partial routes, not a declaration
+that every listed subject is complete. Major areas include:
 
 - `MASTER_CURRICULUM_SELF_CONTAINED.md`
 - `coursebooks/`
-- `programming-languages-mastery/` deep documentation for 14 programming/assembly/HDL languages
+- `programming-languages-mastery/` fourteen language/assembly/HDL routes with developed and partial units
 - `hardware-electronics-mastery/DEEP_GUIDE.md`
 - `general-machine-systems/units/*/DEEP_TEARDOWN.md`
 - `reverse-engineering-systems/DEEP_HANDBOOK.md`

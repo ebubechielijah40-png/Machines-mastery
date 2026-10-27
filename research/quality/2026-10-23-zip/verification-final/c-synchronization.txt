@@ -1,0 +1,501 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "models": [
+    {
+      "kind": "exhaustive specified finite model",
+      "mode": "split",
+      "completed_paths": 20,
+      "final_value_counts": {
+        "2": 2,
+        "1": 18
+      },
+      "lost_update_example": {
+        "final": 1,
+        "trace": [
+          {
+            "thread": 0,
+            "operation": "load",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 0,
+            "owner_after": null
+          },
+          {
+            "thread": 0,
+            "operation": "add",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 1,
+            "owner_after": null
+          },
+          {
+            "thread": 1,
+            "operation": "load",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 0,
+            "owner_after": null
+          },
+          {
+            "thread": 0,
+            "operation": "store",
+            "shared_before": 0,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": null
+          },
+          {
+            "thread": 1,
+            "operation": "add",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": null
+          },
+          {
+            "thread": 1,
+            "operation": "store",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": null
+          }
+        ]
+      }
+    },
+    {
+      "kind": "exhaustive specified finite model",
+      "mode": "whole_lock",
+      "completed_paths": 2,
+      "final_value_counts": {
+        "2": 2
+      },
+      "lost_update_example": null
+    },
+    {
+      "kind": "exhaustive specified finite model",
+      "mode": "store_lock",
+      "completed_paths": 42,
+      "final_value_counts": {
+        "2": 6,
+        "1": 36
+      },
+      "lost_update_example": {
+        "final": 1,
+        "trace": [
+          {
+            "thread": 0,
+            "operation": "load",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 0,
+            "owner_after": null
+          },
+          {
+            "thread": 0,
+            "operation": "add",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 1,
+            "owner_after": null
+          },
+          {
+            "thread": 0,
+            "operation": "lock",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 1,
+            "owner_after": 0
+          },
+          {
+            "thread": 1,
+            "operation": "load",
+            "shared_before": 0,
+            "shared_after": 0,
+            "local_after": 0,
+            "owner_after": 0
+          },
+          {
+            "thread": 0,
+            "operation": "store",
+            "shared_before": 0,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": 0
+          },
+          {
+            "thread": 0,
+            "operation": "unlock",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": null
+          },
+          {
+            "thread": 1,
+            "operation": "add",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": null
+          },
+          {
+            "thread": 1,
+            "operation": "lock",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": 1
+          },
+          {
+            "thread": 1,
+            "operation": "store",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": 1
+          },
+          {
+            "thread": 1,
+            "operation": "unlock",
+            "shared_before": 1,
+            "shared_after": 1,
+            "local_after": 1,
+            "owner_after": null
+          }
+        ]
+      }
+    },
+    {
+      "kind": "exhaustive specified finite model",
+      "mode": "fetch_add",
+      "completed_paths": 2,
+      "final_value_counts": {
+        "2": 2
+      },
+      "lost_update_example": null
+    }
+  ],
+  "condition_models": [
+    {
+      "kind": "finite predicate/wakeup model",
+      "protocol": "while",
+      "spurious_budget": 0,
+      "completed_paths": 2,
+      "outcomes": {
+        "complete": 2
+      },
+      "failure_example": null
+    },
+    {
+      "kind": "finite predicate/wakeup model",
+      "protocol": "while",
+      "spurious_budget": 1,
+      "completed_paths": 6,
+      "outcomes": {
+        "complete": 6
+      },
+      "failure_example": null
+    },
+    {
+      "kind": "finite predicate/wakeup model",
+      "protocol": "if",
+      "spurious_budget": 1,
+      "completed_paths": 6,
+      "outcomes": {
+        "complete": 5,
+        "safety_failure": 1
+      },
+      "failure_example": {
+        "outcome": "safety_failure",
+        "consumed": 0,
+        "full": false,
+        "trace": [
+          {
+            "actor": "consumer",
+            "operation": "acquire",
+            "owner_after": "consumer",
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "check_predicate",
+            "owner_after": "consumer",
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "atomic_release_and_register",
+            "owner_after": null,
+            "full_after": false,
+            "waiting_after": true
+          },
+          {
+            "actor": "environment",
+            "operation": "spurious_wake",
+            "owner_after": null,
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "acquire",
+            "owner_after": "consumer",
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "consume_empty",
+            "owner_after": "consumer",
+            "full_after": false,
+            "waiting_after": false
+          }
+        ]
+      }
+    },
+    {
+      "kind": "finite predicate/wakeup model",
+      "protocol": "split_wait",
+      "spurious_budget": 0,
+      "completed_paths": 6,
+      "outcomes": {
+        "complete": 4,
+        "blocked": 2
+      },
+      "failure_example": {
+        "outcome": "blocked",
+        "consumed": 0,
+        "full": true,
+        "trace": [
+          {
+            "actor": "consumer",
+            "operation": "acquire",
+            "owner_after": "consumer",
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "check_predicate",
+            "owner_after": "consumer",
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "release_without_register",
+            "owner_after": null,
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "producer",
+            "operation": "acquire",
+            "owner_after": "producer",
+            "full_after": false,
+            "waiting_after": false
+          },
+          {
+            "actor": "producer",
+            "operation": "put_item",
+            "owner_after": "producer",
+            "full_after": true,
+            "waiting_after": false
+          },
+          {
+            "actor": "producer",
+            "operation": "notify_no_waiter",
+            "owner_after": "producer",
+            "full_after": true,
+            "waiting_after": false
+          },
+          {
+            "actor": "consumer",
+            "operation": "register_too_late",
+            "owner_after": "producer",
+            "full_after": true,
+            "waiting_after": true
+          },
+          {
+            "actor": "producer",
+            "operation": "release",
+            "owner_after": null,
+            "full_after": true,
+            "waiting_after": true
+          }
+        ]
+      }
+    }
+  ],
+  "actual_c_commands": [
+    {
+      "command": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pthread",
+        "-O0",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/05-operating-systems/synchronization/code/threads.c",
+        "-o",
+        "/tmp/mm-synchronization-r66e52pu/threads-0"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-synchronization-r66e52pu/threads-0"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\":\"actual C11 thread executions\",\"cases\":[{\"mode\":\"split_atomic_load_store\",\"executions\":20,\"last_observed_value\":1,\"last_loaded_values\":[0,0]},{\"mode\":\"atomic_fetch_add\",\"executions\":20,\"last_observed_value\":2,\"last_loaded_values\":[1,0]},{\"mode\":\"whole_mutex\",\"executions\":20,\"last_observed_value\":2,\"last_loaded_values\":[0,1]}]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pthread",
+        "-O0",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/05-operating-systems/synchronization/code/condition.c",
+        "-o",
+        "/tmp/mm-synchronization-r66e52pu/condition-0"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-synchronization-r66e52pu/condition-0"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\":\"actual C11 one-slot buffer\",\"items\":100,\"sum\":5050,\"producer_waits\":97,\"consumer_waits\":96,\"empty_after_join\":true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pthread",
+        "-O2",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/05-operating-systems/synchronization/code/threads.c",
+        "-o",
+        "/tmp/mm-synchronization-r66e52pu/threads-1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-synchronization-r66e52pu/threads-1"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\":\"actual C11 thread executions\",\"cases\":[{\"mode\":\"split_atomic_load_store\",\"executions\":20,\"last_observed_value\":1,\"last_loaded_values\":[0,0]},{\"mode\":\"atomic_fetch_add\",\"executions\":20,\"last_observed_value\":2,\"last_loaded_values\":[0,1]},{\"mode\":\"whole_mutex\",\"executions\":20,\"last_observed_value\":2,\"last_loaded_values\":[0,1]}]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pthread",
+        "-O2",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/05-operating-systems/synchronization/code/condition.c",
+        "-o",
+        "/tmp/mm-synchronization-r66e52pu/condition-1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-synchronization-r66e52pu/condition-1"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\":\"actual C11 one-slot buffer\",\"items\":100,\"sum\":5050,\"producer_waits\":99,\"consumer_waits\":98,\"empty_after_join\":true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pthread",
+        "-O1",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/05-operating-systems/synchronization/code/threads.c",
+        "-o",
+        "/tmp/mm-synchronization-r66e52pu/threads-2"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-synchronization-r66e52pu/threads-2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\":\"actual C11 thread executions\",\"cases\":[{\"mode\":\"split_atomic_load_store\",\"executions\":20,\"last_observed_value\":1,\"last_loaded_values\":[0,0]},{\"mode\":\"atomic_fetch_add\",\"executions\":20,\"last_observed_value\":2,\"last_loaded_values\":[0,1]},{\"mode\":\"whole_mutex\",\"executions\":20,\"last_observed_value\":2,\"last_loaded_values\":[0,1]}]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pthread",
+        "-O1",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/05-operating-systems/synchronization/code/condition.c",
+        "-o",
+        "/tmp/mm-synchronization-r66e52pu/condition-2"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-synchronization-r66e52pu/condition-2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\":\"actual C11 one-slot buffer\",\"items\":100,\"sum\":5050,\"producer_waits\":99,\"consumer_waits\":99,\"empty_after_join\":true}\n",
+      "stderr": ""
+    }
+  ]
+}

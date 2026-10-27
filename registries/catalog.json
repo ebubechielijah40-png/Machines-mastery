@@ -13,12 +13,12 @@
       "prerequisites": "U00 intake protocol; basic reading/counting diagnostic, not assumed learner mastery.",
       "why_selected": "Curriculum design choice: Connect representations to machine construction.",
       "original_source": "https://codehiddenlanguage.com/Chapter00/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
-      "verification_scope": "Local title/author/copyright and paperback preface inspected; 25 chapter boundaries mapped; Chapter 1 PDF 6\u201310 readable. Numbered edition unverified.",
+      "verification_scope": "Historical 2026-09-27 intake reported title/author/copyright and Chapter 1 PDF 6–10 inspection. Source bytes are absent in this portable edition; no fresh chapter or edition verification performed in this session.",
       "checked_on": "2026-09-27",
-      "local_availability": "INSPECTED \u2014 local ignored PDF; first unit prepared, learner NOT STARTED.",
-      "notes": "Local source has 25 chapters; do not use second-edition website pagination. See books/code-petzold/generated/SOURCE_INDEX.md. Original redistribution rights remain unverified."
+      "local_availability": "SOURCE NOT PRESENT — portable repository excludes the historical local PDF.",
+      "notes": "Historical 25-chapter map and first derived unit preserved. Numbered edition and redistribution rights remain unverified. Source identity and prior intake do not imply current local availability."
     },
     {
       "id": "R-ELEMENTS",
@@ -32,7 +32,7 @@
       "prerequisites": "U01 representation; U02 logic before hardware reproduction; programming before later software portions.",
       "why_selected": "Curriculum design choice: Support computer construction from primitives.",
       "original_source": "https://www.nand2tetris.org/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -62,7 +62,7 @@
       "id": "R-C",
       "title": "C Programming: A Modern Approach",
       "type": "book",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P02"
       ],
@@ -70,7 +70,7 @@
       "prerequisites": "U01 representation; basic programming practice may run concurrently with U04.",
       "why_selected": "Curriculum design choice: Develop C programming and memory reasoning.",
       "original_source": "https://knking.com/books/c2/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "UNVERIFIED",
       "verification_scope": "Primary URL could not be read; no bibliographic claims verified.",
       "checked_on": "2026-09-26",
@@ -108,7 +108,7 @@
       "prerequisites": "U04 programming; tutorial-specific dependencies and original-source review.",
       "why_selected": "Curriculum design choice: Discover reproduction exercises; inspect each original tutorial separately.",
       "original_source": "https://github.com/codecrafters-io/build-your-own-x",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Repository identity and tutorial-index purpose verified; linked tutorials not inspected.",
       "checked_on": "2026-09-26",
@@ -127,7 +127,7 @@
       "prerequisites": "U04 programming and U06 proofs/discrete structures.",
       "why_selected": "Curriculum design choice: Support algorithm design and analysis.",
       "original_source": "https://www.algorist.com/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -146,7 +146,7 @@
       "prerequisites": "U04 programming and U06 proofs/discrete structures.",
       "why_selected": "Curriculum design choice: Compare implementations after independent attempts.",
       "original_source": "https://github.com/TheAlgorithms/Python",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Repository identity verified; no individual algorithm behavior verified.",
       "checked_on": "2026-09-26",
@@ -155,9 +155,9 @@
     },
     {
       "id": "R-CSAPP",
-      "title": "Computer Systems: A Programmer\u2019s Perspective, third edition",
+      "title": "Computer Systems: A Programmer’s Perspective, third edition",
       "type": "book",
-      "author": "Randal E. Bryant; David R. O\u2019Hallaron",
+      "author": "Randal E. Bryant; David R. O’Hallaron",
       "phases": [
         "P04"
       ],
@@ -165,7 +165,7 @@
       "prerequisites": "U03 machine model, U04 programming and U05 process/file-descriptor bridge.",
       "why_selected": "Curriculum design choice: Trace programs across machine and operating-system boundaries.",
       "original_source": "https://csapp.cs.cmu.edu/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -185,7 +185,7 @@
       "prerequisites": "U01 representation and the relevant U04 programming subset.",
       "why_selected": "Curriculum design choice: Bridge introductory programming and systems mechanisms.",
       "original_source": "https://diveintosystems.org/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -204,7 +204,7 @@
       "prerequisites": "U08 systems; C and assembly reading before kernel study.",
       "why_selected": "Curriculum design choice: Study virtualization, concurrency and persistence.",
       "original_source": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -224,7 +224,7 @@
       "prerequisites": "U03 machine model, U04 programming and U05 process/file-descriptor bridge.",
       "why_selected": "Curriculum design choice: Study a teaching kernel after C and architecture foundations.",
       "original_source": "https://github.com/mit-pdos/xv6-riscv",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "README and repository listing inspected; kernel behavior and pinned revision not verified.",
       "checked_on": "2026-09-26",
@@ -243,7 +243,7 @@
       "prerequisites": "U08 systems; C and assembly reading before kernel study.",
       "why_selected": "Curriculum design choice: Run controlled operating-system exercises.",
       "original_source": "https://github.com/remzi-arpacidusseau/ostep-homework",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "README describes homework/simulators; simulator implementations not inspected.",
       "checked_on": "2026-09-26",
@@ -254,7 +254,7 @@
       "id": "R-NET",
       "title": "Computer Networking: A Top-Down Approach",
       "type": "book",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P06"
       ],
@@ -262,7 +262,7 @@
       "prerequisites": "U05 process/descriptor model and U08 systems; C for socket implementation.",
       "why_selected": "Curriculum design choice: Organize network protocol study.",
       "original_source": "https://gaia.cs.umass.edu/kurose_ross/index.php",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "PARTIALLY VERIFIED",
       "verification_scope": "Companion page identity only.",
       "checked_on": "2026-09-26",
@@ -271,7 +271,7 @@
     },
     {
       "id": "R-BEEJ",
-      "title": "Beej\u2019s Guide to Network Programming",
+      "title": "Beej’s Guide to Network Programming",
       "type": "reference",
       "author": "Beej (as named on official page)",
       "phases": [
@@ -281,7 +281,7 @@
       "prerequisites": "U05 process/descriptor model and U08 systems; C for socket implementation.",
       "why_selected": "Curriculum design choice: Support C socket programming.",
       "original_source": "https://beej.us/guide/bgnet/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -300,7 +300,7 @@
       "prerequisites": "U05 process/descriptor model and U08 systems; C for socket implementation.",
       "why_selected": "Curriculum design choice: Trace networking guide source and examples.",
       "original_source": "https://github.com/beejjorgensen/bgnet",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -319,7 +319,7 @@
       "prerequisites": "U07 structures/algorithms and U08 systems; U17 before distributed sections.",
       "why_selected": "Curriculum design choice: Investigate storage engine design.",
       "original_source": "https://www.oreilly.com/library/view/database-internals/9781492040330/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -339,7 +339,7 @@
       "prerequisites": "U07 structures/algorithms and U08 systems; U17 before distributed sections.",
       "why_selected": "Curriculum design choice: Compare data-system tradeoffs.",
       "original_source": "https://dataintensive.net/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -359,7 +359,7 @@
       "prerequisites": "U11 storage and Rust reading ability; U17 for distributed mechanisms; revision not inspected.",
       "why_selected": "Curriculum design choice: Inspect an educational database after storage foundations.",
       "original_source": "https://github.com/erikgrinaker/toydb",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -378,7 +378,7 @@
       "prerequisites": "U07 structures/algorithms and U08 systems; U17 before distributed sections.",
       "why_selected": "Curriculum design choice: Use original database documentation and later inspect implementation.",
       "original_source": "https://sqlite.org/index.html",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -398,7 +398,7 @@
       "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
       "why_selected": "Curriculum design choice: Connect probability and statistics with data investigation.",
       "original_source": "https://greenteapress.com/wp/think-stats-3e/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -418,7 +418,7 @@
       "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
       "why_selected": "Curriculum design choice: Reproduce statistical notebook analyses.",
       "original_source": "https://github.com/AllenDowney/ThinkStats/tree/v3",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -438,7 +438,7 @@
       "prerequisites": "U04 programming for executable analysis; U06 basic reasoning/counting. Source criticism starts in U00.",
       "why_selected": "Curriculum design choice: Frame questions and evaluate evidence-backed arguments.",
       "original_source": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -477,7 +477,7 @@
       "prerequisites": "U12 evidence/measurement; probability before inference; algebra and selected calculus/linear algebra as needed.",
       "why_selected": "Curriculum design choice: Build practical data transformation workflows.",
       "original_source": "https://wesmckinney.com/book/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -496,7 +496,7 @@
       "prerequisites": "U12 evidence/measurement; probability before inference; algebra and selected calculus/linear algebra as needed.",
       "why_selected": "Curriculum design choice: Reproduce book notebooks with pinned data and dependencies.",
       "original_source": "https://github.com/wesm/pydata-book",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -516,7 +516,7 @@
       "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
       "why_selected": "Curriculum design choice: Reason about security goals and system boundaries.",
       "original_source": "https://www.cl.cam.ac.uk/archive/rja14/book.html",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -535,7 +535,7 @@
       "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
       "why_selected": "Curriculum design choice: Study cryptographic mechanisms and implementation failure.",
       "original_source": "https://nostarch.com/serious-cryptography-2nd-edition",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -566,7 +566,7 @@
       "id": "R-CRYPTOPALS",
       "title": "The Cryptopals Crypto Challenges",
       "type": "course",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P10"
       ],
@@ -574,7 +574,7 @@
       "prerequisites": "U06 discrete math/probability; U09 systems, U10 networking, U11 storage and U12 evidence.",
       "why_selected": "Curriculum design choice: Practice controlled cryptographic failure analysis.",
       "original_source": "https://cryptopals.com/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "PARTIALLY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -595,9 +595,9 @@
       "original_source": "https://github.com/munificent/craftinginterpreters",
       "license": "Upstream LICENSE: .c/.dart/.h/.java/.lox use MIT; most other files CC BY-NC-ND 4.0, with listed exception. Inspect exact revision before reuse.",
       "verification": "IDENTITY VERIFIED",
-      "verification_scope": "Repository README and LICENSE identity/terms inspected; no chapter or implementation processed.",
-      "checked_on": "2026-09-26",
-      "local_availability": "SOURCE NOT PRESENT",
+      "verification_scope": "Selected public author chapter11 sections11.1–11.5 and chapter10 section10.6 inspected2026-10-23; hashes and rights boundary in books/crafting-interpreters/generated/SOURCE_VERIFICATION.json. Full book not processed.",
+      "checked_on": "2026-10-23",
+      "local_availability": "Original excluded from portable tree; selected public source scopes inspected and original companion prepared.",
       "notes": "Original repository LICENSE inspected: https://raw.githubusercontent.com/munificent/craftinginterpreters/master/LICENSE . Code and prose have different terms; do not copy/adapt prose as if MIT licensed."
     },
     {
@@ -623,7 +623,7 @@
       "id": "R-HOML",
       "title": "Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow, third edition",
       "type": "book",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P14"
       ],
@@ -631,7 +631,7 @@
       "prerequisites": "U07 algorithms and U13 statistics; linear algebra, derivatives and chain rule before neural models.",
       "why_selected": "Curriculum design choice: Support applied modeling and evaluation.",
       "original_source": "https://github.com/ageron/handson-ml3",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "PARTIALLY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -650,7 +650,7 @@
       "prerequisites": "U07 algorithms and U13 statistics; linear algebra, derivatives and chain rule before neural models.",
       "why_selected": "Curriculum design choice: Reproduce companion ML notebooks.",
       "original_source": "https://github.com/ageron/handson-ml3",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -669,7 +669,7 @@
       "prerequisites": "U07 algorithms and U13 statistics; linear algebra, derivatives and chain rule before neural models.",
       "why_selected": "Curriculum design choice: Study a small autodifferentiation implementation.",
       "original_source": "https://github.com/karpathy/micrograd",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Repository identity/description verified; implementation not inspected.",
       "checked_on": "2026-09-26",
@@ -688,7 +688,7 @@
       "prerequisites": "U03/U08 machine systems, U12 measurement and relevant calculus/physics bridge.",
       "why_selected": "Curriculum design choice: Plan firmware and resource-constrained systems.",
       "original_source": "https://www.oreilly.com/library/view/making-embedded-systems/9781098151539/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -707,7 +707,7 @@
       "prerequisites": "Programming, linear algebra, calculus/partial derivatives, elementary mechanics and linear ODEs; official prerequisite section inspected.",
       "why_selected": "Curriculum design choice: Support robot modeling and control.",
       "original_source": "https://hades.mech.northwestern.edu/index.php/Modern_Robotics",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -718,7 +718,7 @@
       "id": "R-CELL",
       "title": "Molecular Biology of the Cell, seventh edition",
       "type": "book",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P16"
       ],
@@ -726,7 +726,7 @@
       "prerequisites": "U07 algorithms and U13 analysis; chemistry, cells, genetics and evolution before biological interpretation.",
       "why_selected": "Curriculum design choice: Anchor biological mechanisms in a domain text.",
       "original_source": "https://seagull.wwnorton.com/molecularbiologycell",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "PARTIALLY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -745,7 +745,7 @@
       "prerequisites": "U07 algorithms and U13 analysis; chemistry, cells, genetics and evolution before biological interpretation.",
       "why_selected": "Curriculum design choice: Use original biological-computing documentation.",
       "original_source": "https://biopython.org/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -765,7 +765,7 @@
       "prerequisites": "U01 representation; elementary arithmetic/algebra diagnostic before proofs and counting.",
       "why_selected": "Curriculum design choice: Close proof, counting and discrete-math prerequisites.",
       "original_source": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -786,7 +786,7 @@
       "prerequisites": "Elementary algebra diagnostic; vectors/matrices bridge before multivariate regression or ML.",
       "why_selected": "Curriculum design choice: Close matrix and vector prerequisites.",
       "original_source": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -807,7 +807,7 @@
       "prerequisites": "Algebra/functions diagnostic; derivatives and integrals before continuous models and optimization.",
       "why_selected": "Curriculum design choice: Close derivative and integration prerequisites.",
       "original_source": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -826,7 +826,7 @@
       "prerequisites": "U13 probability/statistics and U14 threat models; formal proof practice from U06.",
       "why_selected": "Curriculum design choice: Provide a formal privacy foundation.",
       "original_source": "https://www.cis.upenn.edu/~aaroth/privacybook.html",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Title and identity on opened primary landing page; contents not processed.",
       "checked_on": "2026-09-26",
@@ -837,7 +837,7 @@
       "id": "R-CHEM",
       "title": "Chemistry 2e",
       "type": "book",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P16"
       ],
@@ -845,7 +845,7 @@
       "prerequisites": "Arithmetic, units and basic scientific measurement; exact book entry requirements unverified.",
       "why_selected": "Curriculum design choice: Close chemistry prerequisites for biological interpretation.",
       "original_source": "https://openstax.org/details/books/chemistry-2e",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "UNVERIFIED",
       "verification_scope": "URL opened but empty extraction; verify readable original before use.",
       "checked_on": "2026-09-26",
@@ -856,7 +856,7 @@
       "id": "R-PHYSICS",
       "title": "University Physics Volume 2",
       "type": "book",
-      "author": "UNVERIFIED \u2014 source required.",
+      "author": "UNVERIFIED — source required.",
       "phases": [
         "P15"
       ],
@@ -864,7 +864,7 @@
       "prerequisites": "Algebra, units and calculus as required by the inspected sections; source readability not yet verified.",
       "why_selected": "Curriculum design choice: Close circuit and measurement prerequisites.",
       "original_source": "https://openstax.org/details/books/university-physics-volume-2",
-      "license": "UNVERIFIED \u2014 source required.",
+      "license": "UNVERIFIED — source required.",
       "verification": "UNVERIFIED",
       "verification_scope": "URL opened but empty extraction; verify readable original before use.",
       "checked_on": "2026-09-26",
@@ -883,7 +883,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "2011-04-12 draft; sections 6.2, 6.3.2.3, 6.5, 7.19; bounded C exemplar semantics inspected.",
       "checked_on": "2026-09-27",
@@ -902,7 +902,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://docs.riscv.org/reference/isa/v20260120/unpriv/rv32.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "20260120 collection; registers, I-type encoding and ADDI arithmetic inspected; subset verified against assembler.",
       "checked_on": "2026-09-27",
@@ -921,7 +921,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://docs.amd.com/r/en-US/ug901-vivado-synthesis/Always-Procedures",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "2026.1 Always Procedures; combinational and flip-flop descriptions inspected; independent RTL simulation.",
       "checked_on": "2026-09-27",
@@ -940,7 +940,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://steveicarus.github.io/iverilog/usage/command_line_flags.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "SystemVerilog flag documentation; actual 12.0 tool used for bounded tests.",
       "checked_on": "2026-09-27",
@@ -959,7 +959,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://www.sqlite.org/eqp.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "EXPLAIN QUERY PLAN and linked transaction documentation; actual local sqlite3 tested.",
       "checked_on": "2026-09-27",
@@ -978,7 +978,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://sre.google/sre-book/service-level-objectives/",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "SLI/SLO/SLA orientation only; no guarantee or deployment result inferred.",
       "checked_on": "2026-09-27",
@@ -997,7 +997,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Readable current definition inspected; power ledger is an explicit derivation, not a device rating.",
       "checked_on": "2026-09-27",
@@ -1016,7 +1016,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://www.stroustrup.com/bs_faq.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1035,7 +1035,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1054,7 +1054,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://ziglang.org/learn/overview/",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1073,7 +1073,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1092,7 +1092,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://developer.arm.com/documentation/102374/latest/",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "UNVERIFIED",
       "verification_scope": "Page unavailable/readability insufficient; no detailed claims.",
       "checked_on": "2026-09-27",
@@ -1111,7 +1111,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://docs.python.org/3/reference/executionmodel.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1130,7 +1130,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://go.dev/doc/faq",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1149,7 +1149,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://docs.oracle.com/javase/specs/jvms/se25/html/jvms-1.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1168,7 +1168,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1187,7 +1187,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://www.gnu.org/software/bash/manual/bash.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "UNVERIFIED",
       "verification_scope": "Page unavailable/readability insufficient; no detailed claims.",
       "checked_on": "2026-09-27",
@@ -1206,7 +1206,7 @@
       "prerequisites": "Exact internal lesson bridge; no assumed learner mastery.",
       "why_selected": "Primary-source interface or mechanism evidence relevant to a bounded unit.",
       "original_source": "https://ghdl.github.io/ghdl/about.html",
-      "license": "UNVERIFIED \u2014 verification required. No upstream material imported.",
+      "license": "UNVERIFIED — verification required. No upstream material imported.",
       "verification": "IDENTITY VERIFIED",
       "verification_scope": "Introductory source orientation only; full semantics and version-specific content not reconstructed.",
       "checked_on": "2026-09-27",
@@ -1771,7 +1771,7 @@
         "R-DATA8",
         "R-STATS"
       ],
-      "exit_gate": "Trace claim \u2192 analysis \u2192 data \u2192 measurement \u2192 collection \u2192 source \u2192 reality; identify confounding and uncertainty.",
+      "exit_gate": "Trace claim → analysis → data → measurement → collection → source → reality; identify confounding and uncertainty.",
       "state": "NOT STARTED",
       "evidence": []
     },
@@ -2410,7 +2410,7 @@
       ],
       "attribution_status": "Recorded; artifact-specific license review required before import.",
       "outcome": "Trace a small instruction through a designed machine; predict state changes before simulation.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2435,9 +2435,9 @@
       "original_resources": [
         "R-C"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Implement and debug programs; account for ownership, lifetime and error paths.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2462,9 +2462,9 @@
       "original_resources": [
         "R-ALGORITHMS"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Justify correctness and complexity; compare measured behavior with predictions.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2489,9 +2489,9 @@
       "original_resources": [
         "R-CSAPP"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Trace compiled execution and allocations; distinguish model, source evidence and observation.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2516,9 +2516,9 @@
       "original_resources": [
         "R-OSTEP"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Explain and test a small kernel change in an isolated emulator.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2543,9 +2543,9 @@
       "original_resources": [
         "R-NET"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Trace a request across interfaces and explain partial I/O and disconnections.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2570,9 +2570,9 @@
       "original_resources": [
         "R-DB"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Build persistence and recovery with explicit transactional boundaries.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2597,9 +2597,9 @@
       "original_resources": [
         "R-CRAFT"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Trace a claim back to collection and measurement; delimit what the evidence supports.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2624,9 +2624,9 @@
       "original_resources": [
         "R-PYDATA"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Produce a reproducible analysis with uncertainty, leakage checks and data provenance.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2651,9 +2651,9 @@
       "original_resources": [
         "R-SECURITY"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Test security boundaries of a local pipeline against an explicit threat model.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2678,9 +2678,9 @@
       "original_resources": [
         "R-PRIVACY"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Verify recorded transformations while stating what provenance cannot establish about reality.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2705,9 +2705,9 @@
       "original_resources": [
         "R-INTERPRETERS"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Implement a language with defined evaluation and error semantics.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2732,9 +2732,9 @@
       "original_resources": [
         "R-DDIA"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "State a fault model, inject failures and compare observed histories with promised semantics.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2759,9 +2759,9 @@
       "original_resources": [
         "R-HOML"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Derive and check gradients; evaluate generalization separately from training performance.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2786,9 +2786,9 @@
       "original_resources": [
         "R-EMBEDDED"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Measure sensor behavior and timing; explain calibration, control and physical limitations.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2813,9 +2813,9 @@
       "original_resources": [
         "R-CELL"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Analyze public biological data while separating computational output from biological interpretation.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2840,9 +2840,9 @@
       "original_resources": [
         "R-CRAFT"
       ],
-      "attribution_status": "UNVERIFIED \u2014 source required before reproduction.",
+      "attribution_status": "UNVERIFIED — source required before reproduction.",
       "outcome": "Reproduce a bounded published result; document discrepancies and limits before proposing extensions.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2867,9 +2867,9 @@
         "R-RV32",
         "R-SV"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Match a declared ISA subset instruction-by-instruction from C/assembly through HDL CPU.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2894,9 +2894,9 @@
       "original_resources": [
         "R-XV6"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Reproduce a bounded kernel mechanism and inspect processes, memory, files and recovery.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2922,9 +2922,9 @@
         "R-NET",
         "R-SRE"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Build a protocol/service then measure concurrency, retries and partition behavior.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2949,9 +2949,9 @@
       "original_resources": [
         "R-SQLITE-LAB"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Connect indexes, transactions, query layer, ingestion and failure recovery.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -2976,9 +2976,9 @@
       "original_resources": [
         "R-OWASP"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Specify trust boundaries, integrity/authentication, audit and failure detection.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -3004,9 +3004,9 @@
         "R-ELECTRIC",
         "R-ROBOTICS"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Trace sensing/electronics/firmware/control/actuation with verified safe equipment.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -3031,9 +3031,9 @@
       "original_resources": [
         "R-CRAFT"
       ],
-      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED \u2014 verification required.",
+      "attribution_status": "Original integration plan; upstream reproduction specifics UNVERIFIED — verification required.",
       "outcome": "Characterize, hypothesize, instrument, reproduce and validate an unknown authorized system.",
-      "stage": "A \u2014 NOT STARTED",
+      "stage": "A — NOT STARTED",
       "evidence": [],
       "quality_gates": {
         "build": "NOT RUN",
@@ -3060,6 +3060,16 @@
       "sha256": null,
       "edition": null,
       "inspection_evidence": null
+    },
+    {
+      "resource_id": "R-INTERPRETERS",
+      "slug": "crafting-interpreters",
+      "path": "books/crafting-interpreters",
+      "status": "SOURCE NOT PRESENT",
+      "source_path": null,
+      "sha256": null,
+      "edition": null,
+      "inspection_evidence": null
     }
   ],
   "chapters": [
@@ -3068,6 +3078,14 @@
       "resource_id": "R-CODE",
       "path": "books/code-petzold/generated/chapters/01",
       "locator": "Portable derived reconstruction; original inspected source intentionally excluded from archive",
+      "status": "PORTABLE_DERIVED",
+      "source_ready": false
+    },
+    {
+      "id": "CI-11",
+      "resource_id": "R-INTERPRETERS",
+      "path": "books/crafting-interpreters/generated/chapters/11",
+      "locator": "Author public chapter11 sections11.1–11.5 and chapter10 section10.6 inspected; originals excluded, exact fingerprints/scopes in generated/SOURCE_VERIFICATION.json",
       "status": "PORTABLE_DERIVED",
       "source_ready": false
     }
@@ -3080,7 +3098,7 @@
       "resource_ids": [
         "R-CODE"
       ],
-      "locator": "Chapter 1, PDF 6\u20138; letter table PDF 7",
+      "locator": "Chapter 1, PDF 6–8; letter table PDF 7",
       "artifact": "books/code-petzold/generated/chapters/01/02_DEEP_RECONSTRUCTION.md",
       "status": "VERIFIED",
       "assumptions": "Inspected local text; derived results only under the restricted exact-timing model with known scale and explicit EOF. No physical measurements or learner evidence.",

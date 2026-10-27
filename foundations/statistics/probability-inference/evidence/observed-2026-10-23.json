@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "kind": "executed synthetic finite-model experiments",
+  "executed_utc": "2026-10-23T10:42:15.812229+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "coverage_enumeration": [
+    {
+      "n": 5,
+      "true_p": "1/50",
+      "wald": {
+        "coverage_fraction": "6000099/62500000",
+        "coverage_float": 0.096001584,
+        "expected_width_float": 0.05397310256887553
+      },
+      "wilson": {
+        "coverage_fraction": "282475249/312500000",
+        "coverage_float": 0.9039207968,
+        "expected_width_float": 0.4494990969789585
+      }
+    },
+    {
+      "n": 5,
+      "true_p": "1/5",
+      "wald": {
+        "coverage_fraction": "416/625",
+        "coverage_float": 0.6656,
+        "expected_width_float": 0.4413814389419254
+      },
+      "wilson": {
+        "coverage_fraction": "2944/3125",
+        "coverage_float": 0.94208,
+        "expected_width_float": 0.5540422790663627
+      }
+    },
+    {
+      "n": 5,
+      "true_p": "1/2",
+      "wald": {
+        "coverage_fraction": "15/16",
+        "coverage_float": 0.9375,
+        "expected_width_float": 0.6904444391296463
+      },
+      "wilson": {
+        "coverage_fraction": "15/16",
+        "coverage_float": 0.9375,
+        "expected_width_float": 0.6182648886076118
+      }
+    },
+    {
+      "n": 20,
+      "true_p": "1/50",
+      "wald": {
+        "coverage_fraction": "316421841953905996928407136984103/953674316406250000000000000000000",
+        "coverage_float": 0.3317923493486589,
+        "expected_width_float": 0.054075499425230544
+      },
+      "wilson": {
+        "coverage_fraction": "8965501989851488388084878053192981/9536743164062500000000000000000000",
+        "coverage_float": 0.9401010214510515,
+        "expected_width_float": 0.18611866632846577
+      }
+    },
+    {
+      "n": 20,
+      "true_p": "1/5",
+      "wald": {
+        "coverage_fraction": "87818424549376/95367431640625",
+        "coverage_float": 0.9208429234028649,
+        "expected_width_float": 0.32627879004264737
+      },
+      "wilson": {
+        "coverage_fraction": "91202556788736/95367431640625",
+        "coverage_float": 0.9563281218730564,
+        "expected_width_float": 0.32562385673735744
+      }
+    },
+    {
+      "n": 20,
+      "true_p": "1/2",
+      "wald": {
+        "coverage_fraction": "125647/131072",
+        "coverage_float": 0.9586105346679688,
+        "expected_width_float": 0.4268205453334929
+      },
+      "wilson": {
+        "coverage_fraction": "125647/131072",
+        "coverage_float": 0.9586105346679688,
+        "expected_width_float": 0.3926991894852168
+      }
+    },
+    {
+      "n": 100,
+      "true_p": "1/50",
+      "wald": {
+        "coverage_fraction": "13670147025853981492562126570384234073375176440615794856174525866544254996398106266444190562955277084017924008419403823349518126461903983483734349349585971199029185371691/15777218104420236108234571305655724593464128702180460095405578613281250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "coverage_float": 0.8664485041265972,
+        "expected_width_float": 0.0439436456380968
+      },
+      "wilson": {
+        "coverage_fraction": "9359534425925507532934952620443480931728693422562602346052512934788643272774999148195132073940749979902047587096577592718702852728996668253248487780604320561332405451797/9860761315262647567646607066034827870915080438862787559628486633300781250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "coverage_float": 0.9491695546304997,
+        "expected_width_float": 0.0625317984505609
+      }
+    },
+    {
+      "n": 100,
+      "true_p": "1/5",
+      "wald": {
+        "coverage_fraction": "7360605169429581374161470882622410121898921276258386621301398465150976/7888609052210118054117285652827862296732064351090230047702789306640625",
+        "coverage_float": 0.9330675561070417,
+        "expected_width_float": 0.155549544717875
+      },
+      "wilson": {
+        "coverage_fraction": "7419391565548076114154541379241027646972309434363981088475256430002176/7888609052210118054117285652827862296732064351090230047702789306640625",
+        "coverage_float": 0.9405196171395281,
+        "expected_width_float": 0.15432180769679896
+      }
+    },
+    {
+      "n": 100,
+      "true_p": "1/2",
+      "wald": {
+        "coverage_fraction": "74721036062656026081251605011/79228162514264337593543950336",
+        "coverage_float": 0.9431120663590192,
+        "expected_width_float": 0.19500892726722996
+      },
+      "wilson": {
+        "coverage_fraction": "74721036062656026081251605011/79228162514264337593543950336",
+        "coverage_float": 0.9431120663590192,
+        "expected_width_float": 0.19140402161391404
+      }
+    }
+  ],
+  "fault_model": {
+    "prior": "1/100",
+    "sensitivity": "9/10",
+    "false_positive": "1/50",
+    "posterior": "5/16"
+  },
+  "zero_failures_n5": {
+    "wald": [
+      0.0,
+      0.0
+    ],
+    "wilson": [
+      0.0,
+      0.43448246478317476
+    ]
+  },
+  "permutation_four_positions": {
+    "absolute_difference": "1",
+    "p_value": "1/3",
+    "assignments": 6
+  },
+  "dependence_counterexample": {
+    "seed": 7241,
+    "replicates": 4000,
+    "n": 20,
+    "marginal_p": "1/5",
+    "interval": "Wilson nominal95%, incorrectly treating copied observations as iid",
+    "covered_counts": {
+      "iid": 3828,
+      "one_bit_copied_20_times": 0
+    },
+    "empirical_coverage": {
+      "iid": 0.957,
+      "one_bit_copied_20_times": 0.0
+    },
+    "exact_iid_coverage": "91202556788736/95367431640625",
+    "exact_copied_coverage": 0
+  },
+  "limits": [
+    "All data are synthetic; no detector, factory or human observations.",
+    "Exact masses do not make normal-score coverage uniformly95%.",
+    "Float interval endpoints may affect inclusion near a boundary.",
+    "One seed and4000 replicates illustrate dependence, not a general empirical theorem.",
+    "Python pseudorandomness is adequate for this reproducible simulation, not a secure RNG."
+  ]
+}

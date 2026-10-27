@@ -40,21 +40,12 @@ def kmer_counts(seq: str,k:int):
         kmer=s[i:i+k]; out[kmer]=out.get(kmer,0)+1
     return out
 
-def global_alignment(a:str,b:str,match=1,mismatch=-1,gap=-1):
-    n,m=len(a),len(b)
-    f=[[0]*(m+1) for _ in range(n+1)]
-    for i in range(1,n+1): f[i][0]=i*gap
-    for j in range(1,m+1): f[0][j]=j*gap
-    for i in range(1,n+1):
-        for j in range(1,m+1):
-            diag=f[i-1][j-1]+(match if a[i-1]==b[j-1] else mismatch)
-            f[i][j]=max(diag,f[i-1][j]+gap,f[i][j-1]+gap)
-    i,j=n,m; aa=[]; bb=[]
-    while i or j:
-        if i and j and f[i][j]==f[i-1][j-1]+(match if a[i-1]==b[j-1] else mismatch):
-            aa.append(a[i-1]);bb.append(b[j-1]);i-=1;j-=1
-        elif i and f[i][j]==f[i-1][j]+gap:
-            aa.append(a[i-1]);bb.append('-');i-=1
-        else:
-            aa.append('-');bb.append(b[j-1]);j-=1
-    return f[n][m], ''.join(reversed(aa)), ''.join(reversed(bb))
+def global_alignment(a: str, b: str, match=1, mismatch=-1, gap=-1):
+    """Compatibility tuple API; see alignment.py for the checked mechanism.
+
+    Scoring uses integers and a nonpositive linear gap score. Inputs may include
+    RNA/protein symbols; this function does not validate a biological alphabet.
+    """
+    from alignment import align_global
+    result = align_global(a, b, match, mismatch, gap)
+    return result.score, result.a_aligned, result.b_aligned

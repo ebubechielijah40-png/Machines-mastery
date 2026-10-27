@@ -1,0 +1,30 @@
+test_authenticated_false_measurement_is_still_accepted (test_pipeline.ProvenanceTests.test_authenticated_false_measurement_is_still_accepted) ... ok
+test_duplicate_fields_invalid_types_and_bounded_payloads (test_pipeline.ProvenanceTests.test_duplicate_fields_invalid_types_and_bounded_payloads) ... ok
+test_entry_budget_and_snapshot_copy (test_pipeline.ProvenanceTests.test_entry_budget_and_snapshot_copy) ... ok
+test_every_truncated_last_line_fails_closed (test_pipeline.ProvenanceTests.test_every_truncated_last_line_fails_closed) ... ok
+test_hmac_known_vector_and_independent_library (test_pipeline.ProvenanceTests.test_hmac_known_vector_and_independent_library) ... ok
+test_ingest_reload_exact_transform_and_read_authz (test_pipeline.ProvenanceTests.test_ingest_reload_exact_transform_and_read_authz) ... ok
+test_mutation_substitution_replay_and_role_fail_without_state_change (test_pipeline.ProvenanceTests.test_mutation_substitution_replay_and_role_fail_without_state_change) ... ok
+test_processor_output_chain_and_whole_prefix_substitution (test_pipeline.ProvenanceTests.test_processor_output_chain_and_whole_prefix_substitution) ... ok
+test_unknown_sync_outcome_poisoned_then_recovered (test_pipeline.ProvenanceTests.test_unknown_sync_outcome_poisoned_then_recovered) ... ok
+test_different_aad_does_not_repair_reused_nonce (test_protected_ledger.PrimitiveTests.test_different_aad_does_not_repair_reused_nonce) ... ok
+test_independent_polynomial_reduction_and_length_binding (test_protected_ledger.PrimitiveTests.test_independent_polynomial_reduction_and_length_binding) ... ok
+test_inspected_nist_examples_and_explicit_ghash (test_protected_ledger.PrimitiveTests.test_inspected_nist_examples_and_explicit_ghash) ... ok
+test_after_commit_unknown_ack_reconciles_on_reopen (test_protected_ledger.ProtectedTests.test_after_commit_unknown_ack_reconciles_on_reopen) ... ok
+test_ciphertext_header_and_suffix_tampering (test_protected_ledger.ProtectedTests.test_ciphertext_header_and_suffix_tampering) ... ok
+test_configuration_rejects_alias_keys_and_noncontiguous_epochs (test_protected_ledger.ProtectedTests.test_configuration_rejects_alias_keys_and_noncontiguous_epochs) ... ok
+test_corrupted_counter_repetition_refused_before_encryption (test_protected_ledger.ProtectedTests.test_corrupted_counter_repetition_refused_before_encryption) ... ok
+test_fresh_receipt_binds_configuration_identity_and_key (test_protected_ledger.ProtectedTests.test_fresh_receipt_binds_configuration_identity_and_key) ... ok
+test_history_rotations_and_exact_original_retry (test_protected_ledger.ProtectedTests.test_history_rotations_and_exact_original_retry) ... ok
+test_nonce_reservation_is_not_rolled_back_with_local_transaction (test_protected_ledger.ProtectedTests.test_nonce_reservation_is_not_rolled_back_with_local_transaction) ... ok
+test_old_backup_rejected_by_current_authority (test_protected_ledger.ProtectedTests.test_old_backup_rejected_by_current_authority) ... ok
+test_real_process_kill_before_and_after_commit (test_protected_ledger.ProtectedTests.test_real_process_kill_before_and_after_commit) ... ok
+test_retired_key_new_sequence_and_stream_rejected (test_protected_ledger.ProtectedTests.test_retired_key_new_sequence_and_stream_rejected) ... ok
+test_two_actual_process_writers_serialize (test_protected_ledger.ProtectedTests.test_two_actual_process_writers_serialize) ... ok
+test_valid_signed_authority_with_wrong_configuration_rejected (test_protected_ledger.ProtectedTests.test_valid_signed_authority_with_wrong_configuration_rejected) ... ok
+test_wrong_key_and_gap_do_not_mutate_history (test_protected_ledger.ProtectedTests.test_wrong_key_and_gap_do_not_mutate_history) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.614s
+
+OK

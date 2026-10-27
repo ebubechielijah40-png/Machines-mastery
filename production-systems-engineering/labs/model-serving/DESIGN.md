@@ -1,11 +1,16 @@
-# Design: Model Serving and Production Drift Guard
+# Actual model-serving design
 
-## Objective
-Provide an educational, zero-dependency production ML inference pipeline with robust schema validation, dynamic micro-batching, real-time drift detection, rate limiting, and observability.
+This is a serial teaching prototype. `predict` consumes a global token, validates
+features, scales with frozen training parameters, evaluates a logistic model and
+retains a success latency. `predict_batch` loops through `predict`; it is not a
+queue, timed dispatch mechanism or vectorized inference engine. `max_batch_size`
+is stored but not enforced by that helper.
 
-## Pipeline Components
-1. **Schema Validator:** Checks vector dimension, data types, nulls/NaNs/Infs, and bounded numeric ranges before computation.
-2. **Standard Scaler:** Transforms raw inputs using frozen training parameters ($\mu, \sigma$).
-3. **Logistic Regression Engine:** Pure-Python vector dot product with clamped sigmoid function to prevent floating-point overflow.
-4. **Drift Monitor (PSI):** Sliding window of recent production feature samples compared against baseline quartiles/quantiles.
-5. **Token Bucket Rate Limiter:** Protects the inference engine from sudden concurrency spikes and starvation.
+The token bucket has no lock or fairness queue. Use it only in the single-thread
+lab; it does not protect concurrent callers or prevent starvation. Rate limiting
+and bounding running/waiting work are different mechanisms; the
+[operation workbench](../operation-workbench/README.md) teaches the latter.
+
+A200-feature-vector deque bounds recent drift input. It does not bound the
+latency list, which grows for every successful call. PSI threshold.25 is a chosen
+synthetic guard, not calibrated evidence of model failure, causality or safety.

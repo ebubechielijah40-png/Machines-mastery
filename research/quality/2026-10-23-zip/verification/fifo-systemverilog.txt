@@ -1,0 +1,105 @@
+{
+  "executed_at_utc": "2026-10-23T21:45:38.489819+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "vector_count": 2992,
+  "vector_sha256": "2e9bdf2cfe67b0f51082e25c3db68355add2a5fc68aab8cfbc20d24d9aeb8b40",
+  "code_sha256": {
+    "fifo.vhd": "2d1c58461874fda8f4bd2f40b44ede8948f79969692260313e16c49a42984f58",
+    "run.py": "6143873cafe951e9337a90c25ff3e1a96c372330bc239cbb1a5b2c3d54dbdf98",
+    "tb.vhd": "adcc83b14d0baba88fcfd6cac7a6d66671814f51e14f2251a40e4c0620061b2f",
+    "tb.sv": "707c94c47396e9d7893cdc8a55c03349fc29589ba611cb6c2cc50f38e2440005",
+    "fifo.sv": "0ea5c4288d8ff7cdabcd05d6b3301649652410b3144bc2127ab231111f94c44c"
+  },
+  "records": [
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/iverilog",
+        "-V"
+      ],
+      "exit_code": 0,
+      "stdout": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/iverilog",
+        "-g2012",
+        "-s",
+        "tb",
+        "-o",
+        "sim",
+        "/tmp/mm-fifo-wpr9zpyy/fifo.sv",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/hardware-description-languages/fifo-contract/tb.sv"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/vvp",
+        "sim"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 2992 FIFO vectors\n/workspace/scratch/9b275ae18bcb/development/machines-mastery/hardware-description-languages/fifo-contract/tb.sv:27: $finish called at 17952000 (1ps)\n",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/iverilog",
+        "-g2012",
+        "-s",
+        "tb",
+        "-o",
+        "sim",
+        "/tmp/mm-fifo-ll2so7rk/fifo.sv",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/hardware-description-languages/fifo-contract/tb.sv"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/vvp",
+        "sim"
+      ],
+      "exit_code": 1,
+      "stdout": "FATAL: /workspace/scratch/9b275ae18bcb/development/machines-mastery/hardware-description-languages/fifo-contract/tb.sv:23: queue transition mismatch vector=474 count=2 expected=3\n       Time: 2848000  Scope: tb\n",
+      "stderr": "",
+      "expected_success": false
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/iverilog",
+        "-g2012",
+        "-s",
+        "tb",
+        "-o",
+        "sim",
+        "/tmp/mm-fifo-kv2sx239/fifo.sv",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/hardware-description-languages/fifo-contract/tb.sv"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools/bin/vvp",
+        "sim"
+      ],
+      "exit_code": 1,
+      "stdout": "FATAL: /workspace/scratch/9b275ae18bcb/development/machines-mastery/hardware-description-languages/fifo-contract/tb.sv:23: queue transition mismatch vector=92 count=0 expected=1\n       Time: 556000  Scope: tb\n",
+      "stderr": "",
+      "expected_success": false
+    }
+  ],
+  "scope": "Actual logical simulation and intended negative controls; no physical timing, synthesis, CDC or all-state formal proof."
+}

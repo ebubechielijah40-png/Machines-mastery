@@ -1,103 +1,42 @@
-# Embedded systems and robotics — self-contained phase guide
+# Embedded robotics: quantities to a closed feedback loop
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+Begin with the [connected coursebook](../coursebooks/08-embedded-robotics.md).
+Read units → electrical quantities → RC dynamics → motion/energy →
+[the motor/control unit](control-path/README.md) in its stated prerequisite order.
+Each step adds a required mechanism; full robot planning/kinematics and hardware
+firmware remain outside this bounded path.
 
-## 1. Electronics Interface
+A controller commands voltage, not speed. Inductance stores Li²/2 and a rotating
+inertia stores Jω²/2. Electrical back EMF and mechanical torque are opposite sides
+of the same energy conversion. The derived model is L di/dt=v−Ri−kω,
+J dω/dt=ki−bω−load, dθ/dt=ω. Multiplication by i andω cancels conversion power and
+gives dE/dt=vi−Ri²−bω²−load·ω. Check that identity before tuning any loop.
 
-**Problem.** Identify the real system problem that makes electronics interface necessary.
+For the hypothetical reference plant under6V, no-load steady speed is12rad/s.
+Demanding20rad/s creates sustained saturation. A clipped controller can continue
+accumulating integral state even while output stays at6V; this state delays
+recovery after the target falls. Conditional integration blocks increments that
+push farther into saturation and permits unwinding. Derivative on measurement
+avoids a derivative kick from target steps but needs filtering against noise.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+A sensor reports a biased/noisy/quantized history of speed. With y=ω+c, near-zero
+measured error implies true speed r−c; feedback cannot identify its own unknown
+calibration offset. A hundred delayed samples at.002s means.2s latency. The sample
+pipeline has an explicit first-sample prehistory rather than invented old data.
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+Build the plant, RK4 step, sensor, controller and failure experiments through
+[the guided project](../projects-guided/p13-robot-controller/README.md). The unit
+contains original worked cases, independent hand/energy/analytic tests, separate
+exercises/hints/solutions, inspected-source records and actual synthetic JSON.
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
+```sh
+python3 -m unittest discover -s 17-embedded-robotics/control-path -p 'test_*.py' -v
+python3 17-embedded-robotics/control-path/experiment.py
+```
 
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 2. Microcontrollers/Firmware
-
-**Problem.** Identify the real system problem that makes microcontrollers/firmware necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Sensors/Actuators
-
-**Problem.** Identify the real system problem that makes sensors/actuators necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Real-Time Behavior
-
-**Problem.** Identify the real system problem that makes real-time behavior necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Control
-
-**Problem.** Identify the real system problem that makes control necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Robotics Integration
-
-**Problem.** Identify the real system problem that makes robotics integration necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+The executed windup experiment supports a bounded claim for the recorded gains,
+plant, horizon and metric. A delay case improved one metric; do not turn a single
+trajectory into a universal rule. All outputs are simulations; no physical
+robot, driver, sensor, real-time deadline, collision model or safety system was
+validated. Reconstruct equations and update order without notes, then add a
+load/current limit and explain which prior assumptions must change.

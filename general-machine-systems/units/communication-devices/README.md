@@ -1,7 +1,27 @@
-# Communication Devices investigation plan
+# Communication Devices — mechanism, failure, and reconstruction
 
-SCAFFOLDED; learner NOT STARTED. Focus: interfaces, retained state and energy/motion constraints.
+## Why this machine exists
+Communication devices encode information into physical signals and recover it across noisy channels.
 
-Use [framework](../../FRAMEWORK.md). Identify an actual bounded artifact before assigning materials, ratings, pinouts or tolerances. Develop at least two plausible mechanisms and one safe distinguishing observation. Prepare a theory/diagram, traced mechanism, teardown plan, predicted experiment, minimum reconstruction, failure tree, questions and control/computing connections.
+## Energy and information path
+Source bits → framing/coding/modulation → transmitter/channel → receiver/demodulation/decoding → bits.
 
-Forces/loads, torque, fluids, electricity and timing require exact [foundation lessons](../../../foundations/README.md) when used. If they are not prepared, keep the dependent study blocked. A source-backed calculation is not a measured machine property. No build or teardown is performed by this plan.
+## Mechanism
+Bandwidth, signal-to-noise, modulation, coding, synchronization and channel properties bound performance. Protocol layers add addressing, reliability and multiplexing.
+
+When studying a real example, first draw the boundary and label energy input, useful output, losses, state, control, and interfaces. Then descend into the component that limits behavior instead of cataloguing parts.
+
+## Failure modes
+interference, clock drift, fading, congestion, framing errors, hardware faults
+
+A failure is evidence about mechanism. Record symptom → competing hypotheses → measurement → result → revised model. Do not jump from symptom directly to replacement.
+
+## Experiment
+Simulate binary transmission with adjustable bit-flip probability and add a simple error-detecting code.
+
+Before measuring, predict the direction and approximate magnitude of the effect. Record units, uncertainty, and what the experiment cannot establish.
+
+## Reconstruction challenge
+Given observed error patterns, distinguish channel noise from framing/protocol hypotheses.
+
+After studying, hide the reference and redraw the functional block diagram from memory. Your reconstruction passes only if another person could use it to predict behavior under a changed load or failure.

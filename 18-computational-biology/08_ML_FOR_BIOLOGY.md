@@ -1,0 +1,2 @@
+# Machine learning for biology
+Biological ML is vulnerable to leakage through patient identity, batch, homology, site, or temporal structure. Random splits can answer the wrong question. Define deployment first, then split. Compare sequence-level random split with family-aware split on a toy dataset and measure the drop. Treat biological labels as measurements with uncertainty, not unquestionable truth.

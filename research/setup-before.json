@@ -1,0 +1,49 @@
+{
+  "files": {
+    "AGENTS.md": {
+      "bytes": 2639,
+      "sha256": "39ed814ff477d64a6bc0c3d4ee94980833e0d1863089c3c748e8c83ddd7a98d5"
+    },
+    "SOURCES.md": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "PROGRESS.md": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "MASTER_CURRICULUM.md": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "KNOWLEDGE_GRAPH.md": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "directories": [
+    ".agents",
+    ".codex",
+    ".git",
+    "01-computation",
+    "02-programming",
+    "03-algorithms",
+    "04-computer-systems",
+    "05-operating-systems",
+    "06-networking",
+    "07-databases",
+    "08-information-science",
+    "09-data-science",
+    "10-security",
+    "11-privacy",
+    "12-programming-languages",
+    "13-distributed-systems",
+    "14-machine-learning",
+    "15-embedded-robotics",
+    "16-computational-biology",
+    "17-research",
+    "books",
+    "experiments",
+    "projects"
+  ]
+}

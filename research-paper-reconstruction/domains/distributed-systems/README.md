@@ -1,5 +1,9 @@
-# distributed-systems seminar plan
+# Logical clocks and causal order: research reconstruction
 
-SCAFFOLDED; zero papers reconstructed. Target: ≥10 important verified originals. Select foundational mechanism, influential system, evaluation methodology, failure/negative result and a competing approach; do not force ten inaccessible papers into invented reconstructions.
+**PARTIAL domain; STRONG bounded instructional unit.** One primary-paper dossier is developed with all20 research criteria. The target of at least ten important, source-verified substantive originals is not met. Source verification is separate from reproduction of a paper's empirical results.
 
-Verify exact title, all authors, venue, year and original source before registering a paper. Distinguish metadata-only access from readable full text; inaccessible sections remain UNVERIFIED — verification required. Use [reading plan](../../READING_PLAN.md), then the domain-specific curriculum and prerequisite bridge. No learner progress is claimed.
+Start with [Logical clocks and causal order](01_lamport_clocks_1978.md). This original unit teaches logical-clock condition, graph reachability, receive-rule interventions and offline total-order limits. Its exact original-paper bytes, locators, access scope and licensing limits are recorded as L78 in the [source record](../../SOURCE_VERIFICATION_CONTINUATION.json).
+
+The connected [project16](../../../projects-guided/p16-research-reproduction/README.md) provides prerequisites, worked traces, implementation tracks, independent tests, executed raw experiments and separated assessments. The privacy track is analytical and does not claim an executed production mechanism. Reported historical findings and locally executed synthetic observations remain distinct.
+
+Remaining work includes physical clocks, full mutual-exclusion protocol, consensus, vector-clock originals and at least nine additional substantive primary papers. Follow the [reading method](../../METHODOLOGY.md); do not manufacture dossiers to meet a numeric quota. Learner mastery is not assessed by the existence of these files.

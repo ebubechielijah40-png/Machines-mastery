@@ -1,0 +1,6 @@
+PASS: 65536 values, extra input, nulls, short lengths and unchanged output
+PASS: 65536 values, extra input, nulls, short lengths and unchanged output
+PASS: 65536 values, extra input, nulls, short lengths and unchanged output
+PASS build -O0
+PASS build -O2
+PASS build -O1 -fsanitize=undefined -fno-sanitize-recover=all

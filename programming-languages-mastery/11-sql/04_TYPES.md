@@ -1,57 +1,20 @@
-# SQL: What Types Mean, When They Are Checked, Representations, Conversions And Invalid States
+# SQL NULL is an operator-dependent marker
 
-**Prepared reference; learner NOT STARTED.** This page is self-contained for normal study. Exact version-specific edge cases should still be checked against the installed toolchain/specification when they matter.
+The developed [NULL and joins unit](units/null-and-joins/README.md) teaches a
+bounded SQLite semantics slice with seven passing suites and actual rows. It
+does not complete SQL types/affinity/coercion across engines.
 
-## Why this matters
+A known zero amount, an order with an unknown amount and no matching order are
+three different states. Ordinary equality with NULL yields unknown; a WHERE
+predicate accepts only true. Thus amount=NULL retains no row, while amount IS
+NULL identifies the missing amount. False AND unknown is false; true OR unknown
+is true; NOT unknown remains unknown. [The independent truth model](units/null-and-joins/test_lab.py)
+checks all nine operand pairs against SQLite.
 
-The focus is **what types mean, when they are checked, representations, conversions and invalid states**. A language feature is worth understanding when you can connect its source-level form to state, representation, guarantees, costs, and failure behavior.
-
-## Mechanism model
-
-Interpret this topic through the language model: declarative relational language where you specify desired result/updates and the database chooses an execution plan.
-
-Use this execution chain whenever applicable:
-
-`input/source → parse/compile/runtime representation → state/memory/signal transition → OS/hardware/simulator effect → observable output`.
-
-For hardware-description languages, remember that synthesizable code describes hardware structure/behavior rather than a sequential software process.
-
-## Minimal example
-
-```sql
-SELECT user_id, COUNT(*) AS n
-FROM events
-WHERE created_at >= :cutoff
-GROUP BY user_id;
-```
-
-Before running it, predict the output or state transition. Then ask what lower layer must exist for the result to occur. Change one value/type/control condition and predict again.
-
-## Failure/counterexample
-
-Create one invalid or boundary case relevant to this topic. Decide whether it should be rejected at parse/compile/elaboration time, fail at runtime/simulation, produce a defined alternate result, or enter undefined/implementation-specific behavior. Do not label a behavior without checking the language/tool contract.
-
-## Tests and experiments
-
-1. Write 3 normal tests and 3 edge cases.
-2. Inspect generated assembly/bytecode/query plan/waveform where applicable.
-3. Measure one cost: runtime, allocations, binary size, query latency, cycles, or simulated transitions.
-4. Break one assumption and record the actual diagnostic/output.
-5. Rebuild the example from memory in a new file.
-
-## Application
-
-Use this topic inside the project ladder in `25_PROJECTS.md`. Explain how the mechanism changes when the program/design grows from a toy example to a long-running production or hardware system.
-
-## Limits
-
-This page teaches the stable conceptual model; it is not an exhaustive versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
-
-## Assignment
-
-- 5 short exercises that isolate the mechanism;
-- 3 integration exercises;
-- 1 debugging exercise;
-- 1 measurement experiment;
-- 1 transfer task with unfamiliar surface syntax;
-- explain the topic aloud without using the language name, only state/transformations/constraints, then map it back to SQL.
+NOT IN with a NULL right entry can reject every apparent nonmember through unknown
+results. NOT EXISTS with an explicit equality predicate expresses the chosen policy
+of no known matching ID for nonnull keys. A nullable left key requires an additional
+application policy. DISTINCT and nullable UNIQUE also treat NULL according to their
+own rules, not a slogan about equality. The unit's actual SQLite3.53.1 output and
+inspected primary docs are linked separately. Rebuild the truth table and derive
+one anti-join result before running the engine.

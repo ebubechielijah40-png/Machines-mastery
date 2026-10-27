@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "missing-assessment": 285,
+    "missing-experiment": 387,
+    "missing-reference-trail": 375,
+    "near-empty-instruction": 119,
+    "placeholder-instruction": 6,
+    "repeated-template": 600,
+    "unverified-paper-dossier": 11
+  },
+  "total_findings": 1783,
+  "mode": "strict risk gate",
+  "limitations": [
+    "Heuristic review findings are not factual errors or automatic domain ratings.",
+    "No external URL availability or source truth validation is performed.",
+    "Python compilation does not establish runtime behavior; fragments may need explicit labels.",
+    "Declared shared implementation/test bindings check public file existence and scope only; quality still needs review.",
+    "Non-English assessment wording and other heuristic matches need manual review.",
+    "Link parser covers common inline/reference destinations, not the complete CommonMark grammar.",
+    "Sources/private trees and symlinks are excluded; repository content must be trusted before running tests."
+  ]
+}

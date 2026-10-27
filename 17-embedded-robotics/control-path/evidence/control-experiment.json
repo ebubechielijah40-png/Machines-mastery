@@ -1,0 +1,3751 @@
+{
+  "kind": "synthetic deterministic ODE/control experiment, no physical measurements",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "parameters": {
+    "inertia": 0.02,
+    "damping": 0.02,
+    "resistance": 2.0,
+    "inductance": 0.02,
+    "k": 0.1
+  },
+  "protocol": {
+    "dt_s": 0.002,
+    "duration_s": 8,
+    "target_before_4s_rad_s": 20,
+    "target_after_rad_s": 2,
+    "voltage_limit_V": 6,
+    "kp": 1,
+    "ki": 2,
+    "kd": 0
+  },
+  "energy_hand_case": {
+    "storage_rate_W": 3.79,
+    "electrical_input_W": 6.0,
+    "copper_loss_W": 2.0,
+    "viscous_loss_W": 0.18,
+    "load_power_W": 0.03
+  },
+  "conditions": {
+    "conditional_integration": {
+      "metrics": {
+        "final_speed_rad_s": 2.007525155519774,
+        "absolute_error_integral_after_switch_rad": 3.657968258026294,
+        "max_integral_abs_rad": 0.9508281362600284,
+        "saturated_fraction": 0.51925
+      },
+      "trace_every_50_steps": [
+        {
+          "time_s": 0.0,
+          "target_rad_s": 20.0,
+          "current_A": 0.0,
+          "speed_rad_s": 0.0,
+          "measurement_rad_s": 0.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.9427276930707094,
+          "speed_rad_s": 1.2787061821075156,
+          "measurement_rad_s": 1.2787061821075156,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.8789274561739155,
+          "speed_rad_s": 2.541486509505304,
+          "measurement_rad_s": 2.541486509505304,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.8225179292556595,
+          "speed_rad_s": 3.655539000963136,
+          "measurement_rad_s": 3.655539000963136,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.772752482246804,
+          "speed_rad_s": 4.638375001316616,
+          "measurement_rad_s": 4.638375001316616,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.728848560973091,
+          "speed_rad_s": 5.505449587757058,
+          "measurement_rad_s": 5.505449587757058,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.6901157771029163,
+          "speed_rad_s": 6.270397491761848,
+          "measurement_rad_s": 6.270397491761848,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.7000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.6559450583422697,
+          "speed_rad_s": 6.945247504658079,
+          "measurement_rad_s": 6.945247504658079,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.6257990707847276,
+          "speed_rad_s": 7.540611630138696,
+          "measurement_rad_s": 7.540611630138696,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.599203769345939,
+          "speed_rad_s": 8.065851957819927,
+          "measurement_rad_s": 8.065851957819927,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.575740943413635,
+          "speed_rad_s": 8.529227881923488,
+          "measurement_rad_s": 8.529227881923488,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.555041640493657,
+          "speed_rad_s": 8.93802598009454,
+          "measurement_rad_s": 8.93802598009454,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.5367803644389637,
+          "speed_rad_s": 9.2986745946974,
+          "measurement_rad_s": 9.2986745946974,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.520669957028874,
+          "speed_rad_s": 9.616844918377664,
+          "measurement_rad_s": 9.616844918377664,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.4000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.5064570824114756,
+          "speed_rad_s": 9.897540173459339,
+          "measurement_rad_s": 9.897540173459339,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4939182434021405,
+          "speed_rad_s": 10.145174287521307,
+          "measurement_rad_s": 10.145174287521307,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.4828562669945287,
+          "speed_rad_s": 10.363641302324998,
+          "measurement_rad_s": 10.363641302324998,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.473097203818785,
+          "speed_rad_s": 10.556376607547493,
+          "measurement_rad_s": 10.556376607547493,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.464487592790994,
+          "speed_rad_s": 10.726410962219232,
+          "measurement_rad_s": 10.726410962219232,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.9000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.4568920479405314,
+          "speed_rad_s": 10.876418153352487,
+          "measurement_rad_s": 10.876418153352487,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.450191129468236,
+          "speed_rad_s": 11.008757041191533,
+          "measurement_rad_s": 11.008757041191533,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4442794655578317,
+          "speed_rad_s": 11.125508652245417,
+          "measurement_rad_s": 11.125508652245417,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.439064095406102,
+          "speed_rad_s": 11.228508903390466,
+          "measurement_rad_s": 11.228508903390466,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4344630074160216,
+          "speed_rad_s": 11.31937747162843,
+          "measurement_rad_s": 11.31937747162843,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4304038495659435,
+          "speed_rad_s": 11.399543263476748,
+          "measurement_rad_s": 11.399543263476748,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4268227916754226,
+          "speed_rad_s": 11.470266884496484,
+          "measurement_rad_s": 11.470266884496484,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.423663521676842,
+          "speed_rad_s": 11.532660462290943,
+          "measurement_rad_s": 11.532660462290943,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.4208763601092067,
+          "speed_rad_s": 11.587705134691245,
+          "measurement_rad_s": 11.587705134691245,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4184174789095647,
+          "speed_rad_s": 11.636266478130098,
+          "measurement_rad_s": 11.636266478130098,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.416248212217545,
+          "speed_rad_s": 11.679108118814906,
+          "measurement_rad_s": 11.679108118814906,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.41433444835543,
+          "speed_rad_s": 11.716903740735395,
+          "measurement_rad_s": 11.716903740735395,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4126460934226728,
+          "speed_rad_s": 11.750247679331636,
+          "measurement_rad_s": 11.750247679331636,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.4111565980698786,
+          "speed_rad_s": 11.779664267407606,
+          "measurement_rad_s": 11.779664267407606,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4098425400107883,
+          "speed_rad_s": 11.805616080254602,
+          "measurement_rad_s": 11.805616080254602,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4086832557072677,
+          "speed_rad_s": 11.828511209638954,
+          "measurement_rad_s": 11.828511209638954,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.407660515435563,
+          "speed_rad_s": 11.84870968103734,
+          "measurement_rad_s": 11.84870968103734,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.406758236624241,
+          "speed_rad_s": 11.86652911503058,
+          "measurement_rad_s": 11.86652911503058,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.405962230956052,
+          "speed_rad_s": 11.882249721881292,
+          "measurement_rad_s": 11.882249721881292,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4052599812569153,
+          "speed_rad_s": 11.89611870783498,
+          "measurement_rad_s": 11.89611870783498,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.4046404446635905,
+          "speed_rad_s": 11.908354162433524,
+          "measurement_rad_s": 11.908354162433524,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.404093878974859,
+          "speed_rad_s": 11.91914848796914,
+          "measurement_rad_s": 11.91914848796914,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.1,
+          "target_rad_s": 2.0,
+          "current_A": -3.4818436966858166,
+          "speed_rad_s": 9.371259060791754,
+          "measurement_rad_s": 9.371259060791754,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.2,
+          "target_rad_s": 2.0,
+          "current_A": -3.1237451886438032,
+          "speed_rad_s": 6.8758199009150145,
+          "measurement_rad_s": 6.8758199009150145,
+          "voltage_V": -5.395635789471264,
+          "integral_rad": -0.25990794427812475
+        },
+        {
+          "time_s": 4.3,
+          "target_rad_s": 2.0,
+          "current_A": -2.4150278079665592,
+          "speed_rad_s": 4.9108012986847855,
+          "measurement_rad_s": 4.9108012986847855,
+          "voltage_V": -4.196172026975164,
+          "integral_rad": -0.6426853641451892
+        },
+        {
+          "time_s": 4.4,
+          "target_rad_s": 2.0,
+          "current_A": -1.810308035643254,
+          "speed_rad_s": 3.4447494719220164,
+          "measurement_rad_s": 3.4447494719220164,
+          "voltage_V": -3.155267344824198,
+          "integral_rad": -0.8552589364510906
+        },
+        {
+          "time_s": 4.5,
+          "target_rad_s": 2.0,
+          "current_A": -1.3030228155663255,
+          "speed_rad_s": 2.3820265445879363,
+          "measurement_rad_s": 2.3820265445879363,
+          "voltage_V": -2.267104187139383,
+          "integral_rad": -0.9425388212757233
+        },
+        {
+          "time_s": 4.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": -0.8839271665338975,
+          "speed_rad_s": 1.6400770918596193,
+          "measurement_rad_s": 1.6400770918596193,
+          "voltage_V": -1.5211575875956864,
+          "integral_rad": -0.9405402478680336
+        },
+        {
+          "time_s": 4.7,
+          "target_rad_s": 2.0,
+          "current_A": -0.5429429332523549,
+          "speed_rad_s": 1.148834947030687,
+          "measurement_rad_s": 1.148834947030687,
+          "voltage_V": -0.9041685731509657,
+          "integral_rad": -0.8776668130601394
+        },
+        {
+          "time_s": 4.8,
+          "target_rad_s": 2.0,
+          "current_A": -0.26985341965011095,
+          "speed_rad_s": 0.8497534463981381,
+          "measurement_rad_s": 0.8497534463981381,
+          "voltage_V": -0.40157750353456123,
+          "integral_rad": -0.7759120285682115
+        },
+        {
+          "time_s": 4.9,
+          "target_rad_s": 2.0,
+          "current_A": -0.054783569429145834,
+          "speed_rad_s": 0.6946514045673718,
+          "measurement_rad_s": 0.6946514045673718,
+          "voltage_V": 0.0014416961200940381,
+          "integral_rad": -0.651953449656267
+        },
+        {
+          "time_s": 5.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.11148674947655471,
+          "speed_rad_s": 0.6444825456712853,
+          "measurement_rad_s": 0.6444825456712853,
+          "voltage_V": 0.3192639748657835,
+          "integral_rad": -0.5181267397314656
+        },
+        {
+          "time_s": 5.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.23733679546232886,
+          "speed_rad_s": 0.6681052128851516,
+          "measurement_rad_s": 0.6681052128851516,
+          "voltage_V": 0.5653424610916472,
+          "integral_rad": -0.38327616301160067
+        },
+        {
+          "time_s": 5.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.3302138891477031,
+          "speed_rad_s": 0.7411047994218318,
+          "measurement_rad_s": 0.7411047994218318,
+          "voltage_V": 0.7519264277976482,
+          "integral_rad": -0.25348438639026
+        },
+        {
+          "time_s": 5.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.39661102619064875,
+          "speed_rad_s": 0.8447024585986427,
+          "measurement_rad_s": 0.8447024585986427,
+          "voltage_V": 0.8899201192686137,
+          "integral_rad": -0.13268871106637178
+        },
+        {
+          "time_s": 5.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.442092339266006,
+          "speed_rad_s": 0.964769322444906,
+          "measurement_rad_s": 0.964769322444906,
+          "voltage_V": 0.9888437871559829,
+          "integral_rad": -0.02319344519955563
+        },
+        {
+          "time_s": 5.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.4713501447311643,
+          "speed_rad_s": 1.0909548538704112,
+          "measurement_rad_s": 1.0909548538704112,
+          "voltage_V": 1.0568661798322763,
+          "integral_rad": 0.07391051685134378
+        },
+        {
+          "time_s": 5.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4882811198202195,
+          "speed_rad_s": 1.2159303483197765,
+          "measurement_rad_s": 1.2159303483197765,
+          "voltage_V": 1.100884433489285,
+          "integral_rad": 0.15840739090453082
+        },
+        {
+          "time_s": 5.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.496072289702877,
+          "speed_rad_s": 1.3347433618952889,
+          "measurement_rad_s": 1.3347433618952889,
+          "voltage_V": 1.1266329183831836,
+          "integral_rad": 0.23068814013923622
+        },
+        {
+          "time_s": 5.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.4972900413027907,
+          "speed_rad_s": 1.4442754460462472,
+          "measurement_rad_s": 1.4442754460462472,
+          "voltage_V": 1.1388072083723864,
+          "integral_rad": 0.2915413272093168
+        },
+        {
+          "time_s": 5.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.4939674030673877,
+          "speed_rad_s": 1.5427935748548884,
+          "measurement_rad_s": 1.5427935748548884,
+          "voltage_V": 1.14119308348325,
+          "integral_rad": 0.34199332916906927
+        },
+        {
+          "time_s": 6.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.4876864140044689,
+          "speed_rad_s": 1.6295846998813037,
+          "measurement_rad_s": 1.6295846998813037,
+          "voltage_V": 1.1367934608705705,
+          "integral_rad": 0.3831890803759371
+        },
+        {
+          "time_s": 6.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4796536225949742,
+          "speed_rad_s": 1.7046626692419775,
+          "measurement_rad_s": 1.7046626692419775,
+          "voltage_V": 1.1279484915147324,
+          "integral_rad": 0.4163055803783549
+        },
+        {
+          "time_s": 6.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.4707676710344221,
+          "speed_rad_s": 1.7685370717806657,
+          "measurement_rad_s": 1.7685370717806657,
+          "voltage_V": 1.1164458624785996,
+          "integral_rad": 0.4424914671296326
+        },
+        {
+          "time_s": 6.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.46167858951981333,
+          "speed_rad_s": 1.822034234281205,
+          "measurement_rad_s": 1.822034234281205,
+          "voltage_V": 1.1036197016937295,
+          "integral_rad": 0.46282696798746725
+        },
+        {
+          "time_s": 6.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.4528388983029143,
+          "speed_rad_s": 1.8661614724190958,
+          "measurement_rad_s": 1.8661614724190958,
+          "voltage_V": 1.0904374773651402,
+          "integral_rad": 0.478299474892118
+        },
+        {
+          "time_s": 6.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.4445469340301326,
+          "speed_rad_s": 1.9020066720550686,
+          "measurement_rad_s": 1.9020066720550686,
+          "voltage_V": 1.0775749895180893,
+          "integral_rad": 0.4897908307865789
+        },
+        {
+          "time_s": 6.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4369830167836847,
+          "speed_rad_s": 1.9306662821487988,
+          "measurement_rad_s": 1.9306662821487988,
+          "voltage_V": 1.0654800287234834,
+          "integral_rad": 0.49807315543614106
+        },
+        {
+          "time_s": 6.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.43023918440871806,
+          "speed_rad_s": 1.9531957819911003,
+          "measurement_rad_s": 1.9531957819911003,
+          "voltage_V": 1.0544255785360834,
+          "integral_rad": 0.5038106802635919
+        },
+        {
+          "time_s": 6.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.42434326491215557,
+          "speed_rad_s": 1.970577609089633,
+          "measurement_rad_s": 1.970577609089633,
+          "voltage_V": 1.04455360661841,
+          "integral_rad": 0.5075656078540215
+        },
+        {
+          "time_s": 6.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.4192780549886489,
+          "speed_rad_s": 1.9837023787867158,
+          "measurement_rad_s": 1.9837023787867158,
+          "voltage_V": 1.0359105599162741,
+          "integral_rad": 0.509806469351495
+        },
+        {
+          "time_s": 7.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.414996338069926,
+          "speed_rad_s": 1.9933599814933902,
+          "measurement_rad_s": 1.9933599814933902,
+          "voltage_V": 1.0284756796924157,
+          "integral_rad": 0.510917830592903
+        },
+        {
+          "time_s": 7.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4114324203134116,
+          "speed_rad_s": 2.000237804589681,
+          "measurement_rad_s": 2.000237804589681,
+          "voltage_V": 1.0221832048824864,
+          "integral_rad": 0.5112105047360836
+        },
+        {
+          "time_s": 7.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.40851079643754373,
+          "speed_rad_s": 2.004923895038099,
+          "measurement_rad_s": 2.004923895038099,
+          "voltage_V": 1.016939454290071,
+          "integral_rad": 0.510931674664085
+        },
+        {
+          "time_s": 7.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.40615248577110863,
+          "speed_rad_s": 2.0079133605254835,
+          "measurement_rad_s": 2.0079133605254835,
+          "voltage_V": 1.0126356826206084,
+          "integral_rad": 0.510274521573046
+        },
+        {
+          "time_s": 7.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.4042795069628309,
+          "speed_rad_s": 2.009616708584777,
+          "measurement_rad_s": 2.009616708584777,
+          "voltage_V": 1.0091575019192294,
+          "integral_rad": 0.5093871052520031
+        },
+        {
+          "time_s": 7.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.4028178906871066,
+          "speed_rad_s": 2.010369152920987,
+          "measurement_rad_s": 2.010369152920987,
+          "voltage_V": 1.0063915555525673,
+          "integral_rad": 0.5083803542367771
+        },
+        {
+          "time_s": 7.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4016995654415576,
+          "speed_rad_s": 2.010440182788167,
+          "measurement_rad_s": 2.010440182788167,
+          "voltage_V": 1.0042300312324877,
+          "integral_rad": 0.5073351070103272
+        },
+        {
+          "time_s": 7.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.4008633933601699,
+          "speed_rad_s": 2.010042903382908,
+          "measurement_rad_s": 2.010042903382908,
+          "voltage_V": 1.0025735058176952,
+          "integral_rad": 0.5063082046003016
+        },
+        {
+          "time_s": 7.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.4002555814212478,
+          "speed_rad_s": 2.0093428210656845,
+          "measurement_rad_s": 2.0093428210656845,
+          "voltage_V": 1.0013325295685638,
+          "integral_rad": 0.5053376753171241
+        },
+        {
+          "time_s": 7.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.3998296486109684,
+          "speed_rad_s": 2.0084658743901853,
+          "measurement_rad_s": 2.0084658743901853,
+          "voltage_V": 1.000428282043246,
+          "integral_rad": 0.5044470782167156
+        },
+        {
+          "time_s": 7.998,
+          "target_rad_s": 2.0,
+          "current_A": 0.39955059098114815,
+          "speed_rad_s": 2.007525155519774,
+          "measurement_rad_s": 2.007525155519774,
+          "voltage_V": 0.9998030402557294,
+          "integral_rad": 0.5036640978877518
+        }
+      ]
+    },
+    "unbounded_integrator": {
+      "metrics": {
+        "final_speed_rad_s": 7.512642286619825,
+        "absolute_error_integral_after_switch_rad": 38.79339442281705,
+        "max_integral_abs_rad": 41.64340163982747,
+        "saturated_fraction": 0.92125
+      },
+      "trace_every_50_steps": [
+        {
+          "time_s": 0.0,
+          "target_rad_s": 20.0,
+          "current_A": 0.0,
+          "speed_rad_s": 0.0,
+          "measurement_rad_s": 0.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.04
+        },
+        {
+          "time_s": 0.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.9427276930707094,
+          "speed_rad_s": 1.2787061821075156,
+          "measurement_rad_s": 1.2787061821075156,
+          "voltage_V": 6.0,
+          "integral_rad": 1.979390848493412
+        },
+        {
+          "time_s": 0.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.8789274561739155,
+          "speed_rad_s": 2.541486509505304,
+          "measurement_rad_s": 2.541486509505304,
+          "voltage_V": 6.0,
+          "integral_rad": 3.7858008478682015
+        },
+        {
+          "time_s": 0.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.8225179292556595,
+          "speed_rad_s": 3.655539000963136,
+          "measurement_rad_s": 3.655539000963136,
+          "voltage_V": 6.0,
+          "integral_rad": 5.473672872833233
+        },
+        {
+          "time_s": 0.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.772752482246804,
+          "speed_rad_s": 4.638375001316616,
+          "measurement_rad_s": 4.638375001316616,
+          "voltage_V": 6.0,
+          "integral_rad": 7.056968629789936
+        },
+        {
+          "time_s": 0.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.728848560973091,
+          "speed_rad_s": 5.505449587757058,
+          "measurement_rad_s": 5.505449587757058,
+          "voltage_V": 6.0,
+          "integral_rad": 8.548005429703151
+        },
+        {
+          "time_s": 0.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.6901157771029163,
+          "speed_rad_s": 6.270397491761848,
+          "measurement_rad_s": 6.270397491761848,
+          "voltage_V": 6.0,
+          "integral_rad": 9.957649813185624
+        },
+        {
+          "time_s": 0.7000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.6559450583422697,
+          "speed_rad_s": 6.945247504658079,
+          "measurement_rad_s": 6.945247504658079,
+          "voltage_V": 6.0,
+          "integral_rad": 11.295488426640638
+        },
+        {
+          "time_s": 0.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.6257990707847276,
+          "speed_rad_s": 7.540611630138696,
+          "measurement_rad_s": 7.540611630138696,
+          "voltage_V": 6.0,
+          "integral_rad": 12.5699787720955
+        },
+        {
+          "time_s": 0.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.599203769345939,
+          "speed_rad_s": 8.065851957819927,
+          "measurement_rad_s": 8.065851957819927,
+          "voltage_V": 6.0,
+          "integral_rad": 13.78858220126098
+        },
+        {
+          "time_s": 1.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.575740943413635,
+          "speed_rad_s": 8.529227881923488,
+          "measurement_rad_s": 8.529227881923488,
+          "voltage_V": 6.0,
+          "integral_rad": 14.957881245145886
+        },
+        {
+          "time_s": 1.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.555041640493657,
+          "speed_rad_s": 8.93802598009454,
+          "measurement_rad_s": 8.93802598009454,
+          "voltage_V": 6.0,
+          "integral_rad": 16.083683124232714
+        },
+        {
+          "time_s": 1.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.5367803644389637,
+          "speed_rad_s": 9.2986745946974,
+          "measurement_rad_s": 9.2986745946974,
+          "voltage_V": 6.0,
+          "integral_rad": 17.17111106690995
+        },
+        {
+          "time_s": 1.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.520669957028874,
+          "speed_rad_s": 9.616844918377664,
+          "measurement_rad_s": 9.616844918377664,
+          "voltage_V": 6.0,
+          "integral_rad": 18.22468487214161
+        },
+        {
+          "time_s": 1.4000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.5064570824114756,
+          "speed_rad_s": 9.897540173459339,
+          "measurement_rad_s": 9.897540173459339,
+          "voltage_V": 6.0,
+          "integral_rad": 19.248391983220454
+        },
+        {
+          "time_s": 1.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4939182434021405,
+          "speed_rad_s": 10.145174287521307,
+          "measurement_rad_s": 10.145174287521307,
+          "voltage_V": 6.0,
+          "integral_rad": 20.245750190238414
+        },
+        {
+          "time_s": 1.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.4828562669945287,
+          "speed_rad_s": 10.363641302324998,
+          "measurement_rad_s": 10.363641302324998,
+          "voltage_V": 6.0,
+          "integral_rad": 21.219862947269284
+        },
+        {
+          "time_s": 1.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.473097203818785,
+          "speed_rad_s": 10.556376607547493,
+          "measurement_rad_s": 10.556376607547493,
+          "voltage_V": 6.0,
+          "integral_rad": 22.173468174125283
+        },
+        {
+          "time_s": 1.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.464487592790994,
+          "speed_rad_s": 10.726410962219232,
+          "measurement_rad_s": 10.726410962219232,
+          "voltage_V": 6.0,
+          "integral_rad": 23.1089813100944
+        },
+        {
+          "time_s": 1.9000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.4568920479405314,
+          "speed_rad_s": 10.876418153352487,
+          "measurement_rad_s": 10.876418153352487,
+          "voltage_V": 6.0,
+          "integral_rad": 24.02853329667752
+        },
+        {
+          "time_s": 2.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.450191129468236,
+          "speed_rad_s": 11.008757041191533,
+          "measurement_rad_s": 11.008757041191533,
+          "voltage_V": 6.0,
+          "integral_rad": 24.934004086603206
+        },
+        {
+          "time_s": 2.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4442794655578317,
+          "speed_rad_s": 11.125508652245417,
+          "measurement_rad_s": 11.125508652245417,
+          "voltage_V": 6.0,
+          "integral_rad": 25.827052206048847
+        },
+        {
+          "time_s": 2.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.439064095406102,
+          "speed_rad_s": 11.228508903390466,
+          "measurement_rad_s": 11.228508903390466,
+          "voltage_V": 6.0,
+          "integral_rad": 26.709140834933397
+        },
+        {
+          "time_s": 2.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4344630074160216,
+          "speed_rad_s": 11.31937747162843,
+          "measurement_rad_s": 11.31937747162843,
+          "voltage_V": 6.0,
+          "integral_rad": 27.581560815393967
+        },
+        {
+          "time_s": 2.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4304038495659435,
+          "speed_rad_s": 11.399543263476748,
+          "measurement_rad_s": 11.399543263476748,
+          "voltage_V": 6.0,
+          "integral_rad": 28.44545095025397
+        },
+        {
+          "time_s": 2.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4268227916754226,
+          "speed_rad_s": 11.470266884496484,
+          "measurement_rad_s": 11.470266884496484,
+          "voltage_V": 6.0,
+          "integral_rad": 29.3018159106761
+        },
+        {
+          "time_s": 2.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.423663521676842,
+          "speed_rad_s": 11.532660462290943,
+          "measurement_rad_s": 11.532660462290943,
+          "voltage_V": 6.0,
+          "integral_rad": 30.151542034597263
+        },
+        {
+          "time_s": 2.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.4208763601092067,
+          "speed_rad_s": 11.587705134691245,
+          "measurement_rad_s": 11.587705134691245,
+          "voltage_V": 6.0,
+          "integral_rad": 30.995411264375907
+        },
+        {
+          "time_s": 2.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4184174789095647,
+          "speed_rad_s": 11.636266478130098,
+          "measurement_rad_s": 11.636266478130098,
+          "voltage_V": 6.0,
+          "integral_rad": 31.834113442820833
+        },
+        {
+          "time_s": 2.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.416248212217545,
+          "speed_rad_s": 11.679108118814906,
+          "measurement_rad_s": 11.679108118814906,
+          "voltage_V": 6.0,
+          "integral_rad": 32.66825716095632
+        },
+        {
+          "time_s": 3.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.41433444835543,
+          "speed_rad_s": 11.716903740735395,
+          "measurement_rad_s": 11.716903740735395,
+          "voltage_V": 6.0,
+          "integral_rad": 33.49837932810446
+        },
+        {
+          "time_s": 3.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4126460934226728,
+          "speed_rad_s": 11.750247679331636,
+          "measurement_rad_s": 11.750247679331636,
+          "voltage_V": 6.0,
+          "integral_rad": 34.32495361477412
+        },
+        {
+          "time_s": 3.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.4111565980698786,
+          "speed_rad_s": 11.779664267407606,
+          "measurement_rad_s": 11.779664267407606,
+          "voltage_V": 6.0,
+          "integral_rad": 35.14839790112074
+        },
+        {
+          "time_s": 3.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4098425400107883,
+          "speed_rad_s": 11.805616080254602,
+          "measurement_rad_s": 11.805616080254602,
+          "voltage_V": 6.0,
+          "integral_rad": 35.96908084810382
+        },
+        {
+          "time_s": 3.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4086832557072677,
+          "speed_rad_s": 11.828511209638954,
+          "measurement_rad_s": 11.828511209638954,
+          "voltage_V": 6.0,
+          "integral_rad": 36.78732769467364
+        },
+        {
+          "time_s": 3.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.407660515435563,
+          "speed_rad_s": 11.84870968103734,
+          "measurement_rad_s": 11.84870968103734,
+          "voltage_V": 6.0,
+          "integral_rad": 37.603425372147456
+        },
+        {
+          "time_s": 3.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.406758236624241,
+          "speed_rad_s": 11.86652911503058,
+          "measurement_rad_s": 11.86652911503058,
+          "voltage_V": 6.0,
+          "integral_rad": 38.41762701619922
+        },
+        {
+          "time_s": 3.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.405962230956052,
+          "speed_rad_s": 11.882249721881292,
+          "measurement_rad_s": 11.882249721881292,
+          "voltage_V": 6.0,
+          "integral_rad": 39.230155947413095
+        },
+        {
+          "time_s": 3.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4052599812569153,
+          "speed_rad_s": 11.89611870783498,
+          "measurement_rad_s": 11.89611870783498,
+          "voltage_V": 6.0,
+          "integral_rad": 40.04120918299553
+        },
+        {
+          "time_s": 3.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.4046404446635905,
+          "speed_rad_s": 11.908354162433524,
+          "measurement_rad_s": 11.908354162433524,
+          "voltage_V": 6.0,
+          "integral_rad": 40.85096053486707
+        },
+        {
+          "time_s": 4.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.404093878974859,
+          "speed_rad_s": 11.91914848796914,
+          "measurement_rad_s": 11.91914848796914,
+          "voltage_V": 6.0,
+          "integral_rad": 41.623563342851526
+        },
+        {
+          "time_s": 4.1,
+          "target_rad_s": 2.0,
+          "current_A": 2.403611689455603,
+          "speed_rad_s": 11.928671425006783,
+          "measurement_rad_s": 11.928671425006783,
+          "voltage_V": 6.0,
+          "integral_rad": 40.631152885941795
+        },
+        {
+          "time_s": 4.2,
+          "target_rad_s": 2.0,
+          "current_A": 2.403186293684747,
+          "speed_rad_s": 11.93707272155133,
+          "measurement_rad_s": 11.93707272155133,
+          "voltage_V": 6.0,
+          "integral_rad": 39.63784850955948
+        },
+        {
+          "time_s": 4.3,
+          "target_rad_s": 2.0,
+          "current_A": 2.4028110023218376,
+          "speed_rad_s": 11.944484487832073,
+          "measurement_rad_s": 11.944484487832073,
+          "voltage_V": 6.0,
+          "integral_rad": 38.64375550225935
+        },
+        {
+          "time_s": 4.4,
+          "target_rad_s": 2.0,
+          "current_A": 2.4024799139172903,
+          "speed_rad_s": 11.951023273733638,
+          "measurement_rad_s": 11.951023273733638,
+          "voltage_V": 6.0,
+          "integral_rad": 37.64896675138994
+        },
+        {
+          "time_s": 4.5,
+          "target_rad_s": 2.0,
+          "current_A": 2.4021878221122033,
+          "speed_rad_s": 11.956791901540704,
+          "measurement_rad_s": 11.956791901540704,
+          "voltage_V": 6.0,
+          "integral_rad": 36.65356420374527
+        },
+        {
+          "time_s": 4.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 2.4019301337684635,
+          "speed_rad_s": 11.961881082816468,
+          "measurement_rad_s": 11.961881082816468,
+          "voltage_V": 6.0,
+          "integral_rad": 35.657620154176726
+        },
+        {
+          "time_s": 4.7,
+          "target_rad_s": 2.0,
+          "current_A": 2.401702796741738,
+          "speed_rad_s": 11.966370844840263,
+          "measurement_rad_s": 11.966370844840263,
+          "voltage_V": 6.0,
+          "integral_rad": 34.66119838242815
+        },
+        {
+          "time_s": 4.8,
+          "target_rad_s": 2.0,
+          "current_A": 2.4015022361615808,
+          "speed_rad_s": 11.970331789035013,
+          "measurement_rad_s": 11.970331789035013,
+          "voltage_V": 6.0,
+          "integral_rad": 33.66435515607114
+        },
+        {
+          "time_s": 4.9,
+          "target_rad_s": 2.0,
+          "current_A": 2.401325298216661,
+          "speed_rad_s": 11.973826201173294,
+          "measurement_rad_s": 11.973826201173294,
+          "voltage_V": 6.0,
+          "integral_rad": 32.667140115311504
+        },
+        {
+          "time_s": 5.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.4011692005611396,
+          "speed_rad_s": 11.976909030819913,
+          "measurement_rad_s": 11.976909030819913,
+          "voltage_V": 6.0,
+          "integral_rad": 31.6695970535807
+        },
+        {
+          "time_s": 5.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 2.4010314885623356,
+          "speed_rad_s": 11.979628755412774,
+          "measurement_rad_s": 11.979628755412774,
+          "voltage_V": 6.0,
+          "integral_rad": 30.671764606186535
+        },
+        {
+          "time_s": 5.2,
+          "target_rad_s": 2.0,
+          "current_A": 2.400909996701671,
+          "speed_rad_s": 11.982028142569675,
+          "measurement_rad_s": 11.982028142569675,
+          "voltage_V": 6.0,
+          "integral_rad": 29.673676857852755
+        },
+        {
+          "time_s": 5.3,
+          "target_rad_s": 2.0,
+          "current_A": 2.4008028145219344,
+          "speed_rad_s": 11.984144922608284,
+          "measurement_rad_s": 11.984144922608284,
+          "voltage_V": 6.0,
+          "integral_rad": 28.675363878700637
+        },
+        {
+          "time_s": 5.4,
+          "target_rad_s": 2.0,
+          "current_A": 2.400708256585376,
+          "speed_rad_s": 11.986012381854696,
+          "measurement_rad_s": 11.986012381854696,
+          "voltage_V": 6.0,
+          "integral_rad": 27.67685219710113
+        },
+        {
+          "time_s": 5.5,
+          "target_rad_s": 2.0,
+          "current_A": 2.4006248359702305,
+          "speed_rad_s": 11.987659886070244,
+          "measurement_rad_s": 11.987659886070244,
+          "voltage_V": 6.0,
+          "integral_rad": 26.678165216832948
+        },
+        {
+          "time_s": 5.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 2.4005512408889027,
+          "speed_rad_s": 11.98911334222757,
+          "measurement_rad_s": 11.98911334222757,
+          "voltage_V": 6.0,
+          "integral_rad": 25.67932358510654
+        },
+        {
+          "time_s": 5.7,
+          "target_rad_s": 2.0,
+          "current_A": 2.4004863140601307,
+          "speed_rad_s": 11.990395605897268,
+          "measurement_rad_s": 11.990395605897268,
+          "voltage_V": 6.0,
+          "integral_rad": 24.68034551724111
+        },
+        {
+          "time_s": 5.8,
+          "target_rad_s": 2.0,
+          "current_A": 2.400429034510759,
+          "speed_rad_s": 11.9915268406513,
+          "measurement_rad_s": 11.9915268406513,
+          "voltage_V": 6.0,
+          "integral_rad": 23.681247083100132
+        },
+        {
+          "time_s": 5.9,
+          "target_rad_s": 2.0,
+          "current_A": 2.4003785015209567,
+          "speed_rad_s": 11.99252483513478,
+          "measurement_rad_s": 11.99252483513478,
+          "voltage_V": 6.0,
+          "integral_rad": 22.682042459789727
+        },
+        {
+          "time_s": 6.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.400333920460415,
+          "speed_rad_s": 11.99340528279209,
+          "measurement_rad_s": 11.99340528279209,
+          "voltage_V": 6.0,
+          "integral_rad": 21.68274415459327
+        },
+        {
+          "time_s": 6.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 2.4002945902928,
+          "speed_rad_s": 11.994182028645996,
+          "measurement_rad_s": 11.994182028645996,
+          "voltage_V": 6.0,
+          "integral_rad": 20.683363201648305
+        },
+        {
+          "time_s": 6.2,
+          "target_rad_s": 2.0,
+          "current_A": 2.4002598925519694,
+          "speed_rad_s": 11.994867287010369,
+          "measurement_rad_s": 11.994867287010369,
+          "voltage_V": 6.0,
+          "integral_rad": 19.683909335458043
+        },
+        {
+          "time_s": 6.3,
+          "target_rad_s": 2.0,
+          "current_A": 2.4002292816166038,
+          "speed_rad_s": 11.995471833560027,
+          "measurement_rad_s": 11.995471833560027,
+          "voltage_V": 6.0,
+          "integral_rad": 18.684391143966334
+        },
+        {
+          "time_s": 6.4,
+          "target_rad_s": 2.0,
+          "current_A": 2.400202276130324,
+          "speed_rad_s": 11.996005174778032,
+          "measurement_rad_s": 11.996005174778032,
+          "voltage_V": 6.0,
+          "integral_rad": 17.68481620360285
+        },
+        {
+          "time_s": 6.5,
+          "target_rad_s": 2.0,
+          "current_A": 2.4001784514323696,
+          "speed_rad_s": 11.996475697444948,
+          "measurement_rad_s": 11.996475697444948,
+          "voltage_V": 6.0,
+          "integral_rad": 16.685191198422345
+        },
+        {
+          "time_s": 6.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 2.4001574328798148,
+          "speed_rad_s": 11.996890800520832,
+          "measurement_rad_s": 11.996890800520832,
+          "voltage_V": 6.0,
+          "integral_rad": 15.685522025211272
+        },
+        {
+          "time_s": 6.7,
+          "target_rad_s": 2.0,
+          "current_A": 2.400138889956318,
+          "speed_rad_s": 11.99725701149369,
+          "measurement_rad_s": 11.99725701149369,
+          "voltage_V": 6.0,
+          "integral_rad": 14.685813886214618
+        },
+        {
+          "time_s": 6.8,
+          "target_rad_s": 2.0,
+          "current_A": 2.4001225310747594,
+          "speed_rad_s": 11.997580089024149,
+          "measurement_rad_s": 11.997580089024149,
+          "voltage_V": 6.0,
+          "integral_rad": 13.686071370941146
+        },
+        {
+          "time_s": 6.9,
+          "target_rad_s": 2.0,
+          "current_A": 2.4001080989920345,
+          "speed_rad_s": 11.997865113500264,
+          "measurement_rad_s": 11.997865113500264,
+          "voltage_V": 6.0,
+          "integral_rad": 12.686298528333317
+        },
+        {
+          "time_s": 7.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.4000953667639147,
+          "speed_rad_s": 11.998116566926537,
+          "measurement_rad_s": 11.998116566926537,
+          "voltage_V": 6.0,
+          "integral_rad": 11.686498930436825
+        },
+        {
+          "time_s": 7.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 2.400084134176355,
+          "speed_rad_s": 11.998338403403341,
+          "measurement_rad_s": 11.998338403403341,
+          "voltage_V": 6.0,
+          "integral_rad": 10.686675728570956
+        },
+        {
+          "time_s": 7.2,
+          "target_rad_s": 2.0,
+          "current_A": 2.400074224597127,
+          "speed_rad_s": 11.998534111305082,
+          "measurement_rad_s": 11.998534111305082,
+          "voltage_V": 6.0,
+          "integral_rad": 9.686831702883032
+        },
+        {
+          "time_s": 7.3,
+          "target_rad_s": 2.0,
+          "current_A": 2.4000654821982863,
+          "speed_rad_s": 11.9987067681348,
+          "measurement_rad_s": 11.9987067681348,
+          "voltage_V": 6.0,
+          "integral_rad": 8.686969306066159
+        },
+        {
+          "time_s": 7.4,
+          "target_rad_s": 2.0,
+          "current_A": 2.196245555625798,
+          "speed_rad_s": 11.986562971454388,
+          "measurement_rad_s": 11.986562971454388,
+          "voltage_V": 5.387852566305739,
+          "integral_rad": 7.6872077688800635
+        },
+        {
+          "time_s": 7.5,
+          "target_rad_s": 2.0,
+          "current_A": 1.3573477088969437,
+          "speed_rad_s": 11.678960000206166,
+          "measurement_rad_s": 11.678960000206166,
+          "voltage_V": 3.723030295459843,
+          "integral_rad": 6.700995147833004
+        },
+        {
+          "time_s": 7.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.7396565288204526,
+          "speed_rad_s": 11.055858254961423,
+          "measurement_rad_s": 11.055858254961423,
+          "voltage_V": 2.46979949288845,
+          "integral_rad": 5.762828873924937
+        },
+        {
+          "time_s": 7.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.3033879551618981,
+          "speed_rad_s": 10.243727531675358,
+          "measurement_rad_s": 10.243727531675358,
+          "voltage_V": 1.5513232183487045,
+          "integral_rad": 4.897525375012031
+        },
+        {
+          "time_s": 7.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.009624722512747753,
+          "speed_rad_s": 9.337202672618247,
+          "measurement_rad_s": 9.337202672618247,
+          "voltage_V": 0.9006380792814905,
+          "integral_rad": 4.118920375949869
+        },
+        {
+          "time_s": 7.9,
+          "target_rad_s": 2.0,
+          "current_A": -0.17429125564329062,
+          "speed_rad_s": 8.404931759253971,
+          "measurement_rad_s": 8.404931759253971,
+          "voltage_V": 0.46058655119771164,
+          "integral_rad": 3.4327591552258414
+        },
+        {
+          "time_s": 7.998,
+          "target_rad_s": 2.0,
+          "current_A": -0.27399066420059665,
+          "speed_rad_s": 7.512642286619825,
+          "measurement_rad_s": 7.512642286619825,
+          "voltage_V": 0.18737214740080965,
+          "integral_rad": 2.8500072170103175
+        }
+      ]
+    },
+    "delayed_sensor": {
+      "metrics": {
+        "final_speed_rad_s": 2.0005232942221176,
+        "absolute_error_integral_after_switch_rad": 3.4492330348173845,
+        "max_integral_abs_rad": 0.8051974905819853,
+        "saturated_fraction": 0.54425
+      },
+      "trace_every_50_steps": [
+        {
+          "time_s": 0.0,
+          "target_rad_s": 20.0,
+          "current_A": 0.0,
+          "speed_rad_s": 0.0,
+          "measurement_rad_s": 0.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.9427276930707094,
+          "speed_rad_s": 1.2787061821075156,
+          "measurement_rad_s": 0.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.8789274561739155,
+          "speed_rad_s": 2.541486509505304,
+          "measurement_rad_s": 0.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.8225179292556595,
+          "speed_rad_s": 3.655539000963136,
+          "measurement_rad_s": 1.2787061821075156,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.772752482246804,
+          "speed_rad_s": 4.638375001316616,
+          "measurement_rad_s": 2.541486509505304,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.728848560973091,
+          "speed_rad_s": 5.505449587757058,
+          "measurement_rad_s": 3.655539000963136,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.6901157771029163,
+          "speed_rad_s": 6.270397491761848,
+          "measurement_rad_s": 4.638375001316616,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.7000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.6559450583422697,
+          "speed_rad_s": 6.945247504658079,
+          "measurement_rad_s": 5.505449587757058,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.6257990707847276,
+          "speed_rad_s": 7.540611630138696,
+          "measurement_rad_s": 6.270397491761848,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.599203769345939,
+          "speed_rad_s": 8.065851957819927,
+          "measurement_rad_s": 6.945247504658079,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.575740943413635,
+          "speed_rad_s": 8.529227881923488,
+          "measurement_rad_s": 7.540611630138696,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.555041640493657,
+          "speed_rad_s": 8.93802598009454,
+          "measurement_rad_s": 8.065851957819927,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.5367803644389637,
+          "speed_rad_s": 9.2986745946974,
+          "measurement_rad_s": 8.529227881923488,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.520669957028874,
+          "speed_rad_s": 9.616844918377664,
+          "measurement_rad_s": 8.93802598009454,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.4000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.5064570824114756,
+          "speed_rad_s": 9.897540173459339,
+          "measurement_rad_s": 9.2986745946974,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4939182434021405,
+          "speed_rad_s": 10.145174287521307,
+          "measurement_rad_s": 9.616844918377664,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.4828562669945287,
+          "speed_rad_s": 10.363641302324998,
+          "measurement_rad_s": 9.897540173459339,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.473097203818785,
+          "speed_rad_s": 10.556376607547493,
+          "measurement_rad_s": 10.145174287521307,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.464487592790994,
+          "speed_rad_s": 10.726410962219232,
+          "measurement_rad_s": 10.363641302324998,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.9000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.4568920479405314,
+          "speed_rad_s": 10.876418153352487,
+          "measurement_rad_s": 10.556376607547493,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.450191129468236,
+          "speed_rad_s": 11.008757041191533,
+          "measurement_rad_s": 10.726410962219232,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4442794655578317,
+          "speed_rad_s": 11.125508652245417,
+          "measurement_rad_s": 10.876418153352487,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.439064095406102,
+          "speed_rad_s": 11.228508903390466,
+          "measurement_rad_s": 11.008757041191533,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4344630074160216,
+          "speed_rad_s": 11.31937747162843,
+          "measurement_rad_s": 11.125508652245417,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4304038495659435,
+          "speed_rad_s": 11.399543263476748,
+          "measurement_rad_s": 11.228508903390466,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4268227916754226,
+          "speed_rad_s": 11.470266884496484,
+          "measurement_rad_s": 11.31937747162843,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.423663521676842,
+          "speed_rad_s": 11.532660462290943,
+          "measurement_rad_s": 11.399543263476748,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.4208763601092067,
+          "speed_rad_s": 11.587705134691245,
+          "measurement_rad_s": 11.470266884496484,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4184174789095647,
+          "speed_rad_s": 11.636266478130098,
+          "measurement_rad_s": 11.532660462290943,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.416248212217545,
+          "speed_rad_s": 11.679108118814906,
+          "measurement_rad_s": 11.587705134691245,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.41433444835543,
+          "speed_rad_s": 11.716903740735395,
+          "measurement_rad_s": 11.636266478130098,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4126460934226728,
+          "speed_rad_s": 11.750247679331636,
+          "measurement_rad_s": 11.679108118814906,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.4111565980698786,
+          "speed_rad_s": 11.779664267407606,
+          "measurement_rad_s": 11.716903740735395,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4098425400107883,
+          "speed_rad_s": 11.805616080254602,
+          "measurement_rad_s": 11.750247679331636,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4086832557072677,
+          "speed_rad_s": 11.828511209638954,
+          "measurement_rad_s": 11.779664267407606,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.407660515435563,
+          "speed_rad_s": 11.84870968103734,
+          "measurement_rad_s": 11.805616080254602,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.406758236624241,
+          "speed_rad_s": 11.86652911503058,
+          "measurement_rad_s": 11.828511209638954,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.405962230956052,
+          "speed_rad_s": 11.882249721881292,
+          "measurement_rad_s": 11.84870968103734,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4052599812569153,
+          "speed_rad_s": 11.89611870783498,
+          "measurement_rad_s": 11.86652911503058,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.4046404446635905,
+          "speed_rad_s": 11.908354162433524,
+          "measurement_rad_s": 11.882249721881292,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.404093878974859,
+          "speed_rad_s": 11.91914848796914,
+          "measurement_rad_s": 11.89611870783498,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.1,
+          "target_rad_s": 2.0,
+          "current_A": -3.4818436966858166,
+          "speed_rad_s": 9.371259060791754,
+          "measurement_rad_s": 11.908354162433524,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.2,
+          "target_rad_s": 2.0,
+          "current_A": -3.3546686186630845,
+          "speed_rad_s": 6.854099702540722,
+          "measurement_rad_s": 11.91914848796914,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.3,
+          "target_rad_s": 2.0,
+          "current_A": -3.2422248561894818,
+          "speed_rad_s": 4.6334064859058,
+          "measurement_rad_s": 9.371259060791754,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.4,
+          "target_rad_s": 2.0,
+          "current_A": -2.90571379533518,
+          "speed_rad_s": 2.6963427057478695,
+          "measurement_rad_s": 6.854099702540722,
+          "voltage_V": -5.373302164357562,
+          "integral_rad": -0.2596012309084199
+        },
+        {
+          "time_s": 4.5,
+          "target_rad_s": 2.0,
+          "current_A": -2.100072330226665,
+          "speed_rad_s": 1.2497906235700096,
+          "measurement_rad_s": 4.6334064859058,
+          "voltage_V": -3.892283062183018,
+          "integral_rad": -0.6294382881386089
+        },
+        {
+          "time_s": 4.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": -1.2482653141271107,
+          "speed_rad_s": 0.33709245314619785,
+          "measurement_rad_s": 2.6963427057478695,
+          "voltage_V": -2.2785999888047392,
+          "integral_rad": -0.791128641528435
+        },
+        {
+          "time_s": 4.7,
+          "target_rad_s": 2.0,
+          "current_A": -0.4786583734544832,
+          "speed_rad_s": -0.09685090932461615,
+          "measurement_rad_s": 1.2497906235700096,
+          "voltage_V": -0.8146432973569537,
+          "integral_rad": -0.7824263368934721
+        },
+        {
+          "time_s": 4.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.12660330788290625,
+          "speed_rad_s": -0.1617216495837954,
+          "measurement_rad_s": 0.33709245314619785,
+          "voltage_V": 0.34983272794218423,
+          "integral_rad": -0.656537409455809
+        },
+        {
+          "time_s": 4.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.5463783335560691,
+          "speed_rad_s": 0.02275713798093905,
+          "measurement_rad_s": -0.09685090932461615,
+          "voltage_V": 1.1677555868740837,
+          "integral_rad": -0.4645476612252663
+        },
+        {
+          "time_s": 5.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.7953584846078884,
+          "speed_rad_s": 0.3470388699055609,
+          "measurement_rad_s": -0.1617216495837954,
+          "voltage_V": 1.663763465584668,
+          "integral_rad": -0.24897909199956356
+        },
+        {
+          "time_s": 5.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.9057653076729552,
+          "speed_rad_s": 0.7239139941655414,
+          "measurement_rad_s": 0.02275713798093905,
+          "voltage_V": 1.8959953652570904,
+          "integral_rad": -0.040623748380985314
+        },
+        {
+          "time_s": 5.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.9160980844321684,
+          "speed_rad_s": 1.0917079636402414,
+          "measurement_rad_s": 0.3470388699055609,
+          "voltage_V": 1.9356117991188997,
+          "integral_rad": 0.1413253345122303
+        },
+        {
+          "time_s": 5.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.862998775310716,
+          "speed_rad_s": 1.4127118187423724,
+          "measurement_rad_s": 0.7239139941655414,
+          "voltage_V": 1.8511719565981868,
+          "integral_rad": 0.2875429753818642
+        },
+        {
+          "time_s": 5.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.7770964491762349,
+          "speed_rad_s": 1.6688981747255611,
+          "measurement_rad_s": 1.0917079636402414,
+          "voltage_V": 1.7005471263684644,
+          "integral_rad": 0.3961275450043529
+        },
+        {
+          "time_s": 5.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.6813054129818329,
+          "speed_rad_s": 1.8566868850041718,
+          "measurement_rad_s": 1.4127118187423724,
+          "voltage_V": 1.5274772848295448,
+          "integral_rad": 0.4700945517859586
+        },
+        {
+          "time_s": 5.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.5908856671152966,
+          "speed_rad_s": 1.981862573666941,
+          "measurement_rad_s": 1.6688981747255611,
+          "voltage_V": 1.3614718606610245,
+          "integral_rad": 0.5151850176932928
+        },
+        {
+          "time_s": 5.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.5144943421099728,
+          "speed_rad_s": 2.0552682085778993,
+          "measurement_rad_s": 1.8566868850041718,
+          "voltage_V": 1.2196363351525148,
+          "integral_rad": 0.5381616100783433
+        },
+        {
+          "time_s": 5.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.45568436647106497,
+          "speed_rad_s": 2.08953589973445,
+          "measurement_rad_s": 1.981862573666941,
+          "voltage_V": 1.109392766052757,
+          "integral_rad": 0.545627669859849
+        },
+        {
+          "time_s": 5.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.4144675471794252,
+          "speed_rad_s": 2.0968692992613622,
+          "measurement_rad_s": 2.0552682085778993,
+          "voltage_V": 1.031368536709681,
+          "integral_rad": 0.5433183726437901
+        },
+        {
+          "time_s": 6.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.388710225618019,
+          "speed_rad_s": 2.0877468838085123,
+          "measurement_rad_s": 2.08953589973445,
+          "voltage_V": 0.9820053302419414,
+          "integral_rad": 0.5357706149881958
+        },
+        {
+          "time_s": 6.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.37524711979494124,
+          "speed_rad_s": 2.0703471347132103,
+          "measurement_rad_s": 2.0968692992613622,
+          "voltage_V": 0.9556618393850844,
+          "integral_rad": 0.5262655693232233
+        },
+        {
+          "time_s": 6.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.3706825861135034,
+          "speed_rad_s": 2.0504827062586726,
+          "measurement_rad_s": 2.0877468838085123,
+          "voltage_V": 0.9461422360103922,
+          "integral_rad": 0.5169445599094522
+        },
+        {
+          "time_s": 6.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.37190183108680275,
+          "speed_rad_s": 2.0318502966863368,
+          "measurement_rad_s": 2.0703471347132103,
+          "voltage_V": 0.9476848906732747,
+          "integral_rad": 0.5090160126932425
+        },
+        {
+          "time_s": 6.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.3763430535856412,
+          "speed_rad_s": 2.0164397885291736,
+          "measurement_rad_s": 2.0504827062586726,
+          "voltage_V": 0.9555016927238094,
+          "integral_rad": 0.502992199491241
+        },
+        {
+          "time_s": 6.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.3820917235179388,
+          "speed_rad_s": 2.0049884394462105,
+          "measurement_rad_s": 2.0318502966863368,
+          "voltage_V": 0.9659796875597653,
+          "integral_rad": 0.498914992123051
+        },
+        {
+          "time_s": 6.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.38785633945402975,
+          "speed_rad_s": 1.9974058128873127,
+          "measurement_rad_s": 2.0164397885291736,
+          "voltage_V": 0.9766549681100187,
+          "integral_rad": 0.49654737831959617
+        },
+        {
+          "time_s": 6.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.3928762487223496,
+          "speed_rad_s": 1.9931285114622472,
+          "measurement_rad_s": 2.0049884394462105,
+          "voltage_V": 0.9860535375573571,
+          "integral_rad": 0.49552098850178383
+        },
+        {
+          "time_s": 6.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.3968004013272241,
+          "speed_rad_s": 1.991388959932677,
+          "measurement_rad_s": 1.9974058128873127,
+          "voltage_V": 0.9934726424206334,
+          "integral_rad": 0.495439227653973
+        },
+        {
+          "time_s": 6.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.3995639541502652,
+          "speed_rad_s": 1.9913995561315518,
+          "measurement_rad_s": 1.9931285114622472,
+          "voltage_V": 0.9987540304368551,
+          "integral_rad": 0.49594127094955115
+        },
+        {
+          "time_s": 7.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.40127907880938657,
+          "speed_rad_s": 1.9924635572668967,
+          "measurement_rad_s": 1.991388959932677,
+          "voltage_V": 1.0020808823991307,
+          "integral_rad": 0.4967349211659039
+        },
+        {
+          "time_s": 7.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4021479448093342,
+          "speed_rad_s": 1.9940286461630936,
+          "measurement_rad_s": 1.9913995561315518,
+          "voltage_V": 1.0038143768401966,
+          "integral_rad": 0.49760696648587416
+        },
+        {
+          "time_s": 7.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.4023998376432838,
+          "speed_rad_s": 1.995699850466616,
+          "measurement_rad_s": 1.9924635572668967,
+          "voltage_V": 1.0043744038348221,
+          "integral_rad": 0.4984189805508594
+        },
+        {
+          "time_s": 7.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.40225053753833634,
+          "speed_rad_s": 1.9972268262653015,
+          "measurement_rad_s": 1.9940286461630936,
+          "voltage_V": 1.0041615493266767,
+          "integral_rad": 0.49909509774488514
+        },
+        {
+          "time_s": 7.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.401880036020536,
+          "speed_rad_s": 1.9984776396967145,
+          "measurement_rad_s": 1.995699850466616,
+          "voltage_V": 1.0035134284792153,
+          "integral_rad": 0.4996066394729156
+        },
+        {
+          "time_s": 7.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.401423942953477,
+          "speed_rad_s": 1.9994079402546585,
+          "measurement_rad_s": 1.9972268262653015,
+          "voltage_V": 1.002686913929217,
+          "integral_rad": 0.49995687009725914
+        },
+        {
+          "time_s": 7.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.40097409282392615,
+          "speed_rad_s": 2.0000313728261956,
+          "measurement_rad_s": 1.9984776396967145,
+          "voltage_V": 1.001857961771952,
+          "integral_rad": 0.5001678007343333
+        },
+        {
+          "time_s": 7.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.4005845198351134,
+          "speed_rad_s": 2.0003945283914417,
+          "measurement_rad_s": 1.9994079402546585,
+          "voltage_V": 1.001131881167548,
+          "integral_rad": 0.5002699107111033
+        },
+        {
+          "time_s": 7.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.40027984887103585,
+          "speed_rad_s": 2.000557805069315,
+          "measurement_rad_s": 2.0000313728261956,
+          "voltage_V": 1.0005584785929293,
+          "integral_rad": 0.5002949257095625
+        },
+        {
+          "time_s": 7.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.400064044697887,
+          "speed_rad_s": 2.0005822345004725,
+          "measurement_rad_s": 2.0003945283914417,
+          "voltage_V": 1.0001481550534572,
+          "integral_rad": 0.5002713417224495
+        },
+        {
+          "time_s": 7.998,
+          "target_rad_s": 2.0,
+          "current_A": 0.39993027964140987,
+          "speed_rad_s": 2.0005232942221176,
+          "measurement_rad_s": 2.0005560952986214,
+          "voltage_V": 0.999890451052877,
+          "integral_rad": 0.5002232731757492
+        }
+      ]
+    },
+    "biased_sensor": {
+      "metrics": {
+        "final_speed_rad_s": 1.507336280320331,
+        "absolute_error_integral_after_switch_rad": 5.225706113665942,
+        "max_integral_abs_rad": 0.9738700945148118,
+        "saturated_fraction": 0.52175
+      },
+      "trace_every_50_steps": [
+        {
+          "time_s": 0.0,
+          "target_rad_s": 20.0,
+          "current_A": 0.0,
+          "speed_rad_s": 0.0,
+          "measurement_rad_s": 0.5,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.9427276930707094,
+          "speed_rad_s": 1.2787061821075156,
+          "measurement_rad_s": 1.7787061821075156,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.8789274561739155,
+          "speed_rad_s": 2.541486509505304,
+          "measurement_rad_s": 3.041486509505304,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.8225179292556595,
+          "speed_rad_s": 3.655539000963136,
+          "measurement_rad_s": 4.155539000963136,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.772752482246804,
+          "speed_rad_s": 4.638375001316616,
+          "measurement_rad_s": 5.138375001316616,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.728848560973091,
+          "speed_rad_s": 5.505449587757058,
+          "measurement_rad_s": 6.005449587757058,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.6901157771029163,
+          "speed_rad_s": 6.270397491761848,
+          "measurement_rad_s": 6.770397491761848,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.7000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.6559450583422697,
+          "speed_rad_s": 6.945247504658079,
+          "measurement_rad_s": 7.445247504658079,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.6257990707847276,
+          "speed_rad_s": 7.540611630138696,
+          "measurement_rad_s": 8.040611630138695,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.599203769345939,
+          "speed_rad_s": 8.065851957819927,
+          "measurement_rad_s": 8.565851957819927,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.575740943413635,
+          "speed_rad_s": 8.529227881923488,
+          "measurement_rad_s": 9.029227881923488,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.555041640493657,
+          "speed_rad_s": 8.93802598009454,
+          "measurement_rad_s": 9.43802598009454,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.5367803644389637,
+          "speed_rad_s": 9.2986745946974,
+          "measurement_rad_s": 9.7986745946974,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.520669957028874,
+          "speed_rad_s": 9.616844918377664,
+          "measurement_rad_s": 10.116844918377664,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.4000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.5064570824114756,
+          "speed_rad_s": 9.897540173459339,
+          "measurement_rad_s": 10.397540173459339,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4939182434021405,
+          "speed_rad_s": 10.145174287521307,
+          "measurement_rad_s": 10.645174287521307,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.4828562669945287,
+          "speed_rad_s": 10.363641302324998,
+          "measurement_rad_s": 10.863641302324998,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.473097203818785,
+          "speed_rad_s": 10.556376607547493,
+          "measurement_rad_s": 11.056376607547493,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.464487592790994,
+          "speed_rad_s": 10.726410962219232,
+          "measurement_rad_s": 11.226410962219232,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.9000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.4568920479405314,
+          "speed_rad_s": 10.876418153352487,
+          "measurement_rad_s": 11.376418153352487,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.450191129468236,
+          "speed_rad_s": 11.008757041191533,
+          "measurement_rad_s": 11.508757041191533,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4442794655578317,
+          "speed_rad_s": 11.125508652245417,
+          "measurement_rad_s": 11.625508652245417,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.439064095406102,
+          "speed_rad_s": 11.228508903390466,
+          "measurement_rad_s": 11.728508903390466,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4344630074160216,
+          "speed_rad_s": 11.31937747162843,
+          "measurement_rad_s": 11.81937747162843,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4304038495659435,
+          "speed_rad_s": 11.399543263476748,
+          "measurement_rad_s": 11.899543263476748,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4268227916754226,
+          "speed_rad_s": 11.470266884496484,
+          "measurement_rad_s": 11.970266884496484,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.423663521676842,
+          "speed_rad_s": 11.532660462290943,
+          "measurement_rad_s": 12.032660462290943,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.4208763601092067,
+          "speed_rad_s": 11.587705134691245,
+          "measurement_rad_s": 12.087705134691245,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4184174789095647,
+          "speed_rad_s": 11.636266478130098,
+          "measurement_rad_s": 12.136266478130098,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.416248212217545,
+          "speed_rad_s": 11.679108118814906,
+          "measurement_rad_s": 12.179108118814906,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.41433444835543,
+          "speed_rad_s": 11.716903740735395,
+          "measurement_rad_s": 12.216903740735395,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4126460934226728,
+          "speed_rad_s": 11.750247679331636,
+          "measurement_rad_s": 12.250247679331636,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.4111565980698786,
+          "speed_rad_s": 11.779664267407606,
+          "measurement_rad_s": 12.279664267407606,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4098425400107883,
+          "speed_rad_s": 11.805616080254602,
+          "measurement_rad_s": 12.305616080254602,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4086832557072677,
+          "speed_rad_s": 11.828511209638954,
+          "measurement_rad_s": 12.328511209638954,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.407660515435563,
+          "speed_rad_s": 11.84870968103734,
+          "measurement_rad_s": 12.34870968103734,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.406758236624241,
+          "speed_rad_s": 11.86652911503058,
+          "measurement_rad_s": 12.36652911503058,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.405962230956052,
+          "speed_rad_s": 11.882249721881292,
+          "measurement_rad_s": 12.382249721881292,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4052599812569153,
+          "speed_rad_s": 11.89611870783498,
+          "measurement_rad_s": 12.39611870783498,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.4046404446635905,
+          "speed_rad_s": 11.908354162433524,
+          "measurement_rad_s": 12.408354162433524,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.404093878974859,
+          "speed_rad_s": 11.91914848796914,
+          "measurement_rad_s": 12.41914848796914,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.1,
+          "target_rad_s": 2.0,
+          "current_A": -3.4818436966858166,
+          "speed_rad_s": 9.371259060791754,
+          "measurement_rad_s": 9.871259060791754,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.2,
+          "target_rad_s": 2.0,
+          "current_A": -3.2459594041015594,
+          "speed_rad_s": 6.859783043954092,
+          "measurement_rad_s": 7.359783043954092,
+          "voltage_V": -5.653190802652106,
+          "integral_rad": -0.14670387934900686
+        },
+        {
+          "time_s": 4.3,
+          "target_rad_s": 2.0,
+          "current_A": -2.553390674447887,
+          "speed_rad_s": 4.833203949925382,
+          "measurement_rad_s": 5.333203949925382,
+          "voltage_V": -4.482693750906636,
+          "integral_rad": -0.5747449004906267
+        },
+        {
+          "time_s": 4.4,
+          "target_rad_s": 2.0,
+          "current_A": -1.9552113778192408,
+          "speed_rad_s": 3.3069336517984844,
+          "measurement_rad_s": 3.8069336517984844,
+          "voltage_V": -3.459862730634484,
+          "integral_rad": -0.8264645394179996
+        },
+        {
+          "time_s": 4.5,
+          "target_rad_s": 2.0,
+          "current_A": -1.4504745803093722,
+          "speed_rad_s": 2.1876282674285483,
+          "measurement_rad_s": 2.6876282674285483,
+          "voltage_V": -2.581709299001899,
+          "integral_rad": -0.9470405157866751
+        },
+        {
+          "time_s": 4.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": -1.0310929036348606,
+          "speed_rad_s": 1.39399505408868,
+          "measurement_rad_s": 1.89399505408868,
+          "voltage_V": -1.8398389014405527,
+          "integral_rad": -0.9729219236759363
+        },
+        {
+          "time_s": 4.7,
+          "target_rad_s": 2.0,
+          "current_A": -0.6878994655516415,
+          "speed_rad_s": 0.8566208408958458,
+          "measurement_rad_s": 1.3566208408958458,
+          "voltage_V": -1.222700573810273,
+          "integral_rad": -0.9330398664572136
+        },
+        {
+          "time_s": 4.8,
+          "target_rad_s": 2.0,
+          "current_A": -0.4113819126772934,
+          "speed_rad_s": 0.5171677875533947,
+          "measurement_rad_s": 1.0171677875533947,
+          "voltage_V": -0.7170813436990287,
+          "integral_rad": -0.849956778072817
+        },
+        {
+          "time_s": 4.9,
+          "target_rad_s": 2.0,
+          "current_A": -0.19219816303796824,
+          "speed_rad_s": 0.3273513304095838,
+          "measurement_rad_s": 0.8273513304095839,
+          "voltage_V": -0.30919757634289113,
+          "integral_rad": -0.7409231229666536
+        },
+        {
+          "time_s": 5.0,
+          "target_rad_s": 2.0,
+          "current_A": -0.02152128974943051,
+          "speed_rad_s": 0.24781305510385415,
+          "measurement_rad_s": 0.7478130551038542,
+          "voltage_V": 0.014535477414369113,
+          "integral_rad": -0.6188257337408883
+        },
+        {
+          "time_s": 5.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.10874698536729632,
+          "speed_rad_s": 0.24696995062343732,
+          "measurement_rad_s": 0.7469699506234373,
+          "voltage_V": 0.2669867184102904,
+          "integral_rad": -0.49302166548313614
+        },
+        {
+          "time_s": 5.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.20586162842109784,
+          "speed_rad_s": 0.2998966713889967,
+          "measurement_rad_s": 0.7998966713889968,
+          "voltage_V": 0.4599867776005446,
+          "integral_rad": -0.3700582755052293
+        },
+        {
+          "time_s": 5.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.27619200828415846,
+          "speed_rad_s": 0.38727806318325686,
+          "measurement_rad_s": 0.8872780631832569,
+          "voltage_V": 0.6041521959692658,
+          "integral_rad": -0.25428487042373865
+        },
+        {
+          "time_s": 5.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.3252308374709149,
+          "speed_rad_s": 0.49445439139884484,
+          "measurement_rad_s": 0.9944543913988448,
+          "voltage_V": 0.7088172125872578,
+          "integral_rad": -0.14836419800694867
+        },
+        {
+          "time_s": 5.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.35763770889644847,
+          "speed_rad_s": 0.6105706345722173,
+          "measurement_rad_s": 1.1105706345722173,
+          "voltage_V": 0.7820419410994113,
+          "integral_rad": -0.053693712164185725
+        },
+        {
+          "time_s": 5.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.3773043960862519,
+          "speed_rad_s": 0.7278331585245992,
+          "measurement_rad_s": 1.2278331585245992,
+          "voltage_V": 0.8306723558495148,
+          "integral_rad": 0.029252757187056996
+        },
+        {
+          "time_s": 5.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.38743222546606554,
+          "speed_rad_s": 0.8408714498611919,
+          "measurement_rad_s": 1.3408714498611918,
+          "voltage_V": 0.8604330928154323,
+          "integral_rad": 0.10065227133831207
+        },
+        {
+          "time_s": 5.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.390614387910722,
+          "speed_rad_s": 0.9461988379891142,
+          "measurement_rad_s": 1.4461988379891142,
+          "voltage_V": 0.8760386943620001,
+          "integral_rad": 0.16111876617555715
+        },
+        {
+          "time_s": 5.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.3889181082940465,
+          "speed_rad_s": 1.0417638337728063,
+          "measurement_rad_s": 1.5417638337728063,
+          "voltage_V": 0.8813126976366326,
+          "integral_rad": 0.21153826570471945
+        },
+        {
+          "time_s": 6.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.38396320957072205,
+          "speed_rad_s": 1.1265824992380962,
+          "measurement_rad_s": 1.6265824992380962,
+          "voltage_V": 0.8793069937941765,
+          "integral_rad": 0.25294474651613635
+        },
+        {
+          "time_s": 6.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.3769948604476035,
+          "speed_rad_s": 1.2004418432943458,
+          "measurement_rad_s": 1.7004418432943458,
+          "voltage_V": 0.8724162756965348,
+          "integral_rad": 0.2864290594954403
+        },
+        {
+          "time_s": 6.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.3689492453430157,
+          "speed_rad_s": 1.2636643792441258,
+          "measurement_rad_s": 1.7636643792441258,
+          "voltage_V": 0.8624842452395171,
+          "integral_rad": 0.3130743122418214
+        },
+        {
+          "time_s": 6.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.3605115976122692,
+          "speed_rad_s": 1.3169244971765555,
+          "measurement_rad_s": 1.8169244971765555,
+          "voltage_V": 0.8508996591884032,
+          "integral_rad": 0.3339120781824793
+        },
+        {
+          "time_s": 6.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.3521665404103441,
+          "speed_rad_s": 1.3611080566741276,
+          "measurement_rad_s": 1.8611080566741276,
+          "voltage_V": 0.8386813356434483,
+          "integral_rad": 0.34989469615878793
+        },
+        {
+          "time_s": 6.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.3442410256594339,
+          "speed_rad_s": 1.39720748593811,
+          "measurement_rad_s": 1.89720748593811,
+          "voltage_V": 0.8265519930748547,
+          "integral_rad": 0.3618797395064824
+        },
+        {
+          "time_s": 6.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.3369403855046975,
+          "speed_rad_s": 1.4262456041423648,
+          "measurement_rad_s": 1.9262456041423648,
+          "voltage_V": 0.8150013113178632,
+          "integral_rad": 0.370623457730114
+        },
+        {
+          "time_s": 6.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.33037814157002465,
+          "speed_rad_s": 1.4492223089511334,
+          "measurement_rad_s": 1.9492223089511334,
+          "voltage_V": 0.8043389406129385,
+          "integral_rad": 0.37678062478203594
+        },
+        {
+          "time_s": 6.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.3246002791710422,
+          "speed_rad_s": 1.4670791529512162,
+          "measurement_rad_s": 1.9670791529512162,
+          "voltage_V": 0.7947383836714971,
+          "integral_rad": 0.3809087683113566
+        },
+        {
+          "time_s": 6.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.3196047056767397,
+          "speed_rad_s": 1.4806776473387435,
+          "measurement_rad_s": 1.9806776473387435,
+          "voltage_V": 0.7862727720601508,
+          "integral_rad": 0.38347520969944715
+        },
+        {
+          "time_s": 7.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.31535658971979696,
+          "speed_rad_s": 1.490787865106784,
+          "measurement_rad_s": 1.990787865106784,
+          "voltage_V": 0.7789435803519993,
+          "integral_rad": 0.3848657227293917
+        },
+        {
+          "time_s": 7.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.3118002328504379,
+          "speed_rad_s": 1.4980845634578976,
+          "measurement_rad_s": 1.9980845634578976,
+          "voltage_V": 0.7727032920679267,
+          "integral_rad": 0.38539392776291215
+        },
+        {
+          "time_s": 7.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.3088680666082503,
+          "speed_rad_s": 1.5031486059832637,
+          "measurement_rad_s": 2.003148605983264,
+          "voltage_V": 0.767472968041612,
+          "integral_rad": 0.385310787012438
+        },
+        {
+          "time_s": 7.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.30648730264077595,
+          "speed_rad_s": 1.5064719428490436,
+          "measurement_rad_s": 2.0064719428490436,
+          "voltage_V": 0.7631555839686114,
+          "integral_rad": 0.3848137634088275
+        },
+        {
+          "time_s": 7.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.3045846963501222,
+          "speed_rad_s": 1.5084648077785185,
+          "measurement_rad_s": 2.0084648077785188,
+          "voltage_V": 0.7596459096210288,
+          "integral_rad": 0.3840553586997738
+        },
+        {
+          "time_s": 7.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.3030898190380358,
+          "speed_rad_s": 1.509464121384135,
+          "measurement_rad_s": 2.009464121384135,
+          "voltage_V": 0.7568376048510818,
+          "integral_rad": 0.38315086311760843
+        },
+        {
+          "time_s": 7.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.3019371719238463,
+          "speed_rad_s": 1.5097423593979777,
+          "measurement_rad_s": 2.0097423593979777,
+          "voltage_V": 0.7546281122029941,
+          "integral_rad": 0.3821852358004859
+        },
+        {
+          "time_s": 7.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.3010674191167366,
+          "speed_rad_s": 1.509516359680007,
+          "measurement_rad_s": 2.009516359680007,
+          "voltage_V": 0.7529218361208857,
+          "integral_rad": 0.38121909790044645
+        },
+        {
+          "time_s": 7.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.3004279663555284,
+          "speed_rad_s": 1.5089557113778196,
+          "measurement_rad_s": 2.0089557113778196,
+          "voltage_V": 0.7516320164806573,
+          "integral_rad": 0.3802938639292384
+        },
+        {
+          "time_s": 7.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.29997306832089893,
+          "speed_rad_s": 1.508190500571585,
+          "measurement_rad_s": 2.008190500571585,
+          "voltage_V": 0.7506816305967682,
+          "integral_rad": 0.3794360655841766
+        },
+        {
+          "time_s": 7.998,
+          "target_rad_s": 2.0,
+          "current_A": 0.2996685959592032,
+          "speed_rad_s": 1.507336280320331,
+          "measurement_rad_s": 2.007336280320331,
+          "voltage_V": 0.7500148719648663,
+          "integral_rad": 0.3786755761425986
+        }
+      ]
+    },
+    "noisy_quantized": {
+      "metrics": {
+        "final_speed_rad_s": 2.0067886217467095,
+        "absolute_error_integral_after_switch_rad": 3.6514381327837406,
+        "max_integral_abs_rad": 0.9421999999999996,
+        "saturated_fraction": 0.5195
+      },
+      "trace_every_50_steps": [
+        {
+          "time_s": 0.0,
+          "target_rad_s": 20.0,
+          "current_A": 0.0,
+          "speed_rad_s": 0.0,
+          "measurement_rad_s": 0.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.9427276930707094,
+          "speed_rad_s": 1.2787061821075156,
+          "measurement_rad_s": 1.4000000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.8789274561739155,
+          "speed_rad_s": 2.541486509505304,
+          "measurement_rad_s": 2.5,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.8225179292556595,
+          "speed_rad_s": 3.655539000963136,
+          "measurement_rad_s": 3.7,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.772752482246804,
+          "speed_rad_s": 4.638375001316616,
+          "measurement_rad_s": 4.6000000000000005,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.728848560973091,
+          "speed_rad_s": 5.505449587757058,
+          "measurement_rad_s": 5.5,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.6901157771029163,
+          "speed_rad_s": 6.270397491761848,
+          "measurement_rad_s": 6.300000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.7000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.6559450583422697,
+          "speed_rad_s": 6.945247504658079,
+          "measurement_rad_s": 7.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.6257990707847276,
+          "speed_rad_s": 7.540611630138696,
+          "measurement_rad_s": 7.5,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 0.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.599203769345939,
+          "speed_rad_s": 8.065851957819927,
+          "measurement_rad_s": 8.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.575740943413635,
+          "speed_rad_s": 8.529227881923488,
+          "measurement_rad_s": 8.4,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.555041640493657,
+          "speed_rad_s": 8.93802598009454,
+          "measurement_rad_s": 8.9,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.5367803644389637,
+          "speed_rad_s": 9.2986745946974,
+          "measurement_rad_s": 9.3,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.3,
+          "target_rad_s": 20.0,
+          "current_A": 2.520669957028874,
+          "speed_rad_s": 9.616844918377664,
+          "measurement_rad_s": 9.600000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.4000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.5064570824114756,
+          "speed_rad_s": 9.897540173459339,
+          "measurement_rad_s": 9.8,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4939182434021405,
+          "speed_rad_s": 10.145174287521307,
+          "measurement_rad_s": 10.200000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.4828562669945287,
+          "speed_rad_s": 10.363641302324998,
+          "measurement_rad_s": 10.4,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.473097203818785,
+          "speed_rad_s": 10.556376607547493,
+          "measurement_rad_s": 10.5,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.8,
+          "target_rad_s": 20.0,
+          "current_A": 2.464487592790994,
+          "speed_rad_s": 10.726410962219232,
+          "measurement_rad_s": 10.700000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 1.9000000000000001,
+          "target_rad_s": 20.0,
+          "current_A": 2.4568920479405314,
+          "speed_rad_s": 10.876418153352487,
+          "measurement_rad_s": 10.9,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.450191129468236,
+          "speed_rad_s": 11.008757041191533,
+          "measurement_rad_s": 10.9,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4442794655578317,
+          "speed_rad_s": 11.125508652245417,
+          "measurement_rad_s": 11.200000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.439064095406102,
+          "speed_rad_s": 11.228508903390466,
+          "measurement_rad_s": 11.3,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4344630074160216,
+          "speed_rad_s": 11.31937747162843,
+          "measurement_rad_s": 11.3,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4304038495659435,
+          "speed_rad_s": 11.399543263476748,
+          "measurement_rad_s": 11.3,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.4268227916754226,
+          "speed_rad_s": 11.470266884496484,
+          "measurement_rad_s": 11.5,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.423663521676842,
+          "speed_rad_s": 11.532660462290943,
+          "measurement_rad_s": 11.600000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.4208763601092067,
+          "speed_rad_s": 11.587705134691245,
+          "measurement_rad_s": 11.700000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4184174789095647,
+          "speed_rad_s": 11.636266478130098,
+          "measurement_rad_s": 11.600000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 2.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.416248212217545,
+          "speed_rad_s": 11.679108118814906,
+          "measurement_rad_s": 11.700000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.0,
+          "target_rad_s": 20.0,
+          "current_A": 2.41433444835543,
+          "speed_rad_s": 11.716903740735395,
+          "measurement_rad_s": 11.8,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.1,
+          "target_rad_s": 20.0,
+          "current_A": 2.4126460934226728,
+          "speed_rad_s": 11.750247679331636,
+          "measurement_rad_s": 11.700000000000001,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.2,
+          "target_rad_s": 20.0,
+          "current_A": 2.4111565980698786,
+          "speed_rad_s": 11.779664267407606,
+          "measurement_rad_s": 11.8,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.3000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4098425400107883,
+          "speed_rad_s": 11.805616080254602,
+          "measurement_rad_s": 11.8,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.4,
+          "target_rad_s": 20.0,
+          "current_A": 2.4086832557072677,
+          "speed_rad_s": 11.828511209638954,
+          "measurement_rad_s": 11.8,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.5,
+          "target_rad_s": 20.0,
+          "current_A": 2.407660515435563,
+          "speed_rad_s": 11.84870968103734,
+          "measurement_rad_s": 11.9,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.6,
+          "target_rad_s": 20.0,
+          "current_A": 2.406758236624241,
+          "speed_rad_s": 11.86652911503058,
+          "measurement_rad_s": 11.9,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.7,
+          "target_rad_s": 20.0,
+          "current_A": 2.405962230956052,
+          "speed_rad_s": 11.882249721881292,
+          "measurement_rad_s": 11.8,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.8000000000000003,
+          "target_rad_s": 20.0,
+          "current_A": 2.4052599812569153,
+          "speed_rad_s": 11.89611870783498,
+          "measurement_rad_s": 11.9,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 3.9,
+          "target_rad_s": 20.0,
+          "current_A": 2.4046404446635905,
+          "speed_rad_s": 11.908354162433524,
+          "measurement_rad_s": 12.0,
+          "voltage_V": 6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.0,
+          "target_rad_s": 2.0,
+          "current_A": 2.404093878974859,
+          "speed_rad_s": 11.91914848796914,
+          "measurement_rad_s": 11.9,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.1,
+          "target_rad_s": 2.0,
+          "current_A": -3.4818436966858166,
+          "speed_rad_s": 9.371259060791754,
+          "measurement_rad_s": 9.3,
+          "voltage_V": -6.0,
+          "integral_rad": 0.0
+        },
+        {
+          "time_s": 4.2,
+          "target_rad_s": 2.0,
+          "current_A": -3.113163598696335,
+          "speed_rad_s": 6.879444779520379,
+          "measurement_rad_s": 6.9,
+          "voltage_V": -5.3948,
+          "integral_rad": -0.2474
+        },
+        {
+          "time_s": 4.3,
+          "target_rad_s": 2.0,
+          "current_A": -2.4207702756215017,
+          "speed_rad_s": 4.916857603531223,
+          "measurement_rad_s": 4.9,
+          "voltage_V": -4.1632,
+          "integral_rad": -0.6315999999999999
+        },
+        {
+          "time_s": 4.4,
+          "target_rad_s": 2.0,
+          "current_A": -1.8035417457580256,
+          "speed_rad_s": 3.4529647446949023,
+          "measurement_rad_s": 3.4000000000000004,
+          "voltage_V": -3.0896,
+          "integral_rad": -0.8447999999999998
+        },
+        {
+          "time_s": 4.5,
+          "target_rad_s": 2.0,
+          "current_A": -1.2905953816923934,
+          "speed_rad_s": 2.3902104559116886,
+          "measurement_rad_s": 2.4000000000000004,
+          "voltage_V": -2.2672,
+          "integral_rad": -0.9335999999999999
+        },
+        {
+          "time_s": 4.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": -0.8803878516704712,
+          "speed_rad_s": 1.6500577282629205,
+          "measurement_rad_s": 1.7000000000000002,
+          "voltage_V": -1.564799999999999,
+          "integral_rad": -0.9323999999999995
+        },
+        {
+          "time_s": 4.7,
+          "target_rad_s": 2.0,
+          "current_A": -0.545820019991116,
+          "speed_rad_s": 1.1611070859479693,
+          "measurement_rad_s": 1.2000000000000002,
+          "voltage_V": -0.9395999999999989,
+          "integral_rad": -0.8697999999999994
+        },
+        {
+          "time_s": 4.8,
+          "target_rad_s": 2.0,
+          "current_A": -0.27312344175883896,
+          "speed_rad_s": 0.861911255620622,
+          "measurement_rad_s": 0.9,
+          "voltage_V": -0.4379999999999986,
+          "integral_rad": -0.7689999999999994
+        },
+        {
+          "time_s": 4.9,
+          "target_rad_s": 2.0,
+          "current_A": -0.04718023137404685,
+          "speed_rad_s": 0.703252196607574,
+          "measurement_rad_s": 0.8,
+          "voltage_V": -0.0939999999999992,
+          "integral_rad": -0.6469999999999996
+        },
+        {
+          "time_s": 5.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.12485646005143114,
+          "speed_rad_s": 0.6549092718767937,
+          "measurement_rad_s": 0.6000000000000001,
+          "voltage_V": 0.374800000000004,
+          "integral_rad": -0.512599999999998
+        },
+        {
+          "time_s": 5.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.22998607042790223,
+          "speed_rad_s": 0.6774266604785188,
+          "measurement_rad_s": 0.7000000000000001,
+          "voltage_V": 0.5416000000000045,
+          "integral_rad": -0.37919999999999765
+        },
+        {
+          "time_s": 5.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.32190643699608684,
+          "speed_rad_s": 0.7478570963104898,
+          "measurement_rad_s": 0.8,
+          "voltage_V": 0.6984000000000048,
+          "integral_rad": -0.2507999999999976
+        },
+        {
+          "time_s": 5.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.3978038075894769,
+          "speed_rad_s": 0.8499858433450275,
+          "measurement_rad_s": 0.9,
+          "voltage_V": 0.8388000000000055,
+          "integral_rad": -0.13059999999999725
+        },
+        {
+          "time_s": 5.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.44355292654313855,
+          "speed_rad_s": 0.966946928983712,
+          "measurement_rad_s": 1.0,
+          "voltage_V": 0.9552000000000054,
+          "integral_rad": -0.022399999999997318
+        },
+        {
+          "time_s": 5.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.47861901457601724,
+          "speed_rad_s": 1.0930397047240616,
+          "measurement_rad_s": 1.2000000000000002,
+          "voltage_V": 0.9492000000000053,
+          "integral_rad": 0.07460000000000272
+        },
+        {
+          "time_s": 5.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.47892456761341623,
+          "speed_rad_s": 1.21807378807809,
+          "measurement_rad_s": 1.3,
+          "voltage_V": 1.0176000000000052,
+          "integral_rad": 0.15880000000000263
+        },
+        {
+          "time_s": 5.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.51124726897679,
+          "speed_rad_s": 1.335351649761277,
+          "measurement_rad_s": 1.3,
+          "voltage_V": 1.1624000000000057,
+          "integral_rad": 0.23120000000000288
+        },
+        {
+          "time_s": 5.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.4900048107873871,
+          "speed_rad_s": 1.4422308008813989,
+          "measurement_rad_s": 1.5,
+          "voltage_V": 1.080800000000005,
+          "integral_rad": 0.29040000000000254
+        },
+        {
+          "time_s": 5.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.499008550234489,
+          "speed_rad_s": 1.5408246872798566,
+          "measurement_rad_s": 1.5,
+          "voltage_V": 1.182800000000005,
+          "integral_rad": 0.3414000000000025
+        },
+        {
+          "time_s": 6.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.48775942108968423,
+          "speed_rad_s": 1.6315648014623423,
+          "measurement_rad_s": 1.6,
+          "voltage_V": 1.168000000000006,
+          "integral_rad": 0.38400000000000306
+        },
+        {
+          "time_s": 6.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.4784295373386196,
+          "speed_rad_s": 1.7039966781417009,
+          "measurement_rad_s": 1.6,
+          "voltage_V": 1.232400000000006,
+          "integral_rad": 0.416200000000003
+        },
+        {
+          "time_s": 6.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.469630847524726,
+          "speed_rad_s": 1.7701813963695534,
+          "measurement_rad_s": 1.8,
+          "voltage_V": 1.086000000000006,
+          "integral_rad": 0.443000000000003
+        },
+        {
+          "time_s": 6.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.4608724610131567,
+          "speed_rad_s": 1.8215241314598607,
+          "measurement_rad_s": 1.9000000000000001,
+          "voltage_V": 1.0248000000000057,
+          "integral_rad": 0.462400000000003
+        },
+        {
+          "time_s": 6.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.4546284908864957,
+          "speed_rad_s": 1.8660901835615933,
+          "measurement_rad_s": 1.8,
+          "voltage_V": 1.1568000000000054,
+          "integral_rad": 0.47840000000000277
+        },
+        {
+          "time_s": 6.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.441610442652156,
+          "speed_rad_s": 1.9033686794249238,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 0.9800000000000043,
+          "integral_rad": 0.49000000000000216
+        },
+        {
+          "time_s": 6.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.43534330080302847,
+          "speed_rad_s": 1.931084376047949,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 0.996000000000003,
+          "integral_rad": 0.4980000000000015
+        },
+        {
+          "time_s": 6.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.4479850049685815,
+          "speed_rad_s": 1.954667822323992,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0092000000000017,
+          "integral_rad": 0.5046000000000008
+        },
+        {
+          "time_s": 6.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.41568977851632005,
+          "speed_rad_s": 1.9736131995836157,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0168000000000008,
+          "integral_rad": 0.5084000000000004
+        },
+        {
+          "time_s": 6.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.4091013015492081,
+          "speed_rad_s": 1.9878393746847787,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0220000000000002,
+          "integral_rad": 0.5110000000000001
+        },
+        {
+          "time_s": 7.0,
+          "target_rad_s": 2.0,
+          "current_A": 0.4054697723844052,
+          "speed_rad_s": 1.995707592063127,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0228000000000002,
+          "integral_rad": 0.5114000000000001
+        },
+        {
+          "time_s": 7.1000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.42334454252634335,
+          "speed_rad_s": 2.0049106544689295,
+          "measurement_rad_s": 1.9000000000000001,
+          "voltage_V": 1.1263999999999996,
+          "integral_rad": 0.5131999999999999
+        },
+        {
+          "time_s": 7.2,
+          "target_rad_s": 2.0,
+          "current_A": 0.39612526977437557,
+          "speed_rad_s": 2.009729556025826,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0244,
+          "integral_rad": 0.5122
+        },
+        {
+          "time_s": 7.3,
+          "target_rad_s": 2.0,
+          "current_A": 0.4012977242552781,
+          "speed_rad_s": 2.008914762159786,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0204000000000004,
+          "integral_rad": 0.5102000000000002
+        },
+        {
+          "time_s": 7.4,
+          "target_rad_s": 2.0,
+          "current_A": 0.38944991453837075,
+          "speed_rad_s": 2.010735667016079,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0184000000000006,
+          "integral_rad": 0.5092000000000003
+        },
+        {
+          "time_s": 7.5,
+          "target_rad_s": 2.0,
+          "current_A": 0.39791096102038565,
+          "speed_rad_s": 2.0098008727023924,
+          "measurement_rad_s": 2.1,
+          "voltage_V": 0.9152000000000009,
+          "integral_rad": 0.5076000000000005
+        },
+        {
+          "time_s": 7.6000000000000005,
+          "target_rad_s": 2.0,
+          "current_A": 0.39531473918504734,
+          "speed_rad_s": 2.0072032370116615,
+          "measurement_rad_s": 2.1,
+          "voltage_V": 0.9112000000000013,
+          "integral_rad": 0.5056000000000007
+        },
+        {
+          "time_s": 7.7,
+          "target_rad_s": 2.0,
+          "current_A": 0.40677946697841083,
+          "speed_rad_s": 2.0048255484634425,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0088000000000017,
+          "integral_rad": 0.5044000000000008
+        },
+        {
+          "time_s": 7.8,
+          "target_rad_s": 2.0,
+          "current_A": 0.3892686857218536,
+          "speed_rad_s": 2.0072287526699513,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0088000000000017,
+          "integral_rad": 0.5044000000000008
+        },
+        {
+          "time_s": 7.9,
+          "target_rad_s": 2.0,
+          "current_A": 0.41049135995035524,
+          "speed_rad_s": 2.0096082742221895,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.0104000000000015,
+          "integral_rad": 0.5052000000000008
+        },
+        {
+          "time_s": 7.998,
+          "target_rad_s": 2.0,
+          "current_A": 0.3882995339691089,
+          "speed_rad_s": 2.0067886217467095,
+          "measurement_rad_s": 2.0,
+          "voltage_V": 1.006400000000002,
+          "integral_rad": 0.503200000000001
+        }
+      ]
+    }
+  },
+  "step_refinement": [
+    {
+      "dt_s": 0.004,
+      "final_speed_rad_s": 2.0073841764787277,
+      "absolute_error_integral_after_switch_rad": 3.6601063004895398,
+      "max_integral_abs_rad": 0.9442012099752188,
+      "saturated_fraction": 0.5195
+    },
+    {
+      "dt_s": 0.002,
+      "final_speed_rad_s": 2.007525155519774,
+      "absolute_error_integral_after_switch_rad": 3.657968258026294,
+      "max_integral_abs_rad": 0.9508281362600284,
+      "saturated_fraction": 0.51925
+    },
+    {
+      "dt_s": 0.001,
+      "final_speed_rad_s": 2.0075790576785386,
+      "absolute_error_integral_after_switch_rad": 3.653630106648684,
+      "max_integral_abs_rad": 0.949542824012227,
+      "saturated_fraction": 0.519125
+    }
+  ]
+}

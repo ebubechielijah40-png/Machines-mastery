@@ -1,0 +1,2 @@
+# Systems biology
+Model networks as dynamic systems: gene regulation, signaling, metabolism, populations. ODEs describe deterministic concentration changes; stochastic models matter at low copy number. Parameter identifiability is central: several parameter sets can fit the same observations. Project: fit a simple production/degradation model to synthetic time-series data and show an example of non-identifiability.

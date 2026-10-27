@@ -38,3 +38,30 @@ target/
 *.onnx
 .DS_Store
 .aider*
+# Local verification and release output; curated committed evidence stays public.
+/research/quality/local-*/
+/research/quality/my-*/
+/research/quality/github-actions/
+/research/quality/latest-verification/
+/research/quality/fresh-delivery-replay/
+/artifacts/
+/deliverables/
+/releases/
+/*.zip
+/*.tar.gz
+/*.tar.xz
+*.bundle
+/SOURCE_SHA256SUMS.txt
+/RELEASE.json
+/DELIVERY_RECEIPT.md
+/READ_ME_FIRST.txt
+/Machines-mastery-*-SHA256SUMS.txt
+# Local editor/OS/session files
+.coverage
+htmlcov/
+.tox/
+.nox/
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo

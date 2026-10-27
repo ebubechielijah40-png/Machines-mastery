@@ -1,0 +1,6 @@
+test_separate_compilation_link_failure_and_runtime_contract (test_build.BuildTests.test_separate_compilation_link_failure_and_runtime_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.340s
+
+OK

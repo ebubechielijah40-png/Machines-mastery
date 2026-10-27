@@ -1,0 +1,8 @@
+test_fixed_words_and_trace (__main__.AddiTests.test_fixed_words_and_trace) ... ok
+test_all_immediates_arithmetic (__main__.AddiTests.test_all_immediates_arithmetic) ... ok
+test_negative_contract (__main__.AddiTests.test_negative_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.091s
+
+OK

@@ -1,4 +1,18 @@
-# Final validation record
+# Current validation entry point
+
+The current GitHub-publication checks are recorded in
+[PUBLICATION_REPORT](research/quality/2026-10-25-publication/PUBLICATION_REPORT.md).
+The preceding full mechanism/native replay is preserved in
+[the October25 test report](research/quality/2026-10-25-delivery/TEST_REPORT.md).
+No hosted GitHub Actions run is claimed before the user pushes.
+
+## Preserved prior-edition record
+
+
+**Historical prior-edition record.** Totals below are preserved as historical
+claims. The current execution logs, including failures and toolchain blockers,
+are linked from [EXCELLENCE_PROGRESS](EXCELLENCE_PROGRESS.md); use those for the
+2026-10-22 checkpoint. No old total is automatically carried forward.
 
 Validation checks repository structure and reference implementations; it cannot certify learner mastery, factual completeness of every external source, or physical truth.
 

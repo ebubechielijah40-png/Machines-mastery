@@ -42,3 +42,7 @@ Projects, in increasing scope: goroutines; channels; worker pool; network servic
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed concurrency unit
+
+After slices and synchronization, build [channel ownership, cancellation and joining](units/channels-cancellation/README.md). Explain aliasing and every blocking point before running ordinary/race-detector tests.

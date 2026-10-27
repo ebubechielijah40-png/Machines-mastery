@@ -1,0 +1,17 @@
+test_arity_types_and_resource_bounds (test_binding_lab.BindingTests.test_arity_types_and_resource_bounds) ... ok
+test_assignment_keeps_outer_target_after_late_shadow (test_binding_lab.BindingTests.test_assignment_keeps_outer_target_after_late_shadow) ... ok
+test_ast_occurrence_and_shape_validation (test_binding_lab.BindingTests.test_ast_occurrence_and_shape_validation) ... ok
+test_closure_shared_mutation_and_distinct_factory_frames (test_binding_lab.BindingTests.test_closure_shared_mutation_and_distinct_factory_frames) ... ok
+test_exhaustive_small_shadowing_address_oracle (test_binding_lab.BindingTests.test_exhaustive_small_shadowing_address_oracle) ... ok
+test_function_self_reference_recursion (test_binding_lab.BindingTests.test_function_self_reference_recursion) ... ok
+test_globals_looked_up_at_runtime (test_binding_lab.BindingTests.test_globals_looked_up_at_runtime) ... ok
+test_late_declaration_counterexample (test_binding_lab.BindingTests.test_late_declaration_counterexample) ... ok
+test_lexical_parent_not_caller (test_binding_lab.BindingTests.test_lexical_parent_not_caller) ... ok
+test_nested_recursive_expressions_reject_with_controlled_error (test_binding_lab.BindingTests.test_nested_recursive_expressions_reject_with_controlled_error) ... ok
+test_static_addresses_distinguish_occurrences (test_binding_lab.BindingTests.test_static_addresses_distinguish_occurrences) ... ok
+test_static_errors_include_unexecuted_branch (test_binding_lab.BindingTests.test_static_errors_include_unexecuted_branch) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.003s
+
+OK

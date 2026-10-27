@@ -1,0 +1,2 @@
+# Hardware reverse-engineering workflow
+Start with safety and power domains. Photograph and label connectors, chips, clocks, regulators, buses, sensors, actuators. Find datasheets for identifiable components. Infer block diagram before tracing every net. Observe boot/power sequence. Probe only safe points. For unknown buses, characterize voltage levels and timing before decoding. Reproduce a block functionally before copying physical layout. Maintain evidence versus inference.

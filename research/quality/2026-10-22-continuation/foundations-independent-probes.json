@@ -1,0 +1,56 @@
+{
+  "reviewer": "independent research workstream",
+  "seed": 20261023,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "status": "PASS",
+  "reviewed_code_sha256": {
+    "foundations/mathematics/core/linear.py": "2c622f87efc1ba4b1fa0ff9f44a18944b16194834ea0d182f306a286fe9d88f7",
+    "foundations/mathematics/core/discrete.py": "bf7ca8e53457a4001a2925759588ec69dc4aa1681c82ef16233c1a6b930f6f13",
+    "foundations/statistics/probability-inference/probability.py": "4c4c73e0d65b2bc2b887ae8036db582c6c3d13a1f5edd748063b8af4852a9b5d"
+  },
+  "checks": [
+    {
+      "name": "3x3 exact determinant/Cramer oracle",
+      "cases": 200,
+      "max_absolute_error": 2.4868995751603507e-14,
+      "max_row_scaled_absolute_error": 2.4868995751603507e-14,
+      "row_scale_factors": [
+        1e-200,
+        1e+100,
+        1e+200
+      ]
+    },
+    {
+      "name": "gradient versus exact expanded quadratic",
+      "cases": 200
+    },
+    {
+      "name": "Hermitian dot versus ordinary matrix product and corrected rtol contract",
+      "status": "PASS"
+    },
+    {
+      "name": "Bezout identity/library gcd and modular-power oracle",
+      "cases_each": 1000
+    },
+    {
+      "name": "page capacity and minimality inequalities",
+      "cases": 40040
+    },
+    {
+      "name": "corrected score-interval exact parameter endpoints",
+      "n_values": 1000,
+      "deterministic_coverage_cases": 10
+    },
+    {
+      "name": "score interval versus 70-digit quadratic roots",
+      "cases": 200,
+      "max_absolute_endpoint_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "permutation test versus all labeled permutations",
+      "cases": 40
+    }
+  ],
+  "limits": "Finite probes are not universal stability/coverage proofs. Lesson review is separate. No unexecuted physical data or broad-domain completion is implied."
+}

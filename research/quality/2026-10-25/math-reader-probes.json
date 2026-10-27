@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "independent_fraction_metric_identities": 16,
+  "nonlinear_tangent_oracle_error": 9.400502598566618e-11,
+  "nonlinear_calls": 360,
+  "budget11_actual_calls": 11,
+  "different_support": [
+    0.12,
+    0.14
+  ],
+  "pulse_exact_integral": "1",
+  "blind": 0.0,
+  "informed": 1.0000000004178087,
+  "reviewed_sha256": {
+    "ivp.py": "242a6e412c9473693c4acf0ecd9d5958cb0edecbd1d1fae31e6a9333df0908df",
+    "README.md": "e4e94eaf12bebb54ef4b592b251063e2cbccd54c652c9cfe37db1369589ef13d",
+    "SOLUTIONS.md": "d2ee397d3a2daa2538570c31b17afc5247cee9cc7c3d89c5f638e2f4d9e5c303"
+  },
+  "limits": "Separate team reader; selected mechanism probes, not universal solver correctness or specialist accreditation."
+}

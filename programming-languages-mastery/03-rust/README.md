@@ -42,3 +42,7 @@ Projects, in increasing scope: CLI; parser; resource experiments; threaded serve
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed ownership unit
+
+After the C++ lifetime comparison, build [ownership transfer, borrowing, slices and Vec growth](units/ownership-transfer/README.md). Use actual Rust2021 compilation, three rejected programs and separated exercises; other topic pages retain their own incomplete scope.

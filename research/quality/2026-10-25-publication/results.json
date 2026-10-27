@@ -1,0 +1,25 @@
+{
+  "validation": {
+    "PASS": 32,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "infrastructure_tests": 79,
+  "portable_reference_groups": 61,
+  "new_publication_tests": 8,
+  "source_layout": "Repository files directly at ZIP root; bundle, manifest, receipt and checksum separate.",
+  "preserved_previous_files": 2721,
+  "changed_subject_files": [],
+  "domain_strong": 5,
+  "domain_count": 33,
+  "readiness_percent": 76.00378787878788,
+  "original_excellent_closures": 0,
+  "hosted_github_actions": "Not executed before push; syntax/pins/permissions and run commands checked locally.",
+  "evidence": {
+    "verification": "verification-final/results.json",
+    "workflow": "workflow-parse.json",
+    "preservation": "preservation.json",
+    "hygiene": "hygiene.json",
+    "content_gate": "content-gate.json"
+  }
+}

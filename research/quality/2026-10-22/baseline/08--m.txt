@@ -1,0 +1,13 @@
+test_bad_scores (test_attention.AttentionTests.test_bad_scores) ... ok
+test_causal_mask (test_attention.AttentionTests.test_causal_mask) ... ok
+test_first_position_only_self (test_attention.AttentionTests.test_first_position_only_self) ... ok
+test_invalid_dimensions (test_attention.AttentionTests.test_invalid_dimensions) ... ok
+test_no_lookahead_leakage (test_attention.AttentionTests.test_no_lookahead_leakage) ... ok
+test_projection (test_attention.AttentionTests.test_projection) ... ok
+test_scale_changes_concentration (test_attention.AttentionTests.test_scale_changes_concentration) ... ok
+test_softmax_stable_large_scores (test_attention.AttentionTests.test_softmax_stable_large_scores) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

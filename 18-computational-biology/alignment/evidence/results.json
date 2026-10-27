@@ -1,0 +1,151 @@
+{
+  "environment": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "exact_toy_null": {
+    "at_least_observed": 1,
+    "fixed": "AACCGG",
+    "observed_score": 12,
+    "permutations": 90,
+    "score_histogram": {
+      "-10": 1,
+      "-3": 4,
+      "-4": 14,
+      "-5": 11,
+      "-6": 8,
+      "-8": 1,
+      "-9": 3,
+      "0": 20,
+      "1": 11,
+      "12": 1,
+      "2": 6,
+      "6": 10
+    },
+    "tail_fraction": 0.011111111111111112
+  },
+  "gap_sensitivity": [
+    {
+      "a": "ACGT",
+      "a_aligned": "A-CGT",
+      "b": "AGCT",
+      "b_aligned": "AGC-T",
+      "gap": -1,
+      "match": 2,
+      "mismatch": -3,
+      "score": 4
+    },
+    {
+      "a": "ACGT",
+      "a_aligned": "A-CGT",
+      "b": "AGCT",
+      "b_aligned": "AGC-T",
+      "gap": -2,
+      "match": 2,
+      "mismatch": -3,
+      "score": 2
+    },
+    {
+      "a": "ACGT",
+      "a_aligned": "ACGT",
+      "b": "AGCT",
+      "b_aligned": "AGCT",
+      "gap": -4,
+      "match": 2,
+      "mismatch": -3,
+      "score": -2
+    }
+  ],
+  "objective_comparison": {
+    "global": {
+      "a_aligned": "TTACGTAA",
+      "a_span": [
+        0,
+        8
+      ],
+      "b_aligned": "GGACGTCC",
+      "b_span": [
+        0,
+        8
+      ],
+      "score": -4
+    },
+    "local": {
+      "a_aligned": "ACGT",
+      "a_span": [
+        2,
+        6
+      ],
+      "b_aligned": "ACGT",
+      "b_span": [
+        2,
+        6
+      ],
+      "score": 8
+    }
+  },
+  "scaling": [
+    {
+      "elapsed_seconds": [
+        0.0002965940000194678,
+        0.00031862600008025765,
+        0.0002693630001431302,
+        0.0002787369999168732,
+        0.00028527599988592556
+      ],
+      "interior_cells_evaluated": 1024,
+      "median_seconds": 0.00028527599988592556,
+      "n": 32,
+      "separate_tracemalloc_peak_bytes": 42242,
+      "table_cells": 1089
+    },
+    {
+      "elapsed_seconds": [
+        0.001063007999846377,
+        0.0011243899998589768,
+        0.0010476749998815649,
+        0.0012710889998288621,
+        0.001216066999859322
+      ],
+      "interior_cells_evaluated": 4096,
+      "median_seconds": 0.0011243899998589768,
+      "n": 64,
+      "separate_tracemalloc_peak_bytes": 168594,
+      "table_cells": 4225
+    },
+    {
+      "elapsed_seconds": [
+        0.004198954999992566,
+        0.004954584999950384,
+        0.004244274000029691,
+        0.004504141999859712,
+        0.00441474800004471
+      ],
+      "interior_cells_evaluated": 16384,
+      "median_seconds": 0.00441474800004471,
+      "n": 128,
+      "separate_tracemalloc_peak_bytes": 667834,
+      "table_cells": 16641
+    },
+    {
+      "elapsed_seconds": [
+        0.017718781999974453,
+        0.01882403400009025,
+        0.017369660999975167,
+        0.016949320999856354,
+        0.017493255000090357
+      ],
+      "interior_cells_evaluated": 65536,
+      "median_seconds": 0.017493255000090357,
+      "n": 256,
+      "separate_tracemalloc_peak_bytes": 2649618,
+      "table_cells": 66049
+    }
+  ],
+  "schema": 1,
+  "scope": "Agent-executed synthetic mechanism experiments; not a paper replication.",
+  "source_sha256": {
+    "alignment.py": "b09f6dba2f9a9d6079b26b20b1d571e80b441fd10ab831746b397cfec646a17a",
+    "alignment_experiment.py": "18fa0046ced0d4a46f504c45942e8cb98509dc0f412c6e39e49e30b8731a010d"
+  }
+}

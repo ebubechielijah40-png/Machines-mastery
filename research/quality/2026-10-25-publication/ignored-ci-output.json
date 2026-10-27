@@ -1,0 +1,8 @@
+{
+  "command": "python3 tools/quality_audit.py --report-only --json research/quality/github-actions/content-audit.json",
+  "exit_code": 0,
+  "output_exists": true,
+  "git_ignored": true,
+  "staged_by_git_add": false,
+  "scope": "Exact CI inventory command replayed; generated local report needs no deletion before a commit."
+}

@@ -1,0 +1,19 @@
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s 13-privacy/count-release -v
+python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+platform: Linux-6.18.55-x86_64-with-glibc2.39
+executed_utc: 2026-10-23T10:43:06Z
+exit_code: 0
+
+test_bad_random_source_spends_reserved_budget_without_output (test_count_release.PrivacyMechanismTests.test_bad_random_source_spends_reserved_budget_without_output) ... ok
+test_budget_exact_composition_and_failed_request_state (test_count_release.PrivacyMechanismTests.test_budget_exact_composition_and_failed_request_state) ... ok
+test_count_sensitivity_exhaustive_neighbor_model (test_count_release.PrivacyMechanismTests.test_count_sensitivity_exhaustive_neighbor_model) ... ok
+test_density_ratio_bound_and_wrong_scale_counterexample (test_count_release.PrivacyMechanismTests.test_density_ratio_bound_and_wrong_scale_counterexample) ... ok
+test_inverse_cdf_known_points_and_symmetry (test_count_release.PrivacyMechanismTests.test_inverse_cdf_known_points_and_symmetry) ... ok
+test_public_clipping_and_invalid_inputs (test_count_release.PrivacyMechanismTests.test_public_clipping_and_invalid_inputs) ... ok
+test_repeated_known_seed_is_not_a_private_release (test_count_release.PrivacyMechanismTests.test_repeated_known_seed_is_not_a_private_release) ... ok
+test_sampler_distribution_check_under_fixed_synthetic_rng (test_count_release.PrivacyMechanismTests.test_sampler_distribution_check_under_fixed_synthetic_rng) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.057s
+
+OK

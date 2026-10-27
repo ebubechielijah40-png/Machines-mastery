@@ -1,0 +1,25 @@
+test_convolution_against_independent_nested_loops (test_fourier.FourierTests.test_convolution_against_independent_nested_loops) ... ok
+test_counts_and_input_not_mutated (test_fourier.FourierTests.test_counts_and_input_not_mutated) ... ok
+test_hand_four_point_result_and_sign (test_fourier.FourierTests.test_hand_four_point_result_and_sign) ... ok
+test_impulse_constant_and_single_frequency (test_fourier.FourierTests.test_impulse_constant_and_single_frequency) ... ok
+test_invalid_lengths_nonfinite_and_resource_caps (test_fourier.FourierTests.test_invalid_lengths_nonfinite_and_resource_caps) ... ok
+test_parseval_and_shift_structure (test_fourier.FourierTests.test_parseval_and_shift_structure) ... ok
+test_random_complex_cases_against_definition (test_fourier.FourierTests.test_random_complex_cases_against_definition) ... ok
+test_all_small_schedule_interleavings (test_logical_clocks.ClockTests.test_all_small_schedule_interleavings) ... ok
+test_empty_undelivered_and_exact_timestamp_contracts (test_logical_clocks.ClockTests.test_empty_undelivered_and_exact_timestamp_contracts) ... ok
+test_independent_transitive_closure_known_case (test_logical_clocks.ClockTests.test_independent_transitive_closure_known_case) ... ok
+test_invalid_traces_fail_before_timestamping (test_logical_clocks.ClockTests.test_invalid_traces_fail_before_timestamping) ... ok
+test_random_traces_against_graph_reachability (test_logical_clocks.ClockTests.test_random_traces_against_graph_reachability) ... ok
+test_total_order_is_linear_extension_not_extra_causality (test_logical_clocks.ClockTests.test_total_order_is_linear_extension_not_extra_causality) ... ok
+test_two_broken_receivers_fail_different_conditions (test_logical_clocks.ClockTests.test_two_broken_receivers_fail_different_conditions) ... ok
+test_worked_trace_and_nonconverse (test_logical_clocks.ClockTests.test_worked_trace_and_nonconverse) ... ok
+test_all_completion_orders_match_sequential_oracle (test_task_publication.PublicationTests.test_all_completion_orders_match_sequential_oracle) ... ok
+test_crash_before_publication_and_snapshot_isolation (test_task_publication.PublicationTests.test_crash_before_publication_and_snapshot_isolation) ... ok
+test_invalid_inputs (test_task_publication.PublicationTests.test_invalid_inputs) ... ok
+test_replay_contract_and_non_deterministic_counterexample (test_task_publication.PublicationTests.test_replay_contract_and_non_deterministic_counterexample) ... ok
+test_seeded_shards_and_attempt_retries (test_task_publication.PublicationTests.test_seeded_shards_and_attempt_retries) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.025s
+
+OK

@@ -1,0 +1,2 @@
+# Computational synthetic biology — safe scope
+Use computational models to reason about regulatory logic, feedback, burden, robustness, and design-build-test-learn cycles without operational wet-lab instructions for harmful modification. Simulate toggle/feedback circuits, sensitivity to parameters, and measurement noise. The goal is systems understanding and safe modeling, not procedural organism engineering.

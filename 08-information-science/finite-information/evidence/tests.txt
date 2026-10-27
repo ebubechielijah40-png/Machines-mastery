@@ -1,0 +1,15 @@
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s 08-information-science/finite-information -v
+python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+platform: Linux-6.18.55-x86_64-with-glibc2.39
+executed_utc: 2026-10-23T10:51:38Z
+exit_code: 0
+
+test_binary_flip_analytic_identity (test_information.InformationTests.test_binary_flip_analytic_identity) ... ok
+test_independent_and_perfect_prediction_tables (test_information.InformationTests.test_independent_and_perfect_prediction_tables) ... ok
+test_invalid_weights_and_joint_shapes (test_information.InformationTests.test_invalid_weights_and_joint_shapes) ... ok
+test_literal_entropy_cases_and_weight_scaling (test_information.InformationTests.test_literal_entropy_cases_and_weight_scaling) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

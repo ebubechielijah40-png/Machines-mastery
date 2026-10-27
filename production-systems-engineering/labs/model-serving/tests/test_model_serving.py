@@ -64,7 +64,7 @@ class ModelServingTests(unittest.TestCase):
 
         self.assertEqual(self.server.metrics["schema_errors"], 3)
 
-    def test_dynamic_batching_and_prediction(self):
+    def test_serial_batch_helper_and_prediction(self):
         batch = [self.X_train[i] for i in range(10)]
         results = self.server.predict_batch(batch)
         self.assertEqual(len(results), 10)

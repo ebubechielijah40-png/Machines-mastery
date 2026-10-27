@@ -1,0 +1,2 @@
+# Quantum algorithms
+Quantum advantage comes from algorithmic structure, not “trying all answers at once.” Grover amplifies marked-state amplitude in an unstructured search model, giving quadratic query improvement. Shor combines modular arithmetic with period finding and quantum Fourier structure to threaten factoring-based cryptography in the fault-tolerant regime. For each algorithm distinguish asymptotic query/computational advantage from physical overhead.

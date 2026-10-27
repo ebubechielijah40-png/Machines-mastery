@@ -1,0 +1,202 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "sqlite_runtime": "3.53.1"
+  },
+  "synthetic_inputs": {
+    "customers": [
+      [
+        1,
+        "Ada"
+      ],
+      [
+        2,
+        "Ben"
+      ],
+      [
+        3,
+        "Cia"
+      ]
+    ],
+    "orders": [
+      [
+        10,
+        1,
+        5
+      ],
+      [
+        11,
+        1,
+        null
+      ],
+      [
+        12,
+        2,
+        0
+      ]
+    ],
+    "blocked": [
+      2,
+      null
+    ]
+  },
+  "truth": [
+    {
+      "a": 0,
+      "b": 0,
+      "and": 0,
+      "or": 0,
+      "not_a": 1
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "and": 0,
+      "or": 1,
+      "not_a": 1
+    },
+    {
+      "a": 0,
+      "b": null,
+      "and": 0,
+      "or": null,
+      "not_a": 1
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "and": 0,
+      "or": 1,
+      "not_a": 0
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "and": 1,
+      "or": 1,
+      "not_a": 0
+    },
+    {
+      "a": 1,
+      "b": null,
+      "and": null,
+      "or": 1,
+      "not_a": 0
+    },
+    {
+      "a": null,
+      "b": 0,
+      "and": 0,
+      "or": null,
+      "not_a": null
+    },
+    {
+      "a": null,
+      "b": 1,
+      "and": null,
+      "or": 1,
+      "not_a": null
+    },
+    {
+      "a": null,
+      "b": null,
+      "and": null,
+      "or": null,
+      "not_a": null
+    }
+  ],
+  "observations": {
+    "equals_null": [],
+    "is_null": [
+      [
+        11
+      ]
+    ],
+    "not_in": [],
+    "not_exists": [
+      [
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "left_filter_on": [
+      [
+        1,
+        10,
+        5
+      ],
+      [
+        2,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        null
+      ]
+    ],
+    "left_filter_where": [
+      [
+        1,
+        10,
+        5
+      ]
+    ],
+    "counts": [
+      [
+        1,
+        2,
+        2,
+        1,
+        5
+      ],
+      [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        0,
+        null
+      ]
+    ],
+    "empty_aggregate": [
+      [
+        0,
+        0,
+        null,
+        0.0
+      ]
+    ],
+    "distinct_nulls": [
+      [
+        null
+      ],
+      [
+        1
+      ]
+    ],
+    "empty_not_in": [
+      [
+        1
+      ]
+    ],
+    "bound_data": [
+      [
+        "x'); DROP TABLE customers;--"
+      ]
+    ],
+    "customers_after_bind": 3,
+    "duplicate_nonnull_rejected": true
+  },
+  "scope": "SQLite in-memory semantic lab, not cross-engine or production transaction verification"
+}

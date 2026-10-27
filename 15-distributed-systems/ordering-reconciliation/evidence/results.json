@@ -1,0 +1,124 @@
+{
+  "executed_utc": "2026-10-23T10:51:59.795463+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "partitioned": {
+    "A": {
+      "clock": 1,
+      "visible": {
+        "x": "A-first"
+      },
+      "state": [
+        {
+          "key": "x",
+          "value": "A-first",
+          "counter": 1,
+          "origin": "A"
+        }
+      ]
+    },
+    "B": {
+      "clock": 1,
+      "visible": {
+        "x": "B-first"
+      },
+      "state": [
+        {
+          "key": "x",
+          "value": "B-first",
+          "counter": 1,
+          "origin": "B"
+        }
+      ]
+    }
+  },
+  "after_full_state_exchange": {
+    "A": {
+      "clock": 3,
+      "visible": {
+        "x": "B-first"
+      },
+      "state": [
+        {
+          "key": "x",
+          "value": "B-first",
+          "counter": 1,
+          "origin": "B"
+        }
+      ]
+    },
+    "B": {
+      "clock": 3,
+      "visible": {
+        "x": "B-first"
+      },
+      "state": [
+        {
+          "key": "x",
+          "value": "B-first",
+          "counter": 1,
+          "origin": "B"
+        }
+      ]
+    }
+  },
+  "after_causally_later_write": {
+    "A": {
+      "clock": 5,
+      "visible": {
+        "x": "A-after-receive"
+      },
+      "state": [
+        {
+          "key": "x",
+          "value": "A-after-receive",
+          "counter": 4,
+          "origin": "A"
+        }
+      ]
+    },
+    "B": {
+      "clock": 6,
+      "visible": {
+        "x": "A-after-receive"
+      },
+      "state": [
+        {
+          "key": "x",
+          "value": "A-after-receive",
+          "counter": 4,
+          "origin": "A"
+        }
+      ]
+    }
+  },
+  "after_delete_and_stale_replay": {
+    "A": {
+      "clock": 9,
+      "visible": {},
+      "state": [
+        {
+          "key": "x",
+          "value": null,
+          "counter": 7,
+          "origin": "B"
+        }
+      ]
+    },
+    "B": {
+      "clock": 9,
+      "visible": {},
+      "state": [
+        {
+          "key": "x",
+          "value": null,
+          "counter": 7,
+          "origin": "B"
+        }
+      ]
+    }
+  },
+  "permutations": 24,
+  "matching_final_states": 24,
+  "scope": "deterministic in-memory event interleavings; eventual delivery assumed, no consensus/crash/network benchmark"
+}

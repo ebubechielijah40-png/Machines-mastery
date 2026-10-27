@@ -1,40 +1,72 @@
-# Repository Guidelines
+# Repository development guidelines
 
-## Project Structure & Module Organization
+This is an established educational repository, not an empty scaffold. Preserve
+the supplied development archive improvements and all working implementations.
+Read README.md, DEPTH_STANDARD.md, EXCELLENCE_PROGRESS.md and the current audit
+before selecting the next dependency-aware implementation batch. The user's
+current development mandate takes precedence over historical setup policies.
 
-This repository is a learning and research workspace. Its numbered subject directories run from `01-computation/` through `17-research/`, covering programming, systems, data science, security, machine learning, and related fields. These directories are currently empty; place topic-specific notes and exercises in the matching subject directory.
+## Layout and instruction
 
-Use `books/` for reading notes, `experiments/` for focused investigations, and `projects/` for larger implementations. The root Markdown files are currently empty placeholders with these intended roles:
+Numbered domains run from01-computation through20-quantum-computing. Additional
+tracks contain foundations, language mechanisms, algorithms, electronics, HDL,
+physical machines, production systems, research and guided projects. Keep topic
+instruction, source scopes, implementations, tests and experiments together.
+Guided projects can explicitly share a domain implementation; do not create a
+duplicate copy merely to satisfy a local-file heuristic. Public shared bindings
+are recorded in registries/project_implementations.json.
 
-- `MASTER_CURRICULUM.md`: learning sequence and objectives.
-- `KNOWLEDGE_GRAPH.md`: relationships and prerequisites between topics.
-- `PROGRESS.md`: completed work and next steps.
-- `SOURCES.md`: references and source links.
+Write original explanations, derivations, intermediate examples, progressive
+exercises and separated hints/solutions. Define prerequisites before using them.
+Include actual runnable mechanisms and failure experiments where appropriate.
+Do not replace shallow templates with longer templates, invented citations or
+unexecuted results. EXCELLENT is a qualitative evidence classification, never
+an inference from counts or validators. Author preparation and agent-run tests
+never establish learner study/mastery.
 
-No source-code, test, or asset layout is established yet. Keep future implementation files, tests, and assets together within their project or experiment.
+## Sources and generated files
 
-## Build, Test, and Development Commands
+Inspect exact primary-source scopes before attributing technical claims. Record
+authorship, version/date, locator, access and redistribution limits. Keep private
+source PDFs/full extracted text and secrets outside public release artifacts.
+Absent book originals block fresh chapter-specific claims; they do not block
+independent original teaching from other inspected sources.
 
-There is no repository-wide build system, dependency manifest, or development server. Useful repository checks include:
+registries/catalog.json owns marked generated indexes. Use tools/render.py to
+regenerate those indexes, rather than editing generated blocks by hand. Other
+teaching, audit and progress documents are maintained directly. Preserve historical
+raw observations; new runs need new evidence files or explicitly recorded replacements.
 
-- `git status --short`: review changed and untracked files.
-- `git diff --check`: check tracked changes for whitespace errors.
-- `git diff --cached --check`: check staged contributions before committing.
+## Verification
 
-When adding runnable code, include a local `README.md` with prerequisites and exact setup, run, and test commands.
+From the repository root:
 
-## Coding Style & Naming Conventions
+```bash
+python3 tools/verify_repository.py --report-dir research/quality/local-replay
+python3 tools/quality_audit.py --report-only --json research/quality/local-content-audit.json
+python3 tools/render.py --check
+git diff --check
+git diff --cached --check
+```
 
-Use descriptive Markdown headings, fenced code blocks with language labels, and relative links to repository files. Indent nested lists consistently with two spaces. Preserve the numbered, lowercase, hyphenated subject-directory pattern; use descriptive filenames such as `memory-hierarchy.md`.
+The replay covers infrastructure, reference suites, optional native compilers,
+controlled independent probes and whitespace. Missing required toolchains are
+BLOCKED, not passing execution. Record exact commands, versions, actual outputs,
+known limitations and qualitative review. A report-only audit writes a risk
+inventory; it never certifies completeness. Review locally trusted test code
+before execution and do not run arbitrary source examples during text scanning.
 
-No formatter, linter, or language-specific style is configured. Document those choices locally when introducing code.
+Use Python3.10+ standard library for portable teaching mechanisms unless a unit
+states another requirement. Native labs require their documented compiler/runtime.
+The integration environment actually used Python3.12.14 and GCC/G++13.3.0;
+those observations are not promises about another machine.
 
-## Testing Guidelines
+## Git and collaboration
 
-No testing framework or coverage threshold exists. Review Markdown rendering, verify links and citations, and check examples for accuracy. For executable projects, document the chosen test framework, test filenames, and test command alongside the implementation.
-
-## Commit & Pull Request Guidelines
-
-There are no commits yet, so no historical message convention exists. Use concise, imperative subjects, such as `Add networking study notes`. Keep each commit focused on one topic or change.
-
-Pull requests should describe the purpose, affected topics or projects, and validation performed. Link relevant issues when available; include screenshots when changing visual output.
+Work on a development/review branch. Never overwrite main or force-push without
+explicit user approval. Local verified commits are authorized by the development
+mandate. Preserve unrelated human changes, inspect the diff and scope commits
+coherently. If remote writing fails, keep developing locally and deliver a full
+source archive, Git bundle, checksums and reproducible integration instructions.
+Parallel work, when authorized, needs disjoint file ownership and integrated
+validation; an author's self-review is not independent review.

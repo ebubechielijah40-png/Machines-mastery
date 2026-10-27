@@ -1,0 +1,459 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "tools": {
+      "readelf": "GNU readelf (GNU Binutils for Ubuntu) 2.42",
+      "objdump": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+      "nm": "GNU nm (GNU Binutils for Ubuntu) 2.42"
+    }
+  },
+  "source_sha256": {
+    "code/main.c": "98a4bc879dcb58488523e343a257d9756f57756b54d900738b8cedf3ad3e7708",
+    "code/boundary.S": "c26cd0cf85bf51df297db4abe61ea813d4d86cc397d28ef22f053d0fc504b883",
+    "elf_plan.py": "fcde792d7f40f6fa432b902500c826dc142c299f92f2c6f6ba16bd018af71761",
+    "memory_models.py": "390b0fcbddef05a672fb646bb73833a1f58e91dcd21d33d12a09226fc7097bd4",
+    "run_native.py": "5a9d3d343d7b44f180e0ff362640c9af3d2d71d804b17c7ff27575816b84703f"
+  },
+  "builds": [
+    {
+      "name": "o0-exec",
+      "native": {
+        "weighted_cases": 100,
+        "weighted_1_to_8": 204,
+        "entry_alignment": 0,
+        "good_preserves": 1,
+        "mutant_preserves": 0,
+        "pid_equal": 1,
+        "raw_write": -9,
+        "libc_write": -1,
+        "libc_errno": 9,
+        "bss_zero_sum": 0,
+        "row_size": 24,
+        "row_align": 8,
+        "value_offset": 8,
+        "code_offset": 16
+      },
+      "elf_kind": 2,
+      "entry_model": 4198512,
+      "bias": 0,
+      "interpreter": "/lib64/ld-linux-x86-64.so.2",
+      "load_segments": [
+        {
+          "offset": 0,
+          "virtual": 4194304,
+          "file_size": 1440,
+          "memory_size": 1440,
+          "flags": 4,
+          "alignment": 4096
+        },
+        {
+          "offset": 4096,
+          "virtual": 4198400,
+          "file_size": 1009,
+          "memory_size": 1009,
+          "flags": 5,
+          "alignment": 4096
+        },
+        {
+          "offset": 8192,
+          "virtual": 4202496,
+          "file_size": 468,
+          "memory_size": 468,
+          "flags": 4,
+          "alignment": 4096
+        },
+        {
+          "offset": 11768,
+          "virtual": 4210168,
+          "file_size": 568,
+          "memory_size": 8808,
+          "flags": 6,
+          "alignment": 4096
+        }
+      ],
+      "zero_fill_bytes": 8240,
+      "bss_symbol": {
+        "address": 4210784,
+        "size": 8192
+      },
+      "readelf_agreed": true,
+      "section_table_removed_binary_still_ran": true
+    },
+    {
+      "name": "o2-exec",
+      "native": {
+        "weighted_cases": 100,
+        "weighted_1_to_8": 204,
+        "entry_alignment": 0,
+        "good_preserves": 1,
+        "mutant_preserves": 0,
+        "pid_equal": 1,
+        "raw_write": -9,
+        "libc_write": -1,
+        "libc_errno": 9,
+        "bss_zero_sum": 0,
+        "row_size": 24,
+        "row_align": 8,
+        "value_offset": 8,
+        "code_offset": 16
+      },
+      "elf_kind": 2,
+      "entry_model": 4198880,
+      "bias": 0,
+      "interpreter": "/lib64/ld-linux-x86-64.so.2",
+      "load_segments": [
+        {
+          "offset": 0,
+          "virtual": 4194304,
+          "file_size": 1472,
+          "memory_size": 1472,
+          "flags": 4,
+          "alignment": 4096
+        },
+        {
+          "offset": 4096,
+          "virtual": 4198400,
+          "file_size": 869,
+          "memory_size": 869,
+          "flags": 5,
+          "alignment": 4096
+        },
+        {
+          "offset": 8192,
+          "virtual": 4202496,
+          "file_size": 556,
+          "memory_size": 556,
+          "flags": 4,
+          "alignment": 4096
+        },
+        {
+          "offset": 11768,
+          "virtual": 4210168,
+          "file_size": 568,
+          "memory_size": 8808,
+          "flags": 6,
+          "alignment": 4096
+        }
+      ],
+      "zero_fill_bytes": 8240,
+      "bss_symbol": {
+        "address": 4210784,
+        "size": 8192
+      },
+      "readelf_agreed": true,
+      "section_table_removed_binary_still_ran": true
+    },
+    {
+      "name": "o2-pie",
+      "native": {
+        "weighted_cases": 100,
+        "weighted_1_to_8": 204,
+        "entry_alignment": 0,
+        "good_preserves": 1,
+        "mutant_preserves": 0,
+        "pid_equal": 1,
+        "raw_write": -9,
+        "libc_write": -1,
+        "libc_errno": 9,
+        "bss_zero_sum": 0,
+        "row_size": 24,
+        "row_align": 8,
+        "value_offset": 8,
+        "code_offset": 16
+      },
+      "elf_kind": 3,
+      "entry_model": 268440048,
+      "bias": 268435456,
+      "interpreter": "/lib64/ld-linux-x86-64.so.2",
+      "load_segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "file_size": 1776,
+          "memory_size": 1776,
+          "flags": 4,
+          "alignment": 4096
+        },
+        {
+          "offset": 4096,
+          "virtual": 4096,
+          "file_size": 889,
+          "memory_size": 889,
+          "flags": 5,
+          "alignment": 4096
+        },
+        {
+          "offset": 8192,
+          "virtual": 8192,
+          "file_size": 564,
+          "memory_size": 564,
+          "flags": 4,
+          "alignment": 4096
+        },
+        {
+          "offset": 11680,
+          "virtual": 15776,
+          "file_size": 624,
+          "memory_size": 8864,
+          "flags": 6,
+          "alignment": 4096
+        }
+      ],
+      "zero_fill_bytes": 8240,
+      "bss_symbol": {
+        "address": 268451904,
+        "size": 8192
+      },
+      "readelf_agreed": true,
+      "section_table_removed_binary_still_ran": true
+    }
+  ],
+  "records": [
+    {
+      "command": [
+        "cc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "readelf",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "GNU readelf (GNU Binutils for Ubuntu) 2.42\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "objdump",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "GNU objdump (GNU Binutils for Ubuntu) 2.42\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nm",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "GNU nm (GNU Binutils for Ubuntu) 2.42\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "-fno-pie",
+        "-no-pie",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/04-computer-systems/abi-loading/code/main.c",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/04-computer-systems/abi-loading/code/boundary.S",
+        "-o",
+        "/tmp/tmp6b2ofu71/o0-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/tmp6b2ofu71/o0-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"weighted_cases\":100,\"weighted_1_to_8\":204,\"entry_alignment\":0,\"good_preserves\":1,\"mutant_preserves\":0,\"pid_equal\":1,\"raw_write\":-9,\"libc_write\":-1,\"libc_errno\":9,\"bss_zero_sum\":0,\"row_size\":24,\"row_align\":8,\"value_offset\":8,\"code_offset\":16}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "readelf",
+        "-W",
+        "-l",
+        "/tmp/tmp6b2ofu71/o0-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "\nElf file type is EXEC (Executable file)\nEntry point 0x401070\nThere are 13 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8\n  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1\n      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]\n  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x0005a0 0x0005a0 R   0x1000\n  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x0003f1 0x0003f1 R E 0x1000\n  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x0001d4 0x0001d4 R   0x1000\n  LOAD           0x002df8 0x0000000000403df8 0x0000000000403df8 0x000238 0x002268 RW  0x1000\n  DYNAMIC        0x002e08 0x0000000000403e08 0x0000000000403e08 0x0001d0 0x0001d0 RW  0x8\n  NOTE           0x000338 0x0000000000400338 0x0000000000400338 0x000020 0x000020 R   0x8\n  NOTE           0x000358 0x0000000000400358 0x0000000000400358 0x000044 0x000044 R   0x4\n  GNU_PROPERTY   0x000338 0x0000000000400338 0x0000000000400338 0x000020 0x000020 R   0x8\n  GNU_EH_FRAME   0x002114 0x0000000000402114 0x0000000000402114 0x00002c 0x00002c R   0x4\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n  GNU_RELRO      0x002df8 0x0000000000403df8 0x0000000000403df8 0x000208 0x000208 R   0x1\n\n Section to Segment mapping:\n  Segment Sections...\n   00     \n   01     .interp \n   02     .interp .note.gnu.property .note.gnu.build-id .note.ABI-tag .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt \n   03     .init .plt .text .fini \n   04     .rodata .eh_frame_hdr .eh_frame \n   05     .init_array .fini_array .dynamic .got .got.plt .data .bss \n   06     .dynamic \n   07     .note.gnu.property \n   08     .note.gnu.build-id .note.ABI-tag \n   09     .note.gnu.property \n   10     .eh_frame_hdr \n   11     \n   12     .init_array .fini_array .dynamic .got \n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nm",
+        "-S",
+        "/tmp/tmp6b2ofu71/o0-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "0000000000403e08 d _DYNAMIC\n0000000000403fe8 d _GLOBAL_OFFSET_TABLE_\n0000000000402000 0000000000000004 R _IO_stdin_used\n00000000004021d0 r __FRAME_END__\n0000000000402114 r __GNU_EH_FRAME_HDR\n0000000000404030 D __TMC_END__\n000000000040037c 0000000000000020 r __abi_tag\n0000000000404040 B __bss_start\n0000000000404020 D __data_start\n0000000000401120 t __do_global_dtors_aux\n0000000000403e00 d __do_global_dtors_aux_fini_array_entry\n0000000000404028 D __dso_handle\n                 U __errno_location@GLIBC_2.2.5\n0000000000403df8 d __frame_dummy_init_array_entry\n                 w __gmon_start__\n                 U __libc_start_main@GLIBC_2.34\n00000000004010a0 0000000000000005 T _dl_relocate_static_pie\n0000000000404030 D _edata\n0000000000406060 B _end\n00000000004013e4 T _fini\n0000000000401000 T _init\n0000000000401070 0000000000000026 T _start\n00000000004013b8 000000000000001a T check_bad\n000000000040139e 000000000000001a T check_good\n0000000000404040 0000000000000001 b completed.0\n0000000000404020 W data_start\n00000000004010b0 t deregister_tm_clones\n0000000000401387 0000000000000009 T entry_alignment\n0000000000401150 t frame_dummy\n                 U getpid@GLIBC_2.2.5\n0000000000401156 00000000000001fa T main\n                 U printf@GLIBC_2.2.5\n00000000004013d2 0000000000000008 T raw_getpid\n00000000004013da 0000000000000008 T raw_write\n00000000004010e0 t register_tm_clones\n0000000000401398 0000000000000006 t touch_bad\n0000000000401390 0000000000000008 t touch_good\n0000000000401350 0000000000000037 T weighted8\n                 U write@GLIBC_2.2.5\n0000000000404060 0000000000002000 B zero_area\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "objdump",
+        "-d",
+        "--no-show-raw-insn",
+        "/tmp/tmp6b2ofu71/o0-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/tmp6b2ofu71/o0-exec:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\n0000000000401000 <_init>:\n  401000:\tendbr64\n  401004:\tsub    $0x8,%rsp\n  401008:\tmov    0x2fd1(%rip),%rax        # 403fe0 <__gmon_start__@Base>\n  40100f:\ttest   %rax,%rax\n  401012:\tje     401016 <_init+0x16>\n  401014:\tcall   *%rax\n  401016:\tadd    $0x8,%rsp\n  40101a:\tret\n\nDisassembly of section .plt:\n\n0000000000401020 <__errno_location@plt-0x10>:\n  401020:\tpush   0x2fca(%rip)        # 403ff0 <_GLOBAL_OFFSET_TABLE_+0x8>\n  401026:\tjmp    *0x2fcc(%rip)        # 403ff8 <_GLOBAL_OFFSET_TABLE_+0x10>\n  40102c:\tnopl   0x0(%rax)\n\n0000000000401030 <__errno_location@plt>:\n  401030:\tjmp    *0x2fca(%rip)        # 404000 <__errno_location@GLIBC_2.2.5>\n  401036:\tpush   $0x0\n  40103b:\tjmp    401020 <_init+0x20>\n\n0000000000401040 <write@plt>:\n  401040:\tjmp    *0x2fc2(%rip)        # 404008 <write@GLIBC_2.2.5>\n  401046:\tpush   $0x1\n  40104b:\tjmp    401020 <_init+0x20>\n\n0000000000401050 <getpid@plt>:\n  401050:\tjmp    *0x2fba(%rip)        # 404010 <getpid@GLIBC_2.2.5>\n  401056:\tpush   $0x2\n  40105b:\tjmp    401020 <_init+0x20>\n\n0000000000401060 <printf@plt>:\n  401060:\tjmp    *0x2fb2(%rip)        # 404018 <printf@GLIBC_2.2.5>\n  401066:\tpush   $0x3\n  40106b:\tjmp    401020 <_init+0x20>\n\nDisassembly of section .text:\n\n0000000000401070 <_start>:\n  401070:\tendbr64\n  401074:\txor    %ebp,%ebp\n  401076:\tmov    %rdx,%r9\n  401079:\tpop    %rsi\n  40107a:\tmov    %rsp,%rdx\n  40107d:\tand    $0xfffffffffffffff0,%rsp\n  401081:\tpush   %rax\n  401082:\tpush   %rsp\n  401083:\txor    %r8d,%r8d\n  401086:\txor    %ecx,%ecx\n  401088:\tmov    $0x401156,%rdi\n  40108f:\tcall   *0x2f43(%rip)        # 403fd8 <__libc_start_main@GLIBC_2.34>\n  401095:\thlt\n  401096:\tcs nopw 0x0(%rax,%rax,1)\n\n00000000004010a0 <_dl_relocate_static_pie>:\n  4010a0:\tendbr64\n  4010a4:\tret\n  4010a5:\tcs nopw 0x0(%rax,%rax,1)\n  4010af:\tnop\n\n00000000004010b0 <deregister_tm_clones>:\n  4010b0:\tmov    $0x404030,%eax\n  4010b5:\tcmp    $0x404030,%rax\n  4010bb:\tje     4010d0 <deregister_tm_clones+0x20>\n  4010bd:\tmov    $0x0,%eax\n  4010c2:\ttest   %rax,%rax\n  4010c5:\tje     4010d0 <deregister_tm_clones+0x20>\n  4010c7:\tmov    $0x404030,%edi\n  4010cc:\tjmp    *%rax\n  4010ce:\txchg   %ax,%ax\n  4010d0:\tret\n  4010d1:\tdata16 cs nopw 0x0(%rax,%rax,1)\n  4010dc:\tnopl   0x0(%rax)\n\n00000000004010e0 <register_tm_clones>:\n  4010e0:\tmov    $0x404030,%esi\n  4010e5:\tsub    $0x404030,%rsi\n  4010ec:\tmov    %rsi,%rax\n  4010ef:\tshr    $0x3f,%rsi\n  4010f3:\tsar    $0x3,%rax\n  4010f7:\tadd    %rax,%rsi\n  4010fa:\tsar    $1,%rsi\n  4010fd:\tje     401110 <register_tm_clones+0x30>\n  4010ff:\tmov    $0x0,%eax\n  401104:\ttest   %rax,%rax\n  401107:\tje     401110 <register_tm_clones+0x30>\n  401109:\tmov    $0x404030,%edi\n  40110e:\tjmp    *%rax\n  401110:\tret\n  401111:\tdata16 cs nopw 0x0(%rax,%rax,1)\n  40111c:\tnopl   0x0(%rax)\n\n0000000000401120 <__do_global_dtors_aux>:\n  401120:\tendbr64\n  401124:\tcmpb   $0x0,0x2f15(%rip)        # 404040 <completed.0>\n  40112b:\tjne    401140 <__do_global_dtors_aux+0x20>\n  40112d:\tpush   %rbp\n  40112e:\tmov    %rsp,%rbp\n  401131:\tcall   4010b0 <deregister_tm_clones>\n  401136:\tmovb   $0x1,0x2f03(%rip)        # 404040 <completed.0>\n  40113d:\tpop    %rbp\n  40113e:\tret\n  40113f:\tnop\n  401140:\tret\n  401141:\tdata16 cs nopw 0x0(%rax,%rax,1)\n  40114c:\tnopl   0x0(%rax)\n\n0000000000401150 <frame_dummy>:\n  401150:\tendbr64\n  401154:\tjmp    4010e0 <register_tm_clones>\n\n0000000000401156 <main>:\n  401156:\tendbr64\n  40115a:\tpush   %rbp\n  40115b:\tmov    %rsp,%rbp\n  40115e:\tpush   %r14\n  401160:\tpush   %r13\n  401162:\tpush   %r12\n  401164:\tpush   %rbx\n  401165:\tsub    $0x40,%rsp\n  401169:\tmovl   $0x0,-0x5c(%rbp)\n  401170:\tmovq   $0x0,-0x50(%rbp)\n  401178:\tjmp    401192 <main+0x3c>\n  40117a:\tmov    -0x50(%rbp),%rax\n  40117e:\tadd    $0x404060,%rax\n  401184:\tmovzbl (%rax),%eax\n  401187:\tmovzbl %al,%eax\n  40118a:\tadd    %eax,-0x5c(%rbp)\n  40118d:\taddq   $0x1,-0x50(%rbp)\n  401192:\tcmpq   $0x1fff,-0x50(%rbp)\n  40119a:\tjbe    40117a <main+0x24>\n  40119c:\tmovl   $0x0,-0x58(%rbp)\n  4011a3:\tmovq   $0x0,-0x48(%rbp)\n  4011ab:\tjmp    40124d <main+0xf7>\n  4011b0:\tmovq   $0x0,-0x40(%rbp)\n  4011b8:\tmovq   $0x1,-0x38(%rbp)\n  4011c0:\tjmp    4011db <main+0x85>\n  4011c2:\tmov    -0x48(%rbp),%rdx\n  4011c6:\tmov    -0x38(%rbp),%rax\n  4011ca:\tadd    %rdx,%rax\n  4011cd:\timul   -0x38(%rbp),%rax\n  4011d2:\tadd    %rax,-0x40(%rbp)\n  4011d6:\taddq   $0x1,-0x38(%rbp)\n  4011db:\tcmpq   $0x8,-0x38(%rbp)\n  4011e0:\tjbe    4011c2 <main+0x6c>\n  4011e2:\tmov    -0x48(%rbp),%rax\n  4011e6:\tlea    0x8(%rax),%r8\n  4011ea:\tmov    -0x48(%rbp),%rax\n  4011ee:\tlea    0x7(%rax),%rdi\n  4011f2:\tmov    -0x48(%rbp),%rax\n  4011f6:\tlea    0x6(%rax),%r9\n  4011fa:\tmov    -0x48(%rbp),%rax\n  4011fe:\tlea    0x5(%rax),%r10\n  401202:\tmov    -0x48(%rbp),%rax\n  401206:\tlea    0x4(%rax),%rcx\n  40120a:\tmov    -0x48(%rbp),%rax\n  40120e:\tlea    0x3(%rax),%rdx\n  401212:\tmov    -0x48(%rbp),%rax\n  401216:\tlea    0x2(%rax),%rsi\n  40121a:\tmov    -0x48(%rbp),%rax\n  40121e:\tadd    $0x1,%rax\n  401222:\tpush   %r8\n  401224:\tpush   %rdi\n  401225:\tmov    %r10,%r8\n  401228:\tmov    %rax,%rdi\n  40122b:\tcall   401350 <weighted8>\n  401230:\tadd    $0x10,%rsp\n  401234:\tcmp    %rax,-0x40(%rbp)\n  401238:\tje     401244 <main+0xee>\n  40123a:\tmov    $0x2,%eax\n  40123f:\tjmp    401343 <main+0x1ed>\n  401244:\taddl   $0x1,-0x58(%rbp)\n  401248:\taddq   $0x1,-0x48(%rbp)\n  40124d:\tcmpq   $0x63,-0x48(%rbp)\n  401252:\tjbe    4011b0 <main+0x5a>\n  401258:\tmov    $0x0,%edx\n  40125d:\tmov    $0x402008,%esi\n  401262:\tmov    $0xffffffffffffffff,%rdi\n  401269:\tcall   4013da <raw_write>\n  40126e:\tmov    %rax,-0x30(%rbp)\n  401272:\tcall   401030 <__errno_location@plt>\n  401277:\tmovl   $0x0,(%rax)\n  40127d:\tmov    $0x0,%edx\n  401282:\tmov    $0x402008,%esi\n  401287:\tmov    $0xffffffff,%edi\n  40128c:\tcall   401040 <write@plt>\n  401291:\tmov    %rax,-0x28(%rbp)\n  401295:\tcall   401030 <__errno_location@plt>\n  40129a:\tmov    (%rax),%eax\n  40129c:\tmov    %eax,-0x54(%rbp)\n  40129f:\tcall   4013d2 <raw_getpid>\n  4012a4:\tmov    %rax,%rbx\n  4012a7:\tcall   401050 <getpid@plt>\n  4012ac:\tcltq\n  4012ae:\tcmp    %rax,%rbx\n  4012b1:\tsete   %al\n  4012b4:\tmovzbl %al,%ebx\n  4012b7:\tcall   4013b8 <check_bad>\n  4012bc:\tmov    %eax,%r14d\n  4012bf:\tcall   40139e <check_good>\n  4012c4:\tmov    %eax,%r13d\n  4012c7:\tcall   401387 <entry_alignment>\n  4012cc:\tmov    %eax,%r12d\n  4012cf:\tpush   $0x8\n  4012d1:\tpush   $0x7\n  4012d3:\tmov    $0x6,%r9d\n  4012d9:\tmov    $0x5,%r8d\n  4012df:\tmov    $0x4,%ecx\n  4012e4:\tmov    $0x3,%edx\n  4012e9:\tmov    $0x2,%esi\n  4012ee:\tmov    $0x1,%edi\n  4012f3:\tcall   401350 <weighted8>\n  4012f8:\tadd    $0x10,%rsp\n  4012fc:\tmov    %rax,%rsi\n  4012ff:\tmov    -0x58(%rbp),%eax\n  401302:\tsub    $0x8,%rsp\n  401306:\tpush   $0x10\n  401308:\tpush   $0x8\n  40130a:\tpush   $0x8\n  40130c:\tpush   $0x18\n  40130e:\tmov    -0x5c(%rbp),%edx\n  401311:\tpush   %rdx\n  401312:\tmov    -0x54(%rbp),%edx\n  401315:\tpush   %rdx\n  401316:\tpush   -0x28(%rbp)\n  401319:\tpush   -0x30(%rbp)\n  40131c:\tpush   %rbx\n  40131d:\tmov    %r14d,%r9d\n  401320:\tmov    %r13d,%r8d\n  401323:\tmov    %r12d,%ecx\n  401326:\tmov    %rsi,%rdx\n  401329:\tmov    %eax,%esi\n  40132b:\tmov    $0x402010,%edi\n  401330:\tmov    $0x0,%eax\n  401335:\tcall   401060 <printf@plt>\n  40133a:\tadd    $0x50,%rsp\n  40133e:\tmov    $0x0,%eax\n  401343:\tlea    -0x20(%rbp),%rsp\n  401347:\tpop    %rbx\n  401348:\tpop    %r12\n  40134a:\tpop    %r13\n  40134c:\tpop    %r14\n  40134e:\tpop    %rbp\n  40134f:\tret\n\n0000000000401350 <weighted8>:\n  401350:\tmov    %rdi,%rax\n  401353:\tlea    (%rax,%rsi,2),%rax\n  401357:\tlea    (%rdx,%rdx,2),%r10\n  40135b:\tadd    %r10,%rax\n  40135e:\tlea    (%rax,%rcx,4),%rax\n  401362:\tlea    (%r8,%r8,4),%r10\n  401366:\tadd    %r10,%rax\n  401369:\tlea    (%r9,%r9,2),%r10\n  40136d:\tlea    (%rax,%r10,2),%rax\n  401371:\tmov    0x8(%rsp),%r10\n  401376:\timul   $0x7,%r10,%r10\n  40137a:\tadd    %r10,%rax\n  40137d:\tmov    0x10(%rsp),%r10\n  401382:\tlea    (%rax,%r10,8),%rax\n  401386:\tret\n\n0000000000401387 <entry_alignment>:\n  401387:\tlea    0x8(%rsp),%rax\n  40138c:\tand    $0xf,%eax\n  40138f:\tret\n\n0000000000401390 <touch_good>:\n  401390:\tpush   %rbx\n  401391:\tmov    $0x9,%ebx\n  401396:\tpop    %rbx\n  401397:\tret\n\n0000000000401398 <touch_bad>:\n  401398:\tmov    $0x9,%ebx\n  40139d:\tret\n\n000000000040139e <check_good>:\n  40139e:\tpush   %rbx\n  40139f:\tmov    $0x3039,%ebx\n  4013a4:\tcall   401390 <touch_good>\n  4013a9:\tcmp    $0x3039,%rbx\n  4013b0:\tsete   %al\n  4013b3:\tmovzbl %al,%eax\n  4013b6:\tpop    %rbx\n  4013b7:\tret\n\n00000000004013b8 <check_bad>:\n  4013b8:\tpush   %rbx\n  4013b9:\tmov    $0x3039,%ebx\n  4013be:\tcall   401398 <touch_bad>\n  4013c3:\tcmp    $0x3039,%rbx\n  4013ca:\tsete   %al\n  4013cd:\tmovzbl %al,%eax\n  4013d0:\tpop    %rbx\n  4013d1:\tret\n\n00000000004013d2 <raw_getpid>:\n  4013d2:\tmov    $0x27,%eax\n  4013d7:\tsyscall\n  4013d9:\tret\n\n00000000004013da <raw_write>:\n  4013da:\tmov    $0x1,%eax\n  4013df:\tsyscall\n  4013e1:\tret\n\nDisassembly of section .fini:\n\n00000000004013e4 <_fini>:\n  4013e4:\tendbr64\n  4013e8:\tsub    $0x8,%rsp\n  4013ec:\tadd    $0x8,%rsp\n  4013f0:\tret\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/tmp6b2ofu71/o0-exec-no-sections"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"weighted_cases\":100,\"weighted_1_to_8\":204,\"entry_alignment\":0,\"good_preserves\":1,\"mutant_preserves\":0,\"pid_equal\":1,\"raw_write\":-9,\"libc_write\":-1,\"libc_errno\":9,\"bss_zero_sum\":0,\"row_size\":24,\"row_align\":8,\"value_offset\":8,\"code_offset\":16}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-fno-pie",
+        "-no-pie",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/04-computer-systems/abi-loading/code/main.c",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/04-computer-systems/abi-loading/code/boundary.S",
+        "-o",
+        "/tmp/tmp6b2ofu71/o2-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/tmp6b2ofu71/o2-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"weighted_cases\":100,\"weighted_1_to_8\":204,\"entry_alignment\":0,\"good_preserves\":1,\"mutant_preserves\":0,\"pid_equal\":1,\"raw_write\":-9,\"libc_write\":-1,\"libc_errno\":9,\"bss_zero_sum\":0,\"row_size\":24,\"row_align\":8,\"value_offset\":8,\"code_offset\":16}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "readelf",
+        "-W",
+        "-l",
+        "/tmp/tmp6b2ofu71/o2-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "\nElf file type is EXEC (Executable file)\nEntry point 0x4011e0\nThere are 13 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8\n  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1\n      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]\n  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x0005c0 0x0005c0 R   0x1000\n  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x000365 0x000365 R E 0x1000\n  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x00022c 0x00022c R   0x1000\n  LOAD           0x002df8 0x0000000000403df8 0x0000000000403df8 0x000238 0x002268 RW  0x1000\n  DYNAMIC        0x002e08 0x0000000000403e08 0x0000000000403e08 0x0001d0 0x0001d0 RW  0x8\n  NOTE           0x000338 0x0000000000400338 0x0000000000400338 0x000020 0x000020 R   0x8\n  NOTE           0x000358 0x0000000000400358 0x0000000000400358 0x000044 0x000044 R   0x4\n  GNU_PROPERTY   0x000338 0x0000000000400338 0x0000000000400338 0x000020 0x000020 R   0x8\n  GNU_EH_FRAME   0x00210c 0x000000000040210c 0x000000000040210c 0x00002c 0x00002c R   0x4\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n  GNU_RELRO      0x002df8 0x0000000000403df8 0x0000000000403df8 0x000208 0x000208 R   0x1\n\n Section to Segment mapping:\n  Segment Sections...\n   00     \n   01     .interp \n   02     .interp .note.gnu.property .note.gnu.build-id .note.ABI-tag .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt \n   03     .init .plt .text .fini \n   04     .rodata .eh_frame_hdr .eh_frame \n   05     .init_array .fini_array .dynamic .got .got.plt .data .bss \n   06     .dynamic \n   07     .note.gnu.property \n   08     .note.gnu.build-id .note.ABI-tag \n   09     .note.gnu.property \n   10     .eh_frame_hdr \n   11     \n   12     .init_array .fini_array .dynamic .got \n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nm",
+        "-S",
+        "/tmp/tmp6b2ofu71/o2-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "0000000000403e08 d _DYNAMIC\n0000000000403fe8 d _GLOBAL_OFFSET_TABLE_\n0000000000402000 0000000000000004 R _IO_stdin_used\n0000000000402228 r __FRAME_END__\n000000000040210c r __GNU_EH_FRAME_HDR\n0000000000404030 D __TMC_END__\n000000000040037c 0000000000000020 r __abi_tag\n0000000000404040 B __bss_start\n0000000000404020 D __data_start\n0000000000401290 t __do_global_dtors_aux\n0000000000403e00 d __do_global_dtors_aux_fini_array_entry\n0000000000404028 D __dso_handle\n                 U __errno_location@GLIBC_2.2.5\n0000000000403df8 d __frame_dummy_init_array_entry\n                 w __gmon_start__\n                 U __libc_start_main@GLIBC_2.34\n                 U __printf_chk@GLIBC_2.3.4\n0000000000401210 0000000000000005 T _dl_relocate_static_pie\n0000000000404030 D _edata\n0000000000406060 B _end\n0000000000401358 T _fini\n0000000000401000 T _init\n00000000004011e0 0000000000000026 T _start\n000000000040132e 000000000000001a T check_bad\n0000000000401314 000000000000001a T check_good\n0000000000404040 0000000000000001 b completed.0\n0000000000404020 W data_start\n0000000000401220 t deregister_tm_clones\n00000000004012fd 0000000000000009 T entry_alignment\n00000000004012c0 t frame_dummy\n                 U getpid@GLIBC_2.2.5\n0000000000401070 0000000000000165 T main\n0000000000401348 0000000000000008 T raw_getpid\n0000000000401350 0000000000000008 T raw_write\n0000000000401250 t register_tm_clones\n000000000040130e 0000000000000006 t touch_bad\n0000000000401306 0000000000000008 t touch_good\n00000000004012c6 0000000000000037 T weighted8\n                 U write@GLIBC_2.2.5\n0000000000404060 0000000000002000 B zero_area\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "objdump",
+        "-d",
+        "--no-show-raw-insn",
+        "/tmp/tmp6b2ofu71/o2-exec"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/tmp6b2ofu71/o2-exec:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\n0000000000401000 <_init>:\n  401000:\tendbr64\n  401004:\tsub    $0x8,%rsp\n  401008:\tmov    0x2fd1(%rip),%rax        # 403fe0 <__gmon_start__@Base>\n  40100f:\ttest   %rax,%rax\n  401012:\tje     401016 <_init+0x16>\n  401014:\tcall   *%rax\n  401016:\tadd    $0x8,%rsp\n  40101a:\tret\n\nDisassembly of section .plt:\n\n0000000000401020 <__errno_location@plt-0x10>:\n  401020:\tpush   0x2fca(%rip)        # 403ff0 <_GLOBAL_OFFSET_TABLE_+0x8>\n  401026:\tjmp    *0x2fcc(%rip)        # 403ff8 <_GLOBAL_OFFSET_TABLE_+0x10>\n  40102c:\tnopl   0x0(%rax)\n\n0000000000401030 <__errno_location@plt>:\n  401030:\tjmp    *0x2fca(%rip)        # 404000 <__errno_location@GLIBC_2.2.5>\n  401036:\tpush   $0x0\n  40103b:\tjmp    401020 <_init+0x20>\n\n0000000000401040 <write@plt>:\n  401040:\tjmp    *0x2fc2(%rip)        # 404008 <write@GLIBC_2.2.5>\n  401046:\tpush   $0x1\n  40104b:\tjmp    401020 <_init+0x20>\n\n0000000000401050 <getpid@plt>:\n  401050:\tjmp    *0x2fba(%rip)        # 404010 <getpid@GLIBC_2.2.5>\n  401056:\tpush   $0x2\n  40105b:\tjmp    401020 <_init+0x20>\n\n0000000000401060 <__printf_chk@plt>:\n  401060:\tjmp    *0x2fb2(%rip)        # 404018 <__printf_chk@GLIBC_2.3.4>\n  401066:\tpush   $0x3\n  40106b:\tjmp    401020 <_init+0x20>\n\nDisassembly of section .text:\n\n0000000000401070 <main>:\n  401070:\tendbr64\n  401074:\tpush   %r15\n  401076:\txor    %eax,%eax\n  401078:\tpush   %r14\n  40107a:\tpush   %r13\n  40107c:\tpush   %r12\n  40107e:\tpush   %rbp\n  40107f:\tpush   %rbx\n  401080:\txor    %ebx,%ebx\n  401082:\tsub    $0x18,%rsp\n  401086:\tcs nopw 0x0(%rax,%rax,1)\n  401090:\tmovzbl 0x404060(%rax),%edx\n  401097:\tadd    $0x1,%rax\n  40109b:\tadd    %edx,%ebx\n  40109d:\tcmp    $0x2000,%rax\n  4010a3:\tjne    401090 <main+0x20>\n  4010a5:\tmov    $0xcc,%r12d\n  4010ab:\txor    %ebp,%ebp\n  4010ad:\tjmp    4010ba <main+0x4a>\n  4010af:\tnop\n  4010b0:\tadd    $0x24,%r12\n  4010b4:\tcmp    $0x64,%rbp\n  4010b8:\tje     4010ff <main+0x8f>\n  4010ba:\tlea    0x8(%rbp),%rdi\n  4010be:\tlea    0x7(%rbp),%rax\n  4010c2:\tpush   %rdi\n  4010c3:\tlea    0x4(%rbp),%rcx\n  4010c7:\tlea    0x3(%rbp),%rdx\n  4010cb:\tpush   %rax\n  4010cc:\tlea    0x6(%rbp),%r9\n  4010d0:\tlea    0x5(%rbp),%r8\n  4010d4:\tlea    0x2(%rbp),%rsi\n  4010d8:\tadd    $0x1,%rbp\n  4010dc:\tmov    %rbp,%rdi\n  4010df:\tcall   4012c6 <weighted8>\n  4010e4:\tpop    %rdx\n  4010e5:\tpop    %rcx\n  4010e6:\tcmp    %r12,%rax\n  4010e9:\tje     4010b0 <main+0x40>\n  4010eb:\tmov    $0x2,%eax\n  4010f0:\tadd    $0x18,%rsp\n  4010f4:\tpop    %rbx\n  4010f5:\tpop    %rbp\n  4010f6:\tpop    %r12\n  4010f8:\tpop    %r13\n  4010fa:\tpop    %r14\n  4010fc:\tpop    %r15\n  4010fe:\tret\n  4010ff:\txor    %edx,%edx\n  401101:\tor     $0xffffffffffffffff,%rdi\n  401105:\tmov    $0x402004,%esi\n  40110a:\tcall   401350 <raw_write>\n  40110f:\tmov    %rax,%r13\n  401112:\tcall   401030 <__errno_location@plt>\n  401117:\txor    %edx,%edx\n  401119:\tor     $0xffffffff,%edi\n  40111c:\tmov    $0x402004,%esi\n  401121:\tmov    %rax,%rbp\n  401124:\txor    %eax,%eax\n  401126:\tmov    %eax,0x0(%rbp)\n  401129:\tcall   401040 <write@plt>\n  40112e:\tmov    0x0(%rbp),%r15d\n  401132:\tmov    %rax,%r14\n  401135:\tcall   401348 <raw_getpid>\n  40113a:\tmov    %rax,%r12\n  40113d:\tcall   401050 <getpid@plt>\n  401142:\tmov    %eax,0x4(%rsp)\n  401146:\tcall   40132e <check_bad>\n  40114b:\tmov    %eax,%ebp\n  40114d:\tcall   401314 <check_good>\n  401152:\tmov    %eax,0x8(%rsp)\n  401156:\tcall   4012fd <entry_alignment>\n  40115b:\tmov    $0x6,%r9d\n  401161:\tmov    $0x5,%r8d\n  401167:\tmov    $0x4,%ecx\n  40116c:\tmov    %eax,0xc(%rsp)\n  401170:\tmov    $0x3,%edx\n  401175:\tmov    $0x2,%esi\n  40117a:\tmov    $0x1,%edi\n  40117f:\tpush   $0x8\n  401181:\tpush   $0x7\n  401183:\tcall   4012c6 <weighted8>\n  401188:\tpush   $0x10\n  40118a:\tmov    $0x64,%edx\n  40118f:\tmov    $0x402008,%esi\n  401194:\tpush   $0x8\n  401196:\tmov    %rax,%rcx\n  401199:\tmov    $0x2,%edi\n  40119e:\tpush   $0x8\n  4011a0:\tpush   $0x18\n  4011a2:\tpush   %rbx\n  4011a3:\tpush   %r15\n  4011a5:\tpush   %r14\n  4011a7:\tpush   %r13\n  4011a9:\tmovslq 0x54(%rsp),%rax\n  4011ae:\tcmp    %r12,%rax\n  4011b1:\tsete   %al\n  4011b4:\tmovzbl %al,%eax\n  4011b7:\tpush   %rax\n  4011b8:\txor    %eax,%eax\n  4011ba:\tpush   %rbp\n  4011bb:\tmov    0x68(%rsp),%r9d\n  4011c0:\tmov    0x6c(%rsp),%r8d\n  4011c5:\tcall   401060 <__printf_chk@plt>\n  4011ca:\tadd    $0x60,%rsp\n  4011ce:\txor    %eax,%eax\n  4011d0:\tjmp    4010f0 <main+0x80>\n  4011d5:\tcs nopw 0x0(%rax,%rax,1)\n  4011df:\tnop\n\n00000000004011e0 <_start>:\n  4011e0:\tendbr64\n  4011e4:\txor    %ebp,%ebp\n  4011e6:\tmov    %rdx,%r9\n  4011e9:\tpop    %rsi\n  4011ea:\tmov    %rsp,%rdx\n  4011ed:\tand    $0xfffffffffffffff0,%rsp\n  4011f1:\tpush   %rax\n  4011f2:\tpush   %rsp\n  4011f3:\txor    %r8d,%r8d\n  4011f6:\txor    %ecx,%ecx\n  4011f8:\tmov    $0x401070,%rdi\n  4011ff:\tcall   *0x2dd3(%rip)        # 403fd8 <__libc_start_main@GLIBC_2.34>\n  401205:\thlt\n  401206:\tcs nopw 0x0(%rax,%rax,1)\n\n0000000000401210 <_dl_relocate_static_pie>:\n  401210:\tendbr64\n  401214:\tret\n  401215:\tcs nopw 0x0(%rax,%rax,1)\n  40121f:\tnop\n\n0000000000401220 <deregister_tm_clones>:\n  401220:\tmov    $0x404030,%eax\n  401225:\tcmp    $0x404030,%rax\n  40122b:\tje     401240 <deregister_tm_clones+0x20>\n  40122d:\tmov    $0x0,%eax\n  401232:\ttest   %rax,%rax\n  401235:\tje     401240 <deregister_tm_clones+0x20>\n  401237:\tmov    $0x404030,%edi\n  40123c:\tjmp    *%rax\n  40123e:\txchg   %ax,%ax\n  401240:\tret\n  401241:\tdata16 cs nopw 0x0(%rax,%rax,1)\n  40124c:\tnopl   0x0(%rax)\n\n0000000000401250 <register_tm_clones>:\n  401250:\tmov    $0x404030,%esi\n  401255:\tsub    $0x404030,%rsi\n  40125c:\tmov    %rsi,%rax\n  40125f:\tshr    $0x3f,%rsi\n  401263:\tsar    $0x3,%rax\n  401267:\tadd    %rax,%rsi\n  40126a:\tsar    $1,%rsi\n  40126d:\tje     401280 <register_tm_clones+0x30>\n  40126f:\tmov    $0x0,%eax\n  401274:\ttest   %rax,%rax\n  401277:\tje     401280 <register_tm_clones+0x30>\n  401279:\tmov    $0x404030,%edi\n  40127e:\tjmp    *%rax\n  401280:\tret\n  401281:\tdata16 cs nopw 0x0(%rax,%rax,1)\n  40128c:\tnopl   0x0(%rax)\n\n0000000000401290 <__do_global_dtors_aux>:\n  401290:\tendbr64\n  401294:\tcmpb   $0x0,0x2da5(%rip)        # 404040 <completed.0>\n  40129b:\tjne    4012b0 <__do_global_dtors_aux+0x20>\n  40129d:\tpush   %rbp\n  40129e:\tmov    %rsp,%rbp\n  4012a1:\tcall   401220 <deregister_tm_clones>\n  4012a6:\tmovb   $0x1,0x2d93(%rip)        # 404040 <completed.0>\n  4012ad:\tpop    %rbp\n  4012ae:\tret\n  4012af:\tnop\n  4012b0:\tret\n  4012b1:\tdata16 cs nopw 0x0(%rax,%rax,1)\n  4012bc:\tnopl   0x0(%rax)\n\n00000000004012c0 <frame_dummy>:\n  4012c0:\tendbr64\n  4012c4:\tjmp    401250 <register_tm_clones>\n\n00000000004012c6 <weighted8>:\n  4012c6:\tmov    %rdi,%rax\n  4012c9:\tlea    (%rax,%rsi,2),%rax\n  4012cd:\tlea    (%rdx,%rdx,2),%r10\n  4012d1:\tadd    %r10,%rax\n  4012d4:\tlea    (%rax,%rcx,4),%rax\n  4012d8:\tlea    (%r8,%r8,4),%r10\n  4012dc:\tadd    %r10,%rax\n  4012df:\tlea    (%r9,%r9,2),%r10\n  4012e3:\tlea    (%rax,%r10,2),%rax\n  4012e7:\tmov    0x8(%rsp),%r10\n  4012ec:\timul   $0x7,%r10,%r10\n  4012f0:\tadd    %r10,%rax\n  4012f3:\tmov    0x10(%rsp),%r10\n  4012f8:\tlea    (%rax,%r10,8),%rax\n  4012fc:\tret\n\n00000000004012fd <entry_alignment>:\n  4012fd:\tlea    0x8(%rsp),%rax\n  401302:\tand    $0xf,%eax\n  401305:\tret\n\n0000000000401306 <touch_good>:\n  401306:\tpush   %rbx\n  401307:\tmov    $0x9,%ebx\n  40130c:\tpop    %rbx\n  40130d:\tret\n\n000000000040130e <touch_bad>:\n  40130e:\tmov    $0x9,%ebx\n  401313:\tret\n\n0000000000401314 <check_good>:\n  401314:\tpush   %rbx\n  401315:\tmov    $0x3039,%ebx\n  40131a:\tcall   401306 <touch_good>\n  40131f:\tcmp    $0x3039,%rbx\n  401326:\tsete   %al\n  401329:\tmovzbl %al,%eax\n  40132c:\tpop    %rbx\n  40132d:\tret\n\n000000000040132e <check_bad>:\n  40132e:\tpush   %rbx\n  40132f:\tmov    $0x3039,%ebx\n  401334:\tcall   40130e <touch_bad>\n  401339:\tcmp    $0x3039,%rbx\n  401340:\tsete   %al\n  401343:\tmovzbl %al,%eax\n  401346:\tpop    %rbx\n  401347:\tret\n\n0000000000401348 <raw_getpid>:\n  401348:\tmov    $0x27,%eax\n  40134d:\tsyscall\n  40134f:\tret\n\n0000000000401350 <raw_write>:\n  401350:\tmov    $0x1,%eax\n  401355:\tsyscall\n  401357:\tret\n\nDisassembly of section .fini:\n\n0000000000401358 <_fini>:\n  401358:\tendbr64\n  40135c:\tsub    $0x8,%rsp\n  401360:\tadd    $0x8,%rsp\n  401364:\tret\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/tmp6b2ofu71/o2-exec-no-sections"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"weighted_cases\":100,\"weighted_1_to_8\":204,\"entry_alignment\":0,\"good_preserves\":1,\"mutant_preserves\":0,\"pid_equal\":1,\"raw_write\":-9,\"libc_write\":-1,\"libc_errno\":9,\"bss_zero_sum\":0,\"row_size\":24,\"row_align\":8,\"value_offset\":8,\"code_offset\":16}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-fPIE",
+        "-pie",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/04-computer-systems/abi-loading/code/main.c",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/04-computer-systems/abi-loading/code/boundary.S",
+        "-o",
+        "/tmp/tmp6b2ofu71/o2-pie"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/tmp6b2ofu71/o2-pie"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"weighted_cases\":100,\"weighted_1_to_8\":204,\"entry_alignment\":0,\"good_preserves\":1,\"mutant_preserves\":0,\"pid_equal\":1,\"raw_write\":-9,\"libc_write\":-1,\"libc_errno\":9,\"bss_zero_sum\":0,\"row_size\":24,\"row_align\":8,\"value_offset\":8,\"code_offset\":16}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "readelf",
+        "-W",
+        "-l",
+        "/tmp/tmp6b2ofu71/o2-pie"
+      ],
+      "exit_code": 0,
+      "stdout": "\nElf file type is DYN (Position-Independent Executable file)\nEntry point 0x11f0\nThere are 13 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  PHDR           0x000040 0x0000000000000040 0x0000000000000040 0x0002d8 0x0002d8 R   0x8\n  INTERP         0x000318 0x0000000000000318 0x0000000000000318 0x00001c 0x00001c R   0x1\n      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]\n  LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x0006f0 0x0006f0 R   0x1000\n  LOAD           0x001000 0x0000000000001000 0x0000000000001000 0x000379 0x000379 R E 0x1000\n  LOAD           0x002000 0x0000000000002000 0x0000000000002000 0x000234 0x000234 R   0x1000\n  LOAD           0x002da0 0x0000000000003da0 0x0000000000003da0 0x000270 0x0022a0 RW  0x1000\n  DYNAMIC        0x002db0 0x0000000000003db0 0x0000000000003db0 0x0001f0 0x0001f0 RW  0x8\n  NOTE           0x000338 0x0000000000000338 0x0000000000000338 0x000020 0x000020 R   0x8\n  NOTE           0x000358 0x0000000000000358 0x0000000000000358 0x000044 0x000044 R   0x4\n  GNU_PROPERTY   0x000338 0x0000000000000338 0x0000000000000338 0x000020 0x000020 R   0x8\n  GNU_EH_FRAME   0x00210c 0x000000000000210c 0x000000000000210c 0x00002c 0x00002c R   0x4\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n  GNU_RELRO      0x002da0 0x0000000000003da0 0x0000000000003da0 0x000260 0x000260 R   0x1\n\n Section to Segment mapping:\n  Segment Sections...\n   00     \n   01     .interp \n   02     .interp .note.gnu.property .note.gnu.build-id .note.ABI-tag .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt \n   03     .init .plt .plt.got .text .fini \n   04     .rodata .eh_frame_hdr .eh_frame \n   05     .init_array .fini_array .dynamic .got .data .bss \n   06     .dynamic \n   07     .note.gnu.property \n   08     .note.gnu.build-id .note.ABI-tag \n   09     .note.gnu.property \n   10     .eh_frame_hdr \n   11     \n   12     .init_array .fini_array .dynamic .got \n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nm",
+        "-S",
+        "/tmp/tmp6b2ofu71/o2-pie"
+      ],
+      "exit_code": 0,
+      "stdout": "0000000000003db0 d _DYNAMIC\n0000000000003fa0 d _GLOBAL_OFFSET_TABLE_\n0000000000002000 0000000000000004 R _IO_stdin_used\n                 w _ITM_deregisterTMCloneTable\n                 w _ITM_registerTMCloneTable\n0000000000002230 r __FRAME_END__\n000000000000210c r __GNU_EH_FRAME_HDR\n0000000000004010 D __TMC_END__\n000000000000037c 0000000000000020 r __abi_tag\n0000000000004020 B __bss_start\n                 w __cxa_finalize@GLIBC_2.2.5\n0000000000004000 D __data_start\n0000000000001290 t __do_global_dtors_aux\n0000000000003da8 d __do_global_dtors_aux_fini_array_entry\n0000000000004008 D __dso_handle\n                 U __errno_location@GLIBC_2.2.5\n0000000000003da0 d __frame_dummy_init_array_entry\n                 w __gmon_start__\n                 U __libc_start_main@GLIBC_2.34\n                 U __printf_chk@GLIBC_2.3.4\n0000000000004010 D _edata\n0000000000006040 B _end\n000000000000136c T _fini\n0000000000001000 T _init\n00000000000011f0 0000000000000026 T _start\n0000000000001341 000000000000001a T check_bad\n0000000000001327 000000000000001a T check_good\n0000000000004020 0000000000000001 b completed.0\n0000000000004000 W data_start\n0000000000001220 t deregister_tm_clones\n0000000000001310 0000000000000009 T entry_alignment\n00000000000012d0 t frame_dummy\n                 U getpid@GLIBC_2.2.5\n0000000000001080 000000000000016a T main\n000000000000135b 0000000000000008 T raw_getpid\n0000000000001363 0000000000000008 T raw_write\n0000000000001250 t register_tm_clones\n0000000000001321 0000000000000006 t touch_bad\n0000000000001319 0000000000000008 t touch_good\n00000000000012d9 0000000000000037 T weighted8\n                 U write@GLIBC_2.2.5\n0000000000004040 0000000000002000 B zero_area\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "objdump",
+        "-d",
+        "--no-show-raw-insn",
+        "/tmp/tmp6b2ofu71/o2-pie"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/tmp6b2ofu71/o2-pie:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\n0000000000001000 <_init>:\n    1000:\tendbr64\n    1004:\tsub    $0x8,%rsp\n    1008:\tmov    0x2fd9(%rip),%rax        # 3fe8 <__gmon_start__@Base>\n    100f:\ttest   %rax,%rax\n    1012:\tje     1016 <_init+0x16>\n    1014:\tcall   *%rax\n    1016:\tadd    $0x8,%rsp\n    101a:\tret\n\nDisassembly of section .plt:\n\n0000000000001020 <__errno_location@plt-0x10>:\n    1020:\tpush   0x2f82(%rip)        # 3fa8 <_GLOBAL_OFFSET_TABLE_+0x8>\n    1026:\tjmp    *0x2f84(%rip)        # 3fb0 <_GLOBAL_OFFSET_TABLE_+0x10>\n    102c:\tnopl   0x0(%rax)\n\n0000000000001030 <__errno_location@plt>:\n    1030:\tjmp    *0x2f82(%rip)        # 3fb8 <__errno_location@GLIBC_2.2.5>\n    1036:\tpush   $0x0\n    103b:\tjmp    1020 <_init+0x20>\n\n0000000000001040 <write@plt>:\n    1040:\tjmp    *0x2f7a(%rip)        # 3fc0 <write@GLIBC_2.2.5>\n    1046:\tpush   $0x1\n    104b:\tjmp    1020 <_init+0x20>\n\n0000000000001050 <getpid@plt>:\n    1050:\tjmp    *0x2f72(%rip)        # 3fc8 <getpid@GLIBC_2.2.5>\n    1056:\tpush   $0x2\n    105b:\tjmp    1020 <_init+0x20>\n\n0000000000001060 <__printf_chk@plt>:\n    1060:\tjmp    *0x2f6a(%rip)        # 3fd0 <__printf_chk@GLIBC_2.3.4>\n    1066:\tpush   $0x3\n    106b:\tjmp    1020 <_init+0x20>\n\nDisassembly of section .plt.got:\n\n0000000000001070 <__cxa_finalize@plt>:\n    1070:\tjmp    *0x2f82(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>\n    1076:\txchg   %ax,%ax\n\nDisassembly of section .text:\n\n0000000000001080 <main>:\n    1080:\tendbr64\n    1084:\tpush   %r15\n    1086:\txor    %eax,%eax\n    1088:\tlea    0x2fb1(%rip),%rcx        # 4040 <zero_area>\n    108f:\tpush   %r14\n    1091:\tpush   %r13\n    1093:\tpush   %r12\n    1095:\tpush   %rbp\n    1096:\tpush   %rbx\n    1097:\txor    %ebx,%ebx\n    1099:\tsub    $0x18,%rsp\n    109d:\tnopl   (%rax)\n    10a0:\tmovzbl (%rcx,%rax,1),%edx\n    10a4:\tadd    $0x1,%rax\n    10a8:\tadd    %edx,%ebx\n    10aa:\tcmp    $0x2000,%rax\n    10b0:\tjne    10a0 <main+0x20>\n    10b2:\tmov    $0xcc,%r12d\n    10b8:\txor    %ebp,%ebp\n    10ba:\tjmp    10ca <main+0x4a>\n    10bc:\tnopl   0x0(%rax)\n    10c0:\tadd    $0x24,%r12\n    10c4:\tcmp    $0x64,%rbp\n    10c8:\tje     110f <main+0x8f>\n    10ca:\tlea    0x8(%rbp),%rdi\n    10ce:\tlea    0x7(%rbp),%rax\n    10d2:\tpush   %rdi\n    10d3:\tlea    0x4(%rbp),%rcx\n    10d7:\tlea    0x3(%rbp),%rdx\n    10db:\tpush   %rax\n    10dc:\tlea    0x6(%rbp),%r9\n    10e0:\tlea    0x5(%rbp),%r8\n    10e4:\tlea    0x2(%rbp),%rsi\n    10e8:\tadd    $0x1,%rbp\n    10ec:\tmov    %rbp,%rdi\n    10ef:\tcall   12d9 <weighted8>\n    10f4:\tpop    %rdx\n    10f5:\tpop    %rcx\n    10f6:\tcmp    %r12,%rax\n    10f9:\tje     10c0 <main+0x40>\n    10fb:\tmov    $0x2,%eax\n    1100:\tadd    $0x18,%rsp\n    1104:\tpop    %rbx\n    1105:\tpop    %rbp\n    1106:\tpop    %r12\n    1108:\tpop    %r13\n    110a:\tpop    %r14\n    110c:\tpop    %r15\n    110e:\tret\n    110f:\tlea    0xeee(%rip),%r12        # 2004 <_IO_stdin_used+0x4>\n    1116:\txor    %edx,%edx\n    1118:\tor     $0xffffffffffffffff,%rdi\n    111c:\tmov    %r12,%rsi\n    111f:\tcall   1363 <raw_write>\n    1124:\tmov    %rax,%r13\n    1127:\tcall   1030 <__errno_location@plt>\n    112c:\txor    %edx,%edx\n    112e:\tmov    %r12,%rsi\n    1131:\tor     $0xffffffff,%edi\n    1134:\tmov    %rax,%rbp\n    1137:\txor    %eax,%eax\n    1139:\tmov    %eax,0x0(%rbp)\n    113c:\tcall   1040 <write@plt>\n    1141:\tmov    0x0(%rbp),%r15d\n    1145:\tmov    %rax,%r14\n    1148:\tcall   135b <raw_getpid>\n    114d:\tmov    %rax,%r12\n    1150:\tcall   1050 <getpid@plt>\n    1155:\tmov    %eax,0x4(%rsp)\n    1159:\tcall   1341 <check_bad>\n    115e:\tmov    %eax,%ebp\n    1160:\tcall   1327 <check_good>\n    1165:\tmov    %eax,0x8(%rsp)\n    1169:\tcall   1310 <entry_alignment>\n    116e:\tmov    $0x6,%r9d\n    1174:\tmov    $0x5,%r8d\n    117a:\tmov    $0x4,%ecx\n    117f:\tmov    %eax,0xc(%rsp)\n    1183:\tmov    $0x3,%edx\n    1188:\tmov    $0x2,%esi\n    118d:\tmov    $0x1,%edi\n    1192:\tpush   $0x8\n    1194:\tpush   $0x7\n    1196:\tcall   12d9 <weighted8>\n    119b:\tpush   $0x10\n    119d:\tmov    $0x64,%edx\n    11a2:\tlea    0xe5f(%rip),%rsi        # 2008 <_IO_stdin_used+0x8>\n    11a9:\tpush   $0x8\n    11ab:\tmov    %rax,%rcx\n    11ae:\tmov    $0x2,%edi\n    11b3:\tpush   $0x8\n    11b5:\tpush   $0x18\n    11b7:\tpush   %rbx\n    11b8:\tpush   %r15\n    11ba:\tpush   %r14\n    11bc:\tpush   %r13\n    11be:\tmovslq 0x54(%rsp),%rax\n    11c3:\tcmp    %r12,%rax\n    11c6:\tsete   %al\n    11c9:\tmovzbl %al,%eax\n    11cc:\tpush   %rax\n    11cd:\txor    %eax,%eax\n    11cf:\tpush   %rbp\n    11d0:\tmov    0x68(%rsp),%r9d\n    11d5:\tmov    0x6c(%rsp),%r8d\n    11da:\tcall   1060 <__printf_chk@plt>\n    11df:\tadd    $0x60,%rsp\n    11e3:\txor    %eax,%eax\n    11e5:\tjmp    1100 <main+0x80>\n    11ea:\tnopw   0x0(%rax,%rax,1)\n\n00000000000011f0 <_start>:\n    11f0:\tendbr64\n    11f4:\txor    %ebp,%ebp\n    11f6:\tmov    %rdx,%r9\n    11f9:\tpop    %rsi\n    11fa:\tmov    %rsp,%rdx\n    11fd:\tand    $0xfffffffffffffff0,%rsp\n    1201:\tpush   %rax\n    1202:\tpush   %rsp\n    1203:\txor    %r8d,%r8d\n    1206:\txor    %ecx,%ecx\n    1208:\tlea    -0x18f(%rip),%rdi        # 1080 <main>\n    120f:\tcall   *0x2dc3(%rip)        # 3fd8 <__libc_start_main@GLIBC_2.34>\n    1215:\thlt\n    1216:\tcs nopw 0x0(%rax,%rax,1)\n\n0000000000001220 <deregister_tm_clones>:\n    1220:\tlea    0x2de9(%rip),%rdi        # 4010 <__TMC_END__>\n    1227:\tlea    0x2de2(%rip),%rax        # 4010 <__TMC_END__>\n    122e:\tcmp    %rdi,%rax\n    1231:\tje     1248 <deregister_tm_clones+0x28>\n    1233:\tmov    0x2da6(%rip),%rax        # 3fe0 <_ITM_deregisterTMCloneTable@Base>\n    123a:\ttest   %rax,%rax\n    123d:\tje     1248 <deregister_tm_clones+0x28>\n    123f:\tjmp    *%rax\n    1241:\tnopl   0x0(%rax)\n    1248:\tret\n    1249:\tnopl   0x0(%rax)\n\n0000000000001250 <register_tm_clones>:\n    1250:\tlea    0x2db9(%rip),%rdi        # 4010 <__TMC_END__>\n    1257:\tlea    0x2db2(%rip),%rsi        # 4010 <__TMC_END__>\n    125e:\tsub    %rdi,%rsi\n    1261:\tmov    %rsi,%rax\n    1264:\tshr    $0x3f,%rsi\n    1268:\tsar    $0x3,%rax\n    126c:\tadd    %rax,%rsi\n    126f:\tsar    $1,%rsi\n    1272:\tje     1288 <register_tm_clones+0x38>\n    1274:\tmov    0x2d75(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable@Base>\n    127b:\ttest   %rax,%rax\n    127e:\tje     1288 <register_tm_clones+0x38>\n    1280:\tjmp    *%rax\n    1282:\tnopw   0x0(%rax,%rax,1)\n    1288:\tret\n    1289:\tnopl   0x0(%rax)\n\n0000000000001290 <__do_global_dtors_aux>:\n    1290:\tendbr64\n    1294:\tcmpb   $0x0,0x2d85(%rip)        # 4020 <completed.0>\n    129b:\tjne    12c8 <__do_global_dtors_aux+0x38>\n    129d:\tpush   %rbp\n    129e:\tcmpq   $0x0,0x2d52(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>\n    12a6:\tmov    %rsp,%rbp\n    12a9:\tje     12b7 <__do_global_dtors_aux+0x27>\n    12ab:\tmov    0x2d56(%rip),%rdi        # 4008 <__dso_handle>\n    12b2:\tcall   1070 <__cxa_finalize@plt>\n    12b7:\tcall   1220 <deregister_tm_clones>\n    12bc:\tmovb   $0x1,0x2d5d(%rip)        # 4020 <completed.0>\n    12c3:\tpop    %rbp\n    12c4:\tret\n    12c5:\tnopl   (%rax)\n    12c8:\tret\n    12c9:\tnopl   0x0(%rax)\n\n00000000000012d0 <frame_dummy>:\n    12d0:\tendbr64\n    12d4:\tjmp    1250 <register_tm_clones>\n\n00000000000012d9 <weighted8>:\n    12d9:\tmov    %rdi,%rax\n    12dc:\tlea    (%rax,%rsi,2),%rax\n    12e0:\tlea    (%rdx,%rdx,2),%r10\n    12e4:\tadd    %r10,%rax\n    12e7:\tlea    (%rax,%rcx,4),%rax\n    12eb:\tlea    (%r8,%r8,4),%r10\n    12ef:\tadd    %r10,%rax\n    12f2:\tlea    (%r9,%r9,2),%r10\n    12f6:\tlea    (%rax,%r10,2),%rax\n    12fa:\tmov    0x8(%rsp),%r10\n    12ff:\timul   $0x7,%r10,%r10\n    1303:\tadd    %r10,%rax\n    1306:\tmov    0x10(%rsp),%r10\n    130b:\tlea    (%rax,%r10,8),%rax\n    130f:\tret\n\n0000000000001310 <entry_alignment>:\n    1310:\tlea    0x8(%rsp),%rax\n    1315:\tand    $0xf,%eax\n    1318:\tret\n\n0000000000001319 <touch_good>:\n    1319:\tpush   %rbx\n    131a:\tmov    $0x9,%ebx\n    131f:\tpop    %rbx\n    1320:\tret\n\n0000000000001321 <touch_bad>:\n    1321:\tmov    $0x9,%ebx\n    1326:\tret\n\n0000000000001327 <check_good>:\n    1327:\tpush   %rbx\n    1328:\tmov    $0x3039,%ebx\n    132d:\tcall   1319 <touch_good>\n    1332:\tcmp    $0x3039,%rbx\n    1339:\tsete   %al\n    133c:\tmovzbl %al,%eax\n    133f:\tpop    %rbx\n    1340:\tret\n\n0000000000001341 <check_bad>:\n    1341:\tpush   %rbx\n    1342:\tmov    $0x3039,%ebx\n    1347:\tcall   1321 <touch_bad>\n    134c:\tcmp    $0x3039,%rbx\n    1353:\tsete   %al\n    1356:\tmovzbl %al,%eax\n    1359:\tpop    %rbx\n    135a:\tret\n\n000000000000135b <raw_getpid>:\n    135b:\tmov    $0x27,%eax\n    1360:\tsyscall\n    1362:\tret\n\n0000000000001363 <raw_write>:\n    1363:\tmov    $0x1,%eax\n    1368:\tsyscall\n    136a:\tret\n\nDisassembly of section .fini:\n\n000000000000136c <_fini>:\n    136c:\tendbr64\n    1370:\tsub    $0x8,%rsp\n    1374:\tadd    $0x8,%rsp\n    1378:\tret\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/tmp6b2ofu71/o2-pie-no-sections"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"weighted_cases\":100,\"weighted_1_to_8\":204,\"entry_alignment\":0,\"good_preserves\":1,\"mutant_preserves\":0,\"pid_equal\":1,\"raw_write\":-9,\"libc_write\":-1,\"libc_errno\":9,\"bss_zero_sum\":0,\"row_size\":24,\"row_align\":8,\"value_offset\":8,\"code_offset\":16}\n",
+      "stderr": ""
+    }
+  ],
+  "kvm": {
+    "path_present": false,
+    "guest_executed": false,
+    "meaning": "Path presence is not accessibility/capability evidence; no KVM ioctl or guest was run."
+  },
+  "limitations": "Selected Linux SysV integer ABI and educational ELF subset. No all-ABI proof, dynamic linker, hardware cache measurement or virtual machine execution."
+}

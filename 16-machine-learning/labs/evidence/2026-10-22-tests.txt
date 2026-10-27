@@ -1,0 +1,23 @@
+test_bad_scores (test_attention.AttentionTests.test_bad_scores) ... ok
+test_causal_mask (test_attention.AttentionTests.test_causal_mask) ... ok
+test_first_position_only_self (test_attention.AttentionTests.test_first_position_only_self) ... ok
+test_invalid_dimensions (test_attention.AttentionTests.test_invalid_dimensions) ... ok
+test_no_lookahead_leakage (test_attention.AttentionTests.test_no_lookahead_leakage) ... ok
+test_projection (test_attention.AttentionTests.test_projection) ... ok
+test_scale_changes_concentration (test_attention.AttentionTests.test_scale_changes_concentration) ... ok
+test_softmax_stable_large_scores (test_attention.AttentionTests.test_softmax_stable_large_scores) ... ok
+test_all_local_gradients_by_central_difference (test_attention_derivatives.AttentionDerivativesTests.test_all_local_gradients_by_central_difference) ... ok
+test_cache_matches_full_prefixes_rectangular_values (test_attention_derivatives.AttentionDerivativesTests.test_cache_matches_full_prefixes_rectangular_values) ... ok
+test_decimal_two_key_oracle (test_attention_derivatives.AttentionDerivativesTests.test_decimal_two_key_oracle) ... ok
+test_invalid_shapes_and_nonfinite_values (test_attention_derivatives.AttentionDerivativesTests.test_invalid_shapes_and_nonfinite_values) ... ok
+test_invalid_step_leaves_state_unchanged (test_attention_derivatives.AttentionDerivativesTests.test_invalid_step_leaves_state_unchanged) ... ok
+test_mask_after_normalization_counterexample (test_attention_derivatives.AttentionDerivativesTests.test_mask_after_normalization_counterexample) ... ok
+test_projection_mutation_does_not_change_cache (test_attention_derivatives.AttentionDerivativesTests.test_projection_mutation_does_not_change_cache) ... ok
+test_single_key_routing_has_zero_query_key_gradient (test_attention_derivatives.AttentionDerivativesTests.test_single_key_routing_has_zero_query_key_gradient) ... ok
+test_translation_of_logits_leaves_distribution (test_attention_derivatives.AttentionDerivativesTests.test_translation_of_logits_leaves_distribution) ... ok
+test_uniform_keys_produce_mean_values (test_attention_derivatives.AttentionDerivativesTests.test_uniform_keys_produce_mean_values) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.003s
+
+OK

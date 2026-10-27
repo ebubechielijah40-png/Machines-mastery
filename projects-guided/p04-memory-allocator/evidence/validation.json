@@ -1,0 +1,22 @@
+{
+  "kind": "actual executed bounded systems checks",
+  "executed_at_utc": "2026-10-23T10:45:37.267267+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "passed": true,
+  "records": [
+    {
+      "name": "arena",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "projects-guided/p04-memory-allocator/code/run.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "exit_code": 0,
+      "stdout": "{\n  \"kind\": \"actual C arena tests; no replacement of process malloc\",\n  \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\",\n  \"records\": [\n    {\n      \"command\": [\n        \"/usr/bin/cc\",\n        \"-std=c11\",\n        \"-Wall\",\n        \"-Wextra\",\n        \"-Werror\",\n        \"-O0\",\n        \"/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c\",\n        \"/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/test_arena.c\",\n        \"-o\",\n        \"/tmp/mm-arena-2fxjbqqn/0\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"\",\n      \"stderr\": \"\"\n    },\n    {\n      \"command\": [\n        \"/tmp/mm-arena-2fxjbqqn/0\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"arena: boundary/coalescing/fragmentation and 5000 trace steps passed\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"command\": [\n        \"/usr/bin/cc\",\n        \"-std=c11\",\n        \"-Wall\",\n        \"-Wextra\",\n        \"-Werror\",\n        \"-O2\",\n        \"/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c\",\n        \"/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/test_arena.c\",\n        \"-o\",\n        \"/tmp/mm-arena-2fxjbqqn/1\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"\",\n      \"stderr\": \"\"\n    },\n    {\n      \"command\": [\n        \"/tmp/mm-arena-2fxjbqqn/1\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"arena: boundary/coalescing/fragmentation and 5000 trace steps passed\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"command\": [\n        \"/usr/bin/cc\",\n        \"-std=c11\",\n        \"-Wall\",\n        \"-Wextra\",\n        \"-Werror\",\n        \"-O1\",\n        \"-fsanitize=undefined\",\n        \"-fno-sanitize-recover=all\",\n        \"/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c\",\n        \"/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/test_arena.c\",\n        \"-o\",\n        \"/tmp/mm-arena-2fxjbqqn/2\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"\",\n      \"stderr\": \"\"\n    },\n    {\n      \"command\": [\n        \"/tmp/mm-arena-2fxjbqqn/2\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"arena: boundary/coalescing/fragmentation and 5000 trace steps passed\\n\",\n      \"stderr\": \"\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ]
+}

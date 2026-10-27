@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-22",
+  "scope": "agent-run synthetic alignment validation; no learner mastery or paper replication",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "18-computational-biology/code",
+        "-p",
+        "test_alignment.py",
+        "-v"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_empty_and_no_positive_local_alignment (test_alignment.AlignmentTests.test_empty_and_no_positive_local_alignment) ... ok\ntest_gap_model_can_prefer_two_gaps_over_mismatch (test_alignment.AlignmentTests.test_gap_model_can_prefer_two_gaps_over_mismatch) ... ok\ntest_global_exhaustive_independent_oracle (test_alignment.AlignmentTests.test_global_exhaustive_independent_oracle) ... ok\ntest_input_and_resource_contracts (test_alignment.AlignmentTests.test_input_and_resource_contracts) ... ok\ntest_local_exhaustive_independent_oracle (test_alignment.AlignmentTests.test_local_exhaustive_independent_oracle) ... ok\ntest_local_flanks_and_coordinates (test_alignment.AlignmentTests.test_local_flanks_and_coordinates) ... ok\ntest_symmetry_scores_not_necessarily_tracebacks (test_alignment.AlignmentTests.test_symmetry_scores_not_necessarily_tracebacks) ... ok\ntest_ties_have_documented_selection (test_alignment.AlignmentTests.test_ties_have_documented_selection) ... ok\ntest_worked_matrix_and_traceback (test_alignment.AlignmentTests.test_worked_matrix_and_traceback) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.022s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "18-computational-biology/code/test_sequence_lab.py"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "sequence_lab: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects-guided/p14-bioinformatics/tests",
+        "-v"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_inputs_and_resource_caps (test_workbench.WorkbenchTests.test_bad_inputs_and_resource_caps) ... ok\ntest_end_to_end_global (test_workbench.WorkbenchTests.test_end_to_end_global) ... ok\ntest_end_to_end_local_and_provenance (test_workbench.WorkbenchTests.test_end_to_end_local_and_provenance) ... ok\ntest_only_literal_unknown_symbol_semantics (test_workbench.WorkbenchTests.test_only_literal_unknown_symbol_semantics) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.411s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "projects-guided/p14-bioinformatics/starter/inspect_fasta.py",
+        "projects-guided/p14-bioinformatics/fixtures/toy.fasta"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "{\n  \"records\": [\n    {\n      \"length\": 8,\n      \"name\": \"toy_a synthetic example\"\n    },\n    {\n      \"length\": 8,\n      \"name\": \"toy_b synthetic example\"\n    }\n  ],\n  \"sha256\": \"0710a83a9caa80f3e0f6243767101ee7b4308e0b4ebe4fff84b48bda1df4631a\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "projects-guided/p14-bioinformatics/solutions/workbench.py",
+        "projects-guided/p14-bioinformatics/fixtures/toy.fasta",
+        "--mode",
+        "local"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "{\n  \"a_aligned\": \"ACGT\",\n  \"a_span\": [\n    2,\n    6\n  ],\n  \"b_aligned\": \"ACGT\",\n  \"b_span\": [\n    2,\n    6\n  ],\n  \"cells_evaluated\": 64,\n  \"implementation_sha256\": {\n    \"alignment.py\": \"b09f6dba2f9a9d6079b26b20b1d571e80b441fd10ab831746b397cfec646a17a\",\n    \"sequence_lab.py\": \"82c224ce518417039125d4205f06897fabdba3219e5ec4431f87a0a88f837d58\",\n    \"workbench.py\": \"d4e4f35936c314d36927648b937f169a0bef9f4bbc291558a5c0f843dfda993a\"\n  },\n  \"input_sha256\": \"0710a83a9caa80f3e0f6243767101ee7b4308e0b4ebe4fff84b48bda1df4631a\",\n  \"limits\": [\n    \"N is a literal symbol, not a wildcard.\",\n    \"A deterministic optimal alignment is not evidence of ancestry or function.\",\n    \"Synthetic educational computation; no clinical interpretation.\"\n  ],\n  \"mode\": \"local\",\n  \"records\": [\n    {\n      \"length\": 8,\n      \"name\": \"toy_a synthetic example\"\n    },\n    {\n      \"length\": 8,\n      \"name\": \"toy_b synthetic example\"\n    }\n  ],\n  \"schema\": 1,\n  \"score\": 8,\n  \"scoring\": {\n    \"gap\": -2,\n    \"gap_model\": \"linear, charged per gap symbol\",\n    \"match\": 2,\n    \"mismatch\": -3\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}

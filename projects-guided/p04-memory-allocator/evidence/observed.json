@@ -1,0 +1,269 @@
+{
+  "kind": "actual C interval-state observations",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "records": [
+    {
+      "command": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/projects-guided/p04-memory-allocator/code/experiment.c",
+        "-o",
+        "/tmp/mm-arena-observation-aqzvelni/arena-experiment"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-arena-observation-aqzvelni/arena-experiment"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"arena_size\":1800,\"block_size\":24,\"snapshots\":[{\"name\":\"initial\",\"blocks\":[{\"offset\":0,\"size\":256,\"used\":false}],\"free_total\":256,\"largest_hole\":256},{\"name\":\"requests_7_9\",\"blocks\":[{\"offset\":0,\"size\":8,\"used\":true},{\"offset\":8,\"size\":16,\"used\":true},{\"offset\":24,\"size\":232,\"used\":false}],\"free_total\":232,\"largest_hole\":232},{\"name\":\"alternating_holes\",\"blocks\":[{\"offset\":0,\"size\":8,\"used\":false},{\"offset\":8,\"size\":8,\"used\":true},{\"offset\":16,\"size\":8,\"used\":false},{\"offset\":24,\"size\":8,\"used\":true},{\"offset\":32,\"size\":8,\"used\":false},{\"offset\":40,\"size\":8,\"used\":true},{\"offset\":48,\"size\":8,\"used\":false},{\"offset\":56,\"size\":8,\"used\":true},{\"offset\":64,\"size\":8,\"used\":false},{\"offset\":72,\"size\":8,\"used\":true},{\"offset\":80,\"size\":8,\"used\":false},{\"offset\":88,\"size\":8,\"used\":true},{\"offset\":96,\"size\":8,\"used\":false},{\"offset\":104,\"size\":8,\"used\":true},{\"offset\":112,\"size\":8,\"used\":false},{\"offset\":120,\"size\":8,\"used\":true},{\"offset\":128,\"size\":8,\"used\":false},{\"offset\":136,\"size\":8,\"used\":true},{\"offset\":144,\"size\":8,\"used\":false},{\"offset\":152,\"size\":8,\"used\":true},{\"offset\":160,\"size\":8,\"used\":false},{\"offset\":168,\"size\":8,\"used\":true},{\"offset\":176,\"size\":8,\"used\":false},{\"offset\":184,\"size\":8,\"used\":true},{\"offset\":192,\"size\":8,\"used\":false},{\"offset\":200,\"size\":8,\"used\":true},{\"offset\":208,\"size\":8,\"used\":false},{\"offset\":216,\"size\":8,\"used\":true},{\"offset\":224,\"size\":8,\"used\":false},{\"offset\":232,\"size\":8,\"used\":true},{\"offset\":240,\"size\":8,\"used\":false},{\"offset\":248,\"size\":8,\"used\":true}],\"free_total\":128,\"largest_hole\":8},{\"name\":\"coalesced\",\"blocks\":[{\"offset\":0,\"size\":256,\"used\":false}],\"free_total\":256,\"largest_hole\":256}],\"request_16_rejected\":true}\n",
+      "stderr": ""
+    }
+  ],
+  "observation": {
+    "arena_size": 1800,
+    "block_size": 24,
+    "snapshots": [
+      {
+        "name": "initial",
+        "blocks": [
+          {
+            "offset": 0,
+            "size": 256,
+            "used": false
+          }
+        ],
+        "free_total": 256,
+        "largest_hole": 256
+      },
+      {
+        "name": "requests_7_9",
+        "blocks": [
+          {
+            "offset": 0,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 8,
+            "size": 16,
+            "used": true
+          },
+          {
+            "offset": 24,
+            "size": 232,
+            "used": false
+          }
+        ],
+        "free_total": 232,
+        "largest_hole": 232
+      },
+      {
+        "name": "alternating_holes",
+        "blocks": [
+          {
+            "offset": 0,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 8,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 16,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 24,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 32,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 40,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 48,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 56,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 64,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 72,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 80,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 88,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 96,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 104,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 112,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 120,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 128,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 136,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 144,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 152,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 160,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 168,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 176,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 184,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 192,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 200,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 208,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 216,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 224,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 232,
+            "size": 8,
+            "used": true
+          },
+          {
+            "offset": 240,
+            "size": 8,
+            "used": false
+          },
+          {
+            "offset": 248,
+            "size": 8,
+            "used": true
+          }
+        ],
+        "free_total": 128,
+        "largest_hole": 8
+      },
+      {
+        "name": "coalesced",
+        "blocks": [
+          {
+            "offset": 0,
+            "size": 256,
+            "used": false
+          }
+        ],
+        "free_total": 256,
+        "largest_hole": 256
+      }
+    ],
+    "request_16_rejected": true
+  },
+  "capture": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "projects-guided/p04-memory-allocator/code/experiment.py"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "executed_at_utc": "2026-10-23T10:45:35.703921+00:00"
+  }
+}

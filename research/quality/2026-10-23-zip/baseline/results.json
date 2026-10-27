@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "results": [
+    {
+      "name": "structure",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/validate.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:04.956925+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.49,
+      "log": "research/quality/2026-10-23-zip/baseline/structure.txt"
+    },
+    {
+      "name": "infrastructure",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:05.447631+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.646,
+      "log": "research/quality/2026-10-23-zip/baseline/infrastructure.txt"
+    },
+    {
+      "name": "render-drift",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/render.py",
+        "--check"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:06.094385+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.035,
+      "log": "research/quality/2026-10-23-zip/baseline/render-drift.txt"
+    },
+    {
+      "name": "expansion",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/validate_expansion.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:06.129926+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.056,
+      "log": "research/quality/2026-10-23-zip/baseline/expansion.txt"
+    },
+    {
+      "name": "reference-groups",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/run_reference_tests.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:06.186300+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 8.508,
+      "log": "research/quality/2026-10-23-zip/baseline/reference-groups.txt"
+    },
+    {
+      "name": "independent-boundaries",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "research/quality/2026-10-23/review_boundaries.py",
+        "--require-repaired"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:14.694276+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.043,
+      "log": "research/quality/2026-10-23-zip/baseline/independent-boundaries.txt"
+    },
+    {
+      "name": "c-parser",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "programming-languages-mastery/01-c/units/01-byte-parser/tests/run.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:14.737835+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.212,
+      "log": "research/quality/2026-10-23-zip/baseline/c-parser.txt"
+    },
+    {
+      "name": "compile-link",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "04-computer-systems/compile-link",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:14.949982+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.38,
+      "log": "research/quality/2026-10-23-zip/baseline/compile-link.txt"
+    },
+    {
+      "name": "c-arena",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "projects-guided/p04-memory-allocator/code/run.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:15.330407+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.356,
+      "log": "research/quality/2026-10-23-zip/baseline/c-arena.txt"
+    },
+    {
+      "name": "c-synchronization",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "05-operating-systems/synchronization/code/experiment.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:15.686517+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.436,
+      "log": "research/quality/2026-10-23-zip/baseline/c-synchronization.txt"
+    },
+    {
+      "name": "cpp-lifetime",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "programming-languages-mastery/02-cpp/units/resource-lifetime/run.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:16.123216+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.983,
+      "log": "research/quality/2026-10-23-zip/baseline/cpp-lifetime.txt"
+    },
+    {
+      "name": "riscv-assembler",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "programming-languages-mastery/07-riscv-assembly/units/01-addi/tests/run.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.106664+00:00",
+      "status": "BLOCKED",
+      "exit_code": null,
+      "reason": "optional toolchain unavailable: riscv64-linux-gnu-as"
+    },
+    {
+      "name": "riscv-model",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "programming-languages-mastery/07-riscv-assembly/units/01-addi/tests/run.py",
+        "AddiTests.test_fixed_words_and_trace",
+        "AddiTests.test_all_immediates_arithmetic",
+        "AddiTests.test_negative_contract"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.106768+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.139,
+      "log": "research/quality/2026-10-23-zip/baseline/riscv-model.txt"
+    },
+    {
+      "name": "hidden-state",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "reverse-engineering-systems/exercises/01-hidden-state/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.246099+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.104,
+      "log": "research/quality/2026-10-23-zip/baseline/hidden-state.txt"
+    },
+    {
+      "name": "git-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.350377+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.003,
+      "log": "research/quality/2026-10-23-zip/baseline/git-whitespace.txt"
+    },
+    {
+      "name": "git-index-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.353826+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.002,
+      "log": "research/quality/2026-10-23-zip/baseline/git-index-whitespace.txt"
+    },
+    {
+      "name": "systemverilog",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "hardware-description-languages/systemverilog/units/01-enabled-register/tests/run.py"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.356231+00:00",
+      "status": "BLOCKED",
+      "exit_code": null,
+      "reason": "optional toolchain unavailable: iverilog"
+    },
+    {
+      "name": "production-ledger",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "production-systems-engineering/labs/event-ledger/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.356303+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.174,
+      "log": "research/quality/2026-10-23-zip/baseline/production-ledger.txt"
+    },
+    {
+      "name": "production-cluster",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "production-systems-engineering/labs/distributed-cluster/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.530714+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.045,
+      "log": "research/quality/2026-10-23-zip/baseline/production-cluster.txt"
+    },
+    {
+      "name": "production-serving",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "production-systems-engineering/labs/model-serving/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "started_at_utc": "2026-10-23T17:19:17.576307+00:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_seconds": 0.155,
+      "log": "research/quality/2026-10-23-zip/baseline/production-serving.txt"
+    }
+  ],
+  "limitations": "PASS covers specified test contracts, not educational completeness or learner mastery."
+}

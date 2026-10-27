@@ -1,103 +1,51 @@
-# Computation and machine foundations — self-contained phase guide
+# Computation: from representation to stored-program execution
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+Start with the [coursebook](../coursebooks/01-machine-foundations.md), then work
+through the [toy CPU lesson](toy-cpu/README.md). This phase now has a substantive
+bounded path, rather than asking the learner to invent missing mechanisms.
+The wider architecture domain remains PARTIAL.
 
-## 1. Representation And Encoding
+## Representation and combinational arithmetic
 
-**Problem.** Identify the real system problem that makes representation and encoding necessary.
+Represent a byte by Σb_i2^i. A full adder's sum and carry satisfy a+b+c=s+2d;
+connecting eight columns gives A+B=result+256carry. Thus unsigned addition wraps
+modulo256. Signed interpretation changes meaning, not wire arithmetic:255+1 gives
+0/carry1 while127+1 gives128/carry0 and signed overflow. The local lesson derives
+the truth table and ripple invariant, implements the columns, and exhaustively
+checks all65,536 byte pairs against independent integer arithmetic.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+## Sequential state and control
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+A retains a value across cycles; a combinational adder does not. The abstract
+CPU stores A, PC, flags and sixteen bytes. Fetch/decode/compute/commit is an exact
+state-transition contract; it omits real clock/reset/delay behavior. High nibble
+selects the operation and low nibble is an immediate or memory address according
+to that opcode. LDI3;STA14;LDI4;ADD14;STA15;HLT produces A3,3,4,7,7,7 in six cycles.
+The complete instruction table, validation rules and hand trace are local.
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
+## An algorithm and its failure cases
 
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
+Repeated addition stores p≡ka(mod256) after k loop iterations and decrements a
+positive counter. The loop's proof and8b+3 cycle count are independently checkable.
+The real JSON trace records3×4=12 in35cycles. Changing JMP2 to JMP9 at address9
+produces a100-cycle timeout with retained PC9; changing the target to0 instead
+terminates with3 after41cycles. Valid instruction encoding is not semantic
+correctness. Unified memory also permits STORE to overwrite a future instruction.
 
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
+## Build and assessment
 
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
+Use the [guided project](../projects-guided/p01-logic-cpu/README.md) for milestones,
+acceptance tests, fault injection, performance interpretation and protection limits.
+Attempt [exercises](toy-cpu/EXERCISES.md) before [hints](toy-cpu/HINTS.md) and
+[solutions](toy-cpu/SOLUTIONS.md). Reconstruct the machine from the encoding table
+without the reference; passing reference tests alone is preparation evidence.
 
-## 2. Boolean Logic And Combinational Circuits
+```sh
+python3 -m unittest discover -s 01-computation/toy-cpu -p 'test_*.py' -v
+python3 01-computation/toy-cpu/experiment.py
+```
 
-**Problem.** Identify the real system problem that makes Boolean logic and combinational circuits necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. State, Clocks And Sequential Circuits
-
-**Problem.** Identify the real system problem that makes state, clocks and sequential circuits necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Alu/Datapath/Control
-
-**Problem.** Identify the real system problem that makes ALU/datapath/control necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Memory Hierarchy
-
-**Problem.** Identify the real system problem that makes memory hierarchy necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Isa And Instruction Execution
-
-**Problem.** Identify the real system problem that makes ISA and instruction execution necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+[Source verification](toy-cpu/SOURCES.md) records the inspected author project
+pages and original local ISA. No HDL, board timing, cache, memory bus, interrupt,
+peripheral, ABI or physical CPU validation is claimed. These are remaining
+architecture topics; the abstract cycle count is not a physical benchmark.

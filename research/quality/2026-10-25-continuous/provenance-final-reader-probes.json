@@ -1,0 +1,79 @@
+{
+  "source_sha256": {
+    "protected_ledger.py": "690d58a2bde7468c817e257a3b46b6ce94d6dca64c08a8ad62e66ec2386817ef",
+    "gcm_mechanics.py": "e60307172d657f4630c509efbcafeb4c72d73f55e962a75953de8d914243f940"
+  },
+  "interleaving": [
+    [
+      "gamma",
+      1
+    ],
+    [
+      "gamma",
+      2
+    ],
+    [
+      "delta",
+      1
+    ],
+    [
+      "gamma",
+      3
+    ],
+    [
+      "delta",
+      2
+    ],
+    [
+      "delta",
+      3
+    ],
+    [
+      "gamma",
+      4
+    ],
+    [
+      "delta",
+      4
+    ]
+  ],
+  "producer_projections": {
+    "gamma": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "delta": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "encryption_epoch_ids": [
+    "c-one",
+    "c-one",
+    "c-one",
+    "c-one",
+    "c-two",
+    "c-two",
+    "c-two",
+    "c-two"
+  ],
+  "old_epoch_retry_original_index": 2,
+  "stale_challenge_rejected": true,
+  "authority_outage": {
+    "local_committed_before": 1,
+    "witness_before": 0,
+    "witness_after_reopen": 1,
+    "original_nonce_retained": true,
+    "uncertain_ack_observed": true
+  },
+  "nonce_exhaustion": {
+    "last_reserved_hex": "000000007fffffffffffffff",
+    "next_append_rejected": true,
+    "local_count_after": 1
+  },
+  "limits": "Local separately selected finite probes. Authority access, monotonic custody and key exclusivity remain assumptions, not deployed infrastructure evidence."
+}

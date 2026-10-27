@@ -2,6 +2,16 @@
 
 Curriculum phase: P04 — Computer Systems. Learning state: NOT STARTED.
 
+Artifact quality: **PARTIAL** for the domain, with a developed bounded
+[compile/link investigation](compile-link/README.md). The learner-state label
+above is not an artifact-completion claim.
+
+Begin with the [connected execution guide](SELF_CONTAINED_GUIDE.md) and
+[systems coursebook](../coursebooks/02-systems-programming.md). They connect the
+C byte-parser prerequisites to actual object tools, byte-interval allocation,
+OS models and local process pipelines. Each linked build has separate exercises,
+solutions, executable tests and actual evidence; wider cache, loader and
+concurrency instruction remains incomplete.
 
 
 ## Scope

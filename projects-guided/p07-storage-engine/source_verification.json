@@ -1,0 +1,13 @@
+{
+  "verified_on": "2026-10-22",
+  "method": "primary documentation body inspected with web reader",
+  "upstream_snapshot_hash": null,
+  "sources": [
+    {"id":"DB-S1","title":"Atomic Commit In SQLite","author":"SQLite project","url":"https://www.sqlite.org/atomiccommit.html","status":"BODY_INSPECTED","locators":["Introduction","2. Hardware Assumptions","3.5. Creating A Rollback Journal File","3.6. Changing Database Pages In User Space"],"supports":"rollback journal and hardware assumption context; applies to rollback mode","license_scope":"full redistribution terms not audited; no full source copied"},
+    {"id":"DB-S2","title":"Write-Ahead Logging","author":"SQLite project","url":"https://www.sqlite.org/wal.html","status":"BODY_INSPECTED","locators":["2. How WAL Works","2.1. Checkpointing","2.2. Concurrency","2.3. Performance Considerations"],"supports":"append/commit/checkpoint organization, reader end marks, single writer and sync settings","license_scope":"full redistribution terms not audited; no full source copied"},
+    {"id":"DB-S3","title":"Database File Format","author":"SQLite project","url":"https://www.sqlite.org/fileformat2.html","status":"BODY_INSPECTED","locators":["1.2. Pages","4.1. WAL File Format","4.3. Checkpoint Algorithm"],"supports":"contrast of SQLite page WAL framing with this original teaching log","license_scope":"full redistribution terms not audited; no full source copied"},
+    {"id":"DB-S4","title":"os — Miscellaneous operating system interfaces","author":"Python Software Foundation","url":"https://docs.python.org/3/library/os.html#os.fsync","version_seen":"3.15.1","status":"BODY_INSPECTED","locators":["os.fsync entry"],"supports":"platform function mapping and flush-before-fsync for buffered files","license_scope":"documentation linked; no implementation copied"}
+  ],
+  "original_work": ["code/wal_store.py","code/test_wal_store.py","code/experiment.py","LESSON.md","EXERCISES.md","solutions/EXERCISES.md"],
+  "limitations": ["mutable upstream pages without archived byte snapshot","not a SQLite implementation or paper reproduction","no physical power-loss experiment"]
+}

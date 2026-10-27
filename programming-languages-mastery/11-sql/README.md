@@ -42,3 +42,7 @@ Projects, in increasing scope: schema; relational reasoning; query plans; index;
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed bounded unit
+
+[SQLite NULL logic, anti-joins, outer joins and aggregation](units/null-and-joins/README.md) includes original teaching, runnable code, separate practice/hints/solutions and actual evidence. Full sql route remains PARTIAL. Other numbered topic pages remain scope notes where no developed mechanism is linked.

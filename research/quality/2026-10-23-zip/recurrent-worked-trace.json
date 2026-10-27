@@ -1,0 +1,33 @@
+{
+  "parameters": [
+    1,
+    0.5,
+    0,
+    2,
+    0
+  ],
+  "input": [
+    1,
+    0
+  ],
+  "label": 1,
+  "states": [
+    0.7615941559557649,
+    0.3633994843890525
+  ],
+  "logit": 0.726798968778105,
+  "probability": 0.6741024356371123,
+  "loss": 0.3943731979604356,
+  "parameter_gradient": [
+    -0.1187938572395889,
+    -0.43084873751769576,
+    -0.6845134523131631,
+    -0.11843100685312147,
+    -0.32589756436288775
+  ],
+  "input_gradient": [
+    -0.1187938572395889,
+    -0.5657195950735742
+  ],
+  "scope": "Actual root recalculation of the original worked example; not an independent implementation proof."
+}

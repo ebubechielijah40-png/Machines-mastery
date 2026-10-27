@@ -1,0 +1,687 @@
+{
+  "base_commit": "4ced936c22fb4142165b0e831ad5431761a2ce15",
+  "prior_saved_checkpoint": "9e1149e83fe684cf915f6e53b7bd6f8251245cfe",
+  "scope": "Complete staged source delta for the combined initial-group delivery; source manifest hashes every delivered file.",
+  "files": [
+    {
+      "status": "A",
+      "path": "CONTINUATION.md"
+    },
+    {
+      "status": "M",
+      "path": "EXCELLENCE_PROGRESS.md"
+    },
+    {
+      "status": "M",
+      "path": "EXCELLENCE_REMEDIATION_BACKLOG.md"
+    },
+    {
+      "status": "M",
+      "path": "FINAL_EXCELLENCE_AUDIT.md"
+    },
+    {
+      "status": "A",
+      "path": "INITIAL_NEAR_STRONG_REPORT.md"
+    },
+    {
+      "status": "M",
+      "path": "INTEGRATION.md"
+    },
+    {
+      "status": "M",
+      "path": "PUSH_INSTRUCTIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "A",
+      "path": "STRONG_PROGRESS_DASHBOARD.md"
+    },
+    {
+      "status": "A",
+      "path": "STRONG_SCOPE_POLICY.md"
+    },
+    {
+      "status": "M",
+      "path": "STUDY_ROUTE.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/mathematics/core/README.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/README.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/REVIEW.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/evidence/observed-2026-10-25.json"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/evidence/tests-2026-10-25.txt"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/ivp.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/mathematics/initial-value-evidence/test_ivp.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_DESIGN.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_EXERCISES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_EXPERIMENTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_HINTS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_REVIEW.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_SOLUTIONS.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/DECISION_SOURCES.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/statistics/probability-inference/README.md"
+    },
+    {
+      "status": "M",
+      "path": "foundations/statistics/probability-inference/SOURCES.md"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/decision.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/decision_experiment.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/evidence/decision-observed-2026-10-25.json"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/evidence/decision-observed-integrated-2026-10-25.json"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/evidence/decision-observed-reviewed-2026-10-25.json"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/evidence/decision-tests-integrated-2026-10-25.txt"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/evidence/decision-tests-reviewed-2026-10-25.txt"
+    },
+    {
+      "status": "M",
+      "path": "foundations/statistics/probability-inference/probability.py"
+    },
+    {
+      "status": "A",
+      "path": "foundations/statistics/probability-inference/test_decision.py"
+    },
+    {
+      "status": "M",
+      "path": "foundations/statistics/probability-inference/test_probability.py"
+    },
+    {
+      "status": "M",
+      "path": "registries/quality_evidence.json"
+    },
+    {
+      "status": "M",
+      "path": "registries/source_verification.json"
+    },
+    {
+      "status": "A",
+      "path": "registries/strong_progress.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/TEST_REPORT.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/content-audit-strict.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/content-gate.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/content-gate.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/structure-final.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/tool-restoration.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/binary-records.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/c-arena.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/c-parser.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/c-synchronization.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/compile-link.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/cpp-lifetime.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/expansion.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/fifo-systemverilog.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/fifo-vhdl.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/git-index-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/git-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/go-cancellation.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/hidden-state.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/independent-boundaries.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/infrastructure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/java-lifetimes.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/production-cluster.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/production-ledger.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/production-serving.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/reference-groups.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/render-drift.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/results.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/riscv-assembler.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/riscv-model.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/rust-ownership.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/strong-dashboard.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/structure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/systemverilog.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25-initial-group/verification-final/zig-allocators.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/TEST_REPORT.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/audit-regression.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline-qualitative-review.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/binary-records.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/c-arena.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/c-parser.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/c-synchronization.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/compile-link.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/cpp-lifetime.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/expansion.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/fifo-systemverilog.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/fifo-vhdl.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/git-index-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/git-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/go-cancellation.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/hidden-state.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/independent-boundaries.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/infrastructure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/java-lifetimes.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/production-cluster.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/production-ledger.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/production-serving.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/reference-groups.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/render-drift.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/results.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/riscv-assembler.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/riscv-model.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/rust-ownership.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/structure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/systemverilog.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/baseline/zig-allocators.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/content-audit-strict.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/content-gate.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/content-gate.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/dashboard-tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/integration-review.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/math-reader-probes.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/math-reader-review.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/math-tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/recovery.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/review_math.py"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/review_statistics.py"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/statistics-coverage-initial.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/statistics-reader-probes.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/statistics-reader-review.md"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/statistics-tests.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/structure-inference.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/structure-math-final.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/structure-math.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/binary-records.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/c-arena.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/c-parser.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/c-synchronization.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/compile-link.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/cpp-lifetime.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/expansion.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/fifo-systemverilog.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/fifo-vhdl.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/git-index-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/git-whitespace.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/go-cancellation.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/hidden-state.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/independent-boundaries.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/infrastructure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/java-lifetimes.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/production-cluster.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/production-ledger.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/production-serving.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/reference-groups.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/render-drift.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/results.json"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/riscv-assembler.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/riscv-model.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/rust-ownership.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/strong-dashboard.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/structure-initial.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/structure.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/systemverilog.txt"
+    },
+    {
+      "status": "A",
+      "path": "research/quality/2026-10-25/verification-final/zig-allocators.txt"
+    },
+    {
+      "status": "M",
+      "path": "tools/README.md"
+    },
+    {
+      "status": "M",
+      "path": "tools/package_release.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/quality_audit.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/run_reference_tests.py"
+    },
+    {
+      "status": "A",
+      "path": "tools/strong_dashboard.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/tests/test_quality_audit.py"
+    },
+    {
+      "status": "A",
+      "path": "tools/tests/test_strong_dashboard.py"
+    },
+    {
+      "status": "M",
+      "path": "tools/verify_repository.py"
+    }
+  ]
+}

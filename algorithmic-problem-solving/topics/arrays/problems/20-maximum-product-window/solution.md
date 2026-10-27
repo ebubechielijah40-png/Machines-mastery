@@ -16,7 +16,7 @@ Track both maximum and minimum product ending at the current position. A negativ
 
 ## 4. Derivation
 
-Start from the output condition and ask what must already be known when each position is finalized. The target method avoids recomputing information that can be maintained incrementally or encoded directly in the array. This reduces repeated work while preserving the exact contract.
+Every nonempty interval ending at i either starts there or extends one ending at i−1. For a positive new factor, multiplication preserves ordering; for a negative factor, it reverses ordering. Consequently both extremes are needed: new_hi=max(x,x*old_hi,x*old_lo), new_lo=min(x,x*old_hi,x*old_lo). For [-2,3,-4], extrema evolve (−2,−2) → (3,−6) → (24,−12). Keeping only 3 before −4 loses the winning 24. A zero resets both extremes to zero, while best retains earlier windows.
 
 ## 5. Invariant and correctness
 
@@ -38,7 +38,8 @@ Track only the maximum ending product. A very negative minimum can become the ne
 def max_product_subarray(values):
     if not values: raise ValueError("non-empty input required")
     hi=lo=best=values[0]
-    for x in values[1:]:
+    for i in range(1, len(values)):
+        x = values[i]
         if x<0: hi,lo=lo,hi
         hi=max(x,hi*x)
         lo=min(x,lo*x)
@@ -46,7 +47,7 @@ def max_product_subarray(values):
     return best
 ```
 
-The runnable copy is `solution.py`; tests import that file directly.
+The runnable copy is `solution.py`; tests import that file directly. Indexed iteration avoids allocating `values[1:]`, which would copy O(n) references for a Python list. The constant-space claim counts a fixed number of numeric registers under the stated RAM model; arbitrary-precision integer bit storage can grow with numeric magnitude.
 
 ## 9. Edge cases to reason through
 

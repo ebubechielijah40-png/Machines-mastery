@@ -1,87 +1,41 @@
-# Mathematics for systems
+# Mathematics: derive the model before running it
 
-This is a just-in-time foundation. Learn a section when another unit depends on it. Every formula should be tied to a model, units, assumptions, and a test.
+Begin with [counting and units](counting-and-units/README.md), then use the
+[connected core](core/README.md). The earlier repeated exercise templates have
+been replaced by the concrete mechanisms below. They supply prerequisites for
+bounded projects; they do not certify the entire mathematics curriculum.
 
-## 1. Quantities, units, and estimation
+| Order | Internal instruction | Observable exit task |
+| --- | --- | --- |
+| 1 | [Quantities, ratios and units](counting-and-units/README.md) | Convert unlike time units, distinguish a count from a duration, state what was measured |
+| 2 | [Algebra and functions](core/01_ALGEBRA_FUNCTIONS.md) | Derive a byte constraint and sensor calibration; explain composition, domains and nonunique inverses |
+| 3 | [Finite representations](finite-representations/README.md) | Derive positional value, unsigned capacity and modular wraparound |
+| 4 | [Logic, proof and counting](core/02_PROOFS_DISCRETE.md) | Prove an invariant, termination and an induction; distinguish causal from total order |
+| 4a | [Coordinates, angles and complex arithmetic](core/GEOMETRY_COMPLEX.md) | Derive a rotation, modulus and reciprocal before using complex amplitudes |
+| 5 | [Vectors and maps](core/03_VECTORS_MAPS.md) | Construct a basis map, compose it, solve equations and demonstrate sensitivity |
+| 6 | [Change, finite error and measurement](change-error-and-evidence/README.md) | Diagnose cancellation, centered variance, bias and covariance assumptions |
+| 7 | [Calculus, accumulation and updates](core/04_CALCULUS_OPTIMIZATION.md) | Derive a gradient, a quadratic stability bound and an Euler state transition |
+| 8 | [Finite probability and inference](../statistics/probability-inference/README.md) | Derive conditioning, binomial counts and coverage; refute a false iid assumption |
 
-A number without a unit is often an incomplete model. Practice dimensional analysis, orders of magnitude, and sanity checks before algebra.
+For example, the same multiplier explains several different models. A physical
+decay equation dx/dt=−kx gives Euler multiplier 1−hk; a scalar quadratic loss
+with curvature λ gives gradient-update multiplier 1−αλ. Derive each from its
+own governing equation before connecting them. Matching formulas do not give
+identical causes, units or validation methods. A controller also has limits,
+delay and sensors; an optimizer also has finite data and evaluation questions.
 
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
+A matrix with nearly dependent columns can give a tiny residual despite a large
+change in the inferred state. In the core experiment a fixed 10⁻⁷ perturbation
+yields solution displacement proportional to 1/δ. Test shape, units, numerical
+range and input sensitivity before interpreting a solver's output as evidence.
 
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
+The core has [specific exercises](core/EXERCISES.md), separate hints/solutions,
+scalar-loop implementations and [executed experiments](core/EXPERIMENTS.md).
+The numerical and probability units have their own independent oracles and
+assessments. Reconstruct at least one mechanism without its reference code,
+then change an assumption and predict the failure before running it.
 
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 2. Algebra and functions
-
-Use equations as relationships, not symbol rituals. Solve for variables, graph behavior, and interpret slopes and intercepts.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 3. Binary, hexadecimal, and modular arithmetic
-
-Connect representation to addresses, masks, wraparound, clocks, hashes, and finite state.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 4. Discrete mathematics
-
-Logic, sets, relations, induction, invariants, graphs, counting, recurrences, and proof are the language of algorithms and protocols.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 5. Probability and statistics
-
-Model uncertainty, sampling, noise, false positives, confidence, Bayesian updating, and experimental evidence.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 6. Linear algebra
-
-Vectors are structured quantities; matrices are transformations. Use them for graphics, robotics, ML, and quantum states.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 7. Calculus and differential equations
-
-Derivatives describe local change; integrals accumulate; differential equations encode dynamics in control, physics, learning, and biology.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## 8. Optimization and information
-
-Objectives, constraints, gradients, entropy, coding, and tradeoffs connect ML, communication, compression, and inference.
-
-**Example.** Pick one real system in the current phase and identify the quantities, units, controllable variables, measured variables, and one prediction you can check.
-
-**Practice.** (1) explain the idea without symbols; (2) solve one numerical example; (3) change one variable and predict the direction of change; (4) write a small Python calculation or plot; (5) state an assumption that could invalidate the model.
-
-**Experiment.** Measure or simulate one relationship, keep raw data, compare observation with prediction, and explain discrepancies rather than deleting them.
-
-## Assignment pattern
-
-For each required section complete 5 basic questions, 3 applications, 2 reasoning questions, 1 challenge, 1 experiment, and 1 transfer problem. Store your work in a sibling `learner-work/` directory; solutions in this repository are references, not evidence of your ability.
+Still requiring full instructional development: geometry/trigonometry beyond
+the new bounded bridge, eigen/singular-value algorithms, general optimization,
+sparse numerical methods, rigorous analysis, broad differential equations and
+PDEs. Those subjects are not silently assumed to complete the exercises above.

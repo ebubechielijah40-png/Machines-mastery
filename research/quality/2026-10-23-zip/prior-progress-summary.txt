@@ -1,0 +1,109 @@
+# Historical summary from the previous verified checkpoint
+
+The following is the prior window summary, retained as history; current status is in root EXCELLENCE_PROGRESS.md.
+
+# Excellence progress — execution window 2026-10-23
+
+The educational system remains incomplete. This record describes actual prepared
+artifacts, not learner progress. Learner mastery remains NOT STARTED. No domain
+is EXCELLENT, and no completion percentage is assigned. See the separate
+[domain/language/research scorecards](FINAL_EXCELLENCE_AUDIT.md),
+[review findings](research/quality/2026-10-23/integration-review.md) and
+[remaining implementation backlog](EXCELLENCE_REMEDIATION_BACKLOG.md).
+
+## Preserved inputs and development state
+
+Stable baseline7936e4344021f78f93a9e568c839da719cf2b35f and the supplied ml-v3
+archive were compared before editing:99 additions,67 modifications, no missing
+stable files. All archive improvements were preserved in commit6e4402b. The
+[baseline audit](QUALITY_BASELINE_AUDIT.md) records the input checksum and methods.
+The prior verified checkpoint2f95451 remains in Git history; the new continuation
+adds to it rather than replacing it. Historical evidence is retained by date.
+
+Work continues on development/excellence-2026-10-22. GitHub branch creation
+returned403; CLI credentials were unavailable. No remote branch/PR/main change
+was performed. The complete committed tree and history are delivered as a source
+archive and Git bundle with checksums and [integration instructions](INTEGRATION.md).
+The external CHECKPOINT JSON identifies their exact commit and hashes.
+
+## Developed continuation slices
+
+| Entry point | Original instruction and runnable mechanism | Actual experiment/review scope |
+| --- | --- | --- |
+| [Mathematical core](foundations/mathematics/core/README.md) | Algebra/functions, proof/invariants, geometry/radians/complex arithmetic, vectors/maps/elimination/conditioning and calculus/optimization; worked traces and38 separated practice tasks | Composition/perturbation/step-size/quadrature runs; independent exact code probes and first-four-chapter review; final geometry/prose self-reviewed |
+| [Finite probability/inference](foundations/statistics/probability-inference/README.md) | Conditional probability/Bayes, moments/binomial, score intervals, exact coverage/permutation/entropy,16 separated tasks | Exact small coverage and seeded repeated-sampling contrast; independent high-precision endpoint/probability probes |
+| [Python entry](02-programming/python-entry/README.md) | Values/control/function/module/exception/mutation/test entry through a bounded byte-budget build | Actual observations and6 tests, separate practice; does not complete Python |
+| [Byte CPU](01-computation/toy-cpu/README.md) | Byte arithmetic, state transitions, branches/faults, bounded p01 milestones | Exhaustive65,536 byte additions and trace experiments; functional model, not gates or hardware |
+| [Compile/link](04-computer-systems/compile-link/README.md) | Two C translation units, representation/storage/linkage, symbols/relocations/disassembly and missing-link reasoning | Actual native O0/O2/UBSan and tool observations; single-threaded, selected ELF platform only |
+| [OS](05-operating-systems/SELF_CONTAINED_GUIDE.md) / [synchronization](05-operating-systems/synchronization/README.md) | Scheduling metrics, two-level VM/TLB, real dup/pipe/subprocess behavior; atomic counter interleavings, locks, wait registration and predicate loops | Finite model oracles, actual defined C11 thread/buffer runs; no weak-memory/kernel completeness claim |
+| [Shell](projects-guided/p02-shell/README.md) / [arena](projects-guided/p04-memory-allocator/README.md) / [kernel workbench](projects-guided/p05-mini-kernel-labs/README.md) | Runnable bounded builds with milestones, failure/debug tasks, rubrics, hints and solutions | Direct-child cleanup/EOF, byte split/coalesce independent interval oracle and CLI traces; no job control, typed malloc or real kernel |
+| [Framing](06-networking/stream-boundaries/LESSON.md) / [HTTP](projects-guided/p06-http-server/README.md) | Incremental bounded decoder/EOF/terminal error, strict local request subset and cleanup | All split boundaries, truncation, socketpair/backpressure and local lifecycle tests; not routing/congestion/TLS |
+| [Queries/isolation](07-databases-data-systems/query-isolation/README.md) | Bag/NULL/join/group operators, independent SQLite comparisons and transaction schedules | Actual stale snapshots/writer conflicts/lost intent; no complete storage engine/optimizer |
+| [Bootstrap](10-data-science/bootstrap-evidence/README.md) / [information](08-information-science/finite-information/LESSON.md) | Exact finite resampling coverage counterexample, finite joint/conditional entropy | Executed finite enumeration and corruption cases; no universal nominal coverage/coding theorem claim |
+| [Measurement](projects-guided/p08-scientific-pipeline/README.md) / [provenance](security-cryptography-mastery/provenance/LESSON.md) | Exact transformations/units/uncertainty, HMAC schema/sequence, chain/trusted-tip and poisoned unknown fsync outcome | Synthetic key/data mutation, replay, rollback and byte-cut tests; authenticity is not measured truth or deployed security |
+| [Count privacy](13-privacy/count-release/README.md) | Density/integration bridge, neighboring datasets, sensitivity/Laplace proof, utility/composition/accounting | Finite floating sampler and in-memory budget experiments; sampler uncertified for production DP |
+| [Graph release](algorithmic-problem-solving/topics/graphs/README.md) | Twenty distinct contracts, derivations/proofs, applications/alternatives and separated solutions | Exhaustive/alternative path/cut/tree/assignment checks and actual experiments; other algorithm families unfinished |
+| [Expression language](projects-guided/p10-language/README.md) / [language units](programming-languages-mastery/README.md) | Lexer/parser/AST/rational evaluator; specific C++17 lifetime, Python aliases, Bash argv and SQL NULL/joins | Actual compiler/runtime builds and failure observations; seven language routes remain largely scaffolded |
+| [Replica model](15-distributed-systems/ordering-reconciliation/README.md) / [p11](projects-guided/p11-distributed-kv/README.md) | Send/receive clocks, immutable stamped state, max-join/tombstones and local JSON schedule CLI | Actual reorder/duplicate/partition/delete traces and model/CLI tests; no consensus, membership authority or durable service |
+| [Training](16-machine-learning/training/README.md) / [retrieval/tools](16-machine-learning/retrieval-agents/README.md) | Checked AD, actual548-parameter causal decoder, BPE, synthetic training; lexical retrieval and typed deterministic controller | Actual fit/held-phase/shift/leakage/high-rate failures and6-query retrieval failures; no general language/learned-agent competence |
+| [Motor/control](17-embedded-robotics/control-path/README.md) | Force/torque/energy/current/speed, sensor, PID/antiwindup, delay/bias and quantization | Executed assumed-parameter simulation; no physical robot or safe-hardware validation |
+| [Population/phylogeny](18-computational-biology/population-phylogeny/README.md) | Molecular bridge, finite drift/selection/likelihood, JC69 inversion/UPGMA and clock failures | Synthetic exact/Monte Carlo cases and integrated bio stack; no new biological data/result |
+| [Quantum noise](20-quantum-computing/noise-correction/README.md) | Density/Kraus/channel invariants and ideal three-bit repetition recovery with phase-error counterexample | All error masks and logical-versus-physical probability experiment, integrated simulator stack; no hardware/advantage claim |
+| [Research practicum](projects-guided/p16-research-reproduction/README.md) | Four new20-dimension primary-paper dossiers, original clocks/FFT/task-publication models, negative controls and22 exercises |20 mechanism tests and three actual experiments; selected source mechanisms, not historical machine/cluster benchmarks |
+| [Coursebooks](coursebooks/README.md) / [books](research/quality/2026-10-23/book-coursebook-review.md) | All12 coursebook bodies now subject-specific with developed-unit handoffs; all23 books audited with precise selected concept maps | All12 broad course scopes PARTIAL; books3 PARTIAL/20 SCAFFOLDED, none complete; no unseen chapter contents invented |
+| [Route](STUDY_ROUTE.md) / [auditor](tools/quality_audit.py) | Explicit prerequisite/exit tasks; public shared-project implementation bindings and hostile-path/schema fixtures | Location evidence does not suppress shallow-teaching findings or certify source truth |
+
+The earlier numerical-error, RC, transactional WAL, attention/VJP/cache, sequence
+alignment and statevector units remain intact, with their original evidence in
+research/quality/2026-10-22 and unit-local directories. The full exact path inventory
+for this continuation is [changed-files.json](research/quality/2026-10-23/changed-files.json).
+No claimed broad batch is closed merely because one bounded mechanism works.
+
+## Validation and qualitative review
+
+The integrated replay passed18 command groups, with2 optional toolchain checks
+BLOCKED and no failures. It executed61 infrastructure tests and48/48 reference
+suites. The separate strict content gate returned exit1 with1699 outstanding
+review findings; functional success does not close that authoring backlog.
+
+[The current test report](research/quality/2026-10-23/TEST_REPORT.md) records final
+commands, logs, actual counts and BLOCKED checks. The intermediate47/47 reference
+run is preserved as reference-preintegration.txt; a later48-group replay includes
+the new replica workbench. No preintegration result is relabeled as a final run.
+[Current content findings](research/quality/2026-10-23/content-audit.json) remain
+open; report-only exit0 is never a content-quality pass.
+
+The [integration review](research/quality/2026-10-23/integration-review.md) separates
+parallel-author versus root self-review and the narrower independent foundation
+review. Real corrections include Wilson boundary rounding, misleading prerequisite
+ordering, generator decoding/SGD traversal, strict checkpoint validation, invalid
+phylogeny scalar ordering, huge-amplitude quantum normalization and finite privacy
+output overflow. Actual before/after boundary outputs and permanent regressions
+are retained. No independent specialist/learner certification is claimed.
+
+[Central source records](registries/source_verification.json) contain42 entries:
+31 inspected selected scopes and11 metadata-only paper records. The additional
+unit maps provide discoverability without automatically granting verified status.
+Selected source details/versions/locators/hashes are local to units and
+[the four-paper record](research-paper-reconstruction/SOURCE_VERIFICATION_CONTINUATION.json).
+Reported historical results remain distinct from reproduced local mechanisms.
+Original source PDFs/full extracted text are not bundled, and public readability
+is not a blanket redistribution license.
+
+## Remaining work and exact continuation
+
+Chemistry/materials, semiconductor/timing/HDL, remaining languages/algorithm
+families, full database/ML/robotics/production progressions, most books/papers and
+many smaller challenge families remain incomplete. Missing RISC-V/HDL toolchains
+block those executions only. GitHub403 blocks direct publishing, not local work.
+Several parallel workstreams reached the session's agent execution limit; there
+is no ongoing background completion job. This verified checkpoint preserves their
+actual work, including root integration/repairs, for reproducible continuation.
+
+Begin the [specified next implementation batch](EXCELLENCE_REMEDIATION_BACKLOG.md):
+material structure/properties and semiconductor operating assumptions, quantitative
+switching, sequential logic/timing and a tested HDL mechanism. Next follow pages/
+B+trees, the missing language-specific builds and broader ML families. Inspect
+one primary source and complete one original concept/reproduction at a time for
+books/research. Do not regenerate architecture, restart developed algebra/C/OS
+slices or mark broad domains complete without the required evidence.

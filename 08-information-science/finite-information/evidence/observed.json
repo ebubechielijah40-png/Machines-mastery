@@ -1,0 +1,162 @@
+{
+  "kind": "finite distribution calculation, not sampled physical channel data",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "input_distribution": "uniform binary X; Y=X XOR independent Bernoulli(flip)",
+  "results": [
+    {
+      "flip_probability": 0,
+      "joint_table": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.0,
+      "h_x_given_y": 0.0,
+      "h_y_given_x": 0.0,
+      "mutual_information": 1.0
+    },
+    {
+      "flip_probability": 0.01,
+      "joint_table": [
+        [
+          0.495,
+          0.005
+        ],
+        [
+          0.005,
+          0.495
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.080793135895911,
+      "h_x_given_y": 0.08079313589591108,
+      "h_y_given_x": 0.08079313589591108,
+      "mutual_information": 0.9192068641040889
+    },
+    {
+      "flip_probability": 0.1,
+      "joint_table": [
+        [
+          0.45,
+          0.05
+        ],
+        [
+          0.05,
+          0.45
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.4689955935892813,
+      "h_x_given_y": 0.46899559358928133,
+      "h_y_given_x": 0.46899559358928133,
+      "mutual_information": 0.5310044064107187
+    },
+    {
+      "flip_probability": 0.25,
+      "joint_table": [
+        [
+          0.375,
+          0.125
+        ],
+        [
+          0.125,
+          0.375
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.811278124459133,
+      "h_x_given_y": 0.8112781244591329,
+      "h_y_given_x": 0.8112781244591329,
+      "mutual_information": 0.18872187554086706
+    },
+    {
+      "flip_probability": 0.5,
+      "joint_table": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 2.0,
+      "h_x_given_y": 1.0,
+      "h_y_given_x": 1.0,
+      "mutual_information": 0.0
+    },
+    {
+      "flip_probability": 0.75,
+      "joint_table": [
+        [
+          0.125,
+          0.375
+        ],
+        [
+          0.375,
+          0.125
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.811278124459133,
+      "h_x_given_y": 0.8112781244591329,
+      "h_y_given_x": 0.8112781244591329,
+      "mutual_information": 0.18872187554086706
+    },
+    {
+      "flip_probability": 0.9,
+      "joint_table": [
+        [
+          0.04999999999999999,
+          0.45
+        ],
+        [
+          0.45,
+          0.04999999999999999
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.4689955935892813,
+      "h_x_given_y": 0.46899559358928133,
+      "h_y_given_x": 0.46899559358928133,
+      "mutual_information": 0.5310044064107187
+    },
+    {
+      "flip_probability": 1,
+      "joint_table": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          0.0
+        ]
+      ],
+      "h_x": 1.0,
+      "h_y": 1.0,
+      "h_joint": 1.0,
+      "h_x_given_y": 0.0,
+      "h_y_given_x": 0.0,
+      "mutual_information": 1.0
+    }
+  ]
+}

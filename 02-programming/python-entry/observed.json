@@ -1,0 +1,65 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "scope": "exact semantic cases, not timing or Python heap bytes",
+  "cases": [
+    {
+      "sizes": [
+        12,
+        7,
+        5
+      ],
+      "capacity_bytes": 20,
+      "accepted": [
+        12,
+        7
+      ],
+      "used_bytes": 19
+    },
+    {
+      "sizes": [
+        12,
+        11,
+        9
+      ],
+      "capacity_bytes": 20,
+      "accepted": [
+        12
+      ],
+      "used_bytes": 12
+    },
+    {
+      "sizes": [],
+      "capacity_bytes": 0,
+      "accepted": [],
+      "used_bytes": 0
+    },
+    {
+      "sizes": [
+        0,
+        0,
+        1
+      ],
+      "capacity_bytes": 0,
+      "accepted": [
+        0,
+        0
+      ],
+      "used_bytes": 0
+    },
+    {
+      "sizes": [
+        2,
+        3
+      ],
+      "capacity_bytes": 5,
+      "accepted": [
+        2,
+        3
+      ],
+      "used_bytes": 5
+    }
+  ]
+}

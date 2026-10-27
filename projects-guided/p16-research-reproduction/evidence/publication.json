@@ -1,0 +1,48 @@
+{
+  "effects_outside_publication_boundary": [
+    "notify:s0",
+    "notify:s1",
+    "notify:s0"
+  ],
+  "experiment": "deterministic task publication, original synthetic records",
+  "limits": "No processes, network, filesystem, atomic rename, GFS, timing or historical benchmark. Publication does not deduplicate external effects.",
+  "naive_reduce_every_attempt": {
+    "blue": 1,
+    "red": 4
+  },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "reduce_one_published_output_per_task": {
+    "blue": 1,
+    "red": 2
+  },
+  "sequential_oracle": {
+    "blue": 1,
+    "red": 2
+  },
+  "shards": {
+    "s0": [
+      "red red"
+    ],
+    "s1": [
+      "blue"
+    ]
+  },
+  "trace": [
+    {
+      "accepted": true,
+      "attempt": "first",
+      "task": "s0"
+    },
+    {
+      "accepted": true,
+      "attempt": "second",
+      "task": "s1"
+    },
+    {
+      "accepted": false,
+      "attempt": "backup",
+      "task": "s0"
+    }
+  ]
+}

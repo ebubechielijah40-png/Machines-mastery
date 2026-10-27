@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "16-machine-learning/training",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+  "executed_utc": "2026-10-23T15:59:04.623679+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_nonoverlap_merge_and_invalid_ids (test_bpe.BPETests.test_nonoverlap_merge_and_invalid_ids) ... ok\ntest_roundtrip_unseen_unicode_and_deterministic_ties (test_bpe.BPETests.test_roundtrip_unseen_unicode_and_deterministic_ties) ... ok\ntest_causal_prefix_and_future_mutation (test_tiny_models.TrainingTests.test_causal_prefix_and_future_mutation) ... ok\ntest_checkpoint_schema_numeric_and_size_boundaries (test_tiny_models.TrainingTests.test_checkpoint_schema_numeric_and_size_boundaries) ... ok\ntest_cross_entropy_hand_oracle_and_gradients (test_tiny_models.TrainingTests.test_cross_entropy_hand_oracle_and_gradients) ... ok\ntest_decoder_parameter_gradients_independent_finite_difference (test_tiny_models.TrainingTests.test_decoder_parameter_gradients_independent_finite_difference) ... ok\ntest_invalid_shapes_and_token_contracts (test_tiny_models.TrainingTests.test_invalid_shapes_and_token_contracts) ... ok\ntest_iterable_sgd_updates_and_duplicate_parameter_rejection (test_tiny_models.TrainingTests.test_iterable_sgd_updates_and_duplicate_parameter_rejection) ... ok\ntest_mlp_learns_truth_table_not_a_generalization_claim (test_tiny_models.TrainingTests.test_mlp_learns_truth_table_not_a_generalization_claim) ... ok\ntest_model_save_load_and_generation_seed (test_tiny_models.TrainingTests.test_model_save_load_and_generation_seed) ... ok\ntest_sgd_clipping_and_atomic_rejection (test_tiny_models.TrainingTests.test_sgd_clipping_and_atomic_rejection) ... ok\ntest_tokenizer_roundtrip_and_frozen_unknown_boundary (test_tiny_models.TrainingTests.test_tokenizer_roundtrip_and_frozen_unknown_boundary) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.252s\n\nOK\n"
+}

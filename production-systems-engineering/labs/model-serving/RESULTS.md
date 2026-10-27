@@ -1,13 +1,13 @@
-# Results: Model Serving Execution Evidence
+# Historical model-serving execution evidence
 
-Execution evidence recorded by automated benchmark run:
-- Benchmark artifact: `research/model-serving-benchmark.json`
-- Test suite: `production-systems-engineering/labs/model-serving/tests/test_model_serving.py`
-- Test result: 5 tests passed; zero failures; zero errors.
+The retained [raw benchmark](../../../research/model-serving-benchmark.json)
+contains the actual finite serial-chunk and synthetic drift observations. The
+original five-test suite covers model accuracy on synthetic data, selected schema
+rejections, serial batch predictions, a chosen shift and single-thread rate
+limiting. Passing those contracts does not establish dynamic batching, security
+against all malformed inputs, concurrent limiter safety or public reliability.
 
-## Summary Metrics
-- **Dynamic Batching:** 200 requests executed across batch sizes 1, 4, 16, 64. Throughput reached 65,000–90,000 req/sec; p50, p95, p99 remained sub-millisecond.
-- **Drift Monitoring:**
-  - Baseline traffic: Max PSI < 0.10, reported as `STABLE`.
-  - Shifted traffic: Max PSI > 0.30, reported as `DRIFT_DETECTED` with alert counter incremented.
-- **Security & Schema:** Rejected 100% of malformed payloads (dimension mismatch, NaN/Inf, out-of-range values). Rate limiter bounded burst traffic to configured capacity.
+The October25 reader identified the mismatch between these actual mechanisms
+and earlier dynamic-batching/constant-memory claims. Corrected teaching now
+states the serial/helper, accumulated-success-sample and unbounded-retention
+boundaries. Historical raw numbers are preserved; no broader test is invented.

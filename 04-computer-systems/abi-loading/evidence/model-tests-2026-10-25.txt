@@ -1,0 +1,15 @@
+test_dynamic_bias_is_address_not_relocation_execution (test_models.ElfTests.test_dynamic_bias_is_address_not_relocation_execution) ... ok
+test_interpreter_is_recorded_not_opened_and_reparsed_plan (test_models.ElfTests.test_interpreter_is_recorded_not_opened_and_reparsed_plan) ... ok
+test_sizes_alignment_permissions_and_resource_failures (test_models.ElfTests.test_sizes_alignment_permissions_and_resource_failures) ... ok
+test_table_bounds_and_unsupported_encoding (test_models.ElfTests.test_table_bounds_and_unsupported_encoding) ... ok
+test_worked_image_zero_tail_and_permissions (test_models.ElfTests.test_worked_image_zero_tail_and_permissions) ... ok
+test_bounded_contracts (test_models.MemoryTests.test_bounded_contracts) ... ok
+test_conflict_worked_trace_and_capacity (test_models.MemoryTests.test_conflict_worked_trace_and_capacity) ... ok
+test_lru_against_distinct_since_last_reference_oracle (test_models.MemoryTests.test_lru_against_distinct_since_last_reference_oracle) ... ok
+test_nested_translation_affine_oracle_all_offsets (test_models.MemoryTests.test_nested_translation_affine_oracle_all_offsets) ... ok
+test_translation_fault_stage_and_remapping (test_models.MemoryTests.test_translation_fault_stage_and_remapping) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.018s
+
+OK

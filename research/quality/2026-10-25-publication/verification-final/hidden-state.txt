@@ -1,0 +1,8 @@
+test_independent_histories (test_oracle.OracleTests.test_independent_histories) ... ok
+test_known_discriminating_trace (test_oracle.OracleTests.test_known_discriminating_trace) ... ok
+test_public_process_and_fresh_session (test_oracle.OracleTests.test_public_process_and_fresh_session) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.055s
+
+OK

@@ -1,0 +1,45 @@
+{
+  "domain": "data-security",
+  "review": "research/quality/2026-10-25-continuous/provenance-final-reader-review.md",
+  "recommended_marks": {
+    "instruction": [2, 2, 2, 1],
+    "implementation": [2, 2, 2, 1],
+    "reproduction": [2, 2, 2, 2],
+    "assessment": [2, 2, 2, 1],
+    "prerequisites": [2, 2, 2, 1],
+    "references": [2, 2, 2, 1]
+  },
+  "previous_readiness": 81.25,
+  "weighted_readiness": 90.0,
+  "recommended_rating": "PARTIAL",
+  "tests_passed": true,
+  "independent_review": true,
+  "scope_breadth_confirmed": false,
+  "critical_errors": [],
+  "mandatory_blockers": [],
+  "missing_requirements": [
+    "Fixed wider scope retains external authority infrastructure: authenticated independent authority access, protected custody and operational availability/recovery are modeled assumptions rather than implemented infrastructure.",
+    "Authenticated administrative configuration/trust-anchor transition and key-custody lifecycle remain undeveloped beyond static epochs.",
+    "Correct recovered test-count prose to9preserved plus16protected,25combined; append erratum to historical author claims without changing raw logs."
+  ],
+  "bounded_unit_recommendation": "STRONG after evidence-count correction and final repository replay; not a whole-domain promotion.",
+  "actual_validation": {
+    "protected_test_methods": 16,
+    "preserved_test_methods": 9,
+    "total_test_methods": 25,
+    "independent_custom_interleaved_entries": 8,
+    "authority_postcommit_failure_and_reopen": "PASS",
+    "nonce_counter_last_reservation_and_exhaustion": "PASS",
+    "fresh_challenge_replay_refusal": "PASS",
+    "missing_dependency_probe": "BLOCKED,exit2 as expected"
+  },
+  "evidence": [
+    "research/quality/2026-10-25-continuous/provenance-final-reader-probe.py",
+    "research/quality/2026-10-25-continuous/provenance-final-reader-probes.json",
+    "research/quality/2026-10-25-continuous/provenance-final-reader-protected-tests.txt",
+    "research/quality/2026-10-25-continuous/provenance-final-reader-original-tests.txt",
+    "research/quality/2026-10-25-continuous/provenance-final-reader-missing-dependency.json"
+  ],
+  "original_mandate_rating": "PARTIAL",
+  "limitations": "Separate-author team review and finite local execution, not external security certification, hosted deployment, physical durability or learner mastery. No scope/registry/code edits by reviewer."
+}

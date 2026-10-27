@@ -1,0 +1,320 @@
+[completion] exit=0
+crypto_lab: PASS
+sequence_lab: PASS
+quantum simulator: PASS (18 tests)
+0 completion errors
+[crypto] exit=0
+crypto_lab: PASS
+[bio] exit=0
+sequence_lab: PASS
+[quantum] exit=0
+quantum simulator: PASS (18 tests)
+test_bell_measurement_correlates_and_repeats (__main__.SimulatorTests.test_bell_measurement_correlates_and_repeats) ... ok
+test_bell_state_and_inverse (__main__.SimulatorTests.test_bell_state_and_inverse) ... ok
+test_cnot_all_three_qubit_basis_states (__main__.SimulatorTests.test_cnot_all_three_qubit_basis_states) ... ok
+test_complex_gates_against_dense_oracle (__main__.SimulatorTests.test_complex_gates_against_dense_oracle) ... ok
+test_conditional_measurement_formula (__main__.SimulatorTests.test_conditional_measurement_formula) ... ok
+test_global_phase_through_circuit (__main__.SimulatorTests.test_global_phase_through_circuit) ... ok
+test_impossible_postselection_is_rejected_without_mutation (__main__.SimulatorTests.test_impossible_postselection_is_rejected_without_mutation) ... ok
+test_invalid_gate_is_rejected_without_mutation (__main__.SimulatorTests.test_invalid_gate_is_rejected_without_mutation) ... ok
+test_invalid_measurement_arguments (__main__.SimulatorTests.test_invalid_measurement_arguments) ... ok
+test_invalid_qubits_on_all_operations (__main__.SimulatorTests.test_invalid_qubits_on_all_operations) ... ok
+test_invalid_state_construction (__main__.SimulatorTests.test_invalid_state_construction) ... ok
+test_legacy_basic_gates (__main__.SimulatorTests.test_legacy_basic_gates) ... ok
+test_mutated_invalid_state_is_detected (__main__.SimulatorTests.test_mutated_invalid_state_is_detected) ... ok
+test_never_sample_zero_probability_bin (__main__.SimulatorTests.test_never_sample_zero_probability_bin) ... ok
+test_partial_measurement_preserves_unmeasured_coherence (__main__.SimulatorTests.test_partial_measurement_preserves_unmeasured_coherence) ... ok
+test_qubit_order_is_little_endian (__main__.SimulatorTests.test_qubit_order_is_little_endian) ... ok
+test_sampling_does_not_collapse (__main__.SimulatorTests.test_sampling_does_not_collapse) ... ok
+test_tiny_nonzero_postselection_remains_valid (__main__.SimulatorTests.test_tiny_nonzero_postselection_remains_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.010s
+
+OK
+[electronics] exit=0
+rc_lab: PASS
+test_analytic_ode_residual (__main__.RCTests.test_analytic_ode_residual) ... ok
+test_bad_model_inputs (__main__.RCTests.test_bad_model_inputs) ... ok
+test_discharge_signed_and_precharged (__main__.RCTests.test_discharge_signed_and_precharged) ... ok
+test_energy_balance_by_numerical_quadrature (__main__.RCTests.test_energy_balance_by_numerical_quadrature) ... ok
+test_euler_convergence_at_fixed_horizon (__main__.RCTests.test_euler_convergence_at_fixed_horizon) ... ok
+test_euler_physical_range_and_instability (__main__.RCTests.test_euler_physical_range_and_instability) ... ok
+test_initial_state_and_equilibrium (__main__.RCTests.test_initial_state_and_equilibrium) ... ok
+test_meter_loading_parameters (__main__.RCTests.test_meter_loading_parameters) ... ok
+test_reference_case_and_threshold_inverse (__main__.RCTests.test_reference_case_and_threshold_inverse) ... ok
+test_rescaling_time_and_capacitance (__main__.RCTests.test_rescaling_time_and_capacitance) ... ok
+test_simulation_contract (__main__.RCTests.test_simulation_contract) ... ok
+test_small_charge_not_lost_to_subtraction (__main__.RCTests.test_small_charge_not_lost_to_subtraction) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.021s
+
+OK
+[networking] exit=0
+network framing: PASS
+[sqlite-index] exit=0
+sqlite index lab: PASS
+[ml-linear] exit=0
+linear model: PASS
+[distributed] exit=0
+replication sim: PASS
+[robotics] exit=0
+pid sim: PASS
+[data-science] exit=0
+stats lab: PASS
+[arrays] exit=0
+== 01-rotate-log-buffer ==
+
+== 02-compact-deleted-records ==
+
+== 03-first-order-violation ==
+
+== 04-run-length-events ==
+
+== 05-merge-time-series ==
+
+== 06-move-empty-slots ==
+
+== 07-product-except-self ==
+
+== 08-maximum-burst-load ==
+
+== 09-circular-burst-load ==
+
+== 10-next-permutation-schedule ==
+
+== 11-three-state-packet-partition ==
+
+== 12-minimal-repair-window ==
+
+== 13-range-load-updates ==
+
+== 14-balanced-shard-cut ==
+
+== 15-first-missing-positive-id ==
+
+== 16-trapped-buffer-capacity ==
+
+== 17-kth-latency-quickselect ==
+
+== 18-merge-into-reserved-buffer ==
+
+== 19-duplicate-cycle-id ==
+
+== 20-maximum-product-window ==
+
+20/20 problem test suites passed
+test_examples (test_solution.T.test_examples) ... ok
+test_oracle (test_solution.T.test_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+test_cases (test_solution.T.test_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test_exhaustive (test_solution.T.test_exhaustive) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+test_exhaustive (test_solution.T.test_exhaustive) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+OK
+test (test_solution.T.test) ... ok
+test_no_input_slicing_and_empty_rejection (test_solution.T.test_no_input_slicing_and_empty_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.086s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.050s
+
+OK
+test_duplicates (test_solution.T.test_duplicates) ... ok
+test_unique (test_solution.T.test_unique) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+test (test_solution.T.test) ... ok
+test_bad (test_solution.T.test_bad) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+test_random (test_solution.T.test_random) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+OK
+test (test_solution.T.test) ... ok
+test_adversarial_comparison_count (test_solution.T.test_adversarial_comparison_count) ... ok
+test_bad (test_solution.T.test_bad) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.010s
+
+OK
+test (test_solution.T.test) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test_examples (test_solution.T.test_examples) ... ok
+test_generated (test_solution.T.test_generated) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+test (test_solution.T.test) ... ok
+test_no_input_slicing_and_empty_rejection (test_solution.T.test_no_input_slicing_and_empty_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.098s
+
+OK
+[ml-autodiff] exit=0
+autodiff tests passed
+[ml-attention] exit=0
+test_bad_scores (test_attention.AttentionTests.test_bad_scores) ... ok
+test_causal_mask (test_attention.AttentionTests.test_causal_mask) ... ok
+test_first_position_only_self (test_attention.AttentionTests.test_first_position_only_self) ... ok
+test_invalid_dimensions (test_attention.AttentionTests.test_invalid_dimensions) ... ok
+test_no_lookahead_leakage (test_attention.AttentionTests.test_no_lookahead_leakage) ... ok
+test_projection (test_attention.AttentionTests.test_projection) ... ok
+test_scale_changes_concentration (test_attention.AttentionTests.test_scale_changes_concentration) ... ok
+test_softmax_stable_large_scores (test_attention.AttentionTests.test_softmax_stable_large_scores) ... ok
+test_all_local_gradients_by_central_difference (test_attention_derivatives.AttentionDerivativesTests.test_all_local_gradients_by_central_difference) ... ok
+test_cache_matches_full_prefixes_rectangular_values (test_attention_derivatives.AttentionDerivativesTests.test_cache_matches_full_prefixes_rectangular_values) ... ok
+test_decimal_two_key_oracle (test_attention_derivatives.AttentionDerivativesTests.test_decimal_two_key_oracle) ... ok
+test_invalid_shapes_and_nonfinite_values (test_attention_derivatives.AttentionDerivativesTests.test_invalid_shapes_and_nonfinite_values) ... ok
+test_invalid_step_leaves_state_unchanged (test_attention_derivatives.AttentionDerivativesTests.test_invalid_step_leaves_state_unchanged) ... ok
+test_mask_after_normalization_counterexample (test_attention_derivatives.AttentionDerivativesTests.test_mask_after_normalization_counterexample) ... ok
+test_projection_mutation_does_not_change_cache (test_attention_derivatives.AttentionDerivativesTests.test_projection_mutation_does_not_change_cache) ... ok
+test_single_key_routing_has_zero_query_key_gradient (test_attention_derivatives.AttentionDerivativesTests.test_single_key_routing_has_zero_query_key_gradient) ... ok
+test_translation_of_logits_leaves_distribution (test_attention_derivatives.AttentionDerivativesTests.test_translation_of_logits_leaves_distribution) ... ok
+test_uniform_keys_produce_mean_values (test_attention_derivatives.AttentionDerivativesTests.test_uniform_keys_produce_mean_values) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.003s
+
+OK
+[numerical-foundations] exit=0
+test_absolute_value_counterexample_is_a_valid_numeric_output (test_numerics.NumericalTests.test_absolute_value_counterexample_is_a_valid_numeric_output) ... ok
+test_bad_steps_domains_methods_and_nonfinite_evaluation (test_numerics.NumericalTests.test_bad_steps_domains_methods_and_nonfinite_evaluation) ... ok
+test_constant_and_invalid_samples (test_numerics.NumericalTests.test_constant_and_invalid_samples) ... ok
+test_hand_calculated_uncertainty_and_covariance (test_numerics.NumericalTests.test_hand_calculated_uncertainty_and_covariance) ... ok
+test_linear_and_constant_units (test_numerics.NumericalTests.test_linear_and_constant_units) ... ok
+test_polynomials_with_independent_exact_derivative (test_numerics.NumericalTests.test_polynomials_with_independent_exact_derivative) ... ok
+test_small_step_is_rejected_not_false_zero (test_numerics.NumericalTests.test_small_step_is_rejected_not_false_zero) ... ok
+test_uncertainty_representable_at_extreme_input_scales (test_numerics.NumericalTests.test_uncertainty_representable_at_extreme_input_scales) ... ok
+test_uncertainty_units_transform (test_numerics.NumericalTests.test_uncertainty_units_transform) ... ok
+test_variance_exact_fraction_oracle_with_large_offset (test_numerics.NumericalTests.test_variance_exact_fraction_oracle_with_large_offset) ... ok
+test_variance_translation_and_scaling (test_numerics.NumericalTests.test_variance_translation_and_scaling) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK
+[storage-recovery] exit=0
+test_corruption_never_scans_forward_to_later_good_frames (test_wal_store.WalTests.test_corruption_never_scans_forward_to_later_good_frames) ... ok
+test_empty_update_delete_unicode_and_reopen (test_wal_store.WalTests.test_empty_update_delete_unicode_and_reopen) ... ok
+test_every_byte_cut_preserves_prior_batch_and_atomicity (test_wal_store.WalTests.test_every_byte_cut_preserves_prior_batch_and_atomicity) ... ok
+test_incomplete_tail_requires_explicit_repair_before_append (test_wal_store.WalTests.test_incomplete_tail_requires_explicit_repair_before_append) ... ok
+test_input_validation_does_not_change_file (test_wal_store.WalTests.test_input_validation_does_not_change_file) ... ok
+test_malformed_valid_checksum_does_not_count_as_commit (test_wal_store.WalTests.test_malformed_valid_checksum_does_not_count_as_commit) ... ok
+test_randomized_model_matches_each_recovered_prefix (test_wal_store.WalTests.test_randomized_model_matches_each_recovered_prefix) ... ok
+test_sequence_version_size_and_magic_are_checked (test_wal_store.WalTests.test_sequence_version_size_and_magic_are_checked) ... ok
+test_short_writes_and_no_progress (test_wal_store.WalTests.test_short_writes_and_no_progress) ... ok
+test_sync_failure_means_unknown_outcome_and_poisoned_writer (test_wal_store.WalTests.test_sync_failure_means_unknown_outcome_and_poisoned_writer) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.172s
+
+OK
+[bio-alignment] exit=0
+test_empty_and_no_positive_local_alignment (test_alignment.AlignmentTests.test_empty_and_no_positive_local_alignment) ... ok
+test_gap_model_can_prefer_two_gaps_over_mismatch (test_alignment.AlignmentTests.test_gap_model_can_prefer_two_gaps_over_mismatch) ... ok
+test_global_exhaustive_independent_oracle (test_alignment.AlignmentTests.test_global_exhaustive_independent_oracle) ... ok
+test_input_and_resource_contracts (test_alignment.AlignmentTests.test_input_and_resource_contracts) ... ok
+test_local_exhaustive_independent_oracle (test_alignment.AlignmentTests.test_local_exhaustive_independent_oracle) ... ok
+test_local_flanks_and_coordinates (test_alignment.AlignmentTests.test_local_flanks_and_coordinates) ... ok
+test_symmetry_scores_not_necessarily_tracebacks (test_alignment.AlignmentTests.test_symmetry_scores_not_necessarily_tracebacks) ... ok
+test_ties_have_documented_selection (test_alignment.AlignmentTests.test_ties_have_documented_selection) ... ok
+test_worked_matrix_and_traceback (test_alignment.AlignmentTests.test_worked_matrix_and_traceback) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.031s
+
+OK
+[bio-workbench] exit=0
+test_bad_inputs_and_resource_caps (test_workbench.WorkbenchTests.test_bad_inputs_and_resource_caps) ... ok
+test_end_to_end_global (test_workbench.WorkbenchTests.test_end_to_end_global) ... ok
+test_end_to_end_local_and_provenance (test_workbench.WorkbenchTests.test_end_to_end_local_and_provenance) ... ok
+test_only_literal_unknown_symbol_semantics (test_workbench.WorkbenchTests.test_only_literal_unknown_symbol_semantics) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.685s
+
+OK
+REFERENCE TEST GROUPS: 18/18 passed

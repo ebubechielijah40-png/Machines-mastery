@@ -1,0 +1,325 @@
+{
+  "kind": "actual local compiler/process investigation",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "records": [
+    {
+      "command": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "-c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/main.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O0/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "-c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/sum.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O0/sum.o"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/nm",
+        "-P",
+        "/tmp/mm-compile-l23qw_7s/O0/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "__stack_chk_fail U         \naffine U         \nmain T 0 9f\nprintf U         \nsuccessful_calls U         \nsum_bytes U         \n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/objdump",
+        "-dr",
+        "/tmp/mm-compile-l23qw_7s/O0/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/mm-compile-l23qw_7s/O0/main.o:     file format elf64-x86-64\n\n\nDisassembly of section .text:\n\n0000000000000000 <main>:\n   0:\tf3 0f 1e fa          \tendbr64\n   4:\t55                   \tpush   %rbp\n   5:\t48 89 e5             \tmov    %rsp,%rbp\n   8:\t48 83 ec 20          \tsub    $0x20,%rsp\n   c:\t64 48 8b 04 25 28 00 \tmov    %fs:0x28,%rax\n  13:\t00 00 \n  15:\t48 89 45 f8          \tmov    %rax,-0x8(%rbp)\n  19:\t31 c0                \txor    %eax,%eax\n  1b:\t66 c7 45 f5 03 05    \tmovw   $0x503,-0xb(%rbp)\n  21:\tc6 45 f7 07          \tmovb   $0x7,-0x9(%rbp)\n  25:\t48 c7 45 e8 e7 03 00 \tmovq   $0x3e7,-0x18(%rbp)\n  2c:\t00 \n  2d:\t48 8d 55 e8          \tlea    -0x18(%rbp),%rdx\n  31:\t48 8d 45 f5          \tlea    -0xb(%rbp),%rax\n  35:\tbe 03 00 00 00       \tmov    $0x3,%esi\n  3a:\t48 89 c7             \tmov    %rax,%rdi\n  3d:\te8 00 00 00 00       \tcall   42 <main+0x42>\n\t\t\t3e: R_X86_64_PLT32\tsum_bytes-0x4\n  42:\t83 f0 01             \txor    $0x1,%eax\n  45:\t84 c0                \ttest   %al,%al\n  47:\t74 07                \tje     50 <main+0x50>\n  49:\tb8 01 00 00 00       \tmov    $0x1,%eax\n  4e:\teb 39                \tjmp    89 <main+0x89>\n  50:\tbe 05 00 00 00       \tmov    $0x5,%esi\n  55:\tbf 04 00 00 00       \tmov    $0x4,%edi\n  5a:\te8 00 00 00 00       \tcall   5f <main+0x5f>\n\t\t\t5b: R_X86_64_PLT32\taffine-0x4\n  5f:\t48 89 c1             \tmov    %rax,%rcx\n  62:\t48 8b 15 00 00 00 00 \tmov    0x0(%rip),%rdx        # 69 <main+0x69>\n\t\t\t65: R_X86_64_PC32\tsuccessful_calls-0x4\n  69:\t48 8b 45 e8          \tmov    -0x18(%rbp),%rax\n  6d:\t48 89 c6             \tmov    %rax,%rsi\n  70:\t48 8d 05 00 00 00 00 \tlea    0x0(%rip),%rax        # 77 <main+0x77>\n\t\t\t73: R_X86_64_PC32\t.rodata-0x4\n  77:\t48 89 c7             \tmov    %rax,%rdi\n  7a:\tb8 00 00 00 00       \tmov    $0x0,%eax\n  7f:\te8 00 00 00 00       \tcall   84 <main+0x84>\n\t\t\t80: R_X86_64_PLT32\tprintf-0x4\n  84:\tb8 00 00 00 00       \tmov    $0x0,%eax\n  89:\t48 8b 55 f8          \tmov    -0x8(%rbp),%rdx\n  8d:\t64 48 2b 14 25 28 00 \tsub    %fs:0x28,%rdx\n  94:\t00 00 \n  96:\t74 05                \tje     9d <main+0x9d>\n  98:\te8 00 00 00 00       \tcall   9d <main+0x9d>\n\t\t\t99: R_X86_64_PLT32\t__stack_chk_fail-0x4\n  9d:\tc9                   \tleave\n  9e:\tc3                   \tret\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/objdump",
+        "-dr",
+        "/tmp/mm-compile-l23qw_7s/O0/sum.o"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/mm-compile-l23qw_7s/O0/sum.o:     file format elf64-x86-64\n\n\nDisassembly of section .text:\n\n0000000000000000 <sum_bytes>:\n   0:\tf3 0f 1e fa          \tendbr64\n   4:\t55                   \tpush   %rbp\n   5:\t48 89 e5             \tmov    %rsp,%rbp\n   8:\t48 89 7d e8          \tmov    %rdi,-0x18(%rbp)\n   c:\t48 89 75 e0          \tmov    %rsi,-0x20(%rbp)\n  10:\t48 89 55 d8          \tmov    %rdx,-0x28(%rbp)\n  14:\t48 83 7d d8 00       \tcmpq   $0x0,-0x28(%rbp)\n  19:\t74 0e                \tje     29 <sum_bytes+0x29>\n  1b:\t48 83 7d e0 00       \tcmpq   $0x0,-0x20(%rbp)\n  20:\t74 0e                \tje     30 <sum_bytes+0x30>\n  22:\t48 83 7d e8 00       \tcmpq   $0x0,-0x18(%rbp)\n  27:\t75 07                \tjne    30 <sum_bytes+0x30>\n  29:\tb8 00 00 00 00       \tmov    $0x0,%eax\n  2e:\teb 7f                \tjmp    af <sum_bytes+0xaf>\n  30:\t48 c7 45 f0 00 00 00 \tmovq   $0x0,-0x10(%rbp)\n  37:\t00 \n  38:\t48 c7 45 f8 00 00 00 \tmovq   $0x0,-0x8(%rbp)\n  3f:\t00 \n  40:\teb 41                \tjmp    83 <sum_bytes+0x83>\n  42:\t48 8b 45 f0          \tmov    -0x10(%rbp),%rax\n  46:\t48 f7 d0             \tnot    %rax\n  49:\t48 89 c1             \tmov    %rax,%rcx\n  4c:\t48 8b 55 e8          \tmov    -0x18(%rbp),%rdx\n  50:\t48 8b 45 f8          \tmov    -0x8(%rbp),%rax\n  54:\t48 01 d0             \tadd    %rdx,%rax\n  57:\t0f b6 00             \tmovzbl (%rax),%eax\n  5a:\t0f b6 c0             \tmovzbl %al,%eax\n  5d:\t48 39 c1             \tcmp    %rax,%rcx\n  60:\t73 07                \tjae    69 <sum_bytes+0x69>\n  62:\tb8 00 00 00 00       \tmov    $0x0,%eax\n  67:\teb 46                \tjmp    af <sum_bytes+0xaf>\n  69:\t48 8b 55 e8          \tmov    -0x18(%rbp),%rdx\n  6d:\t48 8b 45 f8          \tmov    -0x8(%rbp),%rax\n  71:\t48 01 d0             \tadd    %rdx,%rax\n  74:\t0f b6 00             \tmovzbl (%rax),%eax\n  77:\t0f b6 c0             \tmovzbl %al,%eax\n  7a:\t48 01 45 f0          \tadd    %rax,-0x10(%rbp)\n  7e:\t48 83 45 f8 01       \taddq   $0x1,-0x8(%rbp)\n  83:\t48 8b 45 f8          \tmov    -0x8(%rbp),%rax\n  87:\t48 3b 45 e0          \tcmp    -0x20(%rbp),%rax\n  8b:\t72 b5                \tjb     42 <sum_bytes+0x42>\n  8d:\t48 8b 45 d8          \tmov    -0x28(%rbp),%rax\n  91:\t48 8b 55 f0          \tmov    -0x10(%rbp),%rdx\n  95:\t48 89 10             \tmov    %rdx,(%rax)\n  98:\t48 8b 05 00 00 00 00 \tmov    0x0(%rip),%rax        # 9f <sum_bytes+0x9f>\n\t\t\t9b: R_X86_64_PC32\tsuccessful_calls-0x4\n  9f:\t48 83 c0 01          \tadd    $0x1,%rax\n  a3:\t48 89 05 00 00 00 00 \tmov    %rax,0x0(%rip)        # aa <sum_bytes+0xaa>\n\t\t\ta6: R_X86_64_PC32\tsuccessful_calls-0x4\n  aa:\tb8 01 00 00 00       \tmov    $0x1,%eax\n  af:\t5d                   \tpop    %rbp\n  b0:\tc3                   \tret\n\n00000000000000b1 <affine>:\n  b1:\tf3 0f 1e fa          \tendbr64\n  b5:\t55                   \tpush   %rbp\n  b6:\t48 89 e5             \tmov    %rsp,%rbp\n  b9:\t48 89 7d f8          \tmov    %rdi,-0x8(%rbp)\n  bd:\t48 89 75 f0          \tmov    %rsi,-0x10(%rbp)\n  c1:\t48 8b 55 f8          \tmov    -0x8(%rbp),%rdx\n  c5:\t48 89 d0             \tmov    %rdx,%rax\n  c8:\t48 01 c0             \tadd    %rax,%rax\n  cb:\t48 01 c2             \tadd    %rax,%rdx\n  ce:\t48 8b 45 f0          \tmov    -0x10(%rbp),%rax\n  d2:\t48 01 d0             \tadd    %rdx,%rax\n  d5:\t5d                   \tpop    %rbp\n  d6:\tc3                   \tret\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/readelf",
+        "-Wr",
+        "/tmp/mm-compile-l23qw_7s/O0/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "\nRelocation section '.rela.text' at offset 0x2c0 contains 6 entries:\n    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend\n000000000000003e  0000000500000004 R_X86_64_PLT32         0000000000000000 sum_bytes - 4\n000000000000005b  0000000600000004 R_X86_64_PLT32         0000000000000000 affine - 4\n0000000000000065  0000000700000002 R_X86_64_PC32          0000000000000000 successful_calls - 4\n0000000000000073  0000000300000002 R_X86_64_PC32          0000000000000000 .rodata - 4\n0000000000000080  0000000800000004 R_X86_64_PLT32         0000000000000000 printf - 4\n0000000000000099  0000000900000004 R_X86_64_PLT32         0000000000000000 __stack_chk_fail - 4\n\nRelocation section '.rela.eh_frame' at offset 0x350 contains 1 entry:\n    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend\n0000000000000020  0000000200000002 R_X86_64_PC32          0000000000000000 .text + 0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "/tmp/mm-compile-l23qw_7s/O0/main.o",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O0/missing"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/usr/bin/ld: /tmp/mm-compile-l23qw_7s/O0/main.o: warning: relocation against `successful_calls' in read-only section `.text'\n/usr/bin/ld: /tmp/mm-compile-l23qw_7s/O0/main.o: in function `main':\nmain.c:(.text+0x3e): undefined reference to `sum_bytes'\n/usr/bin/ld: main.c:(.text+0x5b): undefined reference to `affine'\n/usr/bin/ld: main.c:(.text+0x65): undefined reference to `successful_calls'\n/usr/bin/ld: warning: creating DT_TEXTREL in a PIE\ncollect2: error: ld returned 1 exit status\n"
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "/tmp/mm-compile-l23qw_7s/O0/main.o",
+        "/tmp/mm-compile-l23qw_7s/O0/sum.o",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O0/program"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-compile-l23qw_7s/O0/program"
+      ],
+      "exit_code": 0,
+      "stdout": "sum=15 calls=1 affine=17\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/test_sum.c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/sum.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O0/test"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-compile-l23qw_7s/O0/test"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/main.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O2/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "-c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/sum.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O2/sum.o"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/nm",
+        "-P",
+        "/tmp/mm-compile-l23qw_7s/O2/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": ".LC0 r 0 \n__printf_chk U         \n__stack_chk_fail U         \naffine U         \nmain T 0 9c\nsuccessful_calls U         \nsum_bytes U         \n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/objdump",
+        "-dr",
+        "/tmp/mm-compile-l23qw_7s/O2/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/mm-compile-l23qw_7s/O2/main.o:     file format elf64-x86-64\n\n\nDisassembly of section .text.startup:\n\n0000000000000000 <main>:\n   0:\tf3 0f 1e fa          \tendbr64\n   4:\t48 83 ec 28          \tsub    $0x28,%rsp\n   8:\tbe 03 00 00 00       \tmov    $0x3,%esi\n   d:\t64 48 8b 04 25 28 00 \tmov    %fs:0x28,%rax\n  14:\t00 00 \n  16:\t48 89 44 24 18       \tmov    %rax,0x18(%rsp)\n  1b:\t31 c0                \txor    %eax,%eax\n  1d:\t48 8d 54 24 08       \tlea    0x8(%rsp),%rdx\n  22:\tb8 03 05 00 00       \tmov    $0x503,%eax\n  27:\t48 8d 7c 24 15       \tlea    0x15(%rsp),%rdi\n  2c:\t66 89 44 24 15       \tmov    %ax,0x15(%rsp)\n  31:\tc6 44 24 17 07       \tmovb   $0x7,0x17(%rsp)\n  36:\t48 c7 44 24 08 e7 03 \tmovq   $0x3e7,0x8(%rsp)\n  3d:\t00 00 \n  3f:\te8 00 00 00 00       \tcall   44 <main+0x44>\n\t\t\t40: R_X86_64_PLT32\tsum_bytes-0x4\n  44:\t89 c2                \tmov    %eax,%edx\n  46:\tb8 01 00 00 00       \tmov    $0x1,%eax\n  4b:\t84 d2                \ttest   %dl,%dl\n  4d:\t74 33                \tje     82 <main+0x82>\n  4f:\tbe 05 00 00 00       \tmov    $0x5,%esi\n  54:\tbf 04 00 00 00       \tmov    $0x4,%edi\n  59:\te8 00 00 00 00       \tcall   5e <main+0x5e>\n\t\t\t5a: R_X86_64_PLT32\taffine-0x4\n  5e:\t48 8b 54 24 08       \tmov    0x8(%rsp),%rdx\n  63:\tbf 02 00 00 00       \tmov    $0x2,%edi\n  68:\t48 8b 0d 00 00 00 00 \tmov    0x0(%rip),%rcx        # 6f <main+0x6f>\n\t\t\t6b: R_X86_64_PC32\tsuccessful_calls-0x4\n  6f:\t49 89 c0             \tmov    %rax,%r8\n  72:\t48 8d 35 00 00 00 00 \tlea    0x0(%rip),%rsi        # 79 <main+0x79>\n\t\t\t75: R_X86_64_PC32\t.LC0-0x4\n  79:\t31 c0                \txor    %eax,%eax\n  7b:\te8 00 00 00 00       \tcall   80 <main+0x80>\n\t\t\t7c: R_X86_64_PLT32\t__printf_chk-0x4\n  80:\t31 c0                \txor    %eax,%eax\n  82:\t48 8b 54 24 18       \tmov    0x18(%rsp),%rdx\n  87:\t64 48 2b 14 25 28 00 \tsub    %fs:0x28,%rdx\n  8e:\t00 00 \n  90:\t75 05                \tjne    97 <main+0x97>\n  92:\t48 83 c4 28          \tadd    $0x28,%rsp\n  96:\tc3                   \tret\n  97:\te8 00 00 00 00       \tcall   9c <main+0x9c>\n\t\t\t98: R_X86_64_PLT32\t__stack_chk_fail-0x4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/objdump",
+        "-dr",
+        "/tmp/mm-compile-l23qw_7s/O2/sum.o"
+      ],
+      "exit_code": 0,
+      "stdout": "\n/tmp/mm-compile-l23qw_7s/O2/sum.o:     file format elf64-x86-64\n\n\nDisassembly of section .text:\n\n0000000000000000 <sum_bytes>:\n   0:\tf3 0f 1e fa          \tendbr64\n   4:\t48 85 d2             \ttest   %rdx,%rdx\n   7:\t74 47                \tje     50 <sum_bytes+0x50>\n   9:\t48 85 f6             \ttest   %rsi,%rsi\n   c:\t0f 95 c0             \tsetne  %al\n   f:\t48 85 ff             \ttest   %rdi,%rdi\n  12:\t0f 94 c1             \tsete   %cl\n  15:\t20 c8                \tand    %cl,%al\n  17:\t75 37                \tjne    50 <sum_bytes+0x50>\n  19:\t48 85 f6             \ttest   %rsi,%rsi\n  1c:\t74 1b                \tje     39 <sum_bytes+0x39>\n  1e:\t4c 8d 04 37          \tlea    (%rdi,%rsi,1),%r8\n  22:\t31 f6                \txor    %esi,%esi\n  24:\t0f 1f 40 00          \tnopl   0x0(%rax)\n  28:\t0f b6 0f             \tmovzbl (%rdi),%ecx\n  2b:\t48 01 ce             \tadd    %rcx,%rsi\n  2e:\t72 22                \tjb     52 <sum_bytes+0x52>\n  30:\t48 83 c7 01          \tadd    $0x1,%rdi\n  34:\t4c 39 c7             \tcmp    %r8,%rdi\n  37:\t75 ef                \tjne    28 <sum_bytes+0x28>\n  39:\t48 89 32             \tmov    %rsi,(%rdx)\n  3c:\tb8 01 00 00 00       \tmov    $0x1,%eax\n  41:\t48 83 05 00 00 00 00 \taddq   $0x1,0x0(%rip)        # 49 <sum_bytes+0x49>\n  48:\t01 \n\t\t\t44: R_X86_64_PC32\tsuccessful_calls-0x5\n  49:\tc3                   \tret\n  4a:\t66 0f 1f 44 00 00    \tnopw   0x0(%rax,%rax,1)\n  50:\t31 c0                \txor    %eax,%eax\n  52:\tc3                   \tret\n  53:\t66 66 2e 0f 1f 84 00 \tdata16 cs nopw 0x0(%rax,%rax,1)\n  5a:\t00 00 00 00 \n  5e:\t66 90                \txchg   %ax,%ax\n\n0000000000000060 <affine>:\n  60:\tf3 0f 1e fa          \tendbr64\n  64:\t48 8d 04 7f          \tlea    (%rdi,%rdi,2),%rax\n  68:\t48 01 f0             \tadd    %rsi,%rax\n  6b:\tc3                   \tret\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/readelf",
+        "-Wr",
+        "/tmp/mm-compile-l23qw_7s/O2/main.o"
+      ],
+      "exit_code": 0,
+      "stdout": "\nRelocation section '.rela.text.startup' at offset 0x2c8 contains 6 entries:\n    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend\n0000000000000040  0000000500000004 R_X86_64_PLT32         0000000000000000 sum_bytes - 4\n000000000000005a  0000000600000004 R_X86_64_PLT32         0000000000000000 affine - 4\n000000000000006b  0000000700000002 R_X86_64_PC32          0000000000000000 successful_calls - 4\n0000000000000075  0000000300000002 R_X86_64_PC32          0000000000000000 .LC0 - 4\n000000000000007c  0000000800000004 R_X86_64_PLT32         0000000000000000 __printf_chk - 4\n0000000000000098  0000000900000004 R_X86_64_PLT32         0000000000000000 __stack_chk_fail - 4\n\nRelocation section '.rela.eh_frame' at offset 0x358 contains 1 entry:\n    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend\n0000000000000020  0000000200000002 R_X86_64_PC32          0000000000000000 .text.startup + 0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "/tmp/mm-compile-l23qw_7s/O2/main.o",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O2/missing"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/usr/bin/ld: /tmp/mm-compile-l23qw_7s/O2/main.o: warning: relocation against `successful_calls' in read-only section `.text.startup'\n/usr/bin/ld: /tmp/mm-compile-l23qw_7s/O2/main.o: in function `main':\nmain.c:(.text.startup+0x40): undefined reference to `sum_bytes'\n/usr/bin/ld: main.c:(.text.startup+0x5a): undefined reference to `affine'\n/usr/bin/ld: main.c:(.text.startup+0x6b): undefined reference to `successful_calls'\n/usr/bin/ld: warning: creating DT_TEXTREL in a PIE\ncollect2: error: ld returned 1 exit status\n"
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "/tmp/mm-compile-l23qw_7s/O2/main.o",
+        "/tmp/mm-compile-l23qw_7s/O2/sum.o",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O2/program"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-compile-l23qw_7s/O2/program"
+      ],
+      "exit_code": 0,
+      "stdout": "sum=15 calls=1 affine=17\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/test_sum.c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/sum.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/O2/test"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-compile-l23qw_7s/O2/test"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/test_sum.c",
+        "/workspace/scratch/9b275ae18bcb/development/machines-mastery/04-computer-systems/compile-link/code/sum.c",
+        "-o",
+        "/tmp/mm-compile-l23qw_7s/sanitized"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-compile-l23qw_7s/sanitized"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "limits": "Only owned safe code executed; no ABI specification access or universal instruction/address claims."
+}

@@ -1,0 +1,13 @@
+test_bindings_and_unary (test_minilang.LanguageTests.test_bindings_and_unary) ... ok
+test_bounded_resources (test_minilang.LanguageTests.test_bounded_resources) ... ok
+test_comments_and_token_offsets (test_minilang.LanguageTests.test_comments_and_token_offsets) ... ok
+test_empty_program_and_input_contract (test_minilang.LanguageTests.test_empty_program_and_input_contract) ... ok
+test_failed_program_is_atomic (test_minilang.LanguageTests.test_failed_program_is_atomic) ... ok
+test_generated_parenthesized_expressions_independent_arithmetic (test_minilang.LanguageTests.test_generated_parenthesized_expressions_independent_arithmetic) ... ok
+test_invalid_syntax_and_host_code_rejected (test_minilang.LanguageTests.test_invalid_syntax_and_host_code_rejected) ... ok
+test_precedence_associativity_and_exact_rationals (test_minilang.LanguageTests.test_precedence_associativity_and_exact_rationals) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.097s
+
+OK

@@ -1,9 +1,10 @@
-# Progressive hints
+# Hints after the initial attempt
 
-**Hint 1:** Draw the state machine/data-flow for `invariants → implementations → property tests → benchmarks` before choosing classes/functions.
-
-**Hint 2:** Separate pure transformation logic from I/O so tests can isolate mechanisms.
-
-**Hint 3:** Make failure states explicit rather than relying on exceptions/logs as the design.
-
-**Hint 4:** Only optimize after a baseline benchmark identifies a bottleneck.
+Mark a BFS neighbor when enqueuing, not after later removal. For a shortest-route
+proof use the first allegedly incorrect distance and its predecessor. For a
+cut-based oracle enumerate vertex subsets containing the source but excluding
+the sink; do not reuse residual search. An unreachable node and a reachable
+zero-cost node need different results. A topological order constrains every
+edge; checking only that all vertex IDs appear once is insufficient. Before
+optimizing a recursive implementation, preserve a correctness oracle and its
+input assumptions.

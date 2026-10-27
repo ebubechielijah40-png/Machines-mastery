@@ -1,0 +1,2 @@
+# Quantum hardware modalities
+Superconducting circuits use microwave-controlled nonlinear electrical modes at cryogenic temperatures; trapped ions use atomic states controlled by lasers/electromagnetic traps; neutral atoms, photonics, spins, and other platforms make different tradeoffs in gate speed, fidelity, connectivity, cooling, fabrication, and readout. A “quantum computer” is therefore a stack of quantum device + control electronics/optics + calibration + compiler + classical orchestration.

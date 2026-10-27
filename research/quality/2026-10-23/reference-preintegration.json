@@ -1,0 +1,9 @@
+{
+  "executed_utc": "2026-10-23T16:05:20.392941+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/run_reference_tests.py"
+  ],
+  "exit_code": 0,
+  "log": "research/quality/2026-10-23/reference-preintegration.txt"
+}

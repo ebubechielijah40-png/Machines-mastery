@@ -42,3 +42,7 @@ Projects, in increasing scope: processes; pipes; signals; redirection; jobs; fil
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed bounded unit
+
+[Bash argv preservation, splitting/globs and pipeline statuses](units/argument-boundaries/README.md) includes original teaching, runnable code, separate practice/hints/solutions and actual evidence. Full shell-bash route remains PARTIAL. Other numbered topic pages remain scope notes where no developed mechanism is linked.

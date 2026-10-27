@@ -1,0 +1,162 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "implementation": "CPython",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "semantic_observations": {
+    "alias_same": true,
+    "shallow_outer_distinct": true,
+    "shallow_inner_same": true,
+    "deep_inner_distinct": true,
+    "after_mutation": {
+      "a": [
+        [
+          1,
+          9
+        ],
+        [
+          2
+        ]
+      ],
+      "b": [
+        [
+          1,
+          9
+        ],
+        [
+          2
+        ]
+      ],
+      "shallow": [
+        [
+          1,
+          9
+        ],
+        [
+          2
+        ]
+      ],
+      "deep": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ]
+    },
+    "tuple_contains_changed_list": [
+      1,
+      2
+    ],
+    "rebind_does_not_mutate_alias": [
+      [
+        1,
+        2
+      ],
+      [
+        1
+      ]
+    ],
+    "augmented_list_mutates_alias": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "default_argument": {
+    "after_first": [
+      "a"
+    ],
+    "after_second": [
+      "a",
+      "b"
+    ],
+    "same_container": true,
+    "fresh_none_default_calls": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ]
+    ]
+  },
+  "local_bytecode": {
+    "rebind": [
+      {
+        "op": "RESUME",
+        "argument": ""
+      },
+      {
+        "op": "LOAD_FAST",
+        "argument": "x"
+      },
+      {
+        "op": "LOAD_CONST",
+        "argument": "2"
+      },
+      {
+        "op": "BUILD_LIST",
+        "argument": ""
+      },
+      {
+        "op": "BINARY_OP",
+        "argument": "+"
+      },
+      {
+        "op": "STORE_FAST",
+        "argument": "x"
+      },
+      {
+        "op": "LOAD_FAST",
+        "argument": "x"
+      },
+      {
+        "op": "RETURN_VALUE",
+        "argument": ""
+      }
+    ],
+    "augment": [
+      {
+        "op": "RESUME",
+        "argument": ""
+      },
+      {
+        "op": "LOAD_FAST",
+        "argument": "x"
+      },
+      {
+        "op": "LOAD_CONST",
+        "argument": "2"
+      },
+      {
+        "op": "BUILD_LIST",
+        "argument": ""
+      },
+      {
+        "op": "BINARY_OP",
+        "argument": "+="
+      },
+      {
+        "op": "STORE_FAST",
+        "argument": "x"
+      },
+      {
+        "op": "LOAD_FAST",
+        "argument": "x"
+      },
+      {
+        "op": "RETURN_VALUE",
+        "argument": ""
+      }
+    ]
+  },
+  "scope": "selected list/tuple/copy semantics; local disassembly is not a portable ABI"
+}

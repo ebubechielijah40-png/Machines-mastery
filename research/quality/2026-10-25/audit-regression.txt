@@ -1,0 +1,23 @@
+test_broken_reference_link_and_bad_fragment_detected (test_quality_audit.QualityAuditTests.test_broken_reference_link_and_bad_fragment_detected) ... ok
+test_compilation_detects_illegal_top_level_statements (test_quality_audit.QualityAuditTests.test_compilation_detects_illegal_top_level_statements) ... ok
+test_completed_problem_requires_real_implementation (test_quality_audit.QualityAuditTests.test_completed_problem_requires_real_implementation) ... ok
+test_contradictory_book_availability_is_not_accepted (test_quality_audit.QualityAuditTests.test_contradictory_book_availability_is_not_accepted) ... ok
+test_excellence_requires_all_evidence_types (test_quality_audit.QualityAuditTests.test_excellence_requires_all_evidence_types) ... ok
+test_excellence_symlink_and_parent_escape_rejected (test_quality_audit.QualityAuditTests.test_excellence_symlink_and_parent_escape_rejected) ... ok
+test_explicit_shared_project_files_are_resolved_without_certification (test_quality_audit.QualityAuditTests.test_explicit_shared_project_files_are_resolved_without_certification) ... ok
+test_honest_scaffold_status_does_not_break_a_support_report (test_quality_audit.QualityAuditTests.test_honest_scaffold_status_does_not_break_a_support_report) ... ok
+test_invalid_evidence_shape_cannot_crash_or_certify (test_quality_audit.QualityAuditTests.test_invalid_evidence_shape_cannot_crash_or_certify) ... ok
+test_malformed_shared_manifest_and_noncode_binding_rejected (test_quality_audit.QualityAuditTests.test_malformed_shared_manifest_and_noncode_binding_rejected) ... ok
+test_private_source_and_symlink_trees_excluded (test_quality_audit.QualityAuditTests.test_private_source_and_symlink_trees_excluded) ... ok
+test_project_plan_and_unverified_paper_are_not_implementations (test_quality_audit.QualityAuditTests.test_project_plan_and_unverified_paper_are_not_implementations) ... ok
+test_repeated_substantive_template_found_without_title_matching (test_quality_audit.QualityAuditTests.test_repeated_substantive_template_found_without_title_matching) ... ok
+test_shared_binding_missing_or_unsafe_evidence_does_not_suppress_gap (test_quality_audit.QualityAuditTests.test_shared_binding_missing_or_unsafe_evidence_does_not_suppress_gap) ... ok
+test_shared_manifest_symlink_is_not_read (test_quality_audit.QualityAuditTests.test_shared_manifest_symlink_is_not_read) ... ok
+test_strong_evidence_links_cannot_silently_go_stale (test_quality_audit.QualityAuditTests.test_strong_evidence_links_cannot_silently_go_stale) ... ok
+test_symlink_manifest_itself_is_not_read (test_quality_audit.QualityAuditTests.test_symlink_manifest_itself_is_not_read) ... ok
+test_syntax_parsing_never_executes_and_fragments_can_be_labelled (test_quality_audit.QualityAuditTests.test_syntax_parsing_never_executes_and_fragments_can_be_labelled) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.037s
+
+OK

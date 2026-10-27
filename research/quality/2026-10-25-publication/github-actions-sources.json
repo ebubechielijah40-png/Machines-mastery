@@ -1,0 +1,36 @@
+{
+  "inspected_on": "2026-10-25",
+  "sources": [
+    {
+      "url": "https://github.com/actions/checkout",
+      "scope": "README runtime and usage, v7 tag resolved through official GitHub API"
+    },
+    {
+      "url": "https://github.com/actions/setup-python",
+      "scope": "README version selection and v7 usage"
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "scope": "Read-only contents permission and full commit pinning"
+    },
+    {
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+      "scope": "File size limits; checker conservatively refuses100MiB and above"
+    }
+  ],
+  "pins": [
+    {
+      "action": "actions/checkout",
+      "tag": "v7",
+      "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "ref_url": "https://api.github.com/repos/actions/checkout/git/ref/tags/v7"
+    },
+    {
+      "action": "actions/setup-python",
+      "tag": "v7",
+      "commit": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "ref_url": "https://api.github.com/repos/actions/setup-python/git/ref/tags/v7"
+    }
+  ],
+  "limits": "Selected official scopes only. Workflow commands replayed locally; no hosted GitHub Actions run before user push. No source prose/code example redistributed."
+}

@@ -1,0 +1,159 @@
+{
+  "kind": "executed synthetic software experiment; no published benchmark reproduction",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "xor": {
+    "seed": 7,
+    "steps": 300,
+    "initial_mse": 1.031209033167253,
+    "final_mse": 0.009235942972552114,
+    "predictions": [
+      -0.8847171821829741,
+      0.9022738550554407,
+      0.8934280652010963,
+      -0.9476008863255486
+    ],
+    "all_truth_table_rows_used_for_training": true
+  },
+  "corpus": {
+    "training_strings": [
+      "abcab",
+      "bcabc"
+    ],
+    "held_strings": [
+      "cabca"
+    ],
+    "shift_strings": [
+      "acbac"
+    ],
+    "vocabulary": [
+      "a",
+      "b",
+      "c"
+    ],
+    "sha256": "6395bbd3e2fd26ccf4b9efa509d45b3be190395f8abf4e19b52e961cc3099f0f",
+    "train_held_exact_overlap": false
+  },
+  "decoder": {
+    "config": {
+      "vocab_size": 3,
+      "d_model": 8,
+      "heads": 2,
+      "context": 4,
+      "ff_width": 12,
+      "seed": 11
+    },
+    "parameters": 548,
+    "initial": {
+      "train_nll": 1.1959159479587584,
+      "held_nll": 1.1018814767302416,
+      "shift_nll": 1.0555341831867273
+    },
+    "training": {
+      "steps": 180,
+      "learning_rate": 0.08,
+      "clip_norm": 1,
+      "trace": [
+        {
+          "step": 1,
+          "selected_loss_before_update": 1.1547797211406934,
+          "gradient_l2_before_clipping": 1.570380419528416
+        },
+        {
+          "step": 46,
+          "selected_loss_before_update": 0.05294790690307625,
+          "gradient_l2_before_clipping": 0.13554444298928758
+        },
+        {
+          "step": 91,
+          "selected_loss_before_update": 0.024701606150772232,
+          "gradient_l2_before_clipping": 0.062217394937005246
+        },
+        {
+          "step": 180,
+          "selected_loss_before_update": 0.012113845505460547,
+          "gradient_l2_before_clipping": 0.031145982848686835
+        }
+      ],
+      "elapsed_seconds": 8.452432873999896
+    },
+    "final_before_contamination": {
+      "train_nll": 0.012053209165195228,
+      "held_nll": 0.11487240616134453,
+      "shift_nll": 4.59271707073996,
+      "held_perplexity": 1.1217303025653196
+    },
+    "greedy_generation_before_contamination": "cabcabcabcabcabc"
+  },
+  "deliberate_test_contamination": {
+    "before_held_nll": 0.11487240616134453,
+    "after_held_nll": 0.010444000510524298,
+    "training": {
+      "steps": 40,
+      "learning_rate": 0.08,
+      "clip_norm": 1,
+      "trace": [
+        {
+          "step": 1,
+          "selected_loss_before_update": 0.11487240616134453,
+          "gradient_l2_before_clipping": 2.4835235731876937
+        },
+        {
+          "step": 11,
+          "selected_loss_before_update": 0.015315778736147059,
+          "gradient_l2_before_clipping": 0.0743089927652389
+        },
+        {
+          "step": 21,
+          "selected_loss_before_update": 0.012616930699900605,
+          "gradient_l2_before_clipping": 0.045425915083652096
+        },
+        {
+          "step": 40,
+          "selected_loss_before_update": 0.010521153984761373,
+          "gradient_l2_before_clipping": 0.03115145436302796
+        }
+      ],
+      "elapsed_seconds": 1.7433693459997812
+    },
+    "valid_heldout_evaluation": false
+  },
+  "high_learning_rate": {
+    "steps": 30,
+    "learning_rate": 3,
+    "clip_norm": null,
+    "trace": [
+      {
+        "step": 1,
+        "selected_loss_before_update": 1.1547797211406934,
+        "gradient_l2_before_clipping": 1.570380419528416
+      },
+      {
+        "step": 8,
+        "selected_loss_before_update": 4.397132045413976,
+        "gradient_l2_before_clipping": 3.431372815984218
+      },
+      {
+        "step": 16,
+        "selected_loss_before_update": 5.310605408434814,
+        "gradient_l2_before_clipping": 1.8239817925743582
+      },
+      {
+        "step": 30,
+        "selected_loss_before_update": 2.31790820647105,
+        "gradient_l2_before_clipping": 1.6656014317251064
+      }
+    ],
+    "elapsed_seconds": 1.3810918809999748,
+    "final_train_nll": 5.537887827225606
+  },
+  "limitations": [
+    "Two training strings and one held string do not estimate natural-language generalization.",
+    "Vocabulary is fixed from training strings, never fit on held strings.",
+    "XOR truth table fit uses every row: no held-out XOR generalization claim.",
+    "Decoder is original one-block pre-norm/tanh/learned-position variation, not paper architecture.",
+    "Timing is one local run, not a performance comparison."
+  ]
+}

@@ -1,0 +1,15 @@
+test_atomic_idempotency_conflict_and_retained_reply (test_operations.OperationsTests.test_atomic_idempotency_conflict_and_retained_reply) ... ok
+test_bounded_admission_and_exhaustion (test_operations.OperationsTests.test_bounded_admission_and_exhaustion) ... ok
+test_concurrent_duplicate_has_one_effect (test_operations.OperationsTests.test_concurrent_duplicate_has_one_effect) ... ok
+test_exact_slo_budget_and_percentile_denominator (test_operations.OperationsTests.test_exact_slo_budget_and_percentile_denominator) ... ok
+test_expired_queued_request_does_not_apply (test_operations.OperationsTests.test_expired_queued_request_does_not_apply) ... ok
+test_metric_validation_and_clock_order (test_operations.OperationsTests.test_metric_validation_and_clock_order) ... ok
+test_postcommit_unknown_and_restart_reconciliation (test_operations.OperationsTests.test_postcommit_unknown_and_restart_reconciliation) ... ok
+test_precommit_failure_has_no_partial_effect (test_operations.OperationsTests.test_precommit_failure_has_no_partial_effect) ... ok
+test_service_outcome_accounting_under_controlled_faults (test_operations.OperationsTests.test_service_outcome_accounting_under_controlled_faults) ... ok
+test_validation_and_counter_bound_rollback (test_operations.OperationsTests.test_validation_and_counter_bound_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.109s
+
+OK

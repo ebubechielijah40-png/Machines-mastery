@@ -1,0 +1,23 @@
+{
+  "observed_at_utc": "2026-10-23T16:53:54.058599+00:00",
+  "scope": "Local tool discovery only; presence does not certify standards/features or successful lab execution. Native build outputs are recorded separately.",
+  "paths": {
+    "python3": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "git": "/usr/local/bin/git",
+    "cc": "/usr/bin/cc",
+    "g++": "/usr/bin/g++",
+    "nm": "/usr/bin/nm",
+    "readelf": "/usr/bin/readelf",
+    "objdump": "/usr/bin/objdump",
+    "bash": "/usr/bin/bash",
+    "rustc": null,
+    "zig": null,
+    "go": null,
+    "java": "/usr/bin/java",
+    "javac": null,
+    "ghdl": null,
+    "riscv64-linux-gnu-as": null,
+    "iverilog": null,
+    "vvp": null
+  }
+}

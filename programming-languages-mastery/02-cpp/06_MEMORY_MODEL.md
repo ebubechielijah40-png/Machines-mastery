@@ -1,56 +1,28 @@
-# C++: Storage, Lifetime, Aliasing, Visibility And State Update Rules
+# C++ object lifetime and unique resource ownership
 
-**Prepared reference; learner NOT STARTED.** This page is self-contained for normal study. Exact version-specific edge cases should still be checked against the installed toolchain/specification when they matter.
+This developed bounded topic is taught in [resource-lifetime](units/resource-lifetime/README.md),
+with an actual C++17 owner, deep copy, move, copy-and-swap assignment and exception
+cleanup tests. The whole concurrency/atomic memory model and ABI remain incomplete.
 
-## Why this matters
+A pointer value and a resource obligation are different things. Copying a pointer
+copies an address representation; it does not decide which object releases the
+allocation. Buffer therefore maintains a unique-owner invariant: one nonempty
+object owns one allocation; an empty moved source owns none. A deep copy creates
+another allocation, while a move transfers the original ownership state and empties
+the source. Bounds check failures and dangling references are also different:
+a once-valid reference can outlive a later assignment that releases its allocation.
 
-The focus is **storage, lifetime, aliasing, visibility and state update rules**. A language feature is worth understanding when you can connect its source-level form to state, representation, guarantees, costs, and failure behavior.
+Trace a(2), b copied from a, c moved from b: there are two live allocations after
+the copy and still two after the move. b is empty. c and a release separate resources;
+b releases nothing. [The source](units/resource-lifetime/resource.cpp) instruments
+those states without relying on pointer-address coincidence. All three actual
+compiler configurations, including UBSan, are recorded in
+[observed.json](units/resource-lifetime/observed.json).
 
-## Mechanism model
-
-objects have lifetimes and storage; references/pointers alias objects; RAII ties resource lifetime to object lifetime; templates generate specialized code
-
-Use this execution chain whenever applicable:
-
-`input/source → parse/compile/runtime representation → state/memory/signal transition → OS/hardware/simulator effect → observable output`.
-
-For hardware-description languages, remember that synthesizable code describes hardware structure/behavior rather than a sequential software process.
-
-## Minimal example
-
-```cpp
-#include <iostream>
-int add(int a,int b){ return a+b; }
-int main(){ int x=5; std::cout << add(x,2) << "\n"; }
-```
-
-Before running it, predict the output or state transition. Then ask what lower layer must exist for the result to occur. Change one value/type/control condition and predict again.
-
-## Failure/counterexample
-
-Create one invalid or boundary case relevant to this topic. Decide whether it should be rejected at parse/compile/elaboration time, fail at runtime/simulation, produce a defined alternate result, or enter undefined/implementation-specific behavior. Do not label a behavior without checking the language/tool contract.
-
-## Tests and experiments
-
-1. Write 3 normal tests and 3 edge cases.
-2. Inspect generated assembly/bytecode/query plan/waveform where applicable.
-3. Measure one cost: runtime, allocations, binary size, query latency, cycles, or simulated transitions.
-4. Break one assumption and record the actual diagnostic/output.
-5. Rebuild the example from memory in a new file.
-
-## Application
-
-Use this topic inside the project ladder in `25_PROJECTS.md`. Explain how the mechanism changes when the program/design grows from a toy example to a long-running production or hardware system.
-
-## Limits
-
-This page teaches the stable conceptual model; it is not an exhaustive versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
-
-## Assignment
-
-- 5 short exercises that isolate the mechanism;
-- 3 integration exercises;
-- 1 debugging exercise;
-- 1 measurement experiment;
-- 1 transfer task with unfamiliar surface syntax;
-- explain the topic aloud without using the language name, only state/transformations/constraints, then map it back to C++.
+First draw that ownership graph, then rebuild its copy/move constructors without
+notes. Give a counterexample showing why range checking alone cannot establish
+lifetime safety. [Exercises](units/resource-lifetime/EXERCISES.md),
+[hints](units/resource-lifetime/HINTS.md), [solutions](units/resource-lifetime/SOLUTIONS.md)
+and [inspected source scope](units/resource-lifetime/SOURCES.md) are separate.
+Do not infer multithread visibility, atomic ordering, object layout or every
+standard-library moved-from guarantee from this bounded owner.

@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-23",
+  "kind": "before replacement of selected generic topic bodies",
+  "routes": [
+    {
+      "route": "01-c",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "02-cpp",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "03-rust",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "04-zig",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "05-x86-64-assembly",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "06-arm64-assembly",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "07-riscv-assembly",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "08-python",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "09-go",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "10-java",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "11-sql",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "12-shell-bash",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "13-systemverilog",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    },
+    {
+      "route": "14-vhdl",
+      "numbered_pages": 28,
+      "pages_with_first_fenced_block": 28,
+      "unique_first_fenced_blocks": 1,
+      "generic_self_contained_claims": 28,
+      "scope": "mechanical scan of all numbered pages, not validation of source claims or toolchain behavior"
+    }
+  ],
+  "tools": {
+    "gcc": "/usr/bin/gcc",
+    "g++": "/usr/bin/g++",
+    "python3": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "bash": "/usr/bin/bash",
+    "rustc": null,
+    "zig": null,
+    "go": null,
+    "javac": null,
+    "ghdl": null,
+    "iverilog": null,
+    "aarch64-linux-gnu-as": null,
+    "riscv64-linux-gnu-as": null
+  }
+}

@@ -1,103 +1,31 @@
-# Algorithms and data structures — self-contained phase guide
+# From a precise question to a verified algorithm
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+Begin with [proofs and discrete models](../foundations/mathematics/core/02_PROOFS_DISCRETE.md)
+and [Python entry](../02-programming/python-entry/README.md). Study the
+[array release](../algorithmic-problem-solving/topics/arrays/README.md), then
+[graphs](../algorithmic-problem-solving/topics/graphs/LESSON.md). The repeated
+method templates formerly here are replaced by these developed mechanisms;
+the broader algorithms domain remains PARTIAL.
 
-## 1. Invariants And Correctness
+A queue-based search expands distance layers. For0:[1,2],1:[3],2:[3],3:[],
+mark0 then discover1,2 at distance1 and3 at distance2. Marking on insertion
+prevents both parents from adding3 twice. The shortest-path proof uses this
+FIFO-layer invariant, while a stack has only a reachability argument. Change
+the objective to unequal edge costs and the original proof no longer applies.
 
-**Problem.** Identify the real system problem that makes invariants and correctness necessary.
+Next derive topological order/cycle witnesses, components, weighted paths,
+spanning forests, flow and matching from their specific invariants. The
+[graph problem set](../algorithmic-problem-solving/topics/graphs/PROBLEMS.md)
+and separated solutions implement20 genuinely different contracts. Independent
+oracles enumerate paths, cuts, trees and assignments on bounded inputs. These
+small exhaustive checks do not eliminate the need for the displayed general
+correctness arguments or declared runtime/recursion limits.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+Build [the reusable library](../projects-guided/p03-algorithm-library/README.md).
+Retain predicted traces, implementations, tests, an actual density experiment,
+a failed alternative and an unaided reconstruction. Distinguish V,E, result
+size, memory ownership and arithmetic cost before interpreting timing.
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 2. Complexity Models
-
-**Problem.** Identify the real system problem that makes complexity models necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Arrays/Hash Tables
-
-**Problem.** Identify the real system problem that makes arrays/hash tables necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Trees/Heaps
-
-**Problem.** Identify the real system problem that makes trees/heaps necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Graphs
-
-**Problem.** Identify the real system problem that makes graphs necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Dynamic Programming/Greedy
-
-**Problem.** Identify the real system problem that makes dynamic programming/greedy necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+Hash-table collision/resizing mechanisms, independently built balanced trees,
+broad DP, randomized analysis and geometry still need substantial instruction.
+The developed arrays/graphs path is not evidence that those topics are complete.

@@ -1,0 +1,83 @@
+{
+  "kind": "actual C arena tests; no replacement of process malloc",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "records": [
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O0",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/projects-guided/p04-memory-allocator/code/test_arena.c",
+        "-o",
+        "/tmp/mm-arena-6752aguy/0"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-arena-6752aguy/0"
+      ],
+      "exit_code": 0,
+      "stdout": "arena: boundary/coalescing/fragmentation and 5000 trace steps passed\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/projects-guided/p04-memory-allocator/code/test_arena.c",
+        "-o",
+        "/tmp/mm-arena-6752aguy/1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-arena-6752aguy/1"
+      ],
+      "exit_code": 0,
+      "stdout": "arena: boundary/coalescing/fragmentation and 5000 trace steps passed\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/projects-guided/p04-memory-allocator/code/arena.c",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/projects-guided/p04-memory-allocator/code/test_arena.c",
+        "-o",
+        "/tmp/mm-arena-6752aguy/2"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-arena-6752aguy/2"
+      ],
+      "exit_code": 0,
+      "stdout": "arena: boundary/coalescing/fragmentation and 5000 trace steps passed\n",
+      "stderr": ""
+    }
+  ]
+}

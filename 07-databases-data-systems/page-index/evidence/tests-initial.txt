@@ -1,0 +1,36 @@
+test_all_small_permutations_against_sorted_dictionary (test_bplus.IndexTests.test_all_small_permutations_against_sorted_dictionary) ... ok
+test_bottom_up_bulk_occupancy_for_every_small_tail (test_bplus.IndexTests.test_bottom_up_bulk_occupancy_for_every_small_tail) ... ok
+test_codec_byte_layout_and_boundaries (test_bplus.IndexTests.test_codec_byte_layout_and_boundaries) ... ok
+test_empty_updates_extreme_keys_and_half_open_ranges (test_bplus.IndexTests.test_empty_updates_extreme_keys_and_half_open_ranges) ... ok
+test_every_snapshot_prefix_and_every_single_bit_change_reject (test_bplus.IndexTests.test_every_snapshot_prefix_and_every_single_bit_change_reject) ... ok
+test_invalid_arguments_do_not_change_index (test_bplus.IndexTests.test_invalid_arguments_do_not_change_index) ... FAIL
+test_locally_valid_pages_can_violate_global_tree (test_bplus.IndexTests.test_locally_valid_pages_can_violate_global_tree) ... ok
+test_padding_and_malicious_counts_reject_even_after_crc_repair (test_bplus.IndexTests.test_padding_and_malicious_counts_reject_even_after_crc_repair) ... FAIL
+test_page_budget_failure_discards_staged_split (test_bplus.IndexTests.test_page_budget_failure_discards_staged_split) ... ok
+test_random_operation_ranges_with_independent_oracle (test_bplus.IndexTests.test_random_operation_ranges_with_independent_oracle) ... ok
+test_recursive_splits_orders_overwrites_and_reopen (test_bplus.IndexTests.test_recursive_splits_orders_overwrites_and_reopen) ... ok
+test_request_counters_and_file_round_trip (test_bplus.IndexTests.test_request_counters_and_file_round_trip) ... ok
+test_valid_checksum_mixed_state_does_not_imply_transaction (test_bplus.IndexTests.test_valid_checksum_mixed_state_does_not_imply_transaction) ... ok
+
+======================================================================
+FAIL: test_invalid_arguments_do_not_change_index (test_bplus.IndexTests.test_invalid_arguments_do_not_change_index)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9b275ae18bcb/development/machines-mastery/07-databases-data-systems/page-index/test_bplus.py", line 105, in test_invalid_arguments_do_not_change_index
+    with self.assertRaises(ValueError):t.range(key,None)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_padding_and_malicious_counts_reject_even_after_crc_repair (test_bplus.IndexTests.test_padding_and_malicious_counts_reject_even_after_crc_repair)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9b275ae18bcb/development/machines-mastery/07-databases-data-systems/page-index/test_bplus.py", line 170, in test_padding_and_malicious_counts_reject_even_after_crc_repair
+    with self.assertRaises(ValueError):decode_node(seal(broken),128)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 13 tests in 4.179s
+
+FAILED (failures=2)

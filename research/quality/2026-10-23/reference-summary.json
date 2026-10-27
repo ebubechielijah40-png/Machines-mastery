@@ -1,0 +1,412 @@
+{
+  "scope": "Each count belongs to its invoked suite; nested scripts and repeated baselines overlap. Do not sum as unique tests.",
+  "groups": [
+    {
+      "name": "completion",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "crypto",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "bio",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "quantum",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        18
+      ],
+      "scope_note": "18 reported unittest methods"
+    },
+    {
+      "name": "electronics",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        12
+      ],
+      "scope_note": "12 reported unittest methods"
+    },
+    {
+      "name": "networking",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "sqlite-index",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "ml-linear",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "distributed",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "robotics",
+      "exit_code": 0,
+      "reported_unittest_counts": [],
+      "scope_note": "assertion/structural script; no unittest count reported"
+    },
+    {
+      "name": "data-science",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        7
+      ],
+      "scope_note": "7 reported unittest methods"
+    },
+    {
+      "name": "arrays",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        2,
+        2
+      ],
+      "scope_note": "2 + 1 + 1 + 1 + 1 + 1 + 1 + 2 + 1 + 2 + 2 + 1 + 1 + 1 + 1 + 1 + 3 + 1 + 2 + 2 reported unittest methods"
+    },
+    {
+      "name": "ml-autodiff",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "ml-attention",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        18
+      ],
+      "scope_note": "18 reported unittest methods"
+    },
+    {
+      "name": "numerical-foundations",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        11
+      ],
+      "scope_note": "11 reported unittest methods"
+    },
+    {
+      "name": "storage-recovery",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10
+      ],
+      "scope_note": "10 reported unittest methods"
+    },
+    {
+      "name": "bio-alignment",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        9
+      ],
+      "scope_note": "9 reported unittest methods"
+    },
+    {
+      "name": "bio-workbench",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        4
+      ],
+      "scope_note": "4 reported unittest methods"
+    },
+    {
+      "name": "math-core",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        14
+      ],
+      "scope_note": "14 reported unittest methods"
+    },
+    {
+      "name": "finite-inference",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        12
+      ],
+      "scope_note": "12 reported unittest methods"
+    },
+    {
+      "name": "python-entry",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        6
+      ],
+      "scope_note": "6 reported unittest methods"
+    },
+    {
+      "name": "toy-cpu",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "os-models",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10
+      ],
+      "scope_note": "10 reported unittest methods"
+    },
+    {
+      "name": "synchronization",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        7
+      ],
+      "scope_note": "7 reported unittest methods"
+    },
+    {
+      "name": "shell-lifecycle",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        9
+      ],
+      "scope_note": "9 reported unittest methods"
+    },
+    {
+      "name": "kernel-workbench",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        3
+      ],
+      "scope_note": "3 reported unittest methods"
+    },
+    {
+      "name": "stream-protocol",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "http-subset",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10
+      ],
+      "scope_note": "10 reported unittest methods"
+    },
+    {
+      "name": "relational-isolation",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10
+      ],
+      "scope_note": "10 reported unittest methods"
+    },
+    {
+      "name": "finite-information",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        4
+      ],
+      "scope_note": "4 reported unittest methods"
+    },
+    {
+      "name": "scientific-measurement",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        6
+      ],
+      "scope_note": "6 reported unittest methods"
+    },
+    {
+      "name": "authenticated-provenance",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        9
+      ],
+      "scope_note": "9 reported unittest methods"
+    },
+    {
+      "name": "privacy-count",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "graphs",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scope_note": "10 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 reported unittest methods"
+    },
+    {
+      "name": "expression-language",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "python-aliases",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        6
+      ],
+      "scope_note": "6 reported unittest methods"
+    },
+    {
+      "name": "bash-arguments",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        7
+      ],
+      "scope_note": "7 reported unittest methods"
+    },
+    {
+      "name": "sql-null-joins",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        7
+      ],
+      "scope_note": "7 reported unittest methods"
+    },
+    {
+      "name": "replica-reconciliation",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "replica-workbench",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        4
+      ],
+      "scope_note": "4 reported unittest methods"
+    },
+    {
+      "name": "trained-model-tokenizers",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        12
+      ],
+      "scope_note": "12 reported unittest methods"
+    },
+    {
+      "name": "retrieval-tools",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        8
+      ],
+      "scope_note": "8 reported unittest methods"
+    },
+    {
+      "name": "motor-control",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10
+      ],
+      "scope_note": "10 reported unittest methods"
+    },
+    {
+      "name": "population-phylogeny",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        12
+      ],
+      "scope_note": "12 reported unittest methods"
+    },
+    {
+      "name": "quantum-noise",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        10
+      ],
+      "scope_note": "10 reported unittest methods"
+    },
+    {
+      "name": "bio-stack",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        1
+      ],
+      "scope_note": "1 reported unittest methods"
+    },
+    {
+      "name": "quantum-stack",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        1
+      ],
+      "scope_note": "1 reported unittest methods"
+    },
+    {
+      "name": "research-mechanisms",
+      "exit_code": 0,
+      "reported_unittest_counts": [
+        20
+      ],
+      "scope_note": "20 reported unittest methods"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "observed_at_utc": "2026-10-25T07:17:37.699305+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "controlled_environment": {
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off",
+    "GOENV": "off",
+    "GOMAXPROCS": "2",
+    "CGO_ENABLED": "1"
+  },
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/go/go/bin/go",
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "go version go1.27.3 linux/amd64\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/go/go/bin/go",
+        "test",
+        "-count=1",
+        "-v",
+        "./..."
+      ],
+      "exit_code": 0,
+      "stdout": "=== RUN   TestExactValuesEveryWorkerCount\n--- PASS: TestExactValuesEveryWorkerCount (0.00s)\n=== RUN   TestEmpty\n--- PASS: TestEmpty (0.00s)\n=== RUN   TestInvalidBeforeStart\n--- PASS: TestInvalidBeforeStart (0.00s)\n=== RUN   TestPreCancelled\n--- PASS: TestPreCancelled (0.00s)\n=== RUN   TestCancelledAbandonedOutputJoinsAllStages\n--- PASS: TestCancelledAbandonedOutputJoinsAllStages (0.00s)\n=== RUN   TestInputSnapshotIsIndependentAfterStart\n--- PASS: TestInputSnapshotIsIndependentAfterStart (0.00s)\n=== RUN   TestChannelCopiesSliceDescriptor\n--- PASS: TestChannelCopiesSliceDescriptor (0.00s)\n=== RUN   TestAppendCapacityChangesAliasing\n--- PASS: TestAppendCapacityChangesAliasing (0.00s)\n=== RUN   TestObservation\ninput=[3 -2 5]; ordered_squares=[9 4 25]\nabandoned_output_after_first_result: all_stages_joined=true\n--- PASS: TestObservation (0.00s)\nPASS\nok  \tmachinesmastery/channel-lab\t0.004s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/go/go/bin/go",
+        "test",
+        "-race",
+        "-count=1",
+        "-v",
+        "./..."
+      ],
+      "exit_code": 0,
+      "stdout": "=== RUN   TestExactValuesEveryWorkerCount\n--- PASS: TestExactValuesEveryWorkerCount (0.00s)\n=== RUN   TestEmpty\n--- PASS: TestEmpty (0.00s)\n=== RUN   TestInvalidBeforeStart\n--- PASS: TestInvalidBeforeStart (0.00s)\n=== RUN   TestPreCancelled\n--- PASS: TestPreCancelled (0.00s)\n=== RUN   TestCancelledAbandonedOutputJoinsAllStages\n--- PASS: TestCancelledAbandonedOutputJoinsAllStages (0.01s)\n=== RUN   TestInputSnapshotIsIndependentAfterStart\n--- PASS: TestInputSnapshotIsIndependentAfterStart (0.00s)\n=== RUN   TestChannelCopiesSliceDescriptor\n--- PASS: TestChannelCopiesSliceDescriptor (0.00s)\n=== RUN   TestAppendCapacityChangesAliasing\n--- PASS: TestAppendCapacityChangesAliasing (0.00s)\n=== RUN   TestObservation\ninput=[3 -2 5]; ordered_squares=[9 4 25]\nabandoned_output_after_first_result: all_stages_joined=true\n--- PASS: TestObservation (0.00s)\nPASS\nok  \tmachinesmastery/channel-lab\t1.023s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/go/go/bin/go",
+        "vet",
+        "./..."
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "limits": "Finite Go channel/join/aliasing contracts and local race-detector run; not universal scheduler fairness, leak freedom, network cancellation or production reliability proof."
+}

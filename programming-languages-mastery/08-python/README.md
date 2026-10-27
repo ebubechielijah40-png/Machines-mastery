@@ -42,3 +42,7 @@ Projects, in increasing scope: binding/interpreter experiment; automation; data 
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed bounded unit
+
+[Python object graphs, copies, binding/mutation and local bytecode](units/objects-and-aliases/README.md) includes original teaching, runnable code, separate practice/hints/solutions and actual evidence. Full python route remains PARTIAL. Other numbered topic pages remain scope notes where no developed mechanism is linked.

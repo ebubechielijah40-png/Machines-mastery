@@ -16,7 +16,7 @@ Kadane's recurrence: the best interval ending at i either starts at i or extends
 
 ## 4. Derivation
 
-Start from the output condition and ask what must already be known when each position is finalized. The target method avoids recomputing information that can be maintained incrementally or encoded directly in the array. This reduces repeated work while preserving the exact contract.
+Every nonempty interval ending at i either contains only values[i], or extends an interval ending at i−1. Among extensions, adding the same values[i] preserves ordering of sums. Therefore ending_i=max(values[i],ending_(i−1)+values[i]). The maximum over all ending_i covers every possible right endpoint. For [-3,-2], initialization at −3 and then max(−2,−5)=−2 preserves the nonempty requirement; initializing zero would invent an empty interval.
 
 ## 5. Invariant and correctness
 
@@ -39,13 +39,14 @@ def max_subarray_sum(values):
     if not values:
         raise ValueError("non-empty input required")
     ending=best=values[0]
-    for x in values[1:]:
+    for i in range(1, len(values)):
+        x = values[i]
         ending=max(x, ending+x)
         best=max(best, ending)
     return best
 ```
 
-The runnable copy is `solution.py`; tests import that file directly.
+The runnable copy is `solution.py`; tests import that file directly. Indexed iteration avoids allocating `values[1:]`, which would copy O(n) references for a Python list. The constant-space claim counts a fixed number of numeric registers under the stated RAM model; arbitrary-precision integer bit storage can grow with numeric magnitude.
 
 ## 9. Edge cases to reason through
 

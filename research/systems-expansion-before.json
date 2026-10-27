@@ -1,0 +1,517 @@
+[
+  {
+    "path": "01-computation/FIRST_UNIT.md",
+    "bytes": 891,
+    "sha256": "5973cdf29be947205cb1c144e5c3c61d87f74aafc6ba3bfb97da0f2cf8bde26c"
+  },
+  {
+    "path": "01-computation/README.md",
+    "bytes": 811,
+    "sha256": "b021704602a56b65d0dc3fb94e6cbfa6d5ef9238112e6aa11196f07d4596d6ed"
+  },
+  {
+    "path": "02-programming/README.md",
+    "bytes": 739,
+    "sha256": "b2fe74fa1794db6a10329395fbeb16d584f06f81d30137d7e339b2d492e806d3"
+  },
+  {
+    "path": "03-algorithms/README.md",
+    "bytes": 723,
+    "sha256": "1b7291013460dd95621f62629f557d14c200594d0e9c043d133537f9ee7faccc"
+  },
+  {
+    "path": "04-computer-systems/README.md",
+    "bytes": 776,
+    "sha256": "62ad058c202badfd6d5d75b2922490d9a85ca00b84ea6407b1f7be726fd4e85c"
+  },
+  {
+    "path": "05-operating-systems/README.md",
+    "bytes": 719,
+    "sha256": "b83e2e26aeead74bb2937d1dcf5562617e23ecc87905fc4e8b8d55e0a5dddf78"
+  },
+  {
+    "path": "06-networking/README.md",
+    "bytes": 725,
+    "sha256": "29369062771a65ab72d2ed50e2066e5a952b091edac6d75ac1cbcd751a108a1f"
+  },
+  {
+    "path": "07-databases-data-systems/README.md",
+    "bytes": 796,
+    "sha256": "bd612683dd700d7df460e67313759e7baf23e8f940d244ce85db9625a2c36182"
+  },
+  {
+    "path": "08-information-science/README.md",
+    "bytes": 957,
+    "sha256": "fd2956e3ca4206f2903a75ba5a650fe1fb10688aafdf0ae474165499fa2d719a"
+  },
+  {
+    "path": "09-scientific-reasoning/README.md",
+    "bytes": 968,
+    "sha256": "377c573415beea76350cccd7dcc3930fbc03bd5b69de86a10919a8f74f78982b"
+  },
+  {
+    "path": "10-data-science/README.md",
+    "bytes": 800,
+    "sha256": "188e873619f28934ce374a0084c1a3d015d61274d1ed224f35ad4cf76b36fd6c"
+  },
+  {
+    "path": "11-cybersecurity/README.md",
+    "bytes": 967,
+    "sha256": "d514cb9c95abc46633be964e086308bb39f49eacae881b00dcc784f8d04b8888"
+  },
+  {
+    "path": "12-data-security/README.md",
+    "bytes": 978,
+    "sha256": "6740a229005def88f79e5464ae3e155b231bdebdf127e3003ed4c4999726e20f"
+  },
+  {
+    "path": "13-privacy/README.md",
+    "bytes": 844,
+    "sha256": "c2dc8fdbe73dcc6feb99f5c43e3b13a04e72654d90f1b19d241e458a3b3d2887"
+  },
+  {
+    "path": "14-programming-languages/README.md",
+    "bytes": 777,
+    "sha256": "dc4fb6043ea2bdd31a57be96a07db8d582736c037b006d0a6ed8092e587f4b4b"
+  },
+  {
+    "path": "15-distributed-systems/README.md",
+    "bytes": 771,
+    "sha256": "06b5cca6330a6d4e1aa8d6741a468622a6e85a5a4cb54fd7d05eddd28e69a6e6"
+  },
+  {
+    "path": "16-machine-learning/README.md",
+    "bytes": 797,
+    "sha256": "1d7068a19e7dc571f7600b883da2dc180db44d595a8e1a8b21d1db10aa2aedef"
+  },
+  {
+    "path": "17-embedded-robotics/README.md",
+    "bytes": 800,
+    "sha256": "cfc4cb38b571ab4f175cfecdaefddcd0d8a772ea0246579729a0d1eb89f07f14"
+  },
+  {
+    "path": "18-computational-biology/README.md",
+    "bytes": 802,
+    "sha256": "1149311ce298776123177611648448762e2721fa395ef140b54982036019de3e"
+  },
+  {
+    "path": "19-experimental-research/README.md",
+    "bytes": 819,
+    "sha256": "33727a32ade9742a7ddf28a4b0caedb217b89a1d76a33b7e926bab4407d6c92a"
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 2639,
+    "sha256": "39ed814ff477d64a6bc0c3d4ee94980833e0d1863089c3c748e8c83ddd7a98d5"
+  },
+  {
+    "path": "BOOK_REGISTRY.md",
+    "bytes": 3111,
+    "sha256": "d8db9bdea3c9d9ce962d7b618d5e5979b2c7bbd2b5a66d980c104dc1316eba75"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "bytes": 3417,
+    "sha256": "bf606b685a1a77d70863e427684d0c62141af7f77658bc4e4932dcd61e175f74"
+  },
+  {
+    "path": "EXPERIMENT_REGISTRY.md",
+    "bytes": 600,
+    "sha256": "cba1f3e3f00b45f3b29edbb69281ee0b936be36532b78f2fb5fa63bd3c36446c"
+  },
+  {
+    "path": "KNOWLEDGE_GRAPH.md",
+    "bytes": 2373,
+    "sha256": "87ab8f6a62d6d9038ed1db12a8e501fa2bbc24c33cbb052bad9af2b14ae75908"
+  },
+  {
+    "path": "LEARNING_SYSTEM.md",
+    "bytes": 7854,
+    "sha256": "6f555eaac20d165643fd6aa63227139af0d9f9ac3c39b7382d1d93a9f8bec4bb"
+  },
+  {
+    "path": "MASTERY.md",
+    "bytes": 3180,
+    "sha256": "5e27596e6a9c7f87927eabf959ae644060bb4243431de1c3137691722c1cc6b3"
+  },
+  {
+    "path": "MASTER_CURRICULUM.md",
+    "bytes": 12880,
+    "sha256": "abcba9599dd71dd79173dbea83ff2f3b6fe261671a271f4a2c01742ad393f43e"
+  },
+  {
+    "path": "OVERNIGHT_REPORT.md",
+    "bytes": 6303,
+    "sha256": "9d32bbc04ecebace9148952125b9b95ad93ce1bb802f0e4e10ef75ace3bd5247"
+  },
+  {
+    "path": "PREREQUISITE_GRAPH.md",
+    "bytes": 9613,
+    "sha256": "23a7b58141f3c281a7325cbdeb92e4ab87becf4bc62d2d84d65d113d31e74890"
+  },
+  {
+    "path": "PROGRESS.md",
+    "bytes": 2804,
+    "sha256": "5e3d45223c29367a6b4f4bc1bd348bdc6b16ab7b3650fa71b655f8e6c0ad4c50"
+  },
+  {
+    "path": "PROJECT_REGISTRY.md",
+    "bytes": 3581,
+    "sha256": "3e7b734e81b5b83ad9597712388412e69f0e8a33dacbc68a1d0d64a214addd11"
+  },
+  {
+    "path": "README.md",
+    "bytes": 4451,
+    "sha256": "9189f37b77bc6aada6b2ffd27628a902fe2535767d44f4514e086d3eaa39a9a2"
+  },
+  {
+    "path": "REPOSITORY_REGISTRY.md",
+    "bytes": 2601,
+    "sha256": "496f1da4240c4134749274e9477ca4791a2324ece6ef0f520cd085d165a7d0e5"
+  },
+  {
+    "path": "RESOURCE_REGISTRY.md",
+    "bytes": 41066,
+    "sha256": "2402fe42ce986cd999f684772cc84e194e8f875f3281ab257f60c26ebb231ea9"
+  },
+  {
+    "path": "SOURCES.md",
+    "bytes": 3295,
+    "sha256": "148c394e04a3eec570230b05dbf05ed77b7005dc6b5147a29d51cd3ef13cf9b6"
+  },
+  {
+    "path": "SYSTEM_AUDIT.md",
+    "bytes": 8358,
+    "sha256": "b3c27892fb57e4b0f6fbffd6126b8feb1ea1e9e849fff0acddd3b705bf7f80ca"
+  },
+  {
+    "path": "books/README.md",
+    "bytes": 1827,
+    "sha256": "7645bfb7b2c0513e41040839b9fb2fe9e87e0a0beb64c2247a0cdedbab73a6b5"
+  },
+  {
+    "path": "books/code-petzold/README.md",
+    "bytes": 735,
+    "sha256": "2381fbb3fe720c49fd80f17c25cd905045d4fb690a05da1cd81e100c9a5ab595"
+  },
+  {
+    "path": "books/code-petzold/generated/BOOK_MAP.md",
+    "bytes": 7466,
+    "sha256": "493756ec7e65055c10201302137c36539f1527ba689b7ba9fd349ad7b7a395dc"
+  },
+  {
+    "path": "books/code-petzold/generated/CONCEPT_INDEX.md",
+    "bytes": 1398,
+    "sha256": "71b1d2753b19f986e2e0264549810befa6ff468cdbb758e0a3c685d68b5dc6b1"
+  },
+  {
+    "path": "books/code-petzold/generated/PREREQUISITES.md",
+    "bytes": 1519,
+    "sha256": "2e42d2166e55b327ad445461608bb616f2cea7d878995fdae6fdb8df50a7361d"
+  },
+  {
+    "path": "books/code-petzold/generated/SOURCE_INDEX.md",
+    "bytes": 3765,
+    "sha256": "bd9a2d69cfdd5f9c3a347399a8a4926e174fdd1b90c72c2338894dae8c38402e"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/01_MAP.md",
+    "bytes": 1475,
+    "sha256": "c0d5d6ea335f665520f96b9b07912580ec6c52f39c43ce0c3f3831b39a83c0ba"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/02_DEEP_RECONSTRUCTION.md",
+    "bytes": 6502,
+    "sha256": "ce13de278e430b579c7de53ca1dd46aff0baf1434c7f7c05379c8eb2def4cde8"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/03_CONCEPT_GRAPH.md",
+    "bytes": 1330,
+    "sha256": "8049cddc0ec89058b8f31728df60980e5ec821acf14de44ce93aa66c7270b8c6"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/04_MECHANISMS.md",
+    "bytes": 2521,
+    "sha256": "fe5fdb74d26515e7ffc7579a74340c59f6602a53b2fe4fde90af618d0e11c1cc"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/05_EXAMPLES.md",
+    "bytes": 1869,
+    "sha256": "30f5f8d7cd599b8e9eb1c408fe7f5bd27a74adbe42582edcedddb651688c3d63"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/06_FORMALISMS.md",
+    "bytes": 3685,
+    "sha256": "41045a9141d2e311f608da6c5a611280d4c248c453cabccb304e9349260f7b46"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/07_CONNECTIONS.md",
+    "bytes": 1470,
+    "sha256": "4cb0e310ce6883459a739737acd918166e6f8109cf7801523df0801b28925e3b"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/08_QUESTIONS.md",
+    "bytes": 1533,
+    "sha256": "0c2b8966611e082ea7b2f09f81c0911e3306ba45a06181353f89745f44fd5458"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/09_EXPERIMENTS.md",
+    "bytes": 545,
+    "sha256": "351f619d797dee9031159fca1d44197c4d019cb880ad3504d12e2f112bce7f89"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/10_PROJECT_LINKS.md",
+    "bytes": 801,
+    "sha256": "fa8e3c8638adc6f0f042446e1d4a7be2a6c24f2f48e69c52e2899d0a64224d67"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/11_SOURCE_REFERENCES.md",
+    "bytes": 2464,
+    "sha256": "43cc80c6134416cf728ce233f76c56ded328d890bfb415404e659ea2aaf40ba9"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/12_MASTERY_TEST.md",
+    "bytes": 2073,
+    "sha256": "e87265a8e22264063ea446b82b959469226a4f986eb528462f0015d98794ce5b"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/13_GAPS.md",
+    "bytes": 1653,
+    "sha256": "f30d03ff5ee947eed5e20e8f6342c852e3cf27df97ab912b40043186d8e67829"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/ANSWERS.md",
+    "bytes": 2510,
+    "sha256": "de9133b49ae6efed43b554d43e500378f9258c9953024490af278b47b85f8baa"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/HINTS.md",
+    "bytes": 887,
+    "sha256": "c3a4c65ad0dcaa801ead155a39c22f76bf85a328f7396d6eb777f11f9e6a462e"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/README.md",
+    "bytes": 2205,
+    "sha256": "76383125b71e353cdca8468b0593715d299fc355ede2e535421763805685536f"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/lab/README.md",
+    "bytes": 1635,
+    "sha256": "d01ec6cc0b09135704ed450e9ce78a8605d732652d06655d4255b6c4cb97e663"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/lab/decoder.py",
+    "bytes": 3011,
+    "sha256": "22631ee87a4126fc741dd7b23ec2e1bea8fe3e004341c9c1af857ebe96d8c848"
+  },
+  {
+    "path": "books/code-petzold/generated/chapters/01/lab/test_decoder.py",
+    "bytes": 3266,
+    "sha256": "1f9a193e79721d77945769ca7ecaae7406bb6d480a4b25dd4ef1443b7db5c7b6"
+  },
+  {
+    "path": "books/code-petzold/source/README.md",
+    "bytes": 543,
+    "sha256": "9ff6ece1bc296e44b302140406c8cada30f050e26a1ffeb69bee609e532146ce"
+  },
+  {
+    "path": "experiments/E-001-gate-contract/README.md",
+    "bytes": 3217,
+    "sha256": "50168a8ce95b4496f0852f83fbaa6db34d50b86b03f7000bc3c3285a5ba9ec51"
+  },
+  {
+    "path": "experiments/E-002-message-boundaries/README.md",
+    "bytes": 2316,
+    "sha256": "ee7ee5c23effc87502fd0f473d652d0c96381097f2fb6b7fd2652e7d927389e9"
+  },
+  {
+    "path": "experiments/README.md",
+    "bytes": 1429,
+    "sha256": "e4c5e01b2bd85df74e6d280af8d39efa44e0a7ea1a670175a673cb762f7856db"
+  },
+  {
+    "path": "notes/README.md",
+    "bytes": 570,
+    "sha256": "84089fe46f892eba24e9e2b6209e6731f67eb8f865302a9695eb9bb8d172acbc"
+  },
+  {
+    "path": "projects/README.md",
+    "bytes": 1480,
+    "sha256": "3cb4afd7bf5c1f8c18e3e93754dd14012bb3dbf0a88ce21f581e35254c1860e0"
+  },
+  {
+    "path": "projects/logic-to-cpu/ARCHITECTURE.md",
+    "bytes": 1131,
+    "sha256": "91a6efa8148afad1984855dea4d26117359f09ddabb5162cac72593c00bec990"
+  },
+  {
+    "path": "projects/logic-to-cpu/BUILD_LOG.md",
+    "bytes": 447,
+    "sha256": "c634fc05eb9ec6841def6833aff5bbb24932cdf9cedbd65b574bdc5caf32ee47"
+  },
+  {
+    "path": "projects/logic-to-cpu/DESIGN.md",
+    "bytes": 1594,
+    "sha256": "6fc011dda6dd58599137a0a20c00c2dd21baac3452b993e178c68d2917ae2901"
+  },
+  {
+    "path": "projects/logic-to-cpu/EXPERIMENTS.md",
+    "bytes": 477,
+    "sha256": "8267eeb6d10844d6e5484c00d78eba8fdbe47e7975510216dedcd7aa20214c4c"
+  },
+  {
+    "path": "projects/logic-to-cpu/ORIGIN_AND_ATTRIBUTION.md",
+    "bytes": 1892,
+    "sha256": "9cb85036686f7ef21022d0b94285ee95cc171e2f86739b99160439a3ec158b5a"
+  },
+  {
+    "path": "projects/logic-to-cpu/PREREQUISITES.md",
+    "bytes": 758,
+    "sha256": "a6bb8af95b68673454ad914ac7b79653269c6490bca7c1301135f21b1a98fbb2"
+  },
+  {
+    "path": "projects/logic-to-cpu/README.md",
+    "bytes": 964,
+    "sha256": "bd21678328b2d53a7eca8b61bff17acfad229d5d9702912f96d98afc1ce2e2ca"
+  },
+  {
+    "path": "projects/logic-to-cpu/REFERENCES.md",
+    "bytes": 800,
+    "sha256": "994028751b37c19b3ca2c6ba0bd50287c5360538c9c679cfcf131b75b2e6d3c7"
+  },
+  {
+    "path": "projects/logic-to-cpu/RESULTS.md",
+    "bytes": 374,
+    "sha256": "c45cfea96b2935dea4c9d60e0516edb20bf7562bd604129dd92cb71a13834725"
+  },
+  {
+    "path": "projects/logic-to-cpu/TESTS.md",
+    "bytes": 1118,
+    "sha256": "8ffa5129ed6c6b2b6b8c9dac8473f23e4e366a999fbc937b0c19839bb0944ca8"
+  },
+  {
+    "path": "registries/README.md",
+    "bytes": 1998,
+    "sha256": "c60baf6b46d1aa3f60cb52459eaf2b26c58752e3f91a918f7d06d6a0b8d7cd92"
+  },
+  {
+    "path": "registries/catalog.json",
+    "bytes": 89274,
+    "sha256": "41366ba26da9f20bced8b79b912fe83e900cc390bdc5feb83dc0d6f582596181"
+  },
+  {
+    "path": "repositories/README.md",
+    "bytes": 1089,
+    "sha256": "f610a57f56efc6db8a349dc10534b58b8e7e50bdd2ad1febf87c61b08b5382cf"
+  },
+  {
+    "path": "research/README.md",
+    "bytes": 998,
+    "sha256": "68fe72724cb51bc12296bb411b119e79bb95d1515d7626050e4f499ccfb226a3"
+  },
+  {
+    "path": "research/code-source-intake.json",
+    "bytes": 2051,
+    "sha256": "99b8bc9739b89850e08600bdde55895e4be211e82cac555ae7f3f584460ec63a"
+  },
+  {
+    "path": "research/directory-migration.json",
+    "bytes": 470,
+    "sha256": "6d725f645a7a18b93d4b992352a3711db59636bdc3536d5a01dc0b80ce6b2201"
+  },
+  {
+    "path": "research/setup-before.json",
+    "bytes": 1212,
+    "sha256": "3fb49cb3ed44452d4e21291d5768a5f452d20e12f6d7f119bda170f70287e205"
+  },
+  {
+    "path": "research/setup-inventory.json",
+    "bytes": 3653,
+    "sha256": "5a0ec1eb4e00c6a0173ad38a043d2a4f81b9cc168b974eba8a89b5bd14e1c0ca"
+  },
+  {
+    "path": "research/validation-2026-09-26.json",
+    "bytes": 12121,
+    "sha256": "553701465086e01e962aa89e826d84859b2c0b3570035acacb6dedc4e0ce9583"
+  },
+  {
+    "path": "research/validation-code-unit-2026-09-27.json",
+    "bytes": 21314,
+    "sha256": "229012f9e50a0a1ff48a30c277fde28c2dfc58b018544b5a90b2bad1dc971629"
+  },
+  {
+    "path": "templates/README.md",
+    "bytes": 1852,
+    "sha256": "4f004d141b9d6f2950ac8a499b720034e5a61651cc09f193c0f12a96000b8465"
+  },
+  {
+    "path": "templates/book-intake.md",
+    "bytes": 1111,
+    "sha256": "ae3a69d80f8f05f286de8e7ab646c0484e59f4a1de63ccad267687bfec6965b4"
+  },
+  {
+    "path": "templates/chapter-sections.json",
+    "bytes": 2975,
+    "sha256": "74754f04e230c08e6c9ea01f8515535e60868d5d992f221abb78e3c4207292a7"
+  },
+  {
+    "path": "templates/claim.md",
+    "bytes": 897,
+    "sha256": "fcbc109a4c5c2796d0939e7412d9d9f4ca6afaa68ed48c1a4219a43445dd1e60"
+  },
+  {
+    "path": "templates/experiment.md",
+    "bytes": 1453,
+    "sha256": "55e65f7db8bd43486f29ad29b0d541810c83bb31b4117a3b13d57f09b01d12d5"
+  },
+  {
+    "path": "templates/mastery-review.md",
+    "bytes": 842,
+    "sha256": "2992ca8616bff7651ffe0ede9923dac9ee796a13242099b50571587dd8f448fb"
+  },
+  {
+    "path": "templates/project-documents.json",
+    "bytes": 1856,
+    "sha256": "912310aa1496af72fcaacee28623f6aeb2ec5eaee224f76cefaa44e62eb9de93"
+  },
+  {
+    "path": "templates/repository-study.md",
+    "bytes": 1053,
+    "sha256": "4f09b2db0744c3acb0778abc4a1b9cf3d3bad32850e9bab9c4a786ad14041ff9"
+  },
+  {
+    "path": "templates/research-log.md",
+    "bytes": 984,
+    "sha256": "a46862f3c03dde2a8f7547b8be526b146b082b2d650a22254c2dec90937702e3"
+  },
+  {
+    "path": "tools/README.md",
+    "bytes": 3081,
+    "sha256": "8f6b35a3d66e04c86e1ddba64f7e24c0c44a6d9f21b73e857ea92f7d56af2641"
+  },
+  {
+    "path": "tools/fingerprint.py",
+    "bytes": 846,
+    "sha256": "8e0fa7a36b2a8ad477596f1e385dd66ca52264e768bdc4b96f804bc45890c618"
+  },
+  {
+    "path": "tools/render.py",
+    "bytes": 10956,
+    "sha256": "99e395d5d5751c0d47b1130378aeea0c5c06495af7598994fb870a3af1af3437"
+  },
+  {
+    "path": "tools/scaffold.py",
+    "bytes": 6291,
+    "sha256": "2515b8333c73707f3aef1102c4134d42f9da1923b215896c980fa92a352445d2"
+  },
+  {
+    "path": "tools/tests/test_infrastructure.py",
+    "bytes": 9573,
+    "sha256": "c265183bf1f25064b8204caaf3f8ba2642fc034f32586d9fe1d9f136e3ca70be"
+  },
+  {
+    "path": "tools/validate.py",
+    "bytes": 18666,
+    "sha256": "7581c34b9fecbae1e49910250bcda4a5649740c9368061ae4c18d91f0349cb1d"
+  }
+]

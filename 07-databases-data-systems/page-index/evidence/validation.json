@@ -1,0 +1,15 @@
+{
+  "executed_at_utc": "2026-10-23T21:26:31.067217+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "07-databases-data-systems/page-index",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_all_small_permutations_against_sorted_dictionary (test_bplus.IndexTests.test_all_small_permutations_against_sorted_dictionary) ... ok\ntest_bottom_up_bulk_occupancy_for_every_small_tail (test_bplus.IndexTests.test_bottom_up_bulk_occupancy_for_every_small_tail) ... ok\ntest_codec_byte_layout_and_boundaries (test_bplus.IndexTests.test_codec_byte_layout_and_boundaries) ... ok\ntest_empty_updates_extreme_keys_and_half_open_ranges (test_bplus.IndexTests.test_empty_updates_extreme_keys_and_half_open_ranges) ... ok\ntest_every_snapshot_prefix_and_every_single_bit_change_reject (test_bplus.IndexTests.test_every_snapshot_prefix_and_every_single_bit_change_reject) ... ok\ntest_invalid_arguments_do_not_change_index (test_bplus.IndexTests.test_invalid_arguments_do_not_change_index) ... ok\ntest_locally_valid_pages_can_violate_global_tree (test_bplus.IndexTests.test_locally_valid_pages_can_violate_global_tree) ... ok\ntest_padding_and_malicious_counts_reject_even_after_crc_repair (test_bplus.IndexTests.test_padding_and_malicious_counts_reject_even_after_crc_repair) ... ok\ntest_page_budget_failure_discards_staged_split (test_bplus.IndexTests.test_page_budget_failure_discards_staged_split) ... ok\ntest_random_operation_ranges_with_independent_oracle (test_bplus.IndexTests.test_random_operation_ranges_with_independent_oracle) ... ok\ntest_recursive_splits_orders_overwrites_and_reopen (test_bplus.IndexTests.test_recursive_splits_orders_overwrites_and_reopen) ... ok\ntest_request_counters_and_file_round_trip (test_bplus.IndexTests.test_request_counters_and_file_round_trip) ... ok\ntest_valid_checksum_mixed_state_does_not_imply_transaction (test_bplus.IndexTests.test_valid_checksum_mixed_state_does_not_imply_transaction) ... ok\ntest_authority_rebuild_ignores_an_accepted_stale_index (test_rebuild.RebuildTests.test_authority_rebuild_ignores_an_accepted_stale_index) ... ok\ntest_every_log_cut_rebuilds_only_complete_transaction_states (test_rebuild.RebuildTests.test_every_log_cut_rebuilds_only_complete_transaction_states) ... ok\ntest_rebuild_numeric_order_subset_and_corruption_contract (test_rebuild.RebuildTests.test_rebuild_numeric_order_subset_and_corruption_contract) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 4.808s\n\nOK\n"
+}

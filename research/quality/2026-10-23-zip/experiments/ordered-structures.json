@@ -1,0 +1,145 @@
+{
+  "observed_at_utc": "2026-10-23T21:46:53.236111+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "source_sha256": {
+    "experiment.py": "7163bf5cb4980868b8ba3b1d537a4bdcbd8f3696cb1f36ef2392ce50c090eafb",
+    "structures.py": "7b01a1ca5c714f828691e72c4722b3137b7b5a16edc1f9ebc1dd7859090f852a"
+  },
+  "shuffle_seed": 718,
+  "rows": [
+    {
+      "n": 16,
+      "hash_rolling": {
+        "capacity": 32,
+        "size": 16,
+        "max_chain": 1,
+        "load": 0.5,
+        "key_comparisons": 0,
+        "rehashed_entries": 21
+      },
+      "hash_constant": {
+        "capacity": 32,
+        "size": 16,
+        "max_chain": 16,
+        "load": 0.5,
+        "key_comparisons": 120,
+        "rehashed_entries": 21
+      },
+      "heap": {
+        "bottom_up_build_comparisons": 24,
+        "repeated_push_comparisons": 38
+      },
+      "tree_ascending": {
+        "size": 16,
+        "height": 16,
+        "insertion_key_comparisons": 120
+      },
+      "tree_shuffled": {
+        "size": 16,
+        "height": 6,
+        "insertion_key_comparisons": 42
+      }
+    },
+    {
+      "n": 64,
+      "hash_rolling": {
+        "capacity": 128,
+        "size": 64,
+        "max_chain": 1,
+        "load": 0.5,
+        "key_comparisons": 0,
+        "rehashed_entries": 93
+      },
+      "hash_constant": {
+        "capacity": 128,
+        "size": 64,
+        "max_chain": 64,
+        "load": 0.5,
+        "key_comparisons": 2016,
+        "rehashed_entries": 93
+      },
+      "heap": {
+        "bottom_up_build_comparisons": 116,
+        "repeated_push_comparisons": 264
+      },
+      "tree_ascending": {
+        "size": 64,
+        "height": 64,
+        "insertion_key_comparisons": 2016
+      },
+      "tree_shuffled": {
+        "size": 64,
+        "height": 11,
+        "insertion_key_comparisons": 313
+      }
+    },
+    {
+      "n": 256,
+      "hash_rolling": {
+        "capacity": 512,
+        "size": 256,
+        "max_chain": 1,
+        "load": 0.5,
+        "key_comparisons": 0,
+        "rehashed_entries": 381
+      },
+      "hash_constant": {
+        "capacity": 512,
+        "size": 256,
+        "max_chain": 256,
+        "load": 0.5,
+        "key_comparisons": 32640,
+        "rehashed_entries": 381
+      },
+      "heap": {
+        "bottom_up_build_comparisons": 496,
+        "repeated_push_comparisons": 1546
+      },
+      "tree_ascending": {
+        "size": 256,
+        "height": 256,
+        "insertion_key_comparisons": 32640
+      },
+      "tree_shuffled": {
+        "size": 256,
+        "height": 15,
+        "insertion_key_comparisons": 1872
+      }
+    },
+    {
+      "n": 1024,
+      "hash_rolling": {
+        "capacity": 2048,
+        "size": 1024,
+        "max_chain": 2,
+        "load": 0.5,
+        "key_comparisons": 3,
+        "rehashed_entries": 1533
+      },
+      "hash_constant": {
+        "capacity": 2048,
+        "size": 1024,
+        "max_chain": 1024,
+        "load": 0.5,
+        "key_comparisons": 523776,
+        "rehashed_entries": 1533
+      },
+      "heap": {
+        "bottom_up_build_comparisons": 2028,
+        "repeated_push_comparisons": 8204
+      },
+      "tree_ascending": {
+        "size": 1024,
+        "height": 1024,
+        "insertion_key_comparisons": 523776
+      },
+      "tree_shuffled": {
+        "size": 1024,
+        "height": 20,
+        "insertion_key_comparisons": 10442
+      }
+    }
+  ],
+  "limits": "Logical comparisons and finite input families; no universal hashing guarantee, balance guarantee or wall-time ranking."
+}

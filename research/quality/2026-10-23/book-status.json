@@ -1,0 +1,213 @@
+{
+  "reviewed_on": "2026-10-23",
+  "scope": "All23 registered book resources; source-boundary correction and exact selected contributions, not full book reconstruction.",
+  "books": [
+    {
+      "resource_id": "R-CODE",
+      "title_as_registered": "Code: The Hidden Language of Computer Hardware and Software",
+      "registered_original": "https://codehiddenlanguage.com/Chapter00/",
+      "classification": "PARTIAL",
+      "scope": "Historical first companion/map retained; original absent; fresh exact-edition claims BLOCKED.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-ELEMENTS",
+      "title_as_registered": "The Elements of Computing Systems",
+      "registered_original": "https://www.nand2tetris.org/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-C",
+      "title_as_registered": "C Programming: A Modern Approach",
+      "registered_original": "https://knking.com/books/c2/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-PYTHON",
+      "title_as_registered": "Think Python, third edition",
+      "registered_original": "https://greenteapress.com/wp/think-python-3rd-edition/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-ALGORITHMS",
+      "title_as_registered": "The Algorithm Design Manual, third edition",
+      "registered_original": "https://www.algorist.com/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-CSAPP",
+      "title_as_registered": "Computer Systems: A Programmer\u2019s Perspective, third edition",
+      "registered_original": "https://csapp.cs.cmu.edu/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-DIVE",
+      "title_as_registered": "Dive into Systems",
+      "registered_original": "https://diveintosystems.org/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-OSTEP",
+      "title_as_registered": "Operating Systems: Three Easy Pieces",
+      "registered_original": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "classification": "PARTIAL",
+      "scope": "Original chapters7 and30 selected sections inspected; scheduling/condition-variable instruction and implementations linked below; full book incomplete.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-NET",
+      "title_as_registered": "Computer Networking: A Top-Down Approach",
+      "registered_original": "https://gaia.cs.umass.edu/kurose_ross/index.php",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-DB",
+      "title_as_registered": "Database Internals",
+      "registered_original": "https://www.oreilly.com/library/view/database-internals/9781492040330/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-DDIA",
+      "title_as_registered": "Designing Data-Intensive Applications",
+      "registered_original": "https://dataintensive.net/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-STATS",
+      "title_as_registered": "Think Stats, third edition",
+      "registered_original": "https://greenteapress.com/wp/think-stats-3e/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-CRAFT",
+      "title_as_registered": "The Craft of Research, fifth edition",
+      "registered_original": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-PYDATA",
+      "title_as_registered": "Python for Data Analysis, third edition",
+      "registered_original": "https://wesmckinney.com/book/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-SECURITY",
+      "title_as_registered": "Security Engineering, third edition",
+      "registered_original": "https://www.cl.cam.ac.uk/archive/rja14/book.html",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-CRYPTO",
+      "title_as_registered": "Serious Cryptography, second edition",
+      "registered_original": "https://nostarch.com/serious-cryptography-2nd-edition",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-INTERPRETERS",
+      "title_as_registered": "Crafting Interpreters",
+      "registered_original": "https://github.com/munificent/craftinginterpreters",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-HOML",
+      "title_as_registered": "Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow, third edition",
+      "registered_original": "https://github.com/ageron/handson-ml3",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-EMBEDDED",
+      "title_as_registered": "Making Embedded Systems, second edition",
+      "registered_original": "https://www.oreilly.com/library/view/making-embedded-systems/9781098151539/",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-ROBOTICS",
+      "title_as_registered": "Modern Robotics: Mechanics, Planning, and Control",
+      "registered_original": "https://hades.mech.northwestern.edu/index.php/Modern_Robotics",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-CELL",
+      "title_as_registered": "Molecular Biology of the Cell, seventh edition",
+      "registered_original": "https://seagull.wwnorton.com/molecularbiologycell",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-CHEM",
+      "title_as_registered": "Chemistry 2e",
+      "registered_original": "https://openstax.org/details/books/chemistry-2e",
+      "classification": "SCAFFOLDED",
+      "scope": "No newly inspected original-book concept/chapter reconstruction. Source access is unassessed here; absent portable intake alone is not a BLOCKED authoring status.",
+      "source_original_bundled": false,
+      "book_complete": false
+    },
+    {
+      "resource_id": "R-PHYSICS",
+      "title_as_registered": "University Physics Volume 2",
+      "registered_original": "https://openstax.org/details/books/university-physics-volume-2",
+      "classification": "PARTIAL",
+      "scope": "Selected official electrical-current section supports the internal quantities bridge; broad volume and chapter reconstruction incomplete.",
+      "source_original_bundled": false,
+      "book_complete": false
+    }
+  ]
+}

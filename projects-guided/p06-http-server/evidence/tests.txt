@@ -1,0 +1,21 @@
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s projects-guided/p06-http-server/code -v
+python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+platform: Linux-6.18.55-x86_64-with-glibc2.39
+executed_utc: 2026-10-23T10:43:05Z
+exit_code: 0
+
+test_absolute_header_deadline_not_reset_by_partial_bytes (test_http_subset.HttpSubsetTests.test_absolute_header_deadline_not_reset_by_partial_bytes) ... ok
+test_actual_eof_inside_headers_is_error (test_http_subset.HttpSubsetTests.test_actual_eof_inside_headers_is_error) ... ok
+test_actual_fragmented_socket_request (test_http_subset.HttpSubsetTests.test_actual_fragmented_socket_request) ... ok
+test_actual_unknown_route_and_method (test_http_subset.HttpSubsetTests.test_actual_unknown_route_and_method) ... ok
+test_all_truncations_reject_until_complete (test_http_subset.HttpSubsetTests.test_all_truncations_reject_until_complete) ... ok
+test_ambiguous_message_borders_and_duplicate_host_reject (test_http_subset.HttpSubsetTests.test_ambiguous_message_borders_and_duplicate_host_reject) ... ok
+test_controls_bare_lf_nonascii_and_resource_limit (test_http_subset.HttpSubsetTests.test_controls_bare_lf_nonascii_and_resource_limit) ... ok
+test_invalid_configuration_closes_owned_socket (test_http_subset.HttpSubsetTests.test_invalid_configuration_closes_owned_socket) ... ok
+test_literal_request_and_literal_response_boundary (test_http_subset.HttpSubsetTests.test_literal_request_and_literal_response_boundary) ... ok
+test_receive_and_send_failures_close_owned_connection (test_http_subset.HttpSubsetTests.test_receive_and_send_failures_close_owned_connection) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.005s
+
+OK

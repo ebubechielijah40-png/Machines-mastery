@@ -1,0 +1,60 @@
+{
+  "kind": "actual original AST-language execution; not original Lox benchmarking",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "code_sha256": "e85055e8f4aa1a9a073a0f5459df75c1b088fb4715bc1c1c192a9bcfc6ed8491",
+  "observations": [
+    {
+      "experiment": "late declaration",
+      "output": [
+        "registry",
+        "registry"
+      ],
+      "steps": 16,
+      "lookup": "resolved"
+    },
+    {
+      "experiment": "late declaration",
+      "output": [
+        "registry",
+        "block"
+      ],
+      "steps": 16,
+      "lookup": "mutable-chain"
+    },
+    {
+      "experiment": "independent closure factories",
+      "output": [
+        1,
+        1,
+        2
+      ],
+      "steps": 47,
+      "lookup": "resolved"
+    },
+    {
+      "experiment": "independent closure factories",
+      "output": [
+        1,
+        1,
+        2
+      ],
+      "steps": 47,
+      "lookup": "mutable-chain"
+    }
+  ],
+  "static_checks": [
+    {
+      "case": "unreachable own initializer",
+      "rejected": true,
+      "message": "local read/write in its own initializer: x"
+    },
+    {
+      "case": "top-level return",
+      "rejected": true,
+      "message": "return outside a function"
+    }
+  ]
+}

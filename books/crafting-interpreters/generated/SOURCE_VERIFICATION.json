@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23",
+  "resource_id": "R-INTERPRETERS",
+  "book_classification": "PARTIAL",
+  "full_book_complete": false,
+  "records": [
+    {
+      "name": "binding.html",
+      "url": "https://craftinginterpreters.com/resolving-and-binding.html",
+      "bytes": 83744,
+      "sha256": "356b2dee7da9e69eb3d762a9e662bc1d072d3e0f6e6fb31802b832e04cbcaf8c",
+      "status": "downloaded",
+      "inspected_scope": "Chapter11 \u00a7\u00a711.1\u201311.5",
+      "original_included": false,
+      "license_scope": "Footer copyright Robert Nystrom2015\u20132021 inspected; general redistribution rights not independently cleared; no original copied"
+    },
+    {
+      "name": "functions.html",
+      "url": "https://craftinginterpreters.com/functions.html",
+      "bytes": 83893,
+      "sha256": "f6e3384f014d21ded592a257de16cdac2002ef96addf9c712037f94d39cea29c",
+      "status": "downloaded",
+      "inspected_scope": "Chapter10 \u00a710.6 only; full file fingerprint is not whole-chapter inspection",
+      "original_included": false,
+      "license_scope": "Footer copyright Robert Nystrom2015\u20132021 inspected; general redistribution rights not independently cleared; no original copied"
+    }
+  ]
+}

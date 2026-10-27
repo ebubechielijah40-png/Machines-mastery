@@ -1,0 +1,82 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "records": [
+    {
+      "name": "large_pipeline",
+      "kind": "actual local subprocesses",
+      "argv": [
+        [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-c",
+          "import sys; sys.stdout.buffer.write(b\"x\"*200000)"
+        ],
+        [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-c",
+          "import sys; print(len(sys.stdin.buffer.read()))"
+        ]
+      ],
+      "input_bytes": 0,
+      "stdout": "200000\n",
+      "stderr": [
+        "",
+        ""
+      ],
+      "returncodes": [
+        0,
+        0
+      ],
+      "elapsed_seconds": 0.01669083599995247
+    },
+    {
+      "name": "literal_argument_and_exit",
+      "kind": "actual local subprocesses",
+      "argv": [
+        [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-c",
+          "import sys; print(sys.argv[1]); sys.exit(7)",
+          "; $(unexecuted) *"
+        ]
+      ],
+      "input_bytes": 0,
+      "stdout": "; $(unexecuted) *\n",
+      "stderr": [
+        ""
+      ],
+      "returncodes": [
+        7
+      ],
+      "elapsed_seconds": 0.015754766000100062
+    },
+    {
+      "name": "logical_cd",
+      "kind": "actual local subprocess",
+      "argv": [
+        [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-c",
+          "import os; print(os.getcwd())"
+        ]
+      ],
+      "shell_cwd": "/tmp/mm-shell-cwd-8m_r4742/child",
+      "child_stdout": "/tmp/mm-shell-cwd-8m_r4742/child\n",
+      "parent_before": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "parent_after": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "parent_unchanged": true,
+      "child_matches_shell": true
+    }
+  ],
+  "capture": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "projects-guided/p02-shell/code/experiment.py"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+    "exit_code": 0,
+    "executed_at_utc": "2026-10-23T10:45:35.579804+00:00"
+  }
+}

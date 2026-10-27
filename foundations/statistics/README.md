@@ -1,6 +1,9 @@
 # Statistics map
 
-Scope plan; learner NOT STARTED. Topics beyond the prepared bridges are SCAFFOLDED and need inspected primary evidence before teaching.
+Broad scope remains PARTIAL; learner evidence is not inferred. Begin with the
+[developed finite probability/inference unit](probability-inference/README.md),
+then the [measurement/error unit](../mathematics/change-error-and-evidence/README.md).
+The [current guide](DEEP_GUIDE.md) explains the connection and remaining scope.
 
 observation, measurement, variables, populations, samples, sampling bias; distributions, mean, median, variance, uncertainty; probability, estimation, confidence, hypothesis testing, effect size; correlation, regression, confounding, causality; reproducibility and replication.
 

@@ -2,6 +2,19 @@
 
 Curriculum phase: P05 — Operating Systems. Learning state: NOT STARTED.
 
+Artifact quality: **PARTIAL** for the domain. The learner-state label above is
+not an artifact-completion claim. Start the developed
+[mechanism lesson](SELF_CONTAINED_GUIDE.md), then reconstruct its
+[guided workbench](../projects-guided/p05-mini-kernel-labs/README.md).
+Scheduling and address translation have deterministic implementations and
+independent tests; file/pipe/process sections include actual host observations.
+The larger bootable-kernel, driver, synchronization and filesystem work remains
+incomplete.
+
+Use [experiments](EXPERIMENTS.md), [exercises](EXERCISES.md),
+[hints](HINTS.md), [solutions](SOLUTIONS.md) and [inspected sources](SOURCES.md)
+in that order. Run the connected reference checks with
+`python 05-operating-systems/run_checks.py` from the repository root.
 
 
 ## Scope

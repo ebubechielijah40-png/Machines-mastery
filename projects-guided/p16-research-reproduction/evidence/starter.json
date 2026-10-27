@@ -1,0 +1,24 @@
+{
+  "baseline": "deliberately ignores message timestamps",
+  "times": {
+    "a": 1,
+    "b": 2,
+    "send": 3,
+    "receive": 1
+  },
+  "causal_violations": [
+    [
+      "a",
+      "receive"
+    ],
+    [
+      "b",
+      "receive"
+    ],
+    [
+      "send",
+      "receive"
+    ]
+  ],
+  "learner_task": "derive a receive update that removes violations without changing the graph"
+}

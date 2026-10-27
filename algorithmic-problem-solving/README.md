@@ -1,6 +1,6 @@
 # Algorithmic problem solving
 
-Permanent infrastructure. The `arrays` topic is now the first released 20-problem exemplar; all other topics remain SCAFFOLDED. Preserve the minimum of 20 original or attributed problems for every topic as a release requirement, not a claim that all 620 problems already exist.
+Permanent infrastructure. The `arrays` topic preserves the first released 20-problem exemplar. The [graphs release](topics/graphs/README.md) adds twenty distinct graph contracts with proofs, implementations, independent oracles and actual experiments. Other topic routes remain SCAFFOLDED unless their own evidence states otherwise. Preserve the minimum of 20 original or attributed problems for every topic as a release requirement, not a claim that all 620 problems already exist.
 
 [Generation contract](GENERATION_PLAN.md) and [review](REVIEW.md) require derivation and real-system application before a topic is released. Required gates: U04/U06/U07 and a bounded math bridge.
 
@@ -35,3 +35,7 @@ Permanent infrastructure. The `arrays` topic is now the first released 20-proble
 - [combinatorics](topics/combinatorics/README.md)
 - [complexity](topics/complexity/README.md)
 - [advanced-mixed](topics/advanced-mixed/README.md)
+
+## Developed mechanisms and DP
+
+After arrays, build [hash buckets, stable heaps and ordered rank/select](mechanisms/ordered-state/README.md), then graph contracts and [twenty dynamic-programming problems](topics/dynamic-programming/README.md). Reconstruct states and proofs before consulting each reference.

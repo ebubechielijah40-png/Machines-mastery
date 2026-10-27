@@ -1,0 +1,11 @@
+test_alias_shallow_and_deep_edges (test_model.ObjectTests.test_alias_shallow_and_deep_edges) ... ok
+test_copy_of_cycle_preserves_cycle_structure (test_model.ObjectTests.test_copy_of_cycle_preserves_cycle_structure) ... ok
+test_identity_and_equality_different_questions (test_model.ObjectTests.test_identity_and_equality_different_questions) ... ok
+test_new_default_container_per_call (test_model.ObjectTests.test_new_default_container_per_call) ... ok
+test_rebinding_versus_in_place (test_model.ObjectTests.test_rebinding_versus_in_place) ... ok
+test_tuple_mutable_referent (test_model.ObjectTests.test_tuple_mutable_referent) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

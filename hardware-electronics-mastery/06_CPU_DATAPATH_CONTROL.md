@@ -1,0 +1,2 @@
+# CPU datapath and control
+A minimal CPU needs state (registers/PC), combinational datapath (ALU/muxes), instruction decoding/control, and a path to memory/I/O. For each instruction, write a micro-level story: fetch bytes, decode fields, read operands, compute, access memory if needed, write result, update PC. Build a tiny single-cycle RISC-like CPU in HDL, then explain why real CPUs pipeline and speculate.

@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "missing-assessment": 243,
+    "missing-experiment": 329,
+    "missing-reference-trail": 387,
+    "near-empty-instruction": 220,
+    "placeholder-instruction": 22,
+    "project-no-local-implementation": 18,
+    "project-no-local-tests": 18,
+    "repeated-template": 711,
+    "unverified-paper-dossier": 11
+  },
+  "total_findings": 1959,
+  "mode": "strict risk gate",
+  "limitations": [
+    "Heuristic review findings are not factual errors or automatic domain ratings.",
+    "No external URL availability or source truth validation is performed.",
+    "Python compilation does not establish runtime behavior; fragments may need explicit labels.",
+    "Shared implementations and non-English assessment wording need manual review.",
+    "Link parser covers common inline/reference destinations, not the complete CommonMark grammar.",
+    "Sources/private trees and symlinks are excluded; repository content must be trusted before running tests."
+  ]
+}
+
+EXIT CODE: 1
+EXPECTED: 1 while content risks remain

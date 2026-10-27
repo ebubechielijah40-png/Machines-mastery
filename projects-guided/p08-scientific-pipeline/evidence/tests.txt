@@ -1,0 +1,17 @@
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s projects-guided/p08-scientific-pipeline/code -v
+python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+platform: Linux-6.18.55-x86_64-with-glibc2.39
+executed_utc: 2026-10-23T10:43:06Z
+exit_code: 0
+
+test_hand_derived_exact_three_point_example (test_measurement_pipeline.MeasurementTests.test_hand_derived_exact_three_point_example) ... ok
+test_independent_variance_oracle_small_samples (test_measurement_pipeline.MeasurementTests.test_independent_variance_oracle_small_samples) ... ok
+test_offset_moves_mean_not_scatter_or_uncertainty (test_measurement_pipeline.MeasurementTests.test_offset_moves_mean_not_scatter_or_uncertainty) ... ok
+test_schema_order_units_rows_range_and_truncation (test_measurement_pipeline.MeasurementTests.test_schema_order_units_rows_range_and_truncation) ... ok
+test_source_identity_changes_with_bytes_even_same_values (test_measurement_pipeline.MeasurementTests.test_source_identity_changes_with_bytes_even_same_values) ... ok
+test_zero_scatter_does_not_remove_calibration_uncertainty (test_measurement_pipeline.MeasurementTests.test_zero_scatter_does_not_remove_calibration_uncertainty) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

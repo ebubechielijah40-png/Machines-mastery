@@ -1,0 +1,11 @@
+test_empty_zero_exact_and_first_too_large (test_budget.BudgetTests.test_empty_zero_exact_and_first_too_large) ... ok
+test_finite_inputs_against_independent_prefix_definition (test_budget.BudgetTests.test_finite_inputs_against_independent_prefix_definition) ... ok
+test_no_skipping_to_a_later_fitting_packet (test_budget.BudgetTests.test_no_skipping_to_a_later_fitting_packet) ... ok
+test_returned_list_is_independent_and_input_is_unchanged (test_budget.BudgetTests.test_returned_list_is_independent_and_input_is_unchanged) ... ok
+test_validate_all_inputs_before_processing (test_budget.BudgetTests.test_validate_all_inputs_before_processing) ... ok
+test_worked_example (test_budget.BudgetTests.test_worked_example) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.024s
+
+OK

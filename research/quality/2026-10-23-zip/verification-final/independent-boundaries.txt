@@ -1,0 +1,43 @@
+{
+  "reviewer": "root integration; independent of these module authors",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "code_sha256": {
+    "20-quantum-computing/noise-correction/noise.py": "27a08a537e7590e29b076ccbd3481e75ff6272befec42252b54f950b95eb0c76",
+    "18-computational-biology/population-phylogeny/phylogeny.py": "34053c6e73640b872d9aff7e05d03f0ae3cdf9f0f1eb2c8efe75db24601de04d",
+    "13-privacy/count-release/count_release.py": "1826db614bb8a567cc07e7542acb89713613ccc2fe9dfc8868f0a6c633b4ad74"
+  },
+  "results": [
+    {
+      "probe": "unnormalized_large_state",
+      "exception": "ValueError",
+      "message": "state must be normalized",
+      "controlled_rejection": true
+    },
+    {
+      "probe": "unrepresentable_integer",
+      "exception": "ValueError",
+      "message": "numeric entry exceeds representable complex range",
+      "controlled_rejection": true
+    },
+    {
+      "probe": "unnormalized_large_vector",
+      "exception": "ValueError",
+      "message": "state must be normalized",
+      "controlled_rejection": true
+    },
+    {
+      "probe": "invalid_transposed_entry",
+      "exception": "ValueError",
+      "message": "finite nonnegative distances required",
+      "controlled_rejection": true
+    },
+    {
+      "probe": "finite_inputs_overflow_output",
+      "exception": "ValueError",
+      "message": "noise exceeds representable float range",
+      "controlled_rejection": true
+    }
+  ],
+  "limits": "Selected input-boundary probes, not a universal scientific or numerical correctness proof."
+}

@@ -1,0 +1,1094 @@
+{
+  "schema_version": 1,
+  "verification_date": "2026-10-25",
+  "scope": "Selected primary-source inspections with exact local scopes; additional unit records are discoverability links, not automatic inspected-source classifications. Historical catalog metadata and unavailable originals remain separately limited.",
+  "sources": [
+    {
+      "id": "F-GOLDBERG",
+      "title": "David Goldberg (1991), What Every Computer Scientist Should Know About Floating-Point Arithmetic, edited Oracle reprint",
+      "url": "https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Rounding Error",
+        "Floating-point Formats",
+        "Cancellation"
+      ],
+      "evidence": "foundations/mathematics/change-error-and-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/change-error-and-evidence/README.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "F-NIST",
+      "title": "Taylor and Kuyatt, NIST TN1297 (1994), web presentation",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "A.1\u2013A.5, equations A-1\u2013A-5"
+      ],
+      "evidence": "foundations/mathematics/change-error-and-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/change-error-and-evidence/README.md",
+        "hardware-electronics-mastery/02_RC_TRANSIENTS.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "F-PYMATH",
+      "title": "Python3.12 math documentation",
+      "url": "https://docs.python.org/3.12/library/math.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "fsum",
+        "isclose",
+        "ulp",
+        "expm1",
+        "log1p"
+      ],
+      "evidence": "foundations/mathematics/change-error-and-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/change-error-and-evidence/numerics.py",
+        "hardware-electronics-mastery/code/rc_lab.py"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "F-PYSTATS",
+      "title": "Python3.12 statistics documentation",
+      "url": "https://docs.python.org/3.12/library/statistics.html#statistics.variance",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "variance"
+      ],
+      "evidence": "foundations/mathematics/change-error-and-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/change-error-and-evidence/README.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-01",
+      "title": "Learning representations by back-propagating errors",
+      "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Author-hosted original PDF, page index 1 (printed p.533), visually inspected title/authors. Publisher page blocked by identity redirect; PDF text extraction unreadable."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/01_backprop_1986.md"
+      ],
+      "scope": "METADATA_ONLY; Nature 323, 533\u2013536; DOI 10.1038/323533a0; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-02",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Proceedings landing page title, authors, year, abstract; full PDF not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/02_alexnet_2012.md"
+      ],
+      "scope": "METADATA_ONLY; NeurIPS 25 (2012); reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-03",
+      "title": "Sequence to Sequence Learning with Neural Networks",
+      "url": "https://arxiv.org/abs/1409.3215v3",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/03_seq2seq_2014.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:1409.3215v3, 2014-12-14; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-04",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Full text sections 1\u20136, formula1/footnote1, architecture, Tables1\u20133; Table2 EN-FR41.8 vs sec6.1 prose41.0 preserved."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/04_attention_2017.md"
+      ],
+      "scope": "FULL_TEXT_SELECTED_CLAIMS; arXiv:1706.03762v7, 2023-08-02; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-05",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "url": "https://arxiv.org/abs/1810.04805v2",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/05_bert_2018.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:1810.04805v2, 2019-05-24; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-06",
+      "title": "Language Models are Few-Shot Learners",
+      "url": "https://arxiv.org/abs/2005.14165v4",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/06_gpt3_2020.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2005.14165v4, 2020-07-22; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-07",
+      "title": "Scaling Laws for Neural Language Models",
+      "url": "https://arxiv.org/abs/2001.08361v1",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/07_scaling_laws_2020.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2001.08361v1, 2020-01-23; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-08",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401v4",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/08_rag_2020.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2005.11401v4, 2021-04-12; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-09",
+      "title": "Training language models to follow instructions with human feedback",
+      "url": "https://arxiv.org/abs/2203.02155v1",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/09_instructgpt_2022.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2203.02155v1, 2022-03-04; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-10",
+      "title": "Training Compute-Optimal Large Language Models",
+      "url": "https://arxiv.org/abs/2203.15556v1",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/10_chinchilla_2022.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2203.15556v1, 2022-03-29; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-11",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "url": "https://arxiv.org/abs/2210.03629v3",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/11_react_2022.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2210.03629v3, 2023-03-10; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "AI-12",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "url": "https://arxiv.org/abs/2205.14135v2",
+      "status": "METADATA_ONLY",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Primary landing page title, authors, version, abstract; full text not inspected."
+      ],
+      "evidence": "research-paper-reconstruction/domains/ai-systems/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/ai-systems/12_flashattention_2022.md"
+      ],
+      "scope": "METADATA_ONLY; arXiv:2205.14135v2, 2022-06-23; reported findings NOT independently reproduced.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "RC-MIT",
+      "title": "Chaniotakis and Cory, MIT6.071/22.071 Spring2006, Transient Analysis of First Order RC and RL circuits",
+      "url": "https://ocw.mit.edu/courses/6-071j-introduction-to-electronics-signals-and-measurement-spring-2006/4b6a5fe626d65de20ceb97d8d23f38a4_transient1_rl_rc.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "printed pp.1\u20133,6,9\u201310; equations0.2,0.10,0.19,0.23\u20130.31"
+      ],
+      "evidence": "hardware-electronics-mastery/rc-transients/SOURCES.md",
+      "artifacts": [
+        "hardware-electronics-mastery/02_RC_TRANSIENTS.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "DB-S1",
+      "title": "Atomic Commit In SQLite",
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Introduction",
+        "2. Hardware Assumptions",
+        "3.5. Creating A Rollback Journal File",
+        "3.6. Changing Database Pages In User Space"
+      ],
+      "evidence": "projects-guided/p07-storage-engine/source_verification.json",
+      "artifacts": [
+        "projects-guided/p07-storage-engine/LESSON.md"
+      ],
+      "scope": "rollback journal and hardware assumption context; applies to rollback mode",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "DB-S2",
+      "title": "Write-Ahead Logging",
+      "url": "https://www.sqlite.org/wal.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "2. How WAL Works",
+        "2.1. Checkpointing",
+        "2.2. Concurrency",
+        "2.3. Performance Considerations"
+      ],
+      "evidence": "projects-guided/p07-storage-engine/source_verification.json",
+      "artifacts": [
+        "projects-guided/p07-storage-engine/LESSON.md"
+      ],
+      "scope": "append/commit/checkpoint organization, reader end marks, single writer and sync settings",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "DB-S3",
+      "title": "Database File Format",
+      "url": "https://www.sqlite.org/fileformat2.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "1.2. Pages",
+        "4.1. WAL File Format",
+        "4.3. Checkpoint Algorithm"
+      ],
+      "evidence": "projects-guided/p07-storage-engine/source_verification.json",
+      "artifacts": [
+        "projects-guided/p07-storage-engine/LESSON.md"
+      ],
+      "scope": "contrast of SQLite page WAL framing with this original teaching log",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "DB-S4",
+      "title": "os \u2014 Miscellaneous operating system interfaces",
+      "url": "https://docs.python.org/3/library/os.html#os.fsync",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "os.fsync entry"
+      ],
+      "evidence": "projects-guided/p07-storage-engine/source_verification.json",
+      "artifacts": [
+        "projects-guided/p07-storage-engine/LESSON.md"
+      ],
+      "scope": "platform function mapping and flush-before-fsync for buffered files",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "BIO-NW70",
+      "title": "Needleman and Wunsch (1970), JMB48(3)443\u2013453, DOI10.1016/0022-2836(70)90057-4",
+      "url": "https://bytes.usc.edu/cs270/docs/needleman-wunsch-1970.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "PDF pp.1\u20135, printed443\u2013447; sections2\u20134 and opening5"
+      ],
+      "evidence": "18-computational-biology/alignment/SOURCE_VERIFICATION.md",
+      "artifacts": [
+        "18-computational-biology/02_SEQUENCE_ALGORITHMS.md"
+      ],
+      "scope": "Selected mechanism/history only; remaining application results uninspected; no paper-result reproduction.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "BIO-SW81",
+      "title": "Smith and Waterman (1981), JMB147(1)195\u2013197, DOI10.1016/0022-2836(81)90087-5",
+      "url": "https://cs.brown.edu/courses/csci1820/spring-2022/resources/Smith_Waterman_1981.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "PDF pp.2\u20134, printed195\u2013197, equation1 and traceback text"
+      ],
+      "evidence": "18-computational-biology/alignment/SOURCE_VERIFICATION.md",
+      "artifacts": [
+        "18-computational-biology/02_SEQUENCE_ALGORITHMS.md"
+      ],
+      "scope": "Original general-gap mechanism inspected; local code is independently derived linear-gap specialization; no biological-result reproduction.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "Q-1",
+      "title": "IBM Quantum Learning, Single systems",
+      "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Quantum state vectors",
+        "Measuring quantum states",
+        "Unitary operations"
+      ],
+      "evidence": "20-quantum-computing/SOURCE_VERIFICATION.md",
+      "artifacts": [
+        "20-quantum-computing/10_STATEVECTOR_MEASUREMENT.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "Q-2",
+      "title": "IBM Quantum Learning, Multiple systems",
+      "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Tensor products",
+        "Entangled states",
+        "Partial measurements",
+        "Reduced quantum states"
+      ],
+      "evidence": "20-quantum-computing/SOURCE_VERIFICATION.md",
+      "artifacts": [
+        "20-quantum-computing/10_STATEVECTOR_MEASUREMENT.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "Q-3",
+      "title": "IBM Quantum documentation, Bit ordering",
+      "url": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-22",
+      "locators": [
+        "Integers",
+        "Strings",
+        "Statevector matrices",
+        "Gates"
+      ],
+      "evidence": "20-quantum-computing/SOURCE_VERIFICATION.md",
+      "artifacts": [
+        "20-quantum-computing/10_STATEVECTOR_MEASUREMENT.md"
+      ],
+      "scope": "Only listed locators and artifact claims; not an entire-domain certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original prose, figures, or code redistributed. Source redistribution rights are not inferred."
+    },
+    {
+      "id": "M-VMLS",
+      "title": "Boyd and Vandenberghe, Introduction to Applied Linear Algebra, author-hosted primary text",
+      "url": "https://web.stanford.edu/~boyd/vmls/vmls.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "Selected bodies \u00a7\u00a72.1,10.1\u201310.2,11.2,12.1\u201312.2; printed pp29\u201331,177\u2013184,202\u2013204,225\u2013229"
+      ],
+      "evidence": "foundations/mathematics/core/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/core/03_VECTORS_MAPS.md",
+        "foundations/mathematics/core/04_CALCULUS_OPTIMIZATION.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only.",
+      "inspected_sha256": "254738c8763f6c6fc29c0a837884bc58deca7c3e762e5ec79068208ac7214362",
+      "inspected_bytes": 7061628
+    },
+    {
+      "id": "M-CHAIN",
+      "title": "OpenStax Calculus Volume1 \u00a73.6",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "Chain rule assumptions and proof around equation3.17"
+      ],
+      "evidence": "foundations/mathematics/core/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/core/04_CALCULUS_OPTIMIZATION.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "M-GCD",
+      "title": "Albert R. Meyer, MIT6.042J, Computing GCDs, March6,2015",
+      "url": "https://courses.csail.mit.edu/6.042/spring18/gcd-euclid.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "All3pages; companion gcd-def.pdf all3pages; invariant/termination/linear-combination scopes"
+      ],
+      "evidence": "foundations/mathematics/core/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/core/02_PROOFS_DISCRETE.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "M-C11-DIV",
+      "title": "WG14 N1570 committee draft,2011-04-12",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "\u00a76.5.5 paragraphs5\u20136, footnote105, printed p92; C11-era draft, not latest standard"
+      ],
+      "evidence": "foundations/mathematics/core/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/core/01_ALGEBRA_FUNCTIONS.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "M-SI",
+      "title": "BIPM SI Brochure ninth edition2019 updated2026, linked Concise Summary",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "Concise Summary pp2\u20135; quantities, units, prefixes, quantity calculus"
+      ],
+      "evidence": "foundations/mathematics/core/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/core/01_ALGEBRA_FUNCTIONS.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "M-GEOMETRY",
+      "title": "OpenStax Algebra and Trigonometry2e, selected original teaching sections",
+      "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-3-unit-circle",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "\u00a77.3 sine/cosine definitions and ranges; \u00a710.5 modulus, polar conversion and products"
+      ],
+      "evidence": "foundations/mathematics/core/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/core/GEOMETRY_COMPLEX.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "P-COND",
+      "title": "H. Pishro-Nik, Introduction to Probability, Statistics, and Random Processes,2014",
+      "url": "https://www.probabilitycourse.com/chapter1/1_4_0_conditional_probability.php",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "\u00a71.4.0 conditional definition, positive denominator, product rule"
+      ],
+      "evidence": "foundations/statistics/probability-inference/SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/README.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "P-BAYES",
+      "title": "H. Pishro-Nik, Bayes rule, author-hosted text",
+      "url": "https://www.probabilitycourse.com/chapter1/1_4_3_bayes_rule.php",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "\u00a71.4.3 definition/partition denominator; author/publication metadata on homepage"
+      ],
+      "evidence": "foundations/statistics/probability-inference/SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/README.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "P-VAR",
+      "title": "H. Pishro-Nik, Variance, author-hosted text",
+      "url": "https://www.probabilitycourse.com/chapter3/3_2_4_variance.php",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "\u00a73.2.4 centered variance, units and exact expansion"
+      ],
+      "evidence": "foundations/statistics/probability-inference/SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/README.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "P-BIN",
+      "title": "H. Pishro-Nik, Special Distributions, selected binomial section",
+      "url": "https://www.probabilitycourse.com/chapter3/3_1_5_special_discrete_distr.php",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "\u00a73.1.5 Bernoulli/binomial PMF and independent-sum statement only"
+      ],
+      "evidence": "foundations/statistics/probability-inference/SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/README.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "P-WILSON",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods \u00a77.2.4.1",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "Score inversion/formulas, normal approximation and terminology note; cited1927original not inspected"
+      ],
+      "evidence": "foundations/statistics/probability-inference/SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/README.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "P-ENTROPY",
+      "title": "C.E.Shannon, A Mathematical Theory of Communication,1948 corrected primary-paper reprint",
+      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "root original-source inspection",
+      "locators": [
+        "Introduction log bases and \u00a76/Theorem2; reprint pp1,10\u201311 only"
+      ],
+      "evidence": "foundations/statistics/probability-inference/SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/README.md"
+      ],
+      "scope": "Listed concept scopes only; not an entire-domain/book certification.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification. No upstream PDF, substantial prose, figures or code redistributed; original instructional content only."
+    },
+    {
+      "id": "CONT-L78",
+      "title": "Time, Clocks, and the Ordering of Events in a Distributed System",
+      "url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "parallel research workstream; printed Lamport locators corrected in root review",
+      "locators": [
+        "pp.559\u2013560; strict happened-before definition and Clock Condition",
+        "p.560; implementation rules IR1 and IR2",
+        "pp.560\u2013561; Ordering the Events Totally and mutual-exclusion example"
+      ],
+      "evidence": "research-paper-reconstruction/SOURCE_VERIFICATION_CONTINUATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/distributed-systems/01_lamport_clocks_1978.md"
+      ],
+      "scope": "The local reconstruction covers logical clocks and offline total order. Physical-clock synchronization proofs, the complete mutual-exclusion protocol and deployment timing assumptions are not reproduced. A graph-trace test is not a consensus or physical synchronization benchmark.",
+      "inspected_sha256": "c55e7cab4230aa3d7126748a149b2db6f0d7a67296d5eccfdd50a210299a96b2",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Primary text privately inspected for listed claims only; PDFs/full extracted text excluded from release. Publisher rights preserved."
+    },
+    {
+      "id": "CONT-CT65",
+      "title": "An Algorithm for the Machine Calculation of Complex Fourier Series",
+      "url": "https://www.ece.ucdavis.edu/~bbaas/281/papers/CooleyTukey.1965.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "parallel research workstream; printed Lamport locators corrected in root review",
+      "locators": [
+        "pp. 297\u2013299, equations (1)\u2013(9)",
+        "pp. 298\u2013299, equation (9) and the radix discussion",
+        "pp. 299\u2013300, equations (10)\u2013(13)",
+        "p. 301, IBM 7094 running-time table; one-dimensional lengths 2^11 and 2^12"
+      ],
+      "evidence": "research-paper-reconstruction/SOURCE_VERIFICATION_CONTINUATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/scientific-computing/01_cooley_tukey_1965.md"
+      ],
+      "scope": "Local code implements radix two, copies input and stores stage roots. It does not reproduce the original Fortran implementation or IBM 7094 timings. Reported historical timings and new Python measurements are separately labeled.",
+      "inspected_sha256": "938bb2cedeff917b6fe9c08fe95b1a84a8a9f1c31e2b4e0e983dec3d63199d0d",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Primary text privately inspected for listed claims only; PDFs/full extracted text excluded from release. Publisher rights preserved."
+    },
+    {
+      "id": "CONT-D06",
+      "title": "Differential Privacy",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "parallel research workstream; printed Lamport locators corrected in root review",
+      "locators": [
+        "pp. 1\u20133, Introduction; section 3 states assumptions for the impossibility result",
+        "pp. 8\u20139, section 4, Definition 2",
+        "pp. 9\u201310, section 5.1, Definition 3 and Theorem 4",
+        "p. 11, Theorem 5"
+      ],
+      "evidence": "research-paper-reconstruction/SOURCE_VERIFICATION_CONTINUATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/privacy/01_dwork_differential_privacy_2006.md"
+      ],
+      "scope": "The dossier derives a scalar Laplace mechanism with explicitly defined scale b. It does not transcribe the manuscript's ambiguous variance terminology or invert the theorem's sensitivity/scale ratio. No production privacy implementation, later accountant, or empirical privacy proof is claimed. Source discussion credits the paper's cited earlier mechanisms without claiming those originals were inspected.",
+      "inspected_sha256": "13ddb965ff2cafcd56a6cbfbc25f5937e387fc15f1088683ec732a7d0bc46c7f",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Primary text privately inspected for listed claims only; PDFs/full extracted text excluded from release. Publisher rights preserved."
+    },
+    {
+      "id": "CONT-DG04",
+      "title": "MapReduce: Simplified Data Processing on Large Clusters",
+      "url": "https://research.google.com/archive/mapreduce-osdi04.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "verified_by": "parallel research workstream; printed Lamport locators corrected in root review",
+      "locators": [
+        "section 2, Programming Model and example",
+        "section 3.3, Fault Tolerance and Semantics in the Presence of Failures",
+        "sections 3.4\u20133.5",
+        "section 3.6",
+        "section 4.3",
+        "sections 5.1\u20135.5; Figure 3"
+      ],
+      "evidence": "research-paper-reconstruction/SOURCE_VERIFICATION_CONTINUATION.json",
+      "artifacts": [
+        "research-paper-reconstruction/domains/data-systems/01_mapreduce_2004.md"
+      ],
+      "scope": "The local task-publication model isolates duplicate-attempt acceptance for deterministic word counts. It has no network, filesystem atomic rename, locality, real failures, scheduler, GFS or historical dataset. It does not reproduce the reported terabyte benchmark or establish exactly-once external side effects.",
+      "inspected_sha256": "ae84cc48ff0005c5a79e095039e54e91dce5c116f65746e1593e819d21830ce9",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Primary text privately inspected for listed claims only; PDFs/full extracted text excluded from release. Publisher rights preserved."
+    },
+    {
+      "id": "ZIP-ROY-ELASTIC",
+      "title": "David Roylance, Atomistic Basis of Elasticity, January27,2000",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/47b8bb075c947c20da6f30ac2fbb0719_MIT3_11F99_elas_2.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "printed pp1\u20135, especially p4 ideal tensile geometry and warning"
+      ],
+      "evidence": "foundations/chemistry-materials/elastic-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/chemistry-materials/elastic-evidence/SOURCES.md"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "ZIP-MOS",
+      "title": "MIT6.012 Fall2005 lecture9, October6",
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/5c5960f14ae37d0a65478c4f3f628d98_lec9.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "slides3\u201315, channel integral on slide12"
+      ],
+      "evidence": "hardware-electronics-mastery/device-logic/SOURCES.md",
+      "artifacts": [
+        "hardware-electronics-mastery/device-logic/SOURCES.md"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "ZIP-TIMING",
+      "title": "MIT6.111 Fall2017 lecture4",
+      "url": "https://web.mit.edu/6.111/www/f2017/handouts/L04.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "slides10\u201319 and22\u201323; signed skew slide17"
+      ],
+      "evidence": "hardware-electronics-mastery/device-logic/SOURCES.md",
+      "artifacts": [
+        "hardware-electronics-mastery/device-logic/SOURCES.md"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "ZIP-DP",
+      "title": "MIT6.006 Fall2011 lecture21",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/3484e876d81aba07911a1109f5b5e81e_MIT6_006F11_lec21.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "printed pp1\u20135; discrepancies explicitly recorded"
+      ],
+      "evidence": "algorithmic-problem-solving/topics/dynamic-programming/SOURCES.md",
+      "artifacts": [
+        "algorithmic-problem-solving/topics/dynamic-programming/SOURCES.md"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "ZIP-EM",
+      "title": "Andrew Ng, CS229 PartIX, The EM algorithm, SEE eight-page handout",
+      "url": "https://see.stanford.edu/materials/aimlcs229/cs229-notes8.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "sections1\u20132; posterior-tight Jensen bound and monotonicity"
+      ],
+      "evidence": "16-machine-learning/model-families/SOURCES.md",
+      "artifacts": [
+        "16-machine-learning/model-families/SOURCES.md"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "ZIP-NGRAM",
+      "title": "Daniel Jurafsky and James H. Martin, SLP chapter3, August19,2026 draft",
+      "url": "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "section3.1 and3.6.1\u20132; chain/Markov/count/start/end/smoothing"
+      ],
+      "evidence": "16-machine-learning/model-families/SOURCES.md",
+      "artifacts": [
+        "16-machine-learning/model-families/SOURCES.md"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "ZIP-CI",
+      "title": "Robert Nystrom, Crafting Interpreters author public web chapter11",
+      "url": "https://craftinginterpreters.com/resolving-and-binding.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-23",
+      "locators": [
+        "11.1\u201311.5; parallel author inspection, byte hash in linked record"
+      ],
+      "evidence": "books/crafting-interpreters/generated/SOURCE_VERIFICATION.json",
+      "artifacts": [
+        "books/crafting-interpreters/generated/SOURCE_VERIFICATION.json"
+      ],
+      "scope": "Selected actual inspected source scopes only; remaining precise unit-specific sources and rights boundary in the linked record.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked reference; original prose/figures/code not redistributed and access is not blanket permission."
+    },
+    {
+      "id": "IVP-MIT-NOTE",
+      "title": "MIT18.03 Class2,Feb3,2010 Numerical Methods",
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/e3df34d59f3f16db89d2043b7125c7aa_MIT18_03S10_c02.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "Selected six-page IVP/Euler/error/higher-method passages; arithmetic slip in informal RK cost comparison explicitly not adopted."
+      ],
+      "evidence": "foundations/mathematics/initial-value-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/initial-value-evidence/README.md"
+      ],
+      "scope": "Selected actual inspection by the unit author; original mechanisms/observations remain separate. No whole-book reconstruction.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Verification links only; no source prose/figures/code redistributed. Source-specific limits in local map."
+    },
+    {
+      "id": "IVP-MIT-UNIT4",
+      "title": "Yano,Penn,Konidaris,Patera, Math,Numerics,&Programming UnitIV,DRAFTV2.1,August2013",
+      "url": "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-spring-2013/64e7bed65373841c988a0fd98e1ae16e_MIT2_086S13_Unit4_Textbook.pdf",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "Cover/version/rights; selected scalar Euler-forward/backward and RK4 Example21.1.15/PDFpp38\u201342."
+      ],
+      "evidence": "foundations/mathematics/initial-value-evidence/SOURCES.md",
+      "artifacts": [
+        "foundations/mathematics/initial-value-evidence/README.md"
+      ],
+      "scope": "Selected actual inspection by the unit author; original mechanisms/observations remain separate. No whole-book reconstruction.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Verification links only; no source prose/figures/code redistributed. Source-specific limits in local map."
+    },
+    {
+      "id": "INF-DECISION",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, selected proportion testing/design page",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc24.htm",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "Complete short page: declared direction,binomial model,normal-score approximation and nonrejection interpretation; misleading validation wording not adopted."
+      ],
+      "evidence": "foundations/statistics/probability-inference/DECISION_SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/DECISION_DESIGN.md"
+      ],
+      "scope": "Selected primary handbook inspection; local exact mechanisms and observations are original. No historical sequential paper or full book inspection inferred.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Verification links only; no source prose/figures/code redistributed. Rights not inferred from access."
+    },
+    {
+      "id": "INF-POWER",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, selected proportion testing/design page",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc242.htm",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "Complete short page: specified effect/power and normal sample-size formula; inconsistent printed probability lines not adopted. Exact search and original examples are separate."
+      ],
+      "evidence": "foundations/statistics/probability-inference/DECISION_SOURCES.md",
+      "artifacts": [
+        "foundations/statistics/probability-inference/DECISION_DESIGN.md"
+      ],
+      "scope": "Selected primary handbook inspection; local exact mechanisms and observations are original. No historical sequential paper or full book inspection inferred.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Verification links only; no source prose/figures/code redistributed. Rights not inferred from access."
+    },
+    {
+      "id": "PROD-BACKUP",
+      "title": "SQLite project, Online Backup API",
+      "url": "https://www.sqlite.org/backup.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "sections1,3,3.1"
+      ],
+      "evidence": "production-systems-engineering/labs/operation-workbench/RECOVERY_SOURCES.md",
+      "artifacts": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_AND_OBSERVABILITY.md"
+      ],
+      "scope": "Selected exact scopes only, not entire source or domain.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original passages/figures/code redistributed; no blanket source redistribution right inferred."
+    },
+    {
+      "id": "PROD-PY-BACKUP",
+      "title": "Python Software Foundation, Python3.12.15 sqlite3",
+      "url": "https://docs.python.org/3.12/library/sqlite3.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "Connection.backup target/pages/progress/name/sleep"
+      ],
+      "evidence": "production-systems-engineering/labs/operation-workbench/RECOVERY_SOURCES.md",
+      "artifacts": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_AND_OBSERVABILITY.md"
+      ],
+      "scope": "Selected exact scopes only, not entire source or domain.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original passages/figures/code redistributed; no blanket source redistribution right inferred."
+    },
+    {
+      "id": "PROD-HISTOGRAM",
+      "title": "Prometheus Authors, Histograms and summaries",
+      "url": "https://prometheus.io/docs/practices/histograms/",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "Overview,Bucketing,Quantiles"
+      ],
+      "evidence": "production-systems-engineering/labs/operation-workbench/RECOVERY_SOURCES.md",
+      "artifacts": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_AND_OBSERVABILITY.md"
+      ],
+      "scope": "Selected exact scopes only, not entire source or domain.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original passages/figures/code redistributed; no blanket source redistribution right inferred."
+    },
+    {
+      "id": "PROD-PY-HTTP",
+      "title": "Python Software Foundation, Python3.12.15 http.server",
+      "url": "https://docs.python.org/3.12/library/http.server.html",
+      "status": "INSPECTED",
+      "verified_on": "2026-10-25",
+      "locators": [
+        "HTTPServer,BaseHTTPRequestHandler,introductory security warning"
+      ],
+      "evidence": "production-systems-engineering/labs/operation-workbench/RECOVERY_SOURCES.md",
+      "artifacts": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_AND_OBSERVABILITY.md"
+      ],
+      "scope": "Selected exact scopes only, not entire source or domain.",
+      "upstream_bytes_preserved": false,
+      "license_scope": "Linked for verification; no original passages/figures/code redistributed; no blanket source redistribution right inferred."
+    }
+  ],
+  "additional_unit_records": [
+    "01-computation/toy-cpu/SOURCES.md",
+    "02-programming/python-entry/SOURCES.md",
+    "04-computer-systems/compile-link/SOURCES.md",
+    "05-operating-systems/SOURCES.md",
+    "05-operating-systems/synchronization/SOURCES.md",
+    "06-networking/stream-boundaries/SOURCES.md",
+    "07-databases-data-systems/page-index/SOURCES.md",
+    "07-databases-data-systems/query-isolation/SOURCES.md",
+    "08-information-science/finite-information/SOURCES.md",
+    "10-data-science/bootstrap-evidence/SOURCES.md",
+    "13-privacy/count-release/SOURCES.md",
+    "15-distributed-systems/ordering-reconciliation/SOURCES.md",
+    "16-machine-learning/labs/SOURCES.md",
+    "16-machine-learning/model-families/SOURCES.md",
+    "16-machine-learning/retrieval-agents/SOURCES.md",
+    "16-machine-learning/training/SOURCES.md",
+    "17-embedded-robotics/control-path/SOURCES.md",
+    "18-computational-biology/population-phylogeny/SOURCES.md",
+    "20-quantum-computing/noise-correction/SOURCES.md",
+    "SOURCES.md",
+    "algorithmic-problem-solving/mechanisms/ordered-state/SOURCES.md",
+    "algorithmic-problem-solving/topics/dynamic-programming/SOURCES.md",
+    "algorithmic-problem-solving/topics/graphs/SOURCES.md",
+    "books/crafting-interpreters/generated/SOURCE_VERIFICATION.json",
+    "foundations/chemistry-materials/elastic-evidence/SOURCES.md",
+    "foundations/mathematics/change-error-and-evidence/SOURCES.md",
+    "foundations/mathematics/core/SOURCES.md",
+    "foundations/statistics/probability-inference/SOURCES.md",
+    "hardware-description-languages/fifo-contract/SOURCES.md",
+    "hardware-description-languages/systemverilog/units/01-enabled-register/SOURCES.md",
+    "hardware-electronics-mastery/device-logic/SOURCES.md",
+    "hardware-electronics-mastery/rc-transients/SOURCES.md",
+    "production-systems-engineering/labs/distributed-cluster/SOURCES.md",
+    "production-systems-engineering/labs/event-ledger/SOURCES.md",
+    "production-systems-engineering/labs/model-serving/SOURCES.md",
+    "production-systems-engineering/labs/operation-workbench/SOURCES.md",
+    "programming-languages-mastery/01-c/units/01-byte-parser/SOURCES.md",
+    "programming-languages-mastery/02-cpp/units/resource-lifetime/SOURCES.md",
+    "programming-languages-mastery/03-rust/units/ownership-transfer/SOURCES.md",
+    "programming-languages-mastery/04-zig/units/allocator-errors/SOURCES.md",
+    "programming-languages-mastery/07-riscv-assembly/units/01-addi/SOURCES.md",
+    "programming-languages-mastery/08-python/units/objects-and-aliases/SOURCES.md",
+    "programming-languages-mastery/09-go/units/channels-cancellation/SOURCES.md",
+    "programming-languages-mastery/10-java/units/objects-resources-threads/SOURCES.md",
+    "programming-languages-mastery/11-sql/units/null-and-joins/SOURCES.md",
+    "programming-languages-mastery/12-shell-bash/units/argument-boundaries/SOURCES.md",
+    "projects-guided/p02-shell/SOURCES.md",
+    "projects-guided/p03-algorithm-library/SOURCES.md",
+    "projects-guided/p04-memory-allocator/SOURCES.md",
+    "projects-guided/p05-mini-kernel-labs/SOURCES.md",
+    "projects-guided/p07-storage-engine/SOURCES.md",
+    "projects-guided/p08-scientific-pipeline/SOURCES.md",
+    "projects-guided/p10-language/SOURCES.md",
+    "projects-guided/p11-distributed-kv/SOURCES.md",
+    "reverse-engineering-systems/exercises/02-binary-records/SOURCES.md",
+    "security-cryptography-mastery/provenance/SOURCES.md"
+  ]
+}

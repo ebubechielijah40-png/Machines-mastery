@@ -1,27 +1,34 @@
-# Repository completion report — prepared curriculum edition
+# Completion and publication status
 
-## What “complete” means here
+The current repository is prepared for a source-only GitHub push; this does not
+complete the33-domain mandate. Read [the current dashboard](STRONG_PROGRESS_DASHBOARD.md),
+[publication evidence](research/quality/2026-10-25-publication/PUBLICATION_REPORT.md)
+and [push instructions](PUSH_INSTRUCTIONS.md). All substantive source and curated
+evidence is retained. No file deletion is required after extracting the current
+ZIP. The following earlier development account remains historical.
 
-The **prepared curriculum architecture** is complete enough to begin and continue study without needing a new external curriculum design. It now includes self-contained narrative guides, just-in-time foundations, language tracks, algorithms, production/scalability labs, security/cryptography, computational biology, quantum computing, reverse engineering, machine systems, research methodology, and guided projects.
+## Previous development delivery
 
-It does **not** mean every possible topic in computing/science exists, that every external paper/book has been reproduced, or that learner mastery is complete. Those claims would be false.
+# Completion status — whole-project mandate still unmet
 
-## Major additions in this completion pass
+The2026-10-23 continuation implements and verifies many additional connected
+learning mechanisms. It does not finish every subject, language, book, paper,
+project extension or production/physical investigation in the mandate.
+No major domain is classified EXCELLENT and no completion percentage is claimed.
 
-- self-contained learning protocol and study route;
-- deep just-in-time math/physics/statistics/chemistry guides;
-- deep security/cryptography handbook, labs, and tested HMAC/hash/password-KDF code;
-- computational biology handbook, assignments, project ladder, limits, sequence/alignment code and tests;
-- quantum foundations/handbook/labs/projects/limits plus a tested ideal statevector simulator;
-- original coursebooks that replace mandatory textbook reading without copying copyrighted books;
-- self-contained phase guides across the existing curriculum;
-- deep guides for all 14 programming/HDL languages;
-- 20+ applied problem seeds and solution-pattern files for the previously scaffolded algorithm topics;
-- real-world complexity/scalability lab requirements;
-- assisted-learning project standard and 16 guided capstone paths;
-- research-paper deep reconstruction method;
-- explicit capability/limits documents.
+Use [the current audit](FINAL_EXCELLENCE_AUDIT.md) for every major-domain/language/
+research classification, [progress](EXCELLENCE_PROGRESS.md) for exact developed
+areas, [the test report](research/quality/2026-10-23/TEST_REPORT.md) for actual
+execution, [the integration review](research/quality/2026-10-23/integration-review.md)
+for independent/self-review boundaries and [the backlog](EXCELLENCE_REMEDIATION_BACKLOG.md)
+for remaining implementation.
 
-## Evidence boundary
+The new study route teaches prerequisites before dependent builds. Book originals
+are not bundled; a related original lesson does not count as an uninspected book
+chapter. Actual reported paper findings and newly executed small mechanisms remain
+separate. Synthetic control/biology/quantum computations do not establish physical
+hardware behavior, biological conclusions or empirical quantum advantage.
 
-Documentation generation is not learning. Tests validate reference code only. Physical experiments remain unperformed until the learner performs them. Security labs remain local/authorized. Biological material remains computational/safe. Quantum models are idealized small simulations.
+The branch, full source archive, Git bundle, checksums and
+[reproducible procedure](INTEGRATION.md) preserve this checkpoint. Main was not
+overwritten. Passing local tests does not certify a deployment or learner mastery.

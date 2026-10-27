@@ -1,0 +1,2 @@
+# Computational biology project ladder
+P1 sequence toolkit; P2 aligner; P3 synthetic read/variant pipeline; P4 population-genetics simulator; P5 phylogenetic reconstruction on simulated data; P6 gene-expression analysis with leakage-aware splits; P7 dynamic gene-network simulator; P8 reproducible paper-analysis package. Every project must include provenance, assumptions, uncertainty, tests, and biological limits.

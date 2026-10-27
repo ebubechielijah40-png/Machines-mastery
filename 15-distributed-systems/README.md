@@ -15,3 +15,10 @@ Use the unit-level gates in [PREREQUISITE_GRAPH.md](../PREREQUISITE_GRAPH.md). T
 ## Work placement
 
 Keep subject notes here. Link implementations from [PROJECT_REGISTRY.md](../PROJECT_REGISTRY.md), measurements from [EXPERIMENT_REGISTRY.md](../EXPERIMENT_REGISTRY.md), and verified references from [RESOURCE_REGISTRY.md](../RESOURCE_REGISTRY.md). Do not duplicate book reconstructions here.
+# Scope of the small replica example
+
+`code/replication_sim.py` demonstrates event-ID deduplication and arrival-order
+writes. Its tests now deliberately deliver conflicting same-key events in
+opposite orders and observe different final values. It supplies no total order,
+consensus, general convergence or durable recovery. Start a history/ordering
+investigation from that counterexample before relying on stronger promises.

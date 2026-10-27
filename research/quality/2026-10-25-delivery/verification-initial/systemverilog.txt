@@ -1,0 +1,5 @@
+register.sv PASS: 1024 transitions, synchronous reset, hold and no-edge stability
+/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/hardware-description-languages/systemverilog/units/01-enabled-register/tests/tb.sv:37: $finish called at 21514000 (1ps)
+broken_priority.sv FATAL: /workspace/scratch/9b275ae18bcb/continuous/machines-mastery/hardware-description-languages/systemverilog/units/01-enabled-register/tests/tb.sv:34: transition old=0 d=1 reset=1 en=1 got=1 expected=0
+       Time: 178000  Scope: tb
+PASS: correct RTL accepted and priority mutant rejected

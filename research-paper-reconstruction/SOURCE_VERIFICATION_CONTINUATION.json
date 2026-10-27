@@ -1,0 +1,101 @@
+{
+  "record_version": 1,
+  "inspection_dates_utc": [
+    "2026-10-22",
+    "2026-10-23"
+  ],
+  "method": "Read original primary-paper PDFs using text extraction, inspect equations and context, and compare each taught mechanism with an independently written local implementation or derivation. A readable copy is evidence of access, not a claim of benchmark reproduction.",
+  "redistribution": "No original PDFs or extracted full text are included. Access did not establish a reusable open-content license. The instructional prose, examples, experiments and Python implementations in this batch are original repository work. Preserve the papers' authorship and publisher rights.",
+  "records": [
+    {
+      "id": "L78",
+      "title": "Time, Clocks, and the Ordering of Events in a Distributed System",
+      "authors": [
+        "Leslie Lamport"
+      ],
+      "publication": "Communications of the ACM 21(7), July 1978, pp. 558\u2013565",
+      "url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+      "copy": "Author-hosted scan of published paper; 8 pages",
+      "sha256": "c55e7cab4230aa3d7126748a149b2db6f0d7a67296d5eccfdd50a210299a96b2",
+      "bytes": 854562,
+      "access": "PRIMARY_FULL_TEXT_INSPECTED_FOR_LISTED_CLAIMS",
+      "claim_locators": {
+        "causality_and_clock_condition": "pp.559\u2013560; strict happened-before definition and Clock Condition",
+        "logical_clock_rules": "p.560; implementation rules IR1 and IR2",
+        "total_order_and_mutual_exclusion": "pp.560\u2013561; Ordering the Events Totally and mutual-exclusion example"
+      },
+      "limits": "The local reconstruction covers logical clocks and offline total order. Physical-clock synchronization proofs, the complete mutual-exclusion protocol and deployment timing assumptions are not reproduced. A graph-trace test is not a consensus or physical synchronization benchmark.",
+      "dossier": "domains/distributed-systems/01_lamport_clocks_1978.md",
+      "integration_correction": "Printed locator numbers checked against primary scan during root integration2026-10-23; PDF page index2 is printed p560."
+    },
+    {
+      "id": "CT65",
+      "title": "An Algorithm for the Machine Calculation of Complex Fourier Series",
+      "authors": [
+        "James W. Cooley",
+        "John W. Tukey"
+      ],
+      "publication": "Mathematics of Computation 19(90), April 1965, pp. 297\u2013301",
+      "url": "https://www.ece.ucdavis.edu/~bbaas/281/papers/CooleyTukey.1965.pdf",
+      "copy": "University-hosted scan of the original published paper; all 5 pages inspected. Publisher PDF returned HTTP 403 during this inspection.",
+      "sha256": "938bb2cedeff917b6fe9c08fe95b1a84a8a9f1c31e2b4e0e983dec3d63199d0d",
+      "bytes": 379739,
+      "access": "PRIMARY_FULL_TEXT_INSPECTED",
+      "claim_locators": {
+        "transform_sign_and_factorization": "pp. 297\u2013299, equations (1)\u2013(9)",
+        "operation_count": "pp. 298\u2013299, equation (9) and the radix discussion",
+        "storage_and_permutation": "pp. 299\u2013300, equations (10)\u2013(13)",
+        "reported_machine_times": "p. 301, IBM 7094 running-time table; one-dimensional lengths 2^11 and 2^12"
+      },
+      "limits": "Local code implements radix two, copies input and stores stage roots. It does not reproduce the original Fortran implementation or IBM 7094 timings. Reported historical timings and new Python measurements are separately labeled.",
+      "dossier": "domains/scientific-computing/01_cooley_tukey_1965.md"
+    },
+    {
+      "id": "D06",
+      "title": "Differential Privacy",
+      "authors": [
+        "Cynthia Dwork"
+      ],
+      "publication": "33rd International Colloquium on Automata, Languages and Programming, part II (ICALP 2006), July 2006; 12-page author manuscript",
+      "metadata_url": "https://www.microsoft.com/en-us/research/publication/differential-privacy/",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf",
+      "copy": "Author-institution-hosted original paper manuscript; 12 pages",
+      "sha256": "13ddb965ff2cafcd56a6cbfbc25f5937e387fc15f1088683ec732a7d0bc46c7f",
+      "bytes": 194959,
+      "access": "PRIMARY_FULL_TEXT_INSPECTED_FOR_LISTED_CLAIMS",
+      "claim_locators": {
+        "motivation_and_auxiliary_information": "pp. 1\u20133, Introduction; section 3 states assumptions for the impossibility result",
+        "privacy_definition": "pp. 8\u20139, section 4, Definition 2",
+        "sensitivity_and_noise": "pp. 9\u201310, section 5.1, Definition 3 and Theorem 4",
+        "adaptive_composition": "p. 11, Theorem 5"
+      },
+      "limits": "The dossier derives a scalar Laplace mechanism with explicitly defined scale b. It does not transcribe the manuscript's ambiguous variance terminology or invert the theorem's sensitivity/scale ratio. No production privacy implementation, later accountant, or empirical privacy proof is claimed. Source discussion credits the paper's cited earlier mechanisms without claiming those originals were inspected.",
+      "dossier": "domains/privacy/01_dwork_differential_privacy_2006.md"
+    },
+    {
+      "id": "DG04",
+      "title": "MapReduce: Simplified Data Processing on Large Clusters",
+      "authors": [
+        "Jeffrey Dean",
+        "Sanjay Ghemawat"
+      ],
+      "publication": "OSDI 2004; inspected author manuscript labeled To appear in OSDI 2004",
+      "url": "https://research.google.com/archive/mapreduce-osdi04.pdf",
+      "resolved_url": "https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf",
+      "copy": "Author-institution-hosted original 13-page manuscript; primary PDF obtained directly after a web-reader redirect error",
+      "sha256": "ae84cc48ff0005c5a79e095039e54e91dce5c116f65746e1593e819d21830ce9",
+      "bytes": 190711,
+      "access": "PRIMARY_FULL_TEXT_INSPECTED_FOR_LISTED_CLAIMS",
+      "claim_locators": {
+        "programming_interface": "section 2, Programming Model and example",
+        "worker_failures_and_semantics": "section 3.3, Fault Tolerance and Semantics in the Presence of Failures",
+        "locality_and_granularity": "sections 3.4\u20133.5",
+        "backup_tasks": "section 3.6",
+        "combiner": "section 4.3",
+        "reported_performance": "sections 5.1\u20135.5; Figure 3"
+      },
+      "limits": "The local task-publication model isolates duplicate-attempt acceptance for deterministic word counts. It has no network, filesystem atomic rename, locality, real failures, scheduler, GFS or historical dataset. It does not reproduce the reported terabyte benchmark or establish exactly-once external side effects.",
+      "dossier": "domains/data-systems/01_mapreduce_2004.md"
+    }
+  ]
+}

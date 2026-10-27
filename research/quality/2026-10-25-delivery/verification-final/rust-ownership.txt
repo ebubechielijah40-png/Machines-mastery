@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "observed_at_utc": "2026-10-25T21:25:35.549746+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--edition=2021",
+        "--test",
+        "-C",
+        "overflow-checks=yes",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/lab.rs",
+        "-o",
+        "/tmp/mm-rust-fybzcw_5/debug"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-rust-fybzcw_5/debug",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "stdout": "\nrunning 8 tests\ntest tests::checked_failure_preserves_buffer ... ok\ntest tests::clone_owns_independent_bytes ... ok\ntest tests::consume_returns_allocation ... ok\ntest tests::local_drop_order_is_reverse_declaration ... ok\ntest tests::rejects_lengths ... ok\ntest tests::shared_read_and_later_exclusive_write ... ok\ntest tests::struct_fields_drop_in_declaration_order ... ok\ntest tests::thread_transfers_owned_buffer ... ok\n\ntest result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--edition=2021",
+        "--test",
+        "-C",
+        "overflow-checks=yes",
+        "-O",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/lab.rs",
+        "-o",
+        "/tmp/mm-rust-fybzcw_5/optimized"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/mm-rust-fybzcw_5/optimized",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "stdout": "\nrunning 8 tests\ntest tests::checked_failure_preserves_buffer ... ok\ntest tests::clone_owns_independent_bytes ... ok\ntest tests::consume_returns_allocation ... ok\ntest tests::local_drop_order_is_reverse_declaration ... ok\ntest tests::rejects_lengths ... ok\ntest tests::shared_read_and_later_exclusive_write ... ok\ntest tests::struct_fields_drop_in_declaration_order ... ok\ntest tests::thread_transfers_owned_buffer ... ok\n\ntest result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--edition=2021",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/compile-fail/moved.rs",
+        "-o",
+        "/tmp/mm-rust-fybzcw_5/moved"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "error[E0382]: borrow of moved value: `first`\n --> /workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/compile-fail/moved.rs:1:75\n  |\n1 | fn main() { let first=String::from(\"owned\"); let second=first; println!(\"{first} {second}\"); }\n  |                 -----                                   -----             ^^^^^ value borrowed here after move\n  |                 |                                       |\n  |                 |                                       value moved here\n  |                 move occurs because `first` has type `String`, which does not implement the `Copy` trait\n  |\nhelp: consider cloning the value if the performance cost is acceptable\n  |\n1 | fn main() { let first=String::from(\"owned\"); let second=first.clone(); println!(\"{first} {second}\"); }\n  |                                                              ++++++++\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0382`.\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--edition=2021",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/compile-fail/overlap.rs",
+        "-o",
+        "/tmp/mm-rust-fybzcw_5/overlap"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "error[E0502]: cannot borrow `bytes` as mutable because it is also borrowed as immutable\n --> /workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/compile-fail/overlap.rs:1:55\n  |\n1 | fn main() { let mut bytes=vec![1u8]; let view=&bytes; bytes.push(2); println!(\"{view:?}\"); }\n  |                                               ------  ^^^^^^^^^^^^^             ---- immutable borrow later used here\n  |                                               |       |\n  |                                               |       mutable borrow occurs here\n  |                                               immutable borrow occurs here\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0502`.\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--edition=2021",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/compile-fail/dangling.rs",
+        "-o",
+        "/tmp/mm-rust-fybzcw_5/dangling"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "error[E0515]: cannot return reference to local variable `temporary`\n --> /workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/compile-fail/dangling.rs:1:65\n  |\n1 | fn bad() -> &'static str { let temporary=String::from(\"local\"); &temporary }\n  |                                                                 ^^^^^^^^^^ returns a reference to data owned by the current function\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0515`.\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-language-tools/rust/bin/rustc",
+        "--edition=2021",
+        "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/lab.rs",
+        "-o",
+        "/tmp/mm-rust-fybzcw_5/experiment"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: struct `Tracked` is never constructed\n  --> /workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/lab.rs:22:8\n   |\n22 | struct Tracked { label: &'static str, events: Rc<RefCell<Vec<&'static str>>> }\n   |        ^^^^^^^\n   |\n   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default\n\nwarning: function `tracked` is never used\n  --> /workspace/scratch/9b275ae18bcb/continuous/machines-mastery/programming-languages-mastery/03-rust/units/ownership-transfer/lab.rs:26:4\n   |\n26 | fn tracked(label: &'static str, events: &Rc<RefCell<Vec<&'static str>>>) -> Tracked {\n   |    ^^^^^^^\n\nwarning: 2 warnings emitted\n\n"
+    },
+    {
+      "command": [
+        "/tmp/mm-rust-fybzcw_5/experiment"
+      ],
+      "exit_code": 0,
+      "stdout": "capacity_transitions=[(1, 8), (9, 16), (17, 32), (33, 64)]\nmove_preserved_buffer=true;sum=528;length=33\n",
+      "stderr": ""
+    }
+  ],
+  "limits": "Selected safe Rust2021 mechanisms, no complete Rust/unsafe/ABI or optimizer performance claim; recorded Vec capacity policy is implementation evidence."
+}

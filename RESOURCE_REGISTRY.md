@@ -19,10 +19,10 @@ See [SOURCES.md](SOURCES.md) for provenance procedures. All check dates refer to
 | Original source | [Primary source](https://codehiddenlanguage.com/Chapter00/) |
 | License/status | UNVERIFIED — source required. |
 | Verification status | IDENTITY VERIFIED |
-| Verification scope | Local title/author/copyright and paperback preface inspected; 25 chapter boundaries mapped; Chapter 1 PDF 6–10 readable. Numbered edition unverified. |
+| Verification scope | Historical 2026-09-27 intake reported title/author/copyright and Chapter 1 PDF 6–10 inspection. Source bytes are absent in this portable edition; no fresh chapter or edition verification performed in this session. |
 | Checked on | 2026-09-27 |
-| Local availability | INSPECTED — local ignored PDF; first unit prepared, learner NOT STARTED. |
-| Notes | Local source has 25 chapters; do not use second-edition website pagination. See books/code-petzold/generated/SOURCE_INDEX.md. Original redistribution rights remain unverified. |
+| Local availability | SOURCE NOT PRESENT — portable repository excludes the historical local PDF. |
+| Notes | Historical 25-chapter map and first derived unit preserved. Numbered edition and redistribution rights remain unverified. Source identity and prior intake do not imply current local availability. |
 
 ## R-ELEMENTS — The Elements of Computing Systems
 
@@ -559,9 +559,9 @@ See [SOURCES.md](SOURCES.md) for provenance procedures. All check dates refer to
 | Original source | [Primary source](https://github.com/munificent/craftinginterpreters) |
 | License/status | Upstream LICENSE: .c/.dart/.h/.java/.lox use MIT; most other files CC BY-NC-ND 4.0, with listed exception. Inspect exact revision before reuse. |
 | Verification status | IDENTITY VERIFIED |
-| Verification scope | Repository README and LICENSE identity/terms inspected; no chapter or implementation processed. |
-| Checked on | 2026-09-26 |
-| Local availability | SOURCE NOT PRESENT |
+| Verification scope | Selected public author chapter11 sections11.1–11.5 and chapter10 section10.6 inspected2026-10-23; hashes and rights boundary in books/crafting-interpreters/generated/SOURCE_VERIFICATION.json. Full book not processed. |
+| Checked on | 2026-10-23 |
+| Local availability | Original excluded from portable tree; selected public source scopes inspected and original companion prepared. |
 | Notes | Original repository LICENSE inspected: https://raw.githubusercontent.com/munificent/craftinginterpreters/master/LICENSE . Code and prose have different terms; do not copy/adapt prose as if MIT licensed. |
 
 ## R-INTERPRETERS-REPO — munificent/craftinginterpreters

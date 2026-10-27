@@ -39,3 +39,7 @@ system → boundary → inputs/outputs → components → interfaces → state
 - [Mastery](28_MASTERY.md)
 
 Prepared exemplar: [hidden-state investigation](exercises/01-hidden-state/prompt.md). Permanent follow-up: [reconstruction drills](../reconstruction-drills/README.md) and [unknown challenges](../unknown-system-challenges/README.md).
+
+## Developed binary investigation
+
+After the hidden-state case and byte representation, investigate [the native binary-record oracle](exercises/02-binary-records/README.md). Preserve hypotheses before opening source, infer mixed byte order, reconstruct a strict parser and falsify checksum-as-authentication.

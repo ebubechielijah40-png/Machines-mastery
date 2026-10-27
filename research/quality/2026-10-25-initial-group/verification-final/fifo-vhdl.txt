@@ -1,0 +1,141 @@
+{
+  "executed_at_utc": "2026-10-25T07:17:39.398291+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "vector_count": 2992,
+  "vector_sha256": "2e9bdf2cfe67b0f51082e25c3db68355add2a5fc68aab8cfbc20d24d9aeb8b40",
+  "code_sha256": {
+    "tb.sv": "707c94c47396e9d7893cdc8a55c03349fc29589ba611cb6c2cc50f38e2440005",
+    "run.py": "6143873cafe951e9337a90c25ff3e1a96c372330bc239cbb1a5b2c3d54dbdf98",
+    "tb.vhd": "adcc83b14d0baba88fcfd6cac7a6d66671814f51e14f2251a40e4c0620061b2f",
+    "fifo.vhd": "2d1c58461874fda8f4bd2f40b44ede8948f79969692260313e16c49a42984f58",
+    "fifo.sv": "0ea5c4288d8ff7cdabcd05d6b3301649652410b3144bc2127ab231111f94c44c"
+  },
+  "records": [
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2) [Dunoon edition]\n Compiled with GNAT Version: 13.2.0\n static elaboration, mcode JIT code generator\nWritten by Tristan Gingold.\n\nCopyright (C) 2003 - 2024 Tristan Gingold.\nGHDL is free software, covered by the GNU General Public License.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-a",
+        "--std=08",
+        "/tmp/mm-fifo-6c5dhlwx/fifo.vhd",
+        "/workspace/scratch/9b275ae18bcb/priority/machines-mastery/hardware-description-languages/fifo-contract/tb.vhd"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-e",
+        "--std=08",
+        "tb"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-r",
+        "--std=08",
+        "tb",
+        "--assert-level=error"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9b275ae18bcb/priority/machines-mastery/hardware-description-languages/fifo-contract/tb.vhd:37:5:@17952ns:(report note): PASS: 2992 FIFO vectors\nsimulation finished @17952ns\n",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-a",
+        "--std=08",
+        "/tmp/mm-fifo-ddkl7y2h/fifo.vhd",
+        "/workspace/scratch/9b275ae18bcb/priority/machines-mastery/hardware-description-languages/fifo-contract/tb.vhd"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-e",
+        "--std=08",
+        "tb"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-r",
+        "--std=08",
+        "tb",
+        "--assert-level=error"
+      ],
+      "exit_code": 1,
+      "stdout": "/workspace/scratch/9b275ae18bcb/priority/machines-mastery/hardware-description-languages/fifo-contract/tb.vhd:30:7:@2848ns:(assertion failure): queue transition mismatch vector=474\nghdl:error: assertion failed\nghdl:error: simulation failed\n",
+      "stderr": "",
+      "expected_success": false
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-a",
+        "--std=08",
+        "/tmp/mm-fifo-_4hg7b_k/fifo.vhd",
+        "/workspace/scratch/9b275ae18bcb/priority/machines-mastery/hardware-description-languages/fifo-contract/tb.vhd"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-e",
+        "--std=08",
+        "tb"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "expected_success": true
+    },
+    {
+      "command": [
+        "/workspace/scratch/9b275ae18bcb/native-hardware-tools-2026-10-25/bin/ghdl",
+        "-r",
+        "--std=08",
+        "tb",
+        "--assert-level=error"
+      ],
+      "exit_code": 1,
+      "stdout": "/workspace/scratch/9b275ae18bcb/priority/machines-mastery/hardware-description-languages/fifo-contract/tb.vhd:30:7:@556ns:(assertion failure): queue transition mismatch vector=92\nghdl:error: assertion failed\nghdl:error: simulation failed\n",
+      "stderr": "",
+      "expected_success": false
+    }
+  ],
+  "scope": "Actual logical simulation and intended negative controls; no physical timing, synthesis, CDC or all-state formal proof."
+}

@@ -1,5 +1,9 @@
-# scientific-computing seminar plan
+# Fourier factorization: research reconstruction
 
-SCAFFOLDED; zero papers reconstructed. Target: ≥10 important verified originals. Select foundational mechanism, influential system, evaluation methodology, failure/negative result and a competing approach; do not force ten inaccessible papers into invented reconstructions.
+**PARTIAL domain; STRONG bounded instructional unit.** One primary-paper dossier is developed with all20 research criteria. The target of at least ten important, source-verified substantive originals is not met. Source verification is separate from reproduction of a paper's empirical results.
 
-Verify exact title, all authors, venue, year and original source before registering a paper. Distinguish metadata-only access from readable full text; inaccessible sections remain UNVERIFIED — verification required. Use [reading plan](../../READING_PLAN.md), then the domain-specific curriculum and prerequisite bridge. No learner progress is claimed.
+Start with [Fourier factorization](01_cooley_tukey_1965.md). This original unit teaches positive-sign radix-two derivation, direct-sum oracle, operation counts, convolution and measured floating discrepancies. Its exact original-paper bytes, locators, access scope and licensing limits are recorded as CT65 in the [source record](../../SOURCE_VERIFICATION_CONTINUATION.json).
+
+The connected [project16](../../../projects-guided/p16-research-reproduction/README.md) provides prerequisites, worked traces, implementation tracks, independent tests, executed raw experiments and separated assessments. The privacy track is analytical and does not claim an executed production mechanism. Reported historical findings and locally executed synthetic observations remain distinct.
+
+Remaining work includes historical program/hardware reproduction, mixed-radix and higher-precision studies, and at least nine additional substantive primary papers. Follow the [reading method](../../METHODOLOGY.md); do not manufacture dossiers to meet a numeric quota. Learner mastery is not assessed by the existence of these files.

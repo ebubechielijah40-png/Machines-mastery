@@ -1,9 +1,10 @@
-# Progressive hints
+# Hints after a design attempt
 
-**Hint 1:** Draw the state machine/data-flow for `messages → replication → failure → consistency → recovery` before choosing classes/functions.
-
-**Hint 2:** Separate pure transformation logic from I/O so tests can isolate mechanisms.
-
-**Hint 3:** Make failure states explicit rather than relying on exceptions/logs as the design.
-
-**Hint 4:** Only optimize after a baseline benchmark identifies a bottleneck.
+A received assignment is another overwrite; changing its order changes a blind
+map. A maximum of the same stamped record set does not depend on that ordering.
+Keep the winner as a record rather than discarding its stamp. Missing and a
+higher-stamp deletion must remain distinguishable. A repeated delivery may
+leave the map unchanged while advancing the receiver clock. Build and validate
+a candidate transition before replacing current state. Carry the sender's event
+stamp separately when local events were not writes. A valid signature would
+not prove a legitimate node used a sensible counter or preserved a bank invariant.

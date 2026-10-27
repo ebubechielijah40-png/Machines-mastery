@@ -1,103 +1,36 @@
-# Programming as executable models — self-contained phase guide
+# Programming: a connected entry path
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+Begin with [Python from values through loops, functions, lists, errors and tests](python-entry/README.md).
+It builds and independently validates one logical byte-budget admission mechanism.
+Its [exercises](python-entry/EXERCISES.md), [hints](python-entry/HINTS.md),
+[solutions](python-entry/SOLUTIONS.md) and actual evidence separate reading from
+construction. No prior Python syntax is assumed by that bridge.
 
-## 1. Values And Types
+Then study [objects and aliases](../programming-languages-mastery/08-python/units/objects-and-aliases/README.md)
+before nested mutable state, [graphs](../algorithmic-problem-solving/topics/graphs/README.md)
+for invariant-driven algorithms, and [the bounded language project](../projects-guided/p10-language/README.md)
+for scanner/parser/evaluator composition. [The language comparison route](../programming-languages-mastery/README.md)
+marks which language-specific mechanisms are developed and which remain incomplete.
 
-**Problem.** Identify the real system problem that makes values and types necessary.
+The bridge's reconstruction gate is the phase entry evidence: implement the prefix
+contract, justify every update, run independent tests, explain one invalid-input
+case and change the constraints without silently changing the original question.
+It does not complete every programming topic or replace toolchain-specific C,
+assembly, type-system, compiler/runtime and production instruction.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+## Compiler, runtime and debugger bridge
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+After the expression-language build, construct [Flow source→bytecode→structural
+verification→step debugging](compiler-runtime/README.md). It derives precedence,
+control-flow patching, stack/init joins, integer semantics, atomic faults and
+resource bounds. Its [twenty exercises](compiler-runtime/EXERCISES.md) have
+separate hints/solutions; actual experiments distinguish structure from intended
+correctness. Exit task: reconstruct a counted loop and verifier, independently
+check its result and diagnose a source-mapped failure.
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 2. Control Flow And Functions
-
-**Problem.** Identify the real system problem that makes control flow and functions necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Memory/Lifetime
-
-**Problem.** Identify the real system problem that makes memory/lifetime necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Errors And Tests
-
-**Problem.** Identify the real system problem that makes errors and tests necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Files And Processes
-
-**Problem.** Identify the real system problem that makes files and processes necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Debugging And Tooling
-
-**Problem.** Identify the real system problem that makes debugging and tooling necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+Continue through [lexical binding](../books/crafting-interpreters/generated/chapters/11/README.md),
+[the native C parser](../programming-languages-mastery/01-c/units/01-byte-parser/README.md),
+[compilation/linking](../04-computer-systems/compile-link/README.md),
+[memory allocation](../projects-guided/p04-memory-allocator/README.md) and
+[process/shell behavior](../projects-guided/p02-shell/README.md). A custom VM
+inside Python does not establish native ABI/runtime or full language mastery.

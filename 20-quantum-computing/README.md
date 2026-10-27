@@ -18,4 +18,6 @@ Normal order:
 12. quantum networking/cryptography concepts
 13. what quantum computers can and cannot accelerate
 
-Use `FOUNDATIONS.md`, `HANDBOOK.md`, `LABS.md`, then `projects/`.
+Begin the executable [statevector and measurement unit](10_STATEVECTOR_MEASUREMENT.md), with [source verification](SOURCE_VERIFICATION.md), [separate assessments](assessments/EXERCISES.md), and the [guided simulator build](../projects-guided/p15-quantum-simulator/README.md). `FOUNDATIONS.md`, `HANDBOOK.md` and `LABS.md` remain survey context.
+
+**Quality: PARTIAL overall.** The bounded ideal-statevector unit has substantive derivations, tests and executed mechanism experiments. Algorithms, noise/error correction, hardware/control, quantum cryptography and paper reconstructions still require deep source-verified units and executable investigations. No learner mastery or physical experiment is claimed.

@@ -1,5 +1,9 @@
 # Master curriculum — self-contained prepared edition
 
+Current development status: **INCOMPLETE**. This route describes intended scope;
+many older bodies are still templates. Read [the current audit](FINAL_EXCELLENCE_AUDIT.md)
+and the developed bounded-unit links in README before treating a topic as prepared.
+
 This is the learner-facing curriculum. `MASTER_CURRICULUM.md` remains the registry-derived historical/core phase index; this edition adds the permanent quantum and cryptography depth tracks and points to self-contained material.
 
 ## Phase 0 — learning/research method

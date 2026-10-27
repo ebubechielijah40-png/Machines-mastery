@@ -42,3 +42,7 @@ Projects, in increasing scope: allocator experiment; binary parser; CLI; network
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed allocator unit
+
+After byte buffers and lifetime reasoning, build [Zig0.13 allocation and error unwinding](units/allocator-errors/README.md). Track every allocation through success/failure, then run the leak negative control and bounded allocator experiment.

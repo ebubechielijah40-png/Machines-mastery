@@ -1,0 +1,62 @@
+{
+  "source_sha256": {
+    "operations.py": "343f2aeabd1496a8396388f8015b3e825644f5fece100b72470bc5a8570e7001",
+    "recovery.py": "81108a0703e4deaa32e94d691254ec9fd180c7dc51790616218e92b7784e0f7a",
+    "telemetry.py": "7c73f03f66680076991bc94385ceb92ed2fba599e032c7d2636f9208cfa8aef9",
+    "local_service.py": "decc3bf5ee48c56f4db9b2c890f154f9e5d90a3f614fa1a0e5f8e76990e65177",
+    "release_drill.py": "f68dcd733dc18a6841ad57fe16703cacf1091a40f21acb86b322123e30488875"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sqlite": "3.53.1"
+  },
+  "recovery": {
+    "original_replies": [
+      -7,
+      4,
+      0
+    ],
+    "actual_abrupt_exit_code": 17,
+    "unknown_reply_retry": [
+      6,
+      true
+    ],
+    "stale_generation_rejected": true,
+    "restored": {
+      "counter": 0,
+      "operation_count": 3,
+      "matched_external_receipts": 3
+    },
+    "zero_total_retained_operations": 3
+  },
+  "pooled_order_statistic_checks": [
+    {
+      "q": "1/5",
+      "independently_sorted_value": 2,
+      "reported_upper": 5
+    },
+    {
+      "q": "3/5",
+      "independently_sorted_value": 6,
+      "reported_upper": 10
+    },
+    {
+      "q": "1",
+      "independently_sorted_value": 11,
+      "reported_upper": null
+    }
+  ],
+  "exact_alert_counterexample": {
+    "status": "evaluated",
+    "short_burn_exact": "4",
+    "long_burn_exact": "1",
+    "alert": false
+  },
+  "corruption_boundary": {
+    "impossible_good_status_accepted": true,
+    "empty_nonzero_sum_accepted": true,
+    "oversized_deadline_returned": true,
+    "oversized_deadline_output_validates": false
+  },
+  "limits": "Finite local reader probes only. No physical storage failure, remote operation, learner mastery or external expert certification."
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "recovery-planning",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "07-databases-data-systems/recovery-planning",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery",
+    "exit_code": 0,
+    "test_count": 17,
+    "duration_seconds": 1.211,
+    "log": "research/quality/2026-10-25-continuous/database-final-reader-recovery-planning-tests.txt"
+  },
+  {
+    "name": "page-index",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "07-databases-data-systems/page-index",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery",
+    "exit_code": 0,
+    "test_count": 16,
+    "duration_seconds": 3.974,
+    "log": "research/quality/2026-10-25-continuous/database-final-reader-page-index-tests.txt"
+  },
+  {
+    "name": "query-isolation",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "07-databases-data-systems/query-isolation",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery",
+    "exit_code": 0,
+    "test_count": 10,
+    "duration_seconds": 0.065,
+    "log": "research/quality/2026-10-25-continuous/database-final-reader-query-isolation-tests.txt"
+  },
+  {
+    "name": "wal",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "projects-guided/p07-storage-engine/code",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/9b275ae18bcb/continuous/machines-mastery",
+    "exit_code": 0,
+    "test_count": 10,
+    "duration_seconds": 0.157,
+    "log": "research/quality/2026-10-25-continuous/database-final-reader-wal-tests.txt"
+  }
+]

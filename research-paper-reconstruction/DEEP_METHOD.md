@@ -16,3 +16,6 @@ Do not start by summarizing sections. Rebuild the causal/evidential structure.
 12. **Falsification:** what observation would weaken the central conclusion?
 
 A good reconstruction should let you explain the paper to a technical peer, reimplement the core method where feasible, and critique it without relying on vague prestige or citation count.
+
+## Minimum depth gate for every paper dossier
+A finished dossier must reconstruct: pre-paper world; exact problem; baseline; mechanism; equations/algorithms; experimental design; metrics; ablations; results; what evidence supports; what evidence does not support; limitations; reproduction plan; modern consequences; and one code/measurement task. A title list or paragraph summary is not a finished dossier.

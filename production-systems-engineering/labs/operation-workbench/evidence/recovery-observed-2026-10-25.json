@@ -1,0 +1,59 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sqlite": "3.53.1"
+  },
+  "source_sha256": {
+    "operations.py": "343f2aeabd1496a8396388f8015b3e825644f5fece100b72470bc5a8570e7001",
+    "recovery.py": "81108a0703e4deaa32e94d691254ec9fd180c7dc51790616218e92b7784e0f7a",
+    "telemetry.py": "7c73f03f66680076991bc94385ceb92ed2fba599e032c7d2636f9208cfa8aef9",
+    "recovery_experiment.py": "3ce9dd0c1d2cd90b3eb642bc3437f699e8ceb5b6bfef365012c40b9f7e3d73e9"
+  },
+  "wal_only_commit": {
+    "naive_main_copy_counter": 12,
+    "consistent_backup_counter": 16
+  },
+  "stale_snapshot_refused": true,
+  "unkeyed_authority_counterexample": {
+    "fully_rewritten_snapshot_passed_consistency": true,
+    "external_receipt_blocked_promotion": true
+  },
+  "histogram": {
+    "pooled_p95_upper": 1,
+    "incorrect_mean_of_shard_p95": 50.5,
+    "pooled": {
+      "deadline_ns": 100,
+      "count": 100,
+      "good": 100,
+      "latency_sum_ns": 199,
+      "bounds_ns": [
+        1,
+        100
+      ],
+      "le_counts": [
+        99,
+        100
+      ],
+      "overflow": 0,
+      "statuses": {
+        "ok": 100,
+        "duplicate": 0,
+        "overload": 0,
+        "deadline": 0,
+        "unknown": 0,
+        "conflict": 0,
+        "storage_unavailable": 0,
+        "injected_failure": 0,
+        "operation_rejected": 0,
+        "internal_error": 0
+      }
+    }
+  },
+  "alert": {
+    "status": "evaluated",
+    "short_burn_exact": "2",
+    "long_burn_exact": "2",
+    "alert": true
+  },
+  "limitations": "Synthetic local data and clocks. No physical fault, authenticated remote authority, service-scale reliability or statistical calibration of the alert."
+}

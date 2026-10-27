@@ -1,0 +1,159 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "kind": "deterministic synthetic graph inputs; elapsed times observed",
+  "growth": [
+    {
+      "vertices": 48,
+      "kind": "chain",
+      "adjacency_entries": 47,
+      "distance_last": 47,
+      "median_seconds": 2.129300037267967e-05,
+      "trials_seconds": [
+        4.5045000206300756e-05,
+        2.490599990778719e-05,
+        2.129300037267967e-05,
+        1.9577999864850426e-05,
+        1.974499991774792e-05
+      ]
+    },
+    {
+      "vertices": 48,
+      "kind": "dense-dag",
+      "adjacency_entries": 1128,
+      "distance_last": 1,
+      "median_seconds": 0.00011686000016197795,
+      "trials_seconds": [
+        0.00016782000011517084,
+        0.00012118499989810516,
+        0.00011686000016197795,
+        0.00011497100013002637,
+        0.00011232700035179732
+      ]
+    },
+    {
+      "vertices": 96,
+      "kind": "chain",
+      "adjacency_entries": 95,
+      "distance_last": 95,
+      "median_seconds": 3.680000008898787e-05,
+      "trials_seconds": [
+        0.00011412200001359452,
+        3.6900999930367107e-05,
+        3.680000008898787e-05,
+        3.620099960244261e-05,
+        3.59079999725509e-05
+      ]
+    },
+    {
+      "vertices": 96,
+      "kind": "dense-dag",
+      "adjacency_entries": 4560,
+      "distance_last": 1,
+      "median_seconds": 0.00041666800007078564,
+      "trials_seconds": [
+        0.00046894000024622073,
+        0.00040870899965739227,
+        0.0004218250001031265,
+        0.00041666800007078564,
+        0.00040051699988907785
+      ]
+    },
+    {
+      "vertices": 192,
+      "kind": "chain",
+      "adjacency_entries": 191,
+      "distance_last": 191,
+      "median_seconds": 6.91599998390302e-05,
+      "trials_seconds": [
+        9.18880000426725e-05,
+        6.91599998390302e-05,
+        6.807899990235455e-05,
+        6.704999987050542e-05,
+        0.0001880419999906735
+      ]
+    },
+    {
+      "vertices": 192,
+      "kind": "dense-dag",
+      "adjacency_entries": 18336,
+      "distance_last": 1,
+      "median_seconds": 0.0018601169999783451,
+      "trials_seconds": [
+        0.0018601169999783451,
+        0.0018611880000207748,
+        0.001678793000337464,
+        0.0019276710004305642,
+        0.001813612999740144
+      ]
+    },
+    {
+      "vertices": 384,
+      "kind": "chain",
+      "adjacency_entries": 383,
+      "distance_last": 383,
+      "median_seconds": 0.00016161600024133804,
+      "trials_seconds": [
+        0.0001998200000343786,
+        0.00016161600024133804,
+        0.00014159700003801845,
+        0.0002102369999192888,
+        0.00013528899989978527
+      ]
+    },
+    {
+      "vertices": 384,
+      "kind": "dense-dag",
+      "adjacency_entries": 73536,
+      "distance_last": 1,
+      "median_seconds": 0.01166047000015169,
+      "trials_seconds": [
+        0.014036597000085749,
+        0.01166047000015169,
+        0.011789521000082459,
+        0.010275863000060781,
+        0.011353395999776694
+      ]
+    }
+  ],
+  "weighted_counterexample": {
+    "graph": [
+      [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      [],
+      [
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "distance": [
+      0,
+      3,
+      2
+    ]
+  },
+  "negative_cycle": [
+    0,
+    "-inf",
+    "-inf",
+    "+inf"
+  ],
+  "unlimited_worker_finish": [
+    2,
+    5,
+    9,
+    10
+  ]
+}

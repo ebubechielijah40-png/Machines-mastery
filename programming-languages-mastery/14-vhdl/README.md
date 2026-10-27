@@ -42,3 +42,7 @@ Projects, in increasing scope: gate; adder; ALU; register; counter; FSM; memory 
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed VHDL queue
+
+After logic states and clocked registers, build [the VHDL clocked queue](units/clocked-queue/README.md). The shared contract has original VHDL/SystemVerilog implementations, independent vectors, native testbenches and deliberate semantic mutants.

@@ -1,11 +1,13 @@
-# Checkpoints
+# Implementation milestones
 
-1. Define inputs, outputs, state, and invariants for Quantum circuit simulator.
-2. Build the smallest end-to-end vertical slice.
-3. Add correctness tests for normal and boundary cases.
-4. Add one explicit failure mode and detect it.
-5. Instrument time/memory/throughput where meaningful.
-6. Scale input/load by at least two orders of magnitude when practical.
-7. Write a security/trust-boundary note.
-8. Reconstruct the architecture from memory.
-9. Change one constraint and redesign.
+Each milestone requires code and an explanation before proceeding. The reference is a check after your attempt, not the task itself.
+
+1. **Representation.** Allocate `2**n` amplitudes, set index zero to one, reject invalid n before allocation. Document q0's position. Acceptance: norm one, length four for n=2, and separate basis tests distinguishing X on q0/q1. Explain why a 2**n vector describes n qubits rather than 2**n qubits.
+2. **One-qubit transformation.** Implement 2 by 2 matrix action on a saved pair of amplitudes; verify column orthonormality. Acceptance: `H;H` and `H;Z;H` from |0>, plus rejection of `diag(1,2)`. Debug task: deliberately overwrite the first old amplitude before calculating the second; retain the failing output and explain it.
+3. **Local transformation in a larger vector.** Pair indices differing only at q. Hand-list n=3,q=1 pairs before loops. Acceptance: compare random complex normalized states against the independent dense test oracle for n<=4. Explain the O(2**n) versus O(4**n) distinction.
+4. **CNOT.** Implement a permutation, not a branch that reads the control. Acceptance: every 3-qubit basis state under each distinct control/target pair, inverse property, invalid-address rejection. Debug task: swap the arguments and explain why a symmetric Bell test can conceal it.
+5. **Phase and coherence.** Implement a diagonal relative phase gate through the existing matrix API. Derive the `H;P(theta);H` probability before running at 0, pi/2 and pi. Acceptance: agreement at numerical tolerance and a written reason global phase cannot affect any later linear circuit probabilities.
+6. **Observation.** Implement nonmutating fresh-preparation sampling separately from one-qubit projective measurement. Sum the correct branch masses; divide surviving amplitudes by sqrt(mass). Acceptance: Bell correlations, repeated-measurement consistency, rejection of impossible conditioning, and a test preserving q0's |+> coherence when deterministic q1 is observed.
+7. **Investigation.** Compare Bell and a classical preparation mixture in ZZ/XX, keeping outcomes and model assumptions separate. Acceptance: a raw seeded output file, prediction record and alternative explanation. Do not label a classical simulation a physical Bell test.
+8. **Resource and trust boundary.** Calculate storage without allocating large states; identify total gate/shot budget and a parsing-size budget for a hypothetical service. Acceptance: tests reject excessive n and malformed gates before mutation. No service deployment is required or authorized by this lesson.
+9. **Reconstruction.** After a delay, rebuild four core mechanisms without viewing source, run behavior tests and explain corrections. Add an unfamiliar three-qubit partial-measurement example. Learner evidence must be saved separately from author reference outputs.

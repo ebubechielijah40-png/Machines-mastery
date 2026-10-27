@@ -14,3 +14,7 @@ Start from a problem requiring physical state: a receiver must distinguish two v
 | Integration | digital electronics, memory technologies, buses, PCB fundamentals, microcontrollers, processors, interfaces | Trace one sensor-to-output operation and all power/signal boundaries |
 
 See [digital logic](DIGITAL_LOGIC.md), [device prerequisite bridge](PREREQUISITE_BRIDGE.md), [general machines](../general-machine-systems/README.md) and [reverse engineering](../reverse-engineering-systems/README.md). Every future topic must include realistic code/model work, prediction, measurement and failure analysis where feasible; no results are prefilled.
+
+## From charge to clocked logic
+
+After electrical quantities and RC, study [semiconductors and load lines](03_SEMICONDUCTORS_TRANSISTORS.md), [setup/hold timing](04_DIGITAL_TIMING.md) and [the device/logic experiment](device-logic/README.md), then [the native HDL queue](../hardware-description-languages/fifo-contract/README.md). Each step states the physical idealizations and a concrete exit task.

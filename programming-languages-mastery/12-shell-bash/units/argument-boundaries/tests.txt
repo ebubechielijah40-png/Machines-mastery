@@ -1,0 +1,12 @@
+test_command_substitution_trims_trailing_newlines (test_lab.ArgumentTests.test_command_substitution_trims_trailing_newlines) ... ok
+test_data_is_not_reparsed_as_shell_syntax (test_lab.ArgumentTests.test_data_is_not_reparsed_as_shell_syntax) ... ok
+test_newline_and_empty_data_are_preserved (test_lab.ArgumentTests.test_newline_and_empty_data_are_preserved) ... ok
+test_pipeline_exit_semantics (test_lab.ArgumentTests.test_pipeline_exit_semantics) ... ok
+test_quoted_preserves_all_boundaries (test_lab.ArgumentTests.test_quoted_preserves_all_boundaries) ... ok
+test_star_joins_and_empty_at_stays_empty (test_lab.ArgumentTests.test_star_joins_and_empty_at_stays_empty) ... ok
+test_unquoted_splits_drops_empty_and_expands_glob (test_lab.ArgumentTests.test_unquoted_splits_drops_empty_and_expands_glob) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.189s
+
+OK

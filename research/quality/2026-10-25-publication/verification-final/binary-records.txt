@@ -1,0 +1,13 @@
+test_crc_fixed_value_and_independent_library (test_binary_records.BinaryRecordTests.test_crc_fixed_value_and_independent_library) ... ok
+test_every_single_bit_mutation_rejected (test_binary_records.BinaryRecordTests.test_every_single_bit_mutation_rejected) ... ok
+test_every_truncation_and_trailing_byte (test_binary_records.BinaryRecordTests.test_every_truncation_and_trailing_byte) ... ok
+test_native_python_random_differential (test_binary_records.BinaryRecordTests.test_native_python_random_differential) ... ok
+test_native_rejection_and_sanitized_build (test_binary_records.BinaryRecordTests.test_native_rejection_and_sanitized_build) ... ok
+test_ordinary_endian_signed_and_payload_edges (test_binary_records.BinaryRecordTests.test_ordinary_endian_signed_and_payload_edges) ... ok
+test_recomputed_crc_does_not_make_semantics_valid (test_binary_records.BinaryRecordTests.test_recomputed_crc_does_not_make_semantics_valid) ... ok
+test_schema_validation (test_binary_records.BinaryRecordTests.test_schema_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.404s
+
+OK

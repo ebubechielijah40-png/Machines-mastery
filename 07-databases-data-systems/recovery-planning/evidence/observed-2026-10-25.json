@@ -1,0 +1,109 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "source_sha256": {
+    "store.py": "eb8a4790baea1f8a592fd89d70553516e212c4ea9210a6490ea238298801b646",
+    "planner.py": "1b317360d9a9cc9ceda7b5ccc3a6ad0dff01d4b90e83a2e2aba05690761e804d",
+    "stream.py": "7aaaa2edcc0539f1b11cc9dc3c6aefe9b127da4e4cd37c96582e19bdaebffae4",
+    "crash_worker.py": "9ff74cca7238df4e1801791538c62d03777a093906de795eeb3070e35a8c5415",
+    "experiment.py": "c96de88457f5d5ad0369cd48a539384dac2253f60626a036eb7488a1f20dd178"
+  },
+  "process_crashes": [
+    {
+      "phase": "after-index-sync",
+      "exit_code": -9,
+      "selected_old_generation": true,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-wal-sync",
+      "exit_code": -9,
+      "selected_old_generation": true,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-generation-directory-sync",
+      "exit_code": -9,
+      "selected_old_generation": true,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-manifest-temp-sync",
+      "exit_code": -9,
+      "selected_old_generation": true,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-manifest-replace",
+      "exit_code": -9,
+      "selected_old_generation": false,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-manifest-directory-sync",
+      "exit_code": -9,
+      "selected_old_generation": false,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-old-unlink",
+      "exit_code": -9,
+      "selected_old_generation": false,
+      "rows_match": true,
+      "version": 2
+    },
+    {
+      "phase": "after-collection-directory-sync",
+      "exit_code": -9,
+      "selected_old_generation": false,
+      "rows_match": true,
+      "version": 2
+    }
+  ],
+  "compaction": {
+    "live_rows": 40,
+    "global_version": 120,
+    "before_wal_bytes": 6809,
+    "after_wal_bytes": 7,
+    "after_suffix_transactions": 0,
+    "files_removed": 2,
+    "selected_file_bytes": 2472
+  },
+  "lost_update": {
+    "no_precondition_result": 2,
+    "intended_two_increment_result": 3,
+    "stale_version_rejected": true,
+    "recomputed_result": 3
+  },
+  "skew": {
+    "plan": {
+      "algorithm": "hash",
+      "build_side": "left",
+      "estimated_matches": 909,
+      "estimated_work": 2018,
+      "memory_rows": 100
+    },
+    "actual_join_rows": 8110,
+    "actual_work": 16420,
+    "stale_row_grant_refused": true
+  },
+  "stream": {
+    "exact_retry_applied": 0,
+    "mutated_past_also_skipped": 0,
+    "source_immutability_is_assumed": true
+  },
+  "byte_cut_model": {
+    "cases": 58,
+    "complete_frame_bytes": 57,
+    "all_or_none": true
+  },
+  "limitations": "Synthetic local trusted clients, POSIX cooperative locks, process kills and explicit byte cuts only; no physical power loss, NFS, hostile directory, distributed consensus, external exactly-once effects or learner mastery."
+}

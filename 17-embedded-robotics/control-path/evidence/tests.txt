@@ -1,0 +1,15 @@
+test_derivative_on_measurement_avoids_target_kick (test_control.ControlTests.test_derivative_on_measurement_avoids_target_kick) ... ok
+test_energy_identity_independent_of_integrator (test_control.ControlTests.test_energy_identity_independent_of_integrator) ... ok
+test_gear_inertia_from_energy_equivalence (test_control.ControlTests.test_gear_inertia_from_energy_equivalence) ... ok
+test_hand_first_derivative (test_control.ControlTests.test_hand_first_derivative) ... ok
+test_invalid_parameters_and_failed_step_preserves_controller (test_control.ControlTests.test_invalid_parameters_and_failed_step_preserves_controller) ... ok
+test_quantization_bias_delay_and_seed (test_control.ControlTests.test_quantization_bias_delay_and_seed) ... ok
+test_uncoupled_analytic_rl_and_mechanical_decay (test_control.ControlTests.test_uncoupled_analytic_rl_and_mechanical_decay) ... ok
+test_voltage_limit_and_conditional_integration (test_control.ControlTests.test_voltage_limit_and_conditional_integration) ... ok
+test_windup_counterexample_and_steady_state (test_control.ControlTests.test_windup_counterexample_and_steady_state) ... ok
+test_zero_input_equilibrium_and_time_reversal_sign_symmetry (test_control.ControlTests.test_zero_input_equilibrium_and_time_reversal_sign_symmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.096s
+
+OK

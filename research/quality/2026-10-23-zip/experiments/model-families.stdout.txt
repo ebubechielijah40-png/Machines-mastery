@@ -1,0 +1,733 @@
+{
+  "observed_at_utc": "2026-10-23T21:46:52.041351+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "source_sha256": {
+    "discriminative.py": "c660e1408286928cdc91cbe717c050a9c173b7516ba34aa5f5d57981d77aa1a5",
+    "generative.py": "70dc630d4a11afcfe5e8505934f8c5b44ee44d0dbc7f13d06541219e16b01c8e",
+    "experiment.py": "0cd154bfd4cc0191e78c8dfa8a56b50a5c98461b7e51f0709110162c799e4f08",
+    "test_families.py": "a3c5a68d454c0f38af80b8aac68fd2643c86b7c8e43c7224e2d462f782d2a5d3"
+  },
+  "classification": {
+    "question": "What if a label-derived shortcut is available during fitting but changes during deployment?",
+    "data": "Synthetic: y uniform; stable x=.45*(2y-1)+Uniform(-.8,.8); shortcut=+/-4*(2y-1).",
+    "seeds": {
+      "train": 421,
+      "test": 422
+    },
+    "training": {
+      "steps": 500,
+      "rate": 0.15,
+      "clip": 5,
+      "before": {
+        "count": 80,
+        "nll": 0.6931471805599453,
+        "accuracy": 0.5125,
+        "brier": 0.25
+      },
+      "after": {
+        "count": 80,
+        "nll": 0.0008206223668142566,
+        "accuracy": 1.0,
+        "brier": 6.793836002029658e-07
+      },
+      "checkpoints": [
+        {
+          "step": 0,
+          "loss": 0.6931471805599453,
+          "gradient_norm": 2.015631753009291,
+          "clipping_scale": 1.0
+        },
+        {
+          "step": 125,
+          "loss": 0.003262924338097254,
+          "gradient_norm": 0.013117612275113488,
+          "clipping_scale": 1.0
+        },
+        {
+          "step": 250,
+          "loss": 0.0016377076691640089,
+          "gradient_norm": 0.00658847073825458,
+          "clipping_scale": 1.0
+        },
+        {
+          "step": 499,
+          "loss": 0.0008222630571847758,
+          "gradient_norm": 0.003308906185713095,
+          "clipping_scale": 1.0
+        }
+      ],
+      "seconds": 0.32398318400009884
+    },
+    "parameters": [
+      0.20960786632057435,
+      1.7511736353470075,
+      0.010129398824582036
+    ],
+    "iid": {
+      "count": 128,
+      "nll": 0.000836200507406178,
+      "accuracy": 1.0,
+      "brier": 7.05538838927247e-07
+    },
+    "flipped_shortcut": {
+      "count": 128,
+      "nll": 6.919180940374716,
+      "accuracy": 0.0,
+      "brier": 0.9980137975675418
+    },
+    "stable_feature_only": {
+      "training": {
+        "steps": 500,
+        "rate": 0.15,
+        "clip": 5,
+        "before": {
+          "count": 80,
+          "nll": 0.6931471805599453,
+          "accuracy": 0.5125,
+          "brier": 0.25
+        },
+        "after": {
+          "count": 80,
+          "nll": 0.3397926736433824,
+          "accuracy": 0.8,
+          "brier": 0.11369063088192186
+        },
+        "checkpoints": [
+          {
+            "step": 0,
+            "loss": 0.6931471805599453,
+            "gradient_norm": 0.2505421396478193,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 125,
+            "loss": 0.3846850363027937,
+            "gradient_norm": 0.05744363766248585,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 250,
+            "loss": 0.35316642711071317,
+            "gradient_norm": 0.028435347265313857,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 499,
+            "loss": 0.3398133568822471,
+            "gradient_norm": 0.01175120500467213,
+            "clipping_scale": 1.0
+          }
+        ],
+        "seconds": 0.236425495000276
+      },
+      "parameters": [
+        3.640263635172422,
+        0.18567831065584958
+      ],
+      "test": {
+        "count": 128,
+        "nll": 0.42033621325448306,
+        "accuracy": 0.75,
+        "brier": 0.1454800014402533
+      }
+    },
+    "scaling": {
+      "train_only_means": [
+        -0.016971740140387805,
+        0.1
+      ],
+      "train_and_test_means": [
+        -0.03970353623889184,
+        0.19230769230769232
+      ],
+      "limit": "Different means alone do not quantify metric inflation; no claim that this dataset gains accuracy from leaked scaling."
+    },
+    "limitations": "The shortcut is explicitly constructed from the target; this is not a real observational dataset or proof of causal sufficiency."
+  },
+  "convolution": {
+    "question": "Can sharing a local detector transfer to unseen circular positions?",
+    "data": "Length12 periodic rings with exactly two ones: adjacent is1; separation5 is0.",
+    "training_positions": [
+      0,
+      1,
+      2
+    ],
+    "held_positions": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "cnn": {
+      "training": {
+        "steps": 800,
+        "rate": 0.3,
+        "clip": 5,
+        "before": {
+          "count": 6,
+          "nll": 0.6426225115298229,
+          "accuracy": 0.5,
+          "brier": 0.2254864997406332
+        },
+        "after": {
+          "count": 6,
+          "nll": 0.005235761942095654,
+          "accuracy": 1.0,
+          "brier": 2.728204008820339e-05
+        },
+        "checkpoints": [
+          {
+            "step": 0,
+            "loss": 0.6426225115298229,
+            "gradient_norm": 0.23664028179125726,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 200,
+            "loss": 0.0293973944208256,
+            "gradient_norm": 0.03608066383702645,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 400,
+            "loss": 0.01187862487070209,
+            "gradient_norm": 0.014764587649160754,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 799,
+            "loss": 0.005243230103555377,
+            "gradient_norm": 0.0064941650223246826,
+            "clipping_scale": 1.0
+          }
+        ],
+        "seconds": 0.13476514000012685
+      },
+      "parameters": [
+        2.4225634123416238,
+        2.4216823613238807,
+        -3.513480325791979,
+        6.299881285182557,
+        -0.24858343020592252
+      ],
+      "held": {
+        "count": 18,
+        "nll": 0.005235761942095654,
+        "accuracy": 1.0,
+        "brier": 2.728204008820339e-05
+      },
+      "rotated_positive_logit_range": 0.0
+    },
+    "flattened_linear": {
+      "training": {
+        "steps": 800,
+        "rate": 0.3,
+        "clip": 5,
+        "before": {
+          "count": 6,
+          "nll": 0.6931471805599453,
+          "accuracy": 0.5,
+          "brier": 0.25
+        },
+        "after": {
+          "count": 6,
+          "nll": 0.030655907048137466,
+          "accuracy": 1.0,
+          "brier": 0.0009661243329129798
+        },
+        "checkpoints": [
+          {
+            "step": 0,
+            "loss": 0.6931471805599453,
+            "gradient_norm": 0.2041241452319315,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 200,
+            "loss": 0.12249475217649626,
+            "gradient_norm": 0.04364570623014273,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 400,
+            "loss": 0.06217987125271348,
+            "gradient_norm": 0.02284420916280657,
+            "clipping_scale": 1.0
+          },
+          {
+            "step": 799,
+            "loss": 0.03069529330395505,
+            "gradient_norm": 0.011461696245784936,
+            "clipping_scale": 1.0
+          }
+        ],
+        "seconds": 0.09562616799985335
+      },
+      "parameters": [
+        1.4184865652052436,
+        3.161087980219575,
+        2.09171382802297,
+        3.112294401163728,
+        0.0,
+        -3.5488595398518044,
+        -4.939747991162589,
+        -4.154070439465862,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.4295475979343713
+      ],
+      "held": {
+        "count": 18,
+        "nll": 2.4415694067384184,
+        "accuracy": 0.3333333333333333,
+        "brier": 0.4924013424627134
+      }
+    },
+    "parameters": {
+      "cnn": 5,
+      "flat_linear": 13
+    },
+    "limitations": "Held rotations are a structural equivariance check, not independent examples from an unknown natural-image distribution. Circular padding and global pooling are essential."
+  },
+  "recurrence": {
+    "question": "Does a fitted recurrent state retain the first sign across blank steps, and what training assumptions break?",
+    "training": {
+      "steps": 900,
+      "rate": 0.15,
+      "clip": 1,
+      "before": {
+        "count": 6,
+        "nll": 0.5958465984262639,
+        "accuracy": 1.0,
+        "brier": 0.20176464475708392
+      },
+      "after": {
+        "count": 6,
+        "nll": 0.007580318234032812,
+        "accuracy": 1.0,
+        "brier": 5.7077167321503816e-05
+      },
+      "checkpoints": [
+        {
+          "step": 0,
+          "loss": 0.5958465984262639,
+          "gradient_norm": 0.27574645186561514,
+          "clipping_scale": 1.0
+        },
+        {
+          "step": 225,
+          "loss": 0.030900158708219674,
+          "gradient_norm": 0.030328687121384732,
+          "clipping_scale": 1.0
+        },
+        {
+          "step": 450,
+          "loss": 0.015316821298917614,
+          "gradient_norm": 0.015169725376448579,
+          "clipping_scale": 1.0
+        },
+        {
+          "step": 899,
+          "loss": 0.007588864531459914,
+          "gradient_norm": 0.007550316299495099,
+          "clipping_scale": 1.0
+        }
+      ],
+      "seconds": 0.08610368100016785
+    },
+    "parameters": [
+      1.280598712708155,
+      2.513192923966464,
+      -1.669671345627665e-18,
+      4.9693657674110865,
+      -7.849623728795011e-18
+    ],
+    "training_lengths": [
+      2,
+      4,
+      8
+    ],
+    "blank_extension": {
+      "2": {
+        "count": 2,
+        "nll": 0.007898903600125275,
+        "accuracy": 1.0,
+        "brier": 6.190210749509203e-05
+      },
+      "8": {
+        "count": 2,
+        "nll": 0.007419856012085054,
+        "accuracy": 1.0,
+        "brier": 5.4647530992917706e-05
+      },
+      "16": {
+        "count": 2,
+        "nll": 0.007419855956598136,
+        "accuracy": 1.0,
+        "brier": 5.464753017862127e-05
+      },
+      "32": {
+        "count": 2,
+        "nll": 0.007419855956598136,
+        "accuracy": 1.0,
+        "brier": 5.464753017862127e-05
+      },
+      "64": {
+        "count": 2,
+        "nll": 0.007419855956598136,
+        "accuracy": 1.0,
+        "brier": 5.464753017862127e-05
+      },
+      "128": {
+        "count": 2,
+        "nll": 0.007419855956598136,
+        "accuracy": 1.0,
+        "brier": 5.464753017862127e-05
+      }
+    },
+    "large_final_distractor": {
+      "count": 4,
+      "nll": 2.4916064083856617,
+      "accuracy": 0.5,
+      "brier": 0.4931479871062442
+    },
+    "initial_first_input_loss_derivative": {
+      "2": -0.08674014134689798,
+      "8": -0.001538259399555482,
+      "16": -6.022401191480895e-06,
+      "32": -9.189536420879429e-11,
+      "64": -2.1396056800435103e-20,
+      "128": -1.1598825632827495e-39
+    },
+    "analytic_linear_state_derivative": {
+      "0.5": {
+        "2": 0.5,
+        "8": 0.0078125,
+        "32": 4.656612873077393e-10,
+        "64": 1.0842021724855044e-19
+      },
+      "1": {
+        "2": 1,
+        "8": 1,
+        "32": 1,
+        "64": 1
+      },
+      "1.5": {
+        "2": 1.5,
+        "8": 17.0859375,
+        "32": 287626.58884932613,
+        "64": 124093581919.64894
+      }
+    },
+    "limitations": "Only six noiseless training sequences; two examples at each held blank length are not a real sequence benchmark. The large new distractor is a declared distribution change."
+  },
+  "mixtures": {
+    "question": "Can latent assignments fit a two-mode density, and does better likelihood ensure meaningful structure?",
+    "data": "Independent synthetic draws: weight.4 N(-2,.35^2), weight.6 N(2,.55^2).",
+    "seeds": {
+      "train": 601,
+      "held": 602,
+      "sample": 603
+    },
+    "training_count": 160,
+    "held_count": 512,
+    "steps": 40,
+    "variance_floor": 0.01,
+    "runs": {
+      "separated_initialization": {
+        "before_nll": 2.126355930606772,
+        "training_nll": 1.3279737427330711,
+        "held_nll": 1.2906569925318359,
+        "likelihood_decrease_max": 0,
+        "weights": [
+          0.3937499730706754,
+          0.6062500269293246
+        ],
+        "means": [
+          -1.9847105488303576,
+          2.0022021604633107
+        ],
+        "variances": [
+          0.12295449670285803,
+          0.31650281846505857
+        ],
+        "sample": [
+          -2.4131807320443746,
+          2.6543368829139453,
+          -2.0428669200594367,
+          0.9968814721841885,
+          2.018404614337898,
+          1.742897953272451,
+          2.0814444058909203,
+          2.337495278252651,
+          2.485368929688089,
+          2.013227392833612,
+          1.586838808187414,
+          -1.8764319553558098
+        ],
+        "history": [
+          2.126355930606772,
+          1.957935988614361,
+          1.6679060480488936,
+          1.3821681437430366,
+          1.3279737427370624,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711,
+          1.3279737427330711
+        ]
+      },
+      "identical_initialization": {
+        "before_nll": 2.3209240018070467,
+        "training_nll": 2.116406531812226,
+        "held_nll": 2.1205294999686637,
+        "likelihood_decrease_max": 0,
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "means": [
+          0.43235538854379546,
+          0.43235538854379546
+        ],
+        "variances": [
+          4.03471633128675,
+          4.03471633128675
+        ],
+        "sample": [
+          -2.0220986278334556,
+          2.7607416963918605,
+          0.09921169609264369,
+          -3.157048526017267,
+          0.4902047415323333,
+          -0.4934661400534632,
+          0.7152824477922767,
+          1.6294882472921426,
+          2.157457351589967,
+          0.47171995418965545,
+          -1.0506607872959746,
+          1.0526198528006616
+        ],
+        "history": [
+          2.3209240018070467,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226,
+          2.116406531812226
+        ]
+      }
+    },
+    "identical_data_floor_cases": [
+      {
+        "floor": 0.01,
+        "variance": 0.01,
+        "nll": -1.3836465597893728
+      },
+      {
+        "floor": 1e-06,
+        "variance": 1e-06,
+        "nll": -5.9888167457774655
+      },
+      {
+        "floor": 1e-12,
+        "variance": 1e-12,
+        "nll": -12.896572024759601
+      }
+    ],
+    "limitations": "A one-dimensional assumed Gaussian family with known synthetic generating process; component identities are permutable. Degenerate repeated data are not evidence of useful generalization."
+  },
+  "bigrams": {
+    "question": "Does matching local transitions preserve a dependency on the first symbol?",
+    "documents": [
+      "axxa",
+      "axxxa",
+      "axxxxa",
+      "axxxxxa",
+      "bxxb",
+      "bxxxb",
+      "bxxxxb",
+      "bxxxxxb"
+    ],
+    "alphabet": [
+      "a",
+      "b",
+      "x"
+    ],
+    "alpha": 0.1,
+    "counts": [
+      [
+        0,
+        0,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        4,
+        4
+      ],
+      [
+        4,
+        4,
+        20,
+        0
+      ],
+      [
+        4,
+        4,
+        0,
+        0
+      ]
+    ],
+    "training_nll_including_eos": 0.7617399527891143,
+    "condition_on_next_symbol_being_a_or_b": {
+      "a": 0.5,
+      "b": 0.5
+    },
+    "samples": [
+      {
+        "text": "b",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "b",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "axxbxxxxxb",
+        "terminated": true
+      },
+      {
+        "text": "b",
+        "terminated": true
+      },
+      {
+        "text": "b",
+        "terminated": true
+      },
+      {
+        "text": "axxa",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "axa",
+        "terminated": true
+      },
+      {
+        "text": "bxxb",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "a",
+        "terminated": true
+      },
+      {
+        "text": "ba",
+        "terminated": true
+      }
+    ],
+    "limitations": "The model conditions on only the previous character. Equal a/b conditional probability is an exact structural failure to remember the first bit, even if some samples happen to match it."
+  },
+  "scope": "Actual independent synthetic teaching experiments. No historical benchmark, natural image task, real language model, causal estimate or production performance certification."
+}

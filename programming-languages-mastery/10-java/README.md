@@ -42,3 +42,7 @@ Projects, in increasing scope: bytecode inspection; class loading; GC/runtime ex
 | [Projects](25_PROJECTS.md) | SCAFFOLDED |
 | [Reference](26_REFERENCE.md) | SCAFFOLDED |
 | [Mastery](27_MASTERY.md) | SCAFFOLDED |
+
+## Developed Java17 unit
+
+After references and threads, build [objects, resource lifetime and compound updates](units/objects-resources-threads/README.md). Compare cloned arrays, suppressed close exceptions, volatile lost updates, atomic/monitor updates and actual bytecode.

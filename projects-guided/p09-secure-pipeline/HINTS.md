@@ -1,9 +1,7 @@
-# Progressive hints
+# Hints after an independent design
 
-**Hint 1:** Draw the state machine/data-flow for `identity → authz → integrity → confidentiality → audit → recovery` before choosing classes/functions.
+For A1–A2, first reject ambiguous or unsupported semantic objects, then authenticate one documented canonical form. The same numeric value in Celsius and milli-Celsius is not the same claim. Derive ipad/opad over the block-normalized key and check an independent vector.
 
-**Hint 2:** Separate pure transformation logic from I/O so tests can isolate mechanisms.
+For A3, a correct tag only establishes the configured key holder; stream permission and replay are independent gates. Rejections must leave count/last/tip unchanged. For A4, bind transform/version and exact output as well as the input.
 
-**Hint 3:** Make failure states explicit rather than relying on exceptions/logs as the design.
-
-**Hint 4:** Only optimize after a baseline benchmark identifies a bottleneck.
+For A5–A6, an error can occur after bytes were written, and a valid prefix remains a valid chain. An external trusted expected tip supplies information the file cannot supply about its own missing end. Full exercise hints and separated solutions are in the [mechanism unit](../../security-cryptography-mastery/provenance/EXERCISES.md).

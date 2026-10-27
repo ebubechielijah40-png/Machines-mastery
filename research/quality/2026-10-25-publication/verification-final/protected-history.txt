@@ -1,0 +1,21 @@
+test_different_aad_does_not_repair_reused_nonce (test_protected_ledger.PrimitiveTests.test_different_aad_does_not_repair_reused_nonce) ... ok
+test_independent_polynomial_reduction_and_length_binding (test_protected_ledger.PrimitiveTests.test_independent_polynomial_reduction_and_length_binding) ... ok
+test_inspected_nist_examples_and_explicit_ghash (test_protected_ledger.PrimitiveTests.test_inspected_nist_examples_and_explicit_ghash) ... ok
+test_after_commit_unknown_ack_reconciles_on_reopen (test_protected_ledger.ProtectedTests.test_after_commit_unknown_ack_reconciles_on_reopen) ... ok
+test_ciphertext_header_and_suffix_tampering (test_protected_ledger.ProtectedTests.test_ciphertext_header_and_suffix_tampering) ... ok
+test_configuration_rejects_alias_keys_and_noncontiguous_epochs (test_protected_ledger.ProtectedTests.test_configuration_rejects_alias_keys_and_noncontiguous_epochs) ... ok
+test_corrupted_counter_repetition_refused_before_encryption (test_protected_ledger.ProtectedTests.test_corrupted_counter_repetition_refused_before_encryption) ... ok
+test_fresh_receipt_binds_configuration_identity_and_key (test_protected_ledger.ProtectedTests.test_fresh_receipt_binds_configuration_identity_and_key) ... ok
+test_history_rotations_and_exact_original_retry (test_protected_ledger.ProtectedTests.test_history_rotations_and_exact_original_retry) ... ok
+test_nonce_reservation_is_not_rolled_back_with_local_transaction (test_protected_ledger.ProtectedTests.test_nonce_reservation_is_not_rolled_back_with_local_transaction) ... ok
+test_old_backup_rejected_by_current_authority (test_protected_ledger.ProtectedTests.test_old_backup_rejected_by_current_authority) ... ok
+test_real_process_kill_before_and_after_commit (test_protected_ledger.ProtectedTests.test_real_process_kill_before_and_after_commit) ... ok
+test_retired_key_new_sequence_and_stream_rejected (test_protected_ledger.ProtectedTests.test_retired_key_new_sequence_and_stream_rejected) ... ok
+test_two_actual_process_writers_serialize (test_protected_ledger.ProtectedTests.test_two_actual_process_writers_serialize) ... ok
+test_valid_signed_authority_with_wrong_configuration_rejected (test_protected_ledger.ProtectedTests.test_valid_signed_authority_with_wrong_configuration_rejected) ... ok
+test_wrong_key_and_gap_do_not_mutate_history (test_protected_ledger.ProtectedTests.test_wrong_key_and_gap_do_not_mutate_history) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.524s
+
+OK

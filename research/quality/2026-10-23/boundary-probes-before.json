@@ -1,0 +1,42 @@
+{
+  "reviewer": "root integration; independent of these module authors",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "code_sha256": {
+    "20-quantum-computing/noise-correction/noise.py": "1c2e3856697aff37addb3c9e01ba2582341f89ec997b5193ab4c9fb817428f14",
+    "18-computational-biology/population-phylogeny/phylogeny.py": "06b23088ed3ac883cbc32075442de90511423310c1967cc24f41d546c5c90101",
+    "13-privacy/count-release/count_release.py": "675dec57f8661795a42be26326cc050e6c1309901b28cce9b6ae1439dc4fd591"
+  },
+  "results": [
+    {
+      "probe": "unnormalized_large_state",
+      "exception": "OverflowError",
+      "message": "(34, 'Numerical result out of range')",
+      "controlled_rejection": false
+    },
+    {
+      "probe": "unrepresentable_integer",
+      "exception": "OverflowError",
+      "message": "int too large to convert to float",
+      "controlled_rejection": false
+    },
+    {
+      "probe": "unnormalized_large_vector",
+      "exception": "OverflowError",
+      "message": "(34, 'Numerical result out of range')",
+      "controlled_rejection": false
+    },
+    {
+      "probe": "invalid_transposed_entry",
+      "exception": "TypeError",
+      "message": "unsupported operand type(s) for -: 'int' and 'NoneType'",
+      "controlled_rejection": false
+    },
+    {
+      "probe": "finite_inputs_overflow_output",
+      "returned": "-inf",
+      "controlled_rejection": false
+    }
+  ],
+  "limits": "Selected input-boundary probes, not a universal scientific or numerical correctness proof."
+}

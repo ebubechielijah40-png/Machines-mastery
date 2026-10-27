@@ -1,0 +1,15 @@
+test_constraints_and_transaction_rollback (test_relations.RelationTests.test_constraints_and_transaction_rollback) ... ok
+test_group_counts_and_all_null_group_against_sql (test_relations.RelationTests.test_group_counts_and_all_null_group_against_sql) ... ok
+test_index_preserves_ordered_result (test_relations.RelationTests.test_index_preserves_ordered_result) ... ok
+test_join_multiplicity_and_null (test_relations.RelationTests.test_join_multiplicity_and_null) ... ok
+test_narrow_interface_rejects_wrong_domains (test_relations.RelationTests.test_narrow_interface_rejects_wrong_domains) ... ok
+test_projection_preserves_bag_until_distinct (test_relations.RelationTests.test_projection_preserves_bag_until_distinct) ... ok
+test_random_join_differential_oracle_preserves_duplicates (test_relations.RelationTests.test_random_join_differential_oracle_preserves_duplicates) ... ok
+test_real_wal_schedule_and_stale_application_update (test_relations.RelationTests.test_real_wal_schedule_and_stale_application_update) ... ok
+test_sql_outer_filter_and_not_in_counterexamples (test_relations.RelationTests.test_sql_outer_filter_and_not_in_counterexamples) ... ok
+test_three_valued_truth_against_real_sql (test_relations.RelationTests.test_three_valued_truth_against_real_sql) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.009s
+
+OK

@@ -1,103 +1,27 @@
-# Scientific reasoning — self-contained phase guide
+# Scientific reasoning through a measurement pipeline
 
-This guide supplements the phase README with a learner-facing mechanism/application path. For each module, perform the example, code/lab task, and limitation check.
+A reproducible computation answers whether stated inputs and rules produce a result. Scientific validity also asks whether those inputs, rules and assumptions represent the phenomenon. This guide develops that distinction through the [measurement pipeline](../projects-guided/p08-scientific-pipeline/README.md), which supplies a full worked model, runnable implementation, independent tests, a synthetic experiment and exercises.
 
-## 1. Measurement
+## Observation, competing model, discriminating experiment
 
-**Problem.** Identify the real system problem that makes measurement necessary.
+Suppose repeated temperature readings scatter around one value. Model A has independent reading errors. Model B adds an uncertain offset shared across all readings. Both can produce similar short batches. A mean alone does not distinguish them. Derive their prediction before simulating: averaging n independent errors reduces their variance by n; a shared offset remains unchanged. The implemented experiment holds per-reading standard deviation at 2 milli-Celsius, calibration standard deviation at 5, and 10000 synthetic trials; it varies n and compares shared versus independent calibration draws.
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+The predictions are `25+4/n` and `29/n` in milli-Celsius squared. [Actual calculations](../projects-guided/p08-scientific-pipeline/evidence/observed.json) show the shared model near 25 at n=100 while the independent model is near .29. This establishes behavior of the executed synthetic models. It does not establish that a physical instrument's errors are independent, Gaussian or stationary. A real discriminating experiment would interleave reference standards, record elapsed time and environmental conditions, and compare independent instruments or randomized conditions.
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
+## A model includes units and uncertainty
 
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
+Three synthetic readings 25000,25002,24998 milli-Celsius have mean25000 and sample variance4 milli-Celsius squared. Adding a -10 milli-Celsius correction changes the mean to24990, not the scatter. Under the stated model the mean's repeatability variance is4/3, and a common calibration standard uncertainty5 contributes25 once. Combined standard uncertainty is `sqrt(79/3)/1000` Celsius. The [measurement source record](../projects-guided/p08-scientific-pipeline/SOURCES.md) traces standard uncertainty/covariance concepts to inspected NIST scopes. The numerical example and scalar derivation are original.
 
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
+A confidence claim needs distributional and estimation conditions; `±u` is not automatically95% coverage. A calibrated estimate is also different from an authenticated statement: a valid MAC can preserve a false measurement claim perfectly. The [provenance counterexample](../security-cryptography-mastery/provenance/LESSON.md) makes that failure observable.
 
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
+## Keep an evidence ledger
 
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
+For each investigation write the question, competing hypotheses, controlled/varied variables, procedure, instrumentation, predicted behavior, actual output location, interpretation, alternatives, limitations and follow-up. Use the executable experiment's own environment metadata. If a trial was not executed, label it proposed and do not invent observations. If source access failed, record that failure without claiming verification.
 
-## 2. Hypotheses
+Separate three kinds of check. A literal-vector test can refute an implementation error. A mathematical derivation proves a property under assumptions. A controlled empirical study tests how a phenomenon matches those assumptions under observed conditions. Passing one kind does not silently substitute for the other two. The [privacy unit](../13-privacy/count-release/LESSON.md) illustrates this sharply: utility moments and density grids cannot certify every output event of a finite sampler.
 
-**Problem.** Identify the real system problem that makes hypotheses necessary.
+## Assessment and progression
 
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
+First complete the measurement project's hand derivation and independent variance oracle. Next predict the correlation experiment before running it. Then attempt its transfer problem about drift without timestamps. Finally reproduce the authenticated-false-claim case and explain which uncertainty remains. The project's separate hints and solutions support independent checking.
 
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 3. Experiment Design
-
-**Problem.** Identify the real system problem that makes experiment design necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 4. Causality
-
-**Problem.** Identify the real system problem that makes causality necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 5. Uncertainty
-
-**Problem.** Identify the real system problem that makes uncertainty necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## 6. Reproduction
-
-**Problem.** Identify the real system problem that makes reproduction necessary.
-
-**Mechanism.** Describe state, inputs, outputs, transformations, invariants, resource costs, and failure modes. Descend one abstraction layer below the normal API.
-
-**Example.** Construct the smallest concrete example that exhibits the mechanism; trace it by hand before running it.
-
-**Code/application.** Implement a bounded model or inspect an existing executable lab. Add correctness tests and at least one adversarial/edge case.
-
-**Experiment.** Change one variable (input size, latency, memory, noise, concurrency, failure, or assumption), measure, and compare with a prediction.
-
-**Production/real-world question.** What changes at 1×, 100×, and 10,000× load/data/state? What becomes observable only in production?
-
-**Limit.** State one thing this model cannot establish and one condition under which it fails.
-
-## Exit assignment
-
-Build one small system combining at least three modules. Provide tests, an experiment log, a failure analysis, and a reconstruction sketch created without looking at the implementation.
+Reconstruction challenge: without notes, write the two competing models, derive both variance curves, identify their units, list one real confounder, and design a new observation that can distinguish it. This guide and bounded project are STRONG for the stated mechanism. The scientific-reasoning domain remains PARTIAL: causal identification, randomized trials, formal hypothesis testing, multiple comparisons, power analysis and research ethics need further substantive units.

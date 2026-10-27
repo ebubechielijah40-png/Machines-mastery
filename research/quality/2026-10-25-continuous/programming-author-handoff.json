@@ -1,0 +1,75 @@
+{
+  "author_role": "compiler/runtime unit author; not independent reviewer",
+  "base_commit": "8d33648596bdd524fbc8d16620d2bb13ace217f9",
+  "files_changed": [
+    "02-programming/README.md",
+    "02-programming/SELF_CONTAINED_GUIDE.md",
+    "02-programming/compiler-runtime/EXERCISES.md",
+    "02-programming/compiler-runtime/EXPERIMENTS.md",
+    "02-programming/compiler-runtime/HINTS.md",
+    "02-programming/compiler-runtime/README.md",
+    "02-programming/compiler-runtime/REVIEW.md",
+    "02-programming/compiler-runtime/SOLUTIONS.md",
+    "02-programming/compiler-runtime/SOURCES.md",
+    "02-programming/compiler-runtime/evidence/observed-2026-10-25.json",
+    "02-programming/compiler-runtime/evidence/tests-2026-10-25.txt",
+    "02-programming/compiler-runtime/evidence/tests-integrated-2026-10-25.txt",
+    "02-programming/compiler-runtime/experiment.py",
+    "02-programming/compiler-runtime/flow.py",
+    "02-programming/compiler-runtime/test_flow.py"
+  ],
+  "source_hashes": {
+    "02-programming/compiler-runtime/flow.py": "59dedd0c1f7f2ccf75044f5b9d8d9496cd6a1f5ba0969d2f84c427b5ff4a7e4a",
+    "02-programming/compiler-runtime/test_flow.py": "a85a3e9597fae205dc8908af1248f0aadccded7566233fce409e2bc8dc7946a1",
+    "02-programming/compiler-runtime/experiment.py": "7a3e48165fbacb5f305dc1a293737f00c2dd78b614d91de99bfc3f5528728872"
+  },
+  "commands_executed": [
+    [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "02-programming/compiler-runtime",
+      "-v"
+    ],
+    [
+      "python3",
+      "02-programming/compiler-runtime/experiment.py",
+      "--output",
+      "02-programming/compiler-runtime/evidence/observed-2026-10-25.json"
+    ],
+    [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "02-programming/python-entry",
+      "-v"
+    ],
+    [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      "02-programming"
+    ]
+  ],
+  "outcomes": {
+    "new_test_methods": 15,
+    "finite_arithmetic_cases": 1335,
+    "sum_closed_form_cases": 31,
+    "entry_test_methods": 6,
+    "local_markdown_links": "all resolved in author check",
+    "whitespace": "PASS"
+  },
+  "source_records": "02-programming/compiler-runtime/SOURCES.md",
+  "limits": [
+    "No domain gate or score assigned by author",
+    "No formal proof of implementation/source equivalence",
+    "No hostile-code sandbox",
+    "No general functions/heap/GC/nativeABI/concurrent runtime completion",
+    "Author observations do not establish learner mastery"
+  ]
+}

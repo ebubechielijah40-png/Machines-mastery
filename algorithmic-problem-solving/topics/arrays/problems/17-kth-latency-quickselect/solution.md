@@ -12,7 +12,7 @@ Why keep the baseline? Because optimization without a correct reference makes it
 
 ## 3. Better / target approach
 
-Quickselect partitions around a pivot and continues only into the side containing rank k. Expected O(n) time, O(1) auxiliary space; worst-case O(n^2) for adversarial pivot choices.
+Quickselect partitions around a pivot and continues only into the side containing rank k. This implementation uses the final element deterministically: O(n²) worst-case time and O(1) auxiliary registers. Expected O(n) requires an explicit random-input or randomized-pivot assumption; this implementation supplies neither.
 
 ## 4. Derivation
 
@@ -26,11 +26,11 @@ Initialization establishes the invariant before useful work has been finalized. 
 
 ## 6. Complexity
 
-Quickselect partitions around a pivot and continues only into the side containing rank k. Expected O(n) time, O(1) auxiliary space; worst-case O(n^2) for adversarial pivot choices. Complexity claims refer to the number of abstract operations under a RAM-style cost model; they are not claims about exact wall-clock latency. Language overhead, caches, allocation and input distribution can dominate at small sizes.
+Quickselect partitions around a pivot and continues only into the side containing rank k. This implementation uses the final element deterministically: O(n²) worst-case time and O(1) auxiliary registers. Expected O(n) requires an explicit random-input or randomized-pivot assumption; this implementation supplies neither. Complexity claims refer to the number of abstract operations under a RAM-style cost model; they are not claims about exact wall-clock latency. Language overhead, caches, allocation and input distribution can dominate at small sizes.
 
 ## 7. Common wrong approach
 
-Claim deterministic O(n) while always choosing the final element as pivot. Adversarial sorted inputs make that strategy quadratic.
+Claim expected or deterministic O(n) without a distribution assumption while choosing the final element. With ascending input and k=0, every pivot is the remaining maximum, so comparisons total (n−1)+(n−2)+...+1=n(n−1)/2. Equal inputs behave similarly because the partition uses <=. Random pivot selection alone does not cure equal-value degeneration in this two-way partition; a three-way partition is a useful follow-up.
 
 ## 8. Implementation
 

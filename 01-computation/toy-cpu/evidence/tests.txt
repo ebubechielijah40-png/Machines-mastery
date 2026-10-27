@@ -1,0 +1,13 @@
+test_carry_zero_branch_and_flag_lifetime (test_cpu.CPUTests.test_carry_zero_branch_and_flag_lifetime) ... ok
+test_decode_failure_is_atomic (test_cpu.CPUTests.test_decode_failure_is_atomic) ... ok
+test_every_eight_bit_addition_against_independent_oracle (test_cpu.CPUTests.test_every_eight_bit_addition_against_independent_oracle) ... ok
+test_every_full_adder_input_against_integer_arithmetic (test_cpu.CPUTests.test_every_full_adder_input_against_integer_arithmetic) ... ok
+test_hand_program_and_memory_addressing (test_cpu.CPUTests.test_hand_program_and_memory_addressing) ... ok
+test_invalid_boundary (test_cpu.CPUTests.test_invalid_boundary) ... ok
+test_multiply_all_small_values_and_modular_overflow (test_cpu.CPUTests.test_multiply_all_small_values_and_modular_overflow) ... ok
+test_wrap_budget_and_self_modification_are_explicit (test_cpu.CPUTests.test_wrap_budget_and_self_modification_are_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.324s
+
+OK

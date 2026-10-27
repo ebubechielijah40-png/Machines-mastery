@@ -1,0 +1,6 @@
+{
+  "source": "alignment/SOLUTIONS.md python fence",
+  "cases_against_exhaustive_oracle": 675,
+  "passed": true,
+  "scope": "pure score-only solution; public API validation intentionally omitted"
+}

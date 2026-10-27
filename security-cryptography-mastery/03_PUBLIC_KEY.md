@@ -1,0 +1,3 @@
+# Public-key cryptography
+
+Public-key systems separate public verification/encryption material from private signing/decryption material. RSA, finite-field DH, and elliptic-curve systems rely on different hard problems and standardized encodings. The protocol context matters: raw textbook RSA is not secure encryption. Digital signatures authenticate possession of a private key, not a human identity unless a trustworthy binding exists. Lab: generate a keypair with a standard library, sign a message, mutate one byte, verify failure, then inspect certificate/key metadata without exposing private keys.

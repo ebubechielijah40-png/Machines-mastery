@@ -1,0 +1,29 @@
+{
+  "kind": "actual executed bounded systems checks",
+  "executed_at_utc": "2026-10-23T10:45:37.267267+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "passed": true,
+  "records": [
+    {
+      "name": "shell",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "projects-guided/p02-shell/code",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/9b275ae18bcb/development/machines-mastery",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_syntax_and_caps (test_minishell.ShellTests.test_bad_syntax_and_caps) ... ok\ntest_cd_changes_shell_state_not_parent_process (test_minishell.ShellTests.test_cd_changes_shell_state_not_parent_process) ... ok\ntest_cli_exit_and_syntax_failure (test_minishell.ShellTests.test_cli_exit_and_syntax_failure) ... ok\ntest_failure_and_timeout_cleanup (test_minishell.ShellTests.test_failure_and_timeout_cleanup) ... ok\ntest_invalid_runtime_control_values (test_minishell.ShellTests.test_invalid_runtime_control_values) ... ok\ntest_large_output_does_not_deadlock_pipe_wait (test_minishell.ShellTests.test_large_output_does_not_deadlock_pipe_wait) ... ok\ntest_metacharacters_are_data_and_exit_codes_are_retained (test_minishell.ShellTests.test_metacharacters_are_data_and_exit_codes_are_retained) ... ok\ntest_quote_escape_and_operator_boundary (test_minishell.ShellTests.test_quote_escape_and_operator_boundary) ... ok\ntest_real_pipeline_and_eof (test_minishell.ShellTests.test_real_pipeline_and_eof) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.238s\n\nOK\n"
+    }
+  ]
+}

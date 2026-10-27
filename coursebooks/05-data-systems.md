@@ -1,45 +1,49 @@
-# Data Systems — original self-contained coursebook
+# Data systems: meaning, query execution and recovery
 
-This is an original teaching text for **relational models, storage engines, indexes, transactions, pipelines, streaming, provenance and scaling**. It is not a reproduction of any copyrighted textbook. Use it as the narrative entry point, then follow the linked deep guides/labs for implementations and tests.
+This developed route uses original WAL, relational and isolation mechanisms.
+The full coursebook remains PARTIAL: page layout/B+trees, optimizer design,
+compaction, broader concurrency control, streaming and distributed storage still
+need deeper implementation and instruction.
 
-## How to read this coursebook
+## Preserve distinctions before optimizing a query
 
-For each topic: identify the problem that forced the concept to exist; build the simplest model; trace state and interfaces; predict behavior; run an experiment; then reconstruct from memory. Definitions without mechanisms do not count as understanding.
+A missing measurement, known zero and absent row are different states. In SQL,
+`amount=NULL` is unknown and is not retained by WHERE; `amount IS NULL` asks a
+presence question. A left join first introduces a NULL-extended row for an
+unmatched left input, but a later WHERE on a right amount can remove it. Moving
+the same predicate into ON changes the preserved result. Read and hand-evaluate
+[the SQL unit](../programming-languages-mastery/11-sql/units/null-and-joins/README.md)
+before treating an executable query as a correct scientific question.
 
-## Core questions
+The [query/isolation unit](../07-databases-data-systems/query-isolation/README.md)
+implements bag selection/join/grouping and differentially checks exact results
+against SQLite. An index can change access work while preserving query meaning;
+its existence does not justify changing which NULLs, duplicates or rows count.
+Bind values separately from SQL structure. A correct aggregate over a biased
+collection remains a biased description of the target population.
 
-1. What state exists, and where?
-2. What transforms that state?
-3. What information enters and leaves?
-4. What resources are consumed?
-5. What invariants must remain true?
-6. What assumptions make the model valid?
-7. What breaks first under scale, noise, concurrency, or adversarial input?
-8. What experiment would distinguish two competing explanations?
-9. What can be implemented as a minimal model?
-10. What remains impossible or unknowable from the available evidence?
+## A successful write response carries a failure contract
 
-## Learning architecture
+The [storage-engine project](../projects-guided/p07-storage-engine/README.md)
+frames complete transactions with a CRC, scans recovery state and distinguishes
+a torn tail from corrupt committed content. It tests every cut position and
+poisons an object after uncertain synchronization failure. Reopening can reveal
+bytes written before the caller observed an exception; blind retry can duplicate
+an operation. CRC detects selected corruption patterns, not malicious authenticity.
+The [provenance build](../projects-guided/p09-secure-pipeline/README.md) supplies a
+different authenticated-history mechanism with its own key/trusted-tip assumptions.
 
-Start with an observable phenomenon. Descend abstractions until you can explain the mechanism, then rise again to application. The same pattern applies whether the system is a CPU, database, protein sequence pipeline, robot, or quantum circuit.
+## Isolation describes schedules, not one magic transaction keyword
 
-### Worked-method example
-Suppose a system becomes slow. “It is slow” is an observation, not a diagnosis. Measure latency distribution and throughput; inspect CPU, memory, I/O, queueing, lock contention, cache behavior, and dependency latency; form a hypothesis; change one variable; measure again. The result is evidence for or against the model, not proof of every causal story.
+In the locally observed SQLite WAL schedule, an existing reader retains its
+snapshot while another connection commits; a fresh reader sees the later values.
+A stale reader trying to upgrade to a writer can be rejected. A read/application-
+compute/write sequence can overwrite a newer balance unless the operation and
+transaction semantics preserve the intended invariant. The unit retains actual
+engine/version, exact schedules and result codes; no cross-engine equivalence
+is inferred from this one backend.
 
-## Required practice
-
-- at least one hand-worked state trace;
-- at least one executable model;
-- at least one failure injection or counterexample;
-- at least one scaling/complexity measurement where meaningful;
-- one reconstruction without notes;
-- one transfer problem with unfamiliar surface details.
-
-## Deep material
-- `07-databases-data-systems/README.md`
-- `08-information-science/README.md`
-- `10-data-science/README.md`
-
-## Exit standard
-
-Do not exit because you have read the file. Exit when you can explain the mechanism, implement a bounded version, test it, state limitations, and transfer the model to a new case.
+Exit: derive an outer-join result, reconstruct a WAL recovery boundary and trace
+two transaction schedules with predicted/actual values. Explain durability,
+atomicity, isolation, authenticity and measurement truth separately. Add a
+counterexample where each one alone fails the application's desired guarantee.

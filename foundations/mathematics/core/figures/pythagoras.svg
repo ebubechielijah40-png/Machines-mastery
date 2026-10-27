@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 390" role="img" aria-labelledby="title desc">
+  <title id="title">Area construction for the right triangle distance relation</title>
+  <desc id="desc">An outer square with side a plus b contains four equal right triangles and an inner square whose sides are the hypotenuses. Their areas give a squared plus b squared equals h squared.</desc>
+  <rect width="420" height="390" fill="white"/>
+  <g transform="translate(60 35) scale(40)" stroke="#243246" stroke-width="0.035">
+    <path d="M0 0H4L0 3Z" fill="#e0edf9"/>
+    <path d="M4 0H7V4Z" fill="#e0edf9"/>
+    <path d="M7 4V7H3Z" fill="#e0edf9"/>
+    <path d="M3 7H0V3Z" fill="#e0edf9"/>
+    <path d="M0 3L4 0L7 4L3 7Z" fill="#d6eee0"/>
+  </g>
+  <g font-family="sans-serif" font-size="18" fill="#172334" text-anchor="middle">
+    <text x="140" y="23">b</text><text x="280" y="23">a</text>
+    <text x="38" y="100">a</text><text x="38" y="245">b</text>
+    <text x="202" y="187">h²</text><text x="126" y="102">h</text>
+    <text x="202" y="355">(a + b)² = 4(ab/2) + h²</text>
+  </g>
+</svg>

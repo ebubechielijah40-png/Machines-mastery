@@ -1,0 +1,82 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "cryptography": "50.0.2",
+    "sqlite": "3.53.1",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "source_sha256": {
+    "pipeline.py": "be1ac0b4797486999e0acaa981dd677ebbe17661fad11d5f2042a6b304f0a9fd",
+    "protected_ledger.py": "690d58a2bde7468c817e257a3b46b6ce94d6dca64c08a8ad62e66ec2386817ef",
+    "gcm_mechanics.py": "e60307172d657f4630c509efbcafeb4c72d73f55e962a75953de8d914243f940",
+    "protected_demo.py": "ce5529caaa7206df795b0fb7cc3226748c2d8c6a388929f0d3e9c0af161a8b69",
+    "protected_worker.py": "8f0e5b546844df69aacddffa9968210430c335e67caba4fddae35bd61f9220e0",
+    "protected_experiment.py": "ac0f228af2b5c36f4c2a544b92256e3b94abc1d795a369293a80259d1721e4c2"
+  },
+  "rotations": {
+    "count": 4,
+    "writer_key_ids": [
+      "alpha-old",
+      "alpha-old",
+      "alpha-new",
+      "alpha-new"
+    ],
+    "encryption_key_ids": [
+      "cipher-old",
+      "cipher-old",
+      "cipher-new",
+      "cipher-new"
+    ],
+    "final_values": {
+      "alpha/room": {
+        "denominator": 1000,
+        "numerator": 25004,
+        "unit": "celsius"
+      }
+    }
+  },
+  "concurrent": {
+    "child_exit_codes": [
+      0,
+      0
+    ],
+    "entries": 12,
+    "unique_nonces": 12
+  },
+  "process_kills": [
+    {
+      "stage": "after_nonce",
+      "exit_code": -9,
+      "retry_was_replay": false,
+      "recovered_count": 1,
+      "retained_nonce": "000000000000000000000002"
+    },
+    {
+      "stage": "before_commit",
+      "exit_code": -9,
+      "retry_was_replay": false,
+      "recovered_count": 1,
+      "retained_nonce": "000000000000000000000002"
+    },
+    {
+      "stage": "after_commit",
+      "exit_code": -9,
+      "retry_was_replay": true,
+      "recovered_count": 1,
+      "retained_nonce": "000000000000000000000001"
+    },
+    {
+      "stage": "after_witness",
+      "exit_code": -9,
+      "retry_was_replay": true,
+      "recovered_count": 1,
+      "retained_nonce": "000000000000000000000001"
+    }
+  ],
+  "rollback": {
+    "old_ledger_current_authority_rejected": true,
+    "both_stores_rolled_back_undetected_count": 1
+  },
+  "same_key_nonce_different_aad_exposes_plaintext_xor": true,
+  "limitations": "Public demo keys, synthetic data, authorized same-host processes. Witness rollback resistance and key exclusivity are assumptions. No physical power-loss, remote PKI or production security evidence."
+}

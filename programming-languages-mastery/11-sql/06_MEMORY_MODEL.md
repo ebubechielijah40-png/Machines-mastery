@@ -1,57 +1,22 @@
-# SQL: Storage, Lifetime, Aliasing, Visibility And State Update Rules
+# SQL relation state and NULL-extended rows
 
-**Prepared reference; learner NOT STARTED.** This page is self-contained for normal study. Exact version-specific edge cases should still be checked against the installed toolchain/specification when they matter.
+A SQL row model and a storage-engine page layout answer different questions.
+This developed [join/aggregation lesson](units/null-and-joins/README.md) follows
+logical rows; B-trees, buffer pools, WAL and physical query execution remain
+separate uncompleted topics here.
 
-## Why this matters
+LEFT JOIN first identifies matches under ON, then conceptually adds a NULL right
+row for an unmatched left row. WHERE is applied after that extension. Moving a
+right-side positive-amount predicate from ON to WHERE can remove the unmatched
+customer because NULL>0 is unknown. [The lab](units/null-and-joins/lab.py) holds
+tables fixed and changes only predicate placement; its retained output changes
+from three customer rows to one. The documentation explicitly separates logical
+processing explanation from the optimizer's physical execution plan.
 
-The focus is **storage, lifetime, aliasing, visibility and state update rules**. A language feature is worth understanding when you can connect its source-level form to state, representation, guarantees, costs, and failure behavior.
-
-## Mechanism model
-
-tables/rows/columns model relations imperfectly in real DBs; NULL uses three-valued logic; physical storage/index layout is engine-specific
-
-Use this execution chain whenever applicable:
-
-`input/source → parse/compile/runtime representation → state/memory/signal transition → OS/hardware/simulator effect → observable output`.
-
-For hardware-description languages, remember that synthesizable code describes hardware structure/behavior rather than a sequential software process.
-
-## Minimal example
-
-```sql
-SELECT user_id, COUNT(*) AS n
-FROM events
-WHERE created_at >= :cutoff
-GROUP BY user_id;
-```
-
-Before running it, predict the output or state transition. Then ask what lower layer must exist for the result to occur. Change one value/type/control condition and predict again.
-
-## Failure/counterexample
-
-Create one invalid or boundary case relevant to this topic. Decide whether it should be rejected at parse/compile/elaboration time, fail at runtime/simulation, produce a defined alternate result, or enter undefined/implementation-specific behavior. Do not label a behavior without checking the language/tool contract.
-
-## Tests and experiments
-
-1. Write 3 normal tests and 3 edge cases.
-2. Inspect generated assembly/bytecode/query plan/waveform where applicable.
-3. Measure one cost: runtime, allocations, binary size, query latency, cycles, or simulated transitions.
-4. Break one assumption and record the actual diagnostic/output.
-5. Rebuild the example from memory in a new file.
-
-## Application
-
-Use this topic inside the project ladder in `25_PROJECTS.md`. Explain how the mechanism changes when the program/design grows from a toy example to a long-running production or hardware system.
-
-## Limits
-
-This page teaches the stable conceptual model; it is not an exhaustive versioned language specification. Standard-library/API surface should be consulted as reference rather than memorized. Platform ABI, optimizer/runtime, database engine, shell environment, or synthesis tool can change implementation details.
-
-## Assignment
-
-- 5 short exercises that isolate the mechanism;
-- 3 integration exercises;
-- 1 debugging exercise;
-- 1 measurement experiment;
-- 1 transfer task with unfamiliar surface syntax;
-- explain the topic aloud without using the language name, only state/transformations/constraints, then map it back to SQL.
+COUNT(*) counts joined rows, including an extension row. COUNT(right.id) counts
+actual matches only when the right identifier is guaranteed nonnull. COUNT(amount)
+counts known measurements; SUM(amount) returns NULL without nonnull input. Draw
+one customer with no order and one with an unknown order amount to derive these
+counts before seeing [the solutions](units/null-and-joins/SOLUTIONS.md).
+Transaction isolation, persistence and concurrent clients cannot be inferred from
+this in-memory single-connection semantic experiment.

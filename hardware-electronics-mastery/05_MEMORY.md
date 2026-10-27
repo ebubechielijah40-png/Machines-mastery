@@ -1,0 +1,2 @@
+# Memory from state to hierarchy
+A latch stores state through feedback; flip-flops create clocked state; registers collect bits; SRAM/DRAM use very different physical storage mechanisms; caches exploit locality; virtual memory is an OS/address-translation abstraction above physical memory. Trace one load instruction all the way from virtual address to cache lookup to memory controller conceptually. The same word “memory” spans many mechanisms.

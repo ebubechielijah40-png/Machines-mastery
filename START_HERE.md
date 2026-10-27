@@ -1,49 +1,36 @@
-# Start here — Machines Mastery, self-contained edition
+# Start with a complete bounded learning task
 
-This repository is a **prepared technical university and laboratory**, not evidence that you have mastered its contents. Its purpose is to make normal study possible without hunting through videos, random websites, or reading whole external textbooks. Original books, papers, specifications, and repositories remain evidence and verification layers; the learner-facing material is original instructional reconstruction.
+Machines Mastery contains developed original units and substantial unfinished
+curriculum. It is not yet a complete technical university or laboratory.
+Use [the connected route](STUDY_ROUTE.md) to study actual prerequisites before
+its dependent mechanisms, and [the current audit](FINAL_EXCELLENCE_AUDIT.md)
+to distinguish developed instruction from missing broad scope.
 
-## The operating loop
+Begin with [counting and units](foundations/mathematics/counting-and-units/README.md),
+[algebra/functions](foundations/mathematics/core/01_ALGEBRA_FUNCTIONS.md) and
+[Python syntax to tests](02-programming/python-entry/README.md). These introduce
+the operations used in later runnable lessons. Follow finite state into the
+CPU/C/OS path, or continue mathematical preparation into probability, control,
+learning systems and quantum states. The route names observable exit tasks.
 
-For every unit use the same cycle:
+For each unit, identify the problem and assumptions, work its intermediate
+example, attempt exercises before hints/solutions, predict the experiment,
+build and test the mechanism, investigate a failure, then reconstruct and
+transfer without the reference. Retain your own evidence separately from
+repository authors' executed examples. File creation never advances learner mastery.
 
-```text
-problem / phenomenon
-→ prerequisite bridge
-→ mental model
-→ mechanism
-→ worked examples
-→ predict before running
-→ implement
-→ test
-→ measure
-→ break
-→ debug
-→ explain
-→ reconstruct without notes
-→ transfer to an unfamiliar case
-```
+The developed units aim to make normal study possible inside the repository.
+External primary books, papers and specifications verify claims and provide
+historical depth; they are not substitutes for missing explanations. Copyrighted
+original books are not bundled, and unavailable source-dependent chapter maps
+remain explicitly limited.
 
-Do not read everything linearly. Follow `STUDY_ROUTE.md`. When a lesson uses mathematics, physics, chemistry, statistics, or electronics that you do not understand, follow the internal prerequisite link first and return afterward.
+Local security exercises use controlled synthetic data and explicit authority
+boundaries. Biological simulations make no wet-lab or empirical organism claim.
+Quantum/control simulations do not certify real hardware. Every actual result
+must be distinguished from a prediction or illustrative scenario.
 
-## What “self-contained” means
-
-You should normally be able to learn a unit from this repository alone. External material is optional for verification and historical depth. A lesson should tell you what a concept is, why it exists, how it works internally, what assumptions it makes, what it cannot do, how to test it, and where it connects to lower and higher layers.
-
-## What it does **not** mean
-
-No repository can make experimentation unnecessary. You cannot learn physical measurement without measuring, systems performance without running systems, security without threat models and controlled tests, or research without confronting uncertain evidence. Generated documentation is a map; capability comes from the work.
-
-## First route
-
-1. `SELF_CONTAINED_STUDY.md`
-2. `STUDY_ROUTE.md`
-3. Current prepared unit in `PROGRESS.md`
-4. When ready, follow the phase route rather than opening random folders.
-
-## Safety and evidence
-
-- Security work is local, authorized, defensive, or intentionally vulnerable.
-- Cryptographic teaching code marked **toy** is not production cryptography.
-- Biological exercises use public/synthetic data and do not provide wet-lab pathogen engineering instructions.
-- Quantum simulators model small ideal circuits; they do not imply access to quantum hardware or quantum advantage.
-- Benchmark and experimental result files must distinguish **expected** from **observed** results.
+Read [installation/replay instructions](INSTALL_AND_RUN.md),
+[the depth standard](DEPTH_STANDARD.md) and the current
+[development record](EXCELLENCE_PROGRESS.md). A green test validates its contract,
+not an entire field of study or a production deployment.

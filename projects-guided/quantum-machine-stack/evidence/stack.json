@@ -1,0 +1,76 @@
+{
+  "scope": "ideal/synthetic software mechanisms; no native compilation, pulse/device job or advantage claim",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "implementation_sha256": {
+    "projects-guided/quantum-machine-stack/run_stack.py": "75db1b9d695db391c6538b00372e2bcb5c088bbb2b0f59243af15d241d50c9d9",
+    "20-quantum-computing/code/simulator.py": "518278015e74ee94416eea6fa4c64fea5eb1a24ce56076544e9d7900326550ed",
+    "20-quantum-computing/noise-correction/noise.py": "1c2e3856697aff37addb3c9e01ba2582341f89ec997b5193ab4c9fb817428f14"
+  },
+  "vector_gate_probabilities": [
+    0.4999999999999999,
+    0.4999999999999999
+  ],
+  "density_after_gate": [
+    [
+      [
+        0.49999999999999983,
+        0.0
+      ],
+      [
+        0.2999999999999999,
+        0.39999999999999986
+      ]
+    ],
+    [
+      [
+        0.2999999999999999,
+        -0.39999999999999986
+      ],
+      [
+        0.49999999999999983,
+        0.0
+      ]
+    ]
+  ],
+  "vector_density_residual": 0.0,
+  "noise": {
+    "phase_flip_probability": 0.5,
+    "output_density": [
+      [
+        [
+          0.8,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ]
+      ]
+    ],
+    "output_purity": 0.6800000000000002
+  },
+  "recovery": {
+    "injected_mask": 2,
+    "syndrome": [
+      1,
+      1
+    ],
+    "branch_probability": 0.9999999999999999,
+    "overlap_squared": 1.0,
+    "independent_X_probability": 0.1,
+    "logical_X_probability": 0.028000000000000008
+  }
+}

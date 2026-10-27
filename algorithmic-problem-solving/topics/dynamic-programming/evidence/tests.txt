@@ -1,0 +1,20 @@
+test_assignment_against_permutations (test_dp.DynamicTests.test_assignment_against_permutations) ... ok
+test_boolean_counts_against_enumerated_syntax_trees (test_dp.DynamicTests.test_boolean_counts_against_enumerated_syntax_trees) ... ok
+test_boundaries_and_rejected_inputs (test_dp.DynamicTests.test_boundaries_and_rejected_inputs) ... ok
+test_bounded_routes_against_walk_enumeration (test_dp.DynamicTests.test_bounded_routes_against_walk_enumeration) ... ok
+test_coin_objectives_against_bfs_and_count_vectors (test_dp.DynamicTests.test_coin_objectives_against_bfs_and_count_vectors) ... ok
+test_edit_distance_against_breadth_first_mutations (test_dp.DynamicTests.test_edit_distance_against_breadth_first_mutations) ... ok
+test_egg_coverage_against_floor_minimax (test_dp.DynamicTests.test_egg_coverage_against_floor_minimax) ... ok
+test_finite_string_counts (test_dp.DynamicTests.test_finite_string_counts) ... ok
+test_grid_paths_and_cost_enumerate_complete_routes (test_dp.DynamicTests.test_grid_paths_and_cost_enumerate_complete_routes) ... ok
+test_knapsack_and_subset_all_small_instances (test_dp.DynamicTests.test_knapsack_and_subset_all_small_instances) ... ok
+test_lcs_exhaustive_subsequence_intersection (test_dp.DynamicTests.test_lcs_exhaustive_subsequence_intersection) ... ok
+test_matrix_chain_all_binary_parenthesizations (test_dp.DynamicTests.test_matrix_chain_all_binary_parenthesizations) ... ok
+test_nonadjacent_and_lis_against_all_subsets (test_dp.DynamicTests.test_nonadjacent_and_lis_against_all_subsets) ... ok
+test_text_layout_and_palindrome_cuts_enumerate_boundaries (test_dp.DynamicTests.test_text_layout_and_palindrome_cuts_enumerate_boundaries) ... ok
+test_weighted_jobs_against_compatible_subsets (test_dp.DynamicTests.test_weighted_jobs_against_compatible_subsets) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.299s
+
+OK

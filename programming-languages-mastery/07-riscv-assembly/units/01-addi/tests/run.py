@@ -1,13 +1,11 @@
 """Independent assembler comparison and bounded architectural checks."""
 from pathlib import Path
 import itertools
-import os
 import shutil
 import subprocess
 import sys
 import tempfile
 import unittest
-os.environ["LD_LIBRARY_PATH"] = "/tmp/machines-tools/usr/lib/x86_64-linux-gnu" + (":" + os.environ["LD_LIBRARY_PATH"] if os.environ.get("LD_LIBRARY_PATH") else "")
 B = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(B / "solutions"))
 from model import encode, step, MASK
@@ -15,11 +13,8 @@ from model import encode, step, MASK
 
 def tool(name):
     installed = shutil.which("riscv64-linux-gnu-" + name)
-    candidate = Path("/tmp/machines-tools/usr/bin/riscv64-linux-gnu-" + name)
     if installed:
         return installed
-    if candidate.is_file():
-        return str(candidate)
     raise RuntimeError("GNU RISC-V binutils missing: " + name)
 
 

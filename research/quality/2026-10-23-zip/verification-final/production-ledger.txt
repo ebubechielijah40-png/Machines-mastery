@@ -1,0 +1,12 @@
+test_cache_invalidation_and_capacity (test_ledger.LedgerTests.test_cache_invalidation_and_capacity) ... ok
+test_idempotency_and_conflict (test_ledger.LedgerTests.test_idempotency_and_conflict) ... ok
+test_lock_failure_is_bounded (test_ledger.LedgerTests.test_lock_failure_is_bounded) ... ok
+test_restart_persistence_and_order (test_ledger.LedgerTests.test_restart_persistence_and_order) ... ok
+test_rollback_and_recovery (test_ledger.LedgerTests.test_rollback_and_recovery) ... ok
+test_two_instances_expose_stale_cache (test_ledger.LedgerTests.test_two_instances_expose_stale_cache) ... ok
+test_untrusted_values_rejected (test_ledger.LedgerTests.test_untrusted_values_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.180s
+
+OK

@@ -1,0 +1,1028 @@
+{
+  "schema_version": 1,
+  "units": [
+    {
+      "id": "F-NUM",
+      "path": "foundations/mathematics/change-error-and-evidence",
+      "classification": "STRONG",
+      "scope": "Bounded mechanism only; broader domain PARTIAL",
+      "review": [
+        "research/quality/2026-10-22/integration-review.md",
+        "research/quality/2026-10-22/new-unit-review.md"
+      ],
+      "tests": [
+        "foundations/mathematics/change-error-and-evidence/test_numerics.py"
+      ],
+      "sources": [
+        "foundations/mathematics/change-error-and-evidence/SOURCES.md"
+      ],
+      "experiment": [
+        "foundations/mathematics/change-error-and-evidence/RESULTS.md"
+      ],
+      "assessment": [
+        "foundations/mathematics/change-error-and-evidence/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "RC",
+      "path": "hardware-electronics-mastery/02_RC_TRANSIENTS.md",
+      "classification": "STRONG",
+      "scope": "Bounded mechanism only; broader domain PARTIAL",
+      "review": [
+        "research/quality/2026-10-22/integration-review.md"
+      ],
+      "tests": [
+        "hardware-electronics-mastery/code/test_rc_lab.py"
+      ],
+      "sources": [
+        "hardware-electronics-mastery/rc-transients/SOURCES.md"
+      ],
+      "experiment": [
+        "hardware-electronics-mastery/rc-transients/EXPERIMENT.md"
+      ],
+      "assessment": [
+        "hardware-electronics-mastery/rc-transients/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "WAL",
+      "path": "projects-guided/p07-storage-engine",
+      "classification": "STRONG",
+      "scope": "Bounded mechanism only; broader domain PARTIAL",
+      "review": [
+        "research/quality/2026-10-22/integration-review.md"
+      ],
+      "tests": [
+        "projects-guided/p07-storage-engine/code/test_wal_store.py"
+      ],
+      "sources": [
+        "projects-guided/p07-storage-engine/SOURCES.md"
+      ],
+      "experiment": [
+        "projects-guided/p07-storage-engine/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "projects-guided/p07-storage-engine/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "ATTENTION",
+      "path": "16-machine-learning/labs",
+      "classification": "STRONG",
+      "scope": "Bounded mechanism only; broader domain PARTIAL",
+      "review": [
+        "research/quality/2026-10-22/integration-review.md"
+      ],
+      "tests": [
+        "16-machine-learning/labs/test_attention_derivatives.py"
+      ],
+      "sources": [
+        "16-machine-learning/labs/SOURCES.md"
+      ],
+      "experiment": [
+        "16-machine-learning/labs/EXPERIMENT.md"
+      ],
+      "assessment": [
+        "16-machine-learning/labs/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "ALIGNMENT",
+      "path": "18-computational-biology/02_SEQUENCE_ALGORITHMS.md",
+      "classification": "STRONG",
+      "scope": "Bounded mechanism only; broader domain PARTIAL",
+      "review": [
+        "research/quality/2026-10-22/integration-review.md"
+      ],
+      "tests": [
+        "18-computational-biology/code/test_alignment.py"
+      ],
+      "sources": [
+        "18-computational-biology/alignment/SOURCE_VERIFICATION.md"
+      ],
+      "experiment": [
+        "18-computational-biology/alignment/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "18-computational-biology/alignment/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "STATEVECTOR",
+      "path": "20-quantum-computing/10_STATEVECTOR_MEASUREMENT.md",
+      "classification": "STRONG",
+      "scope": "Bounded mechanism only; broader domain PARTIAL",
+      "review": [
+        "research/quality/2026-10-22/integration-review.md"
+      ],
+      "tests": [
+        "20-quantum-computing/code/test_simulator.py"
+      ],
+      "sources": [
+        "20-quantum-computing/SOURCE_VERIFICATION.md"
+      ],
+      "experiment": [
+        "20-quantum-computing/experiments/MEASUREMENT.md"
+      ],
+      "assessment": [
+        "20-quantum-computing/assessments/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "MATH-CORE",
+      "path": "foundations/mathematics/core",
+      "classification": "STRONG",
+      "scope": "Finite algebra/discrete/maps/calculus mechanisms; root authored and self-reviewed; independent reviewer checked prior four chapters/code, not final geometry/prose.",
+      "tests": [
+        "foundations/mathematics/core/test_linear.py",
+        "foundations/mathematics/core/test_discrete.py"
+      ],
+      "sources": [
+        "foundations/mathematics/core/SOURCES.md"
+      ],
+      "experiment": [
+        "foundations/mathematics/core/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "foundations/mathematics/core/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "FINITE-INFERENCE",
+      "path": "foundations/statistics/probability-inference",
+      "classification": "STRONG",
+      "scope": "Finite probability and bounded interval calculations; root authored, with independent exact-probe review; no universal coverage guarantee.",
+      "tests": [
+        "foundations/statistics/probability-inference/test_probability.py",
+        "foundations/statistics/probability-inference/test_decision.py"
+      ],
+      "sources": [
+        "foundations/statistics/probability-inference/SOURCES.md",
+        "foundations/statistics/probability-inference/DECISION_SOURCES.md"
+      ],
+      "experiment": [
+        "foundations/statistics/probability-inference/EXPERIMENTS.md",
+        "foundations/statistics/probability-inference/DECISION_EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "foundations/statistics/probability-inference/EXERCISES.md",
+        "foundations/statistics/probability-inference/DECISION_EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md",
+        "research/quality/2026-10-25/statistics-reader-review.md"
+      ]
+    },
+    {
+      "id": "BYTE-CPU",
+      "path": "01-computation/toy-cpu",
+      "classification": "STRONG",
+      "scope": "Original bounded byte interpreter; not gate/datapath/physical construction.",
+      "tests": [
+        "01-computation/toy-cpu/test_cpu.py"
+      ],
+      "sources": [
+        "01-computation/toy-cpu/SOURCES.md"
+      ],
+      "experiment": [
+        "01-computation/toy-cpu/evidence/cpu-experiment.json"
+      ],
+      "assessment": [
+        "01-computation/toy-cpu/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "COMPILE-LINK",
+      "path": "04-computer-systems/compile-link",
+      "classification": "STRONG",
+      "scope": "Single-threaded C translation/symbol/relocation lab on the observed native toolchain, not full ABI/linker instruction.",
+      "tests": [
+        "04-computer-systems/compile-link/test_build.py"
+      ],
+      "sources": [
+        "04-computer-systems/compile-link/SOURCES.md"
+      ],
+      "experiment": [
+        "04-computer-systems/compile-link/evidence/observed.json"
+      ],
+      "assessment": [
+        "04-computer-systems/compile-link/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "SYNC",
+      "path": "05-operating-systems/synchronization",
+      "classification": "STRONG",
+      "scope": "Finite interleavings and defined C11 synchronization; not weak-memory, fairness or kernel completeness.",
+      "tests": [
+        "05-operating-systems/synchronization/code/test_interleavings.py"
+      ],
+      "sources": [
+        "05-operating-systems/synchronization/SOURCES.md"
+      ],
+      "experiment": [
+        "05-operating-systems/synchronization/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "05-operating-systems/synchronization/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "SHELL",
+      "path": "projects-guided/p02-shell",
+      "classification": "STRONG",
+      "scope": "Bounded local shell/pipeline/direct-child lifecycle; no POSIX job control or arbitrary grandchild cleanup.",
+      "tests": [
+        "projects-guided/p02-shell/code/test_minishell.py"
+      ],
+      "sources": [
+        "projects-guided/p02-shell/SOURCES.md"
+      ],
+      "experiment": [
+        "projects-guided/p02-shell/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "projects-guided/p02-shell/CHECKPOINTS.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "BYTE-ARENA",
+      "path": "projects-guided/p04-memory-allocator",
+      "classification": "STRONG",
+      "scope": "Declared byte-buffer arena, not typed malloc replacement; stale handles require the stated lease discipline.",
+      "tests": [
+        "projects-guided/p04-memory-allocator/code/run.py"
+      ],
+      "sources": [
+        "projects-guided/p04-memory-allocator/SOURCES.md"
+      ],
+      "experiment": [
+        "projects-guided/p04-memory-allocator/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "projects-guided/p04-memory-allocator/CHECKPOINTS.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "RELATIONS-ISOLATION",
+      "path": "07-databases-data-systems/query-isolation",
+      "classification": "STRONG",
+      "scope": "Finite bag/query operators and actual SQLite schedules; not a full query optimizer or storage engine.",
+      "tests": [
+        "07-databases-data-systems/query-isolation/test_relations.py"
+      ],
+      "sources": [
+        "07-databases-data-systems/query-isolation/SOURCES.md"
+      ],
+      "experiment": [
+        "07-databases-data-systems/query-isolation/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "07-databases-data-systems/query-isolation/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "FINITE-INFORMATION",
+      "path": "08-information-science/finite-information",
+      "classification": "STRONG",
+      "scope": "Finite joint/conditional entropy calculations; not general channel coding theory.",
+      "tests": [
+        "08-information-science/finite-information/test_information.py"
+      ],
+      "sources": [
+        "08-information-science/finite-information/SOURCES.md"
+      ],
+      "experiment": [
+        "08-information-science/finite-information/evidence/observed.json"
+      ],
+      "assessment": [
+        "08-information-science/finite-information/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "MEASUREMENT-LINEAGE",
+      "path": "projects-guided/p08-scientific-pipeline",
+      "classification": "STRONG",
+      "scope": "Synthetic controlled ingestion and exact transform/uncertainty; not real sensor calibration.",
+      "tests": [
+        "projects-guided/p08-scientific-pipeline/code/test_measurement_pipeline.py"
+      ],
+      "sources": [
+        "projects-guided/p08-scientific-pipeline/SOURCES.md"
+      ],
+      "experiment": [
+        "projects-guided/p08-scientific-pipeline/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "projects-guided/p08-scientific-pipeline/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "AUTHENTICATED-PROVENANCE",
+      "path": "security-cryptography-mastery/provenance",
+      "classification": "STRONG",
+      "scope": "Single-writer synthetic authenticated provenance with trusted-tip assumptions; no deployed key management, confidentiality or authority proof.",
+      "tests": [
+        "security-cryptography-mastery/provenance/test_pipeline.py"
+      ],
+      "sources": [
+        "security-cryptography-mastery/provenance/SOURCES.md"
+      ],
+      "experiment": [
+        "security-cryptography-mastery/provenance/evidence/observed.json"
+      ],
+      "assessment": [
+        "security-cryptography-mastery/provenance/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "IDEAL-COUNT-PRIVACY",
+      "path": "13-privacy/count-release",
+      "classification": "STRONG",
+      "scope": "Ideal continuous Laplace proof and local accounting experiment; finite floating sampler is explicitly uncertified and accounting is not durable.",
+      "tests": [
+        "13-privacy/count-release/test_count_release.py"
+      ],
+      "sources": [
+        "13-privacy/count-release/SOURCES.md"
+      ],
+      "experiment": [
+        "13-privacy/count-release/evidence/observed.json"
+      ],
+      "assessment": [
+        "13-privacy/count-release/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "GRAPH-RELEASE",
+      "path": "algorithmic-problem-solving/topics/graphs",
+      "classification": "STRONG",
+      "scope": "Twenty distinct finite graph contracts with proofs and independent alternative oracles; no whole algorithms-domain completion.",
+      "tests": [
+        "algorithmic-problem-solving/topics/graphs/code/test_graph_algorithms.py",
+        "algorithmic-problem-solving/topics/graphs/run_all_tests.py"
+      ],
+      "sources": [
+        "algorithmic-problem-solving/topics/graphs/SOURCES.md"
+      ],
+      "experiment": [
+        "algorithmic-problem-solving/topics/graphs/EXPERIMENT.md"
+      ],
+      "assessment": [
+        "algorithmic-problem-solving/topics/graphs/PROBLEMS.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "EXPRESSION-LANGUAGE",
+      "path": "projects-guided/p10-language",
+      "classification": "STRONG",
+      "scope": "Bounded expression lexer/parser/AST/rational evaluator; not a general compiler or host-language sandbox.",
+      "tests": [
+        "projects-guided/p10-language/code/test_minilang.py"
+      ],
+      "sources": [
+        "projects-guided/p10-language/SOURCES.md"
+      ],
+      "experiment": [
+        "projects-guided/p10-language/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "projects-guided/p10-language/CHECKPOINTS.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "CPP-LIFETIME",
+      "path": "programming-languages-mastery/02-cpp/units/resource-lifetime",
+      "classification": "STRONG",
+      "scope": "C++17 ownership/copy/move/exception mechanism on recorded native builds; not full C++ semantics.",
+      "tests": [
+        "programming-languages-mastery/02-cpp/units/resource-lifetime/run.py"
+      ],
+      "sources": [
+        "programming-languages-mastery/02-cpp/units/resource-lifetime/SOURCES.md"
+      ],
+      "experiment": [
+        "programming-languages-mastery/02-cpp/units/resource-lifetime/observed.json"
+      ],
+      "assessment": [
+        "programming-languages-mastery/02-cpp/units/resource-lifetime/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "REPLICA-JOIN",
+      "path": "15-distributed-systems/ordering-reconciliation",
+      "classification": "STRONG",
+      "scope": "Root-authored lesson over bounded logical-clock/state-join model; self-review and independent-style finite oracles, not consensus or persistence.",
+      "tests": [
+        "15-distributed-systems/ordering-reconciliation/test_reconcile.py"
+      ],
+      "sources": [
+        "15-distributed-systems/ordering-reconciliation/SOURCES.md"
+      ],
+      "experiment": [
+        "15-distributed-systems/ordering-reconciliation/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "15-distributed-systems/ordering-reconciliation/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "REPLICA-WORKBENCH",
+      "path": "projects-guided/p11-distributed-kv",
+      "classification": "STRONG",
+      "scope": "Root-authored bounded local schedule CLI; self-review with independently observable outcomes; no distributed service or authenticated membership.",
+      "tests": [
+        "projects-guided/p11-distributed-kv/code/test_workbench.py"
+      ],
+      "sources": [
+        "projects-guided/p11-distributed-kv/SOURCES.md"
+      ],
+      "experiment": [
+        "projects-guided/p11-distributed-kv/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "projects-guided/p11-distributed-kv/CHECKPOINTS.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "TINY-DECODER",
+      "path": "16-machine-learning/training",
+      "classification": "STRONG",
+      "scope": "Actually trained synthetic tiny causal decoder/tokenizers; sampled derivatives and finite contracts, not broad language competence or all-coordinate proof.",
+      "tests": [
+        "16-machine-learning/training/test_tiny_models.py",
+        "16-machine-learning/training/test_bpe.py"
+      ],
+      "sources": [
+        "16-machine-learning/training/SOURCES.md"
+      ],
+      "experiment": [
+        "16-machine-learning/training/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "16-machine-learning/training/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "RETRIEVAL-CONTROLLER",
+      "path": "16-machine-learning/retrieval-agents",
+      "classification": "PARTIAL",
+      "scope": "Developed lexical retrieval and deterministic typed controller with retained failures; no learned-agent planning or comprehensive evaluation.",
+      "tests": [
+        "16-machine-learning/retrieval-agents/test_local_agent.py"
+      ],
+      "sources": [
+        "16-machine-learning/retrieval-agents/SOURCES.md"
+      ],
+      "experiment": [
+        "16-machine-learning/retrieval-agents/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "16-machine-learning/retrieval-agents/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "MOTOR-CONTROL",
+      "path": "17-embedded-robotics/control-path",
+      "classification": "STRONG",
+      "scope": "Synthetic motor/sensor/PID mechanism with assumed parameters; no physical robot validation.",
+      "tests": [
+        "17-embedded-robotics/control-path/test_control.py"
+      ],
+      "sources": [
+        "17-embedded-robotics/control-path/SOURCES.md"
+      ],
+      "experiment": [
+        "17-embedded-robotics/control-path/evidence/control-experiment.json"
+      ],
+      "assessment": [
+        "17-embedded-robotics/control-path/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "POPULATION-PHYLOGENY",
+      "path": "18-computational-biology/population-phylogeny",
+      "classification": "STRONG",
+      "scope": "Finite drift/selection/likelihood and clock-distance mechanism; no organism/omics/biological validation.",
+      "tests": [
+        "18-computational-biology/population-phylogeny/test_population_phylogeny.py"
+      ],
+      "sources": [
+        "18-computational-biology/population-phylogeny/SOURCES.md"
+      ],
+      "experiment": [
+        "18-computational-biology/population-phylogeny/evidence/population-phylogeny.json"
+      ],
+      "assessment": [
+        "18-computational-biology/population-phylogeny/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "NOISE-RECOVERY",
+      "path": "20-quantum-computing/noise-correction",
+      "classification": "STRONG",
+      "scope": "Small density/channel/ideal repetition-recovery mechanisms; no fault-tolerant hardware or quantum advantage.",
+      "tests": [
+        "20-quantum-computing/noise-correction/test_noise.py"
+      ],
+      "sources": [
+        "20-quantum-computing/noise-correction/SOURCES.md"
+      ],
+      "experiment": [
+        "20-quantum-computing/noise-correction/evidence/noise-experiment.json"
+      ],
+      "assessment": [
+        "20-quantum-computing/noise-correction/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23/integration-review.md"
+      ]
+    },
+    {
+      "id": "ELASTIC",
+      "path": "foundations/chemistry-materials/elastic-evidence",
+      "classification": "STRONG",
+      "scope": "Assumed bond/bar/instrument-compliance mechanisms; no real material calibration.",
+      "tests": [
+        "foundations/chemistry-materials/elastic-evidence/test_materials.py"
+      ],
+      "sources": [
+        "foundations/chemistry-materials/elastic-evidence/SOURCES.md"
+      ],
+      "experiment": [
+        "foundations/chemistry-materials/elastic-evidence/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "foundations/chemistry-materials/elastic-evidence/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "MOS-TIMING",
+      "path": "hardware-electronics-mastery/device-logic",
+      "classification": "STRONG",
+      "scope": "Ideal carriers/long-channel/load/RC/logic/setup-hold; no calibrated semiconductor or physical timing.",
+      "tests": [
+        "hardware-electronics-mastery/device-logic/test_devices.py"
+      ],
+      "sources": [
+        "hardware-electronics-mastery/device-logic/SOURCES.md"
+      ],
+      "experiment": [
+        "hardware-electronics-mastery/device-logic/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "hardware-electronics-mastery/device-logic/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "PAGE-INDEX",
+      "path": "07-databases-data-systems/page-index",
+      "classification": "STRONG",
+      "scope": "Serialized fixed-size B+ index and read-only WAL rebuild; no durable publication or concurrent transaction engine.",
+      "tests": [
+        "07-databases-data-systems/page-index/test_bplus.py",
+        "07-databases-data-systems/page-index/test_rebuild.py"
+      ],
+      "sources": [
+        "07-databases-data-systems/page-index/SOURCES.md"
+      ],
+      "experiment": [
+        "07-databases-data-systems/page-index/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "07-databases-data-systems/page-index/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "MODEL-FAMILIES",
+      "path": "16-machine-learning/model-families",
+      "classification": "STRONG",
+      "scope": "Five small synthetic model mechanisms and derivatives; no modern generative/deployed AI completion.",
+      "tests": [
+        "16-machine-learning/model-families/test_families.py"
+      ],
+      "sources": [
+        "16-machine-learning/model-families/SOURCES.md"
+      ],
+      "experiment": [
+        "16-machine-learning/model-families/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "16-machine-learning/model-families/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "ORDERED-STATE",
+      "path": "algorithmic-problem-solving/mechanisms/ordered-state",
+      "classification": "STRONG",
+      "scope": "Explicit hash/heap/unbalanced tree with rank/select; no hostile-input performance or balancing guarantee.",
+      "tests": [
+        "algorithmic-problem-solving/mechanisms/ordered-state/test_structures.py"
+      ],
+      "sources": [
+        "algorithmic-problem-solving/mechanisms/ordered-state/SOURCES.md"
+      ],
+      "experiment": [
+        "algorithmic-problem-solving/mechanisms/ordered-state/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "algorithmic-problem-solving/mechanisms/ordered-state/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "DYNAMIC-PROGRAMMING",
+      "path": "algorithmic-problem-solving/topics/dynamic-programming",
+      "classification": "STRONG",
+      "scope": "Twenty original distinct bounded contracts with finite-search oracles; broad algorithms curriculum incomplete.",
+      "tests": [
+        "algorithmic-problem-solving/topics/dynamic-programming/code/test_dp.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/01-package-count/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/02-unordered-bundles/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/03-payload-selection/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/04-exact-subset/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/05-maintenance-days/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/06-common-event-order/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/07-correction-cost/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/08-increasing-samples/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/09-obstacle-routes/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/10-costed-grid/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/11-reservation-value/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/12-matrix-plan/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/13-line-break-cost/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/14-palindrome-segments/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/15-hop-bounded-route/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/16-one-to-one-workers/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/17-legal-bit-records/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/18-pattern-embeddings/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/19-boolean-plans/tests/test_solution.py",
+        "algorithmic-problem-solving/topics/dynamic-programming/problems/20-breakage-threshold/tests/test_solution.py"
+      ],
+      "sources": [
+        "algorithmic-problem-solving/topics/dynamic-programming/SOURCES.md"
+      ],
+      "experiment": [
+        "algorithmic-problem-solving/topics/dynamic-programming/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "algorithmic-problem-solving/topics/dynamic-programming/PROBLEMS.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "OPERATIONS",
+      "path": "production-systems-engineering/labs/operation-workbench",
+      "classification": "STRONG",
+      "scope": "Actual local SQLite/thread/load/process-kill mechanisms; no live service or power-failure durability certification.",
+      "tests": [
+        "production-systems-engineering/labs/operation-workbench/test_operations.py"
+      ],
+      "sources": [
+        "production-systems-engineering/labs/operation-workbench/SOURCES.md"
+      ],
+      "experiment": [
+        "production-systems-engineering/labs/operation-workbench/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "production-systems-engineering/labs/operation-workbench/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "BINARY-RECORDS",
+      "path": "reverse-engineering-systems/exercises/02-binary-records",
+      "classification": "STRONG",
+      "scope": "Original authorized native oracle and finite probe reconstruction; no unknown third-party target.",
+      "tests": [
+        "reverse-engineering-systems/exercises/02-binary-records/test_binary_records.py"
+      ],
+      "sources": [
+        "reverse-engineering-systems/exercises/02-binary-records/SOURCES.md"
+      ],
+      "experiment": [
+        "reverse-engineering-systems/exercises/02-binary-records/README.md",
+        "reverse-engineering-systems/exercises/02-binary-records/experiment.py",
+        "reverse-engineering-systems/exercises/02-binary-records/evidence/observed.json"
+      ],
+      "assessment": [
+        "reverse-engineering-systems/exercises/02-binary-records/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "RUST-OWNERSHIP",
+      "path": "programming-languages-mastery/03-rust/units/ownership-transfer",
+      "classification": "STRONG",
+      "scope": "Selected safe Rust2021 native ownership/borrow/slice contracts; not all unsafe/ABI/runtime behavior.",
+      "tests": [
+        "programming-languages-mastery/03-rust/units/ownership-transfer/run.py"
+      ],
+      "sources": [
+        "programming-languages-mastery/03-rust/units/ownership-transfer/SOURCES.md"
+      ],
+      "experiment": [
+        "programming-languages-mastery/03-rust/units/ownership-transfer/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "programming-languages-mastery/03-rust/units/ownership-transfer/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "ZIG-ALLOCATORS",
+      "path": "programming-languages-mastery/04-zig/units/allocator-errors",
+      "classification": "STRONG",
+      "scope": "Pinned Zig0.13 scoped allocation/error/cleanup; no borrow-checker or arbitrary copied ownership safety.",
+      "tests": [
+        "programming-languages-mastery/04-zig/units/allocator-errors/run.py"
+      ],
+      "sources": [
+        "programming-languages-mastery/04-zig/units/allocator-errors/SOURCES.md"
+      ],
+      "experiment": [
+        "programming-languages-mastery/04-zig/units/allocator-errors/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "programming-languages-mastery/04-zig/units/allocator-errors/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "GO-CANCELLATION",
+      "path": "programming-languages-mastery/09-go/units/channels-cancellation",
+      "classification": "STRONG",
+      "scope": "Finite channel cancellation/join and actual race-detector observations; no universal fairness/leak-freedom proof.",
+      "tests": [
+        "programming-languages-mastery/09-go/units/channels-cancellation/run.py"
+      ],
+      "sources": [
+        "programming-languages-mastery/09-go/units/channels-cancellation/SOURCES.md"
+      ],
+      "experiment": [
+        "programming-languages-mastery/09-go/units/channels-cancellation/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "programming-languages-mastery/09-go/units/channels-cancellation/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "JAVA-LIFETIMES",
+      "path": "programming-languages-mastery/10-java/units/objects-resources-threads",
+      "classification": "STRONG",
+      "scope": "Java17 selected references/resource/thread contracts with bytecode; no GC/performance guarantee.",
+      "tests": [
+        "programming-languages-mastery/10-java/units/objects-resources-threads/run.py"
+      ],
+      "sources": [
+        "programming-languages-mastery/10-java/units/objects-resources-threads/SOURCES.md"
+      ],
+      "experiment": [
+        "programming-languages-mastery/10-java/units/objects-resources-threads/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "programming-languages-mastery/10-java/units/objects-resources-threads/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "CLOCKED-FIFO",
+      "path": "hardware-description-languages/fifo-contract",
+      "classification": "STRONG",
+      "scope": "Actual two-language simulation against independent deque vectors/mutants; no synthesis/CDC/physical timing certification.",
+      "tests": [
+        "hardware-description-languages/fifo-contract/run.py"
+      ],
+      "sources": [
+        "hardware-description-languages/fifo-contract/SOURCES.md"
+      ],
+      "experiment": [
+        "hardware-description-languages/fifo-contract/README.md",
+        "hardware-description-languages/fifo-contract/evidence/observed.json"
+      ],
+      "assessment": [
+        "hardware-description-languages/fifo-contract/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "LEXICAL-BINDING",
+      "path": "books/crafting-interpreters/generated/chapters/11",
+      "classification": "STRONG",
+      "scope": "Selected original AST lexical binding/closure companion; full book PARTIAL.",
+      "tests": [
+        "books/crafting-interpreters/generated/chapters/11/code/test_binding_lab.py"
+      ],
+      "sources": [
+        "books/crafting-interpreters/generated/SOURCE_VERIFICATION.json"
+      ],
+      "experiment": [
+        "books/crafting-interpreters/generated/chapters/11/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "books/crafting-interpreters/generated/chapters/11/EXERCISES.md"
+      ],
+      "review": [
+        "research/quality/2026-10-23-zip/integration-review.md"
+      ]
+    },
+    {
+      "id": "INITIAL-VALUE",
+      "path": "foundations/mathematics/initial-value-evidence",
+      "classification": "STRONG",
+      "scope": "Bounded numerical mechanisms; full mathematics mandate remains PARTIAL",
+      "review": [
+        "research/quality/2026-10-25/math-reader-review.md"
+      ],
+      "tests": [
+        "foundations/mathematics/initial-value-evidence/test_ivp.py"
+      ],
+      "sources": [
+        "foundations/mathematics/initial-value-evidence/SOURCES.md"
+      ],
+      "experiment": [
+        "foundations/mathematics/initial-value-evidence/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "foundations/mathematics/initial-value-evidence/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "PROD-RECOVERY-OBS",
+      "path": "production-systems-engineering/labs/operation-workbench/RECOVERY_AND_OBSERVABILITY.md",
+      "classification": "STRONG",
+      "scope": "Bounded local recovery/observability/release mechanism; full frozen production domain remains PARTIAL.",
+      "review": [
+        "research/quality/2026-10-25-continuous/production-reader-review.md"
+      ],
+      "tests": [
+        "production-systems-engineering/labs/operation-workbench/test_recovery.py",
+        "production-systems-engineering/labs/operation-workbench/test_telemetry.py",
+        "production-systems-engineering/labs/operation-workbench/test_release.py"
+      ],
+      "sources": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_SOURCES.md"
+      ],
+      "experiment": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "production-systems-engineering/labs/operation-workbench/RECOVERY_EXERCISES.md"
+      ]
+    },
+    {
+      "id": "FLOW-VM",
+      "path": "02-programming/compiler-runtime/README.md",
+      "classification": "STRONG",
+      "scope": "Bounded reviewed mechanism only. Full original domain mandate remains PARTIAL; see separate33-domain gate.",
+      "review": [
+        "research/quality/2026-10-25-continuous/programming-final-reader-review.md"
+      ],
+      "tests": [
+        "02-programming/compiler-runtime/test_flow.py"
+      ],
+      "sources": [
+        "02-programming/compiler-runtime/SOURCES.md"
+      ],
+      "experiment": [
+        "02-programming/compiler-runtime/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "02-programming/compiler-runtime/EXERCISES.md"
+      ]
+    },
+    {
+      "id": "PROTECTED-HISTORY",
+      "path": "security-cryptography-mastery/provenance/PROTECTED_HISTORY.md",
+      "classification": "STRONG",
+      "scope": "Bounded reviewed mechanism only. Full original domain mandate remains PARTIAL; see separate33-domain gate.",
+      "review": [
+        "research/quality/2026-10-25-continuous/provenance-final-reader-review.md"
+      ],
+      "tests": [
+        "security-cryptography-mastery/provenance/test_protected_ledger.py"
+      ],
+      "sources": [
+        "security-cryptography-mastery/provenance/PROTECTED_SOURCES.md"
+      ],
+      "experiment": [
+        "security-cryptography-mastery/provenance/PROTECTED_EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "security-cryptography-mastery/provenance/PROTECTED_EXERCISES.md"
+      ]
+    },
+    {
+      "id": "PUBLISHED-INDEX",
+      "path": "07-databases-data-systems/recovery-planning/README.md",
+      "classification": "STRONG",
+      "scope": "Bounded reviewed mechanism only. Full original domain mandate remains PARTIAL; see separate33-domain gate.",
+      "review": [
+        "research/quality/2026-10-25-continuous/database-final-reader-review.md"
+      ],
+      "tests": [
+        "07-databases-data-systems/recovery-planning/test_recovery.py"
+      ],
+      "sources": [
+        "07-databases-data-systems/recovery-planning/SOURCES.md"
+      ],
+      "experiment": [
+        "07-databases-data-systems/recovery-planning/EXPERIMENTS.md"
+      ],
+      "assessment": [
+        "07-databases-data-systems/recovery-planning/EXERCISES.md"
+      ]
+    }
+  ],
+  "limitations": "Declared, scope-limited artifact evidence, not automatic truth validation, independent specialist certification, full-domain completion or learner mastery. Integration review identifies author versus independent review."
+}
